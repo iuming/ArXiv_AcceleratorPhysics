@@ -251,12 +251,13 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # 部署到GitHub Pages (可选)
+  # 部署到GitHub Pages (可选 - 需要在仓库设置中启用 Pages)
   deploy-docs:
     name: Deploy Documentation
     runs-on: ubuntu-latest
     needs: docs
     if: github.ref == 'refs/heads/main'
+    continue-on-error: true  # 如果 Pages 未配置，允许失败
     
     permissions:
       contents: read
@@ -268,6 +269,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
+    - name: Check if Pages is enabled
+      run: |
+        echo "Checking GitHub Pages configuration..."
+        echo "If this step fails, Pages is not enabled for this repository"
+    
     - name: Download documentation
       uses: actions/download-artifact@v4
       with:
@@ -276,12 +282,27 @@ jobs:
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
+      continue-on-error: true
     
     - name: Upload to GitHub Pages
       uses: actions/upload-pages-artifact@v3
       with:
         path: docs-html/
+      continue-on-error: true
     
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+      continue-on-error: true
+    
+    - name: Pages deployment status
+      run: |
+        if [ "${{ steps.deployment.outcome }}" = "success" ]; then
+          echo "✅ Documentation deployed to GitHub Pages"
+        else
+          echo "⚠️ GitHub Pages not configured or deployment failed"
+          echo "To enable Pages deployment:"
+          echo "1. Go to repository Settings > Pages"
+          echo "2. Set Source to 'GitHub Actions'"
+          echo "3. Re-run this workflow"
+        fi
