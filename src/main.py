@@ -1,10 +1,25 @@
 import asyncio
 import os
+import sys
 from datetime import datetime
-from src.arxiv_fetcher import ArXivFetcher
-from src.llm_analyzer import LLMAnalyzer
-from src.data_processor import DataProcessor
-from src.utils import setup_logging, load_config
+from pathlib import Path
+
+# 添加项目根目录到Python路径
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+
+# 尝试相对导入，如果失败则使用绝对导入
+try:
+    from src.arxiv_fetcher import ArXivFetcher
+    from src.llm_analyzer import LLMAnalyzer
+    from src.data_processor import DataProcessor
+    from src.utils import setup_logging, load_config
+except ImportError:
+    # 如果相对导入失败，尝试直接导入
+    from arxiv_fetcher import ArXivFetcher
+    from llm_analyzer import LLMAnalyzer
+    from data_processor import DataProcessor
+    from utils import setup_logging, load_config
 
 async def main():
     """主函数：协调整个分析流程"""
