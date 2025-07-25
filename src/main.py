@@ -25,6 +25,22 @@ async def main():
     logger = setup_logging()
     logger.info("开始每日ArXiv加速器物理论文分析")
     
+    # 检查API密钥
+    logger.info("🔑 检查API密钥配置...")
+    openai_key = os.getenv('OPENAI_API_KEY')
+    anthropic_key = os.getenv('ANTHROPIC_API_KEY')
+    
+    if not openai_key and not anthropic_key:
+        logger.error("❌ 未设置任何LLM API密钥！")
+        logger.error("请在GitHub仓库Settings -> Secrets中设置：")
+        logger.error("- OPENAI_API_KEY (推荐)")
+        logger.error("- ANTHROPIC_API_KEY (备用)")
+        logger.error("系统将仅抓取论文，不进行LLM分析")
+    elif openai_key:
+        logger.info("✅ OpenAI API密钥已设置")
+    elif anthropic_key:
+        logger.info("✅ Anthropic API密钥已设置")
+    
     # 加载配置
     config = load_config()
     

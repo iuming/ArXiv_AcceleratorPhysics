@@ -34,14 +34,25 @@ class LLMAnalyzer:
             openai.api_key = os.getenv('OPENAI_API_KEY')
             self.openai_client = openai
             self.logger.info("✅ OpenAI客户端初始化成功")
+        elif OPENAI_AVAILABLE:
+            self.logger.warning("⚠️  OPENAI_API_KEY环境变量未设置")
+        else:
+            self.logger.warning("⚠️  OpenAI库未安装")
             
         # 配置Anthropic
         if ANTHROPIC_AVAILABLE and os.getenv('ANTHROPIC_API_KEY'):
             self.anthropic_client = Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
             self.logger.info("✅ Anthropic客户端初始化成功")
+        elif ANTHROPIC_AVAILABLE:
+            self.logger.warning("⚠️  ANTHROPIC_API_KEY环境变量未设置")
+        else:
+            self.logger.warning("⚠️  Anthropic库未安装")
         
         if not self.openai_client and not self.anthropic_client:
-            self.logger.warning("⚠️  没有可用的LLM客户端")
+            self.logger.error("❌ 没有可用的LLM客户端！请设置API密钥：")
+            self.logger.error("   - OPENAI_API_KEY (必需)")
+            self.logger.error("   - ANTHROPIC_API_KEY (可选备用)")
+            self.logger.error("   在GitHub仓库Settings -> Secrets中设置这些密钥")
         
         # 加载提示模板
         self.analysis_prompt = self._load_prompt_template('analysis_prompt.txt')
