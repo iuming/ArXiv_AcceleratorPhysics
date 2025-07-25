@@ -1,0 +1,78 @@
+name: Daily ArXiv Accelerator Physics Analysis
+
+on:
+  schedule:
+    # 每天UTC时间00:00运行
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  analyze-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        
+    - name: Run ArXiv analysis
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        python src/main.py
+        
+    - name: Commit and push results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 添加新生成的文件
+        git add data/
+        
+        # 检查是否有更改
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # 获取当前日期
+        DATE=$(date +%Y-%m-%d)
+        
+        # 提交更改
+        git commit -m "🤖 Daily ArXiv analysis for $DATE"
+        git push
+        
+    - name: Create summary issue
+      if: success()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          const date = new Date().toISOString().split('T')[0];
+          const summaryPath = `data/analysis/${date}/daily_summary.md`;
+          
+          if (fs.existsSync(summaryPath)) {
+            const summary = fs.readFileSync(summaryPath, 'utf8');
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `📊 Daily ArXiv Analysis Summary - ${date}`,
+              body: summary,
+              labels: ['daily-summary', 'arxiv-analysis']
+            });
+          }

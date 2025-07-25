@@ -1,0 +1,69 @@
+# ArXiv 加速器物理分析系统配置
+
+# 基本设置
+max_papers_per_day: 20  # 每天最大论文处理数量
+analysis_timeout: 300   # 分析超时时间（秒）
+retry_attempts: 3       # 重试次数
+
+# LLM模型配置
+openai_model: "gpt-3.5-turbo"
+anthropic_model: "claude-3-sonnet-20240229"
+
+# ArXiv API设置
+arxiv_base_url: "http://export.arxiv.org/api/query"
+arxiv_category: "physics.acc-ph"
+days_back: 1  # 回溯天数
+
+# 分析设置
+max_tokens_analysis: 1500      # 详细分析最大token数
+max_tokens_classification: 100  # 分类最大token数
+max_tokens_summary: 300        # 总结最大token数
+max_keywords: 10               # 最大关键词数量
+
+# 文件路径设置
+data_dir: "data"
+logs_dir: "logs"
+templates_dir: "templates"
+
+# 分类定义
+categories:
+  "1": "束流动力学"
+  "2": "射频技术"
+  "3": "磁体技术"
+  "4": "束流诊断"
+  "5": "加速器设计"
+  "6": "超导技术"
+  "7": "真空技术"
+  "8": "控制系统"
+  "9": "其他"
+
+# 关键词提取设置
+keyword_extraction:
+  min_length: 2          # 关键词最小长度
+  max_length: 50         # 关键词最大长度
+  exclude_common: true   # 排除常见词
+
+# 统计报告设置
+reporting:
+  generate_daily_summary: true    # 生成每日总结
+  generate_charts: true          # 生成图表数据
+  include_paper_details: true    # 包含论文详情
+  max_summary_length: 200        # 总结最大长度
+
+# GitHub Actions设置  
+github:
+  create_issues: true           # 创建总结issue
+  issue_labels: ["daily-summary", "arxiv-analysis"]
+  commit_message_template: "🤖 Daily ArXiv analysis for {date}"
+
+# 错误处理
+error_handling:
+  continue_on_error: true       # 遇到错误继续处理
+  log_errors: true              # 记录错误日志
+  retry_failed: true            # 重试失败的任务
+
+# 性能优化
+performance:
+  concurrent_analysis: 3        # 并发分析数量
+  batch_size: 5                # 批处理大小
+  cache_results: true          # 缓存结果

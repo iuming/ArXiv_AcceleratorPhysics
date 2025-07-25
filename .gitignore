@@ -1,0 +1,66 @@
+# 数据目录
+data/
+logs/
+*.log
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 敏感信息
+.env
+.env.local
+.env.production.local
+secrets.yaml
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# 测试
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# 文档
+docs/_build/
