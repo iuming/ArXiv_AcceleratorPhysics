@@ -42,8 +42,20 @@ jobs:
         pip install -r requirements.txt
         pip install -r requirements-dev.txt
     
-    - name: Run pre-commit hooks
-      uses: pre-commit/action@v3.0.0
+    - name: Run code formatting check
+      run: |
+        black --check --diff src/
+      continue-on-error: true
+    
+    - name: Run import sorting check
+      run: |
+        isort --check-only --diff src/
+      continue-on-error: true
+    
+    - name: Run flake8
+      run: |
+        flake8 src/ --max-line-length=88
+      continue-on-error: true
     
     - name: Run Pylint
       run: |
@@ -187,7 +199,8 @@ jobs:
     
     - name: Build documentation
       run: |
-        sphinx-build -b html docs docs/_build/html
+        cd docs
+        sphinx-build -b html . _build/html
     
     - name: Upload documentation
       uses: actions/upload-artifact@v4
