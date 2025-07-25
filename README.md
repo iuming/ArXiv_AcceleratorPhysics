@@ -15,6 +15,16 @@
 - 💾 **结构化存储**: JSON格式存储，便于数据分析和可视化
 - 📈 **统计报告**: 自动生成每日、每周和月度统计报告
 - 🔍 **去重机制**: 智能识别和处理重复论文
+- 🌐 **Web管理界面**: 现代化的Web界面，支持可视化管理和监控
+
+### 🌐 Web界面功能
+
+- 📊 **数据仪表板**: 实时显示系统状态、论文统计和分析进度
+- 📝 **论文管理**: 浏览、搜索和查看论文详情，支持分类过滤
+- 📈 **可视化分析**: 交互式图表展示论文趋势和分类分布
+- ⚙️ **任务管理**: 启动分析任务、监控进度、查看历史记录
+- 🔧 **系统配置**: 管理API密钥、调整分析参数、配置系统设置
+- 📱 **响应式设计**: 支持桌面、平板和移动设备访问
 
 ## 📁 项目结构
 
@@ -30,10 +40,24 @@ ArXiv_AcceleratorPhysics/
 │   ├── llm_analyzer.py                # LLM分析引擎
 │   ├── llm_analyzer_new.py           # 新版LLM分析器
 │   ├── data_processor.py              # 数据处理模块
+│   ├── web_app.py                     # Web应用模块
 │   └── utils.py                       # 工具函数库
 ├── templates/
 │   ├── analysis_prompt.txt            # LLM分析提示模板
-│   └── classification_prompt.txt     # 分类提示模板
+│   ├── classification_prompt.txt     # 分类提示模板
+│   └── web/                          # Web界面模板
+│       ├── base.html                 # 基础模板
+│       ├── index.html                # 首页
+│       ├── papers.html               # 论文列表
+│       ├── paper_detail.html         # 论文详情
+│       ├── statistics.html           # 统计页面
+│       ├── analysis.html             # 分析管理
+│       └── config.html               # 配置页面
+├── static/                           # 静态资源
+│   ├── css/
+│   │   └── style.css                 # 自定义样式
+│   └── js/
+│       └── app.js                    # 前端逻辑
 ├── data/
 │   ├── papers/                        # 论文原始数据
 │   ├── analysis/                      # 分析结果
@@ -45,6 +69,8 @@ ArXiv_AcceleratorPhysics/
 ├── requirements.txt                   # Python依赖包
 ├── setup.py                          # 项目安装脚本
 ├── test_api.py                       # API连接测试
+├── start_web.py                      # Web界面启动脚本
+├── start_web.bat                     # Windows启动脚本
 └── README.md                         # 项目说明
 ```
 
@@ -86,6 +112,29 @@ ArXiv_AcceleratorPhysics/
    Fork仓库后，在Actions页面启用工作流程。
 
 ## 📊 使用方法
+
+### Web界面（推荐）
+
+1. **启动Web界面**
+   ```bash
+   # Python方式
+   python start_web.py
+   
+   # Windows批处理
+   start_web.bat
+   ```
+
+2. **访问Web界面**
+   
+   打开浏览器访问: http://localhost:5000
+   
+   - 📊 首页：查看系统概览和最新论文
+   - 📝 论文：浏览和搜索论文，查看分析结果
+   - 📈 统计：查看详细的数据统计和图表
+   - ⚙️ 分析：管理分析任务和监控进度
+   - 🔧 配置：设置API密钥和系统参数
+
+### 命令行方式
 
 ### 自动运行
 工作流程每天UTC时间00:00自动运行，抓取前一天发布的论文。

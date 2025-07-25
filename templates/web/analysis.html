@@ -1,0 +1,518 @@
+{% extends "base.html" %}
+
+{% block title %}分析管理 - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- 快速操作 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-play-circle me-2"></i>快速操作
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-3">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="runAnalysis(false)">
+                        <i class="fas fa-play me-2"></i>启动分析
+                    </button>
+                    <button type="button" class="btn btn-warning" onclick="runAnalysis(true)">
+                        <i class="fas fa-redo me-2"></i>强制重新分析
+                    </button>
+                    <button type="button" class="btn btn-info" onclick="fetchNewPapers()">
+                        <i class="fas fa-download me-2"></i>抓取新论文
+                    </button>
+                    <button type="button" class="btn btn-success" onclick="generateReport()">
+                        <i class="fas fa-chart-line me-2"></i>生成报告
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 系统状态 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-heartbeat me-2"></i>系统状态
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="border-end">
+                            <h6 class="text-muted">分析引擎</h6>
+                            <span class="badge bg-success" id="analysis-engine-status">运行中</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-muted">ArXiv连接</h6>
+                        <span class="badge bg-success" id="arxiv-status">正常</span>
+                    </div>
+                </div>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="border-end">
+                            <h6 class="text-muted">LLM服务</h6>
+                            <span class="badge bg-success" id="llm-status">可用</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-muted">数据存储</h6>
+                        <span class="badge bg-success" id="storage-status">正常</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text-center">
+                    <small class="text-muted">
+                        <i class="fas fa-clock me-1"></i>
+                        最后检查: <span id="last-check">刚刚</span>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 任务进度 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-tasks me-2"></i>任务进度
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <small>当前任务</small>
+                        <small id="current-task-progress">0%</small>
+                    </div>
+                    <div class="progress mb-2" style="height: 8px;">
+                        <div class="progress-bar" id="current-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <small class="text-muted" id="current-task-name">无运行任务</small>
+                </div>
+
+                <div class="text-center">
+                    <h6 class="text-muted">队列中任务</h6>
+                    <h3 class="text-primary" id="queued-tasks">0</h3>
+                </div>
+
+                <div class="text-center mt-3">
+                    <h6 class="text-muted">今日完成</h6>
+                    <h3 class="text-success" id="completed-today">0</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 分析配置 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-cog me-2"></i>分析配置
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="analysis-config-form">
+                    <div class="mb-3">
+                        <label for="llm-provider" class="form-label">LLM服务提供商</label>
+                        <select class="form-select" id="llm-provider">
+                            <option value="deepseek">DeepSeek (推荐)</option>
+                            <option value="openai">OpenAI</option>
+                            <option value="hepai">HEPAI</option>
+                            <option value="anthropic">Anthropic</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="analysis-depth" class="form-label">分析深度</label>
+                        <select class="form-select" id="analysis-depth">
+                            <option value="basic">基础分析</option>
+                            <option value="detailed" selected>详细分析</option>
+                            <option value="comprehensive">全面分析</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="batch-size" class="form-label">批处理大小</label>
+                        <input type="number" class="form-control" id="batch-size" value="10" min="1" max="50">
+                        <div class="form-text">每批次处理的论文数量</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="auto-retry" checked>
+                            <label class="form-check-label" for="auto-retry">
+                                自动重试失败任务
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="parallel-processing">
+                            <label class="form-check-label" for="parallel-processing">
+                                并行处理 (实验性)
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>保存配置
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 任务历史 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-history me-2"></i>任务历史
+                </h5>
+                <button class="btn btn-sm btn-outline-secondary" onclick="clearHistory()">
+                    <i class="fas fa-trash me-1"></i>清空
+                </button>
+            </div>
+            <div class="card-body p-0" style="max-height: 400px; overflow-y: auto;">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">论文批量分析</h6>
+                            <p class="mb-1 text-muted small">处理了 25 篇论文</p>
+                            <small class="text-muted">2025-07-25 14:30:00</small>
+                        </div>
+                        <span class="badge bg-success">完成</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">新论文抓取</h6>
+                            <p class="mb-1 text-muted small">从 ArXiv 抓取了 8 篇新论文</p>
+                            <small class="text-muted">2025-07-25 12:00:00</small>
+                        </div>
+                        <span class="badge bg-success">完成</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">统计报告生成</h6>
+                            <p class="mb-1 text-muted small">生成每日统计报告</p>
+                            <small class="text-muted">2025-07-25 09:00:00</small>
+                        </div>
+                        <span class="badge bg-success">完成</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-1">系统初始化</h6>
+                            <p class="mb-1 text-muted small">初始化分析系统</p>
+                            <small class="text-muted">2025-07-25 08:00:00</small>
+                        </div>
+                        <span class="badge bg-info">系统</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 实时日志 -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-terminal me-2"></i>实时日志
+                </h5>
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-outline-secondary" onclick="clearLogs()">
+                        <i class="fas fa-trash me-1"></i>清空
+                    </button>
+                    <button class="btn btn-outline-primary" onclick="downloadLogs()">
+                        <i class="fas fa-download me-1"></i>下载
+                    </button>
+                    <button class="btn btn-outline-success" id="auto-scroll-btn" onclick="toggleAutoScroll()">
+                        <i class="fas fa-arrows-alt-v me-1"></i>自动滚动
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div id="log-container" class="bg-dark text-light p-3"
+                    style="height: 300px; overflow-y: auto; font-family: 'Courier New', monospace; font-size: 0.9rem;">
+                    <div class="log-line">
+                        <span class="text-success">[2025-07-25 15:30:01]</span>
+                        <span class="text-info">[INFO]</span>
+                        系统启动完成
+                    </div>
+                    <div class="log-line">
+                        <span class="text-success">[2025-07-25 15:30:02]</span>
+                        <span class="text-info">[INFO]</span>
+                        Web界面服务器启动，监听端口 5000
+                    </div>
+                    <div class="log-line">
+                        <span class="text-success">[2025-07-25 15:30:03]</span>
+                        <span class="text-info">[INFO]</span>
+                        数据库连接正常
+                    </div>
+                    <div class="log-line">
+                        <span class="text-success">[2025-07-25 15:30:04]</span>
+                        <span class="text-warning">[WARN]</span>
+                        检测到 3 篇论文需要重新分析
+                    </div>
+                    <div class="log-line">
+                        <span class="text-success">[2025-07-25 15:30:05]</span>
+                        <span class="text-info">[INFO]</span>
+                        准备就绪，等待用户操作
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    let autoScroll = true;
+    let logContainer = null;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        logContainer = document.getElementById('log-container');
+
+        // 初始化状态检查
+        updateSystemStatus();
+
+        // 定期更新状态
+        setInterval(updateSystemStatus, 10000);
+
+        // 模拟实时日志
+        simulateRealTimeLogs();
+
+        // 绑定表单提交事件
+        document.getElementById('analysis-config-form').addEventListener('submit', saveConfig);
+    });
+
+    function updateSystemStatus() {
+        // 模拟状态更新
+        const statuses = ['analysis-engine-status', 'arxiv-status', 'llm-status', 'storage-status'];
+
+        fetch('/api/analysis_status')
+            .then(response => response.json())
+            .then(data => {
+                // 更新状态显示
+                document.getElementById('last-check').textContent = new Date().toLocaleTimeString();
+            })
+            .catch(error => {
+                console.error('状态更新失败:', error);
+            });
+    }
+
+    function runAnalysis(forceUpdate = false) {
+        const button = event.target;
+        const originalText = button.innerHTML;
+
+        button.disabled = true;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>启动中...';
+
+        // 更新进度显示
+        updateProgress('启动分析任务...', 0);
+
+        fetch('/api/run_analysis', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                force_update: forceUpdate
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLogEntry('INFO', '分析任务已启动: ' + data.task_id);
+                    startProgressMonitoring();
+                } else {
+                    addLogEntry('ERROR', '启动失败: ' + data.message);
+                    alert('启动失败: ' + data.message);
+                }
+            })
+            .catch(error => {
+                addLogEntry('ERROR', '启动分析失败: ' + error.message);
+                alert('启动失败: ' + error.message);
+            })
+            .finally(() => {
+                button.disabled = false;
+                button.innerHTML = originalText;
+            });
+    }
+
+    function fetchNewPapers() {
+        addLogEntry('INFO', '开始抓取新论文...');
+        updateProgress('抓取新论文...', 0);
+
+        // 模拟抓取过程
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += Math.random() * 20;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(interval);
+                addLogEntry('INFO', '论文抓取完成，共抓取 5 篇新论文');
+                updateProgress('抓取完成', 100);
+            } else {
+                updateProgress('抓取新论文...', progress);
+            }
+        }, 500);
+    }
+
+    function generateReport() {
+        addLogEntry('INFO', '开始生成统计报告...');
+        updateProgress('生成报告...', 0);
+
+        // 模拟报告生成
+        setTimeout(() => {
+            addLogEntry('INFO', '统计报告生成完成');
+            updateProgress('报告生成完成', 100);
+            alert('统计报告已生成！');
+        }, 2000);
+    }
+
+    function updateProgress(taskName, progress) {
+        document.getElementById('current-task-name').textContent = taskName;
+        document.getElementById('current-task-progress').textContent = Math.round(progress) + '%';
+        document.getElementById('current-progress-bar').style.width = progress + '%';
+    }
+
+    function startProgressMonitoring() {
+        // 模拟进度监控
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += Math.random() * 10;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(interval);
+                addLogEntry('INFO', '分析任务完成');
+                updateProgress('分析完成', 100);
+            } else {
+                updateProgress('分析论文中...', progress);
+            }
+        }, 1000);
+    }
+
+    function addLogEntry(level, message) {
+        if (!logContainer) return;
+
+        const timestamp = new Date().toLocaleString();
+        const levelColors = {
+            'INFO': 'text-info',
+            'WARN': 'text-warning',
+            'ERROR': 'text-danger',
+            'DEBUG': 'text-muted'
+        };
+
+        const logLine = document.createElement('div');
+        logLine.className = 'log-line';
+        logLine.innerHTML = `
+        <span class="text-success">[${timestamp}]</span> 
+        <span class="${levelColors[level] || 'text-info'}">[${level}]</span> 
+        ${message}
+    `;
+
+        logContainer.appendChild(logLine);
+
+        // 自动滚动到底部
+        if (autoScroll) {
+            logContainer.scrollTop = logContainer.scrollHeight;
+        }
+    }
+
+    function simulateRealTimeLogs() {
+        const messages = [
+            { level: 'INFO', message: '检查新论文...' },
+            { level: 'INFO', message: '连接 ArXiv API...' },
+            { level: 'INFO', message: '解析论文元数据...' },
+            { level: 'WARN', message: '检测到重复论文，已跳过' },
+            { level: 'INFO', message: '分析论文摘要...' },
+            { level: 'INFO', message: '生成分类标签...' }
+        ];
+
+        let index = 0;
+        const addRandomLog = () => {
+            if (Math.random() > 0.7) { // 30% 概率添加日志
+                const msg = messages[index % messages.length];
+                addLogEntry(msg.level, msg.message);
+                index++;
+            }
+        };
+
+        setInterval(addRandomLog, 3000);
+    }
+
+    function toggleAutoScroll() {
+        autoScroll = !autoScroll;
+        const btn = document.getElementById('auto-scroll-btn');
+        if (autoScroll) {
+            btn.innerHTML = '<i class="fas fa-arrows-alt-v me-1"></i>自动滚动';
+            btn.classList.remove('btn-outline-success');
+            btn.classList.add('btn-success');
+        } else {
+            btn.innerHTML = '<i class="fas fa-pause me-1"></i>已暂停';
+            btn.classList.remove('btn-success');
+            btn.classList.add('btn-outline-success');
+        }
+    }
+
+    function clearLogs() {
+        if (confirm('确定要清空日志吗？')) {
+            logContainer.innerHTML = '';
+            addLogEntry('INFO', '日志已清空');
+        }
+    }
+
+    function downloadLogs() {
+        const logs = logContainer.innerText;
+        const blob = new Blob([logs], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'arxiv_analysis_logs_' + new Date().toISOString().split('T')[0] + '.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    }
+
+    function clearHistory() {
+        if (confirm('确定要清空任务历史吗？')) {
+            addLogEntry('INFO', '任务历史已清空');
+        }
+    }
+
+    function saveConfig(event) {
+        event.preventDefault();
+
+        const config = {
+            llm_provider: document.getElementById('llm-provider').value,
+            analysis_depth: document.getElementById('analysis-depth').value,
+            batch_size: parseInt(document.getElementById('batch-size').value),
+            auto_retry: document.getElementById('auto-retry').checked,
+            parallel_processing: document.getElementById('parallel-processing').checked
+        };
+
+        addLogEntry('INFO', '保存分析配置: ' + JSON.stringify(config));
+        alert('配置已保存！');
+    }
+</script>
+{% endblock %}

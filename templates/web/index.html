@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+
+{% block title %}首页 - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- 统计卡片 -->
+    <div class="col-md-3 mb-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 class="card-title">总论文数</h5>
+                        <h2 class="mb-0">{{ stats.get('total_papers', 0) }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-file-alt fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 class="card-title">已分析</h5>
+                        <h2 class="mb-0">{{ stats.get('analyzed_papers', 0) }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 class="card-title">今日新增</h5>
+                        <h2 class="mb-0">{{ stats.get('today_papers', 0) }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-plus-circle fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h5 class="card-title">分类数</h5>
+                        <h2 class="mb-0">{{ stats.get('categories_count', 0) }}</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-tags fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 快速操作 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-bolt me-2"></i>快速操作
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary" onclick="runAnalysis()">
+                        <i class="fas fa-play me-2"></i>启动分析
+                    </button>
+                    <a href="{{ url_for('papers') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-list me-2"></i>查看论文
+                    </a>
+                    <a href="{{ url_for('statistics') }}" class="btn btn-outline-info">
+                        <i class="fas fa-chart-line me-2"></i>查看统计
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 系统状态 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-heartbeat me-2"></i>系统状态
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <div class="border-end">
+                            <h6 class="text-muted">分析引擎</h6>
+                            <span class="badge bg-success" id="analysis-status">就绪</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-muted">数据源</h6>
+                        <span class="badge bg-success">ArXiv</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <small class="text-muted">
+                        最后更新: {{ stats.get('last_update', '未知') }}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最新论文 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-clock me-2"></i>最新论文
+                </h5>
+                <a href="{{ url_for('papers') }}" class="btn btn-sm btn-outline-primary">查看全部</a>
+            </div>
+            <div class="card-body p-0">
+                {% if recent_papers %}
+                <div class="list-group list-group-flush">
+                    {% for paper in recent_papers %}
+                    <a href="{{ url_for('paper_detail', paper_id=paper.id) }}"
+                        class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1 text-truncate">{{ paper.title[:50] }}...</h6>
+                            <small>{{ paper.published[:10] if paper.published else '' }}</small>
+                        </div>
+                        <p class="mb-1 text-muted small">{{ paper.authors[0] if paper.authors else '未知作者' }}</p>
+                    </a>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="text-center p-4">
+                    <i class="fas fa-inbox fa-2x text-muted mb-2"></i>
+                    <p class="text-muted">暂无论文数据</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 趋势图表 -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-line me-2"></i>论文数量趋势
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="trendChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // 分析状态更新
+    function updateAnalysisStatus() {
+        fetch('/api/analysis_status')
+            .then(response => response.json())
+            .then(data => {
+                const statusElement = document.getElementById('analysis-status');
+                const statusMap = {
+                    'idle': { text: '就绪', class: 'bg-success' },
+                    'running': { text: '运行中', class: 'bg-warning' },
+                    'completed': { text: '完成', class: 'bg-success' },
+                    'error': { text: '错误', class: 'bg-danger' }
+                };
+
+                const status = statusMap[data.status] || statusMap['idle'];
+                statusElement.textContent = status.text;
+                statusElement.className = 'badge ' + status.class;
+            })
+            .catch(error => {
+                console.error('获取分析状态失败:', error);
+            });
+    }
+
+    // 启动分析
+    function runAnalysis() {
+        if (confirm('确定要启动分析任务吗？')) {
+            const button = event.target;
+            const originalText = button.innerHTML;
+
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>启动中...';
+
+            fetch('/api/run_analysis', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    force_update: false
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('分析任务已启动！');
+                        updateAnalysisStatus();
+                    } else {
+                        alert('启动失败: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('启动分析失败:', error);
+                    alert('启动失败: ' + error.message);
+                })
+                .finally(() => {
+                    button.disabled = false;
+                    button.innerHTML = originalText;
+                });
+        }
+    }
+
+    // 初始化趋势图表
+    function initTrendChart() {
+        const ctx = document.getElementById('trendChart').getContext('2d');
+
+        // 模拟数据，实际应该从API获取
+        const data = {
+            labels: [],
+            datasets: [{
+                label: '论文数量',
+                data: [],
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                tension: 0.1
+            }]
+        };
+
+        // 生成最近7天的数据
+        for (let i = 6; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            data.labels.push(date.toISOString().split('T')[0]);
+            data.datasets[0].data.push(Math.floor(Math.random() * 10) + 1);
+        }
+
+        new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function () {
+        updateAnalysisStatus();
+        initTrendChart();
+
+        // 定期更新状态
+        setInterval(updateAnalysisStatus, 30000); // 每30秒更新一次
+    });
+</script>
+{% endblock %}

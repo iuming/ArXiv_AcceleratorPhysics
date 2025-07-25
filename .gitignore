@@ -2,8 +2,12 @@
 logs/
 *.log
 
-# 忽略临时数据，但保留分析结果
+# 忽略临时数据，但保留分析结果示例
 # data/ 注释掉，让分析结果可以被提交
+
+# 临时统计和健康检查文件
+project_stats_*.json
+health_report_*.json
 
 # Python缓存
 __pycache__/

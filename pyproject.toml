@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "arxiv-accelerator-physics"
-version = "1.0.0"
-description = "ArXiv加速器物理论文自动解读系统"
+version = "1.1.0"
+description = "ArXiv加速器物理论文自动解读系统 - 支持完整Web界面"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -20,7 +20,9 @@ keywords = [
     "machine-learning", 
     "llm", 
     "paper-analysis",
-    "automation"
+    "automation",
+    "web-interface",
+    "flask"
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",

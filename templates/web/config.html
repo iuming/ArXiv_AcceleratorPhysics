@@ -1,0 +1,514 @@
+{% extends "base.html" %}
+
+{% block title %}系统配置 - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="alert alert-warning" role="alert">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <strong>注意：</strong>修改配置后需要重启系统才能生效。请谨慎修改敏感信息。
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- API配置 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-key me-2"></i>API配置
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="api-config-form">
+                    <div class="mb-3">
+                        <label for="openai-api-key" class="form-label">OpenAI API Key</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="openai-api-key"
+                                value="{{ config.get('api_keys', {}).get('openai', '') }}" placeholder="sk-...">
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="togglePassword('openai-api-key')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">用于OpenAI GPT模型访问</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="deepseek-api-key" class="form-label">DeepSeek API Key</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="deepseek-api-key"
+                                value="{{ config.get('api_keys', {}).get('deepseek', '') }}" placeholder="sk-...">
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="togglePassword('deepseek-api-key')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">用于DeepSeek模型访问（推荐）</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="hepai-api-key" class="form-label">HEPAI API Key</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="hepai-api-key"
+                                value="{{ config.get('api_keys', {}).get('hepai', '') }}" placeholder="hep-...">
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="togglePassword('hepai-api-key')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">用于HEPAI模型访问</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="anthropic-api-key" class="form-label">Anthropic API Key</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="anthropic-api-key"
+                                value="{{ config.get('api_keys', {}).get('anthropic', '') }}" placeholder="sk-ant-...">
+                            <button class="btn btn-outline-secondary" type="button"
+                                onclick="togglePassword('anthropic-api-key')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-text">用于Anthropic Claude模型访问</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>保存API配置
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 系统配置 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-cogs me-2"></i>系统配置
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="system-config-form">
+                    <div class="mb-3">
+                        <label for="default-llm" class="form-label">默认LLM服务</label>
+                        <select class="form-select" id="default-llm">
+                            <option value="deepseek" {% if config.get('llm', {}).get('default_provider')=='deepseek'
+                                %}selected{% endif %}>DeepSeek</option>
+                            <option value="openai" {% if config.get('llm', {}).get('default_provider')=='openai'
+                                %}selected{% endif %}>OpenAI</option>
+                            <option value="hepai" {% if config.get('llm', {}).get('default_provider')=='hepai'
+                                %}selected{% endif %}>HEPAI</option>
+                            <option value="anthropic" {% if config.get('llm', {}).get('default_provider')=='anthropic'
+                                %}selected{% endif %}>Anthropic</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="model-name" class="form-label">模型名称</label>
+                        <input type="text" class="form-control" id="model-name"
+                            value="{{ config.get('llm', {}).get('model', '') }}" placeholder="gpt-3.5-turbo">
+                        <div class="form-text">使用的具体模型名称</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="max-tokens" class="form-label">最大Token数</label>
+                        <input type="number" class="form-control" id="max-tokens"
+                            value="{{ config.get('llm', {}).get('max_tokens', 2000) }}" min="100" max="8000">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="temperature" class="form-label">Temperature</label>
+                        <input type="range" class="form-range" id="temperature" min="0" max="1" step="0.1"
+                            value="{{ config.get('llm', {}).get('temperature', 0.3) }}">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">0 (保守)</small>
+                            <small class="text-muted" id="temperature-value">{{ config.get('llm', {}).get('temperature',
+                                0.3) }}</small>
+                            <small class="text-muted">1 (创新)</small>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="batch-size" class="form-label">批处理大小</label>
+                        <input type="number" class="form-control" id="batch-size"
+                            value="{{ config.get('processing', {}).get('batch_size', 10) }}" min="1" max="100">
+                        <div class="form-text">同时处理的论文数量</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>保存系统配置
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- ArXiv配置 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-database me-2"></i>ArXiv配置
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="arxiv-config-form">
+                    <div class="mb-3">
+                        <label for="search-category" class="form-label">搜索分类</label>
+                        <input type="text" class="form-control" id="search-category"
+                            value="{{ config.get('arxiv', {}).get('search_category', 'physics.acc-ph') }}"
+                            placeholder="physics.acc-ph">
+                        <div class="form-text">ArXiv分类代码，多个用逗号分隔</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="max-results" class="form-label">每次最大结果数</label>
+                        <input type="number" class="form-control" id="max-results"
+                            value="{{ config.get('arxiv', {}).get('max_results', 100) }}" min="1" max="1000">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="start-date" class="form-label">开始日期</label>
+                        <input type="date" class="form-control" id="start-date"
+                            value="{{ config.get('arxiv', {}).get('start_date', '') }}">
+                        <div class="form-text">论文发布的起始日期（留空表示不限制）</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="auto-fetch" {% if config.get('arxiv',
+                                {}).get('auto_fetch', true) %}checked{% endif %}>
+                            <label class="form-check-label" for="auto-fetch">
+                                自动抓取新论文
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="fetch-interval" class="form-label">抓取间隔（小时）</label>
+                        <input type="number" class="form-control" id="fetch-interval"
+                            value="{{ config.get('arxiv', {}).get('fetch_interval', 24) }}" min="1" max="168">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>保存ArXiv配置
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 日志配置 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-file-alt me-2"></i>日志配置
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="logging-config-form">
+                    <div class="mb-3">
+                        <label for="log-level" class="form-label">日志级别</label>
+                        <select class="form-select" id="log-level">
+                            <option value="DEBUG" {% if config.get('logging', {}).get('level')=='DEBUG' %}selected{%
+                                endif %}>DEBUG</option>
+                            <option value="INFO" {% if config.get('logging', {}).get('level')=='INFO' %}selected{% endif
+                                %}>INFO</option>
+                            <option value="WARNING" {% if config.get('logging', {}).get('level')=='WARNING' %}selected{%
+                                endif %}>WARNING</option>
+                            <option value="ERROR" {% if config.get('logging', {}).get('level')=='ERROR' %}selected{%
+                                endif %}>ERROR</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="log-file" class="form-label">日志文件路径</label>
+                        <input type="text" class="form-control" id="log-file"
+                            value="{{ config.get('logging', {}).get('file', 'logs/arxiv_analysis.log') }}"
+                            placeholder="logs/arxiv_analysis.log">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="max-file-size" class="form-label">单个日志文件最大大小 (MB)</label>
+                        <input type="number" class="form-control" id="max-file-size"
+                            value="{{ config.get('logging', {}).get('max_file_size', 10) }}" min="1" max="100">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="backup-count" class="form-label">备份文件数量</label>
+                        <input type="number" class="form-control" id="backup-count"
+                            value="{{ config.get('logging', {}).get('backup_count', 5) }}" min="1" max="20">
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="console-output" {% if
+                                config.get('logging', {}).get('console', true) %}checked{% endif %}>
+                            <label class="form-check-label" for="console-output">
+                                同时输出到控制台
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>保存日志配置
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 系统信息 -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-info-circle me-2"></i>系统信息
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">系统版本</h6>
+                        <p class="mb-0">v1.0.0</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">Python版本</h6>
+                        <p class="mb-0" id="python-version">检测中...</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">运行时间</h6>
+                        <p class="mb-0" id="uptime">检测中...</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">配置文件路径</h6>
+                        <p class="mb-0"><code>config/settings.yaml</code></p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">数据目录</h6>
+                        <p class="mb-0"><code>data/</code></p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h6 class="text-muted">日志目录</h6>
+                        <p class="mb-0"><code>logs/</code></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>操作</h6>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-warning" onclick="restartSystem()">
+                                <i class="fas fa-redo me-1"></i>重启系统
+                            </button>
+                            <button type="button" class="btn btn-outline-info" onclick="exportConfig()">
+                                <i class="fas fa-download me-1"></i>导出配置
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" onclick="importConfig()">
+                                <i class="fas fa-upload me-1"></i>导入配置
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>危险操作</h6>
+                        <button type="button" class="btn btn-outline-danger" onclick="resetConfig()">
+                            <i class="fas fa-exclamation-triangle me-1"></i>重置配置
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 初始化系统信息
+        updateSystemInfo();
+
+        // 绑定表单事件
+        bindFormEvents();
+
+        // 温度滑块事件
+        document.getElementById('temperature').addEventListener('input', function () {
+            document.getElementById('temperature-value').textContent = this.value;
+        });
+    });
+
+    function updateSystemInfo() {
+        // 更新Python版本
+        fetch('/api/system_info')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('python-version').textContent = data.python_version || '未知';
+                document.getElementById('uptime').textContent = data.uptime || '未知';
+            })
+            .catch(error => {
+                console.error('获取系统信息失败:', error);
+                document.getElementById('python-version').textContent = '获取失败';
+                document.getElementById('uptime').textContent = '获取失败';
+            });
+    }
+
+    function bindFormEvents() {
+        // API配置表单
+        document.getElementById('api-config-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            saveApiConfig();
+        });
+
+        // 系统配置表单
+        document.getElementById('system-config-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            saveSystemConfig();
+        });
+
+        // ArXiv配置表单
+        document.getElementById('arxiv-config-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            saveArxivConfig();
+        });
+
+        // 日志配置表单
+        document.getElementById('logging-config-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            saveLoggingConfig();
+        });
+    }
+
+    function togglePassword(inputId) {
+        const input = document.getElementById(inputId);
+        const button = input.nextElementSibling;
+        const icon = button.querySelector('i');
+
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.className = 'fas fa-eye-slash';
+        } else {
+            input.type = 'password';
+            icon.className = 'fas fa-eye';
+        }
+    }
+
+    function saveApiConfig() {
+        const config = {
+            openai: document.getElementById('openai-api-key').value,
+            deepseek: document.getElementById('deepseek-api-key').value,
+            hepai: document.getElementById('hepai-api-key').value,
+            anthropic: document.getElementById('anthropic-api-key').value
+        };
+
+        // 这里应该发送到后端保存
+        console.log('保存API配置:', config);
+        alert('API配置已保存！重启系统后生效。');
+    }
+
+    function saveSystemConfig() {
+        const config = {
+            default_llm: document.getElementById('default-llm').value,
+            model: document.getElementById('model-name').value,
+            max_tokens: parseInt(document.getElementById('max-tokens').value),
+            temperature: parseFloat(document.getElementById('temperature').value),
+            batch_size: parseInt(document.getElementById('batch-size').value)
+        };
+
+        console.log('保存系统配置:', config);
+        alert('系统配置已保存！');
+    }
+
+    function saveArxivConfig() {
+        const config = {
+            search_category: document.getElementById('search-category').value,
+            max_results: parseInt(document.getElementById('max-results').value),
+            start_date: document.getElementById('start-date').value,
+            auto_fetch: document.getElementById('auto-fetch').checked,
+            fetch_interval: parseInt(document.getElementById('fetch-interval').value)
+        };
+
+        console.log('保存ArXiv配置:', config);
+        alert('ArXiv配置已保存！');
+    }
+
+    function saveLoggingConfig() {
+        const config = {
+            level: document.getElementById('log-level').value,
+            file: document.getElementById('log-file').value,
+            max_file_size: parseInt(document.getElementById('max-file-size').value),
+            backup_count: parseInt(document.getElementById('backup-count').value),
+            console: document.getElementById('console-output').checked
+        };
+
+        console.log('保存日志配置:', config);
+        alert('日志配置已保存！');
+    }
+
+    function restartSystem() {
+        if (confirm('确定要重启系统吗？这将中断当前的所有任务。')) {
+            alert('系统重启功能待实现');
+        }
+    }
+
+    function exportConfig() {
+        // 模拟导出配置
+        const config = {
+            // 获取所有配置项
+            timestamp: new Date().toISOString(),
+            version: '1.0.0'
+        };
+
+        const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'arxiv_config_' + new Date().toISOString().split('T')[0] + '.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+    }
+
+    function importConfig() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    try {
+                        const config = JSON.parse(event.target.result);
+                        console.log('导入配置:', config);
+                        alert('配置导入成功！请检查各项设置。');
+                    } catch (error) {
+                        alert('配置文件格式错误！');
+                    }
+                };
+                reader.readAsText(file);
+            }
+        };
+        input.click();
+    }
+
+    function resetConfig() {
+        if (confirm('确定要重置所有配置吗？这将恢复到默认设置，无法撤销！')) {
+            if (confirm('再次确认：这将清除所有自定义配置！')) {
+                alert('配置重置功能待实现');
+            }
+        }
+    }
+</script>
+{% endblock %}

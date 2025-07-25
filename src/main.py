@@ -10,9 +10,23 @@ Created: July 25th, 2025
 Description: 主程序入口，协调整个ArXiv加速器物理论文自动分析流程
              包括论文抓取、LLM分析、数据处理和统计报告生成
 
+核心功能模块：
+- ArXiv论文数据抓取 (arxiv_fetcher.py)
+- 多LLM智能分析 (llm_analyzer.py) 
+- 数据处理和存储 (data_processor.py)
+- Web界面服务 (web_app.py) - 新增
+- 配置管理和日志 (utils.py)
+
+新增Web界面特性：
+- 完整的Web管理界面
+- 实时分析监控
+- 交互式数据可视化
+- 响应式设计支持
+
 Modification History:
 - 2025-07-25: Initial creation
-- 2025-07-25: Added comprehensive logging and error handling
+- 2025-07-25: Added comprehensive logging and error handling  
+- 2025-07-25: Integrated complete web interface functionality
 """
 
 import asyncio

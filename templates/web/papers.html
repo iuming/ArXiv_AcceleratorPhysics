@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+
+{% block title %}论文列表 - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-file-alt me-2"></i>论文列表
+                            <span class="badge bg-secondary">{{ total_papers }}</span>
+                        </h5>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- 搜索和过滤器 -->
+                        <form method="GET" class="d-flex gap-2">
+                            <select name="category" class="form-select form-select-sm">
+                                <option value="">所有分类</option>
+                                <option value="accelerator" {% if category=='accelerator' %}selected{% endif %}>加速器
+                                </option>
+                                <option value="beam-physics" {% if category=='beam-physics' %}selected{% endif %}>束流物理
+                                </option>
+                                <option value="simulation" {% if category=='simulation' %}selected{% endif %}>模拟计算
+                                </option>
+                                <option value="instrumentation" {% if category=='instrumentation' %}selected{% endif %}>
+                                    仪器设备</option>
+                            </select>
+                            <input type="date" name="date" class="form-control form-control-sm"
+                                value="{{ date_filter }}" placeholder="选择日期">
+                            <button type="submit" class="btn btn-sm btn-primary">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <a href="{{ url_for('papers') }}" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-times"></i>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body p-0">
+                {% if papers %}
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 40%">标题</th>
+                                <th style="width: 20%">作者</th>
+                                <th style="width: 15%">发布日期</th>
+                                <th style="width: 15%">分类</th>
+                                <th style="width: 10%">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for paper in papers %}
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">
+                                                <a href="{{ url_for('paper_detail', paper_id=paper.id) }}"
+                                                    class="text-decoration-none">
+                                                    {{ paper.title }}
+                                                </a>
+                                            </h6>
+                                            {% if paper.summary %}
+                                            <small class="text-muted">
+                                                {{ paper.summary[:100] }}...
+                                            </small>
+                                            {% endif %}
+                                        </div>
+                                        {% if paper.get('analysis') %}
+                                        <span class="badge bg-success ms-2">已分析</span>
+                                        {% else %}
+                                        <span class="badge bg-warning ms-2">待分析</span>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    {% if paper.authors %}
+                                    {% for author in paper.authors[:2] %}
+                                    <div class="small">{{ author }}</div>
+                                    {% endfor %}
+                                    {% if paper.authors|length > 2 %}
+                                    <div class="small text-muted">
+                                        等{{ paper.authors|length }}人
+                                    </div>
+                                    {% endif %}
+                                    {% else %}
+                                    <span class="text-muted">未知</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if paper.published %}
+                                    {{ paper.published[:10] }}
+                                    {% else %}
+                                    <span class="text-muted">未知</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if paper.categories %}
+                                    {% for category in paper.categories[:2] %}
+                                    <span class="badge bg-light text-dark me-1">{{ category }}</span>
+                                    {% endfor %}
+                                    {% else %}
+                                    <span class="text-muted">未分类</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="{{ url_for('paper_detail', paper_id=paper.id) }}"
+                                            class="btn btn-outline-primary" title="查看详情">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        {% if paper.arxiv_url %}
+                                        <a href="{{ paper.arxiv_url }}" target="_blank"
+                                            class="btn btn-outline-secondary" title="ArXiv原文">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 分页 -->
+                {% if total_pages > 1 %}
+                <div class="card-footer">
+                    <nav aria-label="论文列表分页">
+                        <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <!-- 上一页 -->
+                            {% if current_page > 1 %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                    href="{{ url_for('papers', page=current_page-1, category=category, date=date_filter) }}">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            {% else %}
+                            <li class="page-item disabled">
+                                <span class="page-link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                            </li>
+                            {% endif %}
+
+                            <!-- 页码 -->
+                            {% set start_page = [1, current_page - 2]|max %}
+                            {% set end_page = [total_pages, current_page + 2]|min %}
+
+                            {% if start_page > 1 %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                    href="{{ url_for('papers', page=1, category=category, date=date_filter) }}">1</a>
+                            </li>
+                            {% if start_page > 2 %}
+                            <li class="page-item disabled">
+                                <span class="page-link">...</span>
+                            </li>
+                            {% endif %}
+                            {% endif %}
+
+                            {% for page_num in range(start_page, end_page + 1) %}
+                            <li class="page-item {% if page_num == current_page %}active{% endif %}">
+                                <a class="page-link"
+                                    href="{{ url_for('papers', page=page_num, category=category, date=date_filter) }}">
+                                    {{ page_num }}
+                                </a>
+                            </li>
+                            {% endfor %}
+
+                            {% if end_page < total_pages %} {% if end_page < total_pages - 1 %} <li
+                                class="page-item disabled">
+                                <span class="page-link">...</span>
+                                </li>
+                                {% endif %}
+                                <li class="page-item">
+                                    <a class="page-link"
+                                        href="{{ url_for('papers', page=total_pages, category=category, date=date_filter) }}">
+                                        {{ total_pages }}
+                                    </a>
+                                </li>
+                                {% endif %}
+
+                                <!-- 下一页 -->
+                                {% if current_page < total_pages %} <li class="page-item">
+                                    <a class="page-link"
+                                        href="{{ url_for('papers', page=current_page+1, category=category, date=date_filter) }}">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                    </li>
+                                    {% else %}
+                                    <li class="page-item disabled">
+                                        <span class="page-link">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </li>
+                                    {% endif %}
+                        </ul>
+                    </nav>
+
+                    <div class="text-center text-muted small mt-2">
+                        显示第 {{ (current_page - 1) * 20 + 1 }} - {{ [current_page * 20, total_papers]|min }} 条，
+                        共 {{ total_papers }} 条记录
+                    </div>
+                </div>
+                {% endif %}
+                {% else %}
+                <div class="text-center p-5">
+                    <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
+                    <h5 class="text-muted">暂无论文数据</h5>
+                    <p class="text-muted">
+                        {% if category or date_filter %}
+                        没有找到符合条件的论文，请尝试调整筛选条件。
+                        {% else %}
+                        系统中还没有论文数据，请先运行数据抓取任务。
+                        {% endif %}
+                    </p>
+                    {% if not category and not date_filter %}
+                    <a href="{{ url_for('analysis') }}" class="btn btn-primary">
+                        <i class="fas fa-play me-2"></i>开始抓取
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // 高亮搜索结果
+    document.addEventListener('DOMContentLoaded', function () {
+        // 可以在这里添加搜索高亮功能
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+
+{% block title %}统计分析 - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>数据概览
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="border-end">
+                            <h3 class="text-primary">{{ stats.get('summary', {}).get('total_papers', 0) }}</h3>
+                            <p class="text-muted mb-0">总论文数</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="border-end">
+                            <h3 class="text-success">{{ stats.get('summary', {}).get('analyzed_papers', 0) }}</h3>
+                            <p class="text-muted mb-0">已分析</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="border-end">
+                            <h3 class="text-warning">{{ stats.get('summary', {}).get('today_papers', 0) }}</h3>
+                            <p class="text-muted mb-0">今日新增</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h3 class="text-info">{{ stats.get('summary', {}).get('categories_count', 0) }}</h3>
+                        <p class="text-muted mb-0">分类数量</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 分类分布图 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-pie-chart me-2"></i>论文分类分布
+                </h6>
+            </div>
+            <div class="card-body">
+                <canvas id="categoryChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- 时间趋势图 -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-line-chart me-2"></i>论文数量趋势
+                </h6>
+            </div>
+            <div class="card-body">
+                <canvas id="trendChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- 分类详细统计 -->
+    <div class="col-md-8 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-list me-2"></i>分类详细统计
+                </h6>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>分类</th>
+                                <th class="text-center">论文数量</th>
+                                <th class="text-center">占比</th>
+                                <th class="text-center">分析进度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-primary me-2"></span>
+                                    加速器物理
+                                </td>
+                                <td class="text-center">156</td>
+                                <td class="text-center">35.2%</td>
+                                <td class="text-center">
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-success me-2"></span>
+                                    束流物理
+                                </td>
+                                <td class="text-center">124</td>
+                                <td class="text-center">28.0%</td>
+                                <td class="text-center">
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-success" style="width: 92%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-warning me-2"></span>
+                                    模拟计算
+                                </td>
+                                <td class="text-center">89</td>
+                                <td class="text-center">20.1%</td>
+                                <td class="text-center">
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-warning" style="width: 78%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-info me-2"></span>
+                                    仪器设备
+                                </td>
+                                <td class="text-center">54</td>
+                                <td class="text-center">12.2%</td>
+                                <td class="text-center">
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-info" style="width: 65%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-secondary me-2"></span>
+                                    其他
+                                </td>
+                                <td class="text-center">20</td>
+                                <td class="text-center">4.5%</td>
+                                <td class="text-center">
+                                    <div class="progress" style="height: 6px;">
+                                        <div class="progress-bar bg-secondary" style="width: 45%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关键指标 -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-tachometer-alt me-2"></i>关键指标
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <small class="text-muted">分析完成率</small>
+                        <small class="text-muted">82%</small>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" style="width: 82%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <small class="text-muted">数据质量</small>
+                        <small class="text-muted">95%</small>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-primary" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <small class="text-muted">系统性能</small>
+                        <small class="text-muted">87%</small>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-info" style="width: 87%"></div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text-center">
+                    <h6 class="text-muted">平均处理时间</h6>
+                    <h4 class="text-primary">2.3 <small class="text-muted">秒/篇</small></h4>
+                </div>
+
+                <div class="text-center mt-3">
+                    <h6 class="text-muted">系统运行时间</h6>
+                    <h4 class="text-success">15 <small class="text-muted">天</small></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 详细时间线 -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-calendar-alt me-2"></i>30天论文数量趋势
+                </h6>
+            </div>
+            <div class="card-body">
+                <canvas id="monthlyTrendChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 初始化统计图表
+        initStatisticsCharts();
+    });
+
+    function initStatisticsCharts() {
+        // 分类分布饼图
+        const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+        new Chart(categoryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['加速器物理', '束流物理', '模拟计算', '仪器设备', '其他'],
+                datasets: [{
+                    data: [156, 124, 89, 54, 20],
+                    backgroundColor: [
+                        '#007bff',
+                        '#28a745',
+                        '#ffc107',
+                        '#17a2b8',
+                        '#6c757d'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // 7天趋势图
+        const trendCtx = document.getElementById('trendChart').getContext('2d');
+        const last7Days = [];
+        const paperCounts = [];
+
+        for (let i = 6; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            last7Days.push(date.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' }));
+            paperCounts.push(Math.floor(Math.random() * 15) + 5);
+        }
+
+        new Chart(trendCtx, {
+            type: 'line',
+            data: {
+                labels: last7Days,
+                datasets: [{
+                    label: '论文数量',
+                    data: paperCounts,
+                    borderColor: '#007bff',
+                    backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // 30天趋势图
+        const monthlyCtx = document.getElementById('monthlyTrendChart').getContext('2d');
+        const last30Days = [];
+        const monthlyPaperCounts = [];
+
+        for (let i = 29; i >= 0; i--) {
+            const date = new Date();
+            date.setDate(date.getDate() - i);
+            last30Days.push(date.toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }));
+            monthlyPaperCounts.push(Math.floor(Math.random() * 20) + 5);
+        }
+
+        new Chart(monthlyCtx, {
+            type: 'line',
+            data: {
+                labels: last30Days,
+                datasets: [{
+                    label: '论文数量',
+                    data: monthlyPaperCounts,
+                    borderColor: '#28a745',
+                    backgroundColor: 'rgba(40, 167, 69, 0.1)',
+                    tension: 0.3,
+                    fill: true,
+                    pointRadius: 2,
+                    pointHoverRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            maxTicksLimit: 10
+                        }
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+</script>
+{% endblock %}

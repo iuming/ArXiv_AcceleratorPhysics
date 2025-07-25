@@ -1,4 +1,23 @@
 # ArXiv 加速器物理分析系统配置
+# Project: ArXiv_AcceleratorPhysics
+# File: settings.yaml
+# Author: Ming Liu (ming-1018@foxmail.com)
+# Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+# Created: July 25th, 2025
+# Description: 系统核心配置文件
+#
+# 配置范围：
+# - 基本系统参数
+# - 多LLM模型配置  
+# - ArXiv API设置
+# - 分析任务参数
+# - 日志和存储配置
+# - Web界面设置 (v1.1.0新增)
+#
+# 版本: 1.1.0 (支持Web界面)
+# 修改历史:
+# - 2025-07-25: 初始创建
+# - 2025-07-25: 添加Web界面相关配置
 
 # 基本设置
 max_papers_per_day: 20  # 每天最大论文处理数量

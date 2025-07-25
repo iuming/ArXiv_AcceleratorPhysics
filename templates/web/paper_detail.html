@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+
+{% block title %}{{ paper.title }} - ArXiv加速器物理论文分析系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- 返回链接 -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('index') }}">首页</a></li>
+                <li class="breadcrumb-item"><a href="{{ url_for('papers') }}">论文列表</a></li>
+                <li class="breadcrumb-item active" aria-current="page">论文详情</li>
+            </ol>
+        </nav>
+
+        <!-- 论文基本信息 -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                        <h4 class="card-title mb-2">{{ paper.title }}</h4>
+                        <div class="text-muted">
+                            <i class="fas fa-id-card me-1"></i>
+                            论文ID: {{ paper.id }}
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        {% if paper.get('analysis') %}
+                        <span class="badge bg-success">已分析</span>
+                        {% else %}
+                        <span class="badge bg-warning">待分析</span>
+                        {% endif %}
+
+                        {% if paper.arxiv_url %}
+                        <a href="{{ paper.arxiv_url }}" target="_blank" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-1"></i>ArXiv原文
+                        </a>
+                        {% endif %}
+
+                        {% if paper.pdf_url %}
+                        <a href="{{ paper.pdf_url }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-file-pdf me-1"></i>PDF下载
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- 摘要 -->
+                        <h6><i class="fas fa-align-left me-2"></i>摘要</h6>
+                        <p class="text-justify">{{ paper.summary or '暂无摘要' }}</p>
+
+                        <!-- 分类和标签 -->
+                        <div class="mt-3">
+                            <h6><i class="fas fa-tags me-2"></i>分类标签</h6>
+                            {% if paper.categories %}
+                            {% for category in paper.categories %}
+                            <span class="badge bg-light text-dark me-1 mb-1">{{ category }}</span>
+                            {% endfor %}
+                            {% else %}
+                            <span class="text-muted">暂无分类</span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- 作者信息 -->
+                        <h6><i class="fas fa-users me-2"></i>作者</h6>
+                        {% if paper.authors %}
+                        <ul class="list-unstyled">
+                            {% for author in paper.authors %}
+                            <li class="mb-1">{{ author }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p class="text-muted">未知作者</p>
+                        {% endif %}
+
+                        <!-- 发布信息 -->
+                        <hr>
+                        <h6><i class="fas fa-calendar me-2"></i>发布信息</h6>
+                        <table class="table table-sm table-borderless">
+                            <tr>
+                                <td class="text-muted">发布日期:</td>
+                                <td>{{ paper.published[:10] if paper.published else '未知' }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">更新日期:</td>
+                                <td>{{ paper.updated[:10] if paper.updated else '未知' }}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-muted">版本:</td>
+                                <td>{{ paper.version or 'v1' }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI分析结果 -->
+        {% if paper.get('analysis') %}
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-brain me-2"></i>AI分析结果
+                </h5>
+            </div>
+            <div class="card-body">
+                {% set analysis = paper.analysis %}
+
+                <div class="row">
+                    <!-- 研究领域分类 -->
+                    <div class="col-md-6 mb-3">
+                        <h6><i class="fas fa-microscope me-2"></i>研究领域</h6>
+                        {% if analysis.get('research_field') %}
+                        <span class="badge bg-primary">{{ analysis.research_field }}</span>
+                        {% else %}
+                        <span class="text-muted">未分类</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- 技术类型 -->
+                    <div class="col-md-6 mb-3">
+                        <h6><i class="fas fa-cog me-2"></i>技术类型</h6>
+                        {% if analysis.get('technology_type') %}
+                        <span class="badge bg-info">{{ analysis.technology_type }}</span>
+                        {% else %}
+                        <span class="text-muted">未分类</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- 关键技术 -->
+                {% if analysis.get('key_technologies') %}
+                <div class="mb-3">
+                    <h6><i class="fas fa-key me-2"></i>关键技术</h6>
+                    {% for tech in analysis.key_technologies %}
+                    <span class="badge bg-success me-1 mb-1">{{ tech }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <!-- 技术总结 -->
+                {% if analysis.get('summary') %}
+                <div class="mb-3">
+                    <h6><i class="fas fa-lightbulb me-2"></i>技术总结</h6>
+                    <div class="bg-light p-3 rounded">
+                        <p class="mb-0">{{ analysis.summary }}</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- 创新点 -->
+                {% if analysis.get('innovations') %}
+                <div class="mb-3">
+                    <h6><i class="fas fa-star me-2"></i>主要创新点</h6>
+                    <ul class="list-group list-group-flush">
+                        {% for innovation in analysis.innovations %}
+                        <li class="list-group-item border-0 px-0">
+                            <i class="fas fa-chevron-right me-2 text-primary"></i>{{ innovation }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- 应用前景 -->
+                {% if analysis.get('applications') %}
+                <div class="mb-3">
+                    <h6><i class="fas fa-rocket me-2"></i>应用前景</h6>
+                    <ul class="list-group list-group-flush">
+                        {% for app in analysis.applications %}
+                        <li class="list-group-item border-0 px-0">
+                            <i class="fas fa-arrow-right me-2 text-success"></i>{{ app }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- 分析元信息 -->
+                <div class="mt-4 pt-3 border-top">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <small class="text-muted">
+                                <i class="fas fa-robot me-1"></i>
+                                分析模型: {{ analysis.get('model', '未知') }}
+                            </small>
+                        </div>
+                        <div class="col-md-4">
+                            <small class="text-muted">
+                                <i class="fas fa-clock me-1"></i>
+                                分析时间: {{ analysis.get('analyzed_at', '未知')[:19] if analysis.get('analyzed_at') else '未知'
+                                }}
+                            </small>
+                        </div>
+                        <div class="col-md-4">
+                            <small class="text-muted">
+                                <i class="fas fa-gauge me-1"></i>
+                                置信度: {{ (analysis.get('confidence', 0) * 100)|round(1) }}%
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <!-- 未分析状态 -->
+        <div class="card mb-4">
+            <div class="card-body text-center">
+                <i class="fas fa-brain fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted">该论文尚未进行AI分析</h5>
+                <p class="text-muted">点击下方按钮对该论文进行AI分析，获取详细的技术解读。</p>
+                <button type="button" class="btn btn-primary" onclick="analyzePaper('{{ paper.id }}')">
+                    <i class="fas fa-play me-2"></i>开始分析
+                </button>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- 相关论文推荐 -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-link me-2"></i>相关论文推荐
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="text-center text-muted">
+                    <i class="fas fa-search fa-2x mb-2"></i>
+                    <p>相关论文推荐功能开发中...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // 分析单篇论文
+    function analyzePaper(paperId) {
+        if (confirm('确定要分析这篇论文吗？')) {
+            const button = event.target;
+            const originalText = button.innerHTML;
+
+            button.disabled = true;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>分析中...';
+
+            // 这里可以实现单篇论文分析的API调用
+            // 暂时使用模拟
+            setTimeout(() => {
+                alert('分析完成！页面将刷新显示结果。');
+                window.location.reload();
+            }, 3000);
+        }
+    }
+
+    // 复制论文链接
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => alert('链接已复制到剪贴板'))
+            .catch(() => alert('复制失败，请手动复制链接'));
+    }
+</script>
+{% endblock %}
