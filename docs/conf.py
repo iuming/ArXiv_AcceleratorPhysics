@@ -23,23 +23,16 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
     'sphinx.ext.autosummary',
-    'myst_parser',
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '*.md']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-
-# -- MyST-Parser configuration -----------------------------------------------
-source_suffix = {
-    '.rst': None,
-    '.md': 'myst_parser',
-}
 
 # -- Autodoc configuration ---------------------------------------------------
 autodoc_default_options = {

@@ -42,7 +42,6 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
     "aiohttp>=3.8.0",
-    "asyncio",
     "openai>=1.0.0",
     "anthropic>=0.18.0",
     "PyYAML>=6.0",
@@ -87,13 +86,14 @@ Documentation = "https://github.com/iuming/ArXiv_AcceleratorPhysics/blob/main/RE
 Changelog = "https://github.com/iuming/ArXiv_AcceleratorPhysics/blob/main/CHANGELOG.md"
 
 [project.scripts]
-arxiv-analyzer = "src.main:main"
+arxiv-analyzer = "main:cli_main"
 
 [tool.setuptools]
-packages = ["src"]
+packages = {find = {where = ["src"]}}
+package-dir = {"" = "src"}
 
 [tool.setuptools.package-data]
-src = ["*.yaml", "*.txt", "*.json"]
+"*" = ["*.yaml", "*.txt", "*.json"]
 
 [tool.black]
 line-length = 88
