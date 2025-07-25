@@ -1,0 +1,656 @@
+name: Deploy Web Demo to GitHub Pages
+
+# 在推送到main分支或手动触发时运行
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # 允许手动触发
+
+# 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许一个并发部署，跳过正在运行的部署队列中的运行
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 构建Web演示
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build static web demo
+        run: |
+          # 创建演示页面目录
+          mkdir -p demo
+          mkdir -p demo/static
+          mkdir -p demo/assets
+          
+          # 复制静态资源
+          cp -r static/* demo/static/
+          cp -r templates/web/* demo/
+          
+          # 生成静态演示数据
+          python << 'EOF'
+          import json
+          import os
+          from datetime import datetime, timedelta
+          
+          # 创建演示数据
+          demo_data = {
+              "stats": {
+                  "total_papers": 443,
+                  "analyzed_papers": 365,
+                  "today_papers": 12,
+                  "categories_count": 5,
+                  "last_update": "2025-07-25 15:30:00"
+              },
+              "recent_papers": [
+                  {
+                      "id": "2507.18310v1",
+                      "title": "Advanced Beam Dynamics Simulation for High-Energy Accelerators",
+                      "authors": ["Dr. Smith", "Prof. Johnson"],
+                      "published": "2025-07-25",
+                      "categories": ["physics.acc-ph"],
+                      "summary": "This paper presents a comprehensive study of beam dynamics..."
+                  },
+                  {
+                      "id": "2507.18226v1", 
+                      "title": "Novel Superconducting Cavity Design for Linear Accelerators",
+                      "authors": ["Dr. Chen", "Dr. Wang"],
+                      "published": "2025-07-24",
+                      "categories": ["physics.acc-ph"],
+                      "summary": "We propose an innovative superconducting cavity design..."
+                  },
+                  {
+                      "id": "2502.10740v3",
+                      "title": "Machine Learning Applications in Accelerator Physics",
+                      "authors": ["Prof. Davis", "Dr. Wilson"],
+                      "published": "2025-07-23", 
+                      "categories": ["physics.acc-ph", "cs.LG"],
+                      "summary": "This work explores the application of machine learning..."
+                  }
+              ]
+          }
+          
+          # 保存演示数据
+          with open('demo/assets/demo-data.json', 'w') as f:
+              json.dump(demo_data, f, indent=2)
+          EOF
+
+      - name: Create demo HTML files
+        run: |
+          # 创建演示主页
+          cat > demo/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>ArXiv加速器物理论文分析系统 - Web界面演示</title>
+              
+              <!-- Bootstrap CSS -->
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+              <!-- Font Awesome -->
+              <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+              <!-- Chart.js -->
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <!-- 自定义CSS -->
+              <link href="static/css/style.css" rel="stylesheet">
+              
+              <style>
+              .demo-banner {
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  color: white;
+                  padding: 20px 0;
+                  margin-bottom: 30px;
+              }
+              .demo-nav {
+                  background: #f8f9fa;
+                  padding: 15px 0;
+                  margin: 20px 0;
+                  border-radius: 10px;
+              }
+              </style>
+          </head>
+          <body>
+              <!-- 演示横幅 -->
+              <div class="demo-banner">
+                  <div class="container text-center">
+                      <h1><i class="fas fa-atom me-2"></i>ArXiv加速器物理论文分析系统</h1>
+                      <h3>Web界面演示 v1.1.0</h3>
+                      <p class="lead">基于Flask + Bootstrap 5的现代化Web管理界面</p>
+                      <div class="row justify-content-center mt-4">
+                          <div class="col-md-8">
+                              <div class="alert alert-info">
+                                  <i class="fas fa-info-circle me-2"></i>
+                                  <strong>演示说明:</strong> 这是一个静态演示版本，展示Web界面的设计和功能。完整版本支持实时数据交互和分析功能。
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- 导航栏 -->
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                  <div class="container">
+                      <a class="navbar-brand" href="#home">
+                          <i class="fas fa-atom me-2"></i>ArXiv分析系统
+                      </a>
+                      <div class="navbar-nav">
+                          <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>首页</a>
+                          <a class="nav-link" href="#papers"><i class="fas fa-file-alt me-1"></i>论文</a>
+                          <a class="nav-link" href="#statistics"><i class="fas fa-chart-bar me-1"></i>统计</a>
+                          <a class="nav-link" href="#analysis"><i class="fas fa-cogs me-1"></i>分析</a>
+                          <a class="nav-link" href="#config"><i class="fas fa-sliders-h me-1"></i>配置</a>
+                      </div>
+                  </div>
+              </nav>
+              
+              <!-- 快速导航 -->
+              <div class="container">
+                  <div class="demo-nav">
+                      <div class="row text-center">
+                          <div class="col-md-12">
+                              <h5><i class="fas fa-compass me-2"></i>界面导航</h5>
+                              <div class="btn-group" role="group">
+                                  <button type="button" class="btn btn-outline-primary" onclick="showPage('home')">
+                                      <i class="fas fa-home me-1"></i>首页仪表板
+                                  </button>
+                                  <button type="button" class="btn btn-outline-primary" onclick="showPage('papers')">
+                                      <i class="fas fa-file-alt me-1"></i>论文管理
+                                  </button>
+                                  <button type="button" class="btn btn-outline-primary" onclick="showPage('statistics')">
+                                      <i class="fas fa-chart-bar me-1"></i>统计分析
+                                  </button>
+                                  <button type="button" class="btn btn-outline-primary" onclick="showPage('analysis')">
+                                      <i class="fas fa-cogs me-1"></i>分析管理
+                                  </button>
+                                  <button type="button" class="btn btn-outline-primary" onclick="showPage('config')">
+                                      <i class="fas fa-sliders-h me-1"></i>系统配置
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- 页面内容区域 -->
+                  <div id="page-content">
+                      <!-- 首页内容会通过JavaScript加载 -->
+                  </div>
+              </div>
+              
+              <!-- 页脚 -->
+              <footer class="bg-light text-center py-3 mt-5">
+                  <div class="container">
+                      <p class="text-muted mb-0">
+                          &copy; 2025 ArXiv加速器物理论文分析系统 v1.1.0 |
+                          <a href="https://github.com/iuming/ArXiv_AcceleratorPhysics" target="_blank" class="text-decoration-none">
+                              <i class="fab fa-github"></i> GitHub
+                          </a> |
+                          <a href="https://code.ihep.ac.cn/mliu/ArXiv_AcceleratorPhysics" target="_blank" class="text-decoration-none">
+                              <i class="fab fa-gitlab"></i> IHEP GitLab
+                          </a>
+                      </p>
+                      <small class="text-muted">
+                          <i class="fas fa-flask me-1"></i>技术栈: Flask + Bootstrap 5 + Chart.js + Font Awesome
+                      </small>
+                  </div>
+              </footer>
+              
+              <!-- JavaScript -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script>
+                  let demoData = {};
+                  
+                  // 加载演示数据
+                  fetch('assets/demo-data.json')
+                      .then(response => response.json())
+                      .then(data => {
+                          demoData = data;
+                          showPage('home'); // 默认显示首页
+                      })
+                      .catch(error => {
+                          console.error('加载演示数据失败:', error);
+                          showPage('home'); // 即使失败也显示首页
+                      });
+                  
+                  function showPage(page) {
+                      const content = document.getElementById('page-content');
+                      
+                      switch(page) {
+                          case 'home':
+                              content.innerHTML = getHomePageHTML();
+                              initHomeCharts();
+                              break;
+                          case 'papers':
+                              content.innerHTML = getPapersPageHTML();
+                              break;
+                          case 'statistics':
+                              content.innerHTML = getStatisticsPageHTML();
+                              setTimeout(initStatisticsCharts, 100);
+                              break;
+                          case 'analysis':
+                              content.innerHTML = getAnalysisPageHTML();
+                              break;
+                          case 'config':
+                              content.innerHTML = getConfigPageHTML();
+                              break;
+                      }
+                      
+                      // 更新导航激活状态
+                      document.querySelectorAll('.nav-link').forEach(link => {
+                          link.classList.remove('active');
+                      });
+                      document.querySelector(`[href="#${page}"]`).classList.add('active');
+                  }
+                  
+                  function getHomePageHTML() {
+                      const stats = demoData.stats || {};
+                      return `
+                      <div class="row">
+                          <div class="col-md-3 mb-4">
+                              <div class="card bg-primary text-white">
+                                  <div class="card-body">
+                                      <div class="d-flex justify-content-between">
+                                          <div>
+                                              <h5 class="card-title">总论文数</h5>
+                                              <h2 class="mb-0">${stats.total_papers || 0}</h2>
+                                          </div>
+                                          <div class="align-self-center">
+                                              <i class="fas fa-file-alt fa-2x"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-4">
+                              <div class="card bg-success text-white">
+                                  <div class="card-body">
+                                      <div class="d-flex justify-content-between">
+                                          <div>
+                                              <h5 class="card-title">已分析</h5>
+                                              <h2 class="mb-0">${stats.analyzed_papers || 0}</h2>
+                                          </div>
+                                          <div class="align-self-center">
+                                              <i class="fas fa-check-circle fa-2x"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-4">
+                              <div class="card bg-warning text-white">
+                                  <div class="card-body">
+                                      <div class="d-flex justify-content-between">
+                                          <div>
+                                              <h5 class="card-title">今日新增</h5>
+                                              <h2 class="mb-0">${stats.today_papers || 0}</h2>
+                                          </div>
+                                          <div class="align-self-center">
+                                              <i class="fas fa-plus-circle fa-2x"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3 mb-4">
+                              <div class="card bg-info text-white">
+                                  <div class="card-body">
+                                      <div class="d-flex justify-content-between">
+                                          <div>
+                                              <h5 class="card-title">分类数</h5>
+                                              <h2 class="mb-0">${stats.categories_count || 0}</h2>
+                                          </div>
+                                          <div class="align-self-center">
+                                              <i class="fas fa-tags fa-2x"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="col-md-8 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-chart-line me-2"></i>论文数量趋势
+                                      </h5>
+                                  </div>
+                                  <div class="card-body">
+                                      <canvas id="trendChart" height="100"></canvas>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-clock me-2"></i>最新论文
+                                      </h5>
+                                  </div>
+                                  <div class="card-body p-0">
+                                      <div class="list-group list-group-flush">
+                                          ${(demoData.recent_papers || []).map(paper => `
+                                              <div class="list-group-item">
+                                                  <h6 class="mb-1">${paper.title.substring(0, 50)}...</h6>
+                                                  <p class="mb-1 text-muted small">${paper.authors[0]}</p>
+                                                  <small>${paper.published}</small>
+                                              </div>
+                                          `).join('')}
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>`;
+                  }
+                  
+                  function getPapersPageHTML() {
+                      return `
+                      <div class="card">
+                          <div class="card-header">
+                              <h5 class="card-title mb-0">
+                                  <i class="fas fa-file-alt me-2"></i>论文列表
+                                  <span class="badge bg-secondary">${(demoData.recent_papers || []).length}</span>
+                              </h5>
+                          </div>
+                          <div class="card-body">
+                              <div class="table-responsive">
+                                  <table class="table table-hover">
+                                      <thead class="table-light">
+                                          <tr>
+                                              <th>标题</th>
+                                              <th>作者</th>
+                                              <th>发布日期</th>
+                                              <th>分类</th>
+                                              <th>状态</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          ${(demoData.recent_papers || []).map(paper => `
+                                              <tr>
+                                                  <td>
+                                                      <h6 class="mb-1">${paper.title}</h6>
+                                                      <small class="text-muted">${paper.summary.substring(0, 100)}...</small>
+                                                  </td>
+                                                  <td>${paper.authors.join(', ')}</td>
+                                                  <td>${paper.published}</td>
+                                                  <td>
+                                                      ${paper.categories.map(cat => `<span class="badge bg-light text-dark me-1">${cat}</span>`).join('')}
+                                                  </td>
+                                                  <td><span class="badge bg-success">已分析</span></td>
+                                              </tr>
+                                          `).join('')}
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>`;
+                  }
+                  
+                  function getStatisticsPageHTML() {
+                      return `
+                      <div class="row">
+                          <div class="col-md-6 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h6 class="card-title mb-0">
+                                          <i class="fas fa-pie-chart me-2"></i>论文分类分布
+                                      </h6>
+                                  </div>
+                                  <div class="card-body">
+                                      <canvas id="categoryChart" height="300"></canvas>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h6 class="card-title mb-0">
+                                          <i class="fas fa-line-chart me-2"></i>时间趋势分析
+                                      </h6>
+                                  </div>
+                                  <div class="card-body">
+                                      <canvas id="timeChart" height="300"></canvas>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>`;
+                  }
+                  
+                  function getAnalysisPageHTML() {
+                      return `
+                      <div class="row">
+                          <div class="col-md-4 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-play-circle me-2"></i>快速操作
+                                      </h5>
+                                  </div>
+                                  <div class="card-body">
+                                      <div class="d-grid gap-2">
+                                          <button class="btn btn-primary">
+                                              <i class="fas fa-play me-2"></i>启动分析
+                                          </button>
+                                          <button class="btn btn-warning">
+                                              <i class="fas fa-redo me-2"></i>强制重新分析
+                                          </button>
+                                          <button class="btn btn-info">
+                                              <i class="fas fa-download me-2"></i>抓取新论文
+                                          </button>
+                                          <button class="btn btn-success">
+                                              <i class="fas fa-chart-line me-2"></i>生成报告
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-8 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-terminal me-2"></i>实时日志
+                                      </h5>
+                                  </div>
+                                  <div class="card-body">
+                                      <div class="bg-dark text-light p-3" style="height: 300px; overflow-y: auto; font-family: 'Courier New', monospace;">
+                                          <div>[2025-07-25 15:30:01] <span class="text-info">[INFO]</span> 系统启动完成</div>
+                                          <div>[2025-07-25 15:30:02] <span class="text-info">[INFO]</span> Web界面服务器启动，监听端口 5000</div>
+                                          <div>[2025-07-25 15:30:03] <span class="text-info">[INFO]</span> 数据库连接正常</div>
+                                          <div>[2025-07-25 15:30:04] <span class="text-warning">[WARN]</span> 检测到 3 篇论文需要重新分析</div>
+                                          <div>[2025-07-25 15:30:05] <span class="text-info">[INFO]</span> 准备就绪，等待用户操作</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>`;
+                  }
+                  
+                  function getConfigPageHTML() {
+                      return `
+                      <div class="row">
+                          <div class="col-md-6 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-key me-2"></i>API配置
+                                      </h5>
+                                  </div>
+                                  <div class="card-body">
+                                      <form>
+                                          <div class="mb-3">
+                                              <label class="form-label">OpenAI API Key</label>
+                                              <input type="password" class="form-control" placeholder="sk-...">
+                                          </div>
+                                          <div class="mb-3">
+                                              <label class="form-label">DeepSeek API Key</label>
+                                              <input type="password" class="form-control" placeholder="sk-...">
+                                          </div>
+                                          <div class="mb-3">
+                                              <label class="form-label">HEPAI API Key</label>
+                                              <input type="password" class="form-control" placeholder="hep-...">
+                                          </div>
+                                          <button type="button" class="btn btn-primary">保存配置</button>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h5 class="card-title mb-0">
+                                          <i class="fas fa-info-circle me-2"></i>系统信息
+                                      </h5>
+                                  </div>
+                                  <div class="card-body">
+                                      <table class="table table-sm">
+                                          <tr><td>系统版本</td><td>v1.1.0</td></tr>
+                                          <tr><td>Python版本</td><td>3.9.x</td></tr>
+                                          <tr><td>Flask版本</td><td>2.3.x</td></tr>
+                                          <tr><td>运行时间</td><td>15 天</td></tr>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>`;
+                  }
+                  
+                  function initHomeCharts() {
+                      const ctx = document.getElementById('trendChart');
+                      if (!ctx) return;
+                      
+                      const labels = [];
+                      const data = [];
+                      for (let i = 6; i >= 0; i--) {
+                          const date = new Date();
+                          date.setDate(date.getDate() - i);
+                          labels.push(date.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' }));
+                          data.push(Math.floor(Math.random() * 15) + 5);
+                      }
+                      
+                      new Chart(ctx, {
+                          type: 'line',
+                          data: {
+                              labels: labels,
+                              datasets: [{
+                                  label: '论文数量',
+                                  data: data,
+                                  borderColor: '#007bff',
+                                  backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                                  tension: 0.4,
+                                  fill: true
+                              }]
+                          },
+                          options: {
+                              responsive: true,
+                              maintainAspectRatio: false,
+                              plugins: { legend: { display: false } },
+                              scales: { y: { beginAtZero: true } }
+                          }
+                      });
+                  }
+                  
+                  function initStatisticsCharts() {
+                      // 分类分布图
+                      const categoryCtx = document.getElementById('categoryChart');
+                      if (categoryCtx) {
+                          new Chart(categoryCtx, {
+                              type: 'doughnut',
+                              data: {
+                                  labels: ['加速器物理', '束流物理', '模拟计算', '仪器设备', '其他'],
+                                  datasets: [{
+                                      data: [156, 124, 89, 54, 20],
+                                      backgroundColor: ['#007bff', '#28a745', '#ffc107', '#17a2b8', '#6c757d']
+                                  }]
+                              },
+                              options: {
+                                  responsive: true,
+                                  maintainAspectRatio: false,
+                                  plugins: { legend: { position: 'bottom' } }
+                              }
+                          });
+                      }
+                      
+                      // 时间趋势图
+                      const timeCtx = document.getElementById('timeChart');
+                      if (timeCtx) {
+                          const timeLabels = [];
+                          const timeData = [];
+                          for (let i = 29; i >= 0; i--) {
+                              const date = new Date();
+                              date.setDate(date.getDate() - i);
+                              timeLabels.push(date.toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }));
+                              timeData.push(Math.floor(Math.random() * 20) + 5);
+                          }
+                          
+                          new Chart(timeCtx, {
+                              type: 'line',
+                              data: {
+                                  labels: timeLabels,
+                                  datasets: [{
+                                      label: '论文数量',
+                                      data: timeData,
+                                      borderColor: '#28a745',
+                                      backgroundColor: 'rgba(40, 167, 69, 0.1)',
+                                      tension: 0.3,
+                                      fill: true
+                                  }]
+                              },
+                              options: {
+                                  responsive: true,
+                                  maintainAspectRatio: false,
+                                  plugins: { legend: { display: false } },
+                                  scales: {
+                                      x: { ticks: { maxTicksLimit: 10 } },
+                                      y: { beginAtZero: true }
+                                  }
+                              }
+                          });
+                      }
+                  }
+              </script>
+          </body>
+          </html>
+          EOF
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './demo'
+
+  # 部署到GitHub Pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
