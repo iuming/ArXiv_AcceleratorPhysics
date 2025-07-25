@@ -39,8 +39,11 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        # 添加新生成的文件
-        git add data/
+        # 创建data目录（如果不存在）
+        mkdir -p data/papers data/analysis data/statistics
+        
+        # 添加新生成的文件，强制添加即使被.gitignore忽略
+        git add -f data/ || echo "No data directory to add"
         
         # 检查是否有更改
         if git diff --staged --quiet; then
