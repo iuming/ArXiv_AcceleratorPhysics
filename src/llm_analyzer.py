@@ -29,11 +29,22 @@ class LLMAnalyzer:
         self.openai_client = None
         self.anthropic_client = None
         
-        # 配置OpenAI
+        # 配置OpenAI兼容的API（包括DeepSeek）
         if OPENAI_AVAILABLE and os.getenv('OPENAI_API_KEY'):
-            openai.api_key = os.getenv('OPENAI_API_KEY')
-            self.openai_client = openai
-            self.logger.info("✅ OpenAI客户端初始化成功")
+            # 检查是否使用DeepSeek API
+            api_key = os.getenv('OPENAI_API_KEY')
+            if api_key.startswith('sk-') and 'deepseek' not in api_key.lower():
+                # 标准OpenAI API
+                openai.api_key = api_key
+                openai.api_base = "https://api.openai.com/v1"
+                self.openai_client = openai
+                self.logger.info("✅ OpenAI客户端初始化成功")
+            else:
+                # DeepSeek或其他兼容API
+                openai.api_key = api_key
+                openai.api_base = "https://api.deepseek.com/v1"
+                self.openai_client = openai
+                self.logger.info("✅ DeepSeek API客户端初始化成功")
         elif OPENAI_AVAILABLE:
             self.logger.warning("⚠️  OPENAI_API_KEY环境变量未设置")
         else:
@@ -50,7 +61,8 @@ class LLMAnalyzer:
         
         if not self.openai_client and not self.anthropic_client:
             self.logger.error("❌ 没有可用的LLM客户端！请设置API密钥：")
-            self.logger.error("   - OPENAI_API_KEY (必需)")
+            self.logger.error("   - DEEPSEEK_API_KEY (推荐，性价比高)")
+            self.logger.error("   - OPENAI_API_KEY (备用)")
             self.logger.error("   - ANTHROPIC_API_KEY (可选备用)")
             self.logger.error("   在GitHub仓库Settings -> Secrets中设置这些密钥")
         
@@ -226,10 +238,27 @@ class LLMAnalyzer:
         raise Exception("所有LLM服务都不可用")
     
     async def _call_openai(self, prompt: str, max_tokens: int) -> str:
-        """调用OpenAI API"""
+        """调用OpenAI兼容API（包括DeepSeek）"""
         try:
-            response = await self.openai_client.ChatCompletion.acreate(
-                model=self.config.get('openai_model', 'gpt-3.5-turbo'),
+            # 使用新版本的OpenAI客户端语法
+            from openai import OpenAI
+            
+            # 创建客户端
+            api_key = os.getenv('OPENAI_API_KEY')
+            if 'deepseek' in api_key.lower() or os.getenv('DEEPSEEK_API_KEY'):
+                # DeepSeek API
+                client = OpenAI(
+                    api_key=os.getenv('DEEPSEEK_API_KEY') or api_key,
+                    base_url="https://api.deepseek.com/v1"
+                )
+                model = self.config.get('deepseek_model', 'deepseek-chat')
+            else:
+                # 标准OpenAI API
+                client = OpenAI(api_key=api_key)
+                model = self.config.get('openai_model', 'gpt-3.5-turbo')
+            
+            response = client.chat.completions.create(
+                model=model,
                 messages=[
                     {"role": "system", "content": "你是一个专业的加速器物理学专家，擅长分析和解读科学论文。"},
                     {"role": "user", "content": prompt}
@@ -241,7 +270,7 @@ class LLMAnalyzer:
             return response.choices[0].message.content.strip()
             
         except Exception as e:
-            self.logger.error(f"OpenAI API调用错误: {e}")
+            self.logger.error(f"API调用错误: {e}")
             raise
     
     async def _call_anthropic(self, prompt: str, max_tokens: int) -> str:

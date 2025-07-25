@@ -15,14 +15,21 @@
 
 ### 步骤1: 获取API密钥
 
-**推荐选项 - OpenAI API**：
+**推荐选项 - DeepSeek API（性价比最高）**：
+1. 访问 [DeepSeek Platform](https://platform.deepseek.com/)
+2. 注册/登录账户
+3. 进入 API Keys 页面
+4. 创建新的API密钥
+5. 复制密钥（格式类似：`sk-...`）
+
+**备用选项1 - OpenAI API**：
 1. 访问 [OpenAI Platform](https://platform.openai.com/)
 2. 注册/登录账户
 3. 进入 API Keys 页面
 4. 创建新的API密钥
 5. 复制密钥（格式类似：`sk-proj-...`）
 
-**备用选项 - Anthropic API**：
+**备用选项2 - Anthropic API**：
 1. 访问 [Anthropic Console](https://console.anthropic.com/)
 2. 注册/登录账户
 3. 创建API密钥
@@ -44,7 +51,12 @@
 
 5. **设置密钥信息**：
    
-   **对于OpenAI** (推荐)：
+   **对于DeepSeek** (推荐，性价比最高)：
+   - Name: `DEEPSEEK_API_KEY`
+   - Secret: 粘贴你的DeepSeek API密钥
+   - 点击 "Add secret"
+   
+   **对于OpenAI** (备用)：
    - Name: `OPENAI_API_KEY`
    - Secret: 粘贴你的OpenAI API密钥
    - 点击 "Add secret"
@@ -71,6 +83,12 @@
    - 查看Actions日志确认无错误
 
 ## 💰 API费用说明
+
+### DeepSeek API费用（推荐）：
+- **deepseek-chat**: ~$0.0001-0.0003 每次分析
+- **每日20篇论文**: 约$0.002-0.006/天
+- **月费用**: 约$0.06-0.18/月
+- **🏆 性价比最高，比OpenAI便宜10-20倍**
 
 ### OpenAI API费用：
 - **GPT-3.5-turbo**: ~$0.001-0.002 每次分析
