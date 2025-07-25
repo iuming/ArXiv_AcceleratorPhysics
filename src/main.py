@@ -4,15 +4,7 @@
 Project: ArXiv_AcceleratorPhysics
 File: main.py
 Author: Ming Liu
-Email: ming-1018@foxm        logger.error(f"严重错误: {e}")
-        raise
-
-def cli_main():
-    """命令行入口点函数"""
-    asyncio.run(main())
-
-if __name__ == "__main__":
-    cli_main()om
+Email: ming-1018@foxmail.com
 Institution: Institute of High Energy Physics, Chinese Academy of Sciences
 Created: July 25th, 2025
 Description: 主程序入口，协调整个ArXiv加速器物理论文自动分析流程
