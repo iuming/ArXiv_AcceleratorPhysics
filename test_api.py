@@ -1,3 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: test_api.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: API连接测试脚本，用于测试DeepSeek和HEPAI等LLM服务的连通性
+             确保API配置正确和服务可用性
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added comprehensive API testing
+"""
+
 """
 测试DeepSeek和HEPAI API连接
 """

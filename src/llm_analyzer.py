@@ -1,3 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: llm_analyzer.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: LLM分析器模块，支持多种LLM服务(DeepSeek、HEPAI、OpenAI、Anthropic)
+             用于分析ArXiv论文内容，提供智能分类和内容解读
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added multi-LLM provider support
+- 2025-07-25: Implemented fallback mechanism for API failures
+"""
+
 """
 LLM分析器 - 使用多种LLM服务分析ArXiv论文
 支持DeepSeek、HEPAI、OpenAI、Anthropic

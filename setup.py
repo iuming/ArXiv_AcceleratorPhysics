@@ -1,4 +1,20 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: setup.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: 项目初始化和环境配置脚本，自动创建目录结构、安装依赖
+             和配置运行环境
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added comprehensive environment setup
+"""
+
 """
 ArXiv 加速器物理分析系统初始化脚本
 """

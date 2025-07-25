@@ -1,3 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: main.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: 主程序入口，协调整个ArXiv加速器物理论文自动分析流程
+             包括论文抓取、LLM分析、数据处理和统计报告生成
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added comprehensive logging and error handling
+"""
+
 import asyncio
 import os
 import sys

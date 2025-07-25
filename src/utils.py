@@ -1,3 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: utils.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: 工具函数模块，提供日志配置、配置文件加载、错误处理等通用功能
+             为整个项目提供基础设施支持
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added comprehensive logging setup
+- 2025-07-25: Implemented configuration management
+"""
+
 import logging
 import os
 import yaml

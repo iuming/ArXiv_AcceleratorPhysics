@@ -1,3 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: arxiv_fetcher.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: ArXiv论文抓取模块，专门用于抓取加速器物理分类(physics.acc-ph)
+             的最新论文，支持异步操作和智能去重
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added async support and duplicate detection
+"""
+
 import aiohttp
 import asyncio
 import xml.etree.ElementTree as ET

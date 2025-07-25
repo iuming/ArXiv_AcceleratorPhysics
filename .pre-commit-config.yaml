@@ -1,0 +1,134 @@
+# Pre-commit hooks configuration
+# 在提交前自动运行代码质量检查
+
+repos:
+  # Python代码格式化
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+        language_version: python3
+        args: [--line-length=88]
+
+  # Import排序
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: [--profile=black]
+
+  # 代码质量检查
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: [--max-line-length=88]
+        additional_dependencies: [flake8-docstrings]
+
+  # 类型检查
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.5.1
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-PyYAML, types-requests]
+        args: [--ignore-missing-imports]
+
+  # 安全检查
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.5
+    hooks:
+      - id: bandit
+        args: [-r, src]
+        exclude: tests/
+
+  # 通用检查
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      # 去除行尾空格
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      
+      # 确保文件以换行符结尾
+      - id: end-of-file-fixer
+      
+      # 检查合并冲突标记
+      - id: check-merge-conflict
+      
+      # 检查YAML语法
+      - id: check-yaml
+        files: \.(yaml|yml)$
+      
+      # 检查JSON语法
+      - id: check-json
+        files: \.json$
+      
+      # 检查TOML语法
+      - id: check-toml
+        files: \.toml$
+      
+      # 检查大文件
+      - id: check-added-large-files
+        args: [--maxkb=10240]  # 10MB限制
+      
+      # 检查私钥
+      - id: detect-private-key
+      
+      # 检查AWS凭证
+      - id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+      
+      # 修复Python编码声明
+      - id: fix-encoding-pragma
+        args: [--remove]
+      
+      # 检查文件名
+      - id: check-case-conflict
+      
+      # 检查符号链接
+      - id: check-symlinks
+      
+      # 检查执行权限
+      - id: check-executables-have-shebangs
+
+  # Jupyter Notebook清理
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.7.0
+    hooks:
+      - id: nbqa-black
+        additional_dependencies: [black==23.7.0]
+      - id: nbqa-isort
+        additional_dependencies: [isort==5.12.0]
+
+  # 文档检查
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        args: [--convention=google]
+        additional_dependencies: [toml]
+
+  # 密钥和敏感信息检查
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+
+# 全局配置
+default_stages: [commit]
+default_language_version:
+  python: python3.8
+
+# CI配置
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit.com hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false

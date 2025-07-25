@@ -1,3 +1,16 @@
+# GitHub Actions工作流配置文件
+# 项目：ArXiv_AcceleratorPhysics
+# 文件：daily_arxiv_analysis.yml
+# 作者：Ming Liu (ming-1018@foxmail.com)
+# 机构：Institute of High Energy Physics, Chinese Academy of Sciences
+# 创建日期：July 25th, 2025
+# 描述：每日自动抓取和分析ArXiv加速器物理论文的GitHub Actions工作流
+#       自动运行论文抓取、LLM分析、数据处理和结果提交
+# 
+# 修改记录：
+# - 2025-07-25: 初始创建
+# - 2025-07-25: 添加多LLM支持和错误处理
+
 name: Daily ArXiv Accelerator Physics Analysis
 
 on:

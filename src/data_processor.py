@@ -1,3 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Project: ArXiv_AcceleratorPhysics
+File: data_processor.py
+Author: Ming Liu
+Email: ming-1018@foxmail.com
+Institution: Institute of High Energy Physics, Chinese Academy of Sciences
+Created: July 25th, 2025
+Description: 数据处理模块，负责论文数据和分析结果的存储、管理和统计
+             支持JSON格式数据存储和统计报告生成
+
+Modification History:
+- 2025-07-25: Initial creation
+- 2025-07-25: Added statistical analysis features
+- 2025-07-25: Implemented async file operations
+"""
+
 import json
 import os
 from datetime import datetime
