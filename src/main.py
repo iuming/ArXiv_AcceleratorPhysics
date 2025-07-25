@@ -75,36 +75,53 @@ async def main():
             logger.warning("今日无新论文，跳过分析")
             return
         
-        # 2. 保存原始论文数据
+        # 2. 保存原始论文数据（去重处理）
         await processor.save_papers(papers, today)
         
-        # 3. 使用LLM分析论文
-        logger.info("开始LLM分析...")
-        analysis_results = []
+        # 3. 检查哪些论文需要分析
+        papers_to_analyze = await processor.get_papers_needing_analysis(papers, today)
         
-        for i, paper in enumerate(papers, 1):
-            logger.info(f"分析论文 {i}/{len(papers)}: {paper['title'][:50]}...")
+        if not papers_to_analyze:
+            logger.info("所有论文已分析完成，无需重复分析")
+        else:
+            logger.info(f"需要分析 {len(papers_to_analyze)} 篇论文")
             
-            try:
-                analysis = await analyzer.analyze_paper(paper)
-                analysis_results.append({
-                    'paper': paper,
-                    'analysis': analysis
-                })
-            except Exception as e:
-                logger.error(f"分析论文失败: {e}")
-                continue
+            # 4. 使用LLM分析论文
+            logger.info("开始LLM分析...")
+            analysis_results = []
+            
+            for i, paper in enumerate(papers_to_analyze, 1):
+                logger.info(f"分析论文 {i}/{len(papers_to_analyze)}: {paper['title'][:50]}...")
+                
+                try:
+                    analysis = await analyzer.analyze_paper(paper)
+                    analysis_results.append(analysis)
+                except Exception as e:
+                    logger.error(f"分析论文失败: {e}")
+                    # 即使失败也要保存错误信息
+                    analysis_results.append({
+                        'timestamp': datetime.now().isoformat(),
+                        'paper_id': paper.get('arxiv_id'),
+                        'analysis': None,
+                        'classification': None,
+                        'keywords': [],
+                        'summary': None,
+                        'error': str(e)
+                    })
+            
+            # 5. 保存分析结果（去重处理）
+            await processor.save_analysis_results(analysis_results, today)
+            
+            logger.info(f"✅ 本次分析完成！处理了 {len(analysis_results)} 篇论文")
         
-        # 4. 保存分析结果
-        await processor.save_analysis_results(analysis_results, today)
-        
-        # 5. 生成统计报告
-        await processor.generate_daily_summary(analysis_results, today)
-        
-        # 6. 更新总体统计
-        await processor.update_statistics(analysis_results, today)
-        
-        logger.info(f"✅ 分析完成！处理了 {len(analysis_results)} 篇论文")
+        # 6. 生成统计报告（基于所有论文）
+        all_analysis_results = await processor._load_existing_analysis(
+            processor.base_data_dir / "analysis" / today
+        )
+        if all_analysis_results:
+            await processor.generate_daily_summary(all_analysis_results, today)
+            await processor.update_statistics(all_analysis_results, today)
+            logger.info(f"📊 统计报告已更新，总计 {len(all_analysis_results)} 篇论文")
         
     except Exception as e:
         logger.error(f"❌ 分析过程中发生错误: {e}")

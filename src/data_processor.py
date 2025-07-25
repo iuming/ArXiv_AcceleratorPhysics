@@ -35,22 +35,119 @@ class DataProcessor:
         for directory in directories:
             directory.mkdir(parents=True, exist_ok=True)
     
+    async def _load_existing_papers(self, papers_dir: Path) -> List[Dict]:
+        """加载已存在的论文数据"""
+        papers_file = papers_dir / "papers.json"
+        if not papers_file.exists():
+            return []
+        
+        try:
+            if AIOFILES_AVAILABLE:
+                async with aiofiles.open(papers_file, 'r', encoding='utf-8') as f:
+                    content = await f.read()
+                    return json.loads(content)
+            else:
+                with open(papers_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception as e:
+            self.logger.warning(f"读取已存在论文数据失败: {e}")
+            return []
+    
+    async def _load_existing_analysis(self, analysis_dir: Path) -> List[Dict]:
+        """加载已存在的分析结果"""
+        results_file = analysis_dir / "analysis_results.json"
+        if not results_file.exists():
+            return []
+        
+        try:
+            if AIOFILES_AVAILABLE:
+                async with aiofiles.open(results_file, 'r', encoding='utf-8') as f:
+                    content = await f.read()
+                    return json.loads(content)
+            else:
+                with open(results_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception as e:
+            self.logger.warning(f"读取已存在分析结果失败: {e}")
+            return []
+    
+    async def get_papers_needing_analysis(self, papers: List[Dict], date: str) -> List[Dict]:
+        """获取需要分析的论文（新论文或分析失败的论文）"""
+        analysis_dir = self.base_data_dir / "analysis" / date
+        
+        # 加载已存在的分析结果
+        existing_results = await self._load_existing_analysis(analysis_dir)
+        
+        # 创建已分析的论文ID集合（只包含成功分析的）
+        analyzed_ids = set()
+        for result in existing_results:
+            paper_id = result.get('paper_id')
+            # 只有成功分析的论文才被认为是已分析的
+            if paper_id and result.get('analysis') and not result.get('error'):
+                analyzed_ids.add(paper_id)
+        
+        # 筛选需要分析的论文
+        papers_to_analyze = []
+        for paper in papers:
+            arxiv_id = paper.get('arxiv_id')
+            if arxiv_id:
+                if arxiv_id not in analyzed_ids:
+                    papers_to_analyze.append(paper)
+                    if arxiv_id in {r.get('paper_id') for r in existing_results}:
+                        self.logger.info(f"🔄 重新分析失败的论文: {arxiv_id}")
+                    else:
+                        self.logger.info(f"🆕 新论文待分析: {arxiv_id}")
+                else:
+                    self.logger.info(f"✅ 跳过已分析论文: {arxiv_id}")
+        
+        return papers_to_analyze
+    
     async def save_papers(self, papers: List[Dict], date: str):
-        """保存原始论文数据"""
+        """保存原始论文数据（去重处理）"""
         papers_dir = self.base_data_dir / "papers" / date
         papers_dir.mkdir(parents=True, exist_ok=True)
+        
+        # 读取已存在的论文数据
+        existing_papers = await self._load_existing_papers(papers_dir)
+        existing_ids = {paper.get('arxiv_id') for paper in existing_papers}
+        
+        # 合并新论文和已存在的论文，去重并更新
+        merged_papers = {}
+        
+        # 先加载已存在的论文
+        for paper in existing_papers:
+            arxiv_id = paper.get('arxiv_id')
+            if arxiv_id:
+                merged_papers[arxiv_id] = paper
+        
+        # 添加或更新新论文
+        new_count = 0
+        updated_count = 0
+        for paper in papers:
+            arxiv_id = paper.get('arxiv_id')
+            if arxiv_id:
+                if arxiv_id in existing_ids:
+                    self.logger.info(f"📝 更新论文: {arxiv_id}")
+                    updated_count += 1
+                else:
+                    self.logger.info(f"🆕 新增论文: {arxiv_id}")
+                    new_count += 1
+                merged_papers[arxiv_id] = paper
+        
+        # 转换为列表
+        final_papers = list(merged_papers.values())
         
         # 保存所有论文到一个JSON文件
         papers_file = papers_dir / "papers.json"
         if AIOFILES_AVAILABLE:
             async with aiofiles.open(papers_file, 'w', encoding='utf-8') as f:
-                await f.write(json.dumps(papers, ensure_ascii=False, indent=2))
+                await f.write(json.dumps(final_papers, ensure_ascii=False, indent=2))
         else:
             with open(papers_file, 'w', encoding='utf-8') as f:
-                f.write(json.dumps(papers, ensure_ascii=False, indent=2))
+                f.write(json.dumps(final_papers, ensure_ascii=False, indent=2))
         
         # 为每篇论文创建单独的文件
-        for paper in papers:
+        for paper in final_papers:
             arxiv_id = paper.get('arxiv_id', 'unknown')
             paper_file = papers_dir / f"{arxiv_id}.json"
             if AIOFILES_AVAILABLE:
@@ -60,24 +157,56 @@ class DataProcessor:
                 with open(paper_file, 'w', encoding='utf-8') as f:
                     f.write(json.dumps(paper, ensure_ascii=False, indent=2))
         
-        self.logger.info(f"✅ 已保存 {len(papers)} 篇论文数据到 {papers_dir}")
+        self.logger.info(f"✅ 论文数据处理完成: 总计 {len(final_papers)} 篇 (新增 {new_count}, 更新 {updated_count})")
     
     async def save_analysis_results(self, analysis_results: List[Dict], date: str):
-        """保存分析结果"""
+        """保存分析结果（去重处理）"""
         analysis_dir = self.base_data_dir / "analysis" / date
         analysis_dir.mkdir(parents=True, exist_ok=True)
+        
+        # 读取已存在的分析结果
+        existing_results = await self._load_existing_analysis(analysis_dir)
+        existing_ids = {result.get('paper_id') for result in existing_results}
+        
+        # 合并新分析结果和已存在的结果，去重并更新
+        merged_results = {}
+        
+        # 先加载已存在的分析结果
+        for result in existing_results:
+            paper_id = result.get('paper_id')
+            if paper_id:
+                merged_results[paper_id] = result
+        
+        # 添加或更新新分析结果
+        new_count = 0
+        updated_count = 0
+        for result in analysis_results:
+            paper_id = result.get('paper_id')
+            if paper_id:
+                if paper_id in existing_ids:
+                    self.logger.info(f"📝 更新分析结果: {paper_id}")
+                    updated_count += 1
+                else:
+                    self.logger.info(f"🆕 新增分析结果: {paper_id}")
+                    new_count += 1
+                # 更新时间戳
+                result['timestamp'] = datetime.now().isoformat()
+                merged_results[paper_id] = result
+        
+        # 转换为列表
+        final_results = list(merged_results.values())
         
         # 保存所有分析结果
         results_file = analysis_dir / "analysis_results.json"
         if AIOFILES_AVAILABLE:
             async with aiofiles.open(results_file, 'w', encoding='utf-8') as f:
-                await f.write(json.dumps(analysis_results, ensure_ascii=False, indent=2))
+                await f.write(json.dumps(final_results, ensure_ascii=False, indent=2))
         else:
             with open(results_file, 'w', encoding='utf-8') as f:
-                f.write(json.dumps(analysis_results, ensure_ascii=False, indent=2))
+                f.write(json.dumps(final_results, ensure_ascii=False, indent=2))
         
         # 为每个分析结果创建单独的文件
-        for result in analysis_results:
+        for result in final_results:
             paper_id = result.get('paper_id', 'unknown')
             result_file = analysis_dir / f"{paper_id}_analysis.json"
             if AIOFILES_AVAILABLE:
@@ -87,21 +216,26 @@ class DataProcessor:
                 with open(result_file, 'w', encoding='utf-8') as f:
                     f.write(json.dumps(result, ensure_ascii=False, indent=2))
         
-        self.logger.info(f"✅ 已保存 {len(analysis_results)} 个分析结果到 {analysis_dir}")
+        self.logger.info(f"✅ 分析结果处理完成: 总计 {len(final_results)} 个 (新增 {new_count}, 更新 {updated_count})")
     
     async def generate_daily_summary(self, analysis_results: List[Dict], date: str):
         """生成每日总结报告"""
         analysis_dir = self.base_data_dir / "analysis" / date
+        papers_dir = self.base_data_dir / "papers" / date
+        
+        # 加载论文数据
+        papers_data = await self._load_existing_papers(papers_dir)
+        papers_dict = {paper.get('arxiv_id'): paper for paper in papers_data}
         
         # 统计信息
         total_papers = len(analysis_results)
-        successful_analyses = sum(1 for r in analysis_results if r.get('analysis'))
+        successful_analyses = sum(1 for r in analysis_results if r.get('analysis') and not r.get('error'))
         
         # 分类统计
         category_stats = {}
         for result in analysis_results:
             classification = result.get('classification', {})
-            category = classification.get('category_name', '未分类')
+            category = classification.get('category', '未分类') if classification else '未分类'
             category_stats[category] = category_stats.get(category, 0) + 1
         
         # 生成Markdown报告
@@ -114,7 +248,7 @@ class DataProcessor:
 
 - **总论文数**: {total_papers}
 - **成功分析**: {successful_analyses}
-- **分析成功率**: {successful_analyses/total_papers*100:.1f}%
+- **分析成功率**: {successful_analyses/total_papers*100:.1f}% (如果为0，说明需要设置API密钥)
 
 ## 📈 分类分布
 
@@ -128,18 +262,21 @@ class DataProcessor:
         
         # 添加每篇论文的简要信息
         for i, result in enumerate(analysis_results, 1):
-            paper = result.get('paper', {})
+            paper_id = result.get('paper_id')
+            paper = papers_dict.get(paper_id, {})
+            
             analysis = result.get('analysis', '')
             classification = result.get('classification', {})
             summary = result.get('summary', '')
+            error = result.get('error')
             
             title = paper.get('title', '未知标题')
             authors = ', '.join(paper.get('authors', [])[:3])  # 只显示前3个作者
             if len(paper.get('authors', [])) > 3:
                 authors += " 等"
             
-            category = classification.get('category_name', '未分类')
-            arxiv_id = paper.get('arxiv_id', '')
+            category = classification.get('category', '未分类') if classification else '未分类'
+            arxiv_id = paper.get('arxiv_id', paper_id)
             
             summary_content += f"""### {i}. {title}
 
@@ -147,16 +284,25 @@ class DataProcessor:
 **ArXiv ID**: [{arxiv_id}](https://arxiv.org/abs/{arxiv_id})  
 **分类**: {category}  
 
-**简要总结**: {summary[:200]}{'...' if len(summary) > 200 else ''}
-
----
-
 """
+            
+            if error:
+                summary_content += f"**状态**: ❌ 分析失败 - {error}\n\n"
+            elif summary:
+                summary_content += f"**简要总结**: {summary[:200]}{'...' if len(summary) > 200 else ''}\n\n"
+            else:
+                summary_content += "**状态**: ⏳ 等待LLM分析（需要设置API密钥）\n\n"
+            
+            summary_content += "---\n\n"
         
         # 保存总结报告
         summary_file = analysis_dir / "daily_summary.md"
-        async with aiofiles.open(summary_file, 'w', encoding='utf-8') as f:
-            await f.write(summary_content)
+        if AIOFILES_AVAILABLE:
+            async with aiofiles.open(summary_file, 'w', encoding='utf-8') as f:
+                await f.write(summary_content)
+        else:
+            with open(summary_file, 'w', encoding='utf-8') as f:
+                f.write(summary_content)
         
         self.logger.info(f"✅ 已生成每日总结报告: {summary_file}")
     
