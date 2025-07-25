@@ -30,10 +30,9 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PYTHONPATH: ${{ github.workspace }}
       run: |
-        cd ${{ github.workspace }}
-        python src/main.py
+        cd src
+        python main.py
         
     - name: Commit and push results
       run: |
