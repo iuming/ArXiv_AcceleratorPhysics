@@ -29,21 +29,29 @@ async def main():
     logger.info("🔑 检查API密钥配置...")
     openai_key = os.getenv('OPENAI_API_KEY')
     deepseek_key = os.getenv('DEEPSEEK_API_KEY')
+    hepai_key = os.getenv('HAI_API_KEY')
     anthropic_key = os.getenv('ANTHROPIC_API_KEY')
     
-    if not openai_key and not deepseek_key and not anthropic_key:
+    available_apis = []
+    if deepseek_key:
+        available_apis.append("DeepSeek (推荐)")
+    if hepai_key:
+        available_apis.append("HEPAI (备用)")
+    if openai_key:
+        available_apis.append("OpenAI")
+    if anthropic_key:
+        available_apis.append("Anthropic")
+    
+    if not available_apis:
         logger.error("❌ 未设置任何LLM API密钥！")
         logger.error("请在GitHub仓库Settings -> Secrets中设置：")
         logger.error("- DEEPSEEK_API_KEY (推荐，性价比高)")
+        logger.error("- HAI_API_KEY (HEPAI，中科院高能所)")
         logger.error("- OPENAI_API_KEY (备用)")
         logger.error("- ANTHROPIC_API_KEY (备用)")
         logger.error("系统将仅抓取论文，不进行LLM分析")
-    elif deepseek_key:
-        logger.info("✅ DeepSeek API密钥已设置")
-    elif openai_key:
-        logger.info("✅ OpenAI API密钥已设置")
-    elif anthropic_key:
-        logger.info("✅ Anthropic API密钥已设置")
+    else:
+        logger.info(f"✅ 已设置API密钥: {', '.join(available_apis)}")
     
     # 加载配置
     config = load_config()
