@@ -142,9 +142,7 @@ daily-arxiv-analysis:
     - if: $CI_COMMIT_BRANCH == "main"
       changes:
         - .gitlab-ci.yml
-  
-  # 只在有API密钥时运行
-  rules:
+    # 只在有API密钥时运行
     - if: $OPENAI_API_KEY || $DEEPSEEK_API_KEY || $HAI_API_KEY || $ANTHROPIC_API_KEY
   
   variables:
