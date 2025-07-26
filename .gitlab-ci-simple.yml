@@ -1,0 +1,52 @@
+# GitLab CI - 每日论文分析专用配置
+# 如果你只需要每日论文分析功能，可以使用这个简化版本
+
+stages:
+  - analyze
+
+variables:
+  PYTHON_VERSION: "3.11"
+
+daily-arxiv-analysis:
+  stage: analyze
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - echo "=== 每日ArXiv论文分析 ==="
+    - echo "触发方式: $CI_PIPELINE_SOURCE"
+    - echo "仓库: $CI_PROJECT_PATH"
+    - echo "分支: $CI_COMMIT_REF_NAME"
+    - echo "UTC时间: $(date -u)"
+    - echo "北京时间: $(TZ='Asia/Shanghai' date)"
+    - echo "=============================="
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+    - git config --global user.email "ci@ihep.ac.cn"
+    - git config --global user.name "GitLab CI"
+  
+  script:
+    # 运行论文分析
+    - cd src && python main.py && cd ..
+    
+    # 提交结果
+    - mkdir -p data/papers data/analysis data/statistics
+    - git add -f data/ || echo "No data to add"
+    - |
+      if ! git diff --staged --quiet; then
+        DATE=$(date +%Y-%m-%d)
+        git commit -m "🤖 Daily ArXiv analysis for $DATE"
+        git push origin HEAD:$CI_COMMIT_REF_NAME
+      else
+        echo "No changes to commit"
+      fi
+  
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - .gitlab-ci.yml
+  
+  variables:
+    GIT_STRATEGY: clone
+    GIT_DEPTH: "0"

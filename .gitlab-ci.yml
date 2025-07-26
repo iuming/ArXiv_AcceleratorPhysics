@@ -1,0 +1,284 @@
+# GitLab CI/CD配置文件
+# 项目：ArXiv_AcceleratorPhysics
+# 文件：.gitlab-ci.yml
+# 作者：Ming Liu (ming-1018@foxmail.com)
+# 机构：Institute of High Energy Physics, Chinese Academy of Sciences
+# 创建日期：July 26th, 2025
+# 描述：GitLab CI/CD管道，包含代码质量检查、测试、每日论文分析和部署
+# 
+# 重要说明：
+# 1. GitLab CI/CD的定时任务在Project > CI/CD > Schedules中配置
+# 2. 需要在GitLab项目设置中配置相应的环境变量
+# 3. Runner需要有Python环境支持
+# 
+# 修改记录：
+# - 2025-07-26: 从GitHub Actions转换为GitLab CI
+
+# 定义阶段
+stages:
+  - lint          # 代码质量检查
+  - test          # 测试
+  - analyze       # 论文分析
+  - deploy        # 部署
+
+# 全局变量
+variables:
+  PYTHON_VERSION: "3.11"
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# 缓存配置
+cache:
+  paths:
+    - .cache/pip
+    - .venv/
+
+# 代码质量检查作业
+lint:
+  stage: lint
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+    - pip install -r requirements-dev.txt
+  
+  script:
+    - echo "=== 代码质量检查 ==="
+    # 代码格式检查
+    - black --check --diff src/ || echo "Black formatting issues found"
+    # 导入排序检查
+    - isort --check-only --diff src/ || echo "Import sorting issues found"
+    # Flake8检查
+    - flake8 src/ --max-line-length=88 || echo "Flake8 issues found"
+    # Pylint检查
+    - pylint src/ --output-format=text || echo "Pylint issues found"
+    # 安全检查
+    - bandit -r src/ -f txt || echo "Security issues found"
+  
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_MERGE_REQUEST_ID
+  
+  allow_failure: true
+
+# 测试作业
+test:
+  stage: test
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+    - pip install pytest pytest-cov
+  
+  script:
+    - echo "=== 运行测试 ==="
+    - pytest --cov=src --cov-report=term --cov-report=xml
+  
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+  
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+    paths:
+      - coverage.xml
+    expire_in: 1 week
+  
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_MERGE_REQUEST_ID
+
+# 每日ArXiv论文分析作业
+daily-arxiv-analysis:
+  stage: analyze
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - echo "=== 每日ArXiv论文分析 ==="
+    - echo "触发方式: $CI_PIPELINE_SOURCE"
+    - echo "仓库: $CI_PROJECT_PATH"
+    - echo "分支: $CI_COMMIT_REF_NAME"
+    - echo "UTC时间: $(date -u)"
+    - echo "北京时间: $(TZ='Asia/Shanghai' date)"
+    - echo "=============================="
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+    # 配置Git
+    - git config --global user.email "ci@ihep.ac.cn"
+    - git config --global user.name "GitLab CI"
+  
+  script:
+    # 运行论文分析
+    - cd src
+    - python main.py
+    - cd ..
+    
+    # 创建data目录
+    - mkdir -p data/papers data/analysis data/statistics
+    
+    # 添加生成的文件
+    - git add -f data/ || echo "No data directory to add"
+    
+    # 检查是否有更改
+    - |
+      if git diff --staged --quiet; then
+        echo "No changes to commit"
+        exit 0
+      fi
+    
+    # 提交更改
+    - DATE=$(date +%Y-%m-%d)
+    - git commit -m "🤖 Daily ArXiv analysis for $DATE"
+    - git push origin HEAD:$CI_COMMIT_REF_NAME
+  
+  rules:
+    # 定时任务触发
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    # 手动触发
+    - if: $CI_PIPELINE_SOURCE == "web"
+    # 推送到main分支且修改了工作流文件时触发（测试用）
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - .gitlab-ci.yml
+  
+  # 只在有API密钥时运行
+  rules:
+    - if: $OPENAI_API_KEY || $DEEPSEEK_API_KEY || $HAI_API_KEY || $ANTHROPIC_API_KEY
+  
+  variables:
+    GIT_STRATEGY: clone
+    GIT_DEPTH: "0"
+
+# Web演示部署作业
+deploy-web-demo:
+  stage: deploy
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  
+  script:
+    - echo "=== 构建Web演示 ==="
+    # 创建演示页面目录
+    - mkdir -p public/static public/assets
+    
+    # 复制静态资源
+    - cp -r static/* public/static/
+    - cp -r templates/web/* public/
+    
+    # 生成演示数据
+    - python -c "
+import json
+import os
+from datetime import datetime, timedelta
+
+# 创建演示数据
+demo_data = {
+    'stats': {
+        'total_papers': 443,
+        'analyzed_papers': 365,
+        'today_papers': 12,
+        'categories_count': 5,
+        'last_update': '$(date +%Y-%m-%d\ %H:%M:%S)'
+    },
+    'recent_papers': [
+        {
+            'id': '2507.18310v1',
+            'title': 'Advanced Beam Dynamics Simulation for High-Energy Accelerators',
+            'authors': ['Dr. Smith', 'Prof. Johnson'],
+            'published': '2025-07-25',
+            'categories': ['physics.acc-ph'],
+            'summary': 'This paper presents a comprehensive study of beam dynamics...'
+        },
+        {
+            'id': '2507.18226v1',
+            'title': 'Novel Superconducting Cavity Design for Linear Accelerators',
+            'authors': ['Dr. Chen', 'Dr. Wang'],
+            'published': '2025-07-24',
+            'categories': ['physics.acc-ph'],
+            'summary': 'We propose an innovative superconducting cavity design...'
+        }
+    ]
+}
+
+# 保存演示数据
+with open('public/assets/demo-data.json', 'w') as f:
+    json.dump(demo_data, f, indent=2)
+"
+    
+    # 创建索引页面
+    - echo '<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArXiv 加速器物理论文分析系统</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 ArXiv 加速器物理论文分析系统</h1>
+        <p>欢迎使用ArXiv加速器物理论文自动分析系统演示</p>
+        <div class="demo-links">
+            <a href="index.html" class="btn btn-primary">主页</a>
+            <a href="papers.html" class="btn btn-secondary">论文列表</a>
+            <a href="statistics.html" class="btn btn-info">统计分析</a>
+        </div>
+        <div class="stats">
+            <h2>📊 系统统计</h2>
+            <p>总论文数: 443</p>
+            <p>已分析: 365</p>
+            <p>今日新增: 12</p>
+            <p>最后更新: $(date +%Y-%m-%d\ %H:%M:%S)</p>
+        </div>
+    </div>
+</body>
+</html>' > public/index.html
+  
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  
+  # GitLab Pages部署
+  pages:
+    stage: deploy
+    dependencies:
+      - deploy-web-demo
+    script:
+      - echo "Deploying to GitLab Pages"
+    artifacts:
+      paths:
+        - public
+    rules:
+      - if: $CI_COMMIT_BRANCH == "main"
+
+# 健康检查作业
+health-check:
+  stage: test
+  image: python:${PYTHON_VERSION}
+  
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  
+  script:
+    - echo "=== 系统健康检查 ==="
+    - python health_check.py
+  
+  artifacts:
+    paths:
+      - logs/health_reports/
+    expire_in: 1 week
+  
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+  
+  allow_failure: true
