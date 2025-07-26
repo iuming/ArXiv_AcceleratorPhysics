@@ -7,17 +7,29 @@
 # 描述：每日自动抓取和分析ArXiv加速器物理论文的GitHub Actions工作流
 #       自动运行论文抓取、LLM分析、数据处理和结果提交
 # 
+# 重要说明：
+# 1. GitHub Actions的cron作业只在默认分支上运行
+# 2. 定时任务可能有5-10分钟的延迟
+# 3. 如果仓库60天没有活动，定时任务会被自动禁用
+# 4. 建议定期手动触发以保持活跃性
+# 
 # 修改记录：
 # - 2025-07-25: 初始创建
 # - 2025-07-25: 添加多LLM支持和错误处理
+# - 2025-07-26: 添加调试信息和触发条件优化
 
 name: Daily ArXiv Accelerator Physics Analysis
 
 on:
   schedule:
-    # 每天UTC时间00:00运行
+    # 每天UTC时间00:00运行（北京时间08:00）
+    # 注意：GitHub Actions的cron可能有5-10分钟的延迟
     - cron: '0 0 * * *'
   workflow_dispatch:  # 允许手动触发
+  push:
+    branches: [ main ]  # 在main分支推送时也触发（用于测试）
+    paths:
+      - '.github/workflows/daily_arxiv_analysis.yml'  # 只在工作流文件变更时触发
 
 # 设置权限
 permissions:
@@ -29,6 +41,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Display workflow info
+      run: |
+        echo "=== Workflow Execution Info ==="
+        echo "Trigger event: ${{ github.event_name }}"
+        echo "Repository: ${{ github.repository }}"
+        echo "Branch: ${{ github.ref }}"
+        echo "UTC Time: $(date -u)"
+        echo "Beijing Time: $(TZ='Asia/Shanghai' date)"
+        echo "=============================="
+        
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
