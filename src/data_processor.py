@@ -332,9 +332,13 @@ class DataProcessor:
         overall_stats = {}
         if stats_file.exists():
             try:
-                async with aiofiles.open(stats_file, 'r', encoding='utf-8') as f:
-                    content = await f.read()
-                    overall_stats = json.loads(content)
+                if AIOFILES_AVAILABLE:
+                    async with aiofiles.open(stats_file, 'r', encoding='utf-8') as f:
+                        content = await f.read()
+                        overall_stats = json.loads(content)
+                else:
+                    with open(stats_file, 'r', encoding='utf-8') as f:
+                        overall_stats = json.load(f)
             except Exception as e:
                 self.logger.warning(f"加载统计文件失败: {e}")
         
@@ -356,12 +360,16 @@ class DataProcessor:
         # 更新分类统计
         for result in analysis_results:
             classification = result.get('classification', {})
-            category = classification.get('category_name', '未分类')
+            category = classification.get('category', '未分类') if classification else '未分类'
             overall_stats['category_totals'][category] = overall_stats['category_totals'].get(category, 0) + 1
         
         # 保存更新后的统计
-        async with aiofiles.open(stats_file, 'w', encoding='utf-8') as f:
-            await f.write(json.dumps(overall_stats, ensure_ascii=False, indent=2))
+        if AIOFILES_AVAILABLE:
+            async with aiofiles.open(stats_file, 'w', encoding='utf-8') as f:
+                await f.write(json.dumps(overall_stats, ensure_ascii=False, indent=2))
+        else:
+            with open(stats_file, 'w', encoding='utf-8') as f:
+                f.write(json.dumps(overall_stats, ensure_ascii=False, indent=2))
         
         # 生成统计图表数据
         await self._generate_stats_charts(overall_stats)
@@ -379,8 +387,12 @@ class DataProcessor:
         }
         
         trend_file = stats_dir / "daily_trend.json"
-        async with aiofiles.open(trend_file, 'w', encoding='utf-8') as f:
-            await f.write(json.dumps(daily_trend, ensure_ascii=False, indent=2))
+        if AIOFILES_AVAILABLE:
+            async with aiofiles.open(trend_file, 'w', encoding='utf-8') as f:
+                await f.write(json.dumps(daily_trend, ensure_ascii=False, indent=2))
+        else:
+            with open(trend_file, 'w', encoding='utf-8') as f:
+                f.write(json.dumps(daily_trend, ensure_ascii=False, indent=2))
         
         # 生成分类分布数据
         category_distribution = {
@@ -389,8 +401,12 @@ class DataProcessor:
         }
         
         category_file = stats_dir / "category_distribution.json"
-        async with aiofiles.open(category_file, 'w', encoding='utf-8') as f:
-            await f.write(json.dumps(category_distribution, ensure_ascii=False, indent=2))
+        if AIOFILES_AVAILABLE:
+            async with aiofiles.open(category_file, 'w', encoding='utf-8') as f:
+                await f.write(json.dumps(category_distribution, ensure_ascii=False, indent=2))
+        else:
+            with open(category_file, 'w', encoding='utf-8') as f:
+                f.write(json.dumps(category_distribution, ensure_ascii=False, indent=2))
         
         # 生成统计摘要
         stats_summary = {
@@ -402,5 +418,9 @@ class DataProcessor:
         }
         
         summary_file = stats_dir / "summary.json"
-        async with aiofiles.open(summary_file, 'w', encoding='utf-8') as f:
-            await f.write(json.dumps(stats_summary, ensure_ascii=False, indent=2))
+        if AIOFILES_AVAILABLE:
+            async with aiofiles.open(summary_file, 'w', encoding='utf-8') as f:
+                await f.write(json.dumps(stats_summary, ensure_ascii=False, indent=2))
+        else:
+            with open(summary_file, 'w', encoding='utf-8') as f:
+                f.write(json.dumps(stats_summary, ensure_ascii=False, indent=2))
