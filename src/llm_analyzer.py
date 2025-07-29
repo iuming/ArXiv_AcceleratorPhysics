@@ -255,7 +255,8 @@ class LLMAnalyzer:
         """提取关键词"""
         prompt = self.keywords_prompt.format(
             title=paper.get('title', ''),
-            abstract=paper.get('abstract', '')
+            abstract=paper.get('abstract', ''),
+            categories=', '.join(paper.get('categories', []))
         )
         
         keywords_text = await self._call_llm(prompt, max_tokens=200)
