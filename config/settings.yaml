@@ -20,7 +20,7 @@
 # - 2025-07-25: 添加Web界面相关配置
 
 # 基本设置
-max_papers_per_day: 20  # 每天最大论文处理数量
+max_papers_per_day: 50  # 每天最大论文处理数量，增加到50篇
 analysis_timeout: 300   # 分析超时时间（秒）
 retry_attempts: 3       # 重试次数
 
@@ -32,7 +32,7 @@ anthropic_model: "claude-3-sonnet-20240229"
 # ArXiv API设置
 arxiv_base_url: "http://export.arxiv.org/api/query"
 arxiv_category: "physics.acc-ph"
-days_back: 1  # 回溯天数
+days_back: 7  # 回溯天数，增加到7天以获取更多论文
 
 # 分析设置
 max_tokens_analysis: 1500      # 详细分析最大token数

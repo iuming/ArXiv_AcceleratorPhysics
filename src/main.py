@@ -99,8 +99,22 @@ async def main():
         
         # 1. 抓取最新论文
         logger.info("正在抓取ArXiv最新论文...")
-        papers = await fetcher.fetch_recent_papers()
+        papers = await fetcher.fetch_recent_papers(days_back=config.get('days_back', 1))
         logger.info(f"成功抓取 {len(papers)} 篇论文")
+        
+        # 显示论文日期分布
+        if papers:
+            from collections import defaultdict
+            date_count = defaultdict(int)
+            for paper in papers:
+                updated = paper.get('updated', '')
+                if updated:
+                    date = updated[:10]
+                    date_count[date] += 1
+            
+            logger.info("📊 论文日期分布:")
+            for date in sorted(date_count.keys(), reverse=True):
+                logger.info(f"   {date}: {date_count[date]} 篇")
         
         if not papers:
             logger.warning("今日无新论文，跳过分析")

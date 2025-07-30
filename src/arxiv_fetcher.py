@@ -33,12 +33,12 @@ class ArXivFetcher:
         self.max_papers = config.get('max_papers_per_day', 20)
         self.logger = logging.getLogger(__name__)
         
-    async def fetch_recent_papers(self, days_back: int = 1) -> List[Dict]:
+    async def fetch_recent_papers(self, days_back: int = 7) -> List[Dict]:
         """
         抓取最近几天的论文
         
         Args:
-            days_back: 回溯天数，默认1天
+            days_back: 回溯天数，默认7天
             
         Returns:
             论文列表
@@ -49,29 +49,51 @@ class ArXivFetcher:
         end_date = datetime.now()
         start_date = end_date - timedelta(days=days_back)
         
-        # 构建查询参数
-        query_params = {
-            'search_query': f'cat:{self.category}',
-            'start': 0,
-            'max_results': self.max_papers,
-            'sortBy': 'lastUpdatedDate',
-            'sortOrder': 'descending'
-        }
+        # 使用多个查询策略来获取更多论文
+        queries = [
+            f'cat:{self.category}',  # 主要分类
+            f'cat:{self.category} OR cat:physics.plasm-ph',  # 包含等离子体物理
+            f'cat:{self.category} OR cat:physics.ins-det',   # 包含仪器探测
+        ]
         
-        url = f"{self.base_url}?{urlencode(query_params)}"
-        
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url) as response:
-                    if response.status == 200:
-                        content = await response.text()
-                        papers = self._parse_arxiv_response(content, start_date)
-                    else:
-                        self.logger.error(f"ArXiv API请求失败: {response.status}")
-                        
-        except Exception as e:
-            self.logger.error(f"抓取论文时发生错误: {e}")
+        all_papers = []
+        for query in queries:
+            query_params = {
+                'search_query': query,
+                'start': 0,
+                'max_results': self.max_papers,
+                'sortBy': 'lastUpdatedDate',
+                'sortOrder': 'descending'
+            }
             
+            url = f"{self.base_url}?{urlencode(query_params)}"
+            
+            try:
+                async with aiohttp.ClientSession() as session:
+                    async with session.get(url) as response:
+                        if response.status == 200:
+                            content = await response.text()
+                            query_papers = self._parse_arxiv_response(content, start_date)
+                            all_papers.extend(query_papers)
+                        else:
+                            self.logger.error(f"ArXiv API请求失败: {response.status}")
+                            
+            except Exception as e:
+                self.logger.error(f"抓取论文时发生错误: {e}")
+        
+        # 去重（基于arxiv_id）
+        seen_ids = set()
+        for paper in all_papers:
+            if paper['arxiv_id'] not in seen_ids:
+                papers.append(paper)
+                seen_ids.add(paper['arxiv_id'])
+                
+        # 按更新时间排序
+        papers.sort(key=lambda x: x.get('updated', ''), reverse=True)
+        
+        # 限制数量
+        papers = papers[:self.max_papers]
+                
         return papers
     
     def _parse_arxiv_response(self, xml_content: str, start_date: datetime) -> List[Dict]:
@@ -92,14 +114,27 @@ class ArXivFetcher:
             for entry in entries:
                 # 获取更新时间
                 updated = entry.find('atom:updated', namespaces)
+                published = entry.find('atom:published', namespaces)
+                
+                # 使用更新时间或发布时间进行过滤
+                check_date = None
                 if updated is not None:
-                    updated_date = datetime.fromisoformat(updated.text.replace('Z', '+00:00'))
-                    
-                    # 只保留指定日期范围内的论文
-                    if updated_date.date() >= start_date.date():
-                        paper = self._extract_paper_info(entry, namespaces)
-                        if paper:
-                            papers.append(paper)
+                    try:
+                        check_date = datetime.fromisoformat(updated.text.replace('Z', '+00:00'))
+                    except:
+                        pass
+                        
+                if check_date is None and published is not None:
+                    try:
+                        check_date = datetime.fromisoformat(published.text.replace('Z', '+00:00'))
+                    except:
+                        pass
+                
+                # 更宽松的日期过滤：只要在过去30天内就接受
+                if check_date is None or check_date.date() >= (datetime.now() - timedelta(days=30)).date():
+                    paper = self._extract_paper_info(entry, namespaces)
+                    if paper:
+                        papers.append(paper)
                             
         except ET.ParseError as e:
             self.logger.error(f"解析XML响应失败: {e}")
