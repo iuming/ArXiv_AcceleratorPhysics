@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2502.17386v2",
+  "url": "https://arxiv.org/abs/2502.17386v2",
+  "pdf_url": "https://arxiv.org/pdf/2502.17386v2.pdf",
+  "title": "Neural operator surrogate models of plasma edge simulations: feasibility   and data efficiency",
+  "abstract": "The inclusion of high-fidelity simulations of SOL turbulence and transient MHD events such as ELMs in highly iterative applications remains computationally prohibitive, limiting their use in design and control workflows. Understanding these phenomena is vital, as they govern heat flux on plasma-facing components, influencing reactor performance and material lifetime. This study explored FNOs as surrogate models to accelerate plasma simulations from the JOREK MHD and STORM turbulence codes.   FNOs were trained on single-step rollouts and evaluated in terms of long-term predictive accuracy in an auto-regressive manner. To mitigate the computational burden of dataset generation, a transfer learning strategy was explored, leveraging low-fidelity simulations to improve performance on high-fidelity datasets. These results showed that FNOs effectively captured initial plasma evolution, including blob movement and density source localization. However, long rollouts accumulated errors and exhibited sensitivity to certain physical phenomena, leading to non-monotonic error spikes. Transfer learning significantly reduced errors for small dataset sizes and short rollouts, achieving an order-of-magnitude reduction when transfering from low- to high-fidelity datasets. However, its effectiveness diminished with longer rollouts and larger dataset sizes, especially when applied to datasets with significantly different dynamics. Attempts to transfer models to previously unseen variables in simulations were unsuccessful, underscoring the limitations in this context.   These findings demonstrate the promise of NOs for accelerating fusion-relevant PDE simulations. However, they also highlight key challenges: improving long-term accuracy to mitigate error accumulation, capturing critical physical behaviors, and developing robust surrogates that effectively leverage multi-fidelity, multi-physics datasets.",
+  "authors": [
+    "N. Carey",
+    "L. Zanisi",
+    "S. Pamela",
+    "V. Gopakumar",
+    "J. Omotani",
+    "J. Buchanan",
+    "J. Brandstetter",
+    "F. Paischer",
+    "G. Galletti",
+    "P. Setinek"
+  ],
+  "published": "2025-02-24T18:13:10Z",
+  "updated": "2025-07-25T09:00:25Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

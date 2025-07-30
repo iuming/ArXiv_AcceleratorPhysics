@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2412.14962v2",
+  "url": "https://arxiv.org/abs/2412.14962v2",
+  "pdf_url": "https://arxiv.org/pdf/2412.14962v2.pdf",
+  "title": "ThinCurr: An open-source 3D thin-wall eddy current modeling code for the   analysis of large-scale systems of conducting structures",
+  "abstract": "In this paper we present a new thin-wall eddy current modeling code, ThinCurr, for studying inductively-coupled currents in 3D conducting structures -- with primary application focused on the interaction between currents flowing in coils, plasma, and conducting structures of magnetically-confined plasma devices. The code utilizes a boundary finite element method on an unstructured, triangular grid to accurately capture device structures. The new code, part of the broader Open FUSION Toolkit, is open-source and designed for ease of use without sacrificing capability and speed through a combination of Python, Fortran, and C/C++ components. Scalability to large models is enabled through use of hierarchical off-diagonal low-rank compression of the inductance matrix, which is otherwise dense. Ease of handling large models of complicated geometry is further supported by automatic determination of supplemental elements through a greedy homology approach. A detailed description of the numerical methods of the code and verification of the implementation of those methods using cross-code comparisons against the VALEN code and Ansys commercial analysis software is shown.",
+  "authors": [
+    "Christopher Hansen",
+    "Alexander Battey",
+    "Anson Braun",
+    "Sander Miller",
+    "Michael Lagieski",
+    "Ian Stewart",
+    "Ryan Sweeney",
+    "Carlos Paz-Soldan"
+  ],
+  "published": "2024-12-19T15:42:52Z",
+  "updated": "2025-07-25T15:19:25Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1016/j.cpc.2025.109713"
+}
