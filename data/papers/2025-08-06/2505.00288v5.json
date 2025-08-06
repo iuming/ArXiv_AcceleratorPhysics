@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2505.00288v5",
+  "url": "https://arxiv.org/abs/2505.00288v5",
+  "pdf_url": "https://arxiv.org/pdf/2505.00288v5.pdf",
+  "title": "Nyström Type Exponential Integrators for Strongly Magnetized Charged   Particle Dynamics",
+  "abstract": "Calculating the dynamics of charged particles in electromagnetic fields (i.e. the particle pushing problem) is one of the most computationally intensive components of particle-in-cell (PIC) methods for plasma physics simulations. This task is especially challenging when the plasma is strongly magnetized, since in this case the particle motion consists of a wide range of temporal scales from highly oscillatory fast gyromotion to slow macroscopic behavior and the resulting numerical model is very stiff. Current state-of-the-art time integrators used to simulate particle motion have limitations given the severe numerical stiffness of the problem and more efficient methods are of interest. Recently, exponential integrators have been proposed as a promising new approach for these simulations and shown to offer computational advantages over commonly used schemes. Exponential methods can solve linear problems exactly and are A-stable. In this paper, the standard exponential algorithms framework is extended to derive Nystr\\\"om-type exponential methods that integrate the Newtonian equations of motion as a second-order differential equation. Specific Nystr\\\"om-type schemes of second and third orders are derived and applied to strongly magnetized particle pushing problems. Numerical experiments are presented to demonstrate that the Nystr\\\"om-type exponential integrators can provide significant improvement in computational efficiency over the standard exponential methods.",
+  "authors": [
+    "Tri P. Nguyen",
+    "Ilon Joseph",
+    "Mayya Tokman"
+  ],
+  "published": "2025-05-01T04:22:49Z",
+  "updated": "2025-08-01T09:08:16Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.NA",
+    "math.NA",
+    "physics.plasm-ph",
+    "65L04, 78A35"
+  ],
+  "primary_category": "physics.comp-ph"
+}
