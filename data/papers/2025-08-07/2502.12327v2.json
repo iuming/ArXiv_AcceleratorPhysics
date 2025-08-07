@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2502.12327v2",
+  "url": "https://arxiv.org/abs/2502.12327v2",
+  "pdf_url": "https://arxiv.org/pdf/2502.12327v2.pdf",
+  "title": "Learning Plasma Dynamics and Robust Rampdown Trajectories with   Predict-First Experiments at TCV",
+  "abstract": "The rampdown phase of a tokamak pulse is difficult to simulate and often exacerbates multiple plasma instabilities. To reduce the risk of disrupting operations, we leverage advances in Scientific Machine Learning (SciML) to combine physics with data-driven models, developing a neural state-space model (NSSM) that predicts plasma dynamics during Tokamak \\`a Configuration Variable (TCV) rampdowns. The NSSM efficiently learns dynamics from a modest dataset of 311 pulses with only five pulses in a reactor-relevant high-performance regime. The NSSM is parallelized across uncertainties, and reinforcement learning (RL) is applied to design trajectories that avoid instability limits. High-performance experiments at TCV show statistically significant improvements in relevant metrics. A predict-first experiment, increasing plasma current by 20% from baseline, demonstrates the NSSM's ability to make small extrapolations. The developed approach paves the way for designing tokamak controls with robustness to considerable uncertainty and demonstrates the relevance of SciML for fusion experiments.",
+  "authors": [
+    "Allen M. Wang",
+    "Alessandro Pau",
+    "Cristina Rea",
+    "Oswin So",
+    "Charles Dawson",
+    "Olivier Sauter",
+    "Mark D. Boyer",
+    "Anna Vu",
+    "Cristian Galperti",
+    "Chuchu Fan",
+    "Antoine Merle",
+    "Yoeri Poels",
+    "Cristina Venturini",
+    "Stefano Marchioni",
+    "the TCV Team"
+  ],
+  "published": "2025-02-17T21:19:15Z",
+  "updated": "2025-08-01T18:12:00Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
