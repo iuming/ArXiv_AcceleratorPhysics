@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2508.02626v1",
+  "url": "https://arxiv.org/abs/2508.02626v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.02626v1.pdf",
+  "title": "Boosting the Efficiency of the Differential Algebra-based Fast Multipole   Method Using Symbolic Differential Algebra",
+  "abstract": "The Fast Multipole Method (FMM) computes pairwise interactions between particles with an efficiency that scales linearly with the number of particles. The method works by grouping particles based on their spatial distribution and approximating interactions with distant regions through series expansions. Differential Algebra (DA), also known as Truncated Power Series Algebra (TPSA), computes the Taylor expansion of a function at a given point and allows users to manipulate Taylor expansions as easily as numerical values in computation. This makes it a convenient and powerful tool for constructing expansions in FMM. However, DA-based FMM operators typically suffer from lower efficiency compared to implementations based on other mathematical frameworks, such as Cartesian tensors or spherical harmonics. To address this, we developed a C++ library for symbolic DA computation, enabling the derivation of explicit expressions for DA-based FMM operators. These symbolic expressions are then used to generate highly optimized code that eliminates the redundant computations inherent in numerical DA packages. For individual FMM operators, this approach achieves a speedup of 20- to 50-fold. We further evaluate the numerical performance of the enhanced DA-FMM and benchmark it against two state-of-the-art FMM implementations, pyfmmlib and the traceless Cartesian tensor-based FMM, for the Coulomb potential. For relative errors on the order of $10^{-7}$ or higher, the enhanced DA-FMM consistently outperforms both alternatives.",
+  "authors": [
+    "He Zhang"
+  ],
+  "published": "2025-08-04T17:15:57Z",
+  "updated": "2025-08-04T17:15:57Z",
+  "categories": [
+    "physics.comp-ph",
+    "math-ph",
+    "math.MP",
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
