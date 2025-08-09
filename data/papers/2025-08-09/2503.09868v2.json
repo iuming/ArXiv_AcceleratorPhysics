@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2503.09868v2",
+  "url": "https://arxiv.org/abs/2503.09868v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.09868v2.pdf",
+  "title": "Machine-learned trends in mirror configurations in the Large Plasma   Device",
+  "abstract": "This study demonstrates the efficacy of ML-based trend inference using data from the Large Plasma Device (LAPD). The LAPD is a flexible basic plasma science device with a high discharge repetition rate (0.25-1 Hz) and reproducible plasmas capable of collecting high-spatial-resolution probe measurements. A diverse dataset is collected through random sampling of LAPD operational parameters, including the magnetic field strength and profile, fueling settings, and the discharge voltage. NN ensembles with uncertainty quantification are trained to predict time-averaged ion saturation current ($I_\\text{sat}$ -- proportional to density and the square root of electron temperature) at any position within the dataset domain. Model-inferred trends, such as the effects of introducing mirrors or changing the discharge voltage, are consistent with current understanding. In addition, axial variation is optimized via comprehensive search over $I_\\text{sat}$ predictions. Experimental validation of these optimized machine parameters demonstrate qualitative agreement, with quantitative differences attributable to Langmuir probe variation and cathode conditions. This investigation demonstrates, using ML techniques, a new way of extracting insight from experiments and novel optimization of plasmas. The code and data used in this study are made freely available.",
+  "authors": [
+    "Phil Travis",
+    "Jacob Bortnik",
+    "Troy Carter"
+  ],
+  "published": "2025-03-12T22:00:48Z",
+  "updated": "2025-08-05T18:34:38Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0270755"
+}
