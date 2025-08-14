@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2502.21198v2",
+  "url": "https://arxiv.org/abs/2502.21198v2",
+  "pdf_url": "https://arxiv.org/pdf/2502.21198v2.pdf",
+  "title": "AI-Enhanced Self-Triggering for Extensive Air Showers: Performance and   FPGA Feasibility",
+  "abstract": "Autonomous self-triggering for radio detection of extensive air showers remains challenging in realistic environments dominated by strong and variable radio-frequency interference. Traditional radio-array operations rely on external particle-detector triggers, limiting sensitivity and increasing system complexity. In this work, I present a proof-of-principle study demonstrating that deep-learning-based triggering can operate in such high-noise conditions and can be implemented within the strict latency constraints of large-scale radio observatories. Using measured high-interference noise traces combined with simulated cosmic-ray pulses, a fully convolutional network classifier was trained and optimised for robust separation of signals from background at MHz-scale trigger-trial rates. The trained model was quantised with HLS4ML to fixed-point precision and synthesised using Vitis HLS for multiple FPGA targets. The quantised implementation preserves the floating-point model performance (AUC_float = 0.997, AUC_quant = 0.996) while achieving microsecond-scale inference latencies. These results show that modern FPGA-based AI inference, enabled by high-level synthesis, can provide low-latency, radio-only triggering for next-generation cosmic-ray observatories, potentially removing the need for external trigger systems and reducing array complexity.",
+  "authors": [
+    "Qader Dorosti"
+  ],
+  "published": "2025-02-28T16:15:20Z",
+  "updated": "2025-08-08T18:57:06Z",
+  "categories": [
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}

@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2508.08530v1",
+  "url": "https://arxiv.org/abs/2508.08530v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.08530v1.pdf",
+  "title": "A High-Order Low-Order extended moment method for the Vlasov-Darwin   particle-in-cell system",
+  "abstract": "In this study, we develop an extended implicit moment method, namely, a coupled high-order low-order (HOLO) method and apply it to the electromagnetic Vlasov-Darwin model. The high-order (HO) system evolves particles in a manner that conserves charge, energy, and canonical momentum, while the low-order (LO) system solves the fluid moment and Darwin equations, acting as an algorithmic convergence accelerator to the HO system. We demonstrate the HOLO method's ability to take timesteps far larger than the explicit limit, and accurately recover the system's evolution so long as its dynamical timescale is respected. Also, we find that the choice of LO fluid moment equations has a strong impact on the nonlinear convergence of the coupled particle-field system. The HOLO algorithm is benchmarked against electrostatic Landau damping and the electromagnetic electron and ion Weibel instabilities.",
+  "authors": [
+    "Derek A. Kuldinow",
+    "William T. Taitano",
+    "Kentaro Hara"
+  ],
+  "published": "2025-08-11T23:59:02Z",
+  "updated": "2025-08-11T23:59:02Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
