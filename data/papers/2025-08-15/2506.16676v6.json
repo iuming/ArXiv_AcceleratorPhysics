@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2506.16676v6",
+  "url": "https://arxiv.org/abs/2506.16676v6",
+  "pdf_url": "https://arxiv.org/pdf/2506.16676v6.pdf",
+  "title": "Fast solvers for Tokamak fluid models with PETSC",
+  "abstract": "This work begins the development of fast, scalable solvers for scientific and engineering-relevant magnetohydrodynamics (MHD) models of tokamaks using multigrid methods. These models are characterized by a distinguished direction following the magnetic field around the torus, which dominates the plasma dynamics. All tokamak models exploit this structure, for example, NIMROD uses 2D, unstructured, high-order finite elements in the poloidal plane with Fourier modes in the toroidal coordinate, and the 3D, extended MHD code M3D-C1 uses 2D, unstructured C1 elements in the poloidal plane with cubic Hermite functions in the toroidal direction and a regular grid that is partially aligned with the magnetic field. This structure suggests addressing the toroidal coordinate first, which NIMROD does at the formulation level, but M3D-C1 uses a full 3D discretization. The resulting algebraic system is solved at each time step in an implicit time integrator. This work addressed the toroidal coordinate in the M3D-C1 velocity solve by adding semi-coarsening multigrid to the existing PETSC - Portable, Extensible Toolkit for Scientific Computation - block Jacobi solver, with the addition of little new code. Competitive performance of this new solver configuration is demonstrated on a self-consistent runaway electron model of a SPARC4 disruption, and the next steps in the development of this solver are outlined.",
+  "authors": [
+    "Mark F. Adams",
+    "Jin Chen",
+    "Benjamin Sturdevant"
+  ],
+  "published": "2025-06-20T01:36:08Z",
+  "updated": "2025-08-10T14:46:04Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.PF"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
