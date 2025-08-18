@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2508.10408v1",
+  "url": "https://arxiv.org/abs/2508.10408v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.10408v1.pdf",
+  "title": "Extracting a stochastic model for predator-prey dynamic of turbulence   and zonal flows with limited data",
+  "abstract": "Understanding the interaction between turbulence and zonal flows is critical for modeling turbulence transport in fusion plasmas, often described through predator-prey dynamics. However, traditional deterministic models like the Lotka-Volterra equations simplify this interaction and fail to capture the small fluctuations in simulation data. In this study, we develop a neural network model based on stochastic differential equations (SDEs) to represent the predator-prey dynamics using limited data from simulations of the modified Hasegawa-Wakatani system. We extract the drift and diffusion terms via neural networks, incorporating physical constraints and employing the unscented transform to mitigate challenges brought by limited data. The model accurately reproduces key dynamical features, including stagnation phenomena and energy exchange mechanisms, and the state density distribution generated from the model shows a low KL divergence with the simulation data. A parameter scan reveals that zonal flow shearing efficiency decreases with amplitude, and predator-prey oscillations damp in the absence of stochasticity. These findings underscore the value of integrating physical insight into data-driven approaches for complex plasma systems.",
+  "authors": [
+    "J. C. Huang",
+    "Z. S. Qu",
+    "R. Varennes",
+    "Y. W. Cho",
+    "X. Garbet",
+    "C. G. Wan",
+    "C. Guet",
+    "D. Niyato",
+    "V. Grandgirard"
+  ],
+  "published": "2025-08-14T07:26:03Z",
+  "updated": "2025-08-14T07:26:03Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
