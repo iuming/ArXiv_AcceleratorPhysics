@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2409.09238v2",
+  "url": "https://arxiv.org/abs/2409.09238v2",
+  "pdf_url": "https://arxiv.org/pdf/2409.09238v2.pdf",
+  "title": "High-Fidelity Data-Driven Dynamics Model for Reinforcement   Learning-based Control in HL-3 Tokamak",
+  "abstract": "The success of reinforcement learning (RL)-based control in tokamaks, an emerging technique for controlled nuclear fusion with improved flexibility, typically requires substantial interaction with a simulator capable of accurately evolving the high-dimensional plasma state. Compared to first-principle-based simulators, whose intense computations lead to sluggish RL training, we devise an effective method to acquire a fully data-driven simulator, by mitigating the arising compounding error issue due to the underlying autoregressive nature. With high accuracy and appealing extrapolation capability, this high-fidelity dynamics model subsequently enables the rapid training of a qualified RL agent to directly generate engineering-reasonable actuator commands, aiming at the desired long-term targets of plasma configuration. Together with a surrogate model for Equilibrium Fitting code based on neural network, named EFITNN, the RL agent successfully maintains a 400-ms, 1 kHz trajectory control with accurate waveform tracking of plasma current and last closed flux surface on the HL-3 tokamak. Furthermore, it also demonstrates the feasibility of zero-shot adaptation to changed triangularity targets, confirming the robustness of the developed data-driven dynamics model. Our work underscores the advantage of fully data-driven dynamics models in yielding RL-based trajectory control policies at a sufficiently fast pace, an anticipated engineering requirement in daily discharge practices for the upcoming ITER device.",
+  "authors": [
+    "Niannian Wu",
+    "Zongyu Yang",
+    "Rongpeng Li",
+    "Ning Wei",
+    "Yihang Chen",
+    "Qianyun Dong",
+    "Jiyuan Li",
+    "Guohui Zheng",
+    "Xinwen Gong",
+    "Feng Gao",
+    "Bo Li",
+    "Min Xu",
+    "Zhifeng Zhao",
+    "Wulyu Zhong"
+  ],
+  "published": "2024-09-14T00:17:04Z",
+  "updated": "2025-08-15T03:40:14Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
