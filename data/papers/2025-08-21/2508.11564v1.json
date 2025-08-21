@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2508.11564v1",
+  "url": "https://arxiv.org/abs/2508.11564v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.11564v1.pdf",
+  "title": "Accelerated Solvers for Neutral Particle Dynamics in Plasma Simulation",
+  "abstract": "The simulation of turbulence in the boundary region of a tokamak is crucial for understanding and optimizing the performance of fusion reactors. In this work, the use of low-rank linear algebra techniques is shown to enhance the efficiency of boundary simulations, specifically by accelerating the solution of a kinetic model for the neutral particles. Solving the kinetic model deterministically using the method of characteristics requires the solution of integral equations, which typically result in dense linear systems upon discretization. We employ hierarchical matrix approximations to significantly reduce the computational cost of assembling and solving the linear systems, leading to substantial savings in both time and memory. The hierarchical matrix method is implemented and tested within the GBS simulation code for boundary simulations, achieving over 90\\% reduction in computation time and memory, and enabling simulations with unprecedented spatial resolution for neutral particles.",
+  "authors": [
+    "Margherita Guido",
+    "Daniel Kressner",
+    "Davide Mancini",
+    "Paolo Ricci"
+  ],
+  "published": "2025-08-15T16:17:07Z",
+  "updated": "2025-08-15T16:17:07Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
