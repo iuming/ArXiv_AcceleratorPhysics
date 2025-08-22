@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2508.13695v1",
+  "url": "https://arxiv.org/abs/2508.13695v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.13695v1.pdf",
+  "title": "A Bayesian approach to time-domain Photonic Doppler Velocimetry",
+  "abstract": "Photonic Doppler Velocimetry (PDV) is an established technique for measuring the velocities of fast-moving surfaces in high-energy-density experiments. In the standard approach to PDV analysis, a short-time Fourier transform (STFT) is used to generate a spectrogram from which the velocity history of the target is inferred. The user chooses the form, duration and separation of the window function. Here we present a Bayesian approach to infer the velocity directly from the PDV oscilloscope trace, without using the spectrogram for analysis. This is clearly a difficult inference problem due to the highly-periodic nature of the data, but we find that with carefully chosen prior distributions for the model parameters we can accurately recover the injected velocity from synthetic data. We validate this method using PDV data collected at the STAR two-stage light gas gun at Sandia National Laboratories, recovering shock-front velocities in quartz that are consistent with those inferred using the STFT-based approach, and are interpolated across regions of low signal-to-noise data. Although this method does not rely on the same user choices as the STFT, we caution that it can be prone to misspecification if the chosen model is not sufficient to capture the velocity behavior. Analysis using posterior predictive checks can be used to establish if a better model is required, although more complex models come with additional computational cost, often taking more than several hours to converge when sampling the Bayesian posterior. We therefore recommend it be viewed as a complementary method to that of the STFT-based approach.",
+  "authors": [
+    "J. R. Allison",
+    "R. Bordas",
+    "J. Read",
+    "G. Burdiak",
+    "V. Beltrán",
+    "N. Joiner",
+    "H. Doyle",
+    "N. Hawker",
+    "J. Skidmore",
+    "T. Ao",
+    "A. Porwitzky",
+    "D. Dolan",
+    "B. Farfan",
+    "C. Johnson",
+    "A. Hansen"
+  ],
+  "published": "2025-08-19T09:55:49Z",
+  "updated": "2025-08-19T09:55:49Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0267409"
+}
