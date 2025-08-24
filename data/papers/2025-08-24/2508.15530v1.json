@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2508.15530v1",
+  "url": "https://arxiv.org/abs/2508.15530v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.15530v1.pdf",
+  "title": "Self-supervised physics-informed generative networks for phase retrieval   from a single X-ray hologram",
+  "abstract": "X-ray phase contrast imaging significantly improves the visualization of structures with weak or uniform absorption, broadening its applications across a wide range of scientific disciplines. Propagation-based phase contrast is particularly suitable for time- or dose-critical in vivo/in situ/operando (tomography) experiments because it requires only a single intensity measurement. However, the phase information of the wave field is lost during the measurement and must be recovered. Conventional algebraic and iterative methods often rely on specific approximations or boundary conditions that may not be met by many samples or experimental setups. In addition, they require manual tuning of reconstruction parameters by experts, making them less adaptable for complex or variable conditions. Here we present a self-learning approach for solving the inverse problem of phase retrieval in the near-field regime of Fresnel theory using a single intensity measurement (hologram). A physics-informed generative adversarial network is employed to reconstruct both the phase and absorbance of the unpropagated wave field in the sample plane from a single hologram. Unlike most deep learning approaches for phase retrieval, our approach does not require paired, unpaired, or simulated training data. This significantly broadens the applicability of our approach, as acquiring or generating suitable training data remains a major challenge due to the wide variability in sample types and experimental configurations. The algorithm demonstrates robust and consistent performance across diverse imaging conditions and sample types, delivering quantitative, high-quality reconstructions for both simulated data and experimental datasets acquired at beamline P05 at PETRA III (DESY, Hamburg), operated by Helmholtz-Zentrum Hereon. Furthermore, it enables the simultaneous retrieval of both phase and absorption information.",
+  "authors": [
+    "Xiaogang Yang",
+    "Dawit Hailu",
+    "Vojtěch Kulvait",
+    "Thomas Jentschke",
+    "Silja Flenner",
+    "Imke Greving",
+    "Stuart I. Campbell",
+    "Johannes Hagemann",
+    "Christian G. Schroer",
+    "Tak Ming Wong",
+    "Julian Moosmann"
+  ],
+  "published": "2025-08-21T13:06:06Z",
+  "updated": "2025-08-21T13:06:06Z",
+  "categories": [
+    "physics.optics",
+    "cs.CV",
+    "eess.IV",
+    "physics.comp-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics",
+  "doi": "10.1364/OE.569216"
+}
