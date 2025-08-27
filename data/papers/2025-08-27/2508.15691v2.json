@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2508.15691v2",
+  "url": "https://arxiv.org/abs/2508.15691v2",
+  "pdf_url": "https://arxiv.org/pdf/2508.15691v2.pdf",
+  "title": "Trotter-based quantum algorithm for solving transport equations with   exponentially fewer time-steps",
+  "abstract": "The extent to which quantum computers can simulate physical phenomena and solve the partial differential equations (PDEs) that govern them remains a central open question. In this work, one of the most fundamental PDEs is addressed: the multidimensional transport equation with space- and time-dependent coefficients. We present a quantum numerical scheme based on three steps: quantum state preparation, evolution, and measurement of relevant observables. The evolution step combines a high-order centered finite difference with a time-splitting scheme based on product formula approximations, also known as Trotterization. We introduce novel vector-norm analysis and prove that the number of time-steps can be reduced by a factor exponential in the number of qubits compared to previously established operator-norm analysis, thereby significantly lowering the projected computational resources. We also present efficient quantum circuits and numerical simulations that confirm the predicted vector-norm scaling. We report results on real quantum hardware for the one-dimensional convection equation, and solve a non-linear ordinary differential equation via its associated Liouville equation, a particular case of transport equations. This work provides a practical framework for efficiently simulating transport phenomena on quantum computers, with potential applications in plasma physics, molecular gas dynamics and non-linear dynamical systems, including chaotic systems.",
+  "authors": [
+    "Julien Zylberman",
+    "Thibault Fredon",
+    "Nuno F. Loureiro",
+    "Fabrice Debbasch"
+  ],
+  "published": "2025-08-21T16:14:05Z",
+  "updated": "2025-08-25T12:00:54Z",
+  "categories": [
+    "quant-ph",
+    "math-ph",
+    "math.MP",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph"
+}
