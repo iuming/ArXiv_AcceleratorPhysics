@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2508.20878v1",
+  "url": "https://arxiv.org/abs/2508.20878v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.20878v1.pdf",
+  "title": "Automated simulation-based design via multi-fidelity active learning and   optimisation for laser direct drive implosions",
+  "abstract": "The design of inertial fusion experiments is a complex task as driver energy must be delivered in a precise manner to a structured target to achieve a fast, but hydrodynamically stable, implosion. Radiation-hydrodynamics simulation codes are an essential tool in this design process. However, multi-dimensional simulations that capture hydrodynamic instabilities are more computationally expensive than optimistic, 1D, spherically symmetric simulations which are often the primary design tool. In this work, we develop a machine learning framework that aims to effectively use information from a large number of 1D simulations to inform design in the presence of hydrodynamic instabilities. We use an ensemble of neural network surrogate models trained on both 1D and 2D data to capture the space of good designs, i.e. those that are robust to hydrodynamic instabilities. We use this surrogate to perform Bayesian optimisation to find optimal designs for a 25 kJ laser driver. We perform hydrodynamic scaling on these designs to confirm the achievement of high gain for a 2 MJ laser driver, using 2D simulations including alpha heating effects.",
+  "authors": [
+    "A. J. Crilly",
+    "P. W. Moloney",
+    "D. Shi",
+    "E. A. Ferdinandi"
+  ],
+  "published": "2025-08-28T15:07:18Z",
+  "updated": "2025-08-28T15:07:18Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
