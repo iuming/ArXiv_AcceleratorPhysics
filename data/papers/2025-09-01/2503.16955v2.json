@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2503.16955v2",
+  "url": "https://arxiv.org/abs/2503.16955v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.16955v2.pdf",
+  "title": "HEART: A New X-Ray Tracing Code for Mosaic Crystal Spectrometers",
+  "abstract": "We introduce a new open-source Python x-ray tracing code for modelling Bragg diffracting mosaic crystal spectrometers: High Energy Applications Ray Tracer (HEART). HEART's high modularity enables customizable workflows as well as efficient development of novel features. Utilizing Numba's just-in-time (JIT) compiler and the message-passing interface (MPI) allows running HEART in parallel leading to excellent performance. HEART is intended to be used for modelling x-ray spectra as they would be seen in experiments that measure x-ray spectroscopy with a mosaic crystal spectrometer. This enables the user to make predictions about what will be seen on a detector in experiment, perform optimizations on the design of the spectrometer setup, or to study the effect of the spectrometer on measured spectra. However, the code certainly has further uses beyond these example use cases. Here, we discuss the physical model used in the code, and explore a number of different mosaic distribution functions, intrinsic rocking curves, and sampling approaches which are available to the user. Finally, we demonstrate its strong predictive capability in comparison to spectroscopic data collected at the European XFEL in Germany.",
+  "authors": [
+    "Thomas Gawne",
+    "Sebastian Schwalbe",
+    "Thomas Chuna",
+    "Uwe Hernandez Acosta",
+    "Thomas R. Preston",
+    "Tobias Dornheim"
+  ],
+  "published": "2025-03-21T09:00:21Z",
+  "updated": "2025-08-28T15:02:38Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
