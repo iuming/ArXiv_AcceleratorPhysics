@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2508.20566v1",
+  "url": "https://arxiv.org/abs/2508.20566v1",
+  "pdf_url": "https://arxiv.org/pdf/2508.20566v1.pdf",
+  "title": "Physics-informed neural network enhanced multispectral single-pixel   imaging with a chip spectral sensor",
+  "abstract": "Multispectral imaging (MSI) captures data across multiple spectral bands, offering enhanced informational depth compared to standard RGB imaging and benefiting diverse fields such as agriculture, medical diagnostics, and industrial inspection. Conventional MSI systems, however, suffer from high cost, complexity, and limited performance in low-light conditions. Moreover, data-driven MSI methods depend heavily on large, labeled training datasets and struggle with generalization. In this work, we present a portable multispectral single-pixel imaging (MS-SPI) method that integrates a chip-sized multispectral sensor for system miniaturization and leverages an untrained physics-informed neural network (PINN) to reconstruct high-quality spectral images without the need for labeled training data. The physics-informed structure of the network enables the self-corrected reconstruction of multispectral images directly with the input of raw measurements from the multispectral sensor. Our proof-of-concept prototype achieves the reconstruction of 12-channel high-quality spectral images at the sampling rate of 10%. We also experimentally validate its performance under varying sampling rate conditions, by comparing it with conventional compressive sensing algorithms. Furthermore, we demonstrate the application of this technique to an MSI-based image segmentation task, in which spatial regions are discriminated according to their characteristic spectral signatures. This compact, high-fidelity, and portable approach offers promising pathways to lightweight and cost-effective spectral imaging on mobile platforms.",
+  "authors": [
+    "Muchen Zhu",
+    "Baolei Liu",
+    "Yao Wang",
+    "Linjun Zhai",
+    "Jiaqi Song",
+    "Nana Liu",
+    "Zhaohua Yang",
+    "Lei Ding",
+    "Fan Wang"
+  ],
+  "published": "2025-08-28T09:04:28Z",
+  "updated": "2025-08-28T09:04:28Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.optics"
+  ],
+  "primary_category": "physics.ins-det"
+}
