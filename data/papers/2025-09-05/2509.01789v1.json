@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2509.01789v1",
+  "url": "https://arxiv.org/abs/2509.01789v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.01789v1.pdf",
+  "title": "Real-Time Applicability of Emulated Virtual Circuits for Tokamak Plasma   Shape Control",
+  "abstract": "Machine learning has recently been adopted to emulate sensitivity matrices for real-time magnetic control of tokamak plasmas. However, these approaches would benefit from a quantification of possible inaccuracies. We report on two aspects of real-time applicability of emulators. First, we quantify the agreement of target displacement from VCs computed via Jacobians of the shape emulators with those from finite differences Jacobians on exact Grad-Shafranov solutions. Good agreement ($\\approx$5-10%) can be achieved on a selection of geometric targets using combinations of neural network emulators with $\\approx10^5$ parameters. A sample of $\\approx10^{5}-10^{6}$ synthetic equilibria is essential to train emulators that are not over-regularised or overfitting. Smaller models trained on the shape targets may be further fine-tuned to better fit the Jacobians. Second, we address the effect of vessel currents that are not directly measured in real-time and are typically subsumed into effective \"shaping currents\" when designing virtual circuits. We demonstrate that shaping currents can be inferred via simple linear regression on a trailing window of active coil current measurements with residuals of only a few Amp\\`eres, enabling a choice for the most appropriate shaping currents at any point in a shot. While these results are based on historic shot data and simulations tailored to MAST-U, they indicate that emulators with few-millisecond latency can be developed for robust real-time plasma shape control in existing and upcoming tokamaks.",
+  "authors": [
+    "Pedro Cavestany",
+    "Alasdair Ross",
+    "Adriano Agnello",
+    "Aran Garrod",
+    "Nicola C. Amorisco",
+    "George K. Holt",
+    "Kamran Pentland",
+    "James Buchanan"
+  ],
+  "published": "2025-09-01T21:37:48Z",
+  "updated": "2025-09-01T21:37:48Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY",
+    "physics.data-an",
+    "I.2; I.6"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

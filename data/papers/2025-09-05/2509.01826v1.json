@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.01826v1",
+  "url": "https://arxiv.org/abs/2509.01826v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.01826v1.pdf",
+  "title": "A Practical Flake Segmentation and Indexing Pipeline for Automated 2D   Material Stacking",
+  "abstract": "A cost-effective and robust image-processing pipeline is presented for the detection and characterization of exfoliated two-dimensional (2D) material flakes in optical microscope images, designed to facilitate automation in van der Waals heterostructure assembly. The system combines shallow machine learning (ML)-based material classification with a precision-first flake detection algorithm driven by edge morphology and color discontinuity. Step edges are resolved when supported by optical contrast, while spurious features such as dust and background texture are reliably rejected. Each identified flake is exported in a structured format that includes centroid coordinates, bounding geometries, average RGB color, and estimated optical thickness, enabling seamless integration into automated pick-up and stacking workflows. The pipeline is hardware-light and operates without the need for deep learning models or nanoscale ground-truth labels, making it practical for scalable front-end wafer processing at a hardware cost of under 30,000 USD. In contrast to prior approaches that focus solely on detection accuracy, the proposed system unifies flake segmentation with indexing, filtering, and blueprint-driven stacking, forming a closed-loop workflow from image acquisition to device planning. Its low annotation requirement and flexible implementation enable rapid deployment across diverse 2D material systems and imaging conditions.",
+  "authors": [
+    "Yutao Li",
+    "Logan Sherlock",
+    "Ryan Benderson",
+    "Daniel Ostrom",
+    "Huandong Chen",
+    "Kazuhiro Fujita",
+    "Abhay Pasupathy"
+  ],
+  "published": "2025-09-01T23:12:29Z",
+  "updated": "2025-09-01T23:12:29Z",
+  "categories": [
+    "cond-mat.mes-hall",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.mes-hall"
+}

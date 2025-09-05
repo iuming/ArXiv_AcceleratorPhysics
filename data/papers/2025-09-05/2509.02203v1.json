@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2509.02203v1",
+  "url": "https://arxiv.org/abs/2509.02203v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.02203v1.pdf",
+  "title": "Time Series Analysis of DECAL Sensor Noise for the Generation of Truly   Random Numbers",
+  "abstract": "We explore here the stochastic behavior of the DECAL sensor's noise output, and we evaluate its potential application as a true random number generator (TRNG) using time series analysis. The main objectives are twofold: first, to characterize the intrinsic noise properties of the DECAL sensor in the absence of external stimuli, and second, to determine the feasibility of employing the sensor as a source of randomness. The collected sensor data are examined through statistical and time series methodologies, and subsequently modeled using an auto-regressive integrated moving average (ARIMA) process. This modeling approach enables the transformation of the sensor's raw noise into a Gaussian white noise sequence, which serves as the basis for generating random bits. The resulting random numbers are subjected to a series of statistical tests for randomness, including the NIST test suite. Our findings indicate that the method produces statistically sound random numbers. However, the rate of bit generation is relatively low, limiting its practicality for real-time TRNG applications under the current configuration. Despite this limitation, the results suggest that time series modeling presents a promising framework for extracting randomness from the DECAL sensor, and that with further optimization, the sensor could serve as a reliable and effective TRNG.",
+  "authors": [
+    "Dimos Aslanis",
+    "Alex Kehagias",
+    "Ioannis Kopsalis",
+    "Ioannis Theodonis"
+  ],
+  "published": "2025-09-02T11:16:48Z",
+  "updated": "2025-09-02T11:16:48Z",
+  "categories": [
+    "hep-ex",
+    "hep-lat",
+    "hep-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}
