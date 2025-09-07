@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.04359v1",
+  "url": "https://arxiv.org/abs/2509.04359v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.04359v1.pdf",
+  "title": "Assessing time-dependent temperature profile predictions using reduced   transport models for high performing NSTX plasmas",
+  "abstract": "Time-dependent, predictive simulations were performed with the 1.5D tokamak integrated modeling code TRANSP on a large set of well-analyzed, high performing discharges from the National Spherical Torus Experiment (NSTX) in order to evaluate how well modern reduced transport models can reproduce experimentally observed temperature profiles in spherical tokamaks. Overall, it is found that simulations using the Multi-Mode Model (MMM) more consistently agree with the NSTX observations than those using the Trapped Gyro-Landau Fluid (TGLF) model, despite TGLF requiring orders of magnitude greater computational cost. When considering all examined discharges, MMM has median overpredictions of electron temperature ($T_e$) and ion temperature ($T_i$) profiles of 28% and 27%, respectively, relative to the experiment. TGLF overpredicts $T_e$ by 46%, with much larger variance than MMM, and underpredicts $T_i$ by 25%. As $\\beta$ is increased across NSTX discharges, TGLF predicts lower $T_e$ and significant flattening of the $T_i$ profile, conflicting with NSTX observations. When using an electrostatic version of TGLF, both $T_e$ and $T_i$ are substantially overpredicted, underscoring the importance of electromagnetic turbulence in the high $\\beta$ spherical tokamak regime. Additionally, calculations with neural net surrogate models for TGLF were performed outside of TRANSP with a time slice flux matching transport solver, finding better agreement with experiment than the TRANSP simulations, highlighting the impact of different transport solvers and simulation techniques. Altogether, the reasonable agreement with experiment of temperature profiles predicted by MMM motivates a more detailed examination of the sensitivities of the TRANSP simulations with MMM to different NSTX plasma regimes in a companion paper, in preparation for self-consistent, time-dependent predictive modeling of NSTX-U scenarios.",
+  "authors": [
+    "J. B. Lestz",
+    "G. Avdeeva",
+    "T. F. Neiser",
+    "M. V. Gorelenkova",
+    "F. D. Halpern",
+    "S. M. Kaye",
+    "J. McClenaghan",
+    "A. Y. Pankin",
+    "K. E. Thome"
+  ],
+  "published": "2025-09-04T16:19:52Z",
+  "updated": "2025-09-04T16:19:52Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
