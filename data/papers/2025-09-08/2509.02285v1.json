@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2509.02285v1",
+  "url": "https://arxiv.org/abs/2509.02285v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.02285v1.pdf",
+  "title": "FPGA-Based RoCEv2-RDMA Readout Electronics for the CTAO-LST Advanced   Camera",
+  "abstract": "CTAO's (Cherenkov Telescope Array Observatory) largest telescopes type, the LST (Large-Sized Telescope), are being installed at the northern site of the Cherenkov Telescope Array (CTA) at the Observatorio del Roque de los Muchachos on the Canary island of La Palma. Their aim is to capture the lowest-energy gamma rays of the observatory. The hereby proposed readout electronics architecture, serving as a proof-of-concept for its advanced camera upgrade, relies on a custom high-channel count fast sampling hardware digitizer board acting as a Front-End. The design includes a versatile pre-amplification stage and high-speed serial links for streaming JESD204C-compliant data at rates approaching 12 Gb/s per lane. The data get transferred to Back-End electronics for a first data-processing and trigger before being transmitted to event-building servers through 10 Gb/s Ethernet links. The performance of the link is exploited by implementing RDMA communication in hardware, thanks to a RoCEv2 core written in Bluespec SystemVerilog, enabling the possibility of transfer data directly to processing units without CPU intervention. Hardware design and characterization of the Front End board are reported, as well as a detailed description and tests of the Back End RDMA firmware.",
+  "authors": [
+    "F. Marini",
+    "M. Bellato",
+    "A. Bergnoli",
+    "D. Corti",
+    "A. Griggio",
+    "R. Isocrate",
+    "L. Modenese",
+    "M. Toffano",
+    "C. Arcaro",
+    "F. Di Pierro",
+    "M. Mariotti",
+    "M. Mi",
+    "P. Wang"
+  ],
+  "published": "2025-09-02T13:07:24Z",
+  "updated": "2025-09-02T13:07:24Z",
+  "categories": [
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM",
+  "doi": "10.1109/TNS.2025.3599615"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.03137v1",
+  "url": "https://arxiv.org/abs/2509.03137v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.03137v1.pdf",
+  "title": "A Neural Network Approach to Multi-radionuclide TDCR Beta Spectroscopy",
+  "abstract": "Liquid scintillation triple-to-doubly coincident ratio (TDCR) spectroscopy is widely adopted as a standard method for radionuclide quantification because of its inherent advantages such as high precision, self-calibrating capability, and independence from radioactive reference sources. However, multiradionuclide analysis via TDCR faces the challenges of limited automation and reliance on mixture-specific standards, which may not be easily available. Here, we present an Artificial Intelligence (AI) framework that combines numerical spectral simulation and deep learning for standard-free automated analysis. $\\beta$ spectra for model training were generated using Geant4 simulations coupled with statistically modeled detector response sampling. A tailored neural network architecture, trained on this dataset covering various nuclei mix ratio and quenching scenarios, enables autonomous resolution of individual radionuclide activities and detecting efficiency through end-to-end learning paradigms. The model delivers consistent high accuracy across tasks: activity proportions (mean absolute error = 0.009), detection efficiencies (mean absolute error = 0.002), and spectral reconstruction (Structural Similarity Index = 0.9998), validating its physical plausibility for quenched $\\beta$ spectroscopy. This AI-driven methodology exhibits significant potential for automated safety-compliant multiradionuclide analysis with robust generalization, real-time processing capabilities, and engineering feasibility, particularly in scenarios where reference materials are unavailable or rapid field analysis is required.",
+  "authors": [
+    "Li Yi",
+    "Qian Yang"
+  ],
+  "published": "2025-09-03T08:40:02Z",
+  "updated": "2025-09-03T08:40:02Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "nucl-ex",
+    "physics.comp-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG"
+}
