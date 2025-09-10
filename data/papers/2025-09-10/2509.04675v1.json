@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.04675v1",
+  "url": "https://arxiv.org/abs/2509.04675v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.04675v1.pdf",
+  "title": "Detecting and Correcting Gain Jumps in TES Microcalorimeters",
+  "abstract": "Arrays of microcalorimeters based on transition-edge sensors (TESs) are being actively deployed to laboratories all over the world. A TES microcalorimeter array produces very large quantities of data and users of these devices have varying levels of experience, so it is important to provide robust software for data acquisition and analysis that can function with minimal user supervision. This software should be capable of addressing common phenomena that can adversely affect spectrum quality. Gain jumping is one such phenomenon that is characterized by abrupt changes in the gain of a device. Left unaddressed, gain jumps can degrade spectra by introducing false peaks. We are not aware of any previously published methods for resetting gain jumps during data acquisition or existing algorithms for correcting data that is degraded by gain jumps. We have developed automated methods for detecting and correcting gain jumps in gamma-ray TES microcalorimeters. We present a procedure for resetting gain jumps during a live data acquisition that involves briefly driving the TES into its normal state using the bias current. We also describe an algorithm for locating gain jumps and identifying unique gain states within existing microcalorimeter data. Finally, we provide a possible approach for correcting gain jumps after they have been identified.",
+  "authors": [
+    "Thomas A. Baker",
+    "Daniel T. Becker",
+    "Joseph W. Fowler",
+    "Mark W. Keller",
+    "Daniel S. Swetz",
+    "Joel N. Ullom"
+  ],
+  "published": "2025-09-04T21:39:17Z",
+  "updated": "2025-09-04T21:39:17Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1109/TASC.2024.3517565"
+}

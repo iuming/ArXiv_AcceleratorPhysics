@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2411.05737v3",
+  "url": "https://arxiv.org/abs/2411.05737v3",
+  "pdf_url": "https://arxiv.org/pdf/2411.05737v3.pdf",
+  "title": "Accurate Unsupervised Photon Counting from Transition Edge Sensor   Signals",
+  "abstract": "We compare methods for signal classification applied to voltage traces from transition-edge sensors (TES) which are photon-number resolving detectors fundamental for accessing quantum advantages in information processing, communication and metrology. We quantify the impact of numerical analysis on the distinction of such signals. Furthermore, we explore dimensionality reduction techniques to create interpretable and precise photon-number embeddings. We demonstrate that the preservation of local data structures of some nonlinear methods is an accurate way to achieve unsupervised classification of TES traces. We do so by considering a confidence metric that quantifies the overlap of the photon-number clusters inside a latent space. Furthermore, we demonstrate that for our dataset previous methods such as the signal's area and principal component analysis can resolve up to 16 photons with confidence above $90\\%$ while nonlinear techniques can resolve up to 21 with the same confidence threshold. Also, we showcase implementations of neural networks to leverage information within local structures, aiming to increase confidence in assigning photon numbers. Finally, we demonstrate the advantage of some nonlinear methods to detect and remove outlier signals.",
+  "authors": [
+    "Nicolas Dalbec-Constant",
+    "Guillaume Thekkadath",
+    "Duncan England",
+    "Benjamin Sussman",
+    "Thomas Gerrits",
+    "Nicolás Quesada"
+  ],
+  "published": "2024-11-08T17:53:27Z",
+  "updated": "2025-09-05T19:45:55Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.optics",
+    "quant-ph"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1103/c11p-d13h"
+}

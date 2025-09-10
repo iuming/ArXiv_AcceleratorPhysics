@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.05799v1",
+  "url": "https://arxiv.org/abs/2509.05799v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.05799v1.pdf",
+  "title": "Hybrid Fourier Neural Operator-Plasma Fluid Model for Fast and Accurate   Multiscale Simulations of High Power Microwave Breakdown",
+  "abstract": "Modeling and simulation of High Power Microwave (HPM) breakdown, a multiscale phenomenon, is computationally expensive and requires solving Maxwell's equations (EM solver) coupled with a plasma continuity equation (plasma solver). In this work, we present a hybrid modeling approach that combines the accuracy of a differential equation-based plasma fluid solver with the computational efficiency of FNO (Fourier Neural Operator) based EM solver. Trained on data from an in-house FDTD-based plasma-fluid solver, the FNO replaces computationally expensive EM field updates, while the plasma solver governs the dynamic plasma response. The hybrid model is validated on microwave streamer formation, due to diffusion ionization mechanism, in a 2D scenario for unseen incident electric fields corresponding to entirely new plasma streamer simulations not included in model training, showing excellent agreement with FDTD based fluid simulations in terms of streamer shape, velocity, and temporal evolution. This hybrid FNO based strategy delivers significant acceleration of the order of 60X compared to traditional simulations for the specified problem size and offers an efficient alternative for computationally demanding multiscale and multiphysics simulations involved in HPM breakdown. Our work also demonstrate how such hybrid pipelines can be used to seamlessly to integrate existing C-based simulation codes with Python-based machine learning frameworks for simulations of plasma science and engineering problems.",
+  "authors": [
+    "Kalp Pandya",
+    "Pratik Ghosh",
+    "Ajeya Mandikal",
+    "Shivam Gandha",
+    "Bhaskar Chaudhury"
+  ],
+  "published": "2025-09-06T18:24:33Z",
+  "updated": "2025-09-06T18:24:33Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
