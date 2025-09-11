@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2509.07024v1",
+  "url": "https://arxiv.org/abs/2509.07024v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.07024v1.pdf",
+  "title": "TGLF-SINN: Deep Learning Surrogate Model for Accelerating Turbulent   Transport Modeling in Fusion",
+  "abstract": "The Trapped Gyro-Landau Fluid (TGLF) model provides fast, accurate predictions of turbulent transport in tokamaks, but whole device simulations requiring thousands of evaluations remain computationally expensive. Neural network (NN) surrogates offer accelerated inference with fully differentiable approximations that enable gradient-based coupling but typically require large training datasets to capture transport flux variations across plasma conditions, creating significant training burden and limiting applicability to expensive gyrokinetic simulations. We propose \\textbf{TGLF-SINN (Spectra-Informed Neural Network)} with three key innovations: (1) principled feature engineering that reduces target prediction range, simplifying the learning task; (2) physics-guided regularization of transport spectra to improve generalization under sparse data; and (3) Bayesian Active Learning (BAL) to strategically select training samples based on model uncertainty, reducing data requirements while maintaining accuracy. Our approach achieves superior performance with significantly less training data. In offline settings, TGLF-SINN reduces logarithmic root mean squared error (LRMSE) by 12. 4\\% compared to the current baseline \\base. Using only 25\\% of the complete dataset with BAL, we achieve LRMSE only 0.0165 higher than \\base~and 0.0248 higher than our offline model (0.0583). In downstream flux matching applications, our NN surrogate provides 45x speedup over TGLF while maintaining comparable accuracy, demonstrating potential for training efficient surrogates for higher-fidelity models where data acquisition is costly and sparse.",
+  "authors": [
+    "Yadi Cao",
+    "Futian Zhang",
+    "Wesley Liu",
+    "Tom Neiser",
+    "Orso Meneghini",
+    "Lawson Fuller",
+    "Sterling Smith",
+    "Raffi Nazikian",
+    "Brian Sammuli",
+    "Rose Yu"
+  ],
+  "published": "2025-09-07T09:36:51Z",
+  "updated": "2025-09-07T09:36:51Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

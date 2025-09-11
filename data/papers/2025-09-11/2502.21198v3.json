@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2502.21198v3",
+  "url": "https://arxiv.org/abs/2502.21198v3",
+  "pdf_url": "https://arxiv.org/pdf/2502.21198v3.pdf",
+  "title": "AI-Enhanced Self-Triggering for Extensive Air Showers: Performance and   FPGA Feasibility",
+  "abstract": "Autonomous self-triggering for radio detection of extensive air showers remains a long-standing challenge, particularly in environments dominated by strong and variable radio-frequency interference. Current radio arrays usually rely on external particle-detector triggers: while this lowers thresholds for vertical showers, it excludes very inclined events, where radio detection is uniquely powerful because the particle cascade is absorbed while the radio pulse remains measurable. In this work, I present a proof-of-principle study showing that deep-learning-based triggering can overcome these limitations, operating robustly under realistic high-interference conditions and within the strict latency constraints of large-scale observatories. Using measured noise traces combined with simulated cosmic-ray pulses, a fully convolutional network was trained and optimised for MHz-scale trigger-trial rates, and its performance was compared to a simple threshold-based trigger, which proved markedly less efficient at the same false-positive rate. The trained model was then quantised with HLS4ML and synthesised with Vitis HLS for multiple FPGA targets. The quantised implementation preserves the floating-point model performance (AUC_float = 0.997, AUC_quant = 0.996) while achieving microsecond-scale inference latencies.These results show that modern FPGA-based AI inference can provide low-latency, radio-only triggering for next-generation cosmic-ray observatories, particularly in regions with strong and variable radio backgrounds. This capability unlocks access to weak and highly inclined air-shower signals--even in noisy environments--thereby broadening the energy range, extending sky coverage, and opening the path toward ultra-high-energy neutrino detection with ground-based radio arrays.",
+  "authors": [
+    "Qader Dorosti"
+  ],
+  "published": "2025-02-28T16:15:20Z",
+  "updated": "2025-09-08T19:29:07Z",
+  "categories": [
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}

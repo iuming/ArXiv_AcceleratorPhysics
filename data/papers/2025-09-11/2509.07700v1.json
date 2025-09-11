@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.07700v1",
+  "url": "https://arxiv.org/abs/2509.07700v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.07700v1.pdf",
+  "title": "A Generalisable Generative Model for Multi-Detector Calorimeter   Simulation",
+  "abstract": "Collider experiments, such as those at the Large Hadron Collider, use the Geant4 toolkit to simulate particle-detector interactions with high accuracy. However, these experiments increasingly require larger amounts of simulated data, leading to huge computing cost. Generative machine learning methods could offer much faster calorimeter shower simulations by directly emulating detector responses. In this work, we present CaloDiT-2, a diffusion model which uses transformer blocks. As is the case for other models explored for this task, it can be applied to specific geometries, however its true strength lies in its generalisation capabilities. Our approach allows pre-training on multiple detectors and rapid adaptation to new ones, which we demonstrate on the LEMURS dataset. It reduces the effort required to develop accurate models for novel detectors or detectors which are under development and have geometries that are changed frequently, requiring up to 25x less data and 20x less training time. To the best of our knowledge, this is the first pre-trained model to be published that allows adaptation in the context of particle shower simulations, with the model also included in the Geant4 toolkit. We also present results on benchmarks on Dataset-2 from the community-hosted CaloChallenge, showing that our models provide one of the best tradeoffs between accuracy and speed from the published models. Our contributions include a mechanism for the creation of detector-agnostic data representations, architectural modifications suitable for the data modality, a pre-training and adaptation strategy, and publicly released datasets and pre-trained models for broad use.",
+  "authors": [
+    "Piyush Raikwar",
+    "Anna Zaborowska",
+    "Peter McKeown",
+    "Renato Cardoso",
+    "Mikolaj Piorczynski",
+    "Kyongmin Yeo"
+  ],
+  "published": "2025-09-09T13:04:37Z",
+  "updated": "2025-09-09T13:04:37Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

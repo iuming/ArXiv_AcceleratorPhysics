@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.06088v1",
+  "url": "https://arxiv.org/abs/2509.06088v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.06088v1.pdf",
+  "title": "Time-Embedded Convolutional Neural Networks for Modeling Plasma Heat   Transport",
+  "abstract": "We introduce a time-embedded convolutional neural network (TCNN) for modeling spatiotemporal heat transport in plasmas, particularly under strongly nonlocal conditions. In our earlier work, the LMV-Informed Neural Network (LINN) (Luo et al., arXiv:2506.16619) combined prior knowledge from the LMV model with kinetic Particle-in-Cell (PIC) data to improve kernel-based heat-flux predictions. While effective under moderately nonlocal conditions, LINN produced physically inconsistent kernels in strongly time-dependent regimes due to its reliance on the quasi-stationary LMV formulation. To overcome this limitation, TCNN is designed to capture the coupled evolution of both the normalized heat flux and the characteristic nonlocality parameter using a unified neural architecture informed by underlying physical principles. Trained on fully kinetic PIC simulations, TCNN accurately reproduces nonlocal dynamics across a broad range of collisionalities. Our results demonstrate that the combination of time modulation, coupled prediction, and convolutional depth significantly enhances predictive performance, offering a data-driven yet physically consistent framework for multiscale plasma transport problems.",
+  "authors": [
+    "Mufei Luo",
+    "Charles Heaton",
+    "Yizhen Wang",
+    "Daniel Plummer",
+    "Mila Fitzgerald",
+    "Francesco Miniati",
+    "Sam M. Vinko",
+    "Gianluca Gregori"
+  ],
+  "published": "2025-09-07T15:04:39Z",
+  "updated": "2025-09-07T15:04:39Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
