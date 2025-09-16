@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.09514v1",
+  "url": "https://arxiv.org/abs/2509.09514v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.09514v1.pdf",
+  "title": "Mapping of discrete range modulated proton radiograph to   water-equivalent path length using machine learning",
+  "abstract": "Objective. Proton beams enable localized dose delivery. Accurate range estimation is essential, but planning still relies on X-ray CT, which introduces uncertainty in stopping power and range. Proton CT measures water equivalent thickness directly but suffers resolution loss from multiple Coulomb scattering. We develop a data driven method that reconstructs water equivalent path length (WEPL) maps from energy resolved proton radiographs, bypassing intermediate reconstructions. Approach. We present a machine learning pipeline for WEPL from high dimensional radiographs. Data were generated with the TOPAS Monte Carlo toolkit, modeling a clinical nozzle and a patient CT. Proton energies spanned 70-230 MeV across 72 projection angles. Principal component analysis reduced input dimensionality while preserving signal. A conditional GAN with gradient penalty was trained for WEPL prediction using a composite loss (adversarial, MSE, SSIM, perceptual) to balance sharpness, accuracy, and stability. Main results. The model reached a mean relative WEPL deviation of 2.5 percent, an SSIM of 0.97, and a proton radiography gamma index passing rate of 97.1 percent (2 percent delta WEPL, 3 mm distance-to-agreement) on a simulated head phantom. Results indicate high spatial fidelity and strong structural agreement. Significance. WEPL can be mapped directly from proton radiographs with deep learning while avoiding intermediate steps. The method mitigates limits of analytic techniques and may improve treatment planning. Future work will tune the number of PCA components, include detector response, explore low dose settings, and extend multi angle data toward full proton CT reconstruction; it is compatible with clinical workflows.",
+  "authors": [
+    "Atiq Ur Rahman",
+    "Chun-Chieh Wang",
+    "Shu-Wei Wu",
+    "Tsi-Chian Chao",
+    "I-Chun Cho"
+  ],
+  "published": "2025-09-11T14:55:55Z",
+  "updated": "2025-09-11T14:55:55Z",
+  "categories": [
+    "physics.med-ph",
+    "hep-ex",
+    "physics.app-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.med-ph"
+}
