@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2509.11317v1",
+  "url": "https://arxiv.org/abs/2509.11317v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.11317v1.pdf",
+  "title": "Taylor series perspective on ab initio path integral Monte Carlo   simulations with Fermi-Dirac statistics",
+  "abstract": "The fermion sign problem constitutes a fundamental computational bottleneck across a plethora of research fields in physics, quantum chemistry and related disciplines. Recently, it has been suggested to alleviate the sign problem in \\emph{ab initio} path integral Molecular Dynamics and path integral Monte Carlo (PIMC) calculations based on the simulation of fictitious identical particles that are represented by a continuous quantum statistics variable $\\xi$ [\\textit{J.~Chem.~Phys.}~\\textbf{157}, 094112 (2022)]. This idea facilitated a host of applications including the interpretation of an x-ray scattering experiment with strongly compressed beryllium at the National Ignition Facility [\\textit{Nature Commun.}~\\textbf{16}, 5103 (2025)]. In the present work, we express the original isothermal $\\xi$-extrapolation method as a special case of a truncated Taylor series expansion around the $\\xi=0$ limit of distinguishable particles. We derive new PIMC estimators that allow us to evaluate the Taylor coefficients up to arbitrary order and we carry out extensive new PIMC simulations of the warm dense electron gas to systematically analyze the sign problem from this new perspective. This gives us important insights into the applicability of the $\\xi$-extrapolation method for different levels of quantum degeneracy in terms of the Taylor series radius of convergence. Moreover, the direct PIMC evaluation of the $\\xi$-derivatives, in principle, removes the necessity for simulations at different values of $\\xi$ and can facilitate more efficient simulations that are designed to maximize compute time in those regions of the full permutation space that contribute most to the final Taylor estimate of the fermionic expectation value of interest.",
+  "authors": [
+    "Tobias Dornheim",
+    "Alexander Benedix Robles",
+    "Paul Hamann",
+    "Thomas M. Chuna",
+    "Pontus Svensson",
+    "Sebastian Schwalbe",
+    "Zhandos A. Moldabekov",
+    "Panagiotis Tolias",
+    "Jan Vorberger"
+  ],
+  "published": "2025-09-14T15:29:45Z",
+  "updated": "2025-09-14T15:29:45Z",
+  "categories": [
+    "physics.chem-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.chem-ph"
+}

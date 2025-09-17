@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.12030v1",
+  "url": "https://arxiv.org/abs/2509.12030v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.12030v1.pdf",
+  "title": "Acceleration of Multi-Scale LTS Magnet Simulations with Neural Network   Surrogate Models",
+  "abstract": "While the prediction of AC losses during transients is critical for designing large-scale low-temperature superconducting (LTS) magnets, brute-force finite-element (FE) simulation of their detailed geometry down to the length scale of the conductors is a computational challenge. Multi-scale methods, balancing between a coarse approximation of the fields at the scale of the magnet and a detailed description at the scale of the conductors, are promising approaches to reduce the computational load while keeping a sufficient accuracy. In this work, we introduce a neural network approach to accelerate multi-scale magneto-thermal simulations of LTS magnets by replacing costly single-turn FE models with neural network surrogates. The neural network architecture is presented and discussed, together with an automated procedure for generating simulation data for its training. The resulting accelerated multi-scale model is used to simulate current ramp-up procedures for the IBA S2C2 magnet. The surrogate-based multi-scale model is compared with a conventional multi-scale model based on a composite wire-in-channel FE model. The surrogate model is shown to reproduce single-turn filament hysteresis, inter-filament coupling, and eddy losses, while the computational time of the multi-scale method is reduced by a factor of 800.",
+  "authors": [
+    "Louis Denis",
+    "Julien Dular",
+    "Vincent Nuttens",
+    "Mariusz Wozniak",
+    "Benoît Vanderheyden",
+    "Christophe Geuzaine"
+  ],
+  "published": "2025-09-15T15:13:20Z",
+  "updated": "2025-09-15T15:13:20Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

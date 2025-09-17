@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.11831v1",
+  "url": "https://arxiv.org/abs/2509.11831v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.11831v1.pdf",
+  "title": "A high-performance elliptic solver for plasma boundary turbulence codes",
+  "abstract": "Elliptic equations play a crucial role in turbulence models for magnetic confinement fusion. Regardless of the chosen modeling approach - whether gyrokinetic, gyrofluid, or drift-fluid - the Poisson equation and Amp\\`{e}re's law lead to elliptic problems that must be solved on 2D planes perpendicular to the magnetic field. In this work, we present an efficient solver for such generalised elliptic problems, especially suited for the conditions in the boundary region. A finite difference discretisation is employed, and the solver is based on a flexible generalised minimal residual method (fGMRES) with a geometric multigrid preconditioner. We present implementations with OpenMP parallelisation and GPU acceleration, with backends in CUDA and HIP. On the node level, significant speed-ups are achieved with the GPU implementation, exceeding external library solutions such as rocALUTION. In accordance with theoretical scaling laws for multigrid methods, we observe linear scaling of the solver with problem size, $O(N)$. This solver is implemented in the PARALLAX/PAccX libraries and serves as a central component of the plasma boundary turbulence codes GRILLIX and GENE-X.",
+  "authors": [
+    "Andreas Stegmeir",
+    "Cristian Lalescu",
+    "Mou Lin",
+    "Jordy Trilaksono",
+    "Nicola Varini",
+    "Tilman Dannert"
+  ],
+  "published": "2025-09-15T12:17:51Z",
+  "updated": "2025-09-15T12:17:51Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
