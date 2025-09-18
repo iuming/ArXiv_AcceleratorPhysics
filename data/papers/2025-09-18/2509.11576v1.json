@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.11576v1",
+  "url": "https://arxiv.org/abs/2509.11576v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.11576v1.pdf",
+  "title": "Reconstructing High-fidelity Plasma Turbulence with Data-driven Tuning   of Diffusion in Low Resolution Grids",
+  "abstract": "Developing physically consistent closure models is a longstanding challenge in simulating plasma turbulence, even in minimal systems such as the two-field Hasegawa-Wakatani (HW) model, which captures essential features of drift-wave turbulence with a reduced set of variables. In this work, we leverage theoretical insights from Direct Interaction Approximation (DIA) to construct a six-term closure structure that captures the dominant turbulent transport processes, including both diffusion and hyper-diffusion. While the mathematical form of the closure is fully prescribed by DIA, the corresponding transport coefficients are learned from data using physics-informed neural networks (PINNs). The resulting Extended HW model with Closure (EHW-C) model reveals several nontrivial features of plasma turbulence: notably, some inferred coefficients become negative in certain regimes, indicating inverse transport, a phenomenon absent in conventional closure models. Moreover, the EHW-C model accurately reproduces the spectral and flux characteristics of high-resolution Direct Numerical Simulations (DNS), while requiring only one-eighth the spatial resolution per direction, yielding a tenfold speed-up. This work demonstrates how theory-guided machine learning can both enhance computational efficiency and uncover emergent transport mechanisms in strongly nonlinear plasma systems.",
+  "authors": [
+    "Kunpeng Li",
+    "Youngwoo Cho",
+    "Xavier Garbet",
+    "Chenguang Wan",
+    "Robin Varennes",
+    "Kyungtak Lim",
+    "Virginie Grandgirard",
+    "Zhisong Qu",
+    "Ong Yew Soon"
+  ],
+  "published": "2025-09-15T04:40:36Z",
+  "updated": "2025-09-15T04:40:36Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
