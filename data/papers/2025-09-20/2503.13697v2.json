@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2503.13697v2",
+  "url": "https://arxiv.org/abs/2503.13697v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.13697v2.pdf",
+  "title": "Grid instability growth rates for explicit, electrostatic momentum- and   energy-conserving particle-in-cell algorithms",
+  "abstract": "When the Debye length is not resolved in a simulation using the most common particle-in-cell (PIC) algorithm, the plasma will unphysically heat until the Debye length becomes resolved via a phenomenon known as grid heating. This article presents detailed numerical measurements of grid heating for several explicit PIC algorithms including the first systematic (covering the Debye length resolution and drift-velocity parameter space) study of grid-heating growth rates for the most-common electrostatic momentum-conserving PIC algorithm. Additionally, we derive and test a cubic-spline-based PIC algorithm that ensures that the interpolated electric field has a continuous first derivative, but find that a differentiable electric field has minimal impact on grid-heating stability. Also considered are energy-conserving PIC algorithms with linear and quadratic interpolation functions. In all cases, we find that unphysical heating can occur for some combinations of Debye under-resolution and plasma drift. We demonstrate analytically and numerically that grid heating cannot be eliminated by using a higher-order field solve, and give an analytical expression for the cold-beam stability limits of some energy-conserving algorithms.",
+  "authors": [
+    "Luke C Adams",
+    "Gregory R Werner",
+    "John R Cary"
+  ],
+  "published": "2025-03-17T20:13:12Z",
+  "updated": "2025-09-16T19:52:01Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0271598"
+}

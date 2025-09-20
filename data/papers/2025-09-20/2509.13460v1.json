@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2509.13460v1",
+  "url": "https://arxiv.org/abs/2509.13460v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.13460v1.pdf",
+  "title": "Initialization-robust characterization of deep sub-electron read noise   pixels via annealed PCH-EM",
+  "abstract": "We present an annealed Photon Counting Histogram Expectation Maximization (PCH-EM) algorithm for maximum likelihood characterization of Deep Sub-Electron Read Noise (DSERN) pixels. The annealed variant mitigates initialization-dependent convergence to suboptimal local optima of the likelihood function while achieving uncertainties substantially lower than the Photon Transfer (PT) method in the DSERN regime. Although the annealing principle is optimizer-agnostic, we pair it with PCH-EM for tractability; a single temperature parameter and simple cooling schedule suffice, without re-deriving the original EM update equations. Simulations across varied starting points show more stable parameter estimates with equal or better final likelihoods than the baseline. While designed for DSERN, the method applies across read-noise regimes and matches PT performance outside DSERN. Practically, the method enables reliable characterization of DSERN devices, including direct calibration from raw gray counts to electron counts for photon number resolving applications.",
+  "authors": [
+    "Aaron J. Hendrickson",
+    "David P. Haefner"
+  ],
+  "published": "2025-09-16T18:52:13Z",
+  "updated": "2025-09-16T18:52:13Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
