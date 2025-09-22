@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2501.07452v3",
+  "url": "https://arxiv.org/abs/2501.07452v3",
+  "pdf_url": "https://arxiv.org/pdf/2501.07452v3.pdf",
+  "title": "Efficient cosmic ray generator for particle detector simulations",
+  "abstract": "Traditional cosmic ray simulations make use of the Montecarlo method in a very naive way to randomise energy and direction for each simulated particle. The flux of cosmic rays is modelled as a rain coming from a plane above the object of interest (detectors in particle physics applications, planes in dosimetry studies, etc.) with an experimental angular and energy distributions. This strategy is very inefficient because many of the particles never touch the detector. Here a refined way of implementing the Montecarlo method is proposed in order to generate a sample of events that hit the target volume whose angular distribution coincides with the one from the naive implementation. It is based on the projection of a sphere containing the target volume onto a plane tangent to it with a fixed angle, we call it the secant method. This configuration allows to compute the probability of a cosmic particle hitting the sphere with this incoming angle as proportional to the area of the corresponding section of a cylinder. The performance of this method is faster in terms of computing time and identical physical results are achieved. It has been implemented in REST-for-Physics framework and it is tested with the geometry of a real detector, the IAXO-D0 Micromegas X-ray detector for the future axion helioscope BabyIAXO. Our method is 37 times more efficient than the traditional Montecarlo schema for the same accuracy, being more useful when the target volume departs from spherical shape",
+  "authors": [
+    "David Díez Ibáñez",
+    "Luis Obis Aparicio"
+  ],
+  "published": "2025-01-13T16:26:18Z",
+  "updated": "2025-09-18T07:46:54Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex",
+  "doi": "10.1016/j.cpc.2025.109805"
+}
