@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2509.16320v1",
+  "url": "https://arxiv.org/abs/2509.16320v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.16320v1.pdf",
+  "title": "Exponential Spectral Scaling: Robust and Efficient Stellarator Boundary   Optimization via Mode-Dependent Scaling",
+  "abstract": "Stellarator boundary optimization faces a fundamental numerical challenge: the extreme disparity between low- and high-mode amplitudes creates an optimization landscape in which direct full-spectrum approaches typically converge to poor local minima. Traditionally, this challenge has been addressed through a computationally expensive, multi-step Fourier continuation, in which low Fourier modes are optimized first, followed by the gradual incorporation of higher modes. We present Exponential Spectral Scaling (ESS), a technique that applies a mode-dependent exponential scaling factor to each Fourier mode. Our primary implementation uses the $L_{\\infty}$ norm to determine the scaling pattern, creating a square spectral decay profile that effectively reduces the dynamic range of optimization variables from $10^{6}$--$10^{7}$ to $10^{2}$--$10^{3}$. This scaling aligns with the natural spectral decay of physically meaningful configurations and enables direct single-step optimization using the full spectrum of boundary Fourier modes. ESS eliminates arbitrary staging decisions and reduces computation time by a factor of $2$ to $5$ in benchmark cases. In addition to accelerating optimization, ESS improves robustness, reducing sensitivity to initial conditions and increasing confidence in avoiding local optima. We demonstrate the effectiveness of ESS across both quasi-axisymmetric (QA) and quasi-helically symmetric (QH) configurations, using two distinct optimization toolkits: SIMSOPT and DESC.",
+  "authors": [
+    "Byoungchan Jang",
+    "Rory Conlin",
+    "Matt Landreman"
+  ],
+  "published": "2025-09-19T18:03:03Z",
+  "updated": "2025-09-19T18:03:03Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2509.16535v1",
+  "url": "https://arxiv.org/abs/2509.16535v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.16535v1.pdf",
+  "title": "Data-Driven Reduced-Order Modeling of Phase Mixing Dynamics from   Particle Kinetic Simulation",
+  "abstract": "Phase mixing is a fundamental kinetic process that governs dissipation and stability in collisionless plasmas, but its inherent filamentation in velocity space creates major challenges for both high-fidelity simulations and reduced-order modeling. This work presents the first exploratory evaluation of a joint Proper Orthogonal Decomposition and Sparse Identification of Nonlinear Dynamics (POD-SINDy) framework applied to particle-in-cell simulations of phase mixing. Simulation datasets were generated under progressively complex conditions, starting from a passive kinetic case without self-consistent electric fields, extending to self-consistent simulations with nonlinear electric field feedback, and finally to a noisy dataset with reduced particle resolution. In the passive kinetic regime, POD-SINDy achieved near-optimal reconstructions with only five modes, reproducing filamentation with errors below four percent. In self-consistent electrostatic cases, variance spread across more modes due to nonlinear interactions and noise, slowing singular value decay and making strict low-rank embeddings more demanding. Nevertheless, retaining ten modes was sufficient to recover the dominant structures, yielding reconstruction errors of about seven percent for the low-noise case and thirteen percent for the noisy dataset. Across all scenarios, SINDy provided sparse and interpretable equations for modal amplitudes that remained predominantly linear despite the underlying nonlinear data, while POD truncation effectively filtered particle noise and preserved coherent dynamics. These findings demonstrate that POD-SINDy constitutes a compact and interpretable approach to reduced-order modeling of phase mixing, capable of retaining essential physics across regimes of increasing complexity while achieving data compression from three to five orders of magnitude depending on dataset complexity.",
+  "authors": [
+    "Darian Figuera-Michal",
+    "Sungpil Yum",
+    "Jae-Min Kwon",
+    "Eisung Yoon"
+  ],
+  "published": "2025-09-20T04:52:10Z",
+  "updated": "2025-09-20T04:52:10Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
