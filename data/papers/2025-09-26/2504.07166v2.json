@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2504.07166v2",
+  "url": "https://arxiv.org/abs/2504.07166v2",
+  "pdf_url": "https://arxiv.org/pdf/2504.07166v2.pdf",
+  "title": "Data-driven performance optimization of gamma spectrometers with many   channels",
+  "abstract": "In gamma spectrometers with variable spectroscopic performance across many channels (e.g., many pixels or voxels), a tradeoff exists between including data from successively worse-performing readout channels and increasing efficiency. Brute-force calculation of the optimal set of included channels is exponentially infeasible as the number of channels grows, and approximate methods are required. In this work, we present a data-driven framework for attempting to find near-optimal sets of included detector channels. The framework leverages non-negative matrix factorization (NMF) to learn the behavior of gamma spectra across the detector, and clusters similarly-performing detector channels together. Performance comparisons are then made between spectra with channel clusters removed, which is more feasible than brute force. The framework is general and can be applied to arbitrary, user-defined performance metrics depending on the application. We apply this framework to optimizing gamma spectra measured by H3D M400 CdZnTe spectrometers, which exhibit variable performance across their crystal volumes. In particular, we show several examples optimizing various performance metrics for uranium and plutonium gamma spectra in nondestructive assay for nuclear safeguards, and explore trends in performance vs.\\ parameters such as clustering algorithm type. We also compare the NMF+clustering pipeline to several non-machine-learning algorithms, including several greedy algorithms. Overall, we find that the NMF+clustering pipeline tends to find the best-performing set of detector voxels, significantly improving over the un-optimized spectra, but that a greedy accumulation of spectra segmented by detector depth can in some cases give similar performance improvements in much less computation time.",
+  "authors": [
+    "Jayson R. Vavrek",
+    "Hannah S. Parrilla",
+    "Gabriel Aversano",
+    "Mark S. Bandstra",
+    "Micah Folsom",
+    "Daniel Hellfeld"
+  ],
+  "published": "2025-04-09T17:59:50Z",
+  "updated": "2025-09-22T21:25:40Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

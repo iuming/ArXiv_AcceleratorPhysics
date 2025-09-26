@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2506.21760v2",
+  "url": "https://arxiv.org/abs/2506.21760v2",
+  "pdf_url": "https://arxiv.org/pdf/2506.21760v2.pdf",
+  "title": "Feedforward equilibrium trajectory optimization with GSPulse",
+  "abstract": "One of the common tasks required for designing new plasma scenarios or evaluating capabilities of a tokamak is to design the desired equilibria using a Grad-Shafranov (GS) equilibrium solver. However, most standard equilibrium solvers are time-independent and do not include dynamic effects such as plasma current flux consumption, induced vessel currents, or voltage constraints. Another class of tools, plasma equilibrium evolution simulators, do include time-dependent effects. These are generally structured to solve the forward problem of evolving the plasma equilibrium given feedback-controlled voltages. In this work, we introduce GSPulse, a novel algorithm for equilibrium trajectory optimization, that is more akin to a pulse planner than a pulse simulator. GSPulse includes time-dependent effects and solves the inverse problem: given a user-specified set of target equilibrium shapes, as well as limits on the coil currents and voltages, the optimizer returns trajectories of the voltages, currents, and achievable equilibria. This task is useful for scoping performance of a tokamak and exploring the space of achievable pulses. The computed equilibria satisfy both Grad-Shafranov force balance and axisymmetric circuit dynamics. The optimization is performed by restructuring the free-boundary equilibrium evolution (FBEE) equations into a form where it is computationally efficient to optimize the entire dynamic sequence. GSPulse can solve for hundreds of equilibria simultaneously within a few minutes. GSPulse has been validated against NSTX-U and MAST-U experiments and against SPARC feedback control simulations, and is being used to perform scenario design for SPARC. The computed trajectories can be used as feedforward inputs to inform and improve feedback performance. The code for GSPulse is available open-source at https://github.com/jwai-cfs/GSPulse_public.",
+  "authors": [
+    "J. T. Wai",
+    "M. D. Boyer",
+    "D. J. Battaglia",
+    "A. Merle",
+    "F. Carpanese",
+    "F. Felici",
+    "M. Kochan",
+    "E. Kolemen"
+  ],
+  "published": "2025-06-26T20:34:26Z",
+  "updated": "2025-09-24T14:03:31Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
