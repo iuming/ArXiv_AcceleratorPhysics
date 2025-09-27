@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2509.19838v1",
+  "url": "https://arxiv.org/abs/2509.19838v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.19838v1.pdf",
+  "title": "Attention U-Net for all-sky continuous gravitational wave searches",
+  "abstract": "Detecting continuous gravitational waves is challenging due to the high computational cost of template-based searches across large parameter spaces, particularly for all-sky searches. Machine learning offers a promising solution to perform these searches with reasonable computational resources. In this study, we trained an attention U-Net, a convolutional neural network, on $\\approx$ 10.67 days of simulated data with Gaussian noise for all-sky searches at different frequencies within the 20-1000 Hz band. Our model trained at 20 Hz achieves the best sensitivity, with a 90% detection efficiency sensitivity depth $D^{90\\%} = 29.97 \\pm 0.24\\,\\mathrm{Hz}^{-1/2}$ with a 1% false alarm rate per 50 mHz, while the model trained on the entire 20-1000 Hz band yields $D^{90\\%} = 18.63 \\pm 0.24\\,\\mathrm{Hz}^{-1/2}$. The sensitivities achieved are comparable to state-of-the-art results using deep learning approaches, with less than 50% of the training time and data. We find that sensitivity scales as $T^{0.28 \\pm 0.01}$ with total observation time for the attention U-Net trained at 20 Hz, similar to semi-coherent search methods. The neural network demonstrates robustness on datasets with time gaps, with sensitivity dependence on duty factor analyzed. We also investigated the sensitivity dependence of the trained attention U-Net models on sky location. Our findings show that attention U-Net is a scalable and effective approach for all-sky continuous gravitational wave searches.",
+  "authors": [
+    "Damon H. T. Cheung"
+  ],
+  "published": "2025-09-24T07:30:11Z",
+  "updated": "2025-09-24T07:30:11Z",
+  "categories": [
+    "gr-qc",
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "gr-qc"
+}
