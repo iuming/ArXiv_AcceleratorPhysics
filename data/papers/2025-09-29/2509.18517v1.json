@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.18517v1",
+  "url": "https://arxiv.org/abs/2509.18517v1",
+  "pdf_url": "https://arxiv.org/pdf/2509.18517v1.pdf",
+  "title": "Data-driven optimization of pixelated CdZnTe spectrometers for uranium   enrichment assay",
+  "abstract": "In recent work [Vavrek et al. (2025)], we developed the performance optimization framework spectre-ml for gamma spectrometers with variable performance across many readout channels. The framework uses non-negative matrix factorization (NMF) and clustering to learn groups of similarly-performing channels and sweep through various learned channel combinations to optimize the performance tradeoff of including worse-performing channels for better total efficiency. In this work, we integrate the pyGEM uranium enrichment assay code with our spectre-ml framework, and show that the U-235 enrichment relative uncertainty can be directly used as an optimization target. We find that this optimization reduces relative uncertainties after a 30-minute measurement by an average of 20%, as tested on six different H3D M400 CdZnTe spectrometers, which can significantly improve uranium non-destructive assay measurement times in nuclear safeguards contexts. Additionally, this work demonstrates that the spectre-ml optimization framework can accommodate arbitrary end-user spectroscopic analysis code and performance metrics, enabling future optimizations for complex Pu spectra.",
+  "authors": [
+    "Jayson R. Vavrek",
+    "Thomas D. MacDonald",
+    "Hannah S. Parrilla",
+    "Nikhil S. Deshmukh",
+    "Mital A. Zalavadia",
+    "Benjamin S. McDonald"
+  ],
+  "published": "2025-09-23T01:26:57Z",
+  "updated": "2025-09-23T01:26:57Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
