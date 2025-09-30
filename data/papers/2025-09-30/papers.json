@@ -1,0 +1,1162 @@
+[
+  {
+    "arxiv_id": "2509.20390v2",
+    "url": "https://arxiv.org/abs/2509.20390v2",
+    "pdf_url": "https://arxiv.org/pdf/2509.20390v2.pdf",
+    "title": "Optical characterization of wavelength-shifting and   scintillating-wavelength-shifting fibers",
+    "abstract": "We report results of optical characterizations of new wavelength-shifting and scintillating-wavelength-shifting fibers EJ-182 and EJ-160 from Eljen Technology and compare them to the wavelength-shifting fiber BCF-91A from Saint-Gobain. The wavelength-dependence of attenuation was derived from spectral measurements confirming that the long attenuation length increases with wavelength, while short attenuation effects become less significant at longer wavelengths. The impact of environmental refractive index was measured by immersing a fiber in water. Immersing the fibers in water reduced the light yield and led to a suppression of the short attenuation length, consistent with the expected decrease in the refractive index contrast.",
+    "authors": [
+      "W. Bae",
+      "J. Cesar",
+      "K. Chen",
+      "J. Cho",
+      "D. Du",
+      "J. Edgar",
+      "L. Earthman",
+      "O. M. Falana",
+      "M. Gajda",
+      "C. Hurlbut",
+      "M. Jackson",
+      "K. Lang",
+      "C. Lee",
+      "J. Y. Lee",
+      "E. Liang",
+      "J. Liu",
+      "C. Maxwell",
+      "C. Murthy",
+      "D. Myers",
+      "S. Nguyen",
+      "T. O'Brien",
+      "M. Proga",
+      "T. Rodriguez",
+      "S. Syed",
+      "M. Zalikha",
+      "J. Zey"
+    ],
+    "published": "2025-09-22T22:15:06Z",
+    "updated": "2025-09-26T22:32:07Z",
+    "categories": [
+      "physics.ins-det",
+      "hep-ex"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2507.06756v2",
+    "url": "https://arxiv.org/abs/2507.06756v2",
+    "pdf_url": "https://arxiv.org/pdf/2507.06756v2.pdf",
+    "title": "Investigating the convergence properties of iterative ptychography for   atomic-resolution low-dose imaging",
+    "abstract": "This study investigates the convergence properties of a collection of iterative electron ptychography methods, under low electron doses ($<$ 10$^3$ $e^-/A^2$) and gives particular attention to the impact of the user-defined update strengths. We demonstrate that carefully chosen values for this parameter, ideally smaller than those conventionally met in the literature, are essential for achieving accurate reconstructions of the projected electrostatic potential. Using a 4D dataset of a thin hybrid organic-inorganic formamidinium lead bromide (FAPbBr$_{3}$) sample, we show that convergence is in practice achievable only when the update strengths for both the object and probe are relatively small compared to what is found in literature. Additionally we demonstrate that under low electron doses, the reconstructions initial error increases when the update strength coefficients are reduced below a certain threshold emphasizing the existence of critical values beyond which the algorithms are trapped in local minima. These findings highlight the need for carefully optimized reconstruction parameters in iterative ptychography, especially when working with low electron doses, ensuring both effective convergence and correctness of the result.",
+    "authors": [
+      "Tamazouzt Chennit",
+      "Songge Li",
+      "Hoelen L. Lalandec Robert",
+      "Christoph Hofer",
+      "Nadine J. Schrenker",
+      "Liberato Manna",
+      "Sara Bals",
+      "Timothy J. Pennycook",
+      "Jo Verbeeck"
+    ],
+    "published": "2025-07-09T11:27:47Z",
+    "updated": "2025-09-26T17:16:16Z",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph",
+      "physics.ins-det"
+    ],
+    "primary_category": "cond-mat.mtrl-sci"
+  },
+  {
+    "arxiv_id": "2509.22586v1",
+    "url": "https://arxiv.org/abs/2509.22586v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22586v1.pdf",
+    "title": "How to image single isolated atoms by using coherent low-energy   electrons",
+    "abstract": "Coherent low-energy electrons have been demonstrated as a practical tool for imaging individual macromolecules and two-dimensional (2D) crystals. Low-energy electrons exhibit unique properties: low radiation damage to biological molecules and high sensitivity to the local potentials. In this study, we outline the conditions at which single isolated charge-free atoms can be imaged by low-energy electron holography. A single atom produces an interference pattern consisting of concentric fringes of finite diameter and of very weak intensity. The diffraction angle theta, determined as the first minimum of the concentric rings interference pattern, exhibits similar dependency on the source-to-sample distance zs as sin(theta) ~ 0.3/sqrt(zs) for electrons of different energies (50, 100 and 200 eV) and scattered off different elements (Li, C, and Cs). The results are compared to the recently reported experimental holograms of alkali atoms intercalated into bilayer graphene and adsorbed on top of graphene.",
+    "authors": [
+      "Tatiana Latychevskaia"
+    ],
+    "published": "2025-09-26T17:04:45Z",
+    "updated": "2025-09-26T17:04:45Z",
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.mtrl-sci",
+      "cond-mat.other",
+      "physics.optics"
+    ],
+    "primary_category": "physics.ins-det",
+    "doi": "10.1515/mim-2025-0018/html"
+  },
+  {
+    "arxiv_id": "2509.22503v1",
+    "url": "https://arxiv.org/abs/2509.22503v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22503v1.pdf",
+    "title": "A Quantum Algorithm for Nonlinear Electromagnetic Fluid Dynamics via   Koopman-von Neumann Linearization",
+    "abstract": "To simulate plasma phenomena, large-scale computational resources have been employed in developing high-precision and high-resolution plasma simulations. One of the main obstacles in plasma simulations is the requirement of computational resources that scale polynomially with the number of spatial grids, which poses a significant challenge for large-scale modeling. To address this issue, this study presents a quantum algorithm for simulating the nonlinear electromagnetic fluid dynamics that govern space plasmas. We map it, by applying Koopman-von Neumann linearization, to the Schr\\\"{o}dinger equation and evolve the system using Hamiltonian simulation via quantum singular value transformation. Our algorithm scales $O \\left(s N_x \\, \\mathrm{polylog} \\left( N_x \\right) T \\right)$ in time complexity with $s$, $N_x$, and $T$ being the spatial dimension, the number of spatial grid points per dimension, and the evolution time, respectively. Comparing the scaling $O \\left( s N_x^s \\left(T^{5/4}+T N_x\\right) \\right)$ for the classical method with the finite volume scheme, this algorithm achieves polynomial speedup in $N_x$. The space complexity of this algorithm is exponentially reduced from $O\\left( s N_x^s \\right)$ to $O\\left( s \\, \\mathrm{polylog} \\left( N_x \\right) \\right)$. Numerical experiments validate that accurate solutions are attainable with smaller $m$ than theoretically anticipated and with practical values of $m$ and $R$, underscoring the feasibility of the approach. As a practical demonstration, the method accurately reproduces the Kelvin-Helmholtz instability, underscoring its capability to tackle more intricate nonlinear dynamics. These results suggest that quantum computing can offer a viable pathway to overcome the computational barriers of multiscale plasma modeling.",
+    "authors": [
+      "Hayato Higuchi",
+      "Yuki Ito",
+      "Kazuki Sakamoto",
+      "Keisuke Fujii",
+      "Akimasa Yoshikawa"
+    ],
+    "published": "2025-09-26T15:44:51Z",
+    "updated": "2025-09-26T15:44:51Z",
+    "categories": [
+      "quant-ph",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "quant-ph"
+  },
+  {
+    "arxiv_id": "2508.18450v2",
+    "url": "https://arxiv.org/abs/2508.18450v2",
+    "pdf_url": "https://arxiv.org/pdf/2508.18450v2.pdf",
+    "title": "Challenges and Optimization of Mu2e Proton Target Design with Radiative   Cooling",
+    "abstract": "The Mu2e experiment at Fermilab will search for the charged lepton flavour violating process of coherent neutrinoless muon-to-electron conversion in the presence of an aluminum nucleus. The muons are produced by an 8 GeV proton beam from the Fermilab Booster striking a production target to create hadrons that decay to muons. The production target design space is strongly constrained by a required one-year operating lifetime and the need for radiative cooling in a vacuum. Uncertainties in the lifetime of the existing baseline design - a monolithic, segmented tungsten (WL10) target - are large, particularly due to unknown effects of radiation damage at the very high proton fluences expected in the experiment. We have begun evaluating a new design utilizing Inconel 718. Here, we present an engineering analysis of a prototype modular design. specifically thermal management, structural stability, fatigue lifetime, and fabrication changes. The results approve a promising new target design for the Mu2e experiment.",
+    "authors": [
+      "Z. Liu",
+      "J. Williams",
+      "A. Makovec",
+      "M. Hedges",
+      "F. Pellemoine",
+      "K. Yonehara",
+      "G. Annala",
+      "K. Lynch",
+      "M. Bloomer",
+      "J. Popp",
+      "A. Edmonds",
+      "J. Miller"
+    ],
+    "published": "2025-08-25T20:00:02Z",
+    "updated": "2025-09-26T15:19:33Z",
+    "categories": [
+      "physics.acc-ph"
+    ],
+    "primary_category": "physics.acc-ph",
+    "doi": "10.18429/JACoW-MEDSI2025-THOB03"
+  },
+  {
+    "arxiv_id": "2509.22409v1",
+    "url": "https://arxiv.org/abs/2509.22409v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22409v1.pdf",
+    "title": "X-ray and neural network based in-situ identification of the melt pool   during the additive manufacturing of a stainless steel part",
+    "abstract": "Laser Metal Deposition with Powder (LMDp) is an additive manufacturing technique used for repairing metal components or producing parts with intricate geometries. However, a comprehensive understanding of the melt pool dynamics, which significantly influences the final properties of LMDp-fabricated parts, remains limited. Non-destructive testing is highly valuable for conducting in-situ controls during manufacturing. X-ray imaging offers the ability to penetrate metallic parts and detect defects such as porosity. In the context of additive manufacturing, X-rays can be employed to visualize the shape of the melt pool during the fabrication process. The contrast between the liquid and solid phases, due to their density differences, should be observable in the radioscopy images. The experimental setup required to perform such a test on an industrial additive manufacturing installation consists of a movable X-ray source that produces polychromatic beams, a detector, and extensive lead shielding to ensure X-ray safety. In-situ observations of the melt pool were conducted during the deposition of ten successive layers of stainless steel 316L (SS316L). The polychromatic nature of the X-ray beam, however, rendered traditional image analysis methods ineffective for detecting contrast variations. To address this challenge, neural networks trained on simulated data (thermal and X-ray) were employed, providing a solution to identify the melt pool in low-contrast radioscopic images. The architecture inspired by VGG16 demonstrated promising results, confirming the potential for in-situ non-destructive testing using X-ray imaging in industrial additive manufacturing processes.",
+    "authors": [
+      "Loic Jegou",
+      "Valerie Kaftandjian",
+      "Thomas Elguedj",
+      "Mohamed Tahraoui",
+      "Philippe Duvauchelle",
+      "Mady Guillemot"
+    ],
+    "published": "2025-09-26T14:36:03Z",
+    "updated": "2025-09-26T14:36:03Z",
+    "categories": [
+      "physics.ins-det"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.22397v1",
+    "url": "https://arxiv.org/abs/2509.22397v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22397v1.pdf",
+    "title": "From Concept to Reality: Additive Manufacturing in Particle Accelerator   and Storage Ring R&D at GSI and for FAIR",
+    "abstract": "State-of-the-art additive manufacturing technologies are not only finding ever-wider applications in everyday life, but also assuming an increasingly important role in scientific research. This kind of advanced manufacturing method eliminates many of the constraints of conventional processes in fabricating components with complex external shapes or intricate internal structures, thereby providing enhanced flexibility for the design and realization of a new generation of more efficient particle accelerators and storage rings. The RACERS team initiated by the Stochastic Cooling Group at GSI, Germany, is worldwide one of the first teams working on this topic. Based on the metal 3D-printing technology, two novel accelerating structures and one efficient cooling plate for a future stochastic cooling system are under development at GSI and for the FAIR project, respectively. Some successful experience as well as learnt lessons will be presented.",
+    "authors": [
+      "Chuan Zhang",
+      "Roland Böhm",
+      "Eduard Boos",
+      "Ramy Cherif",
+      "Alexander Japs",
+      "Stefan Wunderlich"
+    ],
+    "published": "2025-09-26T14:23:57Z",
+    "updated": "2025-09-26T14:23:57Z",
+    "categories": [
+      "physics.acc-ph"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.22340v1",
+    "url": "https://arxiv.org/abs/2509.22340v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22340v1.pdf",
+    "title": "step2point dataset: Detailed shower simulation for data representation   studies",
+    "abstract": "This dataset contains a detailed simulation output that allows the construction and study of different data representations for electromagnetic and hadronic showers in calorimeters. It is published so that optimal data representations can be studied, with the ultimate goal of constructing a general tool that takes detailed simulation output and translates it into an optimal representation that can serve as the input to surrogate simulators based on generative models.",
+    "authors": [
+      "Anna Zaborowska",
+      "Peter McKeown"
+    ],
+    "published": "2025-09-26T13:32:22Z",
+    "updated": "2025-09-26T13:32:22Z",
+    "categories": [
+      "hep-ex",
+      "physics.comp-ph",
+      "physics.ins-det"
+    ],
+    "primary_category": "hep-ex"
+  },
+  {
+    "arxiv_id": "2509.22200v1",
+    "url": "https://arxiv.org/abs/2509.22200v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22200v1.pdf",
+    "title": "A minimalist self-differencing gating scheme for dead-time-free   single-photon avalanche diodes at high repetition rate",
+    "abstract": "Gated quenched SPAD detectors are widely used in quantum communication and quantum computing setups employing high-repetition-rate lasers. Here, we present a novel scheme for high-repetition-rate (100 MHz) sine-wave gated SPADs, based on the self-differencing technique, which significantly simplifies previous designs while offering additional advantages. These include straightforward implementation, more precise control of the SPAD biasing, and an improved SNR. We implemented this approach using an InGaAs photodiode and characterized it experimentally with 100 MHz attenuated laser pulses, measuring quantum efficiency, dark count rate, and afterpulsing behavior. Importantly, we demonstrate that the detector recovers full quantum efficiency in less than one pulse-repetition period after a detection event, enabling continuous operation at 100 MHz, which, in principle, could reach the GHz regime.",
+    "authors": [
+      "Samuele Altilia",
+      "Edoardo Suerra",
+      "Stefano Capra",
+      "Giacomo Secci",
+      "Sebastiano Corli",
+      "Stefano Olivares",
+      "Alessandro Ferraro",
+      "Enrico Prati",
+      "Simone Cialdi"
+    ],
+    "published": "2025-09-26T11:11:08Z",
+    "updated": "2025-09-26T11:11:08Z",
+    "categories": [
+      "quant-ph",
+      "physics.ins-det"
+    ],
+    "primary_category": "quant-ph"
+  },
+  {
+    "arxiv_id": "2509.22172v1",
+    "url": "https://arxiv.org/abs/2509.22172v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22172v1.pdf",
+    "title": "Tunable Transmissive Metagratings Using Single Layer Cylindrical Plasma   Discharges",
+    "abstract": "In this paper, we propose a novel single-layer reconfigurable transmissive metagrating based on plasma discharges. Each unit-cell consists of two side-by-side core-shell cylinders, with a tunable plasma core and a high-index dielectric shell. The structure is modeled using a free-electron plasma permittivity with adjustable plasma frequency. Analytical and numerical results show that the main transmission lobe can be switched between -41{\\deg}, 0{\\deg} and 41{\\deg} by tuning the plasma frequencies. Transmission efficiency remains above 80% at broadside and 90% in the steered direction. This tunability enables effective directional control with low reflection and high overall power efficiency.",
+    "authors": [
+      "Mohammad G. H. Alijani",
+      "Alessio Monti",
+      "Stefano Vellucci",
+      "Mirko Barbuto",
+      "Alessandro Toscano",
+      "Filiberto Bilotti"
+    ],
+    "published": "2025-09-26T10:31:56Z",
+    "updated": "2025-09-26T10:31:56Z",
+    "categories": [
+      "physics.app-ph",
+      "physics.optics",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.app-ph",
+    "doi": "10.1109/LAWP.2025.3592822"
+  },
+  {
+    "arxiv_id": "2409.06389v3",
+    "url": "https://arxiv.org/abs/2409.06389v3",
+    "pdf_url": "https://arxiv.org/pdf/2409.06389v3.pdf",
+    "title": "Contemporaneous Appearances of Auroral Spiral and Transpolar Arc: Polar   UVI Observations and Global MHD Simulations",
+    "abstract": "A local vortex-structured aurora and a large-scale transpolar arc (TPA) were contemporaneously observed by the Polar ultraviolet imager (UVI) when a substorm almost recovered, and the associated interplanetary magnetic field (IMF) BY and BZ polarities were negative and negative-to-positive. The TPA grew along the dawnside auroral oval from the nightside to the dayside, and an auroral spiral and several spots were located azimuthally near the poleward edge of the nightside auroral oval. Both auroras had tailward elongated source regions with scales of ~30 RE (spiral) and more than ~45 RE (TPA). To examine their magnetospheric/ionospheric field-aligned current (FAC) profiles, we performed global magnetohydrodynamic (MHD) simulations, using two different types of code: Block-Adaptive-Tree Solar-wind Roe Upwind Scheme (BATS-R-US) and improved REProduce Plasma Universe (REPPU). Both MHD simulations reproduced the tailward elongated TPA-associated FAC structures. The spiral-associated FAC intensity was, however, approximately three orders of magnitude weaker than the TPA-associated FAC intensity. Only improved REPPU simulation replicated faint but continuous poleward extending streak-like structures without evident FACs, instead of the auroral spiral. Geomagnetic field measurements showed that the spiral had upward (from the ionosphere to the magnetosphere) FACs, and its appearance might be accompanied by ultra-low-frequency Pc5 waves. Our results suggest that 1) a local-scale spiral might be formed with much weaker magnetotail FACs than global-scale TPA-associated FACs, although the spiral source region is elongated tailward, and 2) a solar wind-magnetosphere-ionosphere coupling system with minimal or no significant substorm effects is required to form the spiral with the weak magnetotail FACs.",
+    "authors": [
+      "Motoharu Nowada",
+      "Yukinaga Miyashita",
+      "Aoi Nakamizo",
+      "Noora Partamies",
+      "Quan-Qi Shi"
+    ],
+    "published": "2024-09-10T10:11:14Z",
+    "updated": "2025-09-26T08:18:39Z",
+    "categories": [
+      "physics.space-ph",
+      "astro-ph.SR",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.space-ph"
+  },
+  {
+    "arxiv_id": "2509.22031v1",
+    "url": "https://arxiv.org/abs/2509.22031v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22031v1.pdf",
+    "title": "Understanding the oxidation of pure Tungsten in air and its impact on   the lifecycle of a fusion power plant",
+    "abstract": "The oxidation of pure W and the sublimation of W oxide have been investigated to assess their impact on the lifecycle of a fusion power plant. Pure W has been oxidised at temperatures between 400 and 1050C and for durations ranging between 1 and 70 h. The formation of voids and cracks has been observed at temperatures above 600C, leading to the formation of dust or oxide spalling, which could be problematic in maintenance and waste-handling scenarios of a fusion power plant. Preferential oxidation taking place at the edge of the specimen was characterised, and its impact is discussed in relation to component design. Characterisation using electron microscopy and Raman spectroscopy revealed that the oxide scale is formed of three main layers: the inner layer is 30-50 nm thick WO2 oxide, the middle layer is a 10-20 um of WO_2.72 and the outer layer is formed of WO2.9/WO3 phases - whose thickness varies according to the total thickness of the oxide scale. The observed microstructure is discussed in relation to the parabolic-to-linear kinetics and its potential impact on tritium permeation and detritiation efficiency.",
+    "authors": [
+      "R. Li",
+      "G. Álvarez",
+      "A. Ipakchi",
+      "L. Cupertino-Malheiros",
+      "M. R. Gilbert",
+      "E. Martínez-Pañeda",
+      "E. Prestat"
+    ],
+    "published": "2025-09-26T08:07:48Z",
+    "updated": "2025-09-26T08:07:48Z",
+    "categories": [
+      "physics.app-ph",
+      "cond-mat.mtrl-sci",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.app-ph"
+  },
+  {
+    "arxiv_id": "2509.22021v1",
+    "url": "https://arxiv.org/abs/2509.22021v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.22021v1.pdf",
+    "title": "Background stability and annual modulation test using PICOLON ultra-pure   NaI(Tl) detector",
+    "abstract": "The dark matter observation claimed by the DAMA/LIBRA experiment has been a long-standing puzzle within the particle physics community. NaI(Tl) crystals with radiopurity comparable to DAMA/LIBRA's are essential for adequate verification. Existing experiments using NaI(Tl) target have been hampered by the high radioactivity concentration of NaI(Tl) crystals. PICOLON experiment conducts an independent search for Weakly Interacting Massive Particles using highest purity NaI(Tl) crystals. In 2020, the NaI(Tl) crystal (Ingot#85) reached the same purity level as DAMA/LIBRA crystals. The DAMA/LIBRA group has stressed that verifying their signal requires high-purity NaI(Tl) crystals with long-term stability. Based on a six-month measurement, we have confirmed the long-term stability of its radiopurity. This stability provides a significant advantage for future efforts to adequately verify the DAMA/LIBRA result using NaI(Tl) crystal. In this paper, we present the background stability of purity in the Ingot#94 NaI(Tl) detector, which was produced using the Ingot#85 purification method, along with the first annual modulation search conducted by the PICOLON experiment.",
+    "authors": [
+      "K. Kotera",
+      "D. Chernyak",
+      "H. Ejiri",
+      ". K. Fushimi",
+      "K. Hata",
+      "R. Hazama",
+      "T. Iida",
+      "H. Ikeda",
+      "K. Imagawa",
+      "K. Inoue",
+      "H. Ito",
+      "T. Kishimoto",
+      "M. Koga",
+      "A. Kozlov",
+      "K. Nakamura",
+      "R. Orito",
+      "T. Shima",
+      "Y. Takemoto",
+      "S. Umehara",
+      "Y. Urano",
+      "K. Yasuda",
+      "S. Yoshida"
+    ],
+    "published": "2025-09-26T07:56:58Z",
+    "updated": "2025-09-26T07:56:58Z",
+    "categories": [
+      "physics.ins-det",
+      "astro-ph.IM"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2411.11621v2",
+    "url": "https://arxiv.org/abs/2411.11621v2",
+    "pdf_url": "https://arxiv.org/pdf/2411.11621v2.pdf",
+    "title": "Plasma acceleration of polarized particle beams",
+    "abstract": "Spin-polarized particle beams are of interest for applications like deep-inelastic scattering, e.g. to gain further understanding of the proton's nuclear structure. With the advent of high-intensity laser facilities, laser-plasma-based accelerators offer a promising alternative to standard radiofrequency-based accelerators, as they can shorten the required acceleration length significantly. However, in the scope of spin-polarized particles, they bring unique challenges. This paper reviews the developments in the field of spin-polarized particles, focusing on the interaction of laser pulses and high-energy particle beams with plasma. The relevant scaling laws for spin-dependent effects in laser-plasma interaction, as well as acceleration schemes for polarized leptons, ions, and gamma quanta, are discussed.",
+    "authors": [
+      "Lars Reichwein",
+      "Zheng Gong",
+      "Chuan Zheng",
+      "Liangliang Ji",
+      "Alexander Pukhov",
+      "Markus Büscher"
+    ],
+    "published": "2024-11-18T14:51:10Z",
+    "updated": "2025-09-26T07:00:16Z",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.acc-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.21883v1",
+    "url": "https://arxiv.org/abs/2509.21883v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21883v1.pdf",
+    "title": "Enhancing Particle Identification in Helium-Based Drift Chambers Using   Cluster Counting Insights from Beam Test Studies",
+    "abstract": "Particle identification in gaseous detectors traditionally relies on energy loss measurements (dE/dx); however, uncertainties in total energy deposition limit its resolution. The cluster counting technique (dN/dx) offers an alternative approach by exploiting the Poisson-distributed nature of primary ionization, providing a statistically robust method for mass determination. Simulation studies with Garfield++ and Geant4 indicate that dN/dx can achieve twice the resolution of dE/dx in helium-based drift chambers. However, experimental implementation is challenging due to signal overlap in the time domain, complicating the identification of electron peaks and ionization clusters. This paper presents novel algorithms and modern computational techniques to address these challenges, facilitating accurate cluster recognition in experimental data. The effectiveness of these algorithms is validated through four beam tests conducted at CERN, utilizing various helium gas mixtures, gas gains, and wire orientations relative to ionizing tracks. The experiments employ a muon beam (1 GeV/c to 180 GeV/c) with drift tubes of different sizes and sense wire diameters. The analysis explores the Poisson nature of cluster formation, evaluates the performance of different clustering algorithms, and examines the dependence of counting efficiency on the beam particle impact parameter. Furthermore, a comparative study of the resolution achieved using dN/dx and dE/dx is presented.",
+    "authors": [
+      "W. Elmetenawee",
+      "M. Abbrescia",
+      "M. Anwar",
+      "G. Chiarello",
+      "A. Corvaglia",
+      "F. Cuna",
+      "N. De Filippis",
+      "F. De Santis",
+      "M. Dong",
+      "E. Gorini",
+      "F Grancagnolo",
+      "F. G. Gravili",
+      "K. Johnson",
+      "S. Liu",
+      "M. Louka",
+      "A. Miccoli",
+      "M. Panareo",
+      "M. Primavera",
+      "F. M. Procacci",
+      "A. Taliercio",
+      "G. Tassielli",
+      "A. Ventura L. Wu",
+      "G. Zhao"
+    ],
+    "published": "2025-09-26T05:15:47Z",
+    "updated": "2025-09-26T05:15:47Z",
+    "categories": [
+      "physics.ins-det",
+      "hep-ex"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2505.13926v3",
+    "url": "https://arxiv.org/abs/2505.13926v3",
+    "pdf_url": "https://arxiv.org/pdf/2505.13926v3.pdf",
+    "title": "An exploratory study of a tellurium-loaded liquid scintillator based on   water and p-dioxane",
+    "abstract": "Tellurium-loaded liquid scintillators are critical for neutrinoless double-beta decay experiments. However, conventional organic scintillators are constrained by the limited solubility of organic tellurium compounds, whereas water-based scintillators are likely constrained by the destabilization of surfactants caused by inorganic tellurium compounds. In this work, a surfactant-free water-containing route is explored, in which an aqueous tellurium solution is introduced into a water-miscible organic scintillator comprising p-dioxane, naphthalene, and PPO. The phase behavior of this system is mapped to delineate homogeneous-mixture domains and to estimate practical upper bounds on tellurium loading. Optical properties are characterized by UV-visible absorption spectroscopy and fluorescence spectroscopy. The scintillation light yield is obtained with a relative method that compares to a reference LAB-PPO scintillator. The measurements demonstrate scintillation quenching induced by water and by tellurium compounds. These results provide benchmarks for water-containing and surfactant-free formulations and support the development of high-loading liquid scintillators for future detector design.",
+    "authors": [
+      "Ye Liang",
+      "Haozhe Sun",
+      "Zhe Wang"
+    ],
+    "published": "2025-05-20T04:42:24Z",
+    "updated": "2025-09-26T03:54:48Z",
+    "categories": [
+      "physics.ins-det",
+      "hep-ex"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.20658v2",
+    "url": "https://arxiv.org/abs/2509.20658v2",
+    "pdf_url": "https://arxiv.org/pdf/2509.20658v2.pdf",
+    "title": "Regression of Suspension Violin Modes in KAGRA O3GK Data with Kalman   Filters",
+    "abstract": "Suspension thermal modes in interferometric gravitational-wave detectors produce narrow, high-Q spectral lines that can contaminate gravitational searches and bias parameter estimation. In KAGRA, cryogenic mirrors are held by thick suspension fibers, designed to sustain such low-temperature environment, which may further affects inharmonicity modes, fiber dimensions, and mechanical behavior compared to typical interferometers. Remaining a prominent source of narrowband contamination, we implement a Kalman filter to model and track violin lines, building on the methodology introduced in [1], and apply subtraction to KAGRA O3GK data. Using gravitational-wave template injections, we validate that the subtraction preserves matched-filter SNR while effectively suppressing line power. Comparisons of power spectral densities and residual analyses confirm that the method removes deterministic line contributions without introducing waveform distortions. This approach provides a cleaner strain channel for searches and parameter estimation and will become increasingly important for future low-temperature detectors with higher-Q suspensions, such as the Einstein Telescope.",
+    "authors": [
+      "Lucas Moisset",
+      "Marco Meyer-Conde",
+      "Christopher Allene",
+      "Yusuke Sakai",
+      "Dan Chen",
+      "Nobuyuki Kanda",
+      "Hirotaka Takahashi"
+    ],
+    "published": "2025-09-25T01:33:14Z",
+    "updated": "2025-09-26T01:03:54Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.IM",
+      "physics.ins-det"
+    ],
+    "primary_category": "gr-qc"
+  },
+  {
+    "arxiv_id": "2509.21680v1",
+    "url": "https://arxiv.org/abs/2509.21680v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21680v1.pdf",
+    "title": "Saturation of the kinetic ballooning instability due to the electron   parallel nonlinearity",
+    "abstract": "The electron parallel nonlinearity (EPN) is implemented in the gyrokinetic Particle-in-Cell turbulence code GEM [Y. Chen and S. E. Parker, J. Comp. Phys. 220, 839 (2007)]. Application to the Cyclone Base Case reveals a strong effect of EPN on the saturated heat transport above the kinetic ballooning mode threshold. Evidence is provided to show that the strong effect is associated with the electron radial motion due to magnetic fluttering, which turns fine structures of the KBM eigenmode in radius into fine structures in velocity and increases the magnitude of the EPN term in the kinetic equation.",
+    "authors": [
+      "Yang Chen",
+      "Scott E. Parker"
+    ],
+    "published": "2025-09-25T23:04:05Z",
+    "updated": "2025-09-25T23:04:05Z",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.19838v2",
+    "url": "https://arxiv.org/abs/2509.19838v2",
+    "pdf_url": "https://arxiv.org/pdf/2509.19838v2.pdf",
+    "title": "Attention U-Net for all-sky continuous gravitational wave searches",
+    "abstract": "Detecting continuous gravitational waves is challenging due to the high computational cost of template-based searches across large parameter spaces, particularly for all-sky searches. Machine learning offers a promising solution to perform these searches with reasonable computational resources. In this study, we trained an attention U-Net, a convolutional neural network, on $\\approx$ 10.67 days of simulated data with Gaussian noise for all-sky searches at different frequencies within the 20-1000 Hz band. Our model trained at 20 Hz achieves the best sensitivity, with a 90% detection efficiency sensitivity depth $D^{90\\%} = 29.97 \\pm 0.24\\,\\mathrm{Hz}^{-1/2}$ with a 1% false alarm rate per 50 mHz, while the model trained on the entire 20-1000 Hz band yields $D^{90\\%} = 18.63 \\pm 0.24\\,\\mathrm{Hz}^{-1/2}$. The sensitivities achieved are comparable to state-of-the-art results using deep learning approaches, with less than 50% of the training time and data. We find that sensitivity scales as $T^{0.28 \\pm 0.01}$ with total observation time for the attention U-Net trained at 20 Hz, similar to semi-coherent search methods. The neural network demonstrates robustness on datasets with time gaps, with sensitivity dependence on duty factor analyzed. We also investigated the sensitivity dependence of the trained attention U-Net models on sky location. Our findings show that attention U-Net is a scalable and effective approach for all-sky continuous gravitational wave searches.",
+    "authors": [
+      "Damon H. T. Cheung"
+    ],
+    "published": "2025-09-24T07:30:11Z",
+    "updated": "2025-09-25T22:34:40Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.IM",
+      "physics.ins-det"
+    ],
+    "primary_category": "gr-qc"
+  },
+  {
+    "arxiv_id": "2509.21661v1",
+    "url": "https://arxiv.org/abs/2509.21661v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21661v1.pdf",
+    "title": "Automating Sensor Characterization with Bayesian Optimization",
+    "abstract": "The development of novel instrumentation requires an iterative cycle with three stages: design, prototyping, and testing. Recent advancements in simulation and nanofabrication techniques have significantly accelerated the design and prototyping phases. Nonetheless, detector characterization continues to be a major bottleneck in device development. During the testing phase, a significant time investment is required to characterize the device in different operating conditions and find optimal operating parameters. The total effort spent on characterization and parameter optimization can occupy a year or more of an expert's time. In this work, we present a novel technique for automated sensor calibration that aims to accelerate the testing stage of the development cycle. This technique leverages closed-loop Bayesian optimization (BO), using real-time measurements to guide parameter selection and identify optimal operating states. We demonstrate the method with a novel low-noise CCD, showing that the machine learning-driven tool can efficiently characterize and optimize operation of the sensor in a couple of days without supervision of a device expert.",
+    "authors": [
+      "J. Cuevas-Zepeda",
+      "C. Chavez",
+      "J. Estrada",
+      "J. Noonan",
+      "B. D. Nord",
+      "N. Saffold",
+      "M. Sofo-Haro",
+      "R. Spinola e Castro",
+      "S. Trivedi"
+    ],
+    "published": "2025-09-25T22:31:15Z",
+    "updated": "2025-09-25T22:31:15Z",
+    "categories": [
+      "physics.ins-det",
+      "astro-ph.IM",
+      "cs.LG"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2507.03119v4",
+    "url": "https://arxiv.org/abs/2507.03119v4",
+    "pdf_url": "https://arxiv.org/pdf/2507.03119v4.pdf",
+    "title": "Neural-Network solver of ideal MHD equilibria",
+    "abstract": "We present a novel approach to compute three-dimensional Magnetohydrodynamic equilibria by parametrizing Fourier modes with artificial neural networks and compare it to equilibria computed by conventional solvers. The full nonlinear global force residual across the volume in real space is then minimized with first order optimizers. Already,we observe competitive computational cost to arrive at the same minimum residuals computed by existing codes. With increased computational cost,lower minima of the residual are achieved by the neural networks,establishing a new lower bound for the force residual. We use minimally complex neural networks,and we expect significant improvements for solving not only single equilibria with neural networks,but also for computing neural network models valid over continuous distributions of equilibria.",
+    "authors": [
+      "Timo Thun",
+      "Andrea Merlo",
+      "Rory Conlin",
+      "Dario Panici",
+      "Daniel Böckenhoff"
+    ],
+    "published": "2025-07-03T18:56:37Z",
+    "updated": "2025-09-25T22:11:31Z",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "cs.LG"
+  },
+  {
+    "arxiv_id": "2509.21645v1",
+    "url": "https://arxiv.org/abs/2509.21645v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21645v1.pdf",
+    "title": "Generation of directed electron beams by tight focusing of an ultrashort   IR laser in a near-critical plasma",
+    "abstract": "Recent studies have demonstrated the possibility of accelerating electrons to MeV energies in ambient air using tightly focused laser configurations. In this article, we explore possible strategies to control and optimize the resulting electron beams using laser and gas parameters. Our theoretical analysis shows that in near-critical plasmas, linearly and circularly polarized pulses are more efficient than radially polarized pulses for electron acceleration. In addition, electron beams obtained from linearly polarized pulses have lower divergence angles. By studying the efficiency of the acceleration process - characterized by the maximum kinetic energy of electrons and their total number - we identify optimal conditions in ambient air at wavelength lambda_0 approximately 1.5 micrometers and a_0 >= 15. We also scale our results to lower-density air and demonstrate that some noble gases (Ne, Ar) are suitable media for accelerating electrons. Our investigations show that this acceleration scheme enables multi-MeV electrons with low divergence using millijoule-class high-repetition rate lasers, making it a promising candidate for applications in medical sciences and ultrafast imaging.",
+    "authors": [
+      "Marianna Lytova",
+      "François Fillion-Gourdeau",
+      "Simon Vallières",
+      "Sylvain Fourmaux",
+      "Stéphane Payeur",
+      "François Légaré",
+      "Steve MacLean"
+    ],
+    "published": "2025-09-25T22:03:42Z",
+    "updated": "2025-09-25T22:03:42Z",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.optics"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.21640v1",
+    "url": "https://arxiv.org/abs/2509.21640v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21640v1.pdf",
+    "title": "A comprehensive equivalent circuit model for high overtone bulk acoustic   resonators (HBARs)",
+    "abstract": "This paper presents a new and comprehensive equivalent circuit model for high overtone bulk acoustic resonators (HBARs). HBARs demonstrate several very sharp resonance modes distributed nearly periodically over a very wide frequency range. This spectrum response of HBARs offers unique advantages but poses significant modeling challenges. The proposed circuit incorporates and models the unique physical components of the HBAR: piezoelectric transducer, substrate (a perfectly periodic multimode cavity), piezoelectric coupling, and critically, the imperfectly matched transducer-substrate interface which imparts characteristic aperiodicity to the HBAR mode spectrum. By judicious use of fixed, periodic, or tightly constrained virtual lumped-element branches, and sets of branches, the model retains clear and intuitive links to the physical device, while reducing the complexity needed for fitting dense, broadband datasets. We demonstrate the validity and power of this model by simultaneously fitting measured data for 61 modes of a GaN/NbN/sapphire HBAR over a span of 1 GHz, and extracting modal parameters such as quality factors and coupling coefficients. We show that this new model is compact and yet scalable: by leveraging the inherent internal relationships in an HBAR, the model can be easily expanded to include multiple transducer overtones and envelopes, multiple distinct transducers, and spurious modes. In addition to fitting measured datasets, the new model can also be used to easily analyze various perturbations to the nominal state of the HBAR. We expect the new model to be useful for the design of classical HBAR-based oscillators, filters, and sensors, and for the integration of HBARs into quantum circuits.",
+    "authors": [
+      "Vikrant J. Gokhale",
+      "Brian P. Downey"
+    ],
+    "published": "2025-09-25T21:58:51Z",
+    "updated": "2025-09-25T21:58:51Z",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.other",
+      "cs.SY",
+      "eess.SY",
+      "physics.app-ph",
+      "physics.ins-det"
+    ],
+    "primary_category": "cond-mat.mes-hall"
+  },
+  {
+    "arxiv_id": "2509.21525v1",
+    "url": "https://arxiv.org/abs/2509.21525v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21525v1.pdf",
+    "title": "High-accuracy low-noise electrical measurements in a closed-cycle   pulse-tube cryostat",
+    "abstract": "A shift of paradigm to obtain (sub-)Kelvin environment is currently on-going with the democratization of cryogen-free cryocoolers, boosted by their easy-to-use and continuous operation without the need of liquid helium whose cost and scarcity globally increase. Thanks to their large sample space and cooling power, they can host a superconducting magnet and are an adapted platform for quantum technologies, material science, low temperature detectors and even medical fields. The drawback is that this type of system is inherently based on gas compression that induces a certain level of vibrations and electromagnetic perturbations, which can potentially prevent the determination of low amplitude signals or spoil their stability. In this paper we demonstrate that pulse-tube based cryocoolers can be used for electrical precision measurements, using a commercial cryomagnetic system combined with our home-made a coaxial cryoprobe. In particular, parts-per-billion level of measurement uncertainties in resistance determination, based on quantum Hall resistance standards, is achievable at the level of state-of-the-art measurements involving conventional cryostats based on liquid helium. We performed an extensive characterization of the cryomagnetic system to determine the level of vibrations and electromagnetic perturbations, and revealed that although the magnetic field has a drastic effect on the noise level, only marginal interplays on the measurement are observed as long as the working frequencies of the instrumentation are not in the vicinity of the ones of the perturbations. The set of characterization measurements presented here are easily implementable in laboratories, which can help to determine the vibrations and electromagnetic pollution generated by any cryocooler.",
+    "authors": [
+      "Mathieu Taupin",
+      "Kamel Dougdag",
+      "Djamel Ziane",
+      "Francois Couedo"
+    ],
+    "published": "2025-09-25T20:09:58Z",
+    "updated": "2025-09-25T20:09:58Z",
+    "categories": [
+      "cond-mat.other",
+      "physics.ins-det"
+    ],
+    "primary_category": "cond-mat.other"
+  },
+  {
+    "arxiv_id": "2509.21506v1",
+    "url": "https://arxiv.org/abs/2509.21506v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21506v1.pdf",
+    "title": "Electrostatic waves in astrophysical Druyvesteyn plasmas: I. Langmuir   waves",
+    "abstract": "Plasmas in various astrophysical systems are in non-equilibrium states as evidenced by direct in-situ measurements in the solar wind, solar corona and planetary environments as well as by indirect observations of various sources of waves and emissions. Specific are non-Maxwellian velocity distributions with suprathermal tails, for whose description the most-used are the Kappa (power-law) distributions. With this paper we introduce a modeling alternative for linear waves in plasmas described by another non-equilibrium model, namely the generalized Druyvesteyn distribution. This can reproduce not only the high-energy tails, but also the low-energy flat-tops of velocity distributions, like those of electrons associated with the Earth's bow shock and interplanetary shocks or of electrons in the solar transition region. We derive the corresponding dispersion relation for longitudinal waves in terms of the newly introduced Druyvsteyn dispersion function, numerically compute, for the isotropic case, the dispersion curves as well as damping rates, and provide analytical approximation in the limit of weak damping. Thereby, we provide a new modeling tool that facilitates the quantitative treatment of a variety of non-Maxwellian plasmas.",
+    "authors": [
+      "Simon Tischmann",
+      "Rudi Gaelzer",
+      "Dustin Schröder",
+      "Marian Lazar",
+      "Horst Fichtner"
+    ],
+    "published": "2025-09-25T19:59:11Z",
+    "updated": "2025-09-25T19:59:11Z",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.SR"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.11286v2",
+    "url": "https://arxiv.org/abs/2509.11286v2",
+    "pdf_url": "https://arxiv.org/pdf/2509.11286v2.pdf",
+    "title": "Magnitude of Short-Wavelength Electric Field Fluctuations in Simulations   of Collisionless Plasma Shocks",
+    "abstract": "Large-amplitude electrostatic fluctuations are routinely observed by spacecraft upon traversal of collisionless shocks in the heliosphere. Kinetic simulations of shocks have struggled to reproduce the amplitude of such fluctuations, complicating efforts to understand their influence on energy dissipation and shock structure. In this paper, 1D particle-in-cell simulations with realistic proton-to-electron mass ratio are used to show that in cases with upstream electron temperature $T_e$ exceeding the ion temperature $T_i$, the magnitude of the fluctuations increases with the electron plasma-to-cyclotron frequency ratio $\\omega_{pe}/\\Omega_{ce}$, reaching realistic values at $\\omega_{pe}/\\Omega_{ce} \\gtrsim 30$. The large-amplitude fluctuations in the simulations are shown to be associated with electrostatic solitary structures, such as ion phase-space holes. In the cases where upstream temperature ratio is reversed, the magnitude of the fluctuations remains small.",
+    "authors": [
+      "Vadim Roytershteyn",
+      "Lynn B. Wilson III",
+      "Li-Jen Chen",
+      "Michael Gedalin",
+      "Nikolai Pogorelov"
+    ],
+    "published": "2025-09-14T14:26:11Z",
+    "updated": "2025-09-25T19:55:54Z",
+    "categories": [
+      "physics.space-ph",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.space-ph",
+    "doi": "10.3847/1538-4357/ae06a9"
+  },
+  {
+    "arxiv_id": "2509.21246v1",
+    "url": "https://arxiv.org/abs/2509.21246v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21246v1.pdf",
+    "title": "Peak separation methods for inverse photoelectron spectra: Comparing   second derivative, curve fitting, and deconvolution analyses",
+    "abstract": "Inverse photoelectron spectroscopy (IPES) is a powerful technique for probing the unoccupied electronic states of materials. It can be regarded as the inversion process of photoelectron spectroscopy (PES), which examines the occupied states. Recently developed low-energy inverse photoelectron spectroscopy (LEIPS) can significantly advance the study of unoccupied states, owing to an improved signal-to-noise ratio and minimal sample damage compared to conventional IPES. However, the instrumental resolution remains at 0.2 eV, which is one order of magnitude lower than that of PES. Spectral broadening caused by the low instrumental resolution often results in overlapping peaks. Peak separation is therefore crucial in the analysis of LEIPS spectra. In this study, we compared three peak separation methods: second derivative, curve fitting, and deconvolution. These methods were applied to modeled and experimental LEIPS spectra of the lowest unoccupied molecular orbital-derived band of pentacene, which consists of two splitting peaks due to the two inequivalent molecules in the unit cell. We systematically and quantitatively evaluated the performance of each method in terms of analysis parameters and discussed its robustness to noise as well as its peak separation capability. This work offers a practical framework for peak separation in LEIPS, with extensions to PES and a wide range of spectroscopies.",
+    "authors": [
+      "Ryotaro Nakazawa",
+      "Haruki Sato",
+      "Hiroyuki Yoshida"
+    ],
+    "published": "2025-09-25T14:39:26Z",
+    "updated": "2025-09-25T14:39:26Z",
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.mtrl-sci",
+      "physics.app-ph",
+      "physics.data-an"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.21123v1",
+    "url": "https://arxiv.org/abs/2509.21123v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21123v1.pdf",
+    "title": "Physics Informed Neural Networks for design optimisation of diamond   particle detectors for charged particle fast-tracking at high luminosity   hadron colliders",
+    "abstract": "Future high-luminosity hadron colliders demand tracking detectors with extreme radiation tolerance, high spatial precision, and sub-nanosecond timing. 3D diamond pixel sensors offer these capabilities due to diamond's radiation hardness and high carrier mobility. Conductive electrodes, produced via femtosecond IR laser pulses, exhibit high resistivity that delays signal propagation. This effect necessitates extending the classical Ramo-Shockley weighting potential formalism. We model the phenomenon through a 3rd-order, 3+1D PDE derived as a quasi-stationary approximation of Maxwell's equations. The PDE is solved numerically and coupled with charge transport simulations for realistic 3D sensor geometries. A Mixture-of-Experts Physics-Informed Neural Network, trained on Spectral Method data, provides a meshless solver to assess timing degradation from electrode resistance.",
+    "authors": [
+      "Alessandro Bombini",
+      "Alessandro Rosa",
+      "Clarissa Buti",
+      "Giovanni Passaleva",
+      "Lucio Anderlini"
+    ],
+    "published": "2025-09-25T13:09:28Z",
+    "updated": "2025-09-25T13:09:28Z",
+    "categories": [
+      "physics.ins-det",
+      "cs.LG",
+      "hep-ex",
+      "physics.comp-ph",
+      "I.2.6; I.6.1"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.21098v1",
+    "url": "https://arxiv.org/abs/2509.21098v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21098v1.pdf",
+    "title": "First Electron Acceleration in a Tunable-Velocity Laser Wakefield",
+    "abstract": "We present the first experimental confirmation that a laser-wakefield accelerator produced by a flying focus pulse is able to maintain the coherent structures necessary to accelerate electrons to relativistic energies. Through a combination of spatio-temporal near-field shaping of the beam and focusing with an axiparabola - a long-focal-depth mirror that produces a quasi-Bessel beam - the propagation velocity of the wakefield is tuned to control the maximum electron energy achievable. The experimental data are supported by advanced optical and particle-in-cell simulations and are aligned with a simplified analytical model. Together, the results significantly strengthen the case for the flying-focus wakefield as a strategy for mitigating dephasing in laser-wakefield acceleration.",
+    "authors": [
+      "Aaron Liberman",
+      "Anton Golovanov",
+      "Slava Smartsev",
+      "Anda-Maria Talposi",
+      "Sheroy Tata",
+      "Victor Malka"
+    ],
+    "published": "2025-09-25T12:46:38Z",
+    "updated": "2025-09-25T12:46:38Z",
+    "categories": [
+      "physics.acc-ph",
+      "physics.optics",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.21048v1",
+    "url": "https://arxiv.org/abs/2509.21048v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21048v1.pdf",
+    "title": "Reply to \"Comments to Marvel Fusions Mixed Fuels Reactor Concept\"",
+    "abstract": "In \"arXiv:2312.13429\" Lackner et al. use standard methods to decide if it is possible to ignite mixed fuels. They correctly identify that the increased radiation losses make ignition significantly more challenging than for pure DT fuels, since this leads to higher ignition temperatures. Further, they conclude that at those temperatures the reduced electronic $\\alpha$-stopping makes ignition impossible. We show that this conclusion is not correct. The model used for $\\alpha$-stopping by Lackner et al. is only approximately correct for low temperatures and hydrogen isotopes. By extending the $\\alpha$-stopping model to include ionic $\\alpha$-stopping we show in \\cite{ruhlkornarXiv5} that the contribution of ionic $\\alpha$-particle stopping cannot be neglected. The ionic $\\alpha$-stopping together with the neutron stopping, which is also neglected by Lackner et al., lead to elevated ion temperatures implying $kT_i > kT_e$. Those three effects combined lead us to the conclusion, that ignition of mixed fuels is indeed possible with far reaching implications, contrary to the analysis by Lackner.",
+    "authors": [
+      "Hartmut Ruhl",
+      "Georg Korn"
+    ],
+    "published": "2025-09-25T11:57:19Z",
+    "updated": "2025-09-25T11:57:19Z",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.20995v1",
+    "url": "https://arxiv.org/abs/2509.20995v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20995v1.pdf",
+    "title": "Three Dimensional Theory of the Ion Channel Laser",
+    "abstract": "The ion channel laser (ICL) is a plasma-based alternative to the free electron laser (FEL) that uses the electric field of a uniform-density ion channel rather than the magnetic field of an undulator to induce transverse oscillations of a relativistic electron bunch and thereby produce coherent radiation via a collective electromagnetic instability. The powerful focusing of the ion channel generally yields significantly higher gain parameters in the ICL as compared to the FEL. This permits lasing in extremely short distances using electron bunches with an energy spread as large as a few percent; a value readily achievable with current plasma-based accelerators. ICLs, however, impose stringent transverse phase space requirements on the electron beam beyond what is required in FELs. In this work, we present a novel 3D theory of the off-axis planar ICL that accounts for a number of effects including diffraction, transverse guided mode shape, frequency and betatron phase detuning, and nonzero spread in energy and undulator parameter. We derive the ICL pendulum and field equations, which we use to write down the 3D Maxwell-Klimontovich equations. After linearizing, we obtain an integro-differential equation describing the $z$-evolution of the radiation mode. The 3D ICL dispersion relation is obtained using a Van Kampen normal mode expansion. We numerically solve the $z$-evolution equation to compute radiation power growth rates and transverse guided mode profiles over a range of different ICL parameters. We note the ICL's large gain bandwidth and examine the gain reduction due to 3D effects, energy spread, and emittance. Electron beam phase space and emittance requirements for lasing are derived. Finally, we make general observations about the general performance and feasibility of the ICL and discuss future prospects.",
+    "authors": [
+      "Claire Hansel",
+      "Agostino Marinelli",
+      "Zhirong Huang",
+      "Elena Ros",
+      "Valentina Lee",
+      "Michael Litos"
+    ],
+    "published": "2025-09-25T10:46:23Z",
+    "updated": "2025-09-25T10:46:23Z",
+    "categories": [
+      "physics.acc-ph"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.21417v1",
+    "url": "https://arxiv.org/abs/2509.21417v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.21417v1.pdf",
+    "title": "Enhanced Axion-Photon Conversion via Seeded Photons instead of Resonant   Cavities for Short-Pulse Axion Detection",
+    "abstract": "We propose a seeded axion-photon conversion scheme to enhance the sensitivity of light-shining-through-wall (LSW) experiments for axion detection, where the axions are generated from short pulse lasers and the usual resonant cavity is not applicable. By injecting a small, coherent seed electromagnetic field (EM field) into the axion-photon conversion region, the axion-induced EM field can constructively interfere with the seed field, amplifying the regenerated photon number beyond the unseeded case. Starting from the axion-modified Maxwell equations, we derive the axion-photon conversion probability and show how an initial seed field boosts the final photon amplitude. The relative phase between the seed field and the axion field can cause constructive or destructive interference, though the measurable quantity is the net photon number variation. We evaluate the expected signal enhancement, signal-to-noise considerations (including seed shot noise), and the potential improvement in coupling sensitivity. Compared to a standard LSW setup, the seeded scheme can achieve orders-of-magnitude higher photon yield per axion, potentially surpassing resonance-enhanced experiments in certain parameter regimes. This approach offers a promising route to extend the reach of laboratory axion searches, especially for the case where the resonant cavities are impractical.",
+    "authors": [
+      "Xiangyan An",
+      "Min Chen",
+      "Jianglai Liu",
+      "Zhengming Sheng",
+      "Jie Zhang"
+    ],
+    "published": "2025-09-25T05:39:59Z",
+    "updated": "2025-09-25T05:39:59Z",
+    "categories": [
+      "hep-ph",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "hep-ph"
+  },
+  {
+    "arxiv_id": "2509.20654v1",
+    "url": "https://arxiv.org/abs/2509.20654v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20654v1.pdf",
+    "title": "Stochastic Heating in the Sub-Alfvénic Solar Wind",
+    "abstract": "Collisionless dissipation of turbulence is important for heating plasmas in astrophysical, space physics, and laboratory environments, controlling energy, momentum and particle transport. We analyze Parker Solar Probe observations to understand the collisionless heating of the sub-Alfv\\'enic solar wind, which is connected to the solar corona. Our results show that linear resonant heating through parallel-propagating cyclotron waves cannot account for turbulent dissipation in sub-Alfv\\'enic region, which observations suggest may dissipate turbulence at distances further from the Sun. Instead, we find that stochastic heating can account for the observed ion energization; however, because the dominant contributions arise from infrequent, large-amplitude events, turbulent intermittency must be explicitly incorporated. These observations directly connect stochastic heating via breaking of the proton magnetic moment with the intermittent and inhomogeneous heating of turbulence reported in many previous studies. Our identification of stochastic heating as a dynamic mechanism responsible for intermittent heating of the solar wind has significant implications for turbulent dissipation in the lower corona, other astrophysical environments, and laboratory plasma.",
+    "authors": [
+      "Trevor A. Bowen",
+      "Tamar Ervin",
+      "Alfred Mallet",
+      "Benjamin D. G. Chandran",
+      "Nikos Sioulas",
+      "Philip A. Isenberg",
+      "Stuart D. Bale",
+      "Jonathan Squire",
+      "Kristopher G. Klein",
+      "Oreste Pezzi"
+    ],
+    "published": "2025-09-25T01:24:16Z",
+    "updated": "2025-09-25T01:24:16Z",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "arxiv_id": "2509.20594v1",
+    "url": "https://arxiv.org/abs/2509.20594v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20594v1.pdf",
+    "title": "Anderson self-localization of light in pair plasmas",
+    "abstract": "We demonstrate that in pair plasma weakly nonlinear electromagnetic waves, $a_0 \\leq 1$, experience Anderson self-localization. The beat between the driver and a back-scattered wave creates random, charge-neutral, large density fluctuations $\\delta \\rho/\\rho \\gg 1$, and corresponding random fluctuations of the dielectric permittivity $\\epsilon$. Propagating in quasi-1D, waves in a medium with spatially random, time-varying, self-created fluctuations of dielectric permeability experience localization. Anderson self-localization of light leads to (i) reflection of EM waves by the under-dense pair plasma; (ii) a wave already present inside the plasma separates into bright trapped pockets and dark regions. Mild initial thermal spread restores wave propagation by suppressing the seeds of parametrically unstable density fluctuations. A circularly polarized driver produces linearly polarized structures, with position angle varying randomly between the bright pulses. We discuss possible applications to astrophysical Fast Radio Bursts.",
+    "authors": [
+      "Maxim Lyutikov",
+      "Victor Gurarie"
+    ],
+    "published": "2025-09-24T22:25:27Z",
+    "updated": "2025-09-24T22:25:27Z",
+    "categories": [
+      "physics.plasm-ph",
+      "astro-ph.HE",
+      "cond-mat.dis-nn"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.20583v1",
+    "url": "https://arxiv.org/abs/2509.20583v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20583v1.pdf",
+    "title": "Permanently magnetized axion-photon conversion surface for direct dark   matter searches with BRASS-p",
+    "abstract": "A new method was recently proposed for axion dark matter searches which employs scalable, permanently magnetized, flat conversion surface (or magnetized converter) generating an electromagnetic signal from dark matter particles passing through them. BRASS-p is an experimental setup which applies this method to direct searches of axion/ALP dark matter in the frequency range from 12 to 18 GHz (corresponding to the range of particle mass from 50 to 74 $\\mu$eV. The conversion surface of BRASS-p will consist of 24 individual panels, each containing a 483mm $\\times$ 483mm array of high-grade permanent magnets organized in a pattern capable of generating a magnetic field with an average strength of $\\approx$ 0.9 T, for the field component parallel to the surface of the panel. This paper describes the development and optimization of a design for these panels and discusses the resulting sensitivity of BRASS-p measurements to the axion/ALP dark matter.",
+    "authors": [
+      "Le Hoang Nguyen",
+      "Dieter Horns",
+      "Andrei Lobanov"
+    ],
+    "published": "2025-09-24T21:48:49Z",
+    "updated": "2025-09-24T21:48:49Z",
+    "categories": [
+      "physics.ins-det"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.20582v1",
+    "url": "https://arxiv.org/abs/2509.20582v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20582v1.pdf",
+    "title": "A Passive UV-Based System for Discharging the Test Masses of Ground   Based Gravitational Wave Detectors",
+    "abstract": "We present a passive ultraviolet charge management system for the fused silica test masses in ground-based laser interferometric gravitational wave detectors. The system uses photoelectron emission from low work-function gold coatings illuminated by 275 to 285 nm UV light to neutralize unwanted electric charges on the electrically floating test masses, maintaining them at zero potential relative to surrounding components. Two implementation schemes are described: 1. distributed discharge tabs illuminated by UV LEDs mounted at the eight surrounding earthquake stops, and 2. a conductively linked tab design enabling a centralized discharge on the test mass barrel, with potential extension to annular coatings around the high-reflectivity and anti-reflective surfaces. Experimental results show photoelectric currents greater or equal to 10 pA for 1.0 mW of incident UV, enabling discharge rates greater than 10V/s for a 1 pF capacitance. With 0.2 mW UV power, charge neutralization to less or equal to 1 pC can be achieved in 5 to 75 minutes. This technique offers a vacuum-compatible alternative to ion sprayers, significantly reducing operational downtime. For the conductive-barrel configuration, we also propose a balanced electrostatic actuator using four parallel-plate capacitors for combined control of TM axial displacement, tilt, and azimuth, with reduced drive voltages.",
+    "authors": [
+      "Saps Buchman",
+      "Suwen Wang",
+      "Shallendar Saraf"
+    ],
+    "published": "2025-09-24T21:47:09Z",
+    "updated": "2025-09-24T21:47:09Z",
+    "categories": [
+      "physics.ins-det",
+      "astro-ph.IM",
+      "gr-qc",
+      "physics.space-ph"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.20535v1",
+    "url": "https://arxiv.org/abs/2509.20535v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20535v1.pdf",
+    "title": "Characterizing Nanoflare Energy and Frequency through Field Line   Analysis",
+    "abstract": "We present a detailed analysis of a 3D MHD simulation of a subset of the magnetic flux in an active region. The simulation models the generation of nanoflares and response of the plasma to imposed photospheric motions. Our study focuses on characterizing the energy distribution and occurrence frequency of the nanoflares in the simulation that self-consistently heat the corona. This field line based analysis reveals that the nanoflare energy distribution (energy per unit cross sectional area) follows a log-normal profile, where low energy nanoflares are significantly more prevalent than those with high energy. When compared with the plasma cooling time, different energy nanoflares tend to repeat with different frequencies. Low energy nanoflares repeat at high frequencies, while high energy nanoflares repeat at low frequencies. However, the thermal evolution of plasma along individual field lines is governed predominantly by the high energy nanoflares. These findings provide critical insights into the role of small-scale magnetic reconnection events in heating the solar corona.",
+    "authors": [
+      "Shanwlee Sow Mondal",
+      "Lars K. S. Daldorff",
+      "James A. Klimchuk",
+      "Craig D. Johnston"
+    ],
+    "published": "2025-09-24T20:11:04Z",
+    "updated": "2025-09-24T20:11:04Z",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "arxiv_id": "2509.20477v1",
+    "url": "https://arxiv.org/abs/2509.20477v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20477v1.pdf",
+    "title": "Single-shot, spatially resolved spectropolarimetry with stress   engineered optics",
+    "abstract": "We describe, and test, a method of obtaining spectrally and spatially sampled Stokes polarimetry measurements based on star test polarimetry enabled by a stress engineered optic (SEO). When the SEO is placed in the pupil plane of an imaging system, the space-variant birefringence of the SEO combined with the intrinsic wavelength dependence of the retardance allows for point spread functions from distinct laser wavelengths to be both spectrally and polarimetrically distinguished in a single frame measurement designed to enable single shot spectropolarimetry of individual laser pulses. In the experiment, the beam is sampled using a lenslet array typical of that used in a Shack-Hartmann sensor with the PSF of each spot relayed to a sensor. Experiments show angular errors as small as 100 mRad on the Poincare sphere, with red and blue measurements outperforming green. Potential applications include polarization sampling of extreme lasers as well as spectropolarimetry of display devices based on liquid crystals.",
+    "authors": [
+      "David E. Spiecker",
+      "Thomas G. Brown"
+    ],
+    "published": "2025-09-24T18:45:27Z",
+    "updated": "2025-09-24T18:45:27Z",
+    "categories": [
+      "physics.ins-det",
+      "physics.optics"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2509.20348v1",
+    "url": "https://arxiv.org/abs/2509.20348v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20348v1.pdf",
+    "title": "Probing Beyond the Standard Model Scenarios in Long-baseline and   Astrophysical Neutrino Experiments",
+    "abstract": "Over the past few decades, outstanding progress in the neutrino experiment frontier has greatly advanced our understanding of the flavor oscillations of active neutrinos. The remaining key questions such as the neutrino mass ordering, the presence of CP violation in the lepton sector, and the octant of $\\theta_{23}$ are expected to be resolved in the coming years. The current precise knowledge of neutrino mass and mixing parameters, together with the promising prospects of next-generation neutrino experiments, provides a unique opportunity to test scenarios beyond the Standard Model (BSM) through neutrino oscillation phenomena. This thesis investigates several such BSM scenarios and examines the capability of the next-generation neutrino experiments to probe them.",
+    "authors": [
+      "Sudipta Das"
+    ],
+    "published": "2025-09-24T17:41:46Z",
+    "updated": "2025-09-24T17:41:46Z",
+    "categories": [
+      "hep-ph",
+      "hep-ex",
+      "physics.ins-det"
+    ],
+    "primary_category": "hep-ph"
+  },
+  {
+    "arxiv_id": "2509.20292v1",
+    "url": "https://arxiv.org/abs/2509.20292v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20292v1.pdf",
+    "title": "Matching Optimization for TRIUMF's Rare Isotope Linac",
+    "abstract": "Fringe field effects are computed from simulated and measured quadrupole magnetic field gradients, enabling a more realistic modelling of the medium energy section optics in TRIUMF's RIB postaccelerator. Quantifying the fringe field optics using the method developed by Matsuda and Wollnik allows for the use of parallel modelling tune optimizations for machine operation, providing operators with an efficient means to re-tune the variable energy drift tube linac for RIB delivery.",
+    "authors": [
+      "O. Shelbaya",
+      "O. Hassan",
+      "R. Baartman",
+      "O. Kester",
+      "C. Pearce",
+      "T. Planche",
+      "L. Zhang"
+    ],
+    "published": "2025-09-24T16:25:57Z",
+    "updated": "2025-09-24T16:25:57Z",
+    "categories": [
+      "physics.acc-ph",
+      "physics.app-ph"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.20261v1",
+    "url": "https://arxiv.org/abs/2509.20261v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20261v1.pdf",
+    "title": "Thermal resilience of the ITER tungsten first wall to runaway electron   impact",
+    "abstract": "The fast volumetric deposition of multi-MeV high current runaway electron (RE) beams constitutes the most critical issue for the ITER tungsten (W) first wall (FW) longevity. Such relativistic electron beams could generate extreme volumetric power densities inside the FW armour which lead to significant vaporization, deep melting and even material explosions, as well as to elevated temperatures at the bond interface with the cooling substrate that could cause rupture and water leaks. Here the thermal response of the ITER FW is modeled with a three-stage, one-way coupled workflow focusing on assessments of the extent of the wall damage and the increase of the bond interface temperature for varying W thickness. Increased W thickness is found to be essential for wall protection against intense RE dissipation events in terms of both W tile damage and cooling system integrity.",
+    "authors": [
+      "S. Ratynskaia",
+      "K. Paschalidis",
+      "T. Rizzi",
+      "P. Tolias",
+      "R. A. Pitts",
+      "F. J. Artola",
+      "H. Bergström",
+      "V. K. Bandaru",
+      "M. Hoelzl",
+      "S. Nicolici"
+    ],
+    "published": "2025-09-24T15:47:11Z",
+    "updated": "2025-09-24T15:47:11Z",
+    "categories": [
+      "physics.plasm-ph",
+      "physics.comp-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2504.18263v2",
+    "url": "https://arxiv.org/abs/2504.18263v2",
+    "pdf_url": "https://arxiv.org/pdf/2504.18263v2.pdf",
+    "title": "COSINUS model-independent sensitivity to the DAMA/LIBRA dark matter   signal",
+    "abstract": "COSINUS is a dark matter direct detection experiment using NaI crystals as cryogenic scintillating calorimeters. If no signal is observed, this will constrain the dark matter scattering rate in sodium iodide. We investigate how this constraint can be used to infer that the annual modulation signal observed in the DAMA/LIBRA experiment cannot originate from dark matter nuclear recoil events, independently of the dark matter model. We achieve this by unfolding the DAMA modulation spectrum to obtain the implied unquenched nuclear recoil spectrum, which we then compare to the expected COSINUS sensitivity. We find that assuming zero background in the signal region, a 1$\\sigma$, 2$\\sigma$ or 3$\\sigma$ confidence limit exclusion can be obtained with 57, 130 or 250 kg day of exposure, respectively. A simple background model indicates that in the presence of background, the exposure requirements may increase by $\\sim30\\%$.",
+    "authors": [
+      "G. Angloher",
+      "M. R. Bharadwaj",
+      "A. Böhmer",
+      "M. Cababie",
+      "I. Colantoni",
+      "I. Dafinei",
+      "N. Di Marco",
+      "C. Dittmar",
+      "L. Einfalt",
+      "F. Ferella",
+      "F. Ferroni",
+      "S. Fichtinger",
+      "A. Filipponi",
+      "T. Frank",
+      "M. Friedl",
+      "Z. Ge",
+      "M. Heikinheimo",
+      "M. N. Hughes",
+      "K. Huitu",
+      "M. Kellermann",
+      "R. Maji",
+      "M. Mancuso",
+      "L. Pagnanini",
+      "F. Petricca",
+      "S. Pirro",
+      "F. Pröbst",
+      "G. Profeta",
+      "A. Puiu",
+      "F. Reindl",
+      "K. Schäffner",
+      "J. Schieck",
+      "P. Schreiner",
+      "C. Schwertner",
+      "K. Shera",
+      "M. Stahlberg",
+      "A. Stendahl",
+      "M. Stukel",
+      "C. Tresca",
+      "F. Wagner",
+      "S. Yue",
+      "V. Zema",
+      "Y. Zhu",
+      "The COSINUS Collaboration"
+    ],
+    "published": "2025-04-25T11:17:46Z",
+    "updated": "2025-09-24T14:14:34Z",
+    "categories": [
+      "hep-ph",
+      "astro-ph.CO",
+      "physics.ins-det"
+    ],
+    "primary_category": "hep-ph"
+  },
+  {
+    "arxiv_id": "2506.21760v2",
+    "url": "https://arxiv.org/abs/2506.21760v2",
+    "pdf_url": "https://arxiv.org/pdf/2506.21760v2.pdf",
+    "title": "Feedforward equilibrium trajectory optimization with GSPulse",
+    "abstract": "One of the common tasks required for designing new plasma scenarios or evaluating capabilities of a tokamak is to design the desired equilibria using a Grad-Shafranov (GS) equilibrium solver. However, most standard equilibrium solvers are time-independent and do not include dynamic effects such as plasma current flux consumption, induced vessel currents, or voltage constraints. Another class of tools, plasma equilibrium evolution simulators, do include time-dependent effects. These are generally structured to solve the forward problem of evolving the plasma equilibrium given feedback-controlled voltages. In this work, we introduce GSPulse, a novel algorithm for equilibrium trajectory optimization, that is more akin to a pulse planner than a pulse simulator. GSPulse includes time-dependent effects and solves the inverse problem: given a user-specified set of target equilibrium shapes, as well as limits on the coil currents and voltages, the optimizer returns trajectories of the voltages, currents, and achievable equilibria. This task is useful for scoping performance of a tokamak and exploring the space of achievable pulses. The computed equilibria satisfy both Grad-Shafranov force balance and axisymmetric circuit dynamics. The optimization is performed by restructuring the free-boundary equilibrium evolution (FBEE) equations into a form where it is computationally efficient to optimize the entire dynamic sequence. GSPulse can solve for hundreds of equilibria simultaneously within a few minutes. GSPulse has been validated against NSTX-U and MAST-U experiments and against SPARC feedback control simulations, and is being used to perform scenario design for SPARC. The computed trajectories can be used as feedforward inputs to inform and improve feedback performance. The code for GSPulse is available open-source at https://github.com/jwai-cfs/GSPulse_public.",
+    "authors": [
+      "J. T. Wai",
+      "M. D. Boyer",
+      "D. J. Battaglia",
+      "A. Merle",
+      "F. Carpanese",
+      "F. Felici",
+      "M. Kochan",
+      "E. Kolemen"
+    ],
+    "published": "2025-06-26T20:34:26Z",
+    "updated": "2025-09-24T14:03:31Z",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  },
+  {
+    "arxiv_id": "2509.20096v1",
+    "url": "https://arxiv.org/abs/2509.20096v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20096v1.pdf",
+    "title": "Residual energy of magnetohydrodynamic shocks",
+    "abstract": "Residual energy quantifies the difference in energy between velocity and magnetic field fluctuations in a plasma. Recent observational evidence highlights that fast-mode interplanetary shock waves have positive residual energy, in sharp contrast to the negative residual energy of the turbulence and magnetic structures that constitute the vast majority of fluctuation power in the solar wind at magnetohydrodynamic (MHD) inertial scales. In this work, we apply the Rankine-Hugoniot conditions to derive an equation for the residual energy of an MHD shock jump as a function of the shock angle, density compression ratio and Alfv\\'en Mach number upstream of the shock. An equation for the cross helicity is similarly derived. The residual energy equation gives only positive values for super-Alfv\\'enic (i.e. fast-mode) shocks. The residual energy and cross helicity of slow-mode shocks and tangential, contact and rotational discontinuities are also determined. A simplified form of the residual energy equation applicable to perpendicular shocks has been verified against residual energy values directly estimated from observations of 141 interplanetary shocks; the equation is found to match well with observations, particularly for shocks with higher density compression ratios and Mach numbers. The use of positive residual energy as a signature for fast-mode shock identification in spacecraft data is briefly considered, and insights from this work relating to compressive fluctuations more generally in the solar wind are discussed.",
+    "authors": [
+      "S. W. Good",
+      "K. J. Palmunen",
+      "C. H. K. Chen",
+      "E. K. J. Kilpua",
+      "T. V. Mäkelä",
+      "J. Ruohotie",
+      "C. P. Sishtla",
+      "J. E. Soljento"
+    ],
+    "published": "2025-09-24T13:19:59Z",
+    "updated": "2025-09-24T13:19:59Z",
+    "categories": [
+      "astro-ph.SR",
+      "physics.plasm-ph",
+      "physics.space-ph"
+    ],
+    "primary_category": "astro-ph.SR"
+  },
+  {
+    "arxiv_id": "2509.20094v1",
+    "url": "https://arxiv.org/abs/2509.20094v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20094v1.pdf",
+    "title": "Studies on Response Uniformity of RPC and Exploring Oscillation Dip and   Valley, Non-Standard Interactions, and Earth's Core using Atmospheric   Neutrinos at ICAL-INO detector",
+    "abstract": "In this thesis, experimental and physics simulation studies are performed in the context of the proposed 50 kt Iron Calorimeter (ICAL) detector at the India-based Neutrino Observatory (INO). ICAL would detect atmospheric muon neutrinos and antineutrinos separately in the multi-GeV range of energies over a wide range of baselines. In the experimental part of the thesis, the effect of the non-uniformity of the graphite layer on the detector response of the resistive plate chamber is studied. In the physics simulation part, it is demonstrated for the first time that the neutrino oscillation dip and valley can be observed at ICAL using the up/down ratio of reconstructed muons and antimuons separately. A method is formulated such that the location of the dip and the alignment of the valley can be used to measure an atmospheric oscillation parameter called the mass-squared difference. Further, a new approach is proposed to probe the neutral-current non-standard interactions (NSIs) using the oscillation dip and valley. The opposite shifts in the oscillation dips and the contrast in the curvatures of oscillation valleys for reconstructed muons and antimuons are used to constrain the NSI parameter in two separate ways. While passing through the Earth, the upward-going atmospheric neutrinos experience the matter effects, which modify the neutrino oscillation patterns. These matter effects depend upon the density of electrons inside Earth and can be used to perform the neutrino oscillation tomography of Earth, complementary to gravitational measurements and seismic studies. This work demonstrates that the presence of Earth's core can be validated using the atmospheric neutrinos at ICAL.",
+    "authors": [
+      "Anil Kumar"
+    ],
+    "published": "2025-09-24T13:15:33Z",
+    "updated": "2025-09-24T13:15:33Z",
+    "categories": [
+      "hep-ph",
+      "hep-ex",
+      "physics.ins-det"
+    ],
+    "primary_category": "hep-ph"
+  },
+  {
+    "arxiv_id": "2509.20029v1",
+    "url": "https://arxiv.org/abs/2509.20029v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20029v1.pdf",
+    "title": "Development of a time calibration system for the KLM upgrade in the   Belle II experiment",
+    "abstract": "To meet the stringent time calibration requirements for the Belle II experiment upgrade, particularly for its large-size KL and Muon Detector comprising tens of thousands of scintillator channels with time resolutions better than 100 ps, we developed a compact and high-speed time calibration system. The system utilizes a laser diode as its light source, integrated with a fast pulse laser drive circuit that employs high-speed switching GaN FETs and gate drivers. A prototype was constructed and rigorously evaluated using scintillators, achieving timing resolutions of about 13 ps for a single calibration channel. Furthermore, internal deviations among calibration channels were analyzed, with most measurements remaining within 250 ps. These results highlight the system's precision, scalability, and suitability for large-scale particle physics experiments.",
+    "authors": [
+      "Ziyu Liu",
+      "Xiyang Wang",
+      "Shiming Zou",
+      "Xiaolong Wang",
+      "Junhao Yin",
+      "Minggang Zhao"
+    ],
+    "published": "2025-09-24T11:47:09Z",
+    "updated": "2025-09-24T11:47:09Z",
+    "categories": [
+      "physics.ins-det"
+    ],
+    "primary_category": "physics.ins-det"
+  },
+  {
+    "arxiv_id": "2504.01525v4",
+    "url": "https://arxiv.org/abs/2504.01525v4",
+    "pdf_url": "https://arxiv.org/pdf/2504.01525v4.pdf",
+    "title": "Rapid muon tomography for border security",
+    "abstract": "Cosmic-ray muon tomography is a promising technique for border security applications, leveraging highly penetrating cosmic-ray muons and their interactions with various materials to generate 3D images of large and dense objects, such as shipping containers. Using scattering and absorption of muons as they pass through dense cargo materials, muon tomography provides a viable solution for customs and border security by enabling the verification of shipping container declarations and preventing illegal trafficking. In this study, we utilized Monte Carlo simulations to evaluate the effectiveness of muon tomography for cargo characterization and contraband detection in various smuggling scenarios. Our results demonstrate that muon tomography can offers a novel approach to cargo inspection, moving beyond traditional 3D image reconstruction. Instead, it analyzes muon scattering and absorption rates in real time during scanning, enabling the prompt detection of discrepancies between actual cargo contents and declared goods within just 10 to 20 seconds. This method is particularly effective for cargo consisting of uniform loads composed of a single material or product, a common practice in shipping. Unlike traditional X-ray radiography, which analyzes detailed 2D images, muon tomography begins evaluating scatter-absorption rates within the first few seconds of scanning. This early assessment enables cargo evaluation long before a statistically reliable 3D image is formed, significantly improving scanning throughput without disrupting trade flow.",
+    "authors": [
+      "Anzori Sh. Georgadze"
+    ],
+    "published": "2025-04-02T09:12:31Z",
+    "updated": "2025-09-24T10:16:21Z",
+    "categories": [
+      "physics.app-ph",
+      "physics.ins-det"
+    ],
+    "primary_category": "physics.app-ph"
+  },
+  {
+    "arxiv_id": "2509.20413v1",
+    "url": "https://arxiv.org/abs/2509.20413v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.20413v1.pdf",
+    "title": "Introduction to Engineering Materials",
+    "abstract": "This lecture presents an overview of the basic concepts and fundamentals of Engineering Materials within the framework of accelerator applications. After a short introduction, main concepts relative to the structure of matter are reviewed, like crystalline structures, defects and dislocations, phase diagrams and transformations. The microscopic description is correlated with physical properties of materials, focusing in metallurgical aspects like deformation and strengthening. Main groups of materials are addressed and described, namely, metals and alloys, ceramics, polymers, composite materials, and advanced materials, where brush-strokes of tangible applications in particle accelerators and detectors are given. Deterioration aspects of materials are also presented, like corrosion in metals and degradation in plastics.",
+    "authors": [
+      "Ana Arauzo"
+    ],
+    "published": "2025-09-24T08:32:47Z",
+    "updated": "2025-09-24T08:32:47Z",
+    "categories": [
+      "physics.acc-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.19872v1",
+    "url": "https://arxiv.org/abs/2509.19872v1",
+    "pdf_url": "https://arxiv.org/pdf/2509.19872v1.pdf",
+    "title": "Physical Properties of Materials and Testing Methods",
+    "abstract": "The use of materials in particle accelerator applications implies the consideration of physical properties in different environments than usual industrial applications. Cryogenic temperatures, high radiation, medium to high vacuum and high magnetic fields are requirements for which the behavior of materials has to be evaluated. In this lecture, Thermal, Electrical and Magnetic properties are briefly introduced, highlighting the mechanisms governing variation with temperature and magnetic field. Standards and testing methods for different properties are described, illustrated with practical examples. With regard to the characterization of thermal properties of a material, testing methods of heat capacity and thermal conductivity are described, with details of the main working principle and measurement examples. Determination of electrical resistivity and the residual resistivity ratio (RRR) are the main characteristics of electrical properties, together with specific characterization of superconducting materials. Testing magnetic properties deserve special attention; different methods are commonly employed to characterize non-magnetic and magnetic materials. In magnetic metals and ferrites non-linear behavior and hysteresis effects need to be considered in order to assess their suitability for applications or to model material performance.",
+    "authors": [
+      "Ana Arauzo"
+    ],
+    "published": "2025-09-24T08:24:06Z",
+    "updated": "2025-09-24T08:24:06Z",
+    "categories": [
+      "physics.acc-ph"
+    ],
+    "primary_category": "physics.acc-ph"
+  },
+  {
+    "arxiv_id": "2509.18532v2",
+    "url": "https://arxiv.org/abs/2509.18532v2",
+    "pdf_url": "https://arxiv.org/pdf/2509.18532v2.pdf",
+    "title": "Conceptual design of a Doppler Backscattering diagnostic for the EXL-50U   spherical tokamak",
+    "abstract": "The EXL-50U spherical tokamak was built by Energy iNNovation to develop technologies for proton-boron fusion in spherical tokamaks (Liu et al., Phys. Plasmas 2024). We present a conceptual design of the Doppler backscattering (DBS) diagnostic for the EXL-50U spherical tokamak. DBS is a diagnostic capable of measuring plasma turbulence, which is especially important for transport in tokamaks. Starting from a set of physical design constraints, such as port window availability and in-vessel space, we used SCOTTY (Hall-Chen et al., PPCF 2022), an in-house beam tracing code, to predict the location of the cutoffs and the corresponding scattering wavenumbers for several EXL-50U plasma scenarios. We find that we are able to measure scattering locations of 0.15 $<$ $\\rho$ $<$ 1, with corresponding turbulent wavenumbers of 2.47 cm$^{-1}$$<$ $k_{\\perp}$ $<$ 9.49 cm$^{-1}$. Here, $\\rho$ is the normalised radial coordinate of the scattering location, and $k_{\\perp}$ is the corresponding turbulent wavenumber. We then determine the optimal toroidal launch angles to ensure that the probe beam's wavevector is perpendicular to the magnetic field at the cutoff location, thereby maximising the backscattered signal. This matching is crucial due to the EXL-50U's high magnetic pitch angle, $\\sim35^{\\circ}$ at the outboard midplane. Given our results, we propose the use of toroidal steering and tunable frequency channels to ensure beams are well-matched with the magnetic pitch angle. We propose a quasioptical system that covers the U-band range (40--60 GHz).",
+    "authors": [
+      "Ying Hao Matthew Liang",
+      "Valerian Hongjie Hall-Chen",
+      "Terry L. Rhodes",
+      "Yumin Wang",
+      "Yihang Zhao"
+    ],
+    "published": "2025-09-23T01:54:04Z",
+    "updated": "2025-09-24T08:00:52Z",
+    "categories": [
+      "physics.plasm-ph"
+    ],
+    "primary_category": "physics.plasm-ph"
+  }
+]
