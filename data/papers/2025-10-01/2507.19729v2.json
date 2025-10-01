@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2507.19729v2",
+  "url": "https://arxiv.org/abs/2507.19729v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.19729v2.pdf",
+  "title": "Semi-Implicit Continuum Kinetic Modeling of Weakly Collisional Parallel   Transport in a Magnetic Mirror",
+  "abstract": "We present implicit-explicit (IMEX) kinetic simulations of weakly collisional parallel plasma transport in magnetic mirror configurations using the continuum code \\textsc{COGENT}. The numerical scheme employs a Jacobian-free Newton--Krylov method with algebraic multigrid preconditioning to overcome the severe time-step limitations imposed by strong mirror forces in fully explicit schemes. Applied to parameters relevant to the WHAM mirror experiment, the IMEX approach enables time steps up to $2.5 \\times 10^4$ times larger than those permitted by explicit methods, resulting in a 2500x speedup in 1D--2V simulations of parallel transport with kinetic ions and Boltzmann electrons. Additionally, a reduced bounce-averaged model for a square mirror is implemented to support the computationally intensive fully kinetic simulations. The bounce-averaged formulation is used to evaluate the numerical convergence of the velocity-space discretization algorithms and to assess the role of the collision model by comparing simulations employing the nonlinear Fokker--Planck and the simplified Lenard--Bernstein--Dougherty collision operators.",
+  "authors": [
+    "M. Dorf",
+    "M. Dorr",
+    "V. Geyko",
+    "D. Ghosh",
+    "M. Umansky",
+    "J. Angus"
+  ],
+  "published": "2025-07-26T01:04:25Z",
+  "updated": "2025-09-27T20:32:58Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
