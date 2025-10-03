@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2501.13681v7",
+  "url": "https://arxiv.org/abs/2501.13681v7",
+  "pdf_url": "https://arxiv.org/pdf/2501.13681v7.pdf",
+  "title": "A projection method for particle resampling",
+  "abstract": "Particle discretizations of partial differential equations are advantageous for high-dimensional kinetic models in phase space due to their better scalability than continuum approaches with respect to dimension. Complex processes collectively referred to as particle noise hamper long time simulations with particle methods. One approach to address this problem is particle mesh adaptivity or remapping, known as particle resampling. This paper introduces a resampling method that projects particles to and from a (finite element) function space. The method is simple; using standard sparse linear algebra and finite element techniques, it can adapt to almost any set of new particle locations and preserves all moments up to the order of polynomial represented exactly by the continuum function space. This work is motivated by the Vlasov-Maxwell-Landau model of magnetized plasmas with up to six dimensions, 3X in physical space and 3V in velocity space, and is developed in the context of a 1X + 1V Vlasov-Poisson model of Landau damping with logically regular particle and continuum phase space grids. Stable long time dynamics are demonstrated up to T = 500 and reproducibility artifacts and data with stable dynamics up to T = 1000 are publicly available.",
+  "authors": [
+    "Mark F. Adams",
+    "Daniel S. Finn",
+    "Matthew G. Knepley",
+    "Joseph V. Pusztay"
+  ],
+  "published": "2025-01-23T14:07:15Z",
+  "updated": "2025-09-29T01:02:32Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
