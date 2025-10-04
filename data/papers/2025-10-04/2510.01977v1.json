@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.01977v1",
+  "url": "https://arxiv.org/abs/2510.01977v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.01977v1.pdf",
+  "title": "Accelerating kinetic plasma simulations with machine learning generated   initial conditions",
+  "abstract": "Computer aided engineering of multi-time-scale plasma systems which exhibit a quasi-steady state solution are challenging due to the large number of time steps required to reach convergence. Machine learning techniques combined with traditional first-principles simulations and high-performance computing offer many interesting pathways towards resolving this challenge. We consider acceleration of kinetic plasma simulations via machine learning generated initial conditions. The approach is demonstrated through modeling of capacitively coupled plasma discharges relevant to the microelectronics industry. Three models are trained on simulations across a parameter space of device driving frequency and operating pressure. The models incorporate elements of a multi-layer perceptron, principal component analysis, and convolutional neural networks to predict the final time-averaged profiles of ion-density and velocity distribution functions. These data-driven initial condition generators (ICGs) provide a mean speedup of 17.1x in convergence time, when measured using an offline procedure, or a 4.4x speedup with an online procedure, with convolutional neural networks leading to the best performance. The paper also outlines a workflow for continuous data-driven model improvement and simulation speedup, with the aim of generating sufficient data for full device digital twins.",
+  "authors": [
+    "Andrew T. Powis",
+    "Domenica Corona Rivera",
+    "Alexander Khrabry",
+    "Igor D. Kaganovich"
+  ],
+  "published": "2025-10-02T12:53:26Z",
+  "updated": "2025-10-02T12:53:26Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

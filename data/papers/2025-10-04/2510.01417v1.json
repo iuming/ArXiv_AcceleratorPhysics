@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2510.01417v1",
+  "url": "https://arxiv.org/abs/2510.01417v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.01417v1.pdf",
+  "title": "A Drone-mounted Magnetometer System for Automatic Interference Removal   and Landmine Detection",
+  "abstract": "Landmines have been extensively used in conflict zones as an indiscriminate weapon to control military movements, often remaining active long after hostilities have ended. Their presence poses a persistent danger to civilians, hindering post-war recovery efforts, causing injuries or death, and restricting access to essential land for agriculture and infrastructure. Unmanned aerial vehicles (UAV) equipped with magnetometers are commonly used to detect remnant hidden landmines but come with significant technical challenges due to magnetic field interference from UAV electronics such as motors. We propose the use of a frame-mounted UAV-borne two-magnetometer payload to perform a two-step automated interference removal and landmine detection analysis. The first step removes interference via the Wavelet-Adaptive Interference Cancellation for Underdetermined Platform (WAIC-UP) method designed for spaceflight magnetometers. The second method uses the Rapid Unsupervised Detection of Events (RUDE) algorithm to detect landmine signatures. This two-step WAIC-UP/RUDE approach with multiple magnetometers achieves high-fidelity ordinance detection at a low computational cost and simplifies the design of magnetic survey payloads. We validate the method through a Monte Carlo simulation of randomized landmine placements in a 10 x 10 m square grid and drone motor interference. Additionally, we assess the efficacy of the algorithm by varying the drone's altitude, examining its performance at different heights above the ground.",
+  "authors": [
+    "Alex Paul Hoffmann",
+    "Matthew G. Finley",
+    "Eftyhia Zesta",
+    "Mark B. Moldwin",
+    "Lauro V. Ojeda"
+  ],
+  "published": "2025-10-01T19:54:17Z",
+  "updated": "2025-10-01T19:54:17Z",
+  "categories": [
+    "eess.SP",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.SP"
+}
