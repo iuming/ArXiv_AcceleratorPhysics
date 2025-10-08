@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.03539v1",
+  "url": "https://arxiv.org/abs/2510.03539v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.03539v1.pdf",
+  "title": "Rasnik 3-point alignment system: algorithm, control framework, and its   applications",
+  "abstract": "Rasnik is a three-point optical displacement sensor originally developed for particle detector alignment in high-energy physics experiments, including the muon chambers of L3 at LEP and ATLAS at the LHC. The system has evolved from four-quadrant photodiodes to CMOS pixel sensors with custom ChessField coded masks, enabling absolute position measurement with no cumulative drift due to absolute value coded. Key advantages include electromagnetic immunity through purely optical measurement principles, working distances from 50 mm to 15 m, and multi-degree-of-freedom sensitivity perpendicular to the optical axis. RasCal, a comprehensive control and analysis software, is presented in this paper and its real-time image processing shows 5 pm/$\\sqrt{\\text{Hz}}$ spatial resolution. With GPU acceleration, 274.5 Hz is achieved during live camera acquisition and 109 Hz on CPU. In maximum-throughput configurations, the processing rates exceed 300 Hz on simple consumer hardware. System performance is demonstrated across diverse applications: 5 pm/$\\sqrt{\\text{Hz}}$ displacement sensitivity is achieved in the VATIGrav setup, dynamic behavior is characterized with a Watt's linkage. In addition, the lack of cumulative drift due to absolute coding with minimal thermal sensitivity under controlled conditions is used for vibration and thermal characterization of photodiode mounts for the LISA space mission. Millisecond-level command latency and thread-safe multi-camera support are provided by the RasCal software, establishing it as a robust and cost-effective precision measurement solution for demanding alignment applications in gravitational-wave detectors and space instrumentation.",
+  "authors": [
+    "Anoop Nagesh Koushik",
+    "Harry van der Graaf",
+    "Kevin Ravensberg",
+    "Rene M. Wanders",
+    "Sena N. Gomashie",
+    "Nick van Remortel",
+    "Joris van Heijningen"
+  ],
+  "published": "2025-10-03T22:12:09Z",
+  "updated": "2025-10-03T22:12:09Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

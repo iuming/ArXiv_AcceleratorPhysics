@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2503.11277v3",
+  "url": "https://arxiv.org/abs/2503.11277v3",
+  "pdf_url": "https://arxiv.org/pdf/2503.11277v3.pdf",
+  "title": "AI-Assisted Object Condensation Clustering for Calorimeter Shower   Reconstruction at CLAS12",
+  "abstract": "Several nuclear physics studies using the CLAS12 detector rely on the accurate reconstruction of neutrons and photons from its forward angle calorimeter system. These studies often place restrictive cuts when measuring neutral particles due to an overabundance of false clusters created by the existing calorimeter reconstruction software. In this work, we present a new AI approach to clustering CLAS12 calorimeter hits based on the object condensation framework. The model learns a latent representation of the full detector topology using GravNet layers, serving as the positional encoding for an event's calorimeter hits which are processed by a Transformer encoder. This unique structure allows the model to contextualize local and long range information, improving its performance. Evaluated on one million simulated $e+p$ collision events, our method significantly improves cluster trustworthiness: the fraction of reliable neutron clusters, increasing from 8.88\\% to 30.73\\%, and photon clusters, increasing from 51.07\\% to 64.73\\%. Our study also marks the first application of AI clustering techniques for hodoscopic detectors, showing potential for usage in many other experiments.",
+  "authors": [
+    "Gregory Matousek",
+    "Anselm Vossen"
+  ],
+  "published": "2025-03-14T10:33:25Z",
+  "updated": "2025-10-03T19:46:21Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

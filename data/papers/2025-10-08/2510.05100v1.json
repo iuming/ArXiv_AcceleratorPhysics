@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.05100v1",
+  "url": "https://arxiv.org/abs/2510.05100v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.05100v1.pdf",
+  "title": "Rapid event extraction and tensorial event adaption: Libraries for   efficient access and generic reweighting of parton-level events and their   implementation in the MadtRex module",
+  "abstract": "We present Rex and teaRex, C++17 libraries for efficient management of parton-level hard scattering event information and completely generic reweighting of such events, respectively. Rex is primarily an interfacing and I/O library for Les Houches Event format files and provides an internal event format designed with data parallelism in mind, and teaRex extends this format to provide full parton-level reweighting functionality with minimal code needing to be written by the end user. These libraries serve as the foundation for the MadtRex reweighting module for MadGraph5_aMC@NLO, extending the functionality of the CUDACPP plugin to allow for data-parallel model-generic leading order parameter reweighting on SIMD-enabled CPUs and SIMT GPUs, speeding up reweighting by more than two orders of magnitude compared to MadGraph5_aMC@NLO running on the exact same hardware while providing trivial scalability to larger and distributed systems.",
+  "authors": [
+    "Stefan Roiser",
+    "Robert Schöfbeck",
+    "Zenny Wettersten"
+  ],
+  "published": "2025-10-06T17:59:19Z",
+  "updated": "2025-10-06T17:59:19Z",
+  "categories": [
+    "hep-ph",
+    "hep-ex",
+    "physics.acc-ph"
+  ],
+  "primary_category": "hep-ph"
+}

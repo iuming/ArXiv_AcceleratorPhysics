@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2510.04385v1",
+  "url": "https://arxiv.org/abs/2510.04385v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.04385v1.pdf",
+  "title": "Structure-Preserving MHD-Driftkinetic Discretization for Wave-Particle   Interactions",
+  "abstract": "We present a structure-preserving discretization of the hybrid magnetohydrodynamics (MHD)-driftkinetic system for simulations of low-frequency wave-particle interactions. The model equations are derived from a variational principle, assuring energetically consistent couplings between MHD fluids and driftkinetic particles. The spatial discretization is based on a finite-element-exterior-calculus (FEEC) framework for the MHD and a particle-in-cell (PIC) method for the driftkinetic. A key feature of the scheme is the inclusion of the non-quadratic particle magnetic moment energy term in the Hamiltonian, which is introduced by the guiding-center approximation. The resulting discrete Hamiltonian structure naturally organizes the dynamics into skew-symmetric subsystems, enabling balanced energy exchange. To handle the non-quadratic energy term, we develop energy-preserving time integrators based on discrete gradient methods. The algorithm is implemented in the open-source Python package \\texttt{STRUPHY}. Numerical experiments confirm the energy-conserving property of the scheme and demonstrate the capability to simulate energetic particles (EP) induced excitation of toroidal Alfv\\'en eigenmodes (TAE) without artificial dissipation or mode filtering. This capability highlights the potential of structure-preserving schemes for high-fidelity simulations of hybrid systems.",
+  "authors": [
+    "Byung Kyu Na",
+    "Stefan Possanner",
+    "Xin Wang"
+  ],
+  "published": "2025-10-05T22:34:28Z",
+  "updated": "2025-10-05T22:34:28Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.NA",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
