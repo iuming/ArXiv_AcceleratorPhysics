@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2509.11255v2",
+  "url": "https://arxiv.org/abs/2509.11255v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.11255v2.pdf",
+  "title": "PhysDNet: Physics-Guided Decomposition Network of Side-Scan Sonar   Imagery",
+  "abstract": "Side-scan sonar (SSS) has become an essential tool for seafloor mapping and underwater exploration. However, the measured intensity is entangled with seabed reflectivity, terrain elevation, and acoustic path loss, making the imagery highly view dependent and hindering robust interpretation. To address this challenge, we propose PhysDNet, a physics-guided multi-branch network that explicitly decouples SSS images into three interpretable fields: reflectivity, elevation, and path loss. The network employs attention augmented encoder decoder branches, imposes range wise consistency constraints on path loss, and incorporates a Lambertian based reconstruction to enable progressive selfsupervised training, thereby ensuring stable multi-task optimization while embedding physical priors into the learning process. Experiments demonstrate that the decomposed fields preserve geological structures, recover physically consistent illumination and attenuation, and enable accurate shadow prediction. These findings confirm that physics guided decomposition establishes a stable and interpretable domain for SSS analysis, enhancing both physical consistency and downstream applications such as registration and shadow interpretation.",
+  "authors": [
+    "Can Lei",
+    "Hayat Rajani",
+    "Nuno Gracias",
+    "Rafael Garcia",
+    "Huigang Wang"
+  ],
+  "published": "2025-09-14T12:54:42Z",
+  "updated": "2025-10-07T16:27:38Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

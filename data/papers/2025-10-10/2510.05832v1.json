@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2510.05832v1",
+  "url": "https://arxiv.org/abs/2510.05832v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.05832v1.pdf",
+  "title": "SPARTA: Python-Based Automated Spectral Parameter Analysis and   Assessment System for Resonance Tracking",
+  "abstract": "Accurately determining resonance frequencies and quality factors (Q) is crucial in accelerator physics and radiofrequency engineering, as these factors have direct impacts on system design, operational stability, and research results. The methods currently employed to facilitate resonance analysis are mostly manual, requiring operators and physicists to estimate resonant parameters and examine scattering parameter (S-parameter) data from vector network analyzers (VNAs). The current techniques therefore become laborious, operator-dependent and challenging to replicate when applied to large datasets or across multiple analyses. Despite the importance of these tasks for high-volume research organizations such as CERN where S-parameter measurements are regularly taken for cavity and beam diagnostic research, the currently widespread measures are outdated.   In order to automate the laborious resonance characterization process, this paper presents SPARTA (Spectral Parameter Analysis for Resonance Tracking and Assessment), a data analysis software framework based on Python. SPARTA has integrated data ingestion, preprocessing, resonance detection, quality factor estimation, visualization and persistent cloud storage into a reproducible and scalable workflow. SPARTA was developed with the scientific libraries NumPy, SciPy and scikit-rf for accurate and efficient numerical processing, Flask and Dash for interactive and lightweight visualization, and SQLite for easy database management. The three main contributions of this work are outlined as follows: Firstly, this paper presents a methodological framework for resonance detection and assessment based on established RF theory. The second section describes the system architecture and implementation of SPARTA, highlighting data handling, computation and visualization. Finally this paper discusses the results and advantages of automated analysis.",
+  "authors": [
+    "Kerem Semiz"
+  ],
+  "published": "2025-10-07T11:56:13Z",
+  "updated": "2025-10-07T11:56:13Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.07314v1",
+  "url": "https://arxiv.org/abs/2510.07314v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.07314v1.pdf",
+  "title": "GyroSwin: 5D Surrogates for Gyrokinetic Plasma Turbulence Simulations",
+  "abstract": "Nuclear fusion plays a pivotal role in the quest for reliable and sustainable energy production. A major roadblock to viable fusion power is understanding plasma turbulence, which significantly impairs plasma confinement, and is vital for next-generation reactor design. Plasma turbulence is governed by the nonlinear gyrokinetic equation, which evolves a 5D distribution function over time. Due to its high computational cost, reduced-order models are often employed in practice to approximate turbulent transport of energy. However, they omit nonlinear effects unique to the full 5D dynamics. To tackle this, we introduce GyroSwin, the first scalable 5D neural surrogate that can model 5D nonlinear gyrokinetic simulations, thereby capturing the physical phenomena neglected by reduced models, while providing accurate estimates of turbulent heat transport.GyroSwin (i) extends hierarchical Vision Transformers to 5D, (ii) introduces cross-attention and integration modules for latent 3D$\\leftrightarrow$5D interactions between electrostatic potential fields and the distribution function, and (iii) performs channelwise mode separation inspired by nonlinear physics. We demonstrate that GyroSwin outperforms widely used reduced numerics on heat flux prediction, captures the turbulent energy cascade, and reduces the cost of fully resolved nonlinear gyrokinetics by three orders of magnitude while remaining physically verifiable. GyroSwin shows promising scaling laws, tested up to one billion parameters, paving the way for scalable neural surrogates for gyrokinetic simulations of plasma turbulence.",
+  "authors": [
+    "Fabian Paischer",
+    "Gianluca Galletti",
+    "William Hornsby",
+    "Paul Setinek",
+    "Lorenzo Zanisi",
+    "Naomi Carey",
+    "Stanislas Pamela",
+    "Johannes Brandstetter"
+  ],
+  "published": "2025-10-08T17:59:10Z",
+  "updated": "2025-10-08T17:59:10Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI",
+    "stat.ML"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
