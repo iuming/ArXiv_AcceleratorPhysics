@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2503.22220v2",
+  "url": "https://arxiv.org/abs/2503.22220v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.22220v2.pdf",
+  "title": "Machine learning based parametrization of the resolution function for   the first experimental area (EAR1) of the n_TOF facility at CERN",
+  "abstract": "This study addresses a challenge of parametrizing a resolution function of the neutron beam from the neutron time of flight facility n_TOF at CERN. A difficulty stems from a fact that a resolution function exhibits rather strong variations in shape, over approximately 10 orders of magnitude in neutron energy. In order to avoid a need for a manual identification of the appropriate analytical forms - hindering past attempts at its parametrization - we take advantage of the versatile machine learning techniques. In particular, we parametrize it by training a multilayer feedforward neural network, relying on a key idea that such networks act as the universal approximators. The proof of concept is presented for a resolution function for the first experimental area of the n_TOF facility, from the third phase of its operation. We propose an optimal network structure for a resolution function in question, which is also expected to be optimal or near-optimal for other experimental areas and for different phases of n_TOF operation. In order to reconstruct several resolution function forms in common use from a single parametrized form, we provide a practical tool in the form of a specialized C++ class encapsulating the computationally efficient procedures suited to the task. Specifically, the class allows an application of a user-specified temporal spread of a primary proton beam (from a neutron production process at n_TOF) to a desired resolution function form.",
+  "authors": [
+    "Petar Žugec",
+    "Marta Sabate Gilarte",
+    "Michael Bacak",
+    "Vasilis Vlachoudis",
+    "Adria Casanovas",
+    "Francisco Garcia Infantes"
+  ],
+  "published": "2025-03-28T08:12:34Z",
+  "updated": "2025-10-09T11:32:45Z",
+  "categories": [
+    "physics.comp-ph",
+    "nucl-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.comp-ph",
+  "doi": "10.1007/s41365-025-01820-2"
+}

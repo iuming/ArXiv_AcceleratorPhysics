@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.19178v2",
+  "url": "https://arxiv.org/abs/2509.19178v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.19178v2.pdf",
+  "title": "A noise-robust Monte Carlo method for electric field calculations in   EMC3",
+  "abstract": "One of the main codes to analyze and optimize stellarator configurations is the EMC3 code, which implements a state-of-the-art 3D Monte Carlo plasma edge transport code. However, so far, a self-consistent treatment of the E x B drift is absent. This plasma drift is known to significantly impact the particle and heat distribution in the plasma edge. It is desirable to incorporate this drift into EMC3 to improve the predictive capabilities of the code. The calculation of the E x B drift requires the approximation of the electric field E, which is proportional to the gradient of the electric potential $ \\varphi $. In previous work, the gradient was calculated with a least squares method based on a finite difference approximation of the electric potential. However, due to the stochastic nature of EMC3, the output plasma fields computed by the code are inherently noisy. The finite difference method further amplifies the noise, with the amplification growing as the grid size decreases. We continue from, which introduced a new noise-robust method for 1D derivatives. We extend the noise-robust method to 2D and apply it to the electric potential. We show that a PDE can be derived that describes the evolution of the electric field in case of a uniform diffusion coefficient. This PDE allows us to approximate the electric field directly with a Monte Carlo simulation, thus avoiding the need for a finite difference approximation. We illustrate the accuracy of the method and the noise robustness with a test case.",
+  "authors": [
+    "William De Deyn",
+    "Ruben De Wolf",
+    "Vince Maes",
+    "Giovanni Samaey"
+  ],
+  "published": "2025-09-23T15:49:50Z",
+  "updated": "2025-10-08T07:22:37Z",
+  "categories": [
+    "math.NA",
+    "cs.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}
