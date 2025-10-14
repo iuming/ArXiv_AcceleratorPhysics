@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2507.03812v2",
+  "url": "https://arxiv.org/abs/2507.03812v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.03812v2.pdf",
+  "title": "Memory- and compute-optimized geometric multigrid GMGPolar for   curvilinear coordinate representations -- Applications to fusion plasma",
+  "abstract": "Tokamak fusion reactors are actively studied as a means of realizing energy production from plasma fusion. However, due to the substantial cost and time required to construct fusion reactors and run physical experiments, numerical experiments are indispensable for understanding plasma physics inside tokamaks, supporting the design and engineering phase, and optimizing future reactor designs. Geometric multigrid methods are optimal solvers for many problems that arise from the discretization of partial differential equations. It has been shown that the multigrid solver GMGPolar solves the 2D gyrokinetic Poisson equation in linear complexity and with only small memory requirements compared to other state-of-the-art solvers. In this paper, we present a completely refactored and object-oriented version of GMGPolar which offers two different matrix-free implementations. Among other things, we leverage the Sherman-Morrison formula to solve cyclic tridiagonal systems from circular line solvers without additional fill-in and we apply reordering to optimize cache access of circular and radial smoothing operations. With the Give approach, memory requirements are further reduced and speedups of four to seven are obtained for usual test cases. For the Take approach, speedups of 16 to 18 can be attained. In an additionally experimental setup of using GMGPolar as a preconditioner for conjugate gradients, this speedup could even be increased to factors between 25 and 37.",
+  "authors": [
+    "Julian Litz",
+    "Philippe Leleux",
+    "Carola Kruse",
+    "Joscha Gedicke",
+    "Martin J. Kühn"
+  ],
+  "published": "2025-07-04T21:09:51Z",
+  "updated": "2025-10-10T16:08:26Z",
+  "categories": [
+    "cs.MS",
+    "physics.plasm-ph",
+    "68Q25, 65Y20, 65Y05, 65N55, 65N06, 65B99"
+  ],
+  "primary_category": "cs.MS"
+}
