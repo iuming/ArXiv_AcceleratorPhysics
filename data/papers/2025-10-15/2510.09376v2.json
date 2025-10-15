@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2510.09376v2",
+  "url": "https://arxiv.org/abs/2510.09376v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.09376v2.pdf",
+  "title": "A Living Review Pipeline for AI/ML Applications in Accelerator Physics",
+  "abstract": "We present an open-source pipeline for generating a \\emph{living review} of artificial intelligence (AI) and machine learning (ML) applications in accelerator physics and technologies. Traditional review articles provide static snapshots that are quickly outdated by the rapid pace of research. The presented system automatically harvests publications from multiple bibliographic sources (arXiv, InspireHEP, HAL, OpenAlex, Crossref, and Springer), deduplicates entries, applies semantic filtering to ensure accelerator and ML relevance, and classifies papers into thematic categories. The resulting curated dataset was exported in JSON, HTML, PDF, and Bib\\TeX formats, enabling continuous updates and integration with web frameworks. We describe the methodology, including semantic similarity filtering using sentence-transformer embeddings, threshold calibration, and expert-informed classification. The results demonstrate the robust filtering of $\\sim$12000 raw papers/month into a focused corpus of $\\sim$2\\% relevant works. The pipeline provides the basis for an evolving community-driven review of AI/ML in accelerator science.",
+  "authors": [
+    "Adnan Ghribi"
+  ],
+  "published": "2025-10-10T13:31:46Z",
+  "updated": "2025-10-13T07:54:38Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

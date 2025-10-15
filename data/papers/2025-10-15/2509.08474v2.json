@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2509.08474v2",
+  "url": "https://arxiv.org/abs/2509.08474v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.08474v2.pdf",
+  "title": "Restarting the Numerical Flow Iteration through low rank tensor   approximations",
+  "abstract": "The numerical flow iteration method has recently been proposed as a memory-slim solution method for the Vlasov--Poisson system. It stores the temporal evolution of the electric field and reconstructs the solution in each time step by following the characteristics backwards in time and reconstructing the solution from the initial distribution. If the number of time steps gets large, the computational cost of this reconstruction may get prohibitive. Given a representation of the intermediate solution, the time intervals over which the characteristic curves need to be solved backwards in time can be reduced by restarting the Numerical Flow Iteration (NuFI) after certain time intervals. In this paper, we propose an algorithm that reconstructs a low-rank representation of the solution at the restart times using a randomized singular value decomposition (RSVD) algorithm with lazy evaluation. The proposed algorithm reduces the computational complexity compared to the pure Numerical Flow Iteration from quadratic to linear in the number of times step while still keeping its memory complexity. On the other hand, our numerical results demonstrate that the methods preserves the property of the Numerical Flow Iteration of showing much less dissipation of filaments compared to the semi-Lagrangian method.",
+  "authors": [
+    "Rostislav-Paul Wilhelm",
+    "Katharina Kormann"
+  ],
+  "published": "2025-09-10T10:27:12Z",
+  "updated": "2025-10-10T14:52:49Z",
+  "categories": [
+    "math.NA",
+    "cs.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

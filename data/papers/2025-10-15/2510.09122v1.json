@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2510.09122v1",
+  "url": "https://arxiv.org/abs/2510.09122v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.09122v1.pdf",
+  "title": "Simultaneous Multi-Scale Homogeneous H-Phi Thin-Shell Model for   Efficient Simulations of Stacked HTS Coils",
+  "abstract": "The simulation of large-scale high-temperature superconducting (HTS) magnets is a computational challenge due to the multiple spatial scales involved, from the magnet to the detailed turn-to-turn geometry. To reduce the computational cost associated with finite-element (FE) simulations of insulated HTS coils, the simultaneous multi-scale homogeneous (SMSH) method can be considered. It combines a macroscopic-scale homogenized magnet model with multiple single-tape models and solves both scales monolithically. In this work, the SMSH method is reformulated using the $h$-$\\phi$ thin-shell (TS) approximation, where analyzed tapes are collapsed into thin surfaces, simplifying mesh generation. Moreover, the magnetic field is expressed as the gradient of the magnetic scalar potential outside the analyzed tapes. The discretized field is then described with nodal functions, further reducing the size of the FE problem compared to standard $h$ formulations. The proposed $h$-$\\phi$ SMSH-TS method is verified against state-of-the-art homogenization methods on a 2-D benchmark problem of stacks of HTS tapes. The results show good agreement in terms of AC losses, turn voltage and local current density, with a significant reduction in simulation time compared to reference models. All models are open-source.",
+  "authors": [
+    "Louis Denis",
+    "Benoît Vanderheyden",
+    "Christophe Geuzaine"
+  ],
+  "published": "2025-10-10T08:23:20Z",
+  "updated": "2025-10-10T08:23:20Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
