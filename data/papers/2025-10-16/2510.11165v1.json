@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2510.11165v1",
+  "url": "https://arxiv.org/abs/2510.11165v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.11165v1.pdf",
+  "title": "IPbus extension for the ALFRED framework",
+  "abstract": "We present a development of the ALFRED framework that includes support for the IPbus protocol, created for the Fast Interaction Trigger (FIT) detector in the ALICE experiment at CERN. This modification resolves the incompatibility between the current GBT-based slow-control protocols and the FIT electronics, which is based on the IPbus. A compatibility layer, named ALF IPbus, was created in C++ and integrated with DIM services, allowing for the transparent conversion of SWT frames into IPbus transactions. Benchmark tests indicated median execution times of less than 4.2 $\\mu$s per frame for sequences above 512 words, comfortably meeting the ALICE Detector Control System requirements. Long-term stability tests conducted in the FV0 detector achieved an uptime close to 100\\% from the moment of implementation on the FIT-FV0 detector. This solution enables FIT operation without firmware changes, ensures smooth integration with SCADA systems, and provides a scalable pathway for future migration to GBT-based control. The approach is general and can be applied to other ALICE subdetectors and high-energy physics experiments requiring protocol bridging.",
+  "authors": [
+    "Krystian Roslon",
+    "Maciej Czarnynoga",
+    "Sebastian Koryciak",
+    "Monika Kutyla",
+    "Ignacy Mermer",
+    "Jacek Tomasz Otwinowski",
+    "Wiktor Pierozak",
+    "Pawel Grzegorz Russek",
+    "Wladyslaw Trzaska",
+    "Franciszek Urbanski"
+  ],
+  "published": "2025-10-13T08:56:19Z",
+  "updated": "2025-10-13T08:56:19Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2510.11174v1",
+  "url": "https://arxiv.org/abs/2510.11174v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.11174v1.pdf",
+  "title": "Machine Learning-Integrated Hybrid Fluid-Kinetic Framework for Quantum   Electrodynamic Laser Plasma Simulations",
+  "abstract": "High-intensity laser plasma interactions create complex computational problems because they involve both fluid and kinetic regimes, which need models that maintain physical precision while keeping computational speed. The research introduces a machine learning-based three-dimensional hybrid fluid-particle-in-cell (PIC) system, which links relativistic plasma behavior to automatic regime transitions. The technique employs fluid approximations for stable areas but activates the PIC solver when SwitchNet directs it to unstable sections through its training on physics-based synthetic data. The model uses a smooth transition between Ammosov-Delone-Krainov (ADK) tunneling and multiphoton ionization rates to simulate ionization, while Airy-function approximations simulate quantum electrodynamic (QED) effects for radiation reaction and pair production. The convolutional neural network applies energy conservation through physics-based loss functions, which operate on normalized fields per channel. Monte Carlo dropout provides uncertainty measurement. The hybrid model produces precise predictions with coefficient of determination (R^2) values above 0.95 and mean squared errors below 10^-4 for all field components. This adaptive approach enhances the accuracy and scalability of laser-plasma simulations, providing a unified predictive framework for high-energy-density and particle acceleration applications.",
+  "authors": [
+    "Sadra Saremi",
+    "Amirhossein Ahmadkhan Kordbacheh"
+  ],
+  "published": "2025-10-13T09:07:59Z",
+  "updated": "2025-10-13T09:07:59Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
