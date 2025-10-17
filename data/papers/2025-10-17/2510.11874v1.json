@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2510.11874v1",
+  "url": "https://arxiv.org/abs/2510.11874v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.11874v1.pdf",
+  "title": "Towards fully predictive gyrokinetic full-f simulations",
+  "abstract": "Designing economical magnetic confinement fusion power plants motivates computational tools that can estimate plasma behavior from engineering parameters without direct reliance on experimental measurement of the plasma profiles. In this work, we present full-$f$ global gyrokinetic (GK) turbulence simulations of edge and scrape-off layer turbulence in tokamaks that use only magnetic geometry, heating power, and particle inventory as inputs. Unlike many modeling approaches that employ free parameters fitted to experimental data, raising uncertainties when extrapolating to reactor scales, his approach directly simulates turbulence and resulting profiles through GK without such empirical adjustments. This is achieved via an adaptive sourcing algorithm in Gkeyll that strictly controls energy injection and emulates particle sourcing due to neutral recycling. We show that the simulated kinetic profiles compare reasonably well with Thomson scattering and Langmuir probe data for Tokamak \\`{a} Configuration Variable (TCV) discharge #65125, and that the simulations reproduce characteristic features such as blob transport and self-organized electric fields. Applying the same framework to study triangularity effects suggests mechanisms contributing to the improved confinement reported for negative triangularity (NT). Simulations of TCV discharges #65125 and #65130 indicate that NT increases the $E \\times B$ flow shear (by about 20% in these cases), which correlates with reduced turbulent losses and a modest change in the distribution of power exhaust to the vessel wall. While the physical models contain approximations that can be refined in future work, the predictive capability demonstrated here, evolving multiple profile relaxation times with kinetic electron and ion models in hundreds of GPU hours, indicates the feasibility of using Gkeyll to support design studies of fusion devices.",
+  "authors": [
+    "A. C. D. Hoffmann",
+    "T. N. Bernard",
+    "M. Francisquez",
+    "G. W. Hammett",
+    "A. Hakim",
+    "J. Boedo",
+    "R. Rizkallah",
+    "C. K. Tsui",
+    "the TCV team"
+  ],
+  "published": "2025-10-13T19:32:56Z",
+  "updated": "2025-10-13T19:32:56Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.app-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

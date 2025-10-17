@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2408.15845v2",
+  "url": "https://arxiv.org/abs/2408.15845v2",
+  "pdf_url": "https://arxiv.org/pdf/2408.15845v2.pdf",
+  "title": "Surrogate Models studies for laser-plasma accelerator electron source   design through numerical optimisation",
+  "abstract": "Designing a high-quality plasma injector electron source driven by a laser beam relies on numerical parametric studies using particle-in-cell codes. The common input parameters to explore are laser characteristics, plasma species and density profiles produced by computational fluid dynamic studies. We demonstrate the construction of surrogate models using machine learning techniques for a laser-plasma injector (LPI) based on more than $3000$ particle-in-cell simulations of laser wakefield acceleration performed for sparsely spaced input parameters published by Drobniak [Phys. Rev. Accel. Beams, 26, 091302, (2023)]. Surrogate models are relevant for LPI design and optimisation, as they are approximately $10^7$ times faster than PIC simulations. Their speed enables more efficient design studies by allowing extensive exploration of the input-output relationship without significant computational cost. We develop and compare the performance of three surrogate models, namely, multilayer perceptron (MLP), decision trees (DT) and Gaussian processes (GP). We show that using a simple and frugal MLP-based model trained on a reasonable-size random scan data set of 500 particles in cell simulations, we can predict beam parameters with a coefficient determination score $R^2=0.93$ . The best surrogate model is used to quickly find optimal working points and stability regions and get targeted electron beam energy, charge, energy spread and emittance using different methods, namely random search, Bayesian optimisation and multi-objective Bayesian optimisation. This simple approach can serve more global design study of an LPI in a start-to-end linear laser-driven accelerator.on beam energy, charge and energy spread using different methods, namely random search, Bayesian optimisation and multi-objective Bayesian optimisation",
+  "authors": [
+    "G. Kane",
+    "P. Drobniak",
+    "S. Kazamias",
+    "V. Kubytskyi",
+    "M. Lenivenko",
+    "B. Lucas",
+    "J. Serhal",
+    "K. Cassou",
+    "A. Beck",
+    "A. Specka",
+    "F. Massimo"
+  ],
+  "published": "2024-08-28T15:07:12Z",
+  "updated": "2025-10-14T18:04:37Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.acc-ph",
+    "physics.data-an",
+    "68T05, 68T20"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
