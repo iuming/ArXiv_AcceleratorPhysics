@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.14521v1",
+  "url": "https://arxiv.org/abs/2510.14521v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.14521v1.pdf",
+  "title": "Influence of kinetic effects in large-scale magnetic reconnection with   multi-hierarchy simulation code KAMMUY",
+  "abstract": "Magnetic reconnection is a multiscale phenomenon where fluid- and particle-scale processes interact. The particle-in-cell (PIC) method, capable of resolving kinetic (particle-scale) physics, is extensively used to study the kinetic effects in magnetic reconnection. Meanwhile, because of the high computational cost, PIC simulations cannot capture the interaction between kinetic and fluid dynamics, which poses a major obstacle to understanding magnetic reconnection in large-scale phenomena such as solar flares. A multi-hierarchy simulation that combines Magnetohydrodynamics (MHD) and PIC provides a promising means to overcome these spatial and temporal scale gaps. We developed a multi-hierarchy simulation code KAMMUY (Kinetic And Magnetohydrodynamic MUlti-hierarchY simulation code), in which an ideal MHD simulation for a large domain and a PIC simulation for a smaller domain are solved in parallel with mutual information exchange. To validate the code, we conducted test simulations of MHD wave propagation and the shock tube problem. The results demonstrate that short-wavelength, high-frequency waves generated in the PIC region do not propagate into the MHD region, whereas MHD-scale structures propagate smoothly into the PIC region, highlighting the capability of our code for numerical studies of magnetic reconnection. By applying the KAMMUY code to magnetic reconnection while varying the PIC domain size, we find that the reconnection rate remains unchanged, regardless of the extent of the PIC region where the Hall magnetic field is present. It suggests that the spatial extension of the Hall magnetic field on the scale of $10 \\sim 100 \\lambda_i$ does not influence the reconnection rate.",
+  "authors": [
+    "Keita Akutagawa",
+    "Shinsuke Imada",
+    "Munehito Shoda"
+  ],
+  "published": "2025-10-16T10:09:39Z",
+  "updated": "2025-10-16T10:09:39Z",
+  "categories": [
+    "astro-ph.SR",
+    "astro-ph.EP",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.SR"
+}
