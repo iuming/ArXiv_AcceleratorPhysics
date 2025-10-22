@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.17531v1",
+  "url": "https://arxiv.org/abs/2510.17531v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.17531v1.pdf",
+  "title": "Plasma Shape Control via Zero-shot Generative Reinforcement Learning",
+  "abstract": "Traditional PID controllers have limited adaptability for plasma shape control, and task-specific reinforcement learning (RL) methods suffer from limited generalization and the need for repetitive retraining. To overcome these challenges, this paper proposes a novel framework for developing a versatile, zero-shot control policy from a large-scale offline dataset of historical PID-controlled discharges. Our approach synergistically combines Generative Adversarial Imitation Learning (GAIL) with Hilbert space representation learning to achieve dual objectives: mimicking the stable operational style of the PID data and constructing a geometrically structured latent space for efficient, goal-directed control. The resulting foundation policy can be deployed for diverse trajectory tracking tasks in a zero-shot manner without any task-specific fine-tuning. Evaluations on the HL-3 tokamak simulator demonstrate that the policy excels at precisely and stably tracking reference trajectories for key shape parameters across a range of plasma scenarios. This work presents a viable pathway toward developing highly flexible and data-efficient intelligent control systems for future fusion reactors.",
+  "authors": [
+    "Niannian Wu",
+    "Rongpeng Li",
+    "Zongyu Yang",
+    "Yong Xiao",
+    "Ning Wei",
+    "Yihang Chen",
+    "Bo Li",
+    "Zhifeng Zhao",
+    "Wulyu Zhong"
+  ],
+  "published": "2025-10-20T13:34:51Z",
+  "updated": "2025-10-20T13:34:51Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
