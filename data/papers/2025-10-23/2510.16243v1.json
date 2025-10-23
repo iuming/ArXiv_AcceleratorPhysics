@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.16243v1",
+  "url": "https://arxiv.org/abs/2510.16243v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.16243v1.pdf",
+  "title": "A flexible and differentiable coil proxy for stellarator equilibrium   optimization",
+  "abstract": "Balancing plasma performance and coil cost is a significant challenge when designing a stellarator power plant. Most present stellarator designs are produced by two-stage optimization: the first for the equilibrium and the second for a coil design reproducing its magnetic configuration. It is challenging to find a compromise between plasma and coils with this approach. In recent years, single-stage approaches have gained popularity, which attempt to optimize both the plasma and coils simultaneously to improve the plasma-coil balance. In exchange, it can substantially increase the problem's dimensionality and introduce the ill-posedness of filamentary coil optimization to equilibrium optimization. This paper introduces a new ``quasi-single-stage'' method representing a flexible and differentiable coil proxy that directly predicts coil complexity during equilibrium optimization. The proxy is based on the adjoint differentiation of a winding surface coil subproblem. Our proxy can balance coil and plasma performance without introducing new degrees of freedom or ill-posedness. We present initial numerical results that demonstrate the proxy's effectiveness for single-stage optimization.",
+  "authors": [
+    "Lanke Fu",
+    "Dario Panici",
+    "Elizabeth Paul",
+    "Alan Kaptanoglu",
+    "Amitava Bhattacharjee"
+  ],
+  "published": "2025-10-17T22:19:19Z",
+  "updated": "2025-10-17T22:19:19Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

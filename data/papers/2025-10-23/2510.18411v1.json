@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2510.18411v1",
+  "url": "https://arxiv.org/abs/2510.18411v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.18411v1.pdf",
+  "title": "A machine learning approach to automation and uncertainty evaluation for   self-validating thermocouples",
+  "abstract": "Thermocouples are in widespread use in industry, but they are particularly susceptible to calibration drift in harsh environments. Self-validating thermocouples aim to address this issue by using a miniature phase-change cell (fixed-point) in close proximity to the measurement junction (tip) of the thermocouple. The fixed point is a crucible containing an ingot of metal with a known melting temperature. When the process temperature being monitored passes through the melting temperature of the ingot, the thermocouple output exhibits a \"plateau\" during melting. Since the melting temperature of the ingot is known, the thermocouple can be recalibrated in situ. Identifying the melting plateau to determine the onset of melting is reasonably well established but requires manual intervention involving zooming in on the region around the actual melting temperature, a process which can depend on the shape of the melting plateau. For the first time, we present a novel machine learning approach to recognize and identify the characteristic shape of the melting plateau and once identified, to quantity the point at which melting begins, along with its associated uncertainty. This removes the need for human intervention in locating and characterizing the melting point. Results from test data provided by CCPI Europe show 100% accuracy of melting plateau detection. They also show a cross-validated R2 of 0.99 on predictions of calibration drift.",
+  "authors": [
+    "Samuel Bilson",
+    "Andrew Thompson",
+    "Declan Tucker",
+    "Jonathan Pearce"
+  ],
+  "published": "2025-10-21T08:38:28Z",
+  "updated": "2025-10-21T08:38:28Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1063/5.0235318"
+}

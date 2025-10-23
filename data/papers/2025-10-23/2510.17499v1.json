@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.17499v1",
+  "url": "https://arxiv.org/abs/2510.17499v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.17499v1.pdf",
+  "title": "Tilt-to-length noise subtraction with pointing jitters from closed-loop   dynamics for TianQin",
+  "abstract": "TianQin is a proposed space-based mission for gravitational wave detection, employing a constellation of three drag-free satellites in high Earth orbits to form a laser interferometric observatory. A critical technical challenge is mitigating tilt-to-length (TTL) coupling noise, which is expected to be the third dominant noise source after laser frequency and clock noises. This noise is unavoidable in the presence of the residual angular movement of satellites, movable optical subassemblies (MOSAs), and test masses (TMs), and needs to be subtracted after reducing the first two types of noises using time-delay interferometry (TDI). Previous works have shown that TTL coupling coefficients can be estimated from the null TDI channel $\\zeta$ and used for noise subtraction in other combinations. However, it was found that correlated MOSA yaw jitters have a negative impact on the TTL calibration, and the effects of realistic residual angular jitters from drag-free and pointing control (DFPC) are yet to be investigated. In this paper, we use closed-loop DFPC simulations to generate more realistic jitters in the science mode and test TTL calibration capability. Our simulations reveal that rotating only one MOSA is more favorable, compared to symmetrically rotating two MOSAs, for enhancing the accuracy of TTL coefficient estimation, while employing only high-frequency data (0.1 - 1 Hz). Moreover, we propose two other methods to further improve estimation accuracy. Firstly, using different null channel combinations, such as $C_3^{14}$, enhances the least squares estimation accuracy even in the case of high correlations in MOSAs' yaw jitters. Secondly, injecting different sinusoidal artificial maneuvers to the six MOSAs also shows improvements. These methods can help TianQin to meet the 0.3 pm/Hz$^{1/2}$ requirement after the TTL noise subtraction.",
+  "authors": [
+    "Yuzhou Fang",
+    "Dexuan Zhang",
+    "Dezhi Wang",
+    "Xuefeng Zhang",
+    "Huizong Duan",
+    "Hongyin Li",
+    "Junxiang Lian",
+    "Guoying Zhao"
+  ],
+  "published": "2025-10-20T12:52:01Z",
+  "updated": "2025-10-20T12:52:01Z",
+  "categories": [
+    "gr-qc",
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "gr-qc"
+}

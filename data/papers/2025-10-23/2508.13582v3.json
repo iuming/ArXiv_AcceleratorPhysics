@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2508.13582v3",
+  "url": "https://arxiv.org/abs/2508.13582v3",
+  "pdf_url": "https://arxiv.org/pdf/2508.13582v3.pdf",
+  "title": "Studies of simulation framework for NνDEx experiment",
+  "abstract": "The N$\\nu$DEx experiment aims to search for the neutrinoless double beta decay of $^{82}$Se using a high-pressure $^{82}$SeF$_6$ gas time projection chamber (TPC). Under the assumption of two kinds of charge carriers would be formed, the difference in drift velocities between these ion species enables trigger-less event reconstruction and offers the potential for excellent energy resolution through direct charge collection.   In this study, we present a simulation framework for the N$\\nu$DEx ion TPC. The reduced mobilities of SeF$_5^-$ and SeF$_6^-$ ions in SeF$_6$ were calculated using density functional theory and two-temperature theory, yielding values of $0.444 \\pm 0.133$ and $0.430 \\pm 0.129$ cm$^2$V$^{-1}$s$^{-1}$, respectively.   The TPC geometry, featuring a cathode-focusing plane-anode structure and an 10,000-pixel readout array, was modeled with COMSOL to calculate the electric and weighting fields. Signal and background events were generated using BxDecay0 and Geant4. Garfield++ was used to simulate the transport of charge carriers and signal induction. The induced current was convolved with the transfer function to produce voltage signals, which were subsequently used to extract energy through amplitude. The 3D tracks are also reconstructed based on drift time differences and Breadth First search.   To enhance signal background separation, six topological variables were extracted from the reconstructed tracks and used to define optimized selection criteria. The Boosted Decision Trees is used for a preliminary analysis. This simulation framework serves as a crucial tool for design optimization and sensitivity studies in the N$\\nu$DEx experiment.",
+  "authors": [
+    "Tianyu Liang",
+    "Hulin Wang",
+    "Dongliang Zhang",
+    "Chaosong Gao",
+    "Xiangming Sun",
+    "Feng Liu",
+    "Jun Liu",
+    "Chengui Lu",
+    "Yichen Yang",
+    "Chengxin Zhao",
+    "Hao Qiu",
+    "Kai Chen"
+  ],
+  "published": "2025-08-19T07:31:27Z",
+  "updated": "2025-10-20T03:52:54Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

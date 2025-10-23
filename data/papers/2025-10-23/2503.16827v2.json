@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2503.16827v2",
+  "url": "https://arxiv.org/abs/2503.16827v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.16827v2.pdf",
+  "title": "Discontinuous Galerkin Representation of the Maxwell-Jüttner   Distribution",
+  "abstract": "Kinetic simulations of relativistic gases and plasmas are critical for understanding diverse astrophysical and terrestrial systems, but the accurate construction of the relativistic Maxwellian, the Maxwell-J\\\"uttner (MJ) distribution, on a discrete simulation grid is challenging. Difficulties arise from the finite velocity bounds of the domain, which may not capture the entire distribution function, as well as errors introduced by projecting the function onto a discrete grid. Here we present a novel scheme for iteratively correcting the moments of the projected distribution applicable to all grid-based discretizations of the relativistic kinetic equation. In addition, we describe how to compute the needed nonlinear quantities, such as Lorentz boost factors, in a discontinuous Galerkin (DG) scheme through a combination of numerical quadrature and weak operations. The resulting method accurately captures the distribution function and ensures that the moments match the desired values to machine precision.",
+  "authors": [
+    "Grant Johnson",
+    "Ammar Hakim",
+    "James Juno"
+  ],
+  "published": "2025-03-21T03:50:12Z",
+  "updated": "2025-10-17T22:07:54Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1017/S0022377825100718"
+}
