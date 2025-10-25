@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.18838v1",
+  "url": "https://arxiv.org/abs/2510.18838v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.18838v1.pdf",
+  "title": "PCMS: Parallel Coupler For Multimodel Simulations",
+  "abstract": "This paper presents the Parallel Coupler for Multimodel Simulations (PCMS), a new GPU accelerated generalized coupling framework for coupling simulation codes on leadership class supercomputers. PCMS includes distributed control and field mapping methods for up to five dimensions. For field mapping PCMS can utilize discretization and field information to accommodate physics constraints. PCMS is demonstrated with a coupling of the gyrokinetic microturbulence code XGC with a Monte Carlo neutral transport code DEGAS2 and with a 5D distribution function coupling of an energetic particle transport code (GNET) to a gyrokinetic microturbulence code (GTC). Weak scaling is also demonstrated on up to 2,080 GPUs of Frontier with a weak scaling efficiency of 85%.",
+  "authors": [
+    "Jacob S. Merson",
+    "Cameron W. Smith",
+    "Mark S. Shephard",
+    "Fuad Hasan",
+    "Abhiyan Paudel",
+    "Angel Castillo-Crooke",
+    "Joyal Mathew",
+    "Mohammad Elahi"
+  ],
+  "published": "2025-10-21T17:33:10Z",
+  "updated": "2025-10-21T17:33:10Z",
+  "categories": [
+    "cs.DC",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.DC"
+}
