@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2503.19657v2",
+  "url": "https://arxiv.org/abs/2503.19657v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.19657v2.pdf",
+  "title": "Homogenized harmonic balance finite element method for nonlinear eddy   current simulations of fast corrector magnets",
+  "abstract": "This paper develops a homogenized harmonic balance finite element method (HomHBFEM) to predict the dynamic behavior of magnets with fast excitation cycles, including eddy current and skin effects. A homogenization technique for laminated yokes avoids resolving the individual laminates and the skin depth in the finite element (FE) mesh. Instead, the yoke is represented by a bulk surrogate material with frequency-dependent parameters. The ferromagnetic saturation of the yoke at higher excitation currents is tackled by a harmonic balance method, which accounts for a coupled set of frequency components. Thereby, a computationally expensive time-stepping of the eddy-current field problem and a convolution of the homogenized yoke model are avoided. The HomHBFEM enables, for the first time, to conduct nonlinear simulations of fast corrector magnets, which are embedded in a fast orbit feedback system to counteract orbit disturbances over a broad frequency spectrum, and thus guarantee a stable light-source operation. The results show the impact of the nonlinearity on the phase lag and the field attenuation as well as the eddy current losses at frequencies up to 65 kHz. The numerical validation for a C-dipole magnet example shows that the HomHBFEM achieves a sufficient accuracy at an affordable computational effort, with simulation times of a few hours. In comparison, standard 3D transient FE simulations need to resolve the lamination thickness and the skin depth in space and the largest relevant frequency in time, which leads to a two to three orders of magnitude larger mesh and prohibitive computational effort, with simulation times of a few weeks on a contemporary computer server.",
+  "authors": [
+    "Jan-Magnus Christmann",
+    "Laura Anna Maria D'Angelo",
+    "Herbert De Gersem",
+    "Sven Pfeiffer",
+    "Sajjad Hussain Mirza",
+    "Matthias Thede",
+    "Alexander Aloev",
+    "Holger Schlarb"
+  ],
+  "published": "2025-03-25T13:44:46Z",
+  "updated": "2025-10-23T16:30:18Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "10.1103/9mnn-w7lj"
+}
