@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2510.23641v1",
+  "url": "https://arxiv.org/abs/2510.23641v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.23641v1.pdf",
+  "title": "Spatially Aware Linear Transformer (SAL-T) for Particle Jet Tagging",
+  "abstract": "Transformers are very effective in capturing both global and local correlations within high-energy particle collisions, but they present deployment challenges in high-data-throughput environments, such as the CERN LHC. The quadratic complexity of transformer models demands substantial resources and increases latency during inference. In order to address these issues, we introduce the Spatially Aware Linear Transformer (SAL-T), a physics-inspired enhancement of the linformer architecture that maintains linear attention. Our method incorporates spatially aware partitioning of particles based on kinematic features, thereby computing attention between regions of physical significance. Additionally, we employ convolutional layers to capture local correlations, informed by insights from jet physics. In addition to outperforming the standard linformer in jet classification tasks, SAL-T also achieves classification results comparable to full-attention transformers, while using considerably fewer resources with lower latency during inference. Experiments on a generic point cloud classification dataset (ModelNet10) further confirm this trend. Our code is available at https://github.com/aaronw5/SAL-T4HEP.",
+  "authors": [
+    "Aaron Wang",
+    "Zihan Zhao",
+    "Subash Katel",
+    "Vivekanand Gyanchand Sahu",
+    "Elham E Khoda",
+    "Abhijith Gandrakota",
+    "Jennifer Ngadiuba",
+    "Richard Cavanaugh",
+    "Javier Duarte"
+  ],
+  "published": "2025-10-24T18:00:01Z",
+  "updated": "2025-10-24T18:00:01Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG"
+}

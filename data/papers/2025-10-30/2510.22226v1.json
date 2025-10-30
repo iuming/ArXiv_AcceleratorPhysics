@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2510.22226v1",
+  "url": "https://arxiv.org/abs/2510.22226v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.22226v1.pdf",
+  "title": "A DSMC-PIC coupling method for the Vlasov-Maxwell-Landau system",
+  "abstract": "We present a numerical framework for the simulation of collisional plasma dynamics, based on a coupling between Direct Simulation Monte Carlo (DSMC) and Particle-in-Cell (PIC) methods for the Vlasov-Maxwell-Landau system. The approach extends previously developed DSMC techniques for the homogeneous Landau equation to the fully inhomogeneous, electromagnetic regime. The Landau collision operator is treated through a stochastic particle formulation inspired by the grazing-collision limit of the Boltzmann equation, which enables an efficient and physically consistent representation of Coulomb interactions without relying on the full Boltzmann structure. The resulting collisional solver is combined, via operator splitting, with standard PIC schemes for the Vlasov-Maxwell dynamics, providing flexibility in the choice of field discretisation and time integration. The overall method preserves the main physical invariants of the system while maintaining computational efficiency and simplicity of implementation. Numerical experiments on benchmark problems demonstrate the accuracy, robustness, and effectiveness of the coupled DSMC-PIC approach across a wide range of collisional regimes.",
+  "authors": [
+    "Andrea Medaglia",
+    "Lorenzo Pareschi",
+    "Mattia Zanella"
+  ],
+  "published": "2025-10-25T09:14:49Z",
+  "updated": "2025-10-25T09:14:49Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.NA",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
