@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.24861v1",
+  "url": "https://arxiv.org/abs/2510.24861v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.24861v1.pdf",
+  "title": "A Semi-Lagrangian Adaptive Rank (SLAR) Method for High-Dimensional   Vlasov Dynamics",
+  "abstract": "We extend our previous work on a semi-Lagrangian adaptive rank (SLAR) integrator, in the finite difference framework for nonlinear Vlasov-Poisson systems, to the general high-order tensor setting. The proposed scheme retains the high-order accuracy of semi-Lagrangian methods, ensuring stability for large time steps and avoiding dimensional splitting errors. The primary contribution of this paper is the novel extension of the algorithm from the matrix to the high-dimensional tensor setting, which enables the simulation of Vlasov models in up to six dimensions. The key technical components include (1) a third-order high-dimensional polynomial reconstruction that scales as $O(d^2)$, providing a point-wise approximation of the solution at the foot of characteristics in a semi-Lagrangian scheme; (2) a recursive hierarchical adaptive cross approximation of high-order tensors in a hierarchical Tucker format, characterized by a tensor tree; (3) a low-complexity Poisson solver in the hierarchical Tucker format that leverages the FFT for efficiency. The computed adaptive rank kinetic solutions exhibit low-rank structures within branches of the tensor tree resulting in substantial computational savings in both storage and time. The resulting algorithm achieves a computational complexity of $O(d^4 N r^{3+\\lceil\\log_2d\\rceil})$, where $N$ is the number of grid points per dimension, $d$ is the problem dimension, and $r$ is the maximum rank in the tensor tree, overcoming the curse of dimensionality. Through extensive numerical tests, we demonstrate the efficiency of the proposed algorithm and highlight its ability to capture complex solution structures while maintaining a computational complexity that scales linearly with $N$.",
+  "authors": [
+    "Nanyi Zheng",
+    "William A. Sands",
+    "Daniel Hayes",
+    "Andrew J. Christlieb",
+    "Jing-Mei Qiu"
+  ],
+  "published": "2025-10-28T18:07:18Z",
+  "updated": "2025-10-28T18:07:18Z",
+  "categories": [
+    "math.NA",
+    "cs.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph",
+    "65M70, 65F30, 35Q83, 65Y20, 82D10"
+  ],
+  "primary_category": "math.NA"
+}
