@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.25847v1",
+  "url": "https://arxiv.org/abs/2510.25847v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.25847v1.pdf",
+  "title": "Cosmological Simulations of Weakly Collisional Plasmas with Braginskii   Viscosity in Galaxy Clusters",
+  "abstract": "We present the implementation of an anisotropic viscosity solver within the magnetohydrodynamics (MHD) framework of the TreeSPH code OpenGadget3. The solver models anisotropic viscous transport along magnetic field lines following the Braginskii formulation and includes physically motivated limiters based on the mirror and firehose instability thresholds, which constrain the viscous stress in weakly collisional plasmas. To validate the implementation, we performed a suite of standard test problems -- including two variants of the sound-wave test, circularly and linearly polarized Alfven waves, fast magnetosonic wave, and the Kelvin-Helmholtz instability -- both with and without the plasma-instability limiters. The results show excellent agreement with the AREPO implementation of a similar anisotropic viscosity model (Berlok et al. 2019), confirming the accuracy and robustness of our method. Our formulation integrates seamlessly within the individual adaptive timestepping framework of OpenGadget3, avoiding the need for subcycling. This provides efficient and stable time integration while maintaining physical consistency. Finally, we applied the new solver to a cosmological zoom-in simulation of a galaxy cluster, demonstrating its capability to model anisotropic transport and plasma microphysics in realistic large-scale environments. Our implementation offers a versatile and computationally efficient tool for studying anisotropic viscosity in magnetized astrophysical systems.",
+  "authors": [
+    "Tirso Marin-Gilabert",
+    "Ulrich P. Steinwandel",
+    "Milena Valentini",
+    "John A. ZuHone",
+    "Klaus Dolag"
+  ],
+  "published": "2025-10-29T18:00:08Z",
+  "updated": "2025-10-29T18:00:08Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.CO",
+    "astro-ph.GA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.IM"
+}

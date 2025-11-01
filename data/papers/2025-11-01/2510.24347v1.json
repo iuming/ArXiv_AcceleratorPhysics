@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.24347v1",
+  "url": "https://arxiv.org/abs/2510.24347v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.24347v1.pdf",
+  "title": "Physics-Informed Visual MARFE Prediction on the HL-3 Tokamak",
+  "abstract": "The Multifaceted Asymmetric Radiation From the Edge (MARFE) is a critical plasma instability that often precedes density-limit disruptions in tokamaks, posing a significant risk to machine integrity and operational efficiency. Early and reliable alert of MARFE formation is therefore essential for developing effective disruption mitigation strategies, particularly for next-generation devices like ITER. This paper presents a novel, physics-informed indicator for early MARFE prediction and disruption warning developed for the HL-3 tokamak. Our framework integrates two core innovations: (1) a high-fidelity label refinement pipeline that employs a physics-scored, weighted Expectation-Maximization (EM) algorithm to systematically correct noise and artifacts in raw visual data from cameras, and (2) a continuous-time, physics-constrained Neural Ordinary Differential Equation (Neural ODE) model that predicts the short-horizon ``worsening\" of a MARFE. By conditioning the model's dynamics on key plasma parameters such as normalized density ($f_G$, derived from core electron density) and core electron temperature ($T_e$), the predictor achieves superior performance in the low-false-alarm regime crucial for control. On a large experimental dataset from HL-3, our model demonstrates high predictive accuracy, achieving an Area Under the Curve (AUC) of 0.969 for 40ms-ahead prediction. The indicator has been successfully deployed for real-time operation with updates every 1 ms. This work lays a very foundation for future proactive MARFE mitigation.",
+  "authors": [
+    "Qianyun Dong",
+    "Rongpeng Li",
+    "Zongyu Yang",
+    "Fan Xia",
+    "Liang Liu",
+    "Zhifeng Zhao",
+    "Wulyu Zhong"
+  ],
+  "published": "2025-10-28T12:11:26Z",
+  "updated": "2025-10-28T12:11:26Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
