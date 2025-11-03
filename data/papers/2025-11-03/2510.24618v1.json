@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2510.24618v1",
+  "url": "https://arxiv.org/abs/2510.24618v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.24618v1.pdf",
+  "title": "Distributed Inter-Strand Coupling Current Model for Finite Element   Simulations of Rutherford Cables",
+  "abstract": "In this paper, we present the Distributed Inter-Strand Coupling Current (DISCC) model. It is a finite element (FE) model based on a homogenization approach enabling efficient and accurate simulation of the transient magnetic response of superconducting Rutherford cables without explicitly representing individual strands. The DISCC model reproduces the inter-strand coupling current dynamics via a novel mixed FE formulation, and can be combined with the Reduced Order Hysteretic Magnetization (ROHM) and Flux (ROHF) models applied at the strand level in order to reproduce the internal strand dynamics: hysteresis, eddy, and inter-filament coupling currents, as well as ohmic effects. We first analyze the performance of the DISCC model alone, as a linear problem. We then extend the analysis to include the internal strand dynamics that make the problem nonlinear. In all cases, the DISCC model offers a massive reduction of the computational time compared to conventional fully detailed FE models while still accounting for all types of loss, magnetization and inductance contributions. Rutherford cables homogenized with the DISCC model can be directly included in FE models of magnet cross-sections for efficient electro-magneto-thermal simulations of their transient response. We present two possible FE formulations for the implementation of the DISCC model, a first one based on the h-phi-formulation, and a second one based on the h-phi-a-formulation, which is well suited for an efficient treatment of the ferromagnetic regions in magnet cross-sections.",
+  "authors": [
+    "Julien Dular",
+    "Alexander Glock",
+    "Arjan Verweij",
+    "Mariusz Wozniak"
+  ],
+  "published": "2025-10-28T16:45:23Z",
+  "updated": "2025-10-28T16:45:23Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
