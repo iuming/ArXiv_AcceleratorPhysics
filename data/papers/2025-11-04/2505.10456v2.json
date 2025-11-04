@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2505.10456v2",
+  "url": "https://arxiv.org/abs/2505.10456v2",
+  "pdf_url": "https://arxiv.org/pdf/2505.10456v2.pdf",
+  "title": "Comparison of high-order moment models for the ion dynamics in a bounded   low-temperature plasma",
+  "abstract": "Low-temperature plasmas often present non-equilibrium ion distribution functions due to the collisions with the background gas and the presence of strong electric fields. This non-equilibrium is beyond classical fluid models, often requiring computationally-intensive kinetic simulations. In our work, we study high-order moment models in order to capture the non-equilibrium state with a macroscopic set of equations, which is more computationally efficient than kinetic simulations. We compare numerical simulations of different moment closures: Grad's closure, the hyperbolic quadrature method of moments (HyQMOM), the extended quadrature method of moments, and a method based on entropy maximization. We assess the different closures for plasma applications and propose efficient numerical discretizations. The numerical solution of the high-order moment models is compared to kinetic simulations of an argon plasma between two floating walls at different pressure regimes, from nearly collisionless to collisionally-dominated. In general, all the high-order moment closures capture the ion transport with high fidelity as compared to the kinetic simulations, providing an improvement as compared to classical fluid models. Classical fluid closures such as the Fourier law for the heat flux is shown to be not suitable to capture the sheath or the low pressure regime. In addition, the ability of each moment method to reconstruct the velocity distribution function from the moments is assessed. The high-order moment models are able to capture the non-equilibrium distributions in the bulk and sheath with remarkable fidelity, dramatically improving classical fluid models while having comparable computational cost. In particular, the HyQMOM shows to be a robust method that provides an excellent comparison with the kinetic simulations of both the moments and the distribution function in the bulk and the sheath.",
+  "authors": [
+    "Anatole Berger",
+    "Thierry Magin",
+    "Anne Bourdon",
+    "Alejandro Alvarez Laguna"
+  ],
+  "published": "2025-05-15T16:12:50Z",
+  "updated": "2025-10-30T10:18:23Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0281989"
+}

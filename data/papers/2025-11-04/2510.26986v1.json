@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.26986v1",
+  "url": "https://arxiv.org/abs/2510.26986v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.26986v1.pdf",
+  "title": "MRX: A differentiable 3D MHD equilibrium solver without nested flux   surfaces",
+  "abstract": "This article introduces a new 3D magnetohydrodynamic (MHD) equilibrium solver, based on the concept of admissible variations of B, p that allows for magnetic relaxation of a magnetic field in a perturbed/non-minimum energy state to a lower energy state. We describe the mathematical theory behind this method, including ensuring certain bounds on the magnetic energy, and the differential geometry behind transforming to and from a logical domain and physical domain. Our code is designed to address a number of traditional challenges to 3D MHD equilibrium solvers, e.g. exactly enforcing physical constraints such as divergence-free magnetic field, exhibiting high levels of numerical convergence, dealing with complex geometries, and modeling stochastic field lines or chaotic behavior. By using differentiable Python, our numerical method comes with the additional benefits of computational efficiency on modern computing architectures, high code accessibility, and differentiability at each step. The proposed magnetic relaxation solver is robustly benchmarked and tested with standard examples, including solving 2D toroidal equilibria at high-beta, and a rotating ellipse stellarator. Future work will address the integration of this code for 3D equilibrium optimization for modeling magnetic islands and chaos in stellarator fusion devices.",
+  "authors": [
+    "Tobias Blickhan",
+    "Julianne Stratton",
+    "Alan A. Kaptanoglu"
+  ],
+  "published": "2025-10-30T20:28:16Z",
+  "updated": "2025-10-30T20:28:16Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph",
+    "76W05 (Primary) 49-04, 76M10, 78M10 (Secondary)"
+  ],
+  "primary_category": "physics.comp-ph"
+}
