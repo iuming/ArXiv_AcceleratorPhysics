@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2510.27513v1",
+  "url": "https://arxiv.org/abs/2510.27513v1",
+  "pdf_url": "https://arxiv.org/pdf/2510.27513v1.pdf",
+  "title": "Fast and accurate calculation of the bootstrap current and radial   neoclassical transport in low collisionality stellarator plasmas",
+  "abstract": "In this PhD thesis, a method for solving fast and accurately the monoenergetic drift-kinetic equation at low collisionality is presented. The algorithm is based on the analytical properties of the drift-kinetic equation when its dependence on the pitch-angle cosine is represented employing Legendre polynomials as basis functions. The Legendre representation of the monoenergetic drift-kinetic equation possesses a tridiagonal structure, which is exploited by the algorithm presented. The monoenergetic drift-kinetic equation can be solved fast and accurately at low collisionality by employing the standard block tridiagonal algorithm for block tridiagonal matrices. The implementation of the aforementioned algorithm leads to the main result of this thesis: the new neoclassical code MONKES (MONoenergetic Kinetic Equation Solver), conceived to satisfy the necessity of fast and accurate calculations of the bootstrap current for stellarators and in particular for stellarator optimization. MONKES is a new neoclassical code for the evaluation of monoenergetic transport coefficients in stellarators. By means of a convergence study and benchmarks with other codes, it is shown that MONKES is accurate and efficient. The combination of spectral discretization in spatial and velocity coordinates with block sparsity allows MONKES to compute monoenergetic coefficients at low collisionality, in a single core, in approximately one minute. MONKES is sufficiently fast to be integrated into stellarator optimization codes for direct optimization of the bootstrap current (and radial neoclassical transport) and to be included in predictive transport suites.",
+  "authors": [
+    "Francisco Javier Escoto López"
+  ],
+  "published": "2025-10-31T14:38:52Z",
+  "updated": "2025-10-31T14:38:52Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
