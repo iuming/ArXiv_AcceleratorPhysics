@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2511.00499v1",
+  "url": "https://arxiv.org/abs/2511.00499v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.00499v1.pdf",
+  "title": "From Light to Energy: Machine Learning Algorithms for Position and   Energy Deposition Estimation in Scintillator-SiPM detectors",
+  "abstract": "Scintillator-SiPM Particle Detectors (SSPDs) are compact, low-power devices with applications including particle physics, underground tomography, cosmic-ray studies, and space instrumentation. They are based on a prism-shaped scintillator with corner-mounted SiPMs. Previous work has demonstrated that analytic algorithms based on a physical model of light propagation can reconstruct particle impinging positions and tracks and estimate deposited energy and Linear Energy Transfer (LET) with moderate accuracy. In this study, we enhance this approach by applying machine learning (ML) methods, specifically gradient boosting techniques, to improve the accuracy of spatial location and energy deposition estimation. Using the GEANT4 simulation toolkit, we simulated cosmic muons and energetic oxygen ions traversing an SSPD, we trained XGBoost and LightGBM models to predict particle impinging positions and deposited energy. Both algorithms outperformed the analytic baseline. We further investigated hybrid strategies, including hybrid boosting and probing. While hybrid boosting provided no significant improvement, probing yielded measurable gains in both position and LET estimation. These results suggest that ML-driven reconstruction provides a powerful enhancement to SSPD performance.",
+  "authors": [
+    "Yoav Simhon",
+    "Alex Segal",
+    "Ofer Amrani",
+    "Erez Etzion"
+  ],
+  "published": "2025-11-01T11:12:25Z",
+  "updated": "2025-11-01T11:12:25Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

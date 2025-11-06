@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2511.02513v1",
+  "url": "https://arxiv.org/abs/2511.02513v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.02513v1.pdf",
+  "title": "Pulse shape simulation for the reduced charge collection layer in p-type   high-purity germanium detectors",
+  "abstract": "$P$-type high-purity germanium (HPGe) detectors are widely used across many scientific domains, and current data analysis methods have served well in many use cases. However, applications like low-background experiments that search for rare physics, such as dark matter, neutrinoless double-beta decay, and coherent elastic neutrino-nucleus scattering, could profit a lot from a more detailed understanding of the detector response close to the surface. The outer $n^+$ electrode of the $p$-type HPGe detector forms a layer with reduced charge collection, and events originating here can be a critical background source in such experiments. If the difference in detector pulse shape between detector surface and bulk events is known, it can be used to identify and veto these background events. However, a faithful simulation of the detector response in this surface region is difficult and has not been available as a standard method so far. We present a novel three-dimensional pulse shape simulation method for this reduced charge collection (RCC) layer. We have implemented this method as a new feature in the open-source simulation package \\emph{SolidStateDetectors.jl} and show a validation of the numerical simulation results with analytical calculations. An experimental study using a $p$-type HPGe detector also validates our approach. The current implementation supports $p$-type HPGe detectors of fairly arbitrary geometry, but is easily adaptable to $n$-type detectors by adjusting the impurity density profile of the layer. It should also be adaptable to other semiconductor materials in a straightforward fashion.",
+  "authors": [
+    "P. Zhang",
+    "W. Dai",
+    "Q. Zhang",
+    "F. Hagemann",
+    "O. Schulz",
+    "C. Alvarez-Garcia",
+    "L. Yang",
+    "Q. Yue",
+    "Z. Zeng",
+    "J. Cheng",
+    "H. Ma"
+  ],
+  "published": "2025-11-04T12:04:20Z",
+  "updated": "2025-11-04T12:04:20Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

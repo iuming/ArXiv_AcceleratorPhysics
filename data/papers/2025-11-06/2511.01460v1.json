@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2511.01460v1",
+  "url": "https://arxiv.org/abs/2511.01460v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.01460v1.pdf",
+  "title": "CaloClouds3: Ultra-Fast Geometry-Independent Highly-Granular Calorimeter   Simulation",
+  "abstract": "We present CaloClouds3, a model for the fast simulation of photon showers in the barrel of a high granularity detector. This iteration demonstrates for the first time how a pointcloud model can employ angular conditioning to replicate photons at all incident angles. Showers produced by this model can be used across the whole detector barrel, due to specially produced position agnostic training data. With this flexibility, the model is usable in a full simulation and reconstruction chain, which offers a further handle for evaluating physics performance of the model. As inference time is a crucial consideration for a generative model, the pre-processing and hyperparameters are aggressively optimised, achieving a speed up factor of two orders of magnitude over Geant4 at inference.",
+  "authors": [
+    "Thorsten Buss",
+    "Henry Day-Hall",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Katja Krüger",
+    "Anatolii Korol",
+    "Thomas Madlener",
+    "Peter McKeown",
+    "Martina Mozzanica",
+    "Lorenzo Valente"
+  ],
+  "published": "2025-11-03T11:21:21Z",
+  "updated": "2025-11-03T11:21:21Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
