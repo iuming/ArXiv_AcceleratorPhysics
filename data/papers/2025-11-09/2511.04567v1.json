@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2511.04567v1",
+  "url": "https://arxiv.org/abs/2511.04567v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.04567v1.pdf",
+  "title": "Machine Learning for Electron-Scale Turbulence Modeling in W7-X",
+  "abstract": "Constructing reduced models for turbulent transport is essential for accelerating profile predictions and enabling many-query tasks such as uncertainty quantification, parameter scans, and design optimization. This paper presents machine-learning-driven reduced models for Electron Temperature Gradient (ETG) turbulence in the Wendelstein 7-X (W7-X) stellarator. Each model predicts the ETG heat flux as a function of three plasma parameters: the normalized electron temperature radial gradient ($\\omega_{T_e}$), the ratio of normalized electron temperature and density radial gradients ($\\eta_e$), and the electron-to-ion temperature ratio ($\\tau$). We first construct models across seven radial locations using regression and an active machine-learning-based procedure. This process initializes models using low-cardinality sparse-grid training data and then iteratively refines their training sets by selecting the most informative points from a pre-existing simulation database. We evaluate the prediction capabilities of our models using out-of-sample datasets with over $393$ points per location, and $95\\%$ prediction intervals are estimated via bootstrapping to assess prediction uncertainty. We then investigate the construction of generalized reduced models, including a generic, position-independent model, and assess their heat flux prediction capabilities at three additional locations. Our models demonstrate robust performance and predictive accuracy comparable to the original reference simulations, even when applied beyond the training domain.",
+  "authors": [
+    "Ionut-Gabriel Farcas",
+    "Don Lawrence Carl Agapito Fernando",
+    "Alejandro Banon Navarro",
+    "Gabriele Merlo",
+    "Frank Jenko"
+  ],
+  "published": "2025-11-06T17:24:37Z",
+  "updated": "2025-11-06T17:24:37Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.CE",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

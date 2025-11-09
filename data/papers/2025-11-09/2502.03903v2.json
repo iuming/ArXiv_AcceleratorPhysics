@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2502.03903v2",
+  "url": "https://arxiv.org/abs/2502.03903v2",
+  "pdf_url": "https://arxiv.org/pdf/2502.03903v2.pdf",
+  "title": "Caribou - A versatile data acquisition system for silicon pixel detector   prototyping",
+  "abstract": "Caribou is a versatile data acquisition system used in multiple collaborative frameworks (CERN EP R&D, DRD3, AIDAinnova, Tangerine) for laboratory and test-beam qualification of novel silicon pixel detector prototypes. The system is built around a common hardware, firmware and software stack shared accross different projects, thereby drastically reducing the development effort and cost. It consists of a custom Control and Readout (CaR) board and a commercial Xilinx Zynq System-on-Chip (SoC) platform. The SoC platform runs a full Yocto distribution integrating the custom software framework (Peary) and a custom FPGA firmware built within a common firmware infrastructure (Boreal). The CaR board provides a hardware environment featuring various services such as powering, slow-control, and high-speed data links for the target detector prototype. Boreal and Peary, in turn, offer firmware and software architectures that enable seamless integration of control and readout for new devices. While the first version of the system used a SoC platform based on the ZC706 evaluation board, migration to a Zynq UltraScale+ architecture is progressing towards the support of the ZCU102 board and the ultimate objective of integrating the SoC functionality directly into the CaR board, eliminating the need for separate evaluation boards. This paper describes the Caribou system, focusing on the latest project developments and showcasing progress and future plans across its hardware, firmware, and software components.",
+  "authors": [
+    "Younes Otarid",
+    "Mathieu Benoit",
+    "Eric Buschmann",
+    "Hucheng Chen",
+    "Dominik Dannheim",
+    "Thomas Koffas",
+    "Ryan St-Jean",
+    "Simon Spannagel",
+    "Shaochun Tang",
+    "Tomas Vanat"
+  ],
+  "published": "2025-02-06T09:25:28Z",
+  "updated": "2025-11-06T11:14:42Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
