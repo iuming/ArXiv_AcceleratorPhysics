@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2511.03705v1",
+  "url": "https://arxiv.org/abs/2511.03705v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.03705v1.pdf",
+  "title": "Analytical Modeling of Asynchronous Event-Driven Readout Architectures   Using Queueing Theory",
+  "abstract": "Event-driven imagers and sensor arrays commonly employ asynchronous arbiter trees with a synchronous acknowledge to serialize requests. We present an analytical framework that models the root as an \\(M/D/1\\) queue with deterministic quantum \\(T\\) and implements losses at the sources through one-slot gating. The admitted rate, loss probability, utilization, and mean sojourn time are coupled by self-consistent relations; a closed form for \\(\\mathbb{E}[S_t]\\) separates fixed path delay \\(\\tau_0\\) from queueing effects. The framework matches post-layout results of a physical prototype over light to heavy traffic, reproducing saturation at \\(1/T\\) and the observed latency growth, while classical \\(M/G/1/K\\) and Engset-type abstractions diverge at higher occupancy. Because all relations are algebraic, they enable rapid sizing at design time, including the impact of partitioning into independent tiles: reducing fan-in lowers arbitration depth and \\(\\tau_0\\), decreases loss, and improves latency at fixed \\(T\\), with throughput adding across tiles. The model thereby links architectural parameters to performance metrics and supports selection of acknowledge period, tiling, and link count under practical constraints.",
+  "authors": [
+    "Dominik S. Górni",
+    "Grzegorz W. Deptuch"
+  ],
+  "published": "2025-11-05T18:37:45Z",
+  "updated": "2025-11-05T18:37:45Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
