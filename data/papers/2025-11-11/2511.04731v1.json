@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2511.04731v1",
+  "url": "https://arxiv.org/abs/2511.04731v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.04731v1.pdf",
+  "title": "Hardware-Accelerated GNN-based Hit Filtering for the Belle II Level-1   Trigger",
+  "abstract": "We present a hardware-accelerated hit filtering system employing Graph Neural Networks (GNNs) on Field-Programmable Gate Arrays (FPGAs) for the Belle II Level-1 Trigger. The GNN exploits spatial and temporal relationships among sense wire hits and is optimized for high-throughput hardware operation via quantization, pruning, and static graph-building. Sector-wise spatial parallelization permits scaling to full-detector coverage, satisfying stringent latency and throughput requirements. At a sustained throughput of 31.804 MHz, the system processes sense wire data in real-time and achieves detector-level background suppression with a measured latency of 632.4 ns while utilizing 35.65% of Look-Up Tables (LUTs), and 29.75% of Flip-Flops, with zero Digital Signal Processing (DSP) usage, as demonstrated in a prototype implementation for a single sector on an AMD Ultrascale XVCU190. Offline validation using Belle II data yields a background hit rejection of 83% while maintaining 95% signal hit efficiency. This work establishes hit-level GNN-based filtering on FPGAs as a scalable low-latency solution for real-time data reduction in high-luminosity collider conditions.",
+  "authors": [
+    "Greta Heine",
+    "Fabio Mayer",
+    "Marc Neu",
+    "Jürgen Becker",
+    "Torben Ferber"
+  ],
+  "published": "2025-11-06T19:00:00Z",
+  "updated": "2025-11-06T19:00:00Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
