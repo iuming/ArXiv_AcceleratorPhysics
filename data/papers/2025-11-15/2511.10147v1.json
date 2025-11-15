@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2511.10147v1",
+  "url": "https://arxiv.org/abs/2511.10147v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.10147v1.pdf",
+  "title": "Data-driven multi-species heat flux closures for two-stream-unstable plasmas with nonlinear sparse regression",
+  "abstract": "The dual aims of accuracy and computational efficiency in computational plasma physics lend themselves well to the use of fluid models. The first of these goals, however, is only satisfied for such models insofar as the utilized closure can capture the neglected kinetic physics -- something which has proven challenging for multi-scale collisionless processes. In a recent article [E. R. Ingelsten et al. (2025) J. Plasma Phys. 91 E64], we used the data-driven method of sparse regression to discover a novel heat flux closure for electrostatic phenomena. Here, we generalize the six-term closure model found in that work from single- to multi-species modeling. Using data from OSIRIS particle-in-cell simulations over a range of initial conditions, we then demonstrate how the unknown coefficients in front of the three most important terms in the closure can be estimated from box-averaged fluid quantities. Both neural networks and a newly developed framework for nonlinear sparse regression are showcased. The resulting models predict the heat flux for each species with a typical accuracy of 80-90 % and regularly account for 85-95 % of the rate of change in the pressure. The models are also compared with results from multi-species linear collisionless theory.",
+  "authors": [
+    "Emil R. Ingelsten",
+    "Madox C. McGrae-Menge",
+    "E. Paulo Alves",
+    "Istvan Pusztai"
+  ],
+  "published": "2025-11-13T10:03:00Z",
+  "updated": "2025-11-13T10:03:00Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
