@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2502.16141v2",
+  "url": "https://arxiv.org/abs/2502.16141v2",
+  "pdf_url": "https://arxiv.org/pdf/2502.16141v2.pdf",
+  "title": "A Hybrid Neural Architecture: Online Attosecond X-ray Characterization",
+  "abstract": "The emergence of high-repetition-rate x-ray free-electron lasers, such as SLAC's LCLS-II, serve as our canonical example for autonomous controls that necessitate high-throughput diagnostics paired with streaming computational pipelines capable of single-shot analysis with extremely low latency. We present the Deterministic Characterization with an Integrated Parallelizable Hybrid Resolver architecture, a hybrid machine learning framework designed for fast, accurate analysis of XFEL diagnostics using angular streaking-based sinogram images. This architecture integrates convolutional neural networks and bidirectional long short-term memory models to denoise input, identify x-ray sub-spike features, and extract sub-spike relative delays with sub-30 attosecond temporal resolution. Deployed on low-latency hardware, it achieves over 10~kHz throughput with \\SI{168.3}{\\micro\\second} inference latency, indicating scalability to 14~kHz with FPGA integration. By transforming regression tasks into classification problems and leveraging optimized error encoding, we achieve high precision with low-latency performance that is critical for real-time streaming event selection and experimental control feedback signals. This represents a key development in real-time control pipelines for next-generation autonomous science, generally, and high repetition-rate x-ray experiments in particular.",
+  "authors": [
+    "Jack Hirschman",
+    "Benjamin Mencer",
+    "Razib Obaid",
+    "Amanda Shackelford",
+    "Ryan Coffee"
+  ],
+  "published": "2025-02-22T08:30:11Z",
+  "updated": "2025-11-14T04:13:41Z",
+  "categories": [
+    "physics.app-ph",
+    "physics.acc-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.app-ph"
+}
