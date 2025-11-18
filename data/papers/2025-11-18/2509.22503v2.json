@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.22503v2",
+  "url": "https://arxiv.org/abs/2509.22503v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.22503v2.pdf",
+  "title": "A Quantum Algorithm for Nonlinear Electromagnetic Fluid Dynamics via Koopman-von Neumann Linearization",
+  "abstract": "To simulate plasma phenomena, large-scale computational resources have been employed in developing high-precision and high-resolution plasma simulations. One of the main obstacles in plasma simulations is the requirement of computational resources that scale polynomially with the number of spatial grids, which poses a significant challenge for large-scale modeling. To address this issue, this study presents a quantum algorithm for simulating the nonlinear electromagnetic fluid dynamics that govern space plasmas. We map it, by applying Koopman-von Neumann linearization, to the Schrödinger equation and evolve the system using Hamiltonian simulation via quantum singular value transformation. Our algorithm scales $O \\left(s N_x \\, \\mathrm{polylog} \\left( N_x \\right) T \\right)$ in time complexity with $s$, $N_x$, and $T$ being the spatial dimension, the number of spatial grid points per dimension, and the evolution time, respectively. Comparing the scaling $O \\left( s N_x^s \\left(T^{5/4}+T N_x\\right) \\right)$ for the classical method with the finite volume scheme, this algorithm achieves polynomial speedup in $N_x$. The space complexity of this algorithm is exponentially reduced from $O\\left( s N_x^s \\right)$ to $O\\left( s \\, \\mathrm{polylog} \\left( N_x \\right) \\right)$. Numerical experiments validate that accurate solutions are attainable with smaller $m$ than theoretically anticipated and with practical values of $m$ and $R$, underscoring the feasibility of the approach. As a practical demonstration, the method accurately reproduces the Kelvin-Helmholtz instability, underscoring its capability to tackle more intricate nonlinear dynamics. These results suggest that quantum computing can offer a viable pathway to overcome the computational barriers of multiscale plasma modeling.",
+  "authors": [
+    "Hayato Higuchi",
+    "Yuki Ito",
+    "Kazuki Sakamoto",
+    "Keisuke Fujii",
+    "Akimasa Yoshikawa"
+  ],
+  "published": "2025-09-26T15:44:51Z",
+  "updated": "2025-11-14T07:15:52Z",
+  "categories": [
+    "quant-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph"
+}

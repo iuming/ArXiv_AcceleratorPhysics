@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2507.22821v2",
+  "url": "https://arxiv.org/abs/2507.22821v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.22821v2.pdf",
+  "title": "Axisymmetric Gyrokinetic Simulation of ASDEX-Upgrade Scrape-off Layer Using a Conservative Implicit BGK Collision Operator",
+  "abstract": "Collisions play an important role in turbulence and transport of fusion plasmas. For kinetic simulations, as the collisionality increases in the domain of interest, the size of the time step to resolve the collisional physics can become overly restrictive in an explicit time integration scheme, leading to high computational cost. With the aim of overcoming such restriction, we have implemented an implicit Bhatnagar-Gross-Krook (BGK) collision operator for use in the discontinuous Galerkin (DG) full-f gyrokinetic solver within the Gkeyll framework, which, when combined with Gkeyll's traditional explicit time integrator for collisionless advection, can significantly increase the time step in gyrokinetic simulations of highly collisional regimes. To ensure conservation of density, momentum, and energy, we utilize an iterative scheme to correct the discretized approximation to the equilibrium Maxwellian distribution to which the BGK collision operator relaxes. We have further generalized the BGK infrastructure, both the implicit scheme and the correction routine, to handle cross species collisions. This improved implicit and conservative BGK operator is benchmarked against the more accurate but more computationally expensive Lenard-Bernstein-Dougherty (LBD) operator which has been utilized in prior studies with Gkeyll. The implicit BGK operator enables 2D axisymmetric simulations of the ASDEX-Upgrade scrape-off layer to run 56 times faster to completion than the simulations with the LBD operator, because the BGK operator is more robust and converges at a lower resolution than is required by the LBD operator. Additionally, in this more collisional limit, we demonstrate that the results of our simulations utilizing the implicit BGK operator agreed well with simulations utilizing the more computationally expensive LBD operator.",
+  "authors": [
+    "D. Liu",
+    "J. Juno",
+    "G. W. Hammett",
+    "A. Hakim",
+    "A. Shukla",
+    "M. Francisquez"
+  ],
+  "published": "2025-07-30T16:36:30Z",
+  "updated": "2025-11-13T04:28:30Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
