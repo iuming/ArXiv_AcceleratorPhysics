@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2511.13262v1",
+  "url": "https://arxiv.org/abs/2511.13262v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.13262v1.pdf",
+  "title": "Case study of a differentiable heterogeneous multiphysics solver for a nuclear fusion application",
+  "abstract": "This work presents a case study of a heterogeneous multiphysics solver from the nuclear fusion domain. At the macroscopic scale, an auto-differentiable ODE solver in JAX computes the evolution of the pulsed power circuit and bulk plasma parameters for a compressing Z Pinch. The ODE solver requires a closure for the impedance of the plasma load obtained via root-finding at every timestep, which we solve efficiently using gradient-based Newton iteration. However, incorporating non-differentiable production-grade plasma solvers like Gkeyll (a C/CUDA plasma simulation suite) into a gradient-based workflow is non-trivial. The ''Tesseract'' software addresses this challenge by providing a multi-physics differentiable abstraction layer made fully compatible with JAX (through the `tesseract_jax` adapter). This architecture ensures end-to-end differentiability while allowing seamless interchange between high-fidelity solvers (Gkeyll), neural surrogates, and analytical approximations for rapid, progressive prototyping.",
+  "authors": [
+    "Jack B. Coughlin",
+    "Archis Joglekar",
+    "Jonathan Brodrick",
+    "Alexander Lavin"
+  ],
+  "published": "2025-11-17T11:23:16Z",
+  "updated": "2025-11-17T11:23:16Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.CE",
+    "cs.LG",
+    "cs.MS",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

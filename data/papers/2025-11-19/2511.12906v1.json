@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.12906v1",
+  "url": "https://arxiv.org/abs/2511.12906v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.12906v1.pdf",
+  "title": "A robust method for calculating plasma waves absorption in magnetized plasmas and its implementation in the BORAY ray-tracing code",
+  "abstract": "This paper presents a robust numerical method for calculating the total absorption rate of electromagnetic waves in magnetized plasmas, capable of determining the absorption ratio among different plasma components. The method adopts Ronnmark's expressions for the plasma dispersion function, $Z(ζ)$, and the dielectric tensor, K, to overcome the convergence issues and computational inefficiency of the traditional Bessel function summation approach for evaluating the hot plasma dispersion relation, D, particularly at large $k_\\perp$. It has been implemented and validated across multiple frequency regimes, including ion cyclotron (ICRF), lower hybrid (LHRF), and electron cyclotron (ECRF) ranges of frequencies, with results benchmarked against conventional $Z(ζ)$ and Bessel function expansions. Integrated into the BORAY ray-tracing code, the method uses expressions derived from the anti-Hermitian part of the dielectric tensor to compute absorption ratios. This work extends the ray-tracing framework, providing a more reliable tool for wave heating simulations.",
+  "authors": [
+    "Wanying Yu",
+    "Huasheng Xie",
+    "Aohua Mao",
+    "Haojie Ma",
+    "Zhengxiong Wang"
+  ],
+  "published": "2025-11-17T02:54:33Z",
+  "updated": "2025-11-17T02:54:33Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
