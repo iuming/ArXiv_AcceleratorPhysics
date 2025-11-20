@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2511.13111v1",
+  "url": "https://arxiv.org/abs/2511.13111v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.13111v1.pdf",
+  "title": "NuBench: An Open Benchmark for Deep Learning-Based Event Reconstruction in Neutrino Telescopes",
+  "abstract": "Neutrino telescopes are large-scale detectors designed to observe Cherenkov radiation produced from neutrino interactions in water or ice. They exist to identify extraterrestrial neutrino sources and to probe fundamental questions pertaining to the elusive neutrino itself. A central challenge common across neutrino telescopes is to solve a series of inverse problems known as event reconstruction, which seeks to resolve properties of the incident neutrino, based on the detected Cherenkov light. In recent times, significant efforts have been made in adapting advances from deep learning research to event reconstruction, as such techniques provide several benefits over traditional methods. While a large degree of similarity in reconstruction needs and low-level data exists, cross-experimental collaboration has been hindered by a lack of diverse open-source datasets for comparing methods.   We present NuBench, an open benchmark for deep learning-based event reconstruction in neutrino telescopes. NuBench comprises seven large-scale simulated datasets containing nearly 130 million charged- and neutral-current muon-neutrino interactions spanning 10 GeV to 100 TeV, generated across six detector geometries inspired by existing and proposed experiments. These datasets provide pulse- and event-level information suitable for developing and comparing machine-learning reconstruction methods in both water and ice environments. Using NuBench, we evaluate four reconstruction algorithms - ParticleNeT and DynEdge, both actively used within the KM3NeT and IceCube collaborations, respectively, along with GRIT and DeepIce - on up to five core tasks: energy and direction reconstruction, topology classification, interaction vertex prediction, and inelasticity estimation.",
+  "authors": [
+    "Rasmus F. Orsoe",
+    "Stephan Meighen-Berger",
+    "Jeffrey Lazar",
+    "Jorge Prado",
+    "Ivan Mozun-Mateo",
+    "Aske Rosted",
+    "Philip Weigel",
+    "Arturo Llorente Anaya"
+  ],
+  "published": "2025-11-17T08:08:01Z",
+  "updated": "2025-11-17T08:08:01Z",
+  "categories": [
+    "hep-ex",
+    "cs.AI",
+    "cs.LG",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}
