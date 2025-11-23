@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2511.14894v1",
+  "url": "https://arxiv.org/abs/2511.14894v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.14894v1.pdf",
+  "title": "Redis-Based Streaming Architecture for Accelerator Beam Instrumentation DAQ Systems",
+  "abstract": "The Fermilab Acceleraor Division, Beam Instrumentation Department, is always adopting modern and current software methodologies for complex DAQ architectures. This paper highlights the Redis Adapter (RA) as the key software component enabling high performance, modular communication between digitizers and distributed control systems by leveraging Redis and containerization. The RA provides a unified, efficient interface between Redis based data streams and consumer systems. In the legacy architecture, digitized data flowed through the custom, UDP based Distributed Data Communication Protocol in the middle layer. In the current system, DDCP remains the ingestion path, while the RA serves as the decoupling layer. The proposed system replaces old VME digitizers with a SOM-based digitizer that communicates with Redis using the RA. The RA acts as both a performance-critical bridge and a protocol-agnostic adapter, ensuring compatibility with legacy control frameworks while enabling future scalability and modularity. This restructuring of the middle layer also helps the system achieve high throughput, reduce latency, and simplify the data path. Finally, we will demonstrate how RA is utilized in our two core products to deliver both legacy compatibility and future flexibility.",
+  "authors": [
+    "S. Joshi",
+    "D. Steinkamp"
+  ],
+  "published": "2025-11-18T20:33:32Z",
+  "updated": "2025-11-18T20:33:32Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
