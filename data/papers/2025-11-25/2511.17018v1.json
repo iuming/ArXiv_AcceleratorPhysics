@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2511.17018v1",
+  "url": "https://arxiv.org/abs/2511.17018v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.17018v1.pdf",
+  "title": "Improvements of the GPU Processing Framework for ALICE",
+  "abstract": "ALICE is the dedicated heavy ion experiment at the LHC at CERN and records lead-lead collisions at a rate of up to 50 kHz. The detector with the highest data rate of up to 3.4 TB/s is the TPC. ALICE performs the full online TPC processing corresponding to more than 95\\% of the total workload on GPUs, and when there is no beam in the LHC, the online computing farm's GPUs are used to speed up the offline processing. After the deployment of the first version of the online TPC processing needed for data taking, ALICE has implemented many improvements to its GPU processing framework. These include a run time compilation mode applying on the fly optimizations, improvements to parallelize / speed up the GPU compilation, debugging modes to guarantee reproducible and deterministic results in concurrent reconstruction, and framework features to leverage common components in the code of different detectors. The proceedings give an overview of the ALICE experience with GPUs in online and offline processing and present the latest GPU processing framework features.",
+  "authors": [
+    "David Rohr"
+  ],
+  "published": "2025-11-21T07:45:52Z",
+  "updated": "2025-11-21T07:45:52Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1051/epjconf/202533701362"
+}

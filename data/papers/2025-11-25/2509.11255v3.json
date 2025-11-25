@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2509.11255v3",
+  "url": "https://arxiv.org/abs/2509.11255v3",
+  "pdf_url": "https://arxiv.org/pdf/2509.11255v3.pdf",
+  "title": "A Geometrically Consistent Matching Framework for Side-Scan Sonar Mapping",
+  "abstract": "Robust matching of side-scan sonar imagery remains a fundamental challenge in seafloor mapping due to view-dependent backscatter, shadows, and geometric distortion. This paper proposes a novel matching framework that combines physical decoupling and geometric consistency to enhance correspondence accuracy and consistency across viewpoints. A multi-branch network, derived from the Lambertian reflection model, decomposes raw sonar images into seabed reflectivity, terrain elevation, and acoustic path loss. The reflectivity map, serving as a stable matching domain, is used in conjunction with a training-free matching pipeline combining SuperPoint and MINIMA-LightGlue. Geometry-aware outlier rejection leverages both terrain elevation and its physically derived shadow map to further remove mismatches in acoustically occluded and topographically inconsistent regions, thereby improving registration accuracy. Quantitative and visual evaluations against traditional, CNN-, and Transformer-based state-of-the-art methods demonstrate that our method achieves lower matching error, higher geometric consistency, and greater robustness to viewpoint variations. The proposed approach provides a data-efficient, physically interpretable solution for high-precision side-scan sonar image matching in complex seafloor environments.",
+  "authors": [
+    "Can Lei",
+    "Hayat Rajani",
+    "Nuno Gracias",
+    "Rafael Garcia",
+    "Huigang Wang"
+  ],
+  "published": "2025-09-14T12:54:42Z",
+  "updated": "2025-11-21T15:36:51Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.16412v1",
+  "url": "https://arxiv.org/abs/2511.16412v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.16412v1.pdf",
+  "title": "Algorithms and optimizations for global non-linear hybrid fluid-kinetic finite element stellarator simulations",
+  "abstract": "Predictive modeling of stellarator plasmas is crucial for advancing nuclear fusion energy, yet it faces unique computational difficulties. One of the main challenges is accurately simulating the dynamics of specific particle species that are not well captured by fluid models, which necessitates the use of hybrid fluid-kinetic models. The non-axisymmetric geometry of stellarators fundamentally couples the toroidal Fourier modes, in contrast to what happens in tokamaks, requiring different numerical and computational treatment.   This work presents a novel, globally coupled projection scheme inside the JOREK finite element framework. The approach ensures a self-consistent and physically accurate transfer of kinetic markers to the fluid grid, effectively handling the complex 3D mesh by constructing and solving a unified linear system that encompasses all toroidal harmonics simultaneously. To manage the computational complexity of this coupling, the construction of the system's matrix is significantly accelerated using the Fast Fourier Transform (FFT). The efficient localization of millions of particles is made possible by implementing a 3D R-Tree spatial index, which supports this projection and ensures computational tractability at scale.   On realistic Wendelstein 7-X stellarator geometries, the fidelity of the framework is rigorously shown. In sharp contrast to the uncoupled approaches' poor performance, quantitative convergence tests verify that the coupled scheme attains the theoretically anticipated spectral convergence.   This study offers a crucial capability for the predictive analysis and optimization of next-generation stellarator designs by developing a validated, high-fidelity computational tool.",
+  "authors": [
+    "Luca Venerando Greco"
+  ],
+  "published": "2025-11-20T14:35:04Z",
+  "updated": "2025-11-20T14:35:04Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.CE",
+    "cs.PF",
+    "math-ph",
+    "math.NA"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
