@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2511.17305v1",
+  "url": "https://arxiv.org/abs/2511.17305v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.17305v1.pdf",
+  "title": "Efficient calculation of magnetic fields from ferromagnetic materials near strong electromagnets, and application to stellarator coil optimization",
+  "abstract": "In fusion reactor design, steels under consideration for the blanket are ferromagnetic, so the steel's effect on the plasma physics must be examined. For efficient calculation of these fields, we can exploit the fact that the magnetic material gives a small perturbation relative to the fields from the electromagnetic coils and plasma. Moreover the magnetization is saturated due to the strong fields in typical fusion systems. These approximations significantly reduce the nonlinearity of the problem, so the magnetic materials can be described by an array of point dipoles of known magnitude, oriented in the direction of the coil and plasma field. The approach is verified by comparison to finite-element calculations with commercial software and shown to be accurate. As no linear or nonlinear solve is required, only evaluation of Biot-Savart-type integrals, the method here is significantly simpler to implement than other methods, and extremely fast. The method is compatible with arbitrary CAD geometry, and also allows rapid computation of the magnetic forces. We demonstrate adding the ferromagnetic effects to free-boundary MHD equilibrium calculations, assessing the effect on plasma properties such as confinement and stability. Moreover, it is straightforward to differentiate through the model to get the derivative of the field with respect to the electromagnet parameters. We thereby demonstrate gradient-based coil optimization for a quasi-isodynamic stellarator in which the field contribution from a ferromagnetic blanket is included. Even a significant steel volume is found to have little impact on the plasma physics properties, with the main effects being a slight destabilization of ballooning modes and a radial shift of the edge islands due to decrease in rotational transform. Both issues are corrected by minor reoptimization of the coil shapes to account for the field from the steel.",
+  "authors": [
+    "Matt Landreman",
+    "Humberto Torreblanca",
+    "Antoine Cerfon"
+  ],
+  "published": "2025-11-21T15:19:49Z",
+  "updated": "2025-11-21T15:19:49Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.app-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
