@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2508.14917v2",
+  "url": "https://arxiv.org/abs/2508.14917v2",
+  "pdf_url": "https://arxiv.org/pdf/2508.14917v2.pdf",
+  "title": "Scalable FPGA Framework for Real-Time Denoising in High-Throughput Imaging: A DRAM-Optimized Pipeline using High-Level Synthesis",
+  "abstract": "High-throughput imaging workflows, such as Parallel Rapid Imaging with Spectroscopic Mapping (PRISM), generate data at rates that exceed conventional real-time processing capabilities. We present a scalable FPGA-based preprocessing pipeline for real-time denoising, implemented via High-Level Synthesis (HLS) and optimized for DRAM-backed buffering. Our architecture performs frame subtraction and averaging directly on streamed image data, minimizing latency through burst-mode AXI4 interfaces. The resulting kernel operates below the inter-frame interval, enabling inline denoising and reducing dataset size for downstream CPU/GPU analysis. Validated under PRISM-scale acquisition, this modular FPGA framework offers a practical solution for latency-sensitive imaging workflows in spectroscopy and microscopy.",
+  "authors": [
+    "Weichien Liao"
+  ],
+  "published": "2025-08-15T13:22:29Z",
+  "updated": "2025-11-25T16:00:05Z",
+  "categories": [
+    "cs.AR",
+    "cs.CV",
+    "cs.DC",
+    "eess.IV",
+    "eess.SP",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.AR"
+}
