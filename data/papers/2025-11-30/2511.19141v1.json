@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2511.19141v1",
+  "url": "https://arxiv.org/abs/2511.19141v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.19141v1.pdf",
+  "title": "Automated RF Phase Adjustment for Beam Stabilization in the Fermilab Linac",
+  "abstract": "The Fermilab Linac experiences longitudinal beam phase drift, leading to increased particle loss, conventionally corrected through labor-intensive manual RF adjustments. This project explores machine learning-based automation for drift correction, employing a prototype-based classification approach. Our model utilizes a 34-dimensional feature set (RF settings and BPM readings) and leverages a 7x27 response matrix for system modeling. To overcome limited real-world data, we generate synthetic data, enhancing model training and generalizability. Custom loss functions, including a surrogate energy-consistent loss and a temporal smoothness constraint, ensure physically plausible drift predictions. The goal is a robust system for autonomous phase adjustments, ensuring stable beam acceleration and reduced manual intervention.",
+  "authors": [
+    "R. R. Chichili",
+    "J. A. Sulskis",
+    "R. Sharankova",
+    "B. Vamanan",
+    "S. Ravi"
+  ],
+  "published": "2025-11-24T14:06:20Z",
+  "updated": "2025-11-24T14:06:20Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "10.18429/JACoW-NAPAC2025-MOP011"
+}
