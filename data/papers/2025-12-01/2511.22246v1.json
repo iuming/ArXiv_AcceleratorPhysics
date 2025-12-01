@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2511.22246v1",
+  "url": "https://arxiv.org/abs/2511.22246v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.22246v1.pdf",
+  "title": "An interpretable unsupervised representation learning for high precision measurement in particle physics",
+  "abstract": "Unsupervised learning has been widely applied to various tasks in particle physics. However, existing models lack precise control over their learned representations, limiting physical interpretability and hindering their use for accurate measurements. We propose the Histogram AutoEncoder (HistoAE), an unsupervised representation learning network featuring a custom histogram-based loss that enforces a physically structured latent space. Applied to silicon microstrip detectors, HistoAE learns an interpretable two-dimensional latent space corresponding to the particle's charge and impact position. After simple post-processing, it achieves a charge resolution of $0.25\\,e$ and a position resolution of $3\\,μ\\mathrm{m}$ on beam-test data, comparable to the conventional approach. These results demonstrate that unsupervised deep learning models can enable physically meaningful and quantitatively precise measurements. Moreover, the generative capacity of HistoAE enables straightforward extensions to fast detector simulations.",
+  "authors": [
+    "Xing-Jian Lv",
+    "De-Xing Miao",
+    "Zi-Jun Xu",
+    "Jian-Chun Wang"
+  ],
+  "published": "2025-11-27T09:18:44Z",
+  "updated": "2025-11-27T09:18:44Z",
+  "categories": [
+    "hep-ex",
+    "cs.AI",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}

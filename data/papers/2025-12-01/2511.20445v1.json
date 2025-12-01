@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.20445v1",
+  "url": "https://arxiv.org/abs/2511.20445v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.20445v1.pdf",
+  "title": "Diffusion for Fusion: Designing Stellarators with Generative AI",
+  "abstract": "Stellarators are a prospective class of fusion-based power plants that confine a hot plasma with three-dimensional magnetic fields. Typically framed as a PDE-constrained optimization problem, stellarator design is a time-consuming process that can take hours to solve on a computing cluster. Developing fast methods for designing stellarators is crucial for advancing fusion research. Given the recent development of large datasets of optimized stellarators, machine learning approaches have emerged as a potential candidate. Motivated by this, we present an open inverse problem to the machine learning community: to rapidly generate high-quality stellarator designs which have a set of desirable characteristics. As a case study in the problem space, we train a conditional diffusion model on data from the QUASR database to generate quasisymmetric stellarator designs with desirable characteristics (aspect ratio and mean rotational transform). The diffusion model is applied to design stellarators with characteristics not seen during training. We provide evaluation protocols and show that many of the generated stellarators exhibit solid performance: less than 5% deviation from quasisymmetry and the target characteristics. The modest deviation from quasisymmetry highlights an opportunity to reach the sub 1% target. Beyond the case study, we share multiple promising avenues for generative modeling to advance stellarator design.",
+  "authors": [
+    "Misha Padidar",
+    "Teresa Huang",
+    "Andrew Giuliani",
+    "Marina Spivak"
+  ],
+  "published": "2025-11-25T16:17:12Z",
+  "updated": "2025-11-25T16:17:12Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2511.19230v1",
+  "url": "https://arxiv.org/abs/2511.19230v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.19230v1.pdf",
+  "title": "FPGA-Based Spill Regulation System for the Muon Delivery Ring at Fermilab",
+  "abstract": "The Muon to Electron Experiment (Mu2e) requires a uniform beam profile from the Muon Delivery Ring to meet their experimental needs. A specialized Spill Regulation System (SRS) has been developed to help achieve consistent spill uniformity. The system is based on a custom-designed carrier board featuring an Arria 10 SoC, capable of executing real-time feedback control. The FPGA processes beam pulses of approximately 200 ns every 1.695 $μ$s, allowing for continuous monitoring of the extracted spill intensity through fast bunch integration. The system directly controls three quadrupole magnets, which work in conjunction with sextupole magnets to achieve third-order resonant extraction. Furthermore, the board interfaces with Fermilab's Accelerator Control Network (ACNET), enabling operators to modify spill regulation settings in real-time via the control network while providing diagnostic waveforms. These waveforms help operators monitor the process and fine-tune the feedback mechanisms. This paper presents an overview of the board's architecture and its initial progress toward regulating beam extraction. This initial version of the regulation system aims to evaluate baseline performance to inform future system improvements.",
+  "authors": [
+    "J. R. Berlioz",
+    "D. Bracey",
+    "B. Fellenz",
+    "M. A. Ibrahim",
+    "V. Nagaslaev",
+    "A. Narayanan",
+    "P. Prieto",
+    "K. Danison-Fieldhouse",
+    "W. Sullivan"
+  ],
+  "published": "2025-11-24T15:43:35Z",
+  "updated": "2025-11-24T15:43:35Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "10.18429/JACoW-NAPAC2025-MOP042"
+}
