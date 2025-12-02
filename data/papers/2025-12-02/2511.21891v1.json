@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2511.21891v1",
+  "url": "https://arxiv.org/abs/2511.21891v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.21891v1.pdf",
+  "title": "GANDALF: A hardware-agnostic spectral solver for kinetic reduced MHD turbulence",
+  "abstract": "We present GANDALF, a JAX-based spectral solver for Kinetic Reduced MHD (KRMHD) turbulence designed to lower infrastructure barriers to plasma turbulence research. Existing production codes require specialized HPC infrastructure and compilation expertise, limiting participation to well-resourced institutions. GANDALF addresses this barrier by leveraging JAX's hardware abstraction to run transparently on laptops, desktop GPUs, and Apple Silicon without modification, enabling single-command installation via pip. We employ Fourier spectral methods for spatial discretization and Hermite spectral basis for velocity space, combined with an exponential integrating factor method that exactly propagates linear Alfvén waves, eliminating associated numerical stiffness. Verification demonstrates research-grade accuracy: linear Alfvén waves achieve machine precision (~10^{-15} relative error), the Orszag-Tang vortex conserves energy to 10^{-6} over two Alfvén times, and driven turbulence reproduces the expected k_perp^{-5/3} cascade spectrum. GANDALF enables rapid prototyping, parameter surveys, and educational applications on commodity hardware. The code complements rather than replaces established solvers like AstroGK and Viriato, prioritizing accessibility for researchers without HPC resources. By removing infrastructure barriers while maintaining spectral accuracy, GANDALF broadens participation in fundamental plasma turbulence research, particularly benefiting students, small research groups, and institutions in developing regions.",
+  "authors": [
+    "Anjor Kanekar"
+  ],
+  "published": "2025-11-26T20:14:48Z",
+  "updated": "2025-11-26T20:14:48Z",
+  "categories": [
+    "physics.plasm-ph",
+    "astro-ph.IM",
+    "astro-ph.SR",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

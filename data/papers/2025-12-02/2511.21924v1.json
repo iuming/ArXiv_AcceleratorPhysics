@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2511.21924v1",
+  "url": "https://arxiv.org/abs/2511.21924v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.21924v1.pdf",
+  "title": "FPGA-Accelerated Real-Time Beam Emission Spectroscopy Diagnostics at DIII-D Using the SLAC Neural Network Library for ML Inference",
+  "abstract": "Achieving reliable real-time control of tokamak plasmas is essential for sustaining high-performance operation in next-generation fusion reactors. A major challenge is the accurate and timely prediction of edge-localized modes (ELMs), especially in high-confinement regimes such as wide-pedestal quiescent H-mode. We present a hardware-accelerated machine learning (ML) inference system integrated into the RTSTAB processing node of the DIII-D real-time diagnostic and control infrastructure. The system uses an AMD/Xilinx KCU1500 FPGA to enable ultra low latency plasma state classification and ELM forecasting. Input features come from real-time Beam Emission Spectroscopy (BES), and the ML model is implemented as a dense neural network using the SLAC Neural Network Library (SNL).   A key capability is SNL dynamic parameter loading, which allows on-the-fly updates of neural network weights and biases without hardware resynthesis. This enables multiple classification tasks on a single FPGA design and supports adaptive control strategies that respond to evolving plasma conditions. By decoupling inference from fixed-weight configurations, the system supports continuous model refinement and seamless task switching during live operation.   The SNL-based inference engine is fully integrated with the FPGA in the DIII-D RTSTAB Plasma Control System (PCS), improving ELM avoidance, confinement, and operational stability. These results show the feasibility of embedding dynamically reconfigurable FPGA-based ML inference into real-time fusion diagnostic pipelines, providing a scalable and resilient path toward intelligent and autonomous plasma control in future magnetic confinement fusion devices.",
+  "authors": [
+    "Abhilasha Dave",
+    "James Russell",
+    "Mudit Mishra",
+    "Larry Ruckman",
+    "Keith Erickson",
+    "SangKyeun Kim",
+    "Semin Joung",
+    "Jalal Butt",
+    "Ryan Herbst",
+    "Ryan Coffee",
+    "David Smith",
+    "Egemen Kolemen"
+  ],
+  "published": "2025-11-26T21:31:51Z",
+  "updated": "2025-11-26T21:31:51Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

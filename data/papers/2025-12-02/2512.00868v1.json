@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2512.00868v1",
+  "url": "https://arxiv.org/abs/2512.00868v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.00868v1.pdf",
+  "title": "A Core Ontology for Particle Accelerators: Interoperable Data and Workflows Across Facilities",
+  "abstract": "We propose a small, shared core ontology for particle accelerators that provides a semantic backbone for interoperable data and workflows across facilities. The ontology names key device types, signals, parameters, and regions, and relates them through explicit properties (e.g., hasSetpoint, hasReadback, partOf). Each site contributes a lightweight facility bundle, a profile that maps local conventions into the shared vocabulary plus data slices that instantiate those mappings, without renaming channel addresses or changing existing systems. Using standard W3C technologies, the approach supports both sparse and rich descriptions. We demonstrate the idea on two beamline segments at different laboratories. A single semantic query is expressed once and evaluated against both knowledge bases, returning the locally correct PVs. The ontology thereby enables not only portable workflows but also interoperable data, since measurements and catalogs are annotated with shared semantics rather than facility-specific names. The framework complements, rather than replaces, existing middle layers and lattice/data standards, and it creates a stable foundation for reusable tools and agentic workflows.",
+  "authors": [
+    "Chris Tennant"
+  ],
+  "published": "2025-11-30T12:36:03Z",
+  "updated": "2025-11-30T12:36:03Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.DL"
+  ],
+  "primary_category": "physics.acc-ph"
+}

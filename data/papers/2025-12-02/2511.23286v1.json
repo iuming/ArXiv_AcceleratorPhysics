@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2511.23286v1",
+  "url": "https://arxiv.org/abs/2511.23286v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.23286v1.pdf",
+  "title": "High fidelity simulations of the multi-species Vlasov-Maxwell system with the Numerical Flow Iteration",
+  "abstract": "Validity of fluid models breaks down for non-thermal or weakly collisional plasmas which often occur e.g. in the solar wind. In these regimes one has to resort to modelling through the first-principle Vlasov-Maxwell system, but its six-dimensional phase-space dynamics, strong filamentation, and multi-scale structure make direct numerical simulation extremely demanding. Particle-In-Cell (PIC) methods remain the standard for ion-scale studies, yet their memory cost and intrinsic noise hinder accurate electron-scale simulations. In this paper, we introduce an alternative method based on an iterative-in-time approximation of characteristics. The approach reconstructs the phase-space dynamics from the time history of the electromagnetic fields and the initial distribution functions, enabling extremely high effective resolution far below the phase-space grid scale without storing or advecting high-dimensional data. Earlier work demonstrated this capability for the multi-species electrostatic Vlasov system. Here we discuss an extension of the method to the full Vlasov-Maxwell equations using a Hamiltonian splitting to advance the solution in a structure-preserving way while retaining the reduced memory footprint.",
+  "authors": [
+    "Rostislav-Paul Wilhelm",
+    "Fabio Bacchini"
+  ],
+  "published": "2025-11-28T15:43:16Z",
+  "updated": "2025-11-28T15:43:16Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2511.22440v1",
+  "url": "https://arxiv.org/abs/2511.22440v1",
+  "pdf_url": "https://arxiv.org/pdf/2511.22440v1.pdf",
+  "title": "Solving the six-dimensional Vlasov-Maxwell System with Active Flux and Splitting Methods",
+  "abstract": "Active Flux (AF) is a modified Finite Volume method that evolves additional Degrees of Freedom (DoF) located on the cell interfaces to compute high-order approximations to the numerical fluxes through the respective interface. We present an AF-based scheme for the simulation of collisionless plasmas described by the Vlasov equation coupled with Maxwell's equations. In order to limit the DoF in high dimensional settings we employ operator splitting. The resulting one-dimensional advection equations can be solved efficiently and with low implementation complexity, making it a very fast alternative to standard Finite Volume methods. We compare our scheme's performance with a related Finite Volume method based on the semi-Lagrangian approach. We find that, as a consequence of its compact stencil, the AF scheme has significantly lower dissipation and reduced anisotropy, and thus produces results on par with or even superior to the benchmark for standard test cases reproducing important kinetic phenomena, while also offering lower computational cost.",
+  "authors": [
+    "G. Grünwald",
+    "L. Hensel",
+    "M. Deisenhofer",
+    "S. Lautenbach",
+    "K. Kormann",
+    "R. Grauer"
+  ],
+  "published": "2025-11-27T13:27:07Z",
+  "updated": "2025-11-27T13:27:07Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
