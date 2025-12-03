@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.00359v1",
+  "url": "https://arxiv.org/abs/2512.00359v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.00359v1.pdf",
+  "title": "An Interpretable Operator-Learning Model for Electric Field Profile Reconstruction in Discharges Based on the EFISH Method",
+  "abstract": "Machine learning (ML) models have recently been used to reconstruct electric field distributions from EFISH signal profiles-the 'inverse EFISH problem'. This addresses the line-of-sight EFISH inaccuracy caused by the Gouy phase shift in focused beams. A key benefit of this approach is that the accuracy of the reconstructed profile can be directly checked via a 'forward transform' of the EFISH equation. Motivated by this latest success, the present study introduces a novel ML model with markedly improved performance. Based on a more powerful operator-learning architecture, it goes beyond the ANNs and CNNs employed previously. Termed Decoder-DeepONet (DDON), its main strength is learning function-to-function mappings, essential for recovering electric field profiles of unknown shape. The superior performance of DDON is exemplified via a comparison with our published CNN model and the feasibility of a classical mathematical method, as well as its application to both discharge simulations and experimental EFISH data from a nanosecond pulsed discharge. In almost all cases, the DDON model exhibits better generalizability, higher prediction accuracy, and wider applicability. Furthermore, the intrinsic nature of this operator-learning architecture renders it less sensitive to the exact location(s) of the acquired data, enabling electric field reconstruction even with seemingly 'incomplete' input profiles--an issue often accompanying poor signal sensitivity. We also employ Integrated Gradients (IG) to identify the signal regions most critical to reconstruction accuracy, providing guidance on the optimal sampling window for EFISH acquisition. Overall, we believe that the DDON model is a robust and comprehensive model which can be readily applied to reconstruct 'bell-shaped' electric field profiles with an existing axis of symmetry, especially in non-equilibrium plasmas.",
+  "authors": [
+    "Zhijian Yang",
+    "Edwin Setiadi Sugeng",
+    "Mhedine Alicherif",
+    "Tat Loon Chng"
+  ],
+  "published": "2025-11-29T07:05:07Z",
+  "updated": "2025-11-29T07:05:07Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
