@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2408.11709v3",
+  "url": "https://arxiv.org/abs/2408.11709v3",
+  "pdf_url": "https://arxiv.org/pdf/2408.11709v3.pdf",
+  "title": "SynradG4: A Geant4-Based Extension for Synchrotron Radiation Background Studies in the ePIC Detector at the Electron-Ion Collider",
+  "abstract": "The Electron-Ion Collider (EIC) will operate at high luminosity with multi-GeV, high-current electron beams, resulting in substantial synchrotron radiation (SR) emission in the electron storage ring (ESR). A detailed understanding of SR photon transport in the complex three-dimensional interaction region (IR) geometry is critical for estimating backgrounds in the ePIC detector and for developing effective shielding and masking strategies.   This paper presents SynradG4, an EIC-specific extension of Geant4 designed for fast photon tracking in vacuum using established SR reflection and rough surface scattering models. SynradG4 integrates the photon reflection models of Synrad+ within the Geant4 geometry and field framework, while disabling all bulk matter interactions to achieve high-statistics transport through the 50-m-long IR vacuum system. Absorbed photon coordinates are then passed to a second-stage DD4hep simulation, where full electromagnetic processes such as photoabsorption, Compton scattering, Rayleigh scattering, and fluorescence are enabled for propagation through the beam pipe and detector materials.   SynradG4 is not intended to replace general SR simulation codes; rather, it complements them by providing the workflow and geometry integration capabilities needed for EIC-specific background studies. Benchmark tests against Synrad+, Synrad3D, and the native Geant4 X-ray reflection model demonstrate excellent agreement for specular and diffuse reflection regimes. Using the full IR geometry and machine lattice, we present the first SR background estimates for the ePIC detector and evaluate the impact of potential SR masks.",
+  "authors": [
+    "Andrii Natochii"
+  ],
+  "published": "2024-08-21T15:33:47Z",
+  "updated": "2025-12-02T21:41:14Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.acc-ph"
+}
