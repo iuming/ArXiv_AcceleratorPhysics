@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2512.03914v1",
+  "url": "https://arxiv.org/abs/2512.03914v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.03914v1.pdf",
+  "title": "Integrating High Performance In-Memory Data Streaming and In-Situ Visualization in Hybrid MPI+OpenMP PIC MC Simulations Towards Exascale",
+  "abstract": "Efficient simulation of complex plasma dynamics is crucial for advancing fusion energy research. Particle-in-Cell (PIC) Monte Carlo (MC) simulations provide insights into plasma behavior, including turbulence and confinement, which are essential for optimizing fusion reactor performance. Transitioning to exascale simulations introduces significant challenges, with traditional file input/output (I/O) inefficiencies remaining a key bottleneck. This work advances BIT1, an electrostatic PIC MC code, by improving the particle mover with OpenMP task-based parallelism, integrating the openPMD streaming API, and enabling in-memory data streaming with ADIOS2's Sustainable Staging Transport (SST) engine to enhance I/O performance, computational efficiency, and system storage utilization. We employ profiling tools such as gprof, perf, IPM and Darshan, which provide insights into computation, communication, and I/O operations. We implement time-dependent data checkpointing with the openPMD API enabling seamless data movement and in-situ visualization for real-time analysis without interrupting the simulation. We demonstrate improvements in simulation runtime, data accessibility and real-time insights by comparing traditional file I/O with the ADIOS2 BP4 and SST backends. The proposed hybrid BIT1 openPMD SST enhancement introduces a new paradigm for real-time scientific discovery in plasma simulations, enabling faster insights and more efficient use of exascale computing resources.",
+  "authors": [
+    "Jeremy J. Williams",
+    "Stefan Costea",
+    "Daniel Medeiros",
+    "Jordy Trilaksono",
+    "Pratibha Hegde",
+    "David Tskhakaya",
+    "Leon Kos",
+    "Ales Podolnik",
+    "Jakub Hromadka",
+    "Kevin A. Huck",
+    "Allen D. Malony",
+    "Frank Jenko",
+    "Erwin Laure",
+    "Stefano Markidis"
+  ],
+  "published": "2025-12-03T15:59:14Z",
+  "updated": "2025-12-03T15:59:14Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.DC",
+    "cs.PF"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
