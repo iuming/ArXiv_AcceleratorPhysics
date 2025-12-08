@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2512.04447v1",
+  "url": "https://arxiv.org/abs/2512.04447v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.04447v1.pdf",
+  "title": "GPU-Portable Real-Space Density Functional Theory Implementation on Unified-Memory Architectures",
+  "abstract": "We present a GPU-portable implementation of a real-space density functional theory (DFT) code ``QUMASUN'' and benchmark it on the new Plasma Simulator featuring Intel Xeon 6980P CPUs, and AMD MI300A GPUs. Additional tests were performed on an NVIDIA GH200 GPU. In particular MI300A supports unified memory and GH200 supports coherent memory interconnect, simplifying GPU porting. A lightweight C++ lambda-based layer enables CPU, CUDA, and HIP execution without OpenMP/OpenACC preprocessor directives. For diamond (216 atoms) and tungsten (128 atoms) systems, MI300A and GH200 achieve 2.0-2.8 $\\times$ and 2.3-2.4 $\\times$ speedups over a 256-core Xeon node. The compute-bound kernels, which are fast Fourier transforms (FFT), dense matrix-matrix multiplications (GEMM) and eigenvalue solver, show substantial acceleration on both GPUs, indicating that the present GPU-portable approach can benefit a wide range of plasma-fusion simulation codes beyond DFT.",
+  "authors": [
+    "Atsushi M. Ito"
+  ],
+  "published": "2025-12-04T04:37:33Z",
+  "updated": "2025-12-04T04:37:33Z",
+  "categories": [
+    "physics.comp-ph",
+    "cond-mat.mtrl-sci",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

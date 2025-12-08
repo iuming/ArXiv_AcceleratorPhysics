@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2512.05532v1",
+  "url": "https://arxiv.org/abs/2512.05532v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.05532v1.pdf",
+  "title": "CryoDE: a Digital Cryogenic Detector Emulator for Microwave SQUID Multiplexed Systems",
+  "abstract": "Simultaneous readout of large-scale cryogenic detector arrays relies on multiplexing schemes such as the FDM (Frequency-Division Multiplexing) with microwave SQUID multiplexers and highly customized readout electronics. In traditional detector systems, where mixed-signal ASICs are used in detector front-ends and typically provide a digital interface, HIL (Hardware-in-the-Loop) testing can be readily implemented by reusing the existing digital logic of the front-end for emulation purposes. Such straightforward emulation is not possible for FDM low-temperature detectors, where the sensor signal is encoded in a high-frequency microwave carrier via a two-stage modulation scheme depending on the cryogenic resonators and the SQUID response. To address this challenge, we present CryoDE, a digital cryogenic-detector emulator for microwave SQUID multiplexed detector systems. CryoDE generates the encoded detector signals, including realistic pulse responses, enabling full HIL testing of the room-temperature DAQ system without requiring the cryogenic hardware. This resource-efficient FPGA-based detector twin integrates seamlessly into existing DAQ systems and allows experiment-specific adjustment of detector-signal parameters. We describe the internal architecture and capabilities of CryoDE within our custom HIL framework and demonstrate its use in evaluating the performance of real-time signal processing firmware optimized for different microwave SQUID multiplexed cryogenic-detector experiments.",
+  "authors": [
+    "Timo Muscheid",
+    "Daniel Crovo",
+    "Robert Gartmann",
+    "Eduardo Gerlein",
+    "Oliver Sander",
+    "Sebastian Kempf",
+    "Luis E. Ardila-Perez"
+  ],
+  "published": "2025-12-05T08:44:06Z",
+  "updated": "2025-12-05T08:44:06Z",
+  "categories": [
+    "physics.ins-det",
+    "eess.SP"
+  ],
+  "primary_category": "physics.ins-det"
+}
