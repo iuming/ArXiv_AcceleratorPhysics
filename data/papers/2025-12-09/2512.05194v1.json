@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.05194v1",
+  "url": "https://arxiv.org/abs/2512.05194v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.05194v1.pdf",
+  "title": "Lagrangian versus Eulerian Methods for Toroidally-Magnetized Isothermal Disks",
+  "abstract": "A number of simulations have seen the emergence of strongly-toroidally-magnetized accretion disks from interstellar medium inflows. Recently, Guo et al. 2025 (G25) studied an idealized test problem of toroidally-magnetized disks in isothermal ideal MHD with an Eulerian static-mesh method, and argued the midplane behavior changes qualitatively (with a significant loss of toroidal magnetic flux) when the the thermal scale-length is resolved ($Δx < H_{\\rm thermal}$). We rerun the G25 test problem with two Lagrangian methods: meshless finite-mass, and meshless finite-volume. We show that Lagrangian methods reproduce the high-resolution ($Δx \\ll H_{\\rm thermal}$) Eulerian G25 results. At low resolution ($Δx \\gg H_{\\rm thermal}$), behaviors differ: Lagrangian methods still lose flux and evolve 'as close as possible' to the converged solution, while Eulerian methods show no evolution. We argue this difference in convergence behavior is related to the ability of Lagrangian codes to follow flows to an arbitrarily thin midplane layer, analogous to the well-studied difference in Jeans fragmentation problems. This and results from other higher-resolution simulations and different codes suggest that the sustained midplane toroidal fields seen in recent Lagrangian multi-scale, multi-physics simulations cannot be a numerical resolution effect, and some physical difference between those simulations and the G25 test problem explains their different behaviors.",
+  "authors": [
+    "Yashvardhan Tomar",
+    "Philip F. Hopkins"
+  ],
+  "published": "2025-12-04T19:01:28Z",
+  "updated": "2025-12-04T19:01:28Z",
+  "categories": [
+    "astro-ph.HE",
+    "astro-ph.GA",
+    "astro-ph.IM",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}

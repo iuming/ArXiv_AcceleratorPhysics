@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.05298v1",
+  "url": "https://arxiv.org/abs/2512.05298v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.05298v1.pdf",
+  "title": "A Conservative Discontinuous Galerkin Algorithm for Particle Kinetics on Smooth Manifolds",
+  "abstract": "A novel, conservative discontinuous Galerkin algorithm is presented for particle kinetics on manifolds. The motion of particles on the manifold is represented using using both canonical and non-canonical Hamiltonian formulations. Our schemes apply to either formulations, but the canonical formulation results in a particularly efficient scheme that also conserves particle density and energy exactly. The collisionless update is coupled to a Bhatnagar-Gross-Krook (BGK) collision operator that provides a simplified model for relaxation to local thermodynamic equilibrium. An iterative scheme is constructed to ensure collisional invariants (density, momentum and energy) are preserved numerically. Rotation of the manifold is incorporated by modifying the Hamiltonian while ensuring a canonical formulation. Several test problems, including a kinetic version of the classical Sod-shock problem, Kelvin-Helmholtz instability on the surfaces of a sphere and a paraboloid, with and without rotations, is presented. A prospectus for further development of this approach to simulation of kinetic theory in general relativity is presented.",
+  "authors": [
+    "Grant Johnson",
+    "Ammar Hakim",
+    "James Juno"
+  ],
+  "published": "2025-12-04T22:33:37Z",
+  "updated": "2025-12-04T22:33:37Z",
+  "categories": [
+    "physics.comp-ph",
+    "gr-qc",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

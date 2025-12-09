@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2511.15937v2",
+  "url": "https://arxiv.org/abs/2511.15937v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.15937v2.pdf",
+  "title": "Asymptotic-preserving semi-implicit finite volume scheme for Extended Magnetohydrodynamics",
+  "abstract": "A Finite Volume (FV) scheme is developed for solving the extended magnetohydrodynamic (XMHD) equations, yielding accurate results in the ideal, resistive, and Hall MHD limits. This is accomplished by first re-writing the XMHD equations such that it allows the algorithm to retain the use of ideal MHD Riemann solvers and the constrained transport method to preserve divergence-free magnetic fields. Incorporation of electron inertia and displacement current introduces additional numerical stiffness which motivates a semi-implicit FV scheme that re-formulates the XMHD model as a relaxation system. The equations are then advanced in time using an explicit 2nd-order Runge-Kutta scheme with operator splitting applied to the implicit source term updates at each sub-stage. For additional numerical stability, a density-dependent slope limiter is implemented to increase flux diffusivity at low density regions where non-ideal effects become significant. The algorithm is subsequently implemented in a scalable adaptive mesh refinement (AMR) framework. As the new algorithm retains many aspects of the ideal MHD formulations, it asymptotes naturally to the ideal MHD limit. Moreover, it shows promising results at the resistive and Hall MHD limits. This is verified against reference test problems for ideal, resistive and Hall MHD.",
+  "authors": [
+    "Yi Han Toh",
+    "Joshua Dolence",
+    "Karthik Duraisamy"
+  ],
+  "published": "2025-11-20T00:02:46Z",
+  "updated": "2025-12-05T17:11:35Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

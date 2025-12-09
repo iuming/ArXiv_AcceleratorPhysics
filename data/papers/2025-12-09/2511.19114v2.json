@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2511.19114v2",
+  "url": "https://arxiv.org/abs/2511.19114v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.19114v2.pdf",
+  "title": "Physics-informed Neural Operator Learning for Nonlinear Grad-Shafranov Equation",
+  "abstract": "As artificial intelligence emerges as a transformative enabler for fusion energy commercialization, fast and accurate solvers become increasingly critical. In magnetic confinement nuclear fusion, rapid and accurate solution of the Grad-Shafranov equation (GSE) is essential for real-time plasma control and analysis. Traditional numerical solvers achieve high precision but are computationally prohibitive, while data-driven surrogates infer quickly but fail to enforce physical laws and generalize poorly beyond training distributions. To address this challenge, we present a Physics-Informed Neural Operator (PINO) that directly learns the GSE solution operator, mapping shape parameters of last closed flux surface to equilibrium solutions for realistic nonlinear current profiles. Comprehensive benchmarking of five neural architectures identifies the novel Transformer-KAN (Kolmogorov-Arnold Network) Neural Operator (TKNO) as achieving highest accuracy (0.25% mean L2 relative error) under supervised training (only data-driven). However, all data-driven models exhibit large physics residuals, indicating poor physical consistency. Our unsupervised training can reduce the residuals by nearly four orders of magnitude through embedding physics-based loss terms without labeled data. Critically, semi-supervised learning--integrating sparse labeled data (100 interior points) with physics constraints--achieves optimal balance: 0.48% interpolation error and the most robust extrapolation performance (4.76% error, 8.9x degradation factor vs 39.8x for supervised models). Accelerated by TensorRT optimization, our models enable millisecond-level inference, establishing PINO as a promising pathway for next-generation fusion control systems.",
+  "authors": [
+    "Siqi Ding",
+    "Zitong Zhang",
+    "Guoyang Shi",
+    "Xingyu Li",
+    "Xiang Gu",
+    "Yanan Xu",
+    "Huasheng Xie",
+    "Hanyue Zhao",
+    "Yuejiang Shi",
+    "Tianyuan Liu"
+  ],
+  "published": "2025-11-24T13:46:38Z",
+  "updated": "2025-12-05T06:26:54Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
