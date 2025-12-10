@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2507.03245v2",
+  "url": "https://arxiv.org/abs/2507.03245v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.03245v2.pdf",
+  "title": "Fast prediction of plasma instabilities with sparse-grid-accelerated optimized dynamic mode decomposition",
+  "abstract": "Parametric data-driven reduced-order models (ROMs) that embed dependencies in a large number of input parameters are crucial for enabling many-query tasks in large-scale problems. These tasks, including design optimization, control, and uncertainty quantification, are essential for developing digital twins in real-world applications. However, standard grid-based data generation methods are computationally prohibitive due to the curse of dimensionality. This paper investigates efficient training of parametric data-driven ROMs using sparse grid interpolation with (L)-Leja points, specifically targeting scenarios with higher-dimensional input parameter spaces. (L)-Leja points are nested and exhibit slow growth, resulting in sparse grids with low cardinality in low-to-medium dimensional settings, making them ideal for large-scale, computationally expensive problems. Focusing on gyrokinetic simulations of plasma micro-instabilities in fusion experiments as a representative real-world application, we construct parametric ROMs for the full 5D gyrokinetic distribution function via optimized dynamic mode decomposition (optDMD) and sparse grids based on (L)-Leja points. We perform detailed experiments in two scenarios: First, the Cyclone Base Case benchmark assesses optDMD ROM prediction capabilities beyond training time horizons and across variations in the binormal wave number. Second, for a real-world electron-temperature-gradient-driven micro-instability simulation with six input parameters, we demonstrate that a predictive parametric optDMD ROM that is up to three orders of magnitude cheaper to evaluate can be constructed using only 28 high-fidelity gyrokinetic simulations, enabled by the use of sparse grids. In the broader context of fusion research, these results demonstrate the potential of sparse grid-based parametric ROMs to enable otherwise intractable many-query tasks.",
+  "authors": [
+    "Kevin Gill",
+    "Ionut-Gabriel Farcas",
+    "Silke Glas",
+    "Benjamin J. Faber"
+  ],
+  "published": "2025-07-04T01:34:54Z",
+  "updated": "2025-12-05T23:41:26Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.CE",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

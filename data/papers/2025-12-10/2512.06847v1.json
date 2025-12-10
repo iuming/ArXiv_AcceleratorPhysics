@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2512.06847v1",
+  "url": "https://arxiv.org/abs/2512.06847v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.06847v1.pdf",
+  "title": "FGE: A Fast Free-Boundary Grad-Shafranov Evolutive Solver",
+  "abstract": "Accurate and rapid simulation of the free boundary tokamak plasma equilibrium evolution is essential for modern plasma control, stability analysis, and scenario development. This paper presents the Free-Boundary Grad-Shafranov Evolutive (FGE) code, a highly flexible and control-oriented solver designed to address the challenges posed by advanced plasma configurations across a range of devices. FGE evolved from the FBT and LIUQE codes and is part of the MEQ suite, sharing many of the low-level optimized functions. It self-consistently solves the free-boundary Grad-Shafranov equation coupled with circuit equations for external conductors and models for plasma profile evolution. The code implements a fully non-linear, Newton-based framework with multiple, highly optimized solver options, state representations, and residual formulations that enable rapid computation across different simulation setups. A key capability is the self-consistent integration of various 0D and 1D current diffusion equations (CDEs) to model the resistive evolution of the plasma current profile as well as the ability to model plasmas with multiple magnetic axes (Doublets). Furthermore, FGE allows to linearize the plasma dynamics around a given equilibrium to generate a state-space model suitable for controller design and analysis. Numerical studies are presented demonstrating the code's speed of convergence and validating its performance against experimental data. Furthermore, benchmarks against the RAPTOR and KINX codes for profile evolution and vertical growth rate estimates are presented highlighting FGE's capabilities for both prediction and analysis.",
+  "authors": [
+    "Cosmas Heiß",
+    "Antoine Merle",
+    "Francesco Carpanese",
+    "Federico Felici",
+    "Craig Donner",
+    "Stefano Marchioni",
+    "Alessandro Mari",
+    "Olivier Sauter"
+  ],
+  "published": "2025-12-07T14:00:44Z",
+  "updated": "2025-12-07T14:00:44Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

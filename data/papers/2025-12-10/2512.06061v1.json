@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2512.06061v1",
+  "url": "https://arxiv.org/abs/2512.06061v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.06061v1.pdf",
+  "title": "GPU acceleration of optical photon propagation in low photon yield applications: Opticks for the Electron Ion Collider",
+  "abstract": "The bulk of time spent in the simulation of Cherenkov and other scintillation detectors is spent on optical-photon transport, i.e. ray tracing, a task that GPUs are uniquely qualified to perform. We present EIC-Opticks, a fork of Opticks, which uses event aggregation to drastically accelerate photon transport simulation for low-to-moderate photon yield experiments. During the full Geant4 Monte Carlo simulation of a given detector, optical photon simulation is performed on GPU(s) using the NVIDIA OptiX framework. We validate this approach using the ePIC pfRICH detector. We find GPU and CPU simulations in excellent agreement. For $5\\times 10^4$ electrons with a momentum of $p=5~\\mathrm{MeV}/c$ in the test case of the pfRICH detector, EIC-Opticks shows an order-of-magnitude speedup over multi-threaded Geant4, and a factor of up to 161$\\pm$3 over single-threaded execution. In the case of low-to-moderate applications event aggregation reduces the per-photon simulation time from $\\sim60\\,μ\\mathrm{s}$ for single events to $\\sim20\\,\\mathrm{ns}$ with batching, a factor of $\\sim3000$. In order to make EIC-Opticks easily installable, we authored a Spack package that makes it possible to install it with a single command. Additionally, a Docker container is provided for users with EIC-Opticks installed. EIC-Opticks provides guardrails for common pitfalls (e.g. nested volume conversion, ray tracing setting optimization).",
+  "authors": [
+    "Gabor Galgoczi",
+    "Kolja Kauder",
+    "Maxim Potekhin",
+    "Sakib Rahman",
+    "Dmitri Smirnov",
+    "Torre Wenaus"
+  ],
+  "published": "2025-12-05T18:21:33Z",
+  "updated": "2025-12-05T18:21:33Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "nucl-ex",
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
