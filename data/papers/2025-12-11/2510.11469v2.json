@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.11469v2",
+  "url": "https://arxiv.org/abs/2510.11469v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.11469v2.pdf",
+  "title": "Optimised neural networks for online processing of ATLAS calorimeter data on FPGAs",
+  "abstract": "A study of neural network architectures for the reconstruction of the energy deposited in the cells of the ATLAS liquid-argon calorimeters under high pile-up conditions expected at the HL-LHC is presented. These networks are designed to run on the FPGA-based readout hardware of the calorimeters under strict size and latency constraints. Several architectures, including Dense, Recurrent (RNN), and Convolutional (CNN) neural networks, are optimised using a Bayesian procedure that balances energy resolution against network size. The optimised Dense, CNN, and combined Dense+RNN architectures achieve a transverse energy resolution of approximately 80 MeV, outperforming both the optimal filtering (OF) method currently in use and RNNs of similar complexity. A detailed comparison across the full dynamic range shows that Dense, CNN, and Dense+RNN accurately reproduce the energy scale, while OF and RNNs underestimate the energy. Deep Evidential Regression is implemented within the Dense architecture to address the need for reliable per-event energy uncertainties. This approach provides predictive uncertainty estimates with minimal increase in network size. The predicted uncertainty is found to be consistent, on average, with the difference between the true deposited energy and the predicted energy.",
+  "authors": [
+    "Georges Aad",
+    "Raphael Bertrand",
+    "Lauri Laatu",
+    "Emmanuel Monnier",
+    "Arno Straessner",
+    "Nairit Sur",
+    "Johann C. Voigt"
+  ],
+  "published": "2025-10-13T14:38:56Z",
+  "updated": "2025-12-09T10:52:37Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

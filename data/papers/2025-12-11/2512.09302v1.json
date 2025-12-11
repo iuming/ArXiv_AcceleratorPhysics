@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2512.09302v1",
+  "url": "https://arxiv.org/abs/2512.09302v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.09302v1.pdf",
+  "title": "Real-Time-Capable Betatron Tune Measurement from Schottky Spectra Using Deep Learning and Uncertainty-Aware Kalman Filtering",
+  "abstract": "Betatron tune measurement is essential for beam control in compact proton-therapy synchrotrons, yet conventional peak-detection techniques are not robust under the low signal-to-noise ratio (SNR) conditions typical of these machines. This work presents a lightweight convolutional neural network that performs real-time tune extraction from Schottky spectra with sub-millisecond inference latency and calibrated uncertainty estimates. The model uses attention-based pooling for reliable peak localization and a dual-branch architecture that jointly predicts the tune and its associated uncertainty. Trained with a Laplace negative log-likelihood loss, it produces uncertainty estimates whose magnitude tracks the instantaneous prediction error, which enables uncertainty-aware Kalman filtering for temporal smoothing. Experiments on a large synthetic dataset spanning SNR levels from 0 to $-20$\\,dB demonstrate substantial performance gains over traditional peak-detection baselines, while the Kalman filter further suppresses transient outliers in time-series operation. Preliminary validation on operational beam data confirms stable tune tracking without retraining. With only about $2.0\\times 10^{4}$ trainable parameters and real-time inference on commodity GPU hardware, the proposed diagnostic offers a practical solution for rapid and accurate betatron tune monitoring in compact medical synchrotrons and similar accelerators.",
+  "authors": [
+    "Peihan Sun",
+    "Manzhou Zhang",
+    "Renxian Yuan",
+    "Deming Li",
+    "Jian Dong",
+    "Ying Shi"
+  ],
+  "published": "2025-12-10T04:03:22Z",
+  "updated": "2025-12-10T04:03:22Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

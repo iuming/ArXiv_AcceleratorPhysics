@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2512.08603v1",
+  "url": "https://arxiv.org/abs/2512.08603v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.08603v1.pdf",
+  "title": "Pulse Shape Discrimination for Germanium Detectors using Variational Quantum Circuits",
+  "abstract": "Pulse shape discrimination (PSD) is a critical component in background rejection for neutrinoless double-beta decay and dark matter searches using Broad Energy Germanium (BEGe) detectors. To date, advanced discrimination has relied on Deep Learning approaches employing e.g. Denoising Autoencoders (DAE) and Convolutional Neural Networks (CNN). While effective, these models require tens of thousands of parameters and heavy pre-processing. In this work, we present, to the best of our knowledge, the first application of Quantum Machine Learning (QML) to real, experimental pulse waveforms from a germanium detector. We propose a quantum-classical hybrid approach using Variational Quantum Circuits (VQC) with amplitude encoding. By mapping the 1024-sample waveforms directly into a 10-qubit Hilbert space, we demonstrate that a VQC with only 302 trainable parameters achieves a receiver operating characteristic (ROC) area under the curve (AUC) of 0.98 and a global accuracy of 97.1%. This result demonstrates that even in the current Noisy Intermediate-Scale Quantum (NISQ) era, quantum models can match the performance of state-of-the-art classical baselines while reducing model complexity by over two orders of magnitude. Furthermore, we envision a scenario where future quantum sensors transmit quantum states directly to such processing units, exploiting the exponentially large Hilbert space in a natively quantum pipeline.",
+  "authors": [
+    "Fabrizio Napolitano"
+  ],
+  "published": "2025-12-09T13:45:44Z",
+  "updated": "2025-12-09T13:45:44Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
