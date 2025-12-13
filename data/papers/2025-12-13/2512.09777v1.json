@@ -1,0 +1,38 @@
+{
+  "arxiv_id": "2512.09777v1",
+  "url": "https://arxiv.org/abs/2512.09777v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.09777v1.pdf",
+  "title": "Machine Learning Optimization of BEGe Detector Event Selection in the VIP Experiment",
+  "abstract": "The VIP collaboration operates a Broad Energy Germanium detector at the Gran Sasso National Laboratory to measure radiation in the few keV to 100 keV range, aiming to search for spontaneous collapse induced radiation and atomic transitions that violate the Pauli Exclusion Principle. Here we present a machine learning based upgrade for the BEGe detector using an event selection strategy aimed at improving the efficiency in detecting low energy events down to 10 keV. The method employs a denoising autoencoder to suppress electronic and microphonic noises and to reconstruct pulse shapes, followed by a convolutional neural network that classifies waveforms as normal single site or events with anomalies. The workflow was validated on a dataset comprising more than 20000 waveforms recorded in 2021. The classifier achieves a receiver operating characteristic curve with an area under the curve of 0.99 and an accuracy of 95 percent. Applying this procedure lowers the minimum detectable energy of the final spectrum to approximately 10 keV. It also yields a measurable enhancement in spectral quality, including an improvement of about 14 percent in the signal to background ratio and a reduction of the energy resolution for the characteristic Pb and Bi gamma lines. These developments enhance the sensitivity of the BEGe detector to rare low energy signals and provide a scalable framework for future precision tests of quantum foundations in low background environments.",
+  "authors": [
+    "Simone Manti",
+    "Jason Yip",
+    "Massimiliano Bazzi",
+    "Nicola Bortolotti",
+    "Mario Bragadireanu",
+    "Ivan Carnevali",
+    "Alberto Clozza",
+    "Luca De Paolis",
+    "Raffaele Del Grande",
+    "Carlo Guaraldo",
+    "Mihai Antoniu Iliescu",
+    "Matthias Laubenstein",
+    "Johan Marton",
+    "Fabrizio Napolitano",
+    "Federico Nola",
+    "Kristian Pischicchia",
+    "Alessio Porcelli",
+    "Alessandro Scordo",
+    "Francesco Sgaramella",
+    "Diana Sirghi",
+    "Florin Sirghi",
+    "Johann Zmeskal",
+    "Catalina Curceanu"
+  ],
+  "published": "2025-12-10T15:56:35Z",
+  "updated": "2025-12-10T15:56:35Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

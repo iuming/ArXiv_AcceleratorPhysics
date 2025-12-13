@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.09334v1",
+  "url": "https://arxiv.org/abs/2512.09334v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.09334v1.pdf",
+  "title": "A Propagator-based Multi-level Monte Carlo Method for Kinetic Neutral Species in Edge Plasmas",
+  "abstract": "We propose and investigate a new multi-level Monte Carlo scheme for numerical solutions of the kinetic Boltzmann equation for neutral species in edge plasmas. In particular, this method explicitly exploits a key structural property of neutral particle dynamics: the prevalence of frequent collisions for which the outgoing velocity is determined by local plasma parameters. Using this property, we derive a multi-level algorithm based on collision event propagator and show, both analytically and through numerical experiments, that it reproduces the results of standard Monte Carlo methods. We further demonstrate that, in the context of coupled plasma-neutral edge simulations employing correlated Monte Carlo, the proposed scheme retains trajectory correlation to machine precision as the system evolves, whereas conventional methods exhibit rapid decorrelation. These results indicate that the propagator-based multi-level Monte Carlo scheme is a promising candidate for use in fully implicit Jacobian-free Newton-Krylov (JFNK) solvers for coupled plasma-neutral systems.",
+  "authors": [
+    "Gregory J. Parker",
+    "Maxim V. Umansky",
+    "Benjamin D. Dudson"
+  ],
+  "published": "2025-12-10T05:41:20Z",
+  "updated": "2025-12-10T05:41:20Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
