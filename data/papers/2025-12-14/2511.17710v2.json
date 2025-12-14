@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2511.17710v2",
+  "url": "https://arxiv.org/abs/2511.17710v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.17710v2.pdf",
+  "title": "Entity -- Hardware-agnostic Particle-in-Cell Code for Plasma Astrophysics. I: Curvilinear Special Relativistic Module",
+  "abstract": "Entity is a new-generation, fully open-source particle-in-cell (PIC) code developed to overcome key limitations in astrophysical plasma modeling, particularly the extreme separation of scales and the performance challenges associated with evolving, GPU-centric computing infrastructures. It achieves hardware-agnostic performance portability across various GPU and CPU architectures using the Kokkos library. Crucially, Entity maintains a high standard for usability, clarity, and customizability, offering a robust and easy-to-use framework for developing new algorithms and grid geometries, which allows extensive control without requiring edits to the core source code. This paper details the core general-coordinate special-relativistic module. Entity is the first PIC code designed to solve the Vlasov-Maxwell system in general coordinates, enabling a coordinate-agnostic framework that provides the foundational structure for straightforward extension to arbitrary coordinate geometries. The core methodology achieves numerical stability by solving particle equations of motion in the global orthonormal Cartesian basis, despite using generalized coordinates like Cartesian, axisymmetric spherical, and quasi-spherical grids. Charge conservation is ensured via a specialized current deposition technique using conformal currents. The code exhibits robust scalability and performance portability on major GPU platforms (AMD MI250X, NVIDIA A100, and Intel Max Series), with the 3D particle pusher and the current deposition operating efficiently at about 2 nanoseconds per particle per timestep. Functionality is validated through a comprehensive suite of standard Cartesian plasma tests and the accurate modeling of relativistic magnetospheres in curvilinear axisymmetric geometries.",
+  "authors": [
+    "Hayk Hakobyan",
+    "Ludwig M. Böss",
+    "Yangyang Cai",
+    "Alexander Chernoglazov",
+    "Alisa Galishnikova",
+    "Evgeny A. Gorbunov",
+    "Jens F. Mahlmann",
+    "Alexander Philippov",
+    "Siddhant Solanki",
+    "Arno Vanthieghem",
+    "Muni Zhou"
+  ],
+  "published": "2025-11-21T19:01:46Z",
+  "updated": "2025-12-10T04:14:39Z",
+  "categories": [
+    "astro-ph.HE",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}
