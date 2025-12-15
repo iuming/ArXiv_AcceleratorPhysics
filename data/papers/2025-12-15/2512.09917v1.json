@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.09917v1",
+  "url": "https://arxiv.org/abs/2512.09917v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.09917v1.pdf",
+  "title": "Evaluating Function-as-a-Service (FaaS) frameworks for the Accelerator Control System",
+  "abstract": "As particle accelerator control systems evolve in complexity and scale, the need for responsive, scalable, and cost-effective computational infrastructure becomes increasingly critical. Function-as-a-Service (FaaS) offers an alternative to traditional monolithic architecture by enabling event-driven execution, automatic scaling, and fine-grained resource utilization. This paper explores the applicability and performance of FaaS frameworks in the context of a modern particle accelerator control system, with the objective of evaluating their suitability for short lived and triggered workloads. In this paper, we evaluate prominent open-source FaaS platforms in executing functional logic, triggers, and diagnostics routines. Evaluation metrics consist of cold-start latency, scalability, performance, integration with other open-source tools like Kafka. Experimental workloads were designed to simulate real-world control tasks when implemented as stateless FaaS functions. These workloads were benchmarked under various invocation loads and network conditions. Self-hosted FaaS platforms, when deployed within accelerator networks, offer greater control over execution environment, better integration with legacy systems, and support for real-time guarantees when paired with message queues. Based on lessons learned and evaluation metrics, this paper describes reliability of the FaaS framework for the Accelerator Control Systems (ACS).",
+  "authors": [
+    "A. Jaikar",
+    "J. Diamond",
+    "A. Tiradani",
+    "B. Harrison"
+  ],
+  "published": "2025-12-10T18:53:00Z",
+  "updated": "2025-12-10T18:53:00Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "10.18429/JACoW-ICALEPCS2025-THBR003"
+}
