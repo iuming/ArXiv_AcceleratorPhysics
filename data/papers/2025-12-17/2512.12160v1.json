@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.12160v1",
+  "url": "https://arxiv.org/abs/2512.12160v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.12160v1.pdf",
+  "title": "JAX-in-Cell: A Differentiable Particle-in-Cell Code for Plasma Physics Applications",
+  "abstract": "JAX-in-Cell is a fully electromagnetic, multispecies, and relativistic 1D3V Particle-in-Cell (PIC) framework implemented entirely in JAX. It provides a modern, Python-based alternative to traditional PIC frameworks. It leverages Just-In-Time compilation and automatic vectorization to achieve the performance of traditional compiled codes on CPUs, GPUs, and TPUs. The resulting framework bridges the gap between educational scripts and production codes, providing a testbed for differentiable physics and AI integration that enables end-to-end gradient-based optimization. The code solves the Vlasov-Maxwell system on a staggered Yee lattice with either periodic, reflective, or absorbing boundary conditions, allowing both an explicit Boris solver and an implicit Crank-Nicolson method via Picard iteration to ensure energy conservation. Here, we detail the numerical methods employed, validate against standard benchmarks, and showcase the use of its auto-differentiation capabilities.",
+  "authors": [
+    "Longyu Ma",
+    "Rogerio Jorge",
+    "Hongke Lu",
+    "Aaron Tran",
+    "Christopher Woolford"
+  ],
+  "published": "2025-12-13T03:51:00Z",
+  "updated": "2025-12-13T03:51:00Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
