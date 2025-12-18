@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2512.13951v1",
+  "url": "https://arxiv.org/abs/2512.13951v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.13951v1.pdf",
+  "title": "Diagnosing symplecticity in simulations of high-dimensional Hamiltonian systems",
+  "abstract": "Integrals of the Liouville $1$-form, known as the first Poincaré integral invariant, provide a computable figure of merit for monitoring the conservation of symplecticity in the numerical integration of Hamiltonian systems. These integrals may be approximated with spectral convergence in the number of sample points, limited only by the regularity of the Hamiltonian. We devise a numerical integral invariant diagnostic for checking preservation of symplecticity in particle-in-cell (PIC) kinetic plasma simulation codes. As a first application of this diagnostic tool, we check the preservation of symplecticity in symplectic electrostatic particle-in-cell (PIC) methods. Surprisingly, such PIC methods fail to have symplectic time-advance maps if the charge is interpolated to the grid using linear shape functions, as is commonly done in practice. It is found that at least quadratic interpolation is needed for a structure-preserving PIC method to truly be symplectic.",
+  "authors": [
+    "William Barham",
+    "J. W. Burby"
+  ],
+  "published": "2025-12-15T23:09:18Z",
+  "updated": "2025-12-15T23:09:18Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

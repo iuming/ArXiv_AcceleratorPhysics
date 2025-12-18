@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2509.15377v2",
+  "url": "https://arxiv.org/abs/2509.15377v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.15377v2.pdf",
+  "title": "Accelerating Garfield++ with CUDA",
+  "abstract": "Garfield++ is extensively used within the gaseous detector community for comprehensive detector simulations, supporting the full experimental life cycle from design to operation and calibration. The emergence of micro-pattern gaseous detectors has necessitated computationally intensive microscopic avalanche simulations. The acceleration of one of Garfield++'s most demanding algorithms, AvalancheMicroscopic, by porting it to graphics processing units using NVIDIA's CUDA framework is described. The modifications are integrated into the Garfield++ codebase and are accessible to end users with only minor adjustments to their existing code. Benchmark results demonstrate substantial speed-up, especially for high-gain avalanches involving thousands of electrons, thereby enabling more efficient and detailed detector simulations.",
+  "authors": [
+    "T. Neep",
+    "K. Nikolopoulos",
+    "M. Slater"
+  ],
+  "published": "2025-09-18T19:29:31Z",
+  "updated": "2025-12-15T10:31:14Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1088/1748-0221/20/12/P12019"
+}
