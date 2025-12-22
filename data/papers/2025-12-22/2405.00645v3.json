@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2405.00645v3",
+  "url": "https://arxiv.org/abs/2405.00645v3",
+  "pdf_url": "https://arxiv.org/pdf/2405.00645v3.pdf",
+  "title": "HGQ: High Granularity Quantization for Real-time Neural Networks on FPGAs",
+  "abstract": "Neural networks with sub-microsecond inference latency are required by many critical applications. Targeting such applications deployed on FPGAs, we present High Granularity Quantization (HGQ), a quantization-aware training framework that optimizes parameter bit-widths through gradient descent. Unlike conventional methods, HGQ determines the optimal bit-width for each parameter independently, making it suitable for hardware platforms supporting heterogeneous arbitrary precision arithmetic. In our experiments, HGQ shows superior performance compared to existing network compression methods, achieving orders of magnitude reduction in resource consumption and latency while maintaining the accuracy on several benchmark tasks. These improvements enable the deployment of complex models previously infeasible due to resource or latency constraints. HGQ is open-source and is used for developing next-generation trigger systems at the CERN ATLAS and CMS experiments for particle physics, enabling the use of advanced machine learning models for real-time data selection with sub-microsecond latency.",
+  "authors": [
+    "Chang Sun",
+    "Zhiqiang Que",
+    "Thea K. Årrestad",
+    "Vladimir Loncar",
+    "Jennifer Ngadiuba",
+    "Wayne Luk",
+    "Maria Spiropulu"
+  ],
+  "published": "2024-05-01T17:18:46Z",
+  "updated": "2025-12-19T16:57:39Z",
+  "categories": [
+    "cs.LG",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG",
+  "doi": "10.1145/3748173.3779200"
+}
