@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2512.18779v1",
+  "url": "https://arxiv.org/abs/2512.18779v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.18779v1.pdf",
+  "title": "From Natural Language to Control Signals: A Conceptual Framework for Semantic Channel Finding in Complex Experimental Infrastructure",
+  "abstract": "Modern experimental platforms such as particle accelerators, fusion devices, telescopes, and industrial process control systems expose tens to hundreds of thousands of control and diagnostic channels accumulated over decades of evolution. Operators and AI systems rely on informal expert knowledge, inconsistent naming conventions, and fragmented documentation to locate signals for monitoring, troubleshooting, and automated control, creating a persistent bottleneck for reliability, scalability, and language-model-driven interfaces. We formalize semantic channel finding-mapping natural-language intent to concrete control-system signals-as a general problem in complex experimental infrastructure, and introduce a four-paradigm framework to guide architecture selection across facility-specific data regimes. The paradigms span (i) direct in-context lookup over curated channel dictionaries, (ii) constrained hierarchical navigation through structured trees, (iii) interactive agent exploration using iterative reasoning and tool-based database queries, and (iv) ontology-grounded semantic search that decouples channel meaning from facility-specific naming conventions. We demonstrate each paradigm through proof-of-concept implementations at four operational facilities spanning two orders of magnitude in scale-from compact free-electron lasers to large synchrotron light sources-and diverse control-system architectures, from clean hierarchies to legacy environments. These implementations achieve 90-97% accuracy on expert-curated operational queries.",
+  "authors": [
+    "Thorsten Hellert",
+    "Nikolay Agladze",
+    "Alex Giovannone",
+    "Jan Jug",
+    "Frank Mayet",
+    "Mark Sherwin",
+    "Antonin Sulc",
+    "Chris Tennant"
+  ],
+  "published": "2025-12-21T15:46:33Z",
+  "updated": "2025-12-21T15:46:33Z",
+  "categories": [
+    "cs.CL",
+    "physics.acc-ph"
+  ],
+  "primary_category": "cs.CL"
+}

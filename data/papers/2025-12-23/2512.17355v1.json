@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2512.17355v1",
+  "url": "https://arxiv.org/abs/2512.17355v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.17355v1.pdf",
+  "title": "SPIDER, a Waveform Digitizer ASIC for picosecond timing in LHCb PicoCal",
+  "abstract": "We present the architecture, design and first test results of SPIDER, the first prototype of a TSMC CMOS 65 nm ASIC designed for the time measurement path of LHCb Electromagnetic Calorimeter after LS4 Upgrade.   The main requirements for the readout of this detector are a time resolution below 15 ps rms above 5 GeV, and a channel occupancy up to 30\\% (12 Mevent/s).   The first prototype called SPIDER\\_V0 is a 2-channel waveform digitizer locked on the LHC clock allowing precise time reconstruction by digital algorithms. The architecture is based on 2 DLLs in series controlling respectively the phase of the sampling window and the sampling frequency, the latter covering the range between 2 and 20 GS/s. Each self-triggering channel houses 8 banks of 32 analog memory cells and a massively parallel Wilkinson ADC for conversion at 5 GHz over 10 bits with a maximal conversion time of 200 ns.   SPIDER targets not only LHCb, but all fast detectors mounted on current and future accelerators. Its sampling frequency can indeed be adjusted to different signal risetimes. Its main frequency of 40 MHz could even be eventually locked to another value by modifying only one of the DLLs in the chip design.",
+  "authors": [
+    "Ludovic Alvado",
+    "Nicolas Arveuf",
+    "Edouard Bechetoille",
+    "Guillaume Blanchard",
+    "Dominique Breton",
+    "Baptiste Joly",
+    "Laurent Leterrier",
+    "Jihane Maalmi",
+    "Samuel Manen",
+    "Hervé Mathez",
+    "Christophe Sylvia",
+    "Philippe Vallerand",
+    "Richard Vandaele"
+  ],
+  "published": "2025-12-19T08:52:33Z",
+  "updated": "2025-12-19T08:52:33Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

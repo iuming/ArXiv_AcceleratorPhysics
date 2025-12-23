@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2512.17866v1",
+  "url": "https://arxiv.org/abs/2512.17866v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.17866v1.pdf",
+  "title": "Data-Driven Calibration of Large Liquid Detectors with Unsupervised Learning",
+  "abstract": "This paper demonstrates a novel method to extract photomultiplier tube (PMT) calibration timing constants in large liquid scintillation detectors from physics data using the machinery of unsupervised deep learning. The approach uses a simplified physical model of optical photon transport in the loss function, with PMT calibration constants treated as free parameters, and the simple assumption that individual events represent point-like emission. The problem is, thus, effectively reduced to that of regression on a very large scale, made tractable by deep learning architectures and automatic differentiation frameworks. Using data from the 9,300 PMTs in the SNO+ detector, the method has been shown to reliably extract 3 calibration constants for each of the over 7,500 online PMTs using radioactive background events. We believe that this basic approach can be straightforwardly generalised for a wide range of applications.",
+  "authors": [
+    "Scott DeGraw",
+    "Steve Biller",
+    "Armin Reichold"
+  ],
+  "published": "2025-12-19T18:16:55Z",
+  "updated": "2025-12-19T18:16:55Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

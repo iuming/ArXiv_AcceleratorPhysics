@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2507.05067v2",
+  "url": "https://arxiv.org/abs/2507.05067v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.05067v2.pdf",
+  "title": "Quantifying Resolution Limits in Pedestal Profile Measurements with Gaussian Process Regression",
+  "abstract": "Edge transport barriers (ETBs) in magnetically confined fusion plasmas, commonly known as pedestals, play a crucial role in achieving high confinement plasmas. However, their defining characteristic, a steep rise in plasma pressure over short length scales, makes them challenging to diagnose experimentally. In this work, we use Gaussian Process Regression (GPR) to develop first-principles metrics for quantifying the spatiotemporal resolution limits of inferring differentiable profiles of temperature, pressure, or other quantities from experimental measurements. Although we focus on pedestals, the methods are fully general and can be applied to any setting involving the inference of profiles from discrete measurements. First, we establish a correspondence between GPR and low-pass filtering, giving an explicit expression for the effective `cutoff frequency' associated with smoothing incurred by GPR. Second, we introduce a novel information-theoretic metric, \\(N_{eff}\\), which measures the effective number of data points contributing to the inferred value of a profile or its derivative. These metrics enable a quantitative assessment of the trade-off between `over-fitting' and `over-regularization', providing both practitioners and consumers of GPR with a systematic way to evaluate the credibility of inferred profiles. We apply these tools to develop practical advice for using GPR in both time-independent and time-dependent settings, and demonstrate their usage on inferring pedestal profiles using measurements from the DIII-D tokamak.",
+  "authors": [
+    "Norman M. Cao",
+    "David R. Hatch",
+    "Craig Michoski",
+    "Todd A. Oliver",
+    "David Eldon",
+    "Andrew Oakleigh Nelson",
+    "Matthew Waller"
+  ],
+  "published": "2025-07-07T14:49:56Z",
+  "updated": "2025-12-18T16:16:22Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1088/1741-4326/ae2d6f"
+}
