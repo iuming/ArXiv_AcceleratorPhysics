@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2512.18290v2",
+  "url": "https://arxiv.org/abs/2512.18290v2",
+  "pdf_url": "https://arxiv.org/pdf/2512.18290v2.pdf",
+  "title": "Robust and scalable simulation-based inference for gravitational wave signals with gaps",
+  "abstract": "The Laser Interferometer Space Antenna (LISA) data stream will inevitably contain gaps due to maintenance and environmental disturbances, introducing nonstationarities and spectral leakage that compromise standard frequency-domain likelihood evaluations. We present a scalable Simulation-Based Inference (SBI) framework capable of robust parameter estimation directly from gapped time-series data. We employ Flow Matching Posterior Estimation (FMPE) conditioned on a learned summary of the data, optimized through an end-to-end training strategy. To address the computational challenges of long-duration signals, we propose a dual-pathway summarizer architecture: a 1D Convolutional Neural Network (CNN) operating on the time domain for high precision, and a novel wavelet-based 2D CNN utilizing asymmetric, dilated kernels to achieve scalability for datasets spanning months. We demonstrate the efficacy of this framework on simulated Galactic Binary-like signals, showing that our joint training approach yields tighter, unbiased posteriors compared to two-stage reconstruction pipelines. Furthermore, we provide the first systematic comparison showing that FMPE offers superior stability and coverage calibration over conventional Normalizing Flows in the presence of severe data artifacts.",
+  "authors": [
+    "Ruiting Mao",
+    "Jeong Eun Lee",
+    "Matthew C. Edwards"
+  ],
+  "published": "2025-12-20T09:30:10Z",
+  "updated": "2025-12-26T21:06:49Z",
+  "categories": [
+    "astro-ph.IM",
+    "gr-qc",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}
