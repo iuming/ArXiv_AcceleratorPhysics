@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2512.23884v1",
+  "url": "https://arxiv.org/abs/2512.23884v1",
+  "pdf_url": "https://arxiv.org/pdf/2512.23884v1.pdf",
+  "title": "Autoregressive long-horizon prediction of plasma edge dynamics",
+  "abstract": "Accurate modeling of scrape-off layer (SOL) and divertor-edge dynamics is vital for designing plasma-facing components in fusion devices. High-fidelity edge fluid/neutral codes such as SOLPS-ITER capture SOL physics with high accuracy, but their computational cost limits broad parameter scans and long transient studies. We present transformer-based, autoregressive surrogates for efficient prediction of 2D, time-dependent plasma edge state fields. Trained on SOLPS-ITER spatiotemporal data, the surrogates forecast electron temperature, electron density, and radiated power over extended horizons. We evaluate model variants trained with increasing autoregressive horizons (1-100 steps) on short- and long-horizon prediction tasks. Longer-horizon training systematically improves rollout stability and mitigates error accumulation, enabling stable predictions over hundreds to thousands of steps and reproducing key dynamical features such as the motion of high-radiation regions. Measured end-to-end wall-clock times show the surrogate is orders of magnitude faster than SOLPS-ITER, enabling rapid parameter exploration. Prediction accuracy degrades when the surrogate enters physical regimes not represented in the training dataset, motivating future work on data enrichment and physics-informed constraints. Overall, this approach provides a fast, accurate surrogate for computationally intensive plasma edge simulations, supporting rapid scenario exploration, control-oriented studies, and progress toward real-time applications in fusion devices.",
+  "authors": [
+    "Hunor Csala",
+    "Sebastian De Pascuale",
+    "Paul Laiu",
+    "Jeremy Lore",
+    "Jae-Sun Park",
+    "Pei Zhang"
+  ],
+  "published": "2025-12-29T22:19:27Z",
+  "updated": "2025-12-29T22:19:27Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
