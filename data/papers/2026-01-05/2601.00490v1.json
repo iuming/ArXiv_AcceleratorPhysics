@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2601.00490v1",
+  "url": "https://arxiv.org/abs/2601.00490v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.00490v1.pdf",
+  "title": "Fisher-Information-Driven Adaptive Acquisition for Photon-Efficient FLIM: A Dual-Implementation Framework for TCSPC and Programmable Time-Gating",
+  "abstract": "We present a Fisher-information (FI) framework for photon-efficient fluorescence lifetime imaging microscopy (FLIM) that treats temporal sampling as a controllable design variable under a fixed photon (dose) budget. Starting from a Poisson photon-counting model for bi-exponential fluorescence decays convolved with a finite instrument response function (IRF) and including additive background, we derive FI for both time-binned TCSPC histograms and programmable time-gated acquisitions. To ensure robustness when nuisance parameters such as IRF width, temporal offset, and background level are uncertain, we compute an effective FI using a Schur-complement marginalization and select hardware-feasible temporal designs by maximizing D-optimal criteria over candidate libraries. Across instrument-agnostic simulations spanning IRF broadening and increasing background fractions, FI-driven temporal designs consistently improve photon efficiency relative to uniform sampling, while nuisance-aware planning yields more stable gains under mismatch than naive optimization. Monte Carlo studies with maximum-likelihood estimation confirm that higher effective FI translates into reduced estimator variance and improved parametric map quality at fixed photon budgets. Finally, we map the same FI core to two practical deployment pathways: adaptive re-binning for TCSPC FLIM and adaptive gate placement/width selection for time-gated FLIM, enabling information-theoretic acquisition without hardware modification.",
+  "authors": [
+    "J. Sumaya-Martinez",
+    "E. Torres-Garcia"
+  ],
+  "published": "2026-01-01T22:13:04Z",
+  "updated": "2026-01-01T22:13:04Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.bio-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
