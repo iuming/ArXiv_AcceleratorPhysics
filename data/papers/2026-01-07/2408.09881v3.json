@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2408.09881v3",
+  "url": "https://arxiv.org/abs/2408.09881v3",
+  "pdf_url": "https://arxiv.org/pdf/2408.09881v3.pdf",
+  "title": "Uncertainty Quantification of Surrogate Models using Conformal Prediction",
+  "abstract": "Data-driven surrogate models offer quick approximations to complex numerical and experimental systems but typically lack uncertainty quantification, limiting their reliability in safety-critical applications. While Bayesian methods provide uncertainty estimates, they offer no statistical guarantees and struggle with high-dimensional spatio-temporal problems due to computational costs. We present a conformal prediction (CP) framework that provides statistically guaranteed marginal coverage for surrogate models in a model-agnostic manner with near-zero computational cost. Our approach handles high-dimensional spatio-temporal outputs by performing cell-wise calibration while preserving the tensorial structure of predictions. Through extensive empirical evaluation across diverse applications including fluid dynamics, magnetohydrodynamics, weather forecasting, and fusion diagnostics, we demonstrate that CP achieves empirical coverage with valid error bars regardless of model architecture, training regime, or output dimensionality. We evaluate three nonconformity scores (conformalised quantile regression, absolute error residual, and standard deviation) for both deterministic and probabilistic models, showing that guaranteed coverage holds even for out-of-distribution predictions where models are deployed on physics regimes different from training data. Calibration requires only seconds to minutes on standard hardware. The framework enables rigorous validation of pre-trained surrogate models for downstream applications without retraining. While CP provides marginal rather than conditional coverage and assumes exchangeability between calibration and test data, our method circumvents the curse of dimensionality inherent in traditional uncertainty quantification approaches, offering a practical tool for trustworthy deployment of machine learning in physical sciences.",
+  "authors": [
+    "Vignesh Gopakumar",
+    "Ander Gray",
+    "Joel Oskarsson",
+    "Lorenzo Zanisi",
+    "Daniel Giles",
+    "Matt J. Kusner",
+    "Stanislas Pamela",
+    "Marc Peter Deisenroth"
+  ],
+  "published": "2024-08-19T10:46:19Z",
+  "updated": "2026-01-05T11:48:30Z",
+  "categories": [
+    "cs.AI",
+    "physics.ao-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.AI",
+  "doi": "10.1088/2632-2153/ae2e7b"
+}
