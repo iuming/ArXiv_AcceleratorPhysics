@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.04099v1",
+  "url": "https://arxiv.org/abs/2601.04099v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.04099v1.pdf",
+  "title": "A constrained-transport embedded boundary method for compressible resistive magnetohydrodynamics",
+  "abstract": "Motivated by the increased interest in pulsed-power magneto-inertial fusion devices in recent years, we present a method for implementing an arbitrarily shaped embedded boundary on a Cartesian mesh while solving the equations of compressible resistive magnetohydrodynamics. The method is built around a finite volume formulation of the equations in which a Riemann solver is used to compute fluxes on the faces between grid cells, and a face-centered constrained transport formulation of the induction equation. The small time step problem associated with the cut cells is avoided by always computing fluxes on the faces and edges of the Cartesian mesh. We extend the method to model a moving interface between two materials with different properties using a ghost-fluid approach, and show some preliminary results including shock-wave-driven and magnetically-driven dynamical compressions of magnetohydrostatic equilibria. We present a thorough verification of the method and show that it converges at second order in the absence of discontinuities, and at first order with a discontinuity in material properties.",
+  "authors": [
+    "Samuel W. Jones",
+    "Colin P. McNally",
+    "Meritt Reynolds"
+  ],
+  "published": "2026-01-07T17:04:48Z",
+  "updated": "2026-01-07T17:04:48Z",
+  "categories": [
+    "physics.comp-ph",
+    "astro-ph.IM",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph",
+  "doi": "10.1016/j.jcp.2025.114641"
+}

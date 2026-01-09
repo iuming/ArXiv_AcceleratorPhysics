@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2601.02788v1",
+  "url": "https://arxiv.org/abs/2601.02788v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.02788v1.pdf",
+  "title": "SpaceWire-based Data Acquisition Network for the Solar Flare Sounding Rocket Experiment FOXSI-4 and FOXSI-5",
+  "abstract": "We developed a SpaceWire-based data acquisition (DAQ) system for the FOXSI-4 and FOXSI-5 sounding rocket experiments, which aim to observe solar flares with high sensitivity and dynamic range using direct X-ray focusing optics. The FOXSI-4 mission, launched on April 17, 2024, achieved the first direct focusing observation of a GOES M1.6 class solar flare with imaging spectroscopy capabilities in the soft and hard X-ray energy ranges, using a suite of advanced detectors, including two CMOS sensors, four CdTe double-sided strip detectors (CdTe-DSDs), and a Quad-Timepix3 detector. To accommodate the high photon flux from a solar flare and these diverse detector types, a modular DAQ network architecture was implemented based on SpaceWire and the Remote Memory Access Protocol (RMAP). This modular architecture enabled fast, reliable, and scalable communication among various onboard components, including detectors, readout boards, onboard computers, and telemetry systems. In addition, by standardizing the communication interface and modularizing each detector unit and its associated electronics, the architecture also supported distributed development among collaborating institutions, simplifying integration and reducing overall complexity. To realize this architecture, we developed FPGA-based readout boards (SPMU-001 and SPMU-002) that support SpaceWire communication for high-speed data transfer and flexible instrument control. In addition, a real-time ground support system was developed to handle telemetry and command operations during flight, enabling live monitoring and adaptive configuration of onboard instruments in response to the properties of the observed solar flare. The same architecture is being adopted for the upcoming FOXSI-5 mission, scheduled for launch in 2026.",
+  "authors": [
+    "Shunsaku Nagasawa",
+    "Athanasios Pantazides",
+    "Kristopher Cooper",
+    "Riko Shimizu",
+    "Savannah Perez-Piel",
+    "Takahiro Minami",
+    "Yixian Zhang",
+    "Hunter Kanniainen",
+    "Shin Watanabe",
+    "Tadayuki Takahashi",
+    "Noriyuki Narukage",
+    "Juan Camilo Buitrago Casas",
+    "Lindsay Glesener"
+  ],
+  "published": "2026-01-06T07:51:42Z",
+  "updated": "2026-01-06T07:51:42Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.HE",
+    "astro-ph.SR",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}
