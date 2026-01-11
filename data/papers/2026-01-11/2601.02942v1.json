@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2601.02942v1",
+  "url": "https://arxiv.org/abs/2601.02942v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.02942v1.pdf",
+  "title": "What Is the Minimum Number of Parameters Required to Represent Solutions of the Grad-Shafranov Equation?",
+  "abstract": "Fast and accurate solutions of the Grad--Shafranov (GS) equation are essential for equilibrium analysis, integrated modeling, and surrogate model construction in magnetic confinement fusion. In this work, we address a fundamental question: what is the minimum number of free parameters required to accurately represent numerical solutions of the GS equation under fixed-boundary conditions? We demonstrate that, for most practical applications, GS equilibria can be represented using only 2--5 free parameters while maintaining relative errors below 5\\%. For higher-accuracy requirements, we introduce a unified spectral representation based on the Miller extended harmonic (MXH) expansion in the poloidal direction combined with shifted Chebyshev (Cheb) polynomials in the radial direction. This MXH--Cheb basis exhibits rapid convergence for two-dimensional GS equilibria. For configurations where three geometric moments (shift, elongation, and triangularity) are specified at the last closed flux surface (LCFS), relative errors on the order of $10^{-2}$--$10^{-3}$ can be achieved using as few as 13--20 parameters. In more general cases, including up--down asymmetric equilibria, X-point configurations, and stiff pressure and current profiles (e.g., H-mode pedestals), accuracies beyond this level can be obtained with fewer than 100 parameters. The resulting equilibrium configurations and profile functions are fully analytical, with smooth derivatives of all orders. These results provide a systematic foundation for developing high-fidelity, ultra-fast GS solvers and enable efficient reduced-order and AI-based surrogate modeling of tokamak equilibria.",
+  "authors": [
+    "Huasheng Xie",
+    "Yueyan Li"
+  ],
+  "published": "2026-01-06T11:37:43Z",
+  "updated": "2026-01-06T11:37:43Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

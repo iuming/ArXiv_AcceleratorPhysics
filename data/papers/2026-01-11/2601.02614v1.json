@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2601.02614v1",
+  "url": "https://arxiv.org/abs/2601.02614v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.02614v1.pdf",
+  "title": "GKFieldFlow: A Spatio-Temporal Neural Surrogate for Nonlinear Gyrokinetic Turbulence",
+  "abstract": "We present GKFieldFlow, a novel three-dimensional autoregressive deep learning surrogate model for nonlinear gyrokinetic turbulence. Based on the architecture FieldFlow-Net, this model combines a multi-resolution 3D U-Net encoder-decoder that operates on evolving plasma potential fields. A dilated temporal convolutional network (TCN) learns the nonlinear time evolution of latent turbulence features. GKFieldFlow simultaneously (i) predicts ion and electron energy fluxes, and particle flux directly from CGYRO turbulence, and (ii) predicts future potential fields autoregressively with desired spatial resolution. This enables the model to replicate both instantaneous transport and the underlying spatio-temporal dynamics that generate it.   The architecture is physics-informed in its design: 3D convolutions preserve the anisotropic geometry and phase structure of gyrokinetic fluctuations, while dilated temporal convolutions capture multiscale dynamical couplings such as turbulence and zonal-flow interactions, turbulence decorrelation, and intermittent bursty transport. We provide a complete technical description of the data structure, model components, and rationale behind each architectural choice.   The model achieves high accuracy across all three transport channels, with multi-horizon inference maintaining robustness. Autoregressive field rollouts preserve the spectral content, phase coherence, and energy distribution of the CGYRO nonlinear state with strong fidelity, and flux predictions remain consistent with CGYRO within a small fractional error. This work presents GKFieldFlow as a data-driven reduced model that can jointly learn turbulence dynamics and transport.",
+  "authors": [
+    "Arash Ashourvan"
+  ],
+  "published": "2026-01-06T00:25:28Z",
+  "updated": "2026-01-06T00:25:28Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
