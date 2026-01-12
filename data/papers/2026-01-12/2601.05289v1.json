@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.05289v1",
+  "url": "https://arxiv.org/abs/2601.05289v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.05289v1.pdf",
+  "title": "A universal vision transformer for fast calorimeter simulations",
+  "abstract": "The high-dimensional complex nature of detectors makes fast calorimeter simulations a prime application for modern generative machine learning. Vision transformers (ViTs) can emulate the Geant4 response with unmatched accuracy and are not limited to regular geometries. Starting from the CaloDREAM architecture, we demonstrate the robustness and scalability of ViTs on regular and irregular geometries, and multiple detectors. Our results show that ViTs generate electromagnetic and hadronic showers statistically indistinguishable from Geant4 in multiple evaluation metrics, while maintaining the generation time in the $\\mathcal{O}(10-100)$ ms on a single GPU. Furthermore, we show that pretraining on a large dataset and fine-tuning on the target geometry leads to reduced training costs and higher data efficiency, or altogether improves the fidelity of generated showers.",
+  "authors": [
+    "Luigi Favaro",
+    "Andrea Giammanco",
+    "Claudius Krause"
+  ],
+  "published": "2026-01-07T19:00:04Z",
+  "updated": "2026-01-07T19:00:04Z",
+  "categories": [
+    "hep-ph",
+    "cs.LG",
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ph"
+}

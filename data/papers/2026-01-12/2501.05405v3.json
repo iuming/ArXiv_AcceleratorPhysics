@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2501.05405v3",
+  "url": "https://arxiv.org/abs/2501.05405v3",
+  "pdf_url": "https://arxiv.org/pdf/2501.05405v3.pdf",
+  "title": "Data-driven methods to discover stable linear models of the helicity injectors on HIT-SIU",
+  "abstract": "Accurate and efficient circuit models are necessary to control the power electronic circuits found on plasma physics experiments. Tuning and controlling the behavior of these circuits is inextricably linked to plasma performance. Linear models are greatly preferred for control applications due to their well-established performance guarantees, but they typically fail to capture nonlinear dynamics and changes in experimental parameters. Data-driven system identification can help mitigate these shortcomings by learning interpretable and accurate reduced-order models of a complex system, in this case the injector circuits of the Helicity Injected Torus - Steady Inductive Upgrade (HIT-SIU) experiment. Specifically, the Bagging Optimized Dynamic Mode Decomposition (BOP-DMD), is leveraged to learn stable, reduced order models of the interaction between the spheromak plasma formed in the confinement volume, and the injector circuits of the device. BOP-DMD is trained and evaluated on an analytic model of the vacuum dynamics of the injector circuits of HIT-SIU, as well as an analytic linear reduced-order model for the injector dynamics when a plasma is present. BOP-DMD is then fit on experimental data, both on shots with and without a plasma in the confinement volume. In doing so, we demonstrate the capability of data-driven methods to produce stable, linear models for control and uncertainty quantification in plasma experiments.",
+  "authors": [
+    "Zachary L. Daniel",
+    "Alan A. Kaptanoglu",
+    "Christopher J. Hansen",
+    "Kyle D. Morgan",
+    "Steven L. Brunton",
+    "J. Nathan Kutz"
+  ],
+  "published": "2025-01-09T17:58:37Z",
+  "updated": "2026-01-07T00:48:34Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
