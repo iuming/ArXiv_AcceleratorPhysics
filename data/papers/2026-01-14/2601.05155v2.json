@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2601.05155v2",
+  "url": "https://arxiv.org/abs/2601.05155v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.05155v2.pdf",
+  "title": "Machine learning for radiative hydrodynamics in astrophysics",
+  "abstract": "Radiation hydrodynamics describes the interaction between high-temperature hypersonic plasmas and the radiation they emit or absorb, a coupling that plays a central role in many astrophysical phenomena related to accretion and ejection processes. The HADES code was developed to model such systems by coupling hydrodynamics with M1-gray or M1-multigroup radiative transfer models, which are well suited to optically intermediate media.   Despite its accuracy, radiation hydrodynamics simulations remain extremely demanding in terms of computational cost. Two main limitations are responsible for this. First, the M1-multigroup model relies on a closure relation with no analytic expression, requiring expensive numerical evaluations. Second, the Courant-Friedrichs-Lewy condition strongly restricts the time step of the explicit schemes used in HADES. To overcome these difficulties, two complementary Artificial Intelligence based strategies were developed in this thesis.   The first approach consists in training a Multi-Layer Perceptron to approximate the M1-multigroup closure relation. This method achieves excellent accuracy while reducing the computational cost by a factor of 3000, making it the most efficient approach currently available for this task. This performance gain enables high-fidelity simulations of radiative shocks, in which radiation directly influences the shock structure. In particular, increasing spectral resolution slows down the shock and enlarges the radiative precursor.   The second approach explores the use of Physics-Informed Neural Networks to directly solve the radiation hydrodynamics equations and extrapolate simulations beyond their initial time range. Tests on purely hydrodynamic shocks show accurate handling of discontinuities, but application to radiative shocks remains challenging and requires further investigation.",
+  "authors": [
+    "Gonzague Radureau"
+  ],
+  "published": "2026-01-08T17:44:53Z",
+  "updated": "2026-01-12T10:44:07Z",
+  "categories": [
+    "physics.plasm-ph",
+    "astro-ph.IM"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

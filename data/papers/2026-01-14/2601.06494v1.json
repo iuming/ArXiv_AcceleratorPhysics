@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2601.06494v1",
+  "url": "https://arxiv.org/abs/2601.06494v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.06494v1.pdf",
+  "title": "Constellation: The Autonomous Control and Data Acquisition System for Dynamic Experimental Setups",
+  "abstract": "The operation of instruments and detectors in laboratory or beamline environments presents a complex challenge, requiring stable operation of multiple concurrent devices, often controlled by separate hardware and software solutions. These environments frequently undergo modifications, such as the inclusion of different auxiliary devices depending on the experiment or facility, adding further complexity. The successful management of such dynamic configurations demands a flexible and robust system capable of controlling data acquisition, monitoring experimental setups, enabling seamless reconfiguration, and integrating new devices with limited effort.   This paper presents Constellation, a flexible and network-distributed control and data acquisition software framework tailored to laboratory and beamline environments, that addresses the limitations of existing solutions. The framework is designed with a focus on extensibility, providing a streamlined interface for instrument integration. It supports efficient system setup via network discovery mechanisms, promotes stability through autonomous operational features, and provides comprehensive documentation and supporting tools for operators and application developers such as controllers and logging interfaces.   At the core of the architectural design is the autonomy of the individual components, called satellites, which can make independent decisions about their operation and communicate these decisions to other components. This paper introduces the design principles and framework architecture of Constellation, presents the available graphical user interfaces, shares insights from initial successful deployments, and provides an outlook on future developments and applications.",
+  "authors": [
+    "Simon Spannagel",
+    "Stephan Lachnit",
+    "Hanno Perrey",
+    "Justus Braach",
+    "Lene Kristian Bryngemark",
+    "Erika Garutti",
+    "Adrian Herkert",
+    "Finn King",
+    "Christoph Krieger",
+    "David Leppla-Weber",
+    "Linus Ros",
+    "Sara Ruiz Daza",
+    "Murtaza Safdari",
+    "Luis G. Sarmiento",
+    "Annika Vauth",
+    "Håkan Wennlöf"
+  ],
+  "published": "2026-01-10T09:04:18Z",
+  "updated": "2026-01-10T09:04:18Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1016/j.nima.2026.171279"
+}

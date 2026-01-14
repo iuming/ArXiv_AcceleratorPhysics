@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.07486v1",
+  "url": "https://arxiv.org/abs/2601.07486v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.07486v1.pdf",
+  "title": "A radiation two-phase flow model for simulating plasma-liquid interactions",
+  "abstract": "In laser-produced plasma (LPP) extreme ultraviolet (EUV) sources, deformation of a tin droplet into an optimal target shape is governed by its interaction with a pre-pulse laser-generated plasma. This interaction is mediated by a transient ablation pressure, whose complex spatio-temporal evolution remains experimentally inaccessible. Existing modeling approaches are limited: Empirical pressure-impulse models neglect dynamic plasma feedback, while advanced radiation-hydrodynamic codes often fail to resolve late-time droplet hydrodynamics. To bridge this gap, we propose a radiation two-phase flow model based on a diffuse interface methodology. The model integrates radiation hydrodynamics for the plasma with the Euler equations for a weakly compressible liquid, extending a five-equation diffuse interface formulation to incorporate radiation transport, thermal conduction, and ionization. This formulation enforces pressure and velocity equilibrium across the diffuse interface region, with closure models constructed to ensure correct jump conditions at interfaces and asymptotically recover the pure-phase equations in bulk regions. Then, we apply the model to simulate a benchmark pre-pulse scenario, where a 50 micron tin droplet is irradiated by a 10 ns laser pulse. The simulations capture the rapid plasma expansion and subsequent inertial flattening of the droplet into a thin, curved sheet over microsecond timescales. Notably, the model reproduces experimentally observed features (such as an axial jet) rarely replicated in prior simulations. Quantitative agreement with experimental data for sheet dimensions and velocity validates the approach. The proposed model self-consistently couples laser-plasma physics with compressible droplet dynamics, providing a powerful tool for fundamental studies of plasma-liquid interactions in LPP-EUV source optimization.",
+  "authors": [
+    "Ke-Jian Qian",
+    "Zhu-Jun Li",
+    "Tao Tao",
+    "De-Hua Zhang",
+    "Rui Yan",
+    "Hang Ding"
+  ],
+  "published": "2026-01-12T12:40:59Z",
+  "updated": "2026-01-12T12:40:59Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.flu-dyn"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
