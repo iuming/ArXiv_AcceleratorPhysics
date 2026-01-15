@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.00282v2",
+  "url": "https://arxiv.org/abs/2510.00282v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.00282v2.pdf",
+  "title": "Electron neural closure for turbulent magnetosheath simulations: energy channels",
+  "abstract": "In this work, we introduce a non-local five-moment electron pressure tensor closure parametrized by a Fully Convolutional Neural Network (FCNN). Electron pressure plays an important role in generalized Ohm's law, competing with electron inertia. This model is used in the development of a surrogate model for a fully kinetic energy-conserving semi-implicit Particle-in-Cell simulation of decaying magnetosheath turbulence. We achieve this by training FCNN on a representative set of simulations with a smaller number of particles per cell and showing that our results generalise to a simulation with a large number of particles per cell. We evaluate the statistical properties of the learned equation of state, with a focus on pressure-strain interaction, which is crucial for understanding energy channels in turbulent plasmas. The resulting equation of state learned via FCNN significantly outperforms local closures, such as those learned by Multi-Layer Perceptron (MLP) or double adiabatic expressions. We report that the overall spatial distribution of pressure-strain and its conditional averages are reconstructed well. However, some small-scale features are missed, especially for the off-diagonal components of the pressure tensor. Nevertheless, the results are substantially improved with more training data, indicating favorable scaling and potential for improvement, which will be addressed in future work.",
+  "authors": [
+    "George Miloshevich",
+    "Luka Vranckx",
+    "Felipe Nathan de Oliveira Lopes",
+    "Pietro Dazzi",
+    "Giuseppe Arrò",
+    "Giovanni Lapenta"
+  ],
+  "published": "2025-09-30T21:00:50Z",
+  "updated": "2026-01-12T19:44:21Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
