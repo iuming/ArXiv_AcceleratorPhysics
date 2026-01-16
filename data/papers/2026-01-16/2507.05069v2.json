@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2507.05069v2",
+  "url": "https://arxiv.org/abs/2507.05069v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.05069v2.pdf",
+  "title": "Towards replacing detector simulation with heterogeneous GNNs in flavour physics analyses",
+  "abstract": "Driven by the increasing volume of recorded data, the demand for simulation from experiments based at the Large Hadron Collider will rise sharply in the coming years. Addressing this demand solely with existing computationally intensive workflows is not feasible. This paper introduces a new fast simulation tool designed to address this demand at the LHCb experiment. This tool emulates the detector response to arbitrary multibody decay topologies at LHCb. Rather than memorising specific decay channels, the model learns generalisable patterns within the response, allowing it to interpolate to channels not present in the training data. Novel heterogeneous graph neural network architectures are employed that are designed to embed the physical characteristics of the task directly into the network structure. We demonstrate the performance of the tool across a range of decay topologies, showing the networks can correctly model the relationships between complex variables. The architectures and methods presented are generic and could readily be adapted to emulate workflows at other simulation-intensive particle physics experiments.",
+  "authors": [
+    "Guillermo Hijano",
+    "Davide Lancierini",
+    "Alexander Mclean Marshall",
+    "Andrea Mauri",
+    "Patrick Owen",
+    "Mitesh Patel",
+    "Konstantinos Petridis",
+    "Shah Rukh Qasim",
+    "Nicola Serra",
+    "William Sutcliffe",
+    "Hanae Tilquin"
+  ],
+  "published": "2025-07-07T14:51:19Z",
+  "updated": "2026-01-14T09:04:42Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex",
+  "doi": "10.1103/k9ls-9pwc"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2505.10754v3",
+  "url": "https://arxiv.org/abs/2505.10754v3",
+  "pdf_url": "https://arxiv.org/pdf/2505.10754v3.pdf",
+  "title": "Conservative velocity mappings for discontinuous Galerkin kinetics",
+  "abstract": "Continuum computational kinetic plasma models evolve the distribution function of a plasma species $f_s$ on a phase-space grid over time. In many problems of interest the distribution function has limited extent in velocity space; hence, using a uniform, highly refined mesh would be costly and slow. Nonuniform velocity grids can reduce the computational cost by placing more degrees of freedom where $f_s$ is appreciable and fewer where it is not. In this work we introduce a first-of-its kind discontinuous Galerkin approach to nonuniform velocity-space discretization using mapped velocity coordinates. This new method is presented in the context of a gyrokinetic model used to study magnetized plasmas. We create discretizations of collisionless and collisional terms using mappings in a way that exactly conserves particles and energy. Numerical tests of such properties are presented, and we show that this new discretization can reproduce earlier gyrokinetic simulations using grids with up to 6-60 times fewer cells and 22X-60X speed-ups depending on dimensionality, geometry and plasma parameters.",
+  "authors": [
+    "Manaure Francisquez",
+    "Petr Cagas",
+    "Akash Shukla",
+    "James Juno",
+    "Gregory W. Hammett"
+  ],
+  "published": "2025-05-15T23:47:41Z",
+  "updated": "2026-01-13T17:08:02Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
