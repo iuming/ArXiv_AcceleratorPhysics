@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2507.09106v2",
+  "url": "https://arxiv.org/abs/2507.09106v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.09106v2.pdf",
+  "title": "CycleGAN-Driven Transfer Learning for Electronics Response Emulation in High-Purity Germanium Detectors",
+  "abstract": "High-Purity Germanium (HPGe) detectors are a key technology for rare-event searches such as neutrinoless double-beta decay (\\ensuremath{0νββ}) and dark matter experiments. Pulse shapes from these detectors vary with interaction topology and thus encode information critical for event classification. Pulse shape simulations (PSS) are essential for modeling analysis cuts that distinguish signal events from backgrounds and for generating reliable simulations of energy spectra. Traditional PSS methods rely on a series of first-principles corrections to replicate the effect of readout electronics, requiring challenging fits over large parameter spaces and often failing to accurately model the data. We present a neural network architecture, the Cyclic Positional U-Net (https://github.com/aobol/CPU-Net), that performs translations of simulated pulses so that they closely resemble measured detector signals. Using a Cycle Generative Adversarial Network (CycleGAN) framework, this {Response Emulation Network} (REN) learns a data-driven mapping between simulated and measured pulses with high fidelity, without requiring a predetermined response model. We use data from a High-Purity Germanium (HPGe) detector with an inverted-coaxial point contact (ICPC) geometry to show that \\texttt{CPU-Net} effectively captures and reproduces critical pulse shape features, allowing more realistic simulations without detector-specific tuning. \\texttt{CPU-Net} achieves up to a factor-of-four improvement in distribution-level agreement for pulse shape parameter reconstruction, while preserving the topology-dependent information required for pulse-shape discrimination.",
+  "authors": [
+    "Kevin Bhimani",
+    "Julieta Gruszko",
+    "Morgan Clark",
+    "John Wilkerson",
+    "Aobo Li"
+  ],
+  "published": "2025-07-12T01:36:59Z",
+  "updated": "2026-01-14T21:00:17Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1088/2632-2153/ae3052"
+}
