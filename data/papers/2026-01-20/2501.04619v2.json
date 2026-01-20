@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2501.04619v2",
+  "url": "https://arxiv.org/abs/2501.04619v2",
+  "pdf_url": "https://arxiv.org/pdf/2501.04619v2.pdf",
+  "title": "Fast physics-based launcher optimization for electron cyclotron current drive",
+  "abstract": "With the increased urgency to design fusion pilot plants, fast optimization of electron cyclotron current drive (ECCD) launchers is paramount. Traditionally, this is done by coarsely sampling the 4-D parameter space of possible launch conditions consisting of (1) the launch location (constrained to lie along the reactor vessel), (2) the launch frequency, (3) the toroidal launch angle, and (4) the poloidal launch angle. For each initial condition, a ray-tracing simulation is performed to evaluate the ECCD efficiency. Unfortunately, this approach often requires a large number of simulations (sometimes millions in extreme cases) to build up a dataset that adequately covers the plasma volume, which must then be repeated every time the design point changes. Here we adopt a different approach. Rather than launching rays from the plasma periphery and hoping for the best, we instead directly reconstruct the optimal ray for driving current at a given flux surface using a reduced physics model coupled with a commercial ray-tracing code. Repeating this throughout the plasma volume requires only hundreds of simulations, constituting a significant speedup. The new method is validated on two separate example tokamak profiles, and is shown to reliably drive localized current at the specified flux surface with the same optimal efficiency as obtained from the traditional approach.",
+  "authors": [
+    "N A Lopez",
+    "A Alieva",
+    "S A M McNamara",
+    "X Zhang"
+  ],
+  "published": "2025-01-08T17:03:08Z",
+  "updated": "2026-01-15T16:26:44Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1088/1361-6587/adcae7"
+}
