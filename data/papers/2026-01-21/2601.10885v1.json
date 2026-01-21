@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.10885v1",
+  "url": "https://arxiv.org/abs/2601.10885v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.10885v1.pdf",
+  "title": "Learning collision operators from plasma phase space data using differentiable simulators",
+  "abstract": "We propose a methodology to infer collision operators from phase space data of plasma dynamics. Our approach combines a differentiable kinetic simulator, whose core component in this work is a differentiable Fokker-Planck solver, with a gradient-based optimisation method to learn the collisional operators that best describe the phase space dynamics. We test our method using data from two-dimensional Particle-in-Cell simulations of spatially uniform thermal plasmas, and learn the collision operator that captures the self-consistent electromagnetic interaction between finite-size charged particles over a wide variety of simulation parameters. We demonstrate that the learned operators are more accurate than alternative estimates based on particle tracks, while making no prior assumptions about the relevant time-scales of the processes and significantly reducing memory requirements. We find that the retrieved operators, obtained in the non-relativistic regime, are in excellent agreement with theoretical predictions derived for electrostatic scenarios. Our results show that differentiable simulators offer a powerful and computational efficient approach to infer novel operators for a wide rage of problems, such as electromagnetically dominated collisional dynamics and stochastic wave-particle interactions.",
+  "authors": [
+    "Diogo D. Carvalho",
+    "Pablo J. Bilbao",
+    "Warren B. Mori",
+    "Luis O. Silva",
+    "E. Paulo Alves"
+  ],
+  "published": "2026-01-15T22:31:26Z",
+  "updated": "2026-01-15T22:31:26Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
