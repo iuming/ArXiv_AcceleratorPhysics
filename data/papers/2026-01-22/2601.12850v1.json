@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2601.12850v1",
+  "url": "https://arxiv.org/abs/2601.12850v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.12850v1.pdf",
+  "title": "Accurate Simulation Pipeline for Passive Single-Photon Imaging",
+  "abstract": "Single-Photon Avalanche Diodes (SPADs) are new and promising imaging sensors. These sensors are sensitive enough to detect individual photons hitting each pixel, with extreme temporal resolution and without readout noise. Thus, SPADs stand out as an optimal choice for low-light imaging. Due to the high price and limited availability of SPAD sensors, the demand for an accurate data simulation pipeline is substantial. Indeed, the scarcity of SPAD datasets hinders the development of SPAD-specific processing algorithms and impedes the training of learning-based solutions.   In this paper, we present a comprehensive SPAD simulation pipeline and validate it with multiple experiments using two recent commercial SPAD sensors. Our simulator is used to generate the SPAD-MNIST, a single-photon version of the seminal MNIST dataset, to investigate the effectiveness of convolutional neural network (CNN) classifiers on reconstructed fluxes, even at extremely low light conditions, e.g., 5 mlux. We also assess the performance of classifiers exclusively trained on simulated data on real images acquired from SPAD sensors at different light conditions. The synthetic dataset encompasses different SPAD imaging modalities and is made available for download. Project page: https://boracchi.faculty.polimi.it/Projects/SPAD-MNIST.html.",
+  "authors": [
+    "Aleksi Suonsivu",
+    "Lauri Salmela",
+    "Leevi Uosukainen",
+    "Edoardo Peretti",
+    "Radu Ciprian Bilcu",
+    "Giacomo Boracchi"
+  ],
+  "published": "2026-01-19T09:04:43Z",
+  "updated": "2026-01-19T09:04:43Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.CV"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1109/JSEN.2025.3645459"
+}
