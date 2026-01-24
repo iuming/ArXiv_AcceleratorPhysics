@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2601.14508v1",
+  "url": "https://arxiv.org/abs/2601.14508v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.14508v1.pdf",
+  "title": "Super Time Stepping Methods for Diffusion using Discontinuous-Galerkin Spatial Discretizations",
+  "abstract": "Super-time-stepping (STS) methods provide an attractive approach for enabling explicit time integration of parabolic operators, particularly in large-scale, higher-dimensional kinetic simulations where fully implicit schemes are impractical. In this work, we present an explicit STS framework tailored for diffusion operators in gyrokinetic models, motivated by the fact that constructing and storing a Jacobian is often infeasible due to strong nonlocal couplings, high dimensionality, and memory constraints. We investigate the performance of several STS methods, including Runge-Kutta-Chebyshev (RKC) and Runge-Kutta-Legendre (RKL) schemes, applied to a diffusion equation discretized using both discontinuous Galerkin (DG) and finite-difference methods. To support time adaptivity, we introduce a novel error norm designed to more accurately track temporal error arising from DG spatial discretizations, in which degrees of freedom contribute unevenly to the solution error. Finally, we assess the performance of an automatic eigenvalue estimation algorithm for determining the required number of STS stages and compare it against an analytical estimation formula.",
+  "authors": [
+    "Mustafa Aggul",
+    "Manaure Francisquez",
+    "Daniel R. Reynolds",
+    "Sylvia Amihere"
+  ],
+  "published": "2026-01-20T22:00:44Z",
+  "updated": "2026-01-20T22:00:44Z",
+  "categories": [
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}
