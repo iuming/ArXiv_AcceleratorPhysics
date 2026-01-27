@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.17186v1",
+  "url": "https://arxiv.org/abs/2601.17186v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.17186v1.pdf",
+  "title": "Two-Stage Gamma-Neutron Source Classification in Water Cherenkov Detectors: Energy Threshold Screening and Machine Learning Pulse Analysis",
+  "abstract": "Water Cherenkov detectors offer a robust and economical solution for real-time radiation monitoring by detecting Cherenkov light from charged particles moving faster than light in water. This work presents a novel two-stage classification framework for gamma-neutron discrimination: an initial physics-based energy threshold filters unambiguous low-energy gamma sources, followed by a machine learning ensemble that resolves ambiguities at higher energies. The detector response was characterized using $^{60}$Co (1.17/1.33~MeV), $^{137}$Cs (0.66~MeV), and a shielded $^{241}$AmBe source, with lead, paraffin, and cadmium shielding employed to isolate neutron and gamma interactions. Energy calibration established a linear ADU to MeV conversion ($R^2 = 0.966$), enabling identification of a neutron detection threshold at $2.62 \\pm 0.77$~MeV via a $3σ$ significance analysis. Stage one categorizes sources as pure gamma (below threshold) or neutron-emitting (at threshold). For ambiguous cases above threshold, a machine learning pipeline utilizing pulse shape analysis was developed. A soft voting ensemble (Bagging, CatBoost, and MLP) achieved an accuracy of 0.816 and an AUC of 0.921. This hybrid scheme combines physics-based filtering with ML refinement, offering an interpretable and scalable solution for nuclear security, nonproliferation monitoring, and fundamental radiation research.",
+  "authors": [
+    "Alejandro Núñez-Selin",
+    "Iván Sidelnik",
+    "Christian Sarmiento-Cano",
+    "Hernán Asorey",
+    "Luis A. Núñez"
+  ],
+  "published": "2026-01-23T21:32:04Z",
+  "updated": "2026-01-23T21:32:04Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
