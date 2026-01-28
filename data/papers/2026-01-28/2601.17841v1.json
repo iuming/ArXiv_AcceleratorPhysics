@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2601.17841v1",
+  "url": "https://arxiv.org/abs/2601.17841v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.17841v1.pdf",
+  "title": "Smooth Polar B-Splines with High-Order Regularity at the Origin",
+  "abstract": "We introduce a smooth B-spline discretization in polar coordinates on the unit disc that corrects the loss of regularity present at the origin caused by the coordinate singularity in standard tensor-product B-spline formulations. The method constructs \"smooth polar splines\" via a Galerkin projection of harmonic polar functions $S_l^{-m}(r,θ) := r^l \\sin(mθ)$ and $S_l^{m}(r,θ) := r^l \\cos(mθ)$, derived from the polar representation of Cartesian monomials, onto the central tensor-product B-spline basis in the innermost radial region. The radial component reproduces $r^l$ exactly for $0 \\le l \\leq p$, where $p$ is the B-spline degree, satisfying the near-origin regularity condition. However, exact compatibility with $C^\\infty$-regularity at the origin is recovered only in the limit $Δθ\\to 0$, when the angular component resolves all angular harmonics accurately. The smooth polar splines are linear combinations of standard tensor-product B-splines and lie in the same function space, enabling mapping between the $C^\\infty$-regular subspace and the original discretization space via an exact prolongation operator and a corresponding restriction operator acting on the discrete variables. They match standard tensor-product B-splines away from the origin, preserve orthogonality among the newly constructed origin-centered basis functions, and maintain local support and sparse matrices. This smoothness and locality improve the conditioning of mass and stiffness matrices, conserve charge, and reduce statistical errors in particle-in-cell simulations near the origin, while eliminating spurious eigenvalues in eigenvalue problems. The approach provides a robust, high-order, and efficient adaptation of tensor-product B-splines for polar coordinates in physics simulations.",
+  "authors": [
+    "Peiyou Jiang",
+    "Roman Hatzky",
+    "Zhixin Lu",
+    "Eric Sonnendrücker",
+    "Matthias Borchardt",
+    "Ralf Kleiber",
+    "Martin Campos Pinto",
+    "Ronald Remmerswaal"
+  ],
+  "published": "2026-01-25T13:46:16Z",
+  "updated": "2026-01-25T13:46:16Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2601.17554v1",
+  "url": "https://arxiv.org/abs/2601.17554v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.17554v1.pdf",
+  "title": "Full event interpretation with machine-learning-based particle-flow reconstruction in the CMS detector",
+  "abstract": "The particle-flow (PF) algorithm constructs a global description of each particle collision by producing a comprehensive list of final-state particles, and is central to event reconstruction in the CMS experiment at the CERN LHC. The existing PF implementation relies on physics-motivated heuristics and assumptions that can be replaced by machine-learning (ML) models trained directly on simulated data and naturally suited to modern graphics processing units (GPUs). A state-of-the-art ML-based PF (MLPF) reconstruction algorithm, implemented within the CMS software framework, is presented. The MLPF algorithm performs a learnable full-event reconstruction on GPUs, generalizes across detector conditions and collision energies, and replaces multiple modular reconstruction steps with a single unified model. Physics performance comparable to standard PF reconstruction is achieved in both simulation and data, with improved jet energy resolution and inference time. In simulated top quark-antiquark events under LHC Run-3 (2023$-$2024) conditions, the jet energy resolution improves by 10$-$20% for jets with transverse momentum between 30$-$100 GeV. Inference time is evaluated using simulated multijet events, with a median of 20 ms per event on an Nvidia L4 GPU, compared to approximately 110 ms for the standard CMS PF reconstruction.",
+  "authors": [
+    "CMS Collaboration"
+  ],
+  "published": "2026-01-24T18:49:22Z",
+  "updated": "2026-01-24T18:49:22Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
