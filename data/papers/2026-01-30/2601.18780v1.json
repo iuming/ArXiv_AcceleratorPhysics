@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.18780v1",
+  "url": "https://arxiv.org/abs/2601.18780v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.18780v1.pdf",
+  "title": "OptiGAN for Crystal Arrays: Physics-Informed Generative Modeling of Optical Photon Transport in PET Detector Arrays",
+  "abstract": "Monte Carlo simulations of optical photon transport are computationally prohibitive for large-scale optical systems including detector arrays and PET systems, restricting practical use to single-crystal studies. This work presents an enhanced conditional generative adversarial network (optiGAN) replacing optical simulations at the crystal array level, extending our single-crystal approach to a 3x3 BGO array. We enhance the Wasserstein-GAN framework with Fourier feature encoding, a learnable latent mapping network, and a physics-informed loss enforcing momentum conservation. Training data is reduced eight-fold by exploiting symmetry. Evaluation employs three studies: a full array evaluation testing generalization from the fundamental domain to the complete geometry, a high-resolution study probing out-of-distribution generalization to untrained positions, and a pencil beam $γ$-photon study assessing practical applicability for experimental detector characterization. Performance is benchmarked against GATE10/Geant4 ground truth, using intrinsic fluctuations between independent Monte Carlo runs as baseline. OptiGAN achieves sliced Wasserstein similarity within 3$σ$-agreement of the baseline across all conditions, demonstrating successful generalization to the full array. The model transitions from electron-emission training data to realistic $γ$-photon interactions, producing flood maps that reproduce characteristic patterns including photopeak clusters and inter-crystal scatter lines. This proof-of-concept demonstrates that physics-informed generative models can accurately simulate optical photon transport in segmented scintillator arrays. The reproduction of experimentally relevant flood map features validates optiGAN for PET detector development and establishes a foundation for models generalizing across diverse array configurations.",
+  "authors": [
+    "Stephan Naunheim",
+    "Brandon Pardi",
+    "Guneet Mummaneni",
+    "Carlotta Trigila",
+    "Emilie Roncali"
+  ],
+  "published": "2026-01-26T18:48:05Z",
+  "updated": "2026-01-26T18:48:05Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
