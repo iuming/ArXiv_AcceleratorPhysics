@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2601.20569v1",
+  "url": "https://arxiv.org/abs/2601.20569v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.20569v1.pdf",
+  "title": "Improvements of the ALICE GPU TPC tracking and GPU framework for online and offline processing of Run 3 Pb-Pb data",
+  "abstract": "ALICE is the dedicated heavy ion experiment at the LHC at CERN and records lead-lead collisions at a rate of up to 50 kHz in LHC Run 3. To cope with such collision and data rates, ALICE uses a new GEM TPC with continuous readout and a GPU-based online computing farm for data compression. Operating the first GEM TPC of this size with large space charge distortions due to the high collision rate has many implications for the track reconstruction algorithm, both anticipated and unanticipated. With real Pb-Pb data available, the TPC tracking algorithm needed to be refined, particularly with respect to improved cluster attachment at the inner TPC region. In order to use the online computing farm efficiently for offline processing when there is no beam in the LHC, ALICE is currently running TPC tracking on GPUs also in offline processing. For the future, ALICE aims to run more computing steps on the GPU, and to use other GPU-enabled resources besides its online computing farm. These aspects, along with better possibilities for performance optimizations led to several improvements of the GPU framework and GPU tracking code, particularly using Run Time Compilation (RTC). The talk will give an overview of the improvements for the ALICE tracking code, mostly based on experience from reconstructing real Pb-Pb data with high TPC occupancy. In addition, an overview of the online and offline processing status on GPUs will be given, and an overview of how RTC improves the ALICE tracking code and GPU support.",
+  "authors": [
+    "David Rohr"
+  ],
+  "published": "2026-01-28T13:08:16Z",
+  "updated": "2026-01-28T13:08:16Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
