@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.21021v1",
+  "url": "https://arxiv.org/abs/2601.21021v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.21021v1.pdf",
+  "title": "Conditional Denoising Model as a Physical Surrogate Model",
+  "abstract": "Surrogate modeling for complex physical systems typically faces a trade-off between data-fitting accuracy and physical consistency. Physics-consistent approaches typically treat physical laws as soft constraints within the loss function, a strategy that frequently fails to guarantee strict adherence to the governing equations, or rely on post-processing corrections that do not intrinsically learn the underlying solution geometry. To address these limitations, we introduce the {Conditional Denoising Model (CDM)}, a generative model designed to learn the geometry of the physical manifold itself. By training the network to restore clean states from noisy ones, the model learns a vector field that points continuously towards the valid solution subspace. We introduce a time-independent formulation that transforms inference into a deterministic fixed-point iteration, effectively projecting noisy approximations onto the equilibrium manifold. Validated on a low-temperature plasma physics and chemistry benchmark, the CDM achieves higher parameter and data efficiency than physics-consistent baselines. Crucially, we demonstrate that the denoising objective acts as a powerful implicit regularizer: despite never seeing the governing equations during training, the model adheres to physical constraints more strictly than baselines trained with explicit physics losses.",
+  "authors": [
+    "José Afonso",
+    "Pedro Viegas",
+    "Rodrigo Ventura",
+    "Vasco Guerra"
+  ],
+  "published": "2026-01-28T20:32:20Z",
+  "updated": "2026-01-28T20:32:20Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.21668v1",
+  "url": "https://arxiv.org/abs/2601.21668v1",
+  "pdf_url": "https://arxiv.org/pdf/2601.21668v1.pdf",
+  "title": "A Hybrid semi-Lagrangian Flow Mapping Approach for Vlasov Systems: Combining Iterative and Compositional Flow Maps",
+  "abstract": "We propose a hybrid semi-Lagrangian scheme for the Vlasov--Poisson equation that combines the Numerical Flow Iteration (NuFI) method with the Characteristic Mapping Method (CMM). Both approaches exploit the semi-group property of the underlying diffeomorphic flow, enabling the reconstruction of solutions through flow maps that trace characteristics back to their initial positions. NuFI builds this flow map iteratively, preserving symplectic structure and conserving invariants, but its computational cost scales quadratically with time. Its advantage lies in a compact, low-dimensional representation depending only on the electric field. In contrast, CMM achieves low computational costs when remapping by composing the global flow map from explicitly stored submaps. The proposed hybrid method merges these strengths: NuFi is employed for accurate and conservative local time stepping, while CMM efficiently propagates the solution through submap composition. This approach reduces storage requirements, maintains accuracy, and improves structural properties. Numerical experiments demonstrate the effectiveness of the scheme and highlight the trade-offs between memory usage and computational cost. We benchmark against a semi-Lagrangian predictor-corrector scheme used in modern gyrokinetic codes, evaluating accuracy and conservation properties.",
+  "authors": [
+    "Philipp Krah",
+    "Zetao Lin",
+    "R. -Paul Wilhelm",
+    "Fabio Bacchini",
+    "Jean-Christophe Nave",
+    "Virginie Grandgirard",
+    "Kai Schneider"
+  ],
+  "published": "2026-01-29T13:03:32Z",
+  "updated": "2026-01-29T13:03:32Z",
+  "categories": [
+    "math.NA",
+    "physics.comp-ph",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

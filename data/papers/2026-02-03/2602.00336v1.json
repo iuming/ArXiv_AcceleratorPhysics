@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2602.00336v1",
+  "url": "https://arxiv.org/abs/2602.00336v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.00336v1.pdf",
+  "title": "Inter-detector differential fuzz testing for tamper detection in gamma spectrometers",
+  "abstract": "We extend physical differential fuzz testing as an anti-tamper method for radiation detectors [Vavrek et al., Science and Global Security 2025] to comparisons across multiple detector units. The method was previously introduced as a tamper detection method for authenticating a single radiation detector in nuclear safeguards and treaty verification scenarios, and works by randomly sampling detector configuration parameters to produce a sequence of spectra that form a baseline signature of an untampered system. At a later date, after potential tampering, the same random sequence of parameters is used to generate another series of spectra that can be compared against the baseline. Anomalies in the series of comparisons indicate changes in detector behavior, which may be due to tampering. One limitation of this original method is that once the detector has `gone downrange' and may have been tampered with, the original baseline is fixed, and a new trusted baseline can never be established if tests at new parameters are required. In this work, we extend our anti-tamper fuzz testing concept to multiple detector units, such that the downrange detector can be compared against a trusted or `golden copy' detector, even despite normal inter-detector manufacturing variations. We show using three NaI detectors that this inter-detector differential fuzz testing can detect a representative attack, even when the tested and golden copy detectors are from different manufacturers and have different performances. Here, detecting tampering requires visualizing the comparison metric vs. the parameter values and not just the sample number; moreover this baseline is non-linear and may require anomaly detection methods more complex than a simple threshold. Overall, this extension to multiple detectors improves prospects for operationalizing the technique in real-world treaty verification and safeguards contexts.",
+  "authors": [
+    "Pei Yao Li",
+    "Jayson R. Vavrek",
+    "Sean Peisert"
+  ],
+  "published": "2026-01-30T21:39:46Z",
+  "updated": "2026-01-30T21:39:46Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
