@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.01888v1",
+  "url": "https://arxiv.org/abs/2602.01888v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.01888v1.pdf",
+  "title": "Multigrid Poisson Solver for Complex Geometries Using Finite Difference Method",
+  "abstract": "We present an efficient numerical method, inspired by transformation optics, for solving the Poisson equation in complex and arbitrarily shaped geometries. The approach operates by mapping the physical domain to a uniform computational domain through coordinate transformations, which can be applied either to the entire domain or selectively to specific boundaries inside the domain. This flexibility allows both homogeneous (Laplace equation) and inhomogeneous (Poisson equation) problems to be solved efficiently using iterative or fast direct solvers, with only the material parameters and source terms modified according to the transformation. The method is formulated within a finite difference framework, where the modified material properties are computed from the coordinate transformation equations, either analytically or numerically. This enables accurate treatment of arbitrary geometric shapes while retaining the simplicity of a uniform grid solver. Numerical experiments confirm that the method achieves second-order accuracy , and offers a straightforward pathway to integrate fast solvers such as multigrid methods on the uniform computational grid.",
+  "authors": [
+    "Deepak Gautam",
+    "Bhooshan Paradkar"
+  ],
+  "published": "2026-02-02T10:00:10Z",
+  "updated": "2026-02-02T10:00:10Z",
+  "categories": [
+    "math.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

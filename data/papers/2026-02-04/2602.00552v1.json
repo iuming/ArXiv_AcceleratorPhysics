@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2602.00552v1",
+  "url": "https://arxiv.org/abs/2602.00552v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.00552v1.pdf",
+  "title": "Drift-kinetic PIC model for simulations of longitudinal plasma confinement in mirror traps",
+  "abstract": "The paper presents a 1D2V electrostatic PIC model with a drift-kinetic description of all particle types aiming at simulating classical longitudinal plasma transport in axially symmetric open traps. The model generalizes the semi-implicit particle-in-cell method with exact conservation of energy and charge to the case of collisional plasma and adapts it to boundary conditions on perfectly conducting walls with a floating potential. Implementation of Coulomb collisions is tested on the problem of temperature relaxation in a two-component plasma and demonstrates good agreement with the analytical theory. Since quasi-neutrality of plasma is not strictly determined, the model is able to correctly reproduce the ambipolar electric potential profile up to the walls. At the same time, the main advantage of implicit PIC simulations - the ability to use large grid steps, many times larger than the Debye radius - does not prevent the correct modeling of the near-wall electric potential jump. The model satisfactorily reproduces the known results of the Debye sheath theory and the Bohm criterion. A comparison of stationary plasma profiles formed in a mirror trap in the presence of a constant particle source with the results of simulations using the hybrid code MIDAS showed that self-consistent consideration of electron kinetics in expanders leads to noticeable (at the level of 15 %) differences in the electron temperature, potential, and density of the confined plasma.",
+  "authors": [
+    "V. V. Glinskiy",
+    "I. V. Timofeev",
+    "V. V. Prikhodko"
+  ],
+  "published": "2026-01-31T06:29:13Z",
+  "updated": "2026-01-31T06:29:13Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
