@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2602.03759v1",
+  "url": "https://arxiv.org/abs/2602.03759v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.03759v1.pdf",
+  "title": "A High-order piecewise field-aligned triangular finite element method for electromagnetic gyrokinetic particle simulations of tokamak plasmas with open field lines",
+  "abstract": "A high-order piecewise field-aligned triangular finite element method is developed and implemented for global electromagnetic gyrokinetic particle-in-cell simulations of tokamak plasmas with open field lines. The approach combines locally field-aligned finite element basis functions with unstructured $C^{1}$ triangular meshes in cylindrical coordinates, enabling whole-volume simulations with substantially reduced computational effort, while avoiding the grid distortion associated with globally field-aligned coordinates and the associated singularity at the separatrix of diverted plasmas. The formulation is compatible with both $δf$ and full-$f$ models and employs mixed-variable representations, along with a generalized pullback scheme, to control numerical cancellation in electromagnetic simulations. The method is implemented in the TRIMEG-C1 code and demonstrated using linear and nonlinear electromagnetic simulations of the TCV-X21 configuration. The results indicate that the approach accurately captures the key features of electromagnetic ion-temperature-gradient and kinetic ballooning mode physics, including the separatrix regions in the simulation, thereby providing a robust framework for whole-volume electromagnetic gyrokinetic simulations in realistic tokamak geometries.",
+  "authors": [
+    "Zhixin Lu",
+    "Guo Meng",
+    "Eric Sonnendruecker",
+    "Roman Hatzky",
+    "Giorgio Daneri",
+    "Gengxian Li",
+    "Peiyou Jiang",
+    "Klaus Reuter",
+    "Matthias Hoelzl"
+  ],
+  "published": "2026-02-03T17:21:52Z",
+  "updated": "2026-02-03T17:21:52Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
