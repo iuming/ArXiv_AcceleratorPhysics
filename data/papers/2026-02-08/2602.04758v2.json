@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2602.04758v2",
+  "url": "https://arxiv.org/abs/2602.04758v2",
+  "pdf_url": "https://arxiv.org/pdf/2602.04758v2.pdf",
+  "title": "Physics-Informed Neural Compression of High-Dimensional Plasma Data",
+  "abstract": "High-fidelity scientific simulations are now producing unprecedented amounts of data, creating a storage and analysis bottleneck. A single simulation can generate tremendous data volumes, often forcing researchers to discard valuable information. A prime example of this is plasma turbulence described by the gyrokinetic equations: nonlinear, multiscale, and 5D in phase space. It constitutes one of the most computationally demanding frontiers of modern science, with runs taking weeks and yielding tens of terabytes of data dumps. The increasing storage demands underscore the importance of compression. However, reconstructed snapshots do not necessarily preserve essential physical quantities. We present a spatiotemporal evaluation pipeline, accounting for structural phenomena and multi-scale transient fluctuations to assess the degree of physical fidelity. Indeed, we find that various compression techniques lack preservation of both spatial mode structure and temporal turbulence characteristics. Therefore, we explore Physics-Informed Neural Compression (PINC), which incorporates physics-informed losses tailored to gyrokinetics and enables extreme compressions ratios of over 70,000x. Entropy coding on top of PINC further pushes it to 120,000x. This direction provides a viable and scalable solution to the prohibitive storage demands of gyrokinetics, enabling post-hoc analyses that were previously infeasible.",
+  "authors": [
+    "Gianluca Galletti",
+    "Gerald Gutenbrunner",
+    "Sandeep S. Cranganore",
+    "William Hornsby",
+    "Lorenzo Zanisi",
+    "Naomi Carey",
+    "Stanislas Pamela",
+    "Johannes Brandstetter",
+    "Fabian Paischer"
+  ],
+  "published": "2026-02-04T16:57:16Z",
+  "updated": "2026-02-05T08:58:03Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.04975v1",
+  "url": "https://arxiv.org/abs/2602.04975v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.04975v1.pdf",
+  "title": "Stochastic hierarchical data-driven optimization: application to plasma-surface kinetics",
+  "abstract": "This work introduces a stochastic hierarchical optimization framework inspired by Sloppy Model theory for the efficient calibration of physical models. Central to this method is the use of a reduced Hessian approximation, which identifies and targets the stiff parameter subspace using minimal simulation queries. This strategy enables efficient navigation of highly anisotropic landscapes, avoiding the computational burden of exhaustive sampling. To ensure rigorous inference, we integrate this approach with a probabilistic formulation that derives a principled objective loss function directly from observed data. We validate the framework by applying it to the problem of plasma-surface interactions, where accurate modelling is strictly limited by uncertainties in surface reactivity parameters and the computational cost of kinetic simulations. Comparative analysis demonstrates that our method consistently outperforms baseline optimization techniques in sample efficiency. This approach offers a general and scalable tool for optimizing models of complex reaction systems, ranging from plasma chemistry to biochemical networks.",
+  "authors": [
+    "José Afonso",
+    "Vasco Guerra",
+    "Pedro Viegas"
+  ],
+  "published": "2026-02-04T19:03:40Z",
+  "updated": "2026-02-04T19:03:40Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "physics.chem-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
