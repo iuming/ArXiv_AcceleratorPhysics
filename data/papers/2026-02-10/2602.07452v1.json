@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2602.07452v1",
+  "url": "https://arxiv.org/abs/2602.07452v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.07452v1.pdf",
+  "title": "FPIC: a new Particle-In-Cell code for stationary and axisymmetric black-hole spacetimes",
+  "abstract": "In this paper we present a newly developed GRPIC code framework called FPIC, providing a detailed description of the Maxwell-equations solver, of the particle ``pushers'', and of the other algorithms that are needed in this approach. We describe in detail the code, which is written in Fortran and exploits parallel architectures using MPI directives both for the fields and particles. FPIC adopts spherical Kerr-Schild coordinates, which encode the overall spherical topology of the problem while remaining regular at the event horizon. The Maxwell equations are evolved using a finite-difference time-domain solver with a leapfrog scheme, while multiple particle ``pushers'' are implemented for the evolution of the particles. In addition to well-known algorithms, we introduce a novel hybrid method that dynamically switches between the most appropriate scheme based on the violation of the Hamiltonian energy. We first present results for neutral particles orbiting around black holes, both in the Schwarzschild and Kerr metrics, monitoring the evolution of the Hamiltonian error across different integration schemes. We apply our hybrid approach, showing that it is capable of achieving improved energy conservation at reduced computational cost. We apply FPIC to investigate the Wald solution, first in electrovacuum and subsequently in plasma-filled configurations. In the latter case, particles with negative energy at infinity are present inside the ergosphere, indicating that the Penrose process is active. Finally, we present the split-monopole solution in a plasma-filled environment and successfully reproduce the Blandford-Znajek luminosity, finding very good agreement with analytical predictions.",
+  "authors": [
+    "Claudio Meringolo",
+    "Luciano Rezzolla"
+  ],
+  "published": "2026-02-07T09:07:38Z",
+  "updated": "2026-02-07T09:07:38Z",
+  "categories": [
+    "astro-ph.HE",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.08488v1",
+  "url": "https://arxiv.org/abs/2602.08488v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.08488v1.pdf",
+  "title": "A Comparative Analysis of the CERN ATLAS ITk MOPS Readout: A Feasibility Study on Production and Development Setups",
+  "abstract": "The upcoming High-Luminosity upgrade of the Large Hadron Collider (LHC) necessitates a complete replacement of the ATLAS Inner Detector with the new Inner Tracker (ITk). This upgrade imposes stringent requirements on the associated Detector Control System (DCS), which is responsible for the monitoring, control, and safety of the detector. A critical component of the ITk DCS is the Monitoring of Pixel System (MOPS), which supervises the local voltages and temperatures of the new pixel detector modules. This paper introduces a dedicated testbed and verification methodology for the MOPS readout, defining a structured set of test cases for two DCS-readout architectures: a preliminary Raspberry Pi-based controller, the \"MOPS-Hub Mock-up\"(MH Mock-up), and the final production FPGA-based \"MOPS-Hub\" (MH). The methodology specifies the measurement chain for end-to-end latency, jitter, and data integrity across CAN and UART interfaces, including a unified time-stamping scheme, non-intrusive signal taps, and a consistent data-logging and analysis pipeline. This work details the load profiles and scalability scenarios (baseline operation, full-crate stress, and CAN Interface Card channel isolation), together with acceptance criteria and considerations for measurement uncertainty to ensure reproducibility. The objective is to provide a clear, repeatable procedure to qualify the MH architecture for production and deployment in the ATLAS ITk DCS. A companion paper will present the experimental results and the comparative analysis obtained using this testbed.",
+  "authors": [
+    "Lukas Flad",
+    "Felix Sebastian Nitz",
+    "Tobias Krawutschke"
+  ],
+  "published": "2026-02-09T10:41:28Z",
+  "updated": "2026-02-09T10:41:28Z",
+  "categories": [
+    "physics.ins-det",
+    "eess.SY"
+  ],
+  "primary_category": "physics.ins-det"
+}
