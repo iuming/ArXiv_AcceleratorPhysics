@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.08648v1",
+  "url": "https://arxiv.org/abs/2602.08648v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.08648v1.pdf",
+  "title": "Modelling Conduction Cooling of Superconducting Accelerator Magnets using a Thermal Thin Shell Approximation",
+  "abstract": "Understanding the thermal behaviour of superconducting accelerator magnets is essential to ensure stable and reliable operation. This work presents an extension of the Finite Element Quench Simulator (FiQuS) Multipole module to include collar and pole regions of accelerator magnets, which influences the overall thermal response. A thermal thin shell approximation (TSA), which is shown to be effective in previous works, is employed to model thermal insulation layers efficiently, replacing an insulation surface mesh. The main novelty of this work lies in the development of a method to model the thermal connection between the magnet winding and the collar and pole regions via the TSA.   To assess the accuracy and computational efficiency of the novel method, temperature and field variations are computed for a current ramp-up scenario. The thermal solution is coupled to a fully resolved magnetodynamic solution to capture the interaction between thermal and electromagnetic behaviour. The results obtained with the TSA are then compared to classical finite element (FE) solutions with explicitly meshed insulation domains. The TSA predicts the maximum temperature within 2-4% of the reference solution while substantially reducing mesh complexity and achieving up to a 5 times speed-up in computation time. While the TSA has traditionally been employed for short-duration quench simulations with high heat fluxes between magnet turns, these results demonstrate its reliability and efficiency for current ramp scenarios with low heat fluxes, significantly expanding its application range beyond what has been previously reported in the literature.   To illustrate potential applications of this new functionality, conduction cooling through the collar region is studied, comparing different cooling configurations and collar materials.",
+  "authors": [
+    "Emma Vancayseele",
+    "Erik Schnaubelt",
+    "Louis Denis",
+    "Christophe Geuzaine",
+    "Arjan Verweij",
+    "Mariusz Wozniak"
+  ],
+  "published": "2026-02-09T13:43:57Z",
+  "updated": "2026-02-09T13:43:57Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
