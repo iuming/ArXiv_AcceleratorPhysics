@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2510.16243v2",
+  "url": "https://arxiv.org/abs/2510.16243v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.16243v2.pdf",
+  "title": "A flexible and differentiable coil proxy for stellarator equilibrium optimization",
+  "abstract": "Balancing plasma performance and coil cost is a significant challenge when designing a stellarator power plant. Most current stellarator designs are produced by two-stage optimization: stage-1 for the equilibrium and stage-2 for a coil design that reproduces its magnetic configuration. Because few proxies connect both stages, two-stage optimization can produce plasmas that have high-quality physical properties but overly complex coils. In recent years, single-stage optimization is increasingly used to optimize the plasma and coils simultaneously, in order to improve the plasma-coil balance. However, all existing single-stage tools are specialized for filament coils, cannot model coil systems containing permanent magnets (PM) or dipole arrays, and remain challenged by numerical problems.The quasi-single-stage (QSS) optimization finds a middle-ground by integrating a coil optimization subproblem into stage-1 optimization. We present a flexible, differentiable coil complexity proxy based on the newly developed QUADCOIL coil optimization code. QUADCOIL is fast and can target realistic coil metrics and constraints that are unavailable to codes with comparable speed. We demonstrate the effectiveness and flexibility of the QUADCOIL proxy by presenting two QSS optimization studies. The first study produces a permanent magnet solution for the MUSE stellarator with 29% fewer magnets than previous solutions. The second study produces a coil solution for the ARIES-CS stellarator with approx 30% reductions in both peak and average coil force.",
+  "authors": [
+    "Lanke Fu",
+    "Dario Panici",
+    "Elizabeth Paul",
+    "Alan Kaptanoglu",
+    "Amitava Bhattacharjee"
+  ],
+  "published": "2025-10-17T22:19:19Z",
+  "updated": "2026-02-08T17:40:15Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

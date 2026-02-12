@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2511.17286v2",
+  "url": "https://arxiv.org/abs/2511.17286v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.17286v2.pdf",
+  "title": "A DSMC method for the space homogeneous multispecies Landau equation",
+  "abstract": "We present a Direct Simulation Monte Carlo (DSMC) method for the spatially homogeneous multispecies Landau-Fokker-Planck equation. The scheme is derived from a first-order approximation of the multispecies Boltzmann operator in the grazing collision limit and employs a regularized, easy-to-sample scattering kernel that removes the need for iterative solvers while preserving the fundamental invariants of the Landau dynamics. The method is fully mesh-free -- being a Monte Carlo particle algorithm -- which makes it naturally scalable to high-dimensional velocity spaces and straightforward to couple with particle-in-cell (PIC) solvers via operator splitting. A notable feature of our approach is its ability to treat realistic mass ratios: we show accurate simulations up to the physical proton-electron ($p$-$e$) mass ratio $m_p/m_e \\approx 1836$. We validate the method against the multispecies BKW benchmark for Maxwellian interactions and study collisional relaxation for Coulomb interactions, showing conservation of mass, momentum, and energy, and the expected trend towards Maxwellian equilibria.",
+  "authors": [
+    "Andrea Medaglia"
+  ],
+  "published": "2025-11-21T14:50:24Z",
+  "updated": "2026-02-09T14:35:38Z",
+  "categories": [
+    "physics.comp-ph",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
