@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2509.16243v2",
+  "url": "https://arxiv.org/abs/2509.16243v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.16243v2.pdf",
+  "title": "Binary Classification of Light and Dark Time Traces of a Transition Edge Sensor Using Convolutional Neural Networks",
+  "abstract": "The Any Light Particle Search II (ALPS II) is a light shining through a wall experiment probing the existence of axions and axion-like particles using a 1064 nm laser source. While ALPS II is already taking data using a heterodyne based detection scheme, cryogenic transition edge sensor (TES) based single-photon detectors are planned to expand the detection system for cross-checking the potential signals, for which a sensitivity on the order of $10^{-24}$ W is required. In order to reach this goal, we have investigated the use of convolutional neural networks (CNN) as binary classifiers to distinguish the experimentally measured 1064 nm photon triggered (light) pulses from background (dark) pulses. Despite extensive hyperparameter optimization, the CNN based binary classifier did not outperform our previously optimized cut-based analysis in terms of detection significance. This suggests that the used approach is not generally suitable for background suppression and improving the energy resolution of the TES. We partly attribute this to the training confusion induced by near-1064 nm black-body photon triggers in the background, which we identified as the limiting background source as concluded in our previous works. However, we argue that the problem ultimately lies in the binary classification based approach and believe that regression models would be better suitable for addressing the energy resolution. Unsupervised machine learning models, in particular neural network based autoencoders, should also be considered potential candidates for the suppression of noise in time traces. While the presented results and associated conclusions are obtained for TES designed to be used in the ALPS II experiment, they should hold equivalently well for any device whose output signal can be considered as a univariate time trace.",
+  "authors": [
+    "Elmeri Rivasto",
+    "Katharina-Sophie Isleif",
+    "Friederike Januschek",
+    "Axel Lindner",
+    "Manuel Meyer",
+    "Gulden Othman",
+    "José Alejandro Rubiera Gimeno",
+    "Christina Schwemmbauer"
+  ],
+  "published": "2025-09-17T06:53:20Z",
+  "updated": "2026-02-10T11:23:28Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1038/s41598-025-33353-4"
+}

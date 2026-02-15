@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.11422v1",
+  "url": "https://arxiv.org/abs/2602.11422v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.11422v1.pdf",
+  "title": "Investigation of Toroidal Rotation Effects on Spherical Torus Equilibria using the Fast Spectral Solver VEQ-R",
+  "abstract": "Standard reduced models often fail to adequately describe the complex geometric response of tokamak plasmas to strong toroidal rotation. In this work, we present VEQ-R, a computationally efficient spectral solver designed to calculate fixed-boundary equilibria with arbitrary toroidal flow. In contrast to computationally intensive grid-based codes, our model employs a 12-parameter shifted Chebyshev spectral expansion to explicitly resolve radial variations in high-order shaping profiles--such as dynamic elongation and triangularity. This capability allows the solver to accurately capture differential flux surface distortions (non-rigid effects) even in challenging sonic regimes ($M \\sim 1.0$). By synergizing this compact variational formulation with a novel ``Matrix-Kernel'' acceleration technique, we transform the problem into pre-computed algebraic matrix operations. This approach achieves convergence in approximately 5 ms, maintaining exceptional geometric fidelity compared to high-resolution benchmarks while balancing speed and accuracy. Our analysis reveals that rotation-induced flux compression leads to a monotonic decrease in the core safety factor $q_0$, pushing it dangerously close to unity--a structural deformation mechanism effectively captured by this approximate yet robust solver.",
+  "authors": [
+    "Xingyu Li",
+    "Huasheng Xie",
+    "Lai Wei",
+    "Zhengxiong Wang"
+  ],
+  "published": "2026-02-11T22:50:25Z",
+  "updated": "2026-02-11T22:50:25Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

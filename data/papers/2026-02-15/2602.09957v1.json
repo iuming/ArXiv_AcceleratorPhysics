@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.09957v1",
+  "url": "https://arxiv.org/abs/2602.09957v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.09957v1.pdf",
+  "title": "Deflation Techniques for Stellarator Equilibrium and Optimization",
+  "abstract": "Stellarator optimization is a multi-objective, non-convex problem characterized by a complex objective landscape containing many local minima. The solution resulting from a single optimization is highly sensitive to factors such as the initial guess, objective weights, and the optimization method employed. However, merely varying these factors does not guarantee that a physically distinct minimum will be found; optimizations often fail to converge to good minima or simply return to the same or very similar local minima despite large-scale parameter scans. This paper presents a novel application of deflation methods to effectively explore this landscape. By modifying the objective function to penalize and \"deflate\" away already-found solutions, this technique encourages the optimizer towards attractive, distinct new minima while using a single initial guess and optimization setup. We provide a primer on deflation for nonlinear systems and non-convex optimization before applying it to non-axisymmetric equilibrium and stellarator optimization problems. Key results include the discovery of families of global equilibria with similar core characteristics and the convergence to helical core equilibria without prescient initial guesses. Furthermore, we demonstrate that augmenting stage-one stellarator and stage-two coil optimization with deflation constraints readily produces multiple high-quality, distinct solutions, establishing the method's efficacy and ease of use.",
+  "authors": [
+    "Dario Panici",
+    "Byoungchan Jang",
+    "Rory Conlin",
+    "Daniel Dudt",
+    "Yigit Gunsur Elmacioglu",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-02-10T16:44:08Z",
+  "updated": "2026-02-10T16:44:08Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
