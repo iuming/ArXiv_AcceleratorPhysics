@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2602.11415v1",
+  "url": "https://arxiv.org/abs/2602.11415v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.11415v1.pdf",
+  "title": "Fermilab PIP II machine protection system digitized data noise elimination scheme and its FPGA implementation",
+  "abstract": "In Fermilab's PIP-II machine protection system, beam loss signals from various detectors are digitized at 125 MS/s. Noise from both high-frequency sources and low-frequency 60 Hz AC power equipment can contaminate the data. To suppress noise across these ranges especially 60 Hz and its harmonics, which overlap with beam loss signal frequencies advanced digital processing beyond standard filtering is required. Several real-time functional blocks were simulated and tested on an FPGA: (1) a dual time-constant discharging integrator filter, (2) a de-ripple baseline extraction and storage block, and (3) a fast-recovery discharging integrator. The nonlinear IIR integrator filter removes high-frequency noise and feeds into the baseline extractor. Upon detecting abrupt beam loss, it switches to a longer time constant to prevent baseline distortion. The de-ripple block calculates a valid baseline by averaging over multiple 60 Hz periods, storing results in a 4096-word FPGA RAM. This baseline is subtracted from raw data before integration by the fast-recovery block, which resets quickly after use. All blocks achieved expected performance.",
+  "authors": [
+    "J. Wu",
+    "A. Warner"
+  ],
+  "published": "2026-02-11T22:36:36Z",
+  "updated": "2026-02-11T22:36:36Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "0.18429/JACoW-IBIC2025-MOPMO45"
+}
