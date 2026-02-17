@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2602.13068v1",
+  "url": "https://arxiv.org/abs/2602.13068v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.13068v1.pdf",
+  "title": "Structure preservation using discrete gradients in the Vlasov-Poisson-Landau system",
+  "abstract": "We present a novel structure-preserving framework for solving the Vlasov-Poisson-Landau system of equations using a particle in cell (PIC) discretization combined with discrete gradient time integrators. The Vlasov-Poisson-Landau system is an accurate model for studying hot plasma dynamics at a kinetic scale where small-angle Coulomb collisions dominate. Our scheme guarantees conservation of mass, momentum and energy as well as preservation of the monotonicity of entropy production in both the time-continuous and discrete systems. We employ the conservative integrator for both the Hamiltonian Vlasov-Poisson equations and the dissipative Landau equation using the PETSc library (www.mcs.anl.gov/petsc) to showcase structure-preserving properties.",
+  "authors": [
+    "Daniel S. Finn",
+    "Joseph V. Pusztay",
+    "Matthew G. Knepley",
+    "Mark F. Adams"
+  ],
+  "published": "2026-02-13T16:23:31Z",
+  "updated": "2026-02-13T16:23:31Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

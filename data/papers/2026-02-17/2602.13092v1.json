@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2602.13092v1",
+  "url": "https://arxiv.org/abs/2602.13092v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.13092v1.pdf",
+  "title": "Tensor Network Compression for Fully Spectral Vlasov-Poisson Simulation",
+  "abstract": "We propose a numerical method for kinetic plasma simulation in which the phase-space distribution function is represented by a low-rank tensor network with an adaptive level of compression. The Vlasov-Poisson system is advanced using Strang splitting, and each substep is treated spectrally in the corresponding variable. By expressing both the distribution function and the Fourier transform as tensor network objects (state and operator representations), spectral transforms are applied directly in compressed form, enabling time stepping without reconstructing the full phase-space grid. The self-consistent electric field is also computed within the tensor formalism. The charge density is obtained by contracting over velocity degrees of freedom and extracting the zero Fourier mode, which provides the source term for a spectral Poisson solver. We validate the approach on standard benchmarks, including Landau damping and the two-stream instability. Finally, we systematically study how compression parameters, including truncation tolerances and internal ranks (bond dimensions), affect momentum and energy conservation, positivity behavior, robustness to filamentation, and computational cost.",
+  "authors": [
+    "Erik M. Åsgrim",
+    "Luca Pennati",
+    "Marco Pasquale",
+    "Stefano Markidis"
+  ],
+  "published": "2026-02-13T16:54:31Z",
+  "updated": "2026-02-13T16:54:31Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
