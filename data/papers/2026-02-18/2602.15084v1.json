@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2602.15084v1",
+  "url": "https://arxiv.org/abs/2602.15084v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.15084v1.pdf",
+  "title": "TokaMind: A Multi-Modal Transformer Foundation Model for Tokamak Plasma Dynamics",
+  "abstract": "We present TokaMind, an open-source foundation model framework for fusion plasma modeling, based on a Multi-Modal Transformer (MMT) and trained on heterogeneous tokamak diagnostics from the publicly available MAST dataset. TokaMind supports multiple data modalities (time-series, 2D profiles, and videos) with different sampling rates, robust missing-signal handling, and efficient task adaptation via selectively loading and freezing four model components. To represent multi-modal signals, we use a training-free Discrete Cosine Transform embedding (DCT3D) and provide a clean interface for alternative embeddings (e.g., Variational Autoencoders - VAEs). We evaluate TokaMind on the recently introduced MAST benchmark TokaMark, comparing training and embedding strategies. Our results show that fine-tuned TokaMind outperforms the benchmark baseline on all but one task, and that, for several tasks, lightweight fine-tuning yields better performance than training the same architecture from scratch under a matched epoch budget. These findings highlight the benefits of multi-modal pretraining for tokamak plasma dynamics and provide a practical, extensible foundation for future fusion modeling tasks. Training code and model weights will be made publicly available.",
+  "authors": [
+    "Tobia Boschi",
+    "Andrea Loreti",
+    "Nicola C. Amorisco",
+    "Rodrigo H. Ordonez-Hurtado",
+    "Cécile Rousseau",
+    "George K. Holt",
+    "Eszter Székely",
+    "Alexander Whittle",
+    "Samuel Jackson",
+    "Adriano Agnello",
+    "Stanislas Pamela",
+    "Alessandra Pascale",
+    "Robert Akers",
+    "Juan Bernabe Moreno",
+    "Vassil Alexandrov",
+    "Mykhaylo Zayats"
+  ],
+  "published": "2026-02-16T12:26:07Z",
+  "updated": "2026-02-16T12:26:07Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

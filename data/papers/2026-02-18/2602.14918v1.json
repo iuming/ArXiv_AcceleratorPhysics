@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2602.14918v1",
+  "url": "https://arxiv.org/abs/2602.14918v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.14918v1.pdf",
+  "title": "Data-driven modeling of shock physics by physics-informed MeshGraphNets",
+  "abstract": "High-resolution fluid simulations for plasma physics and astrophysics rely on Particle in cell (PIC) and hydrodynamic solvers (e.g., FLASH) to resolve shock dominated, multiscale phenomena, but their high computational cost severely limits scalability. This motivates the development of learning based surrogate models, which offer a promising route to accelerate these simulations while preserving physical fidelity. In this work, we study the Sedov Taylor shock propagation problem using a physics informed graph based surrogate model, Physics Informed MeshGraphNet (PhyMGN), designed for grid-based hydrodynamics. By incorporating weak physics constraints derived from the Euler equations using finite difference method, the model captures the self similar shock evolution and associated flow structures without explicitly solving the full hydrodynamic equations at each timestep. Comparing to the baseline MeshGraphNet model, PhyMGN is able to generalize beyond the training regime with a higher accuracy and preserves differentiability in parameter space while achieving a substantial reduction in computational cost relative to conventional numerical solvers.",
+  "authors": [
+    "S. Zhang",
+    "M. Mallon",
+    "M. Luo",
+    "J. Thiyagalingam",
+    "P. Tzeferacos",
+    "R. Bingham",
+    "G. Gregori"
+  ],
+  "published": "2026-02-16T16:53:51Z",
+  "updated": "2026-02-16T16:53:51Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

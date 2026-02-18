@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.15073v1",
+  "url": "https://arxiv.org/abs/2602.15073v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.15073v1.pdf",
+  "title": "GW-FALCON: A Novel Feature-Driven Deep Learning Approach for Early Warning Alerts of BNS and NSBH Inspirals in Next-Generation GW Observatories",
+  "abstract": "Next-generation GW observatories such as the ET and CE will detect BNS and NSBH inspirals with high SNRs and long in-band durations, making systematic early-warning alerts both feasible and scientifically valuable. Such triggers are essential for coordinating rapid electromagnetic follow-up. In this work, we introduce GW-FALCON, a novel feature-driven DL framework for early-time detection between GW signal+noise and noise-only data in next-generation detectors. Instead of feeding raw time series to CNN or more complex neural network architectures, we first extract a large set of statistical, temporal, and spectral quantities from short observational time windows using the TSFEL library. The resulting fixed-length feature vectors are then used as input to feed-forward ANNs suitable for low-latency operation. We demonstrate the method using simulated BNS and NSBH inspiral waveforms injected into colored Gaussian noise generated from the ET and CE design PSDs. We train separate ANNs on feature sets extracted from partial-inspiral windows characterized by different maximum instantaneous frequencies, enabling early-warning triggers from tens to hundreds of seconds before merger. Across all detector configurations and datasets, the resulting classifiers achieve high accuracy and detection efficiency, with ET-like networks typically reaching test accuracies of order 90% and CE-like ones exceeding 97% at low false-alarm probability. To the best of our knowledge, this work presents the first comprehensive feature-based DL detection framework for Next-generation GW observatories, connecting feature extraction from strain time series data to robust signal-noise classification within a setup that can be extended to real data and to more advanced neural network architectures.",
+  "authors": [
+    "Grigorios Papigkiotis",
+    "Georgios Vardakas",
+    "Nikolaos Stergioulas"
+  ],
+  "published": "2026-02-15T23:03:44Z",
+  "updated": "2026-02-15T23:03:44Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.HE",
+    "gr-qc",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}

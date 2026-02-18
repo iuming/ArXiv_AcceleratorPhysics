@@ -1,0 +1,38 @@
+{
+  "arxiv_id": "2602.15118v1",
+  "url": "https://arxiv.org/abs/2602.15118v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.15118v1.pdf",
+  "title": "Real-time graph neural networks on FPGAs for the Belle II electromagnetic calorimeter",
+  "abstract": "We present the development and evaluation of a real-time Graph Neural Network-based trigger for the electromagnetic calorimeter of the Belle II experiment at the SuperKEKB collider. The algorithm processes calorimeter trigger cells as graph nodes to perform clustering, feature extraction, and per-cluster signal classification with deterministic latency compatible with the first-level trigger readout system. The model predicts cluster positions and energies and provides a signal classification score, enabling a more flexible clustering strategy than the baseline trigger algorithm. Implemented on an FPGA and integrated into the Belle II trigger chain for synchronous operation, the system sustains the 8 MHz trigger throughput with an end-to-end latency of 3.168 $μ$s. The performance is evaluated using simulated events and collision data. The energy resolution is comparable to the baseline trigger, while the position resolution for high-energy clusters improves by up to 18 percent in the central detector region. Cluster purity increases by up to 20 percent at low energies for isolated clusters, and cluster efficiency improves by up to 20 percent for overlapping clusters. The signal classifier enables additional background suppression at fixed signal retention. These results demonstrate the first operation of a Graph Neural Network-based reconstruction system implemented on FPGAs within the real-time trigger readout path of a collider experiment.",
+  "authors": [
+    "I. Haide",
+    "M. Neu",
+    "Y. Unno",
+    "T. Justinger",
+    "V. Dajaku",
+    "F. Baptist",
+    "T. Lobmaier",
+    "J. Becker",
+    "T. Ferber",
+    "H. Bae",
+    "A. Beaubien",
+    "J. Eppelt",
+    "R. Giordano",
+    "G. Heine",
+    "T. Koga",
+    "Y. -T. Lai",
+    "K. Miyabayashi",
+    "H. Nakazawa",
+    "M. Remnev",
+    "L. Reuter",
+    "K. Unger",
+    "R. van Tonder"
+  ],
+  "published": "2026-02-16T19:00:16Z",
+  "updated": "2026-02-16T19:00:16Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
