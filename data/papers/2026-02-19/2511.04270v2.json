@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2511.04270v2",
+  "url": "https://arxiv.org/abs/2511.04270v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.04270v2.pdf",
+  "title": "Advancements and future expansions of the Caribou DAQ system",
+  "abstract": "Caribou is a versatile data acquisition (DAQ) system developed within several collaborative frameworks (CERN EP R&D, DRD3, AIDAinnova, and Tangerine) to support laboratory and test-beam characterization of novel silicon pixel detectors. It combines a custom Control and Readout (CaR) board with a Xilinx Zynq System-on-Chip (SoC) running project-wide shared firmware and software stacks. The system architecture emphasizes reusability, flexibility, and ease of integration. The CaR board provides essential interfaces such as programmable power supplies, voltage and current references, high-speed ADCs, and configurable I/O lines for detector control and readout. The SoC runs an embedded Linux distribution built with PetaLinux and integrates two main components: Peary, a C++ embedded DAQ application providing hardware abstraction, configuration management, logging, and multi-device control through Command Line (CLI) and Python interfaces; and Boreal, a common Caribou FPGA firmware framework offering reusable modules and automated build workflows for user-specific bit files. The next major milestone in Caribou's evolution is the transition to version 2.0, based on a Zynq UltraScale+ System-on-Module (SoM) architecture. This paper presents the recent progress and future prospects of the project and describes recent hardware, firmware, and software developments preparing the system for the upcoming CaR board v2.0.",
+  "authors": [
+    "Younes Otarid",
+    "Mathieu Benoit",
+    "Eric Buschmann",
+    "Hucheng Chen",
+    "Dominik Dannheim",
+    "Ilias Kamoisis",
+    "Thomas Koffas",
+    "Ryan St-Jean",
+    "Simon Spannagel",
+    "Shaochun Tang",
+    "Tomas Vanat",
+    "Changbum You"
+  ],
+  "published": "2025-11-06T11:05:48Z",
+  "updated": "2026-02-16T15:23:36Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
