@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2602.15990v1",
+  "url": "https://arxiv.org/abs/2602.15990v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.15990v1.pdf",
+  "title": "Memristive tabular variational autoencoder for compression of analog data in high energy physics",
+  "abstract": "We present an implementation of edge AI to compress data on an in-memory analog content-addressable memory (ACAM) device. A variational autoencoder is trained on a simulated sample of energy measurements from incident high-energy electrons on a generic three-layer scintillator-based calorimeter. The encoding part is distilled into tabular format by regressing the latent space variables using decision trees, which is then programmed on a memristor-based ACAM. In real-time, the ACAM compresses 48 continuously valued incoming energies measured by the calorimeter sensors into the latent space, achieving a compression factor of 12x, which is transmitted off-detector for decompression. The performance result of the ACAM, obtained using the Structural Simulation Toolkit, the SST open source framework, gives a latency value of 24 ns and a throughput of 330M compressions per second, i.e., 3 ns between successive inputs, and an average energy consumption of 4.1 nJ per compression.",
+  "authors": [
+    "Rajat Gupta",
+    "Yuvaraj Elangovan",
+    "Tae Min Hong",
+    "James Ignowski",
+    "John Moon",
+    "Aishwarya Natarajan",
+    "Stephen Roche",
+    "Luca Buonanno"
+  ],
+  "published": "2026-02-17T20:26:56Z",
+  "updated": "2026-02-17T20:26:56Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}
