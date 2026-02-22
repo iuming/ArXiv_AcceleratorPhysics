@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2602.16991v1",
+  "url": "https://arxiv.org/abs/2602.16991v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.16991v1.pdf",
+  "title": "Radiological mapping and uncertainty quantification by a fast Microcanonical Langevin Monte Carlo sampler",
+  "abstract": "Radiological mapping plays a critical role in nuclear emergency response and environmental management activities. A radiation image, representing the spatial and intensity distribution of the radioactivity, is reconstructed from the radiation data and associated contextual information. Typical image reconstruction methods, such as Maximum Likelihood Expectation-Maximization (ML-EM), only provide point estimates of the pixel or voxel activities without associated uncertainties. Here, we apply a new Microcanonical Langevin Monte Carlo (MCLMC) sampler for radiation image reconstruction and uncertainty quantification. The MCLMC sampler properties are first tested with synthetic radiation images. Methods to obtain the radiation distribution estimate and the associated uncertainty from the samples drawn by MCLMC are discussed. Given sufficient measurement statistics, the radiation distribution estimate obtained from MCLMC results closely resembles the ground truth with less risk of over- or under-fitting compared to ML-EM. When MCLMC is run in parallel on a GPU, it can converge in about 10 seconds for an image with $10^3$--$10^4$ pixels, which is significantly faster than other comparable Markov Chain Monte Carlo (MCMC) samplers. We also tested MCLMC on a dataset from a real distributed source radiological mapping campaign, and the reconstructed results agree well with ground truth. The fast MCLMC sampler therefore enables improved imaging accuracy and prompt uncertainty quantification for reconstructed radiation images, which can better inform decision-making in response to radiological events.",
+  "authors": [
+    "Lei Pan",
+    "Jaewon Lee",
+    "Brian J. Quiter",
+    "Jakob Robnik",
+    "Uroš Seljak",
+    "Jayson R. Vavrek"
+  ],
+  "published": "2026-02-19T01:30:44Z",
+  "updated": "2026-02-19T01:30:44Z",
+  "categories": [
+    "physics.med-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.med-ph"
+}
