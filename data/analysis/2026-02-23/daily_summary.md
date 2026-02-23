@@ -1,0 +1,517 @@
+# ArXiv加速器物理论文每日分析报告
+
+**日期**: 2026-02-23
+**分析时间**: 2026-02-23 02:49:54
+
+## 📊 概览统计
+
+- **总论文数**: 50
+- **成功分析**: 0
+- **分析成功率**: 0.0% (如果为0，说明需要设置API密钥)
+
+## 📈 分类分布
+
+- **未分类**: 50 篇 (100.0%)
+
+## 📚 论文详情
+
+### 1. Prompt Gamma Timing in Carbon Therapy: First Experimental Results with the TIARA Detector
+
+**作者**: Maxime Pinson, Adélie André, Yannick Boursier 等  
+**ArXiv ID**: [2602.18318v1](https://arxiv.org/abs/2602.18318v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 2. First Dark Photon Search Results from the Dandelion Experiment
+
+**作者**: I. Ourahou, C. Beaufort, M. Bastero-Gil 等  
+**ArXiv ID**: [2602.18218v1](https://arxiv.org/abs/2602.18218v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 3. Development of a time calibration system for the KLM upgrade in the Belle II experiment
+
+**作者**: Ziyu Liu, Xiyang Wang, Shiming Zou 等  
+**ArXiv ID**: [2509.20029v2](https://arxiv.org/abs/2509.20029v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 4. Picosecond Precision Heavy Ion Detector for Λ Hypernuclei Lifetime Studies
+
+**作者**: Simon Zhamkochyan, Sergey Abrahamyan, Amur Margaryan 等  
+**ArXiv ID**: [2510.21375v3](https://arxiv.org/abs/2510.21375v3)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 5. Extended X-ray energy characterization of SIDDHARTA-2 large-area Silicon Drift Detectors up to 50 keV
+
+**作者**: Francesco Clozza, Francesco Sgaramella, Leonardo Abbene 等  
+**ArXiv ID**: [2602.18135v1](https://arxiv.org/abs/2602.18135v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 6. Probing Internal Conversion and Dark-Matter-Induced De-excitation of 180mTa with a gamma-ray TES Array
+
+**作者**: A. Gando, K. Ichimura, K. Ishidoshiro 等  
+**ArXiv ID**: [2512.21468v2](https://arxiv.org/abs/2512.21468v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 7. Optimal Transport for $e/π^0$ Particle Classification in LArTPC Neutrino Experiments
+
+**作者**: David Caratelli, Nathaniel Craig, Chuyue Fang 等  
+**ArXiv ID**: [2506.09238v2](https://arxiv.org/abs/2506.09238v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 8. 3D-Deuteron Track Recoils Produced by Neutron Capture in Hydrogen Measured by MIMAC-35 cm
+
+**作者**: Ilias Ourahou, Daniel Santos, Olivier Guillaudin 等  
+**ArXiv ID**: [2602.17880v1](https://arxiv.org/abs/2602.17880v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 9. Prediction of Spallation Induced Transmutation Rates For Long Lived Fission Products via Proton Accelerator
+
+**作者**: Grigor Tukharyan, William Reed Kendrick, Areg Danagoulian 等  
+**ArXiv ID**: [2510.05507v3](https://arxiv.org/abs/2510.05507v3)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 10. Studying AC-LGAD strip sensors from laser and testbeam measurements
+
+**作者**: Danush Shekar, Shirsendu Nanda, Zhenyu Ye 等  
+**ArXiv ID**: [2511.14095v2](https://arxiv.org/abs/2511.14095v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 11. Characterization of compressible fluctuations in solar wind streams dominated by balanced and imbalanced turbulence: Parker Solar Probe, Solar Orbiter and Wind observations
+
+**作者**: C. A. Gonzalez, C. Gonzalez, A. Tenerani  
+**ArXiv ID**: [2602.17606v1](https://arxiv.org/abs/2602.17606v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 12. Momentum Measurement of Charged Particles in FASER's Emulsion Detector at the LHC
+
+**作者**: FASER Collaboration, Roshan Mammen Abraham, Xiaocong Ai 等  
+**ArXiv ID**: [2602.17575v1](https://arxiv.org/abs/2602.17575v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 13. Magnetic Alloy/Ferrite cavities
+
+**作者**: Harald Klingbeil  
+**ArXiv ID**: [1201.1154v2](https://arxiv.org/abs/1201.1154v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 14. Toward a Fully Autonomous, AI-Native Particle Accelerator
+
+**作者**: Chris Tennant  
+**ArXiv ID**: [2602.17536v1](https://arxiv.org/abs/2602.17536v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 15. A Kinetic Route to Helicity-Constrained Decay
+
+**作者**: Dion Li  
+**ArXiv ID**: [2602.17514v1](https://arxiv.org/abs/2602.17514v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 16. Modeling the light response of an optically readout GEM based TPC for the CYGNO experiment
+
+**作者**: Fernando Dominques Amaro, Rita Antonietti, Elisabetta Baracchini 等  
+**ArXiv ID**: [2505.06362v2](https://arxiv.org/abs/2505.06362v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 17. Modeling of Relativistic Plasmas with a Conservative Discontinuous Galerkin Method
+
+**作者**: James Juno, Grant Johnson, Alexander Philippov 等  
+**ArXiv ID**: [2602.17487v1](https://arxiv.org/abs/2602.17487v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 18. Tolerances to driver-witness misalignment in a quasilinear plasma wakefield accelerator
+
+**作者**: T. C. Wilson, J. Farmer, K. Lotov 等  
+**ArXiv ID**: [2602.17468v1](https://arxiv.org/abs/2602.17468v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 19. Self-Consistent Dynamics of Electron Radiation Reaction via Structure-Preserving Geometric Algorithms for Coupled Schrödinger-Maxwell Systems
+
+**作者**: Jacob Matthew Molina, Hong Qin  
+**ArXiv ID**: [2602.17429v1](https://arxiv.org/abs/2602.17429v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 20. Plasma Mixing in Collisionless Kelvin-Helmholtz Dynamics
+
+**作者**: Silvia Ferro, Fabio Bacchini, Giuseppe Arrò 等  
+**ArXiv ID**: [2602.17404v1](https://arxiv.org/abs/2602.17404v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 21. Resistive instabilities of current sheets in stratified plasmas with a gravitational field
+
+**作者**: Faisal Sayed, Anna Tenerani, Richard Fitzpatrick  
+**ArXiv ID**: [2602.17400v1](https://arxiv.org/abs/2602.17400v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 22. Prospects for Direct Electron Detectors in Ultrafast Electron Scattering Experiments
+
+**作者**: Laurenz Kremeyer, David Cai, Malik Lahlou 等  
+**ArXiv ID**: [2602.17396v1](https://arxiv.org/abs/2602.17396v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 23. Development and Application of an eV Neutron Polarization for Parity Violation Studies at CSNS Back-n Beamline
+
+**作者**: Xu Qin, Tianhao Wang, Xuanbo Chen 等  
+**ArXiv ID**: [2602.17742v1](https://arxiv.org/abs/2602.17742v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 24. Design and characterization of a photosensor system for the RELICS experiment
+
+**作者**: Jijun Yang, Ruize Li, Chang Cai 等  
+**ArXiv ID**: [2510.24196v3](https://arxiv.org/abs/2510.24196v3)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 25. Standards and Safety: an Overview
+
+**作者**: Luca Dassa  
+**ArXiv ID**: [2602.17173v1](https://arxiv.org/abs/2602.17173v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 26. Measurement of ionization yield of low energy ions in low pressure $\mathrm{CF}_{4}$ gas for dark matter searches
+
+**作者**: Satoshi Higashino, Wakako Toyama, Takuya Shiraishi 等  
+**ArXiv ID**: [2602.17126v1](https://arxiv.org/abs/2602.17126v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 27. Power attenuation in millimeter-wave and terahertz superconducting rectangular waveguides: linear response, TLS loss, and Higgs-mode nonlinearity
+
+**作者**: Takayuki Kubo  
+**ArXiv ID**: [2602.17000v1](https://arxiv.org/abs/2602.17000v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 28. Radiological mapping and uncertainty quantification by a fast Microcanonical Langevin Monte Carlo sampler
+
+**作者**: Lei Pan, Jaewon Lee, Brian J. Quiter 等  
+**ArXiv ID**: [2602.16991v1](https://arxiv.org/abs/2602.16991v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 29. Capturing Secondary Kinetic Instabilities in Three-Dimensional Dayside Reconnection Using an Improved Gradient-Based Closure
+
+**作者**: Kolter Bradshaw, Ammar Hakim, James Juno 等  
+**ArXiv ID**: [2602.16960v1](https://arxiv.org/abs/2602.16960v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 30. Theory of striped dynamic spectra of the Crab pulsar high-frequency interpulse
+
+**作者**: Mikhail V. Medvedev  
+**ArXiv ID**: [2602.16955v1](https://arxiv.org/abs/2602.16955v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 31. Extended phase-space symplectic integration for electron dynamics
+
+**作者**: Francois Mauger, Cristel Chandre  
+**ArXiv ID**: [2510.16542v2](https://arxiv.org/abs/2510.16542v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 32. Numerical study of electron acceleration by microwave-driven plasma wakefields in rectangular waveguides
+
+**作者**: Jesús E. López, Eduardo A. Orozco-Ospino  
+**ArXiv ID**: [2602.16896v1](https://arxiv.org/abs/2602.16896v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 33. Enhanced Hot Electron Preheat Observed in Magnetized Laser Direct-Drive Implosions
+
+**作者**: M. Cufari, M. Gatu Johnson, C. K. Li 等  
+**ArXiv ID**: [2602.16884v1](https://arxiv.org/abs/2602.16884v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 34. Performance of the Endcap Time-of-Flight detector in the STAR beam-energy scan
+
+**作者**: Mathias C. Labonté, Daniel Cebra, Zachary Sweger 等  
+**ArXiv ID**: [2602.16828v1](https://arxiv.org/abs/2602.16828v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 35. Coherent-state boundary conditions as the first-principles origin of background fields in QED
+
+**作者**: Keita Seto  
+**ArXiv ID**: [2512.21122v3](https://arxiv.org/abs/2512.21122v3)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 36. FLUKA-Based Optimization of Muon Production Target Design for a Muon Collider Demonstrator
+
+**作者**: Ruaa Al-Harthy  
+**ArXiv ID**: [2602.16672v1](https://arxiv.org/abs/2602.16672v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 37. Nonlinear Frequency Shifts due to Phase Coherent Interactions in Incompressible Hall MHD Turbulence
+
+**作者**: Erik C. Hansen, Prerana Sharma, Swadesh M. Mahajan  
+**ArXiv ID**: [2602.16652v1](https://arxiv.org/abs/2602.16652v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 38. Operational measurement of relativistic equilibrium from stochastic fields alone
+
+**作者**: Ira Wolfson  
+**ArXiv ID**: [2602.16765v1](https://arxiv.org/abs/2602.16765v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 39. Measurement of the Saturation Length of the Self-Modulation Instability
+
+**作者**: A. Clairembaud, M. Turner, M. Bergamaschi 等  
+**ArXiv ID**: [2602.16624v1](https://arxiv.org/abs/2602.16624v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 40. Scattering and sputtering on the lunar surface; Insights from negative ions observed at the surface
+
+**作者**: Romain Canu-Blot, Martin Wieser, Umberto Rollero 等  
+**ArXiv ID**: [2602.16567v1](https://arxiv.org/abs/2602.16567v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 41. Low dose gamma irradiation study of ATLAS ITk MD8 diodes
+
+**作者**: M. Mikeštíková, V. Fadeyev, P. Federičová 等  
+**ArXiv ID**: [2504.20755v2](https://arxiv.org/abs/2504.20755v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 42. Laboratory observation of collective beam-plasma instabilities in a relativistic pair jet
+
+**作者**: J W D Halliday, C D Arrowsmith, A M Goillot 等  
+**ArXiv ID**: [2602.16542v1](https://arxiv.org/abs/2602.16542v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 43. Thermal Decoherence and Population Transfer of MeV Channeling Electrons in Diamond
+
+**作者**: Tadas Paulauskas  
+**ArXiv ID**: [2602.16529v1](https://arxiv.org/abs/2602.16529v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 44. Measuring the buried interphase between solid electrolytes and lithium metal using neutrons
+
+**作者**: Andrew S. Westover, Katie L. Browning, Antonino Cannavo 等  
+**ArXiv ID**: [2512.06397v2](https://arxiv.org/abs/2512.06397v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 45. Photon Accelerator in Magnetized Electron-Ion Plasma
+
+**作者**: Sergei Bulanov, Stepan Bulanov, Timur Esirkepov 等  
+**ArXiv ID**: [2512.16630v5](https://arxiv.org/abs/2512.16630v5)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 46. Characterization of an MPPC-Based Scintillator Telescope and Measurement of Cosmic Muon Angular Distribution
+
+**作者**: Sahla Manithottathil, Anuj Gupta, Mudit Kumar 等  
+**ArXiv ID**: [2602.16297v1](https://arxiv.org/abs/2602.16297v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 47. Millimeter-Wavelength Lens-Absorber-Coupled Ti/Al Kinetic Inductance Detectors
+
+**作者**: Alejandro Pascual Laguna, Victor Rollano, Aimar Najarro-Fiandra 等  
+**ArXiv ID**: [2510.02971v2](https://arxiv.org/abs/2510.02971v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 48. Reinterpreting the sunward electron deficit: Implications for solar wind acceleration and core population formation
+
+**作者**: Zoltan Nemeth  
+**ArXiv ID**: [2602.16221v1](https://arxiv.org/abs/2602.16221v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 49. High-Voltage Performance Testing in LAr of the PMMA Cathode Connection for the DarkSide-20k Experiment
+
+**作者**: Ludovico Luzzi  
+**ArXiv ID**: [2601.11837v2](https://arxiv.org/abs/2601.11837v2)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
+### 50. Melting Coulomb clusters through nonreciprocity-enhanced parametric pumping
+
+**作者**: Zhicheng Shu, Wei-Chih Li, Wentao Yu 等  
+**ArXiv ID**: [2602.16074v1](https://arxiv.org/abs/2602.16074v1)  
+**分类**: 未分类  
+
+**状态**: ❌ 分析失败 - 所有LLM服务都不可用
+
+---
+
