@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.15130v1",
+  "url": "https://arxiv.org/abs/2602.15130v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.15130v1.pdf",
+  "title": "Code-Verification Techniques for Particle-in-Cell Simulations with Direct Simulation Monte Carlo Collisions",
+  "abstract": "Particle-in-cell methods with stochastic collision models are commonly used to simulate collisional plasma dynamics, with applications ranging from hypersonic flight to semiconductor manufacturing. Code verification of such methods is challenging due to the interaction between the spatial- and temporal-discretization errors, the statistical sampling noise, and the stochastic nature of the collision algorithm. In this paper, we introduce our code-verification approaches to apply the method of manufactured solutions to plasma dynamics, and we derive expected convergence rates for the different sources of discretization and statistical error. For the particles, we incorporate the method of manufactured solutions into the equations of motion. We manufacture the particle distribution function and inversely query the cumulative distribution function to obtain known particle positions and velocities at each time step. In doing so, we avoid modifying the particle weights, eliminating risks from potentially negative weights or modifications to weight-dependent collision algorithms. For the collision algorithm, we average independent outcomes at each time step and we derive a corresponding manufactured source term for the velocity change for each particle. By having known solutions for the particle positions and velocities, we are able to compute the error in these quantities directly instead of attempting to compute differences in distribution functions. These approaches are equally valid for particle-in-cell simulations with Monte Carlo collisions and direct simulation Monte Carlo simulations of neutral gas flows. We demonstrate the effectiveness of our approaches in three dimensions for different couplings between the particles and field, with and without binary elastic collisions, and with and without coding errors.",
+  "authors": [
+    "Brian A. Freno",
+    "William J. McDoniel",
+    "Christopher H. Moore",
+    "Neil R. Matula"
+  ],
+  "published": "2026-02-16T19:19:34Z",
+  "updated": "2026-02-16T19:19:34Z",
+  "categories": [
+    "physics.comp-ph",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
