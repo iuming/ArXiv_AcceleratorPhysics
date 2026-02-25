@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2602.19110v1",
+  "url": "https://arxiv.org/abs/2602.19110v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.19110v1.pdf",
+  "title": "Machine learning prediction of plasma behavior from discharge configurations on WEST",
+  "abstract": "Accurately predicting plasma behavior based on discharge configurations is essential for the safe and efficient operation of tokamak experiments. While physics-based integrated modeling codes provide valuable insights, their high computational cost limits their applicability for fast scenario design and control optimization. In this study, we propose a transformer-based machine learning model to predict key global plasma parameters on the WEST tokamak, including the normalized beta ($β_{n}$), toroidal beta ($β_{t}$), poloidal beta ($β_{p}$), plasma stored energy ($W_{\\mathrm{mhd}}$), safety factor at the magnetic axis ($q_{0}$), and safety factor at the 95% flux surface ($q_{95}$). The model uses only signals that can be defined before the discharge, such as magnetic coil currents, auxiliary heating power, plasma current reference, and line-averaged plasma density. Trained on 550 discharges from the WEST campaigns, the model demonstrates an average mean square error (MSE) loss of 0.026, an average coefficient of determination $R^{2}$ of 0.94, and achieves inference times on the order of 0.1 seconds. These results highlight the potential of data-driven surrogate models for assisting in discharge planning, scenario evaluation, and real-time control of tokamak plasmas.",
+  "authors": [
+    "Chenguang Wan",
+    "Feda Almuhisen",
+    "Philippe Moreau",
+    "Remy Nouailletas",
+    "Zhisong Qu",
+    "Youngwoo Cho",
+    "Robin Varennes",
+    "Kyungtak Lim",
+    "Kunpeng Li",
+    "Jia Huang",
+    "Weidong Chen",
+    "Jiangang Li",
+    "Xavier Garbet"
+  ],
+  "published": "2026-02-22T09:51:14Z",
+  "updated": "2026-02-22T09:51:14Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
