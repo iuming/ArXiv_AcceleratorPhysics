@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2502.04374v3",
+  "url": "https://arxiv.org/abs/2502.04374v3",
+  "pdf_url": "https://arxiv.org/pdf/2502.04374v3.pdf",
+  "title": "The Numerics of VMEC++",
+  "abstract": "VMEC++ is a Python-friendly, from-scratch reimplementation in C++ of the Variational Moments Equilibrium Code (VMEC), a fixed- and free-boundary ideal-MHD equilibrium solver for stellarators and tokamaks. The first VMEC implementation was written by Steven P. Hirshman and colleagues in the 1980s and 1990s and its latest Fortran incarnation (PARVMEC, https://github.com/ORNL-Fusion/PARVMEC) is widely used in stellarator optimization systems. Our work improves on previous implementations with regard to various critical aspects: special care has been put in providing an idiomatic Python experience, from installation to actual usage; VMEC++ has a zero-crash policy; it supports inputs in the classic INDATA format as well as friendlier JSON files. VMEC++ execution times are typically less than or equal to previous implementations, and time to convergence can be decreased dramatically by leveraging its hot-restart feature: by providing the output of a VMEC++ run as initial state for a subsequent one, VMEC++ is initialized using the previously converged equilibrium. This can dramatically decrease runtimes when running on many similar magnetic configurations as it typically happens in stellarator optimization pipelines. On the flip side, some features of the original Fortran VMEC implementation are not yet available in VMEC++, such as support for non-stellarator-symmetric configurations. This contribution presents the internal numerics of the open-source VMEC++ package publicly for the first time.",
+  "authors": [
+    "Jonathan Schilling"
+  ],
+  "published": "2025-02-05T14:02:06Z",
+  "updated": "2026-02-22T22:04:46Z",
+  "categories": [
+    "physics.plasm-ph",
+    "astro-ph.IM"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
