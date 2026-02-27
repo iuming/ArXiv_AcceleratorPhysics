@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2602.21571v1",
+  "url": "https://arxiv.org/abs/2602.21571v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.21571v1.pdf",
+  "title": "Collisional-radiative data for tokamak disruption mitigation modeling",
+  "abstract": "Effective tokamak disruption mitigation is crucial for ensuring the safety and integrity of fusion power reactors. Accurate collisional-radiative (CR) modeling of a radiative plasma is a critical component in predictive disruption mitigation design. In this paper, we focus on quasi-steady-state CR modeling applicable to the current quench phase of a tokamak disruption. We employ the ATOMIC collisional-radiative code from the Los Alamos suite and the newly developed Fusion Collisional-Radiative (FCR) code to model the atomic processes, providing high-fidelity data for radiative power loss, as well as average and effective charge states for hydrogen, helium, neon, and argon plasma species over a wide range of tokamak-relevant electron temperatures and electron densities. Fine-structure-resolved CR models are used for hydrogen and helium plasma species, while configuration-average CR models are implemented for neon and argon plasma species. The calculated values are compared with the superconfiguration CR model (FLYCHK) and the commonly used coronal equilibrium approximation to demonstrate the advantages and limitations of each model. To facilitate coupling of high-fidelity CR data to plasma simulation models, we represent the ATOMIC/FCR results over the relevant plasma parameter range using a smooth tensor product B-spline surface in electron temperature and electron density. This approach yields compact coefficient tables that can be evaluated efficiently while preserving spline smoothness across the domain. These data were previously used to examine ways to minimize runaway electrons in a tokamak current quench, and they are now made available in easy-to-use forms for community use and benchmarking.",
+  "authors": [
+    "Prashant Sharma",
+    "Christopher J. Fontes",
+    "Dmitry V. Fursa",
+    "Igor Bray",
+    "Mark Zammit",
+    "James Colgan",
+    "Hyun-Kyung Chung",
+    "Nathan Garland",
+    "Xian-Zhu Tang"
+  ],
+  "published": "2026-02-25T04:49:33Z",
+  "updated": "2026-02-25T04:49:33Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.atom-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
