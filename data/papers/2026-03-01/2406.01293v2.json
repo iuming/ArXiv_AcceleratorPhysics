@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2406.01293v2",
+  "url": "https://arxiv.org/abs/2406.01293v2",
+  "pdf_url": "https://arxiv.org/pdf/2406.01293v2.pdf",
+  "title": "A time-to-digital converter with steady calibration through single-photon detection",
+  "abstract": "Time-to-Digital Converters (TDCs) are a crucial tool in a wide array of fields, in particular for quantum communication, where time taggers performance can severely affect the quality of the entire application. Nowadays, FPGA-based TDCs present a viable alternative to ASIC ones, once the non-linear behavior due to the intrinsic nature of the device is properly mitigated. To compensate for said nonlinearities, a calibration procedure is required, which should be maintained throughout its runtime. Here we present the design and the demonstration of a TDC that is FPGA-based showing a residual FWHM jitter of 27 ps, that is scalable for multichannel operation. The target application in Quantum Key Distribution (QKD) is discussed with a calibration method based on the exploitation of single-photon detection that does not require stopping the data acquisition or using any estimation methods, thus increasing accuracy and removing data loss. The calibration was tested in a relevant environment, investigating the behavior of the device between 5 °C and 80 °C. Moreover, our design is capable of continuously streaming up to 12 Mevents/s for up to ~1 week without the TDC overflowing making it ready for a real-life scenario deployment.",
+  "authors": [
+    "Matías Rubén Bolaños",
+    "Daniele Vogrig",
+    "Paolo Villoresi",
+    "Giuseppe Vallone",
+    "Andrea Stanco"
+  ],
+  "published": "2024-06-03T13:03:59Z",
+  "updated": "2026-02-25T08:40:17Z",
+  "categories": [
+    "eess.SP",
+    "physics.ins-det",
+    "quant-ph"
+  ],
+  "primary_category": "eess.SP",
+  "doi": "10.1109/TIM.2025.3601244"
+}

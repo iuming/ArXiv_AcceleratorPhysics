@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2503.02751v2",
+  "url": "https://arxiv.org/abs/2503.02751v2",
+  "pdf_url": "https://arxiv.org/pdf/2503.02751v2.pdf",
+  "title": "Design and Implementation of a UDP-Based Command Interface for the INO ICAL Experiment",
+  "abstract": "Efficient command interface is a critical requirement for experiments employing a large number of front-end DAQ modules and control servers. In the context of the INOICAL (India-based Neutrino Observatory Iron Calorimeter) experiment, this involves 28,800 Resistive Plate Chamber(RPC), charged particle detectors. The acquisition and control of these detectors are facilitated through Front End data acquisition modules known as RPC-DAQs. These modules consists of Ethernet interfaces for data and command connectivity to a server. Each module acts as a network node with a unique IP address. The collective group of hundreds of modules is controlled by a common server over a Local Area Network (LAN). UDP (User Datagram Protocol) is the most commonly used networking protocol which supports Multicast as well as Unicast, can be easily adapted to INO ICAL Experiment. A server can send commands to group of DAQs or any particular DAQ. But UDP may have the problem of packet loss and reliability. To mitigate these issues, this paper suggests a simpler approach that modifies the UDP protocol by implementing a handshaking scheme and checksum, similar to those found in more reliable protocols like TCP. The proposed solution optimizes the use of UDP as a reliable command interface in the INO ICAL experiment, ensuring seamless data acquisition and control. Also, this paper shows the performance study of the custom hybrid UDP Command Interface in the prototype ICAL experiment called Mini Iron Calorimeter (Mini ICAL) which houses 20 units of RPCs and electronics. This work not only addresses the challenges of the INO ICAL experiment but also underscores the adaptability and robustness of the proposed protocol for usage in mini-ICAL and beyond.",
+  "authors": [
+    "Yuvaraj Elangovan",
+    "Mandar Saraf",
+    "B. Satyanarayana",
+    "S. S. Upadhya",
+    "Nagaraj Panyam",
+    "Ravindra Shinde",
+    "Gobinda Majumder",
+    "D. Sil",
+    "Pathaleswar",
+    "K. C. Ravindran",
+    "Upendra Gokhale",
+    "Pavan Kumar"
+  ],
+  "published": "2025-03-04T16:17:15Z",
+  "updated": "2026-02-26T09:45:22Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
