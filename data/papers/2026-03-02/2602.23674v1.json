@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2602.23674v1",
+  "url": "https://arxiv.org/abs/2602.23674v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.23674v1.pdf",
+  "title": "Cosmic Muon Explorer: A Portable Detector for Cosmic Muon Flux Measurements and Outreach",
+  "abstract": "In this paper, we present development of a portable cosmic muon tracker tailored for both on-site measurements of cosmic muon flux as well as for outreach activities. The tracker comprises of two 70 mm x 70 mm plastic scintillators, wavelength shifting (WLS) fibers, and Hamamatsu made Silicon Photomultipliers (SiPM) S13360-2050VE. The detector uses plastic scintillator panels optically coupled to WLS fibers, which transmit scintillation light to the SiPMs. SiPM signals are routed to an electronics board equipped with op-amp amplifiers and a peak-hold circuit connected to an ESP32 microcontroller module. When muons traverse through both scintillators the light emitted is collected by the SiPMs, and thus generating signals proportional to the incident light intensity. These signals are then amplified and the pulse peak is held for 500 us. A high speed discriminator is used to generate trigger logic signals. The peak analog voltage is digitized using the onboard ADC of the ESP32 when a coincident trigger occurs. The SiPMs are powered by a High Voltage bias supply module while an onboard BMP180 module measures temperature and pressure. For real-time event tagging, a GPS module is interfaced with the ESP-32. Housed within an acrylic box measuring 100 mm x 100 mm x 100 mm the detector can be powered using a 5V 1A USB power bank. An open source mobile application was used for real-time monitoring. This versatile and cost-effective portable detector facilitates cosmic muon research in various experimental settings. Its portability and low power requirements enable on-site measurements in environments such as tunnels, caves as well as high altitudes.",
+  "authors": [
+    "Yuvaraj Elangovan",
+    "Shashwat Kakkad",
+    "B. Satyanarayana"
+  ],
+  "published": "2026-02-27T04:42:55Z",
+  "updated": "2026-02-27T04:42:55Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.22618v1",
+  "url": "https://arxiv.org/abs/2602.22618v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.22618v1.pdf",
+  "title": "Advancing accelerator virtual beam diagnostics through latent evolution modeling: an integrated solution to forward, inverse, tuning, and UQ problems",
+  "abstract": "Virtual beam diagnostics relies on computationally intensive beam dynamics simulations where high-dimensional charged particle beams evolve through the accelerator. We propose Latent Evolution Model (LEM), a hybrid machine learning framework with an autoencoder that projects high-dimensional phase spaces into lower-dimensional representations, coupled with transformers to learn temporal dynamics in the latent space. This approach provides a common foundational framework addressing multiple interconnected challenges in beam diagnostics. For \\textit{forward modeling}, a Conditional Variational Autoencoder (CVAE) encodes 15 unique projections of the 6D phase space into a latent representation, while a transformer predicts downstream latent states from upstream inputs. For \\textit{inverse problems}, we address two distinct challenges: (a) predicting upstream phase spaces from downstream observations by utilizing the same CVAE architecture with transformers trained on reversed temporal sequences along with aleatoric uncertainty quantification, and (b) estimating RF settings from the latent space of the trained LEM using a dedicated dense neural network that maps latent representations to RF parameters. For \\textit{tuning problems}, we leverage the trained LEM and RF estimator within a Bayesian optimization framework to determine optimal RF settings that minimize beam loss. This paper summarizes our recent efforts and demonstrates how this unified approach effectively addresses these traditionally separate challenges.",
+  "authors": [
+    "Mahindra Rautela",
+    "Alexander Scheinker"
+  ],
+  "published": "2026-02-26T04:46:26Z",
+  "updated": "2026-02-26T04:46:26Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.acc-ph",
+  "doi": "10.18429/JACoW-NAPAC2025-MOP002"
+}
