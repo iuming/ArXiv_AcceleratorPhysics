@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.24140v1",
+  "url": "https://arxiv.org/abs/2602.24140v1",
+  "pdf_url": "https://arxiv.org/pdf/2602.24140v1.pdf",
+  "title": "A 200 dB Dynamic Range Radiation-Hard Delta-Sigma Current Digitizer for Beam Loss Monitoring",
+  "abstract": "This paper presents a radiation-hardened current-mode delta-sigma ADC fabricated in a standard 130~nm CMOS technology and qualified for total ionizing doses up to 100~Mrad. The converter is designed for beam loss monitoring applications in high-energy physics, where it must handle input currents spanning nine decades, from 1~mA down to 1~pA, while providing a fast 10~\\textmu s response time for machine protection. To meet these conflicting requirements, the architecture exploits the inherent trade-off between resolution and acquisition time: a first-order modulator sampled at 20~MHz delivers 11-bit effective resolution within the critical 10~\\textmu s window for the mA current range. Extended integration times of up to 100~s enable the sub-picoampere resolution required for beam alignment and background monitoring and provides an operational dynamic range exceeding 200~dB. The chip integrates two independent channels, consumes 25~mW from a 1.2~V supply, and includes radiation-hardening techniques such as triple-redundant digital logic and SEU-tolerant comparator banks. Post-irradiation measurements up to 100~Mrad show no performance degradation, and the uncalibrated integral nonlinearity remains within [+0.2\\%, --0.3\\%] of full scale over the 1~mA to 5~\\textmu A range. The converter's flexibility and radiation tolerance make it suitable not only for the HL-LHC beam loss monitoring upgrade but also for other precision current measurement applications in harsh environments.",
+  "authors": [
+    "Luca Giangrande"
+  ],
+  "published": "2026-02-27T16:16:49Z",
+  "updated": "2026-02-27T16:16:49Z",
+  "categories": [
+    "physics.ins-det",
+    "eess.SY",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
