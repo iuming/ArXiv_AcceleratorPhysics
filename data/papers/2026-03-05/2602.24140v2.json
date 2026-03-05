@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2602.24140v2",
+  "url": "https://arxiv.org/abs/2602.24140v2",
+  "pdf_url": "https://arxiv.org/pdf/2602.24140v2.pdf",
+  "title": "A 200 dB Dynamic Range Radiation-Hard Delta-Sigma Current Digitizer for Beam Loss Monitoring",
+  "abstract": "This manuscript describes a radiation-hardened current-mode delta-sigma ADC fabricated in a standard 130 nm CMOS technology and qualified for total ionizing doses up to 100 Mrad. The operational signal range achieved with a 100 s integration window exceeds 200 dB. The converter is designed for beam loss monitoring applications in high-energy physics, where it must handle input currents spanning nine decades, from 1 mA down to 1 pA, while providing a fast 10 us response time for machine protection. To meet these conflicting requirements, the architecture exploits the inherent trade-off between resolution and acquisition time provided by delta-sigma conversion: a first-order architecture, sampling at 20 MHz, delivers 11-bit effective resolution within the critical 10 us window for critical currents around 1 mA. Integration times above 10 s enable the sub-picoampere resolution required for precise beam alignment and background monitoring. The chip integrates two independent channels, consumes 25 mW from a 1.2 V supply, and relies on radiation-hardening techniques such as triple-redundant digital logic, custom ESD protections, and manual enclosed layout for critical analog transistors. Post-irradiation measurements up to 100 Mrad show no significant performance degradation, and the uncalibrated integral nonlinearity remains within [+4, -5] LSBs over the 1 mA to 5 uA range. The converter's flexibility and radiation tolerance make it suitable not only for the HL-LHC beam loss monitoring upgrade but also for other precision current measurement applications in harsh environments.",
+  "authors": [
+    "Luca Giangrande"
+  ],
+  "published": "2026-02-27T16:16:49Z",
+  "updated": "2026-03-04T12:35:33Z",
+  "categories": [
+    "physics.ins-det",
+    "eess.SY",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

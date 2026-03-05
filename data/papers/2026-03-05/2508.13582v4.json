@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2508.13582v4",
+  "url": "https://arxiv.org/abs/2508.13582v4",
+  "pdf_url": "https://arxiv.org/pdf/2508.13582v4.pdf",
+  "title": "Development of a simulation and analysis framework for NνDEx experiment",
+  "abstract": "N$ν$DEx aims to search for the neutrinoless double beta decay in $^{82}$Se using a high pressure $^{82}$SeF$_6$ gas time projection chamber (TPC). This paper presents a simulation and analysis framework developed specifically for the N$ν$DEx experiment.   Using density functional theory and two-temperature theory, the reduced mobilities of SeF$_5^-$ and SeF$_6^-$ ions in SeF$_6$ were calculated, yielding values of 0.444 and 0.430 $\\mathrm{cm^2V^{-1}s^{-1}}$ respectively, with an estimated uncertainty within 3\\%.   The TPC geometry, featuring a cathode, focusing plane, and anode structure, was modeled in COMSOL to compute electric fields. Signal and background events were generated using BxDecay0 and Geant4, while Garfield++ was employed to simulate charge transport and signal induction. Three-dimensional tracks were reconstructed from drift-time differences between the two assumed ion species using a breadth-first search algorithm.   To demonstrate the framework's analytical capability, topological variables were taken from reconstructed tracks and used to define selection criteria. A boosted decision tree was then implemented to benchmark the signal-background separation. This simulation framework successfully validates the complete experimental workflow, serving as a robust tool for detector design and future sensitivity studies in the N$ν$DEx experiment.",
+  "authors": [
+    "Tianyu Liang",
+    "Hulin Wang",
+    "Dongliang Zhang",
+    "Chaosong Gao",
+    "Xiangming Sun",
+    "Feng Liu",
+    "Jun Liu",
+    "Chengui Lu",
+    "Yichen Yang",
+    "Chengxin Zhao",
+    "Hao Qiu",
+    "Kai Chen"
+  ],
+  "published": "2025-08-19T07:31:27Z",
+  "updated": "2026-03-03T00:58:24Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1016/j.nima.2026.171439"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.03384v1",
+  "url": "https://arxiv.org/abs/2603.03384v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.03384v1.pdf",
+  "title": "Structured generalized sliced Wasserstein distance for keV X-ray polarization analysis with Gas Pixel Detector",
+  "abstract": "Because of the special angular distribution of excited electrons by the photoelectric effect, the Gas Pixel Detector (GPD) is effective in measuring keV X-ray polarization of astrophysical events (e.g. gamma-ray bursts), by capturing ionization tracks of excited electrons as polarized images. Traditionally, the emission angles of photoelectrons are extracted from polarized images first, and statistics are then performed on these angles to infer the polarization direction and intensity. However, observation with the wide field of view requires the incident angle of X-rays not directly attainable through the traditional analysis process. In this paper, we propose using the generalized sliced Wasserstein (GSW) distance, projected by neural networks with random weights, as a completely data-driven approach to analyze X-ray polarization based on two-dimensional polarized images. We find the structures of the randomized neural networks matter when focusing on different aspects of the polarized images, and take advantage of the discrimination abilities by different neural network structures. The proposed method, named the structured GSW distance, successfully distinguishes polarized images with different configurations of incident angles and polarization directions. Furthermore, we build a simplified statistical model based on the von Mises distribution and the circular Wasserstein distance and compare the model against the proposed method, showing their high consistency. The computational method reported in this paper may benefit GPD-based polarimetry in astroparticle experiments and also pattern analysis on raw data from pixel detectors.",
+  "authors": [
+    "Pengcheng Ai",
+    "Hongtao Qin",
+    "Xiangming Sun",
+    "Dong Wang",
+    "Huanbo Feng",
+    "Hongbang Liu"
+  ],
+  "published": "2026-03-03T06:59:44Z",
+  "updated": "2026-03-03T06:59:44Z",
+  "categories": [
+    "physics.data-an",
+    "astro-ph.IM",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.data-an"
+}
