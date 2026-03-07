@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2603.04942v1",
+  "url": "https://arxiv.org/abs/2603.04942v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.04942v1.pdf",
+  "title": "Fast array-based particle coincidence detection in a TimePix3-based velocity map imaging instrument",
+  "abstract": "With the development of high repetition rate laser sources and advanced multi-particle correlation analyses such as covariance mapping, particle detection techniques such as velocity map imaging (VMI) are poised to offer unprecedented views into molecular phenomena. Taking full advantage of the high count rates in these experiments requires the development of detectors with sufficient spatial and temporal resolution that can process data in real time. The TimePix3 camera (TPX3CAM) is an event-based pixel detector capable of spatio-temporally localizing many simultaneous particle hits in an efficient manner. While the sparse nature of the data stream allows for compact representation of particle hits, it also presents algorithmic and computational challenges for clustering individual pixels into hits. Here we present the theory and application of a rapid data processing and centroiding algorithm for ion and electron hits collected in a VMI instrument. The array-based computations that comprise the algorithm take full advantage of the data sparsity of the TimePix3 data stream and localize particle hits on the microchannel plate (MCP) to better than a single pixel on the pixel detector. Centroiding can be parallelized on a commercially available graphics processing unit (GPU) for additional speed. Using these innovations, data processing occurs about 25 times faster than data acquisition, for a 1 kHz repetition rate instrument and tens of particles per shot. In addition to its speed, the TPX3CAM detector outperforms state-of-the-art delay line anode detectors at discriminating multiple simultaneous hits, enabling high-fidelity coincidence and covariance studies in the near future.",
+  "authors": [
+    "Ian Gabalski",
+    "Eleanor Weckwerth",
+    "Chuan Cheng",
+    "Philip H. Bucksbaum"
+  ],
+  "published": "2026-03-05T08:40:57Z",
+  "updated": "2026-03-05T08:40:57Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

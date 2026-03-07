@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.04606v1",
+  "url": "https://arxiv.org/abs/2603.04606v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.04606v1.pdf",
+  "title": "PDE foundation model-accelerated inverse estimation of system parameters in inertial confinement fusion",
+  "abstract": "PDE foundation models are typically pretrained on large, diverse corpora of PDE datasets and can be adapted to new settings with limited task-specific data. However, most downstream evaluations focus on forward problems, such as autoregressive rollout prediction. In this work, we study an inverse problem in inertial confinement fusion (ICF): estimating system parameters (inputs) from multi-modal, snapshot-style observations (outputs). Using the open JAG benchmark, which provides hyperspectral X-ray images and scalar observables per simulation, we finetune the PDE foundation model and train a lightweight task-specific head to jointly reconstruct hyperspectral images and regress system parameters. The fine-tuned model achieves accurate hyperspectral reconstruction (test MSE 1.2e-3) and strong parameter-estimation performance (up to R^2=0.995). Data-scaling experiments (5%-100% of the training set) show consistent improvements in both reconstruction and regression losses as the amount of training data increases, with the largest marginal gains in the low-data regime. Finally, finetuning from pretrained MORPH weights outperforms training the same architecture from scratch, demonstrating that foundation-model initialization improves sample efficiency for data-limited inverse problems in ICF.",
+  "authors": [
+    "Mahindra Rautela",
+    "Alexander Scheinker",
+    "Bradley Love",
+    "Diane Oyen",
+    "Nathan DeBardeleben",
+    "Earl Lawrence",
+    "Ayan Biswas"
+  ],
+  "published": "2026-03-04T21:07:43Z",
+  "updated": "2026-03-04T21:07:43Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
