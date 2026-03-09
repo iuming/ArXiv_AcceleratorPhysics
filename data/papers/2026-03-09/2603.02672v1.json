@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2603.02672v1",
+  "url": "https://arxiv.org/abs/2603.02672v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.02672v1.pdf",
+  "title": "PanoMHD: Multimodal Modelling of Plasma Dynamics towards Tokamak Control",
+  "abstract": "Modelling the dynamics of complex physical systems is a fundamental challenge, particularly where nonlinear dynamics and multi-scale interactions render traditional simulations computationally prohibitive. Nuclear fusion plasma represents a complex system where accurately predicting the plasma state, encompassing both performance and stability, is a prerequisite for active control required for sustained energy production. However, existing approaches are limited in providing a comprehensive solution as they largely focus on predicting isolated indicators such as binary stability labels. To overcome this, we present Panoramic MagnetoHydroDynamics (PanoMHD), a self-supervised multimodal framework designed to model plasma dynamics. By utilising a causal Transformer operating on tokenised representations of multimodal physical signals, PanoMHD is able to model the dynamics of high-dimensional magnetic fluctuation signals, which serve as a direct signature of plasma stability. This shifts the prediction paradigm from isolated indicators to multimodal signals. We pioneer the direct prediction of magnetic fluctuation signals for the first time, and demonstrate that this comprehensive representation enables state-of-the-art performance on KSTAR nuclear fusion plant experimental data. Our model outperforms baselines in future plasma performance prediction ($R^2=0.987$ vs. $0.957$) and surpasses dedicated classifiers in the downstream classification of distinct plasma states (L/H mode) with 97.3\\% vs. 94.5\\% accuracy.",
+  "authors": [
+    "Hyeongjun Noh",
+    "Chweeho Heo",
+    "Xiaotian Gao",
+    "Yong-Su Na"
+  ],
+  "published": "2026-03-03T06:57:58Z",
+  "updated": "2026-03-03T06:57:58Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
