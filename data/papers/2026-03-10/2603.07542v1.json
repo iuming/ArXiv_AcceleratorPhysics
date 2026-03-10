@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.07542v1",
+  "url": "https://arxiv.org/abs/2603.07542v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.07542v1.pdf",
+  "title": "Defect Detection in Magnetic Systems Using U-Net and Statistical Measures",
+  "abstract": "Local material inhomogeneities can strongly influence magnetization dynamics and macroscopic magnetic properties, yet detecting such defects from magnetic imaging data remains challenging when thermal fluctuations and experimental noise obscure static contrast. Here, we investigate defect detection in strongly fluctuating magnetization regimes where signatures of inhomogeneities largely average out in time-resolved measurements. Using finite-temperature micromagnetic simulations with randomly distributed defects and material parameters representative of \\ce{Ni80Fe20}, we compute per-pixel temporal mean, temporal standard deviation, and latent entropy and use them as inputs for U-Net-based semantic segmentation models. We find that the most effective descriptor depends on the noise level and, importantly, that robust detection requires training data that reflect the expected noise statistics. These results provide practical guidance for designing noise-robust defect-detection workflows in magnetic imaging.",
+  "authors": [
+    "Ross Knapman",
+    "Atreya Majumdar",
+    "Nasim Bazazzadeh",
+    "Kübra Kalkan",
+    "Katharina Ollefs",
+    "Oliver Gutfleisch",
+    "Karin Everschor-Sitte"
+  ],
+  "published": "2026-03-08T09:04:34Z",
+  "updated": "2026-03-08T09:04:34Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.mtrl-sci"
+}
