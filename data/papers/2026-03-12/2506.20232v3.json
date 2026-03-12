@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2506.20232v3",
+  "url": "https://arxiv.org/abs/2506.20232v3",
+  "pdf_url": "https://arxiv.org/pdf/2506.20232v3.pdf",
+  "title": "Tomography for Plasma Imaging: a Unifying Framework for Bayesian Inference",
+  "abstract": "Plasma diagnostics often employ computerized tomography to estimate emissivity profiles from a finite, and often limited, number of line-integrated measurements. Decades of algorithmic refinement have brought considerable improvements, and led to a variety of employed solutions. These often feature an underlying, common structure that is rarely acknowledged or investigated. In this paper, we present a unifying perspective on sparse-view tomographic reconstructions for plasma imaging, highlighting how many inversion approaches reported in the literature can be naturally understood within a Bayesian framework. In this setting, statistical modelling of acquired data leads to a likelihood term, while the assumed properties of the profile to be reconstructed are encoded within a prior term. Together, these terms yield the posterior distribution, which models all the available information on the profile to be reconstructed. We show how credible reconstructions, uncertainty quantification and further statistical quantities of interest can be efficiently obtained from noisy tomographic data by means of a stochastic gradient flow algorithm targeting the posterior. This is demonstrated by application to soft x-ray imaging at the TCV tokamak. We validate the proposed imaging pipeline on a large dataset of generated model phantoms, showing how posterior-based inference can be leveraged to perform principled statistical analysis of quantities of interest. Finally, we address some of the inherent, and thus remaining, limitations of sparse-view tomography. All the computational routines used in this work are made available as open access code.",
+  "authors": [
+    "D. Hamm",
+    "C. Theiler",
+    "M. Simeoni",
+    "B. P. Duval",
+    "T. Debarre",
+    "L. Simons",
+    "J. R. Queralt"
+  ],
+  "published": "2025-06-25T08:23:09Z",
+  "updated": "2026-03-11T14:17:44Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1088/1361-6587/ae1708"
+}

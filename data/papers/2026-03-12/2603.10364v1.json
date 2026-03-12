@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.10364v1",
+  "url": "https://arxiv.org/abs/2603.10364v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.10364v1.pdf",
+  "title": "Information-Theoretic Spectroscopy: Universal Sparsity of Extinction Manifold and Optimal Sensing across Scattering Regimes",
+  "abstract": "The inverse reconstruction of material properties from optical extinction efficiency (Qext) is constrained by the high-dimensional nature of Mie scattering. We demonstrate that the Qext manifold possesses an intrinsic, physics-governed sparsity universal across dielectric materials. By analyzing the spectral topology of a diverse polymer library, we identify a critical Information Bottleneck at the onset of the Mie transition (r approx 0.1 um), where a peak in spectral entropy signifies a fundamental limit on signal compressibility. While the Fast Fourier Transform (FFT) is conventionally used for spectral analysis, we show it is physically mismatched for this domain; its periodic boundary assumptions induce spectral leakage that forces a massive basis expansion to resolve Mie ripples. Conversely, the Discrete Cosine Transform (DCT) mirrors the non-periodic geometry of extinction profiles, uncovering inherent compressibility by capturing over 90% of signal energy using fewer than 10 harmonic modes. Even at the Mie bottleneck, the DCT maintains a 12-fold compression advantage over the FFT at a 99% energy threshold. Notably, while both bases converge to identical error floors for a fixed energy threshold, the DCT achieves this fidelity with significantly lower hardware overhead. Stress-testing under 10% additive Gaussian noise confirms the Information Bottleneck is spatially and structurally invariant, proving this complexity peak is a fundamental physical constant of the manifold. By mapping this sparsity onto a compressed sensing architecture, we resolve a 2.5-20 um spectral range using between 22 and 170 sensors: enabling a 51%-94% reduction in hardware complexity that breaks the traditional Nyquist sampling limit (350 sensors) for high-fidelity clinical and remote sensing applications.",
+  "authors": [
+    "Proity Nayeeb Akbar"
+  ],
+  "published": "2026-03-11T03:25:02Z",
+  "updated": "2026-03-11T03:25:02Z",
+  "categories": [
+    "physics.optics",
+    "physics.app-ph",
+    "physics.comp-ph",
+    "physics.ins-det",
+    "physics.med-ph"
+  ],
+  "primary_category": "physics.optics"
+}
