@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.11562v1",
+  "url": "https://arxiv.org/abs/2603.11562v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.11562v1.pdf",
+  "title": "Tearing Stability Prediction Combining Toroidal Calculations With a Two-Fluid Slab Layer",
+  "abstract": "A new classical TM stability simulation workflow has been developed that solves the resistive inner-layer equations in a plasma slab to yield a linear, quasi-toroidal TM growth rate $γ$ and mode rotation frequency $ω$. This workflow combines two-fluid and drift MHD effects in a slab approximation of the resistive inner layer (SLAYER) with an effective tearing stability index as $Δ(γ,ω) = Δ' - Δ_\\mathrm{crit}$. SLAYER is used to calculate the inner-layer $Δ(γ,ω)$, the STRIDE code is used to calculate a toroidal $Δ'$ that includes shaping effects, and the toroidal $Δ_\\mathrm{crit}$ incorporates effects of thermal conduction on Glasser stabilization. This workflow is rapid and numerically robust across reactor-relevant plasma conditions, and yields growth rates that closely align with analytic predictions in well-documented linear growth rate regimes. Using synthetic equilibria, TM stability was calculated across scans of plasma $β$, inverse aspect-ratio, and toroidal current profile gradient. These scans effectively benchmarked this STRIDE+SLAYER workflow against existing models and showed reliable stability predictions in shaped H-mode-like plasmas. This capability to quickly and robustly predict classical tearing stability in tokamaks will facilitate the mapping of TM stable operational regimes and design of safe discharge trajectories in future devices.",
+  "authors": [
+    "D. A. Burgess",
+    "N. C. Logan",
+    "J. -K. Park",
+    "C. Paz-Soldan"
+  ],
+  "published": "2026-03-12T05:35:16Z",
+  "updated": "2026-03-12T05:35:16Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

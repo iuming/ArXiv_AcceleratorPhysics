@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2603.12161v1",
+  "url": "https://arxiv.org/abs/2603.12161v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.12161v1.pdf",
+  "title": "Quantum lower bounds for simulating fluid dynamics",
+  "abstract": "Developing quantum algorithms to simulate fluid dynamics has become an active area of research, as accelerating fluid simulations could have significant impact in both industry and fundamental science. While many approaches have been proposed for simulating fluid dynamics on quantum computers, it is largely unclear whether these algorithms will provide speedup over existing classical approaches. In this paper we give evidence that quantum computers cannot significantly outperform classical simulations of fluid dynamics in general. We study two models of fluids: the Korteweg-de Vries (KdV) equation, which models shallow water waves, and the incompressible Euler equations, which model ideal, inviscid fluids. We show that any quantum algorithm simulating the KdV equation or the Euler equations for time $T$ requires $Ω(T^2)$ and $e^{Ω(T)}$ copies of the initial state in the worst case, respectively. These lower bounds hold for the task of preparing the final state, and similar bounds hold for history state preparation. We prove the lower bound for the KdV equation by investigating divergence of solitons. For the Euler equations, we show that instabilities enable fast state discrimination.",
+  "authors": [
+    "Abtin Ameri",
+    "Joseph Carolan",
+    "Andrew M. Childs",
+    "Hari Krovi"
+  ],
+  "published": "2026-03-12T16:58:56Z",
+  "updated": "2026-03-12T16:58:56Z",
+  "categories": [
+    "quant-ph",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph"
+}
