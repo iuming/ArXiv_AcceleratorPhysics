@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2505.13702v2",
+  "url": "https://arxiv.org/abs/2505.13702v2",
+  "pdf_url": "https://arxiv.org/pdf/2505.13702v2.pdf",
+  "title": "Unsupervised anomaly detection in MeV ultrafast electron diffraction",
+  "abstract": "MeV ultrafast electron diffraction (MUED) is a pump-probe technique used to study the dynamic structural evolution of materials. An ultrashort laser pulse triggers structural changes, which are then probed by an ultrashort relativistic electron beam. To overcome low signal-to-noise ratios, diffraction patterns are averaged over thousands of shots. However, shot-to-shot instabilities in the electron beam can distort individual patterns, introducing uncertainty. Improving MUED accuracy requires detecting and removing these anomalous patterns from large datasets. In this work, we developed a fully unsupervised methodology for the detection of anomalous diffraction patterns. Using a convolutional autoencoder, we calculate the reconstruction mean squared error of the diffraction patterns. Based on the statistical analysis of this error, we provide the user an estimation of the probability that the pattern is normal, which also allows a posterior visual inspection of the images that are difficult to classify. This method has been trained with only 100 diffraction patterns and tested on 1521 patterns, resulting in a false positive rate between 0.2\\% and 0.4\\%, with a training time of 10 seconds per image and a test time of about 1 second per image. The proposed methodology can also be applied to other diffraction techniques in which large datasets are collected that include faulty images due to instrumental instabilities.",
+  "authors": [
+    "Mariana A. Fazio",
+    "Manel Martinez-Ramon",
+    "Salvador Sosa Güitron",
+    "Marcus Babzien",
+    "Mikhail Fedurin",
+    "Junjie Li",
+    "Mark Palmer",
+    "Sandra S. Biedron"
+  ],
+  "published": "2025-05-19T20:05:24Z",
+  "updated": "2026-03-13T15:49:45Z",
+  "categories": [
+    "cs.LG",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG"
+}

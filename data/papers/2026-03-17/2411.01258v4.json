@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2411.01258v4",
+  "url": "https://arxiv.org/abs/2411.01258v4",
+  "pdf_url": "https://arxiv.org/pdf/2411.01258v4.pdf",
+  "title": "Beyond the EPICS: comprehensive Python IOC development with QueueIOC",
+  "abstract": "Background and Purpose: Architectural deficiencies in EPICS lead to inefficiency in the development and application of EPICS IOCs. An unintrusive solution is replacing EPICS IOCs with more maintainable and flexible Python IOCs, only reusing the CA protocol of EPICS. While there are libraries like caproto and PCASPy that help to create Python IOCs, they still feel insufficient for more complex requirements. Methods: Noticing caput, caget and camonitor are just specialised combinations of requests/replies and notifications in client-server communication, by combining barebone caproto and event loops like those in server-like programs, the QueueIOC framework for Python IOCs is created, which has the potential to systematically reduce the development and maintenance cost of IOCs. Results: Examples based on QueueIOC are first given for workalikes of StreamDevice and asyn; also given are examples for \"sequencer\" applications, like those based on seq, include monochromators, motor anti-bumping and motor multiplexing. A QueueIOC-based framework for detector integration is presented in an accompanying paper. Also reported is a simple but expressive architecture for GUIs, as well as software to use with the ~/iocBoot convention which addresses some issues we find with a similar solution based on procServ.",
+  "authors": [
+    "Peng-Cheng Li",
+    "Xiao-Xue Bi",
+    "Ying-Ke Huang",
+    "Dian-Shuai Zhang",
+    "Xiao-Bao Deng",
+    "Qun Zhang",
+    "Ge Lei",
+    "Gang Li",
+    "Yu Liu"
+  ],
+  "published": "2024-11-02T14:17:30Z",
+  "updated": "2026-03-14T11:17:13Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

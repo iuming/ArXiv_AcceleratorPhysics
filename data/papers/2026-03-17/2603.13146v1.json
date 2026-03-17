@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2603.13146v1",
+  "url": "https://arxiv.org/abs/2603.13146v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.13146v1.pdf",
+  "title": "Charge-Carrier transport simulations in diamond detectors with electric-field-dependent mobility and charge-collection-distance-based trapping",
+  "abstract": "Diamond detectors are attractive for operation in harsh radiation environments because they combine radiation tolerance, fast signal formation, and low leakage current. Realistic detector-response simulations require an accurate description of charge-carrier mobility and trapping, which determine both signal amplitude and timing. In this work, we extend \\allpix{}, a modular end-to-end detector simulation framework, with diamond-specific transport models. The implementation includes field-dependent mobility parameterizations for electrons and holes and an effective trapping model based on the charge collection distance (CCD), providing a detector-level interface to material quality and radiation-damage measurements. The mobility description is validated in the negligible-trapping limit using single-crystalline CVD diamond by comparing simulated drift velocities and transient-current signals with published reference data. For polycrystalline CVD diamond, the CCD-based trapping model is evaluated using experimentally measured CCD values and compared with laboratory transient-current-technique waveforms. The simulations reproduce the measured drift-velocity behavior in scCVD and the reduced charge collection and degraded transient response observed in pcCVD. The presented implementation enables detector-level studies of charge collection, pulse formation, and timing performance in diamond sensors using experimentally accessible transport and trapping parameters, and provides a practical framework for simulation-driven detector development and radiation-damage studies.",
+  "authors": [
+    "Faiz Rahman Ishaqzai",
+    "Muhammed Deniz",
+    "Marta Baselga",
+    "Tobias Bisanz",
+    "Kevin Kröninger",
+    "Jens Weingarten",
+    "Antonia Wippermann"
+  ],
+  "published": "2026-03-13T16:34:31Z",
+  "updated": "2026-03-13T16:34:31Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

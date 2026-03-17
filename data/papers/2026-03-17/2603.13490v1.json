@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.13490v1",
+  "url": "https://arxiv.org/abs/2603.13490v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.13490v1.pdf",
+  "title": "Ultra Fast Calorimeter Simulation with Generative Machine Learning on FPGAs",
+  "abstract": "Computationally expensive, high-accuracy detector simulations are a major bottleneck for many particle physics experiments such as those at the Large Hadron Collider (LHC) as well as those planned for future colliders. This challenge has motivated the development of fast generative machine learning based surrogates. We present a hardware-aware variational autoencoder model for fast calorimeter simulation that is designed specifically for field programmable gate array (FPGA) deployment, offering faster and lower power inference capability. Quantization aware training and other compression techniques are applied to respect the resource constraints of a single FPGA. The synthesized implementation of the VAE decoder achieves sub-millisecond latency, resulting in a substantial speed up compared to a traditional GPU implementation with only a small performance drop. This feasibility study demonstrates the potential of utilizing existing FPGA architecture at the LHC and other facilities for efficient offline computing using online resources.",
+  "authors": [
+    "P. Alex May",
+    "Qibin Liu",
+    "Julia Gonski",
+    "Benjamin Nachman"
+  ],
+  "published": "2026-03-13T18:04:58Z",
+  "updated": "2026-03-13T18:04:58Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
