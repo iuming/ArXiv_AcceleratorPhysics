@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2603.16624v1",
+  "url": "https://arxiv.org/abs/2603.16624v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.16624v1.pdf",
+  "title": "Accelerating the Particle-In-Cell code ECsim with OpenACC",
+  "abstract": "The Particle-In-Cell (PIC) method is a computational technique widely used in plasma physics to model plasmas at the kinetic level. In this work, we present our effort to prepare the semi-implicit energy-conserving PIC code ECsim for exascale architectures. To achieve this, we adopted a pragma-based acceleration strategy using OpenACC, which enables high performance while requiring minimal code restructuring. On the pre-exascale Leonardo system, the accelerated code achieves a $5 \\times$ speedup and a $3 \\times$ reduction in energy consumption compared to the CPU reference code. Performance comparisons across multiple NVIDIA GPU generations show substantial benefits from the GH200 unified memory architecture. Finally, strong and weak scaling tests on Leonardo demonstrate efficiency of $70 \\%$ and $78 \\%$ up to 64 and 1024 GPUs, respectively.",
+  "authors": [
+    "Elisabetta Boella",
+    "Nitin Shukla",
+    "Filippo Spiga",
+    "Mozhgan Kabiri Chimeh",
+    "Matt Bettencourt",
+    "Maria Elena Innocenti"
+  ],
+  "published": "2026-03-17T14:58:51Z",
+  "updated": "2026-03-17T14:58:51Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.DC"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

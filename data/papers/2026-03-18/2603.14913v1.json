@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.14913v1",
+  "url": "https://arxiv.org/abs/2603.14913v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.14913v1.pdf",
+  "title": "A Modular Datalogger and Slow-Control Platform for Physics Experiments with Time-Series Telemetry and Web Dashboards",
+  "abstract": "We present a NIM 2U slow-control system designed for continuous monitoring of environmental and facility parameters during data taking in nuclear physics experiments. The architecture integrates a base controller board with eight channels for PT100/PT1000 probes and up to three plug-in extension boards, each providing SMA connections on the front panel. All boards adopt a 16-bit SAR ADC with an external 2.5 V reference, yielding an LSB of 38.15 uV and ensuring metrological uniformity across heterogeneous channel types. The operating range for PT100/PT1000 probes spans -200 degrees Celsius to 300 degrees Celsius, with a design accuracy at the 1 percent level. The system includes modules dedicated to standard industrial signals 4--20 mA and 0--10 V and a module for current measurement in the 500 nA--100 uA range with automatic gain range selection. The software chain publishes time series to Graphite and provides visualization through Grafana over Ethernet. A complete quantitative characterization of stability and accuracy is ongoing and will be reported in a subsequent work.",
+  "authors": [
+    "D. Tagnani",
+    "N. Toniolo",
+    "B. Gongora",
+    "T. Marchi",
+    "A. Goasduff"
+  ],
+  "published": "2026-03-16T07:20:15Z",
+  "updated": "2026-03-16T07:20:15Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

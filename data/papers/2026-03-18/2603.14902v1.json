@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2603.14902v1",
+  "url": "https://arxiv.org/abs/2603.14902v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.14902v1.pdf",
+  "title": "T-DAQ-P: a portable tablet-form multi-stream data acquisition and contextual telemetry platform based on COTS modules and a custom integration layer",
+  "abstract": "We present T-DAQ-P, a compact and portable data acquisition and telemetry platform designed to support detector deployments in laboratory and field conditions by integrating event streaming, slow-control telemetry, and operator-oriented commissioning tools in a single unit. The system combines a Raspberry Pi 5 host for multi-stream ingestion, visualization, and storage with an Arduino UNO R4 WiFi microcontroller dedicated to sensor acquisition. The electronics integrate commercial off-the-shelf (COTS) modules through an engineered interface layer including protected power distribution, logic-level adaptation, and a DB-37 expansion connector exposing I2C-SPI-ADC lines for external instrumentation. On the telemetry side, the microcontroller firmware performs automatic I2C discovery, conditional sensor handling, and outputs framed NMEA-like messages with XOR checksum and explicit block delimiters, enabling robust parsing and synchronization on the host. A finite-state control (STOP-RUN-SIM-INIT) and watchdog-style recovery actions implement resilience under partial hardware availability and field failures. The host software adopts a multi-process architecture with independent readers for event, telemetry, and actuator streams, message queues for isolation, and coherent time-stamped logging across streams. A simulation mode and integrated command channel allow end-to-end pipeline verification and rapid commissioning without full sensor availability. The paper details architecture, electronics integration, firmware protocol, host software design, and functional/engineering validation procedures, providing a reproducible blueprint for portable instrumentation readout and contextual telemetry acquisition.",
+  "authors": [
+    "D. Tagnani",
+    "M. Andreotti"
+  ],
+  "published": "2026-03-16T07:04:30Z",
+  "updated": "2026-03-16T07:04:30Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
