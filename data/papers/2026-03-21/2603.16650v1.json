@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2603.16650v1",
+  "url": "https://arxiv.org/abs/2603.16650v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.16650v1.pdf",
+  "title": "FAlCon: A unified framework for algorithmic control of quantum dot devices",
+  "abstract": "As spin-based quantum systems scale, their setup and control complexity increase sharply. In semiconductor quantum dot (QD) experiments, device-to-device variability, heterogeneous control-electronics stacks, and differing operational modalities make it difficult to reuse characterization, calibration, and control logic across laboratories. We present FAlCon, an open-source software ecosystem for portable, automated characterization and tuning measurement workflows. FAlCon provides (i) a lightweight domain-specific language for expressing state-based tuning logic in a hardware-agnostic form; (ii) specialized transmittable libraries of physics-informed QD data structures (``tuning vernacula''); and (iii) extensible libraries of shared measurement protocols enabling an interoperable lab-agnostic measurement stack. By separating algorithm intent from instrument realization, while preserving traceability and supporting typed scripting, FAlCon enables researchers and engineers to exchange, adapt, and deploy characterization and autotuning routines across heterogeneous QD setups. The framework supports all users, ranging from end users running prebuilt algorithms with custom initial conditions to developers extending instrumentation support and contributing new tuning strategies. Although the present release targets QD experiments, other qubit modalities and scientific experiments could reuse FAlCon's modular abstractions by providing new tuning data types and instrument control templates.",
+  "authors": [
+    "Tyler J. Kovach",
+    "Daniel Schug",
+    "Zach D. Merino",
+    "Mark Friesen",
+    "Mark A. Eriksson",
+    "Justyna P. Zwolak"
+  ],
+  "published": "2026-03-17T15:20:28Z",
+  "updated": "2026-03-17T15:20:28Z",
+  "categories": [
+    "quant-ph",
+    "cond-mat.mes-hall",
+    "cs.PL",
+    "physics.ins-det"
+  ],
+  "primary_category": "quant-ph"
+}
