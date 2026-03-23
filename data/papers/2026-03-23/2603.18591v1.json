@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2603.18591v1",
+  "url": "https://arxiv.org/abs/2603.18591v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.18591v1.pdf",
+  "title": "Design and implementation of a high-density sub-nanosecond timing system for a C-band photocathode electron gun test platform",
+  "abstract": "This paper presents the design and implementation of a high-density, deterministic trigger distribution system tailored for the C-band photocathode electron gun test platform at the Southern Advanced Photon Source (SAPS). Implemented within a scalable 6U VME modular architecture, the system achieves high-density integration by consolidating a master controller, clock distribution network, and 80 heterogeneous output channels into a single chassis. This design leverages a high-performance FPGA core combined with custom backplane interconnections to establish a master-slave topology, significantly reducing the system footprint compared to stacked standalone generators. To guarantee timing determinism in high-noise environments, precise placement and timing constraints are applied to the FPGA logic, while optical isolation is employed to mitigate electromagnetic interference. Furthermore, a dual-channel SFP optical signaling architecture enables seamless expansion to 160 synchronized channels. A remote control framework based on a serial server and a virtual machine Input/Output Controller (IOC) facilitates flexible configuration. Performance tests demonstrate adjustable trigger frequencies from 1 Hz to 100 Hz, with delays and pulse widths tunable from 0 to 10 ms at a resolution of 10 ns (or the RF period). The local electrical output exhibits an ultra-low RMS jitter of 6.55 ps (60 ps peak-to-peak). For remote optical distribution, the system maintains a sub-nanosecond RMS jitter of 119.5 ps, with peak-to-peak variation confined to 1 ns due to the combined effects of transceiver optoelectronic conversion (utilizing HFBR-1414T/2412T modules) and fiber transmission. The system has been successfully commissioned and is currently in reliable routine operation, verifying the architecture as a robust, highly integrated, and cost-effective solution for compact accelerator facilities.",
+  "authors": [
+    "Peng Zhu",
+    "Kangjia Xue",
+    "Lin Wang",
+    "Yuliang Zhang",
+    "Yongcheng Hea",
+    "Xuan Wu",
+    "Mingtao Li",
+    "Sinong Cheng",
+    "Xiaohan Lu",
+    "Shiming Jiang",
+    "Xiao Li"
+  ],
+  "published": "2026-03-19T07:57:49Z",
+  "updated": "2026-03-19T07:57:49Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.acc-ph"
+}
