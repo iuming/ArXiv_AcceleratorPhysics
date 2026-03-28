@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.24010v1",
+  "url": "https://arxiv.org/abs/2603.24010v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.24010v1.pdf",
+  "title": "Self-Consistent Numerical Framework for Multiscale Circuit-Plasma Coupling with Secondary Electron Emission",
+  "abstract": "Voltage breakdown in high-voltage pulsed vacuum systems arises from nonlinear multiscale interactions among circuit dynamics, kinetic plasma evolution, and ion-induced secondary electron emission (SEE) at electrode surfaces. Although circuit-plasma co-simulation frameworks couple lumped circuits with particle-in-cell (PIC) solvers, most neglect energy-resolved SEE and its feedback to both plasma and circuit, limiting predictive capability. We present a self-consistent framework for multiscale circuit-plasma coupling that incorporates ion-energy-dependent SEE into the electrode boundary of an electrostatic PIC solver. The emitted electron flux is included in the surface charge update, leading to a modified Poisson boundary condition that couples plasma and circuit within a unified formulation. Two integration strategies are developed: (i) a fully implicit strict coupling scheme solving the plasma-circuit system monolithically, and (ii) a weak coupling scheme based on operator splitting, compatible with SPICE solvers and enabling partitioned time integration with one-step lag. The framework is applied to a Tesla-transformer-driven vacuum capacitor with ion injection. Results show that SEE alters surface charge evolution, triggering rapid voltage collapse and sustaining a near-zero-voltage plateau, while SEE-free models fail. Agreement between strict and weak coupling confirms robustness. The method provides a unified framework for predictive simulation of multiscale circuit-plasma interactions.",
+  "authors": [
+    "Hongbin Kim",
+    "Soung Yong Yun",
+    "Jaeguk Lee",
+    "Dong-Yeop Na"
+  ],
+  "published": "2026-03-25T07:13:41Z",
+  "updated": "2026-03-25T07:13:41Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

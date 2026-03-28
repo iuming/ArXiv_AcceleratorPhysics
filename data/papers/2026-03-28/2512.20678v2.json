@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2512.20678v2",
+  "url": "https://arxiv.org/abs/2512.20678v2",
+  "pdf_url": "https://arxiv.org/pdf/2512.20678v2.pdf",
+  "title": "Synchromodulametry: From Coincidence Detection to Coherent State Measurement",
+  "abstract": "Distributed sensor networks are commonly operated through coincidence logic: if detector reports overlap within a prescribed time window, an event is declared. While effective for clean, high-significance signals, this approach becomes fragile when detector liveness is intermittent due to deadtime, saturation, vetoes, resets, or asynchronous sampling. In such settings, physically meaningful events may be partially observed yet discarded by binary coincidence rules.   We introduce \\textit{Synchromodulametry}, a hardware-first framework that promotes \\emph{coherence} -- rather than coincidence alone -- to a real-time state variable of the network. The framework is organized around three compact components: a liveness-aware effective observable $Ψ_i^{\\mathrm{eff}}(t)$ that preserves information continuity under detector non-idealities, an alignment layer based on relative inter-node delays $τ_{ij}$, and a covariance-based coherence functional $\\mathcal{G}(t)$ for triggering and monitoring. Together, these components define a practical pipeline from raw digitized streams to persistent observables, aligned network state, and global coherence estimation. Rather than reducing detector behavior to a binary coincidence flag, Synchromodulametry represents the network as a system capable of entering, maintaining, and losing coherent state in real time.",
+  "authors": [
+    "Thammarat Yawisit"
+  ],
+  "published": "2025-12-21T19:16:25Z",
+  "updated": "2026-03-26T12:38:27Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
