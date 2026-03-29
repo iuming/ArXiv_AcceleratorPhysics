@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2603.17593v1",
+  "url": "https://arxiv.org/abs/2603.17593v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.17593v1.pdf",
+  "title": "An Extended T-A Formulation Based on Potential-Chain Recursion for Electromagnetic Modeling of Parallel-Wound No-Insulation HTS Coils",
+  "abstract": "Parallel-wound no-insulation (PW-NI) high-temperature superconducting (HTS) coils significantly reduce charging delay while maintaining excellent self-protection capability, demonstrating great potential for high-field applications. Existing models that couple the T-A formulation with equivalent circuits have demonstrated high accuracy in electromagnetic analysis of PW-NI coils. However, eliminating the computational overhead caused by frequent variable mapping and data exchange between electromagnetic and circuit modules is important for improving computational efficiency, particularly in long-duration transient simulations of large-scale magnets. To address this issue, an extended T-A formulation based on potential-chain recursion, termed PCR-TA, is proposed. By directly embedding inter-tape current sharing and radial current bypass behaviors into the finite-element framework, this method computes the transient electromagnetic response of PW-NI coils without requiring an explicit equivalent circuit model. Building upon it, a multi-scale approach is further developed for large-scale PW-NI coils. The validity of the proposed method and its multi-scale extension is verified through comparisons with experimental measurements and field-circuit coupled modeling results. Comparative analyses demonstrate that the PCR-TA method achieves a speedup of approximately 2.4 over the field-circuit coupled method, whereas its multi-scale extension further increases this speedup to roughly 5.8. Furthermore, the PCR-TA method is extended to model the continuous transition of PW-NI coils from power-supply charging to closed-loop operation. This work provides an efficient method and tool for the electromagnetic modeling of PW-NI coils under both driven and closed-loop operating conditions.",
+  "authors": [
+    "Zhe Pan",
+    "Qi Xu",
+    "Ruixiang Wang",
+    "Zhenghao Jin",
+    "Jianzhao Geng"
+  ],
+  "published": "2026-03-18T11:07:58Z",
+  "updated": "2026-03-18T11:07:58Z",
+  "categories": [
+    "eess.SY",
+    "physics.acc-ph"
+  ],
+  "primary_category": "eess.SY"
+}
