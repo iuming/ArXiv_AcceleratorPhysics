@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2409.08764v2",
+  "url": "https://arxiv.org/abs/2409.08764v2",
+  "pdf_url": "https://arxiv.org/pdf/2409.08764v2.pdf",
+  "title": "Quadrature amplitude modulation for electronic sideband Pound-Drever-Hall laser frequency locking",
+  "abstract": "The Pound--Drever--Hall (PDH) technique is routinely used to stabilize the frequency of a laser to a reference cavity. Electronic sideband (ESB) locking, a PDH variant, bridges the frequency gap between the discrete cavity resonances and a desired laser frequency. Here we use quadrature amplitude modulation (QAM), a standard technique in digital communications, to generate the high-quality phase-modulated radio-frequency (rf) drive required for ESB locking. We develop a theoretical framework to analyze how in-phase/quadrature-phase (I/Q) impairments distort the ESB error signal and induce frequency offsets relevant to ultranarrow-linewidth lasers. We then design and implement a direct software-defined radio (SDR) on an UltraScale+ RFSoC platform, frequently adopted across modern quantum-computing systems, to digitally compensate QAM I/Q impairments. Using this device, we generate phase-modulated rf signals with a large phase-modulation index of $1.01$ rad and root-mean-square I/Q errors below $0.3\\ \\%$ over a carrier-frequency range of $350~\\mathrm{MHz}$ to $1.75~\\mathrm{GHz}$. Finally, we lock a laser to an ultralow expansion (ULE) reference cavity and demonstrate continuous laser-frequency tuning by ramping the carrier frequency while maintaining lock, validating the continuous tunability of our ESB locking instrument.",
+  "authors": [
+    "J. Tu",
+    "A. Restelli",
+    "K. Weber",
+    "I. B. Spielman",
+    "S. L. Rolston",
+    "J. V. Porto",
+    "S. Subhankar"
+  ],
+  "published": "2024-09-13T12:11:48Z",
+  "updated": "2026-03-28T20:26:27Z",
+  "categories": [
+    "physics.optics",
+    "cond-mat.quant-gas",
+    "physics.atom-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics"
+}

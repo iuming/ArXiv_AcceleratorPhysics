@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.27036v1",
+  "url": "https://arxiv.org/abs/2603.27036v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.27036v1.pdf",
+  "title": "Material Identification using Multi-Modal Intrinsic Radiation and Radiography",
+  "abstract": "We investigate multi-modal material identification for special nuclear material (SNM) configurations using a combination of X-ray radiography, high-resolution γ-ray spectroscopy, and neutron multiplicity measurements. We consider a Beryllium Reflected Plutonium sphere (BeRP) ball surrounded by one or two concentric shielding shells of unknown composition whose radii are assumed known from radiography. High-purity germanium (HPGe) spectra are reduced to net counts in selected Pu-239 photo-peaks, while neutron multiplicity information is summarized by Feynman variances Y2 and Y3 computed from factorial moments of the neutron counting statistics. Using synthetic data generated with the Gamma Detector Response and Analysis Software (GADRAS) for a range of shielding materials and thicknesses, we cast the material identification problem as a supervised multi-class classification task over all admissible shell-material combinations. We demonstrate that a random forest classifier trained on combined gamma and neutron features achieves almost perfect identification accuracy for single-shell cases, and substantial performance gains for more challenging double-shell configurations relative to gamma-only classification. Alternative statistical and machine-learning formulations for this multi-class problem are examined along with examination of the impact of model-mismatch between the forward model and the test cases as given by variations in the statistical noise. Opportunities for extending the approach to more complex geometries and experimental data are also discussed.",
+  "authors": [
+    "Khoa Nguyen",
+    "Brendt Wohlberg",
+    "Oleg Korobkin",
+    "Marc Klasky"
+  ],
+  "published": "2026-03-27T23:04:31Z",
+  "updated": "2026-03-27T23:04:31Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2601.07859v2",
+  "url": "https://arxiv.org/abs/2601.07859v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.07859v2.pdf",
+  "title": "Differentiable Surrogate for Detector Simulation and Design with Diffusion Models",
+  "abstract": "In this work, we present a conditional denoising-diffusion surrogate for electromagnetic calorimeter showers that is trained to generate high-fidelity energy-deposition maps conditioned on key detector and beam parameters. The model employs efficient inference using Denoising Diffusion Implicit Model sampling and is pre-trained on GEANT4 simulations before being adapted to a new calorimeter geometry through Low-Rank Adaptation, requiring only a small post-training dataset. We evaluate physically meaningful observables, including total deposited energy, energy-weighted radius, and shower dispersion, obtaining relative root mean square error values below 2% for representative high-energy cases. This is in line with state-of-the-art calorimeter surrogates which report comparable fidelity on high-level observables. Furthermore, we compare gradients of a reconstruction-based utility function with respect to design parameters between the surrogate and finite-difference references. The diffusion surrogate reproduces the qualitative structure and directional trends of the true utility landscape, providing usable sensitivities for gradient-based optimization. These results show that diffusion-based surrogates can accelerate simulation-driven detector design while enabling differentiable, gradient-informed analysis.",
+  "authors": [
+    "Xuan Tung Nguyen",
+    "Long Chen",
+    "Tommaso Dorigo",
+    "Nicolas R. Gauger",
+    "Pietro Vischia",
+    "Federico Nardi",
+    "Muhammad Awais",
+    "Hamza Hanif",
+    "Shahzaib Abbas",
+    "Rukshak Kapoor"
+  ],
+  "published": "2026-01-09T17:53:23Z",
+  "updated": "2026-03-27T13:34:30Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2603.28549v1",
+  "url": "https://arxiv.org/abs/2603.28549v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.28549v1.pdf",
+  "title": "Machine learning-based virtual diagnostics of dielectric laser acceleration",
+  "abstract": "We present the development of a digital twin-based reconstruction framework for dielectric laser acceleration (DLA) based on machine-learning-assisted inversion of single-shot electron energy spectra. DLA as a promising candidate for compact electron accelerator designs using optical nearfields in dielectric nanostructures lacks on direct diagnostics on the laser-electron interaction. Thus, the outgoing electron energy distribution is one of the few experimentally accessible observables. To exploit this information, DLA interaction and mapping on the downstream spectrometer are treated as nonlinear measurement device whose response is described by the symplectic sixdimensional tracking code DLAtrack6D. This forward simulation model serves as a digital twin mapping laser-electron interaction parameters onto resulting energy spectra. For diagnostics, we are interested in the inverse mapping represented by a neural network trained by synthetic datasets generated with the forward simulation model. The reconstruction performance and parameter identifiability of the inverse model are evaluated for parameter ranges relevant to planned experiments at the ARES linac in the SINBAD facility at DESY. Simulation studies demonstrate that the method can recover pulse front tilt angles with an accuracy of about 1 deg and phase offsets with an RMSE of about 0.36 rad corresponding to a difference of 0.4 fs in arrival time. Training with noisy spectra further improves robustness against spectrometer noise. The trained surrogate model evaluates in the millisecond range, enabling shot-to-shot parameter estimation compatible with the 50 Hz repetition rate of ARES. The approach effectively transforms the DLA interaction region into a virtual in situ diagnostics for otherwise inaccessible laser parameters during experiment and provides a foundation for real-time monitoring and control of future DLA experiments.",
+  "authors": [
+    "Thilo Egenolf",
+    "Oliver Boine-Frankenheim"
+  ],
+  "published": "2026-03-30T15:09:07Z",
+  "updated": "2026-03-30T15:09:07Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
