@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2603.28835v1",
+  "url": "https://arxiv.org/abs/2603.28835v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.28835v1.pdf",
+  "title": "Machine Learning-Based Cluster Classification to Suppress Background in a Prototype RPC Detector",
+  "abstract": "Resistive Plate Chambers (RPCs) are widely used as tracking detectors in many high-energy physics experiments. It has been observed that low-resistive bakelite RPC prototypes frequently exhibit a secondary hit component, appearing as a long tail or an additional peak in the time-correlation spectra relative to the trigger detector. These secondary hits, which affect both the time and spatial resolution, are difficult to distinguish from genuine signals in high-rate environments without an external trigger. As a result, they can significantly degrade track reconstruction efficiency and increase processing time. We present a machine-learning-based strategy to separate signal and background hit clusters using fifteen cluster-level descriptors that encode both statistical properties (histogram mean, width, cluster size) and fit-based parameters (Gaussian-fit mean, width, amplitude, chi^2, NDF) of the time and ADC distributions. Using laboratory data collected from a single-gap low resistive RPC with a three-scintillator master trigger, we trained and evaluated three classifiers-DNN, 1D-CNN, and XGBoost-on balanced signal/background samples. All models demonstrate strong discrimination capability, with XGBoost showing the most robust generalization performance. Feature-importance analysis indicates that cluster size and temporal-shape descriptors are the dominant discriminants. These results highlight that compact, interpretable cluster-level features combined with machine-learning classifiers offer a practical and effective approach to suppress background in self-triggering low resistive RPC detectors.",
+  "authors": [
+    "Souvik Chattopadhay",
+    "Zubayer Ahammed"
+  ],
+  "published": "2026-03-30T09:41:23Z",
+  "updated": "2026-03-30T09:41:23Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

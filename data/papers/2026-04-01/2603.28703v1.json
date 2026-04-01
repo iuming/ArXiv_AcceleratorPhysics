@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2603.28703v1",
+  "url": "https://arxiv.org/abs/2603.28703v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.28703v1.pdf",
+  "title": "Transferability of data-driven optimization results across multiple pixelated CdZnTe spectrometers",
+  "abstract": "Recent work by Vavrek et al. (2025) showed that machine learning methods can be used to exploit spatial patterns of performance variations within the highly-segmented H3D M400 gamma spectrometer to improve an overall spectroscopic performance metric. That work also introduced the spectre-ml software, which tests various greedy, heuristic, random, and machine learning clustering algorithms to find the best performing mask for excluding detector regions to improve a user-defined performance metric by training on a given dataset. In this work, we build off of Vavrek et al. (2025) and seek to determine to what extent an optimized binary voxel mask trained on a given dataset can generalize to other datasets. In particular, this paper evaluates the transferability of masks trained on one M400 dataset to another M400 detector, in order to determine whether the total effort required in designing masks for different detectors and applications can be substantially reduced by using a single common mask. It also examines testing and training on different subsets of the same dataset to determine the natural level of variability in optimization results. In the inter-detector analysis, as expected, the best performing model on each detector is often one trained on that dataset, with an average performance enhancement of $16\\%$ when considering the relative uncertainty in a Doniach fit to the $186$ keV peak. In comparison, the best transferred masks, with the best on average performance metric across all six detectors, show only a slightly smaller improvement of $13\\%$ on average. These results suggest that high-performing, well-transferable masks can be shared among detectors, reducing or even eliminating the laborious processes of collecting a training dataset and performing the optimization for each detector, ultimately improving safeguards efficiency.",
+  "authors": [
+    "Thomas D. MacDonald",
+    "Hannah S. Parrilla",
+    "Jayson R. Vavrek"
+  ],
+  "published": "2026-03-30T17:21:17Z",
+  "updated": "2026-03-30T17:21:17Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2603.27727v1",
+  "url": "https://arxiv.org/abs/2603.27727v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.27727v1.pdf",
+  "title": "Suppression of $^{14}\\mathrm{C}$ photon hits in large liquid scintillator detectors via spatiotemporal deep learning",
+  "abstract": "Liquid scintillator detectors are widely used in neutrino experiments due to their low energy threshold and high energy resolution. Despite the tiny abundance of $^{14}$C in LS, the photons induced by the $β$ decay of the $^{14}$C isotope inevitably contaminate the signal, degrading the energy resolution. In this work, we propose three models to tag $^{14}$C photon hits in $e^+$ events with $^{14}$C pile-up, thereby suppressing its impact on the energy resolution at the hit level: a gated spatiotemporal graph neural network and two Transformer-based models with scalar and vector charge encoding. For a simulation dataset in which each event contains one $^{14}$C and one $e^+$ with kinetic energy below 5 MeV, the models achieve $^{14}$C recall rates of 25%-48% while maintaining $e^+$ to $^{14}$C misidentification below 1%, leading to a large improvement in the resolution of total charge for events where $e^+$ and $^{14}$C photon hits strongly overlap in space and time.",
+  "authors": [
+    "Junle Li",
+    "Zhaoxiang Wu",
+    "Guanda Gong",
+    "Zhaohan Li",
+    "Wuming Luo",
+    "Jiahui Wei",
+    "Wenxing Fang",
+    "Hehe Fan"
+  ],
+  "published": "2026-03-29T15:03:42Z",
+  "updated": "2026-03-29T15:03:42Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.AI",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.27828v1",
+  "url": "https://arxiv.org/abs/2603.27828v1",
+  "pdf_url": "https://arxiv.org/pdf/2603.27828v1.pdf",
+  "title": "From molecular dynamics to kinetic models: data-driven generalized collision operators in 1D3V plasmas",
+  "abstract": "We present a data-driven approach for constructing generalized collisional kinetic models for inhomogeneous plasmas in one-dimensional physical space and three-dimensional velocity space (1D-3V). The collision operator is directly learned from micro-scale molecular dynamics (MD) and accurately accounts for the unresolved particle interactions over a broad range of plasma conditions. Unlike the standard Landau operator, the present operator takes an anisotropic, non-stationary form that captures the heterogeneous collisional energy transfer arising from the many-body interactions, which is crucial for plasma kinetics beyond the weakly coupled regime. Efficient numerical evaluation is achieved through a low-rank tensor representation with $O(N \\log N)$ computational complexity. The constructed kinetic equation strictly preserves conservation laws and physical constraints and therefore, enables us to develop an explicit second-order, energy-conserving scheme that ensures fully discrete conservation of mass and total energy. Numerical results demonstrate that the present model accurately predicts both transport coefficients and several 1D-3V kinetic processes compared with MD simulations across a broad range of densities and temperatures in spatially inhomogeneous settings. This work provides a systematic pathway for bridging micro-scale MD and inhomogeneous plasma kinetic descriptions where empirical models show limitation.",
+  "authors": [
+    "Yue Zhao",
+    "Guosheng Fu",
+    "Huan Lei"
+  ],
+  "published": "2026-03-29T19:38:27Z",
+  "updated": "2026-03-29T19:38:27Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
