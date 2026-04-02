@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.00121v1",
+  "url": "https://arxiv.org/abs/2604.00121v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.00121v1.pdf",
+  "title": "An explicit multiscale pseudo orbit-averaging time integration algorithm",
+  "abstract": "We present an explicit multiscale algorithm for solving differential equations for problems with high-frequency modes that can be averaged over by separating and scaling the fast and slow dynamics within a single equation. We introduce a phased time integrator for cases where the boundaries of dynamical scales are known: one phase solves the unmodified equation, while the other freezes part of phase-space and slows down the evolution of the fast dynamics. This algorithm is applied to reduced kinetic models of plasmas in magnetic mirrors, which feature a distinct boundary between a region dominated by rapid particle transit and a region characterized by slow collisions. Two representative model problems are presented that decompose the dynamics of the magnetic mirror into a simpler, computationally inexpensive form. The model problems demonstrate a speedup by a factor of order $ω/ ν_c$, where $ω$ is the fast oscillation frequency and $ν_c$ is the slow damping rate. This is a 30,000$\\times$ speedup for a case of practical interest.",
+  "authors": [
+    "Maxwell Rosen",
+    "Manaurer Francisquez",
+    "Gregory Wayne Hammett"
+  ],
+  "published": "2026-03-31T18:28:39Z",
+  "updated": "2026-03-31T18:28:39Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
