@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2604.02166v1",
+  "url": "https://arxiv.org/abs/2604.02166v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.02166v1.pdf",
+  "title": "Data Sieving for Scalable Real-Time Multichannel Nanopore Sensing",
+  "abstract": "High-throughput solid-state nanopore experiments generate continuous MHz-rate data streams in which only a small fraction of data contains informative molecular information. This creates storage and processing bottlenecks that limit experimental scalability. We introduce Data Sieving, a GPU-accelerated acquisition framework that integrates real-time event detection directly into the measurement pipeline and selectively stores and allows real-time analysis of snapshots around molecular translocations. The system employs a lightweight rolling-average and min-max trigger to identify event candidates in parallel across channels. This architecture reduces stored data volume by up to 98% while preserving complete molecular signatures across a wide temporal range, from microsecond-scale protein dynamics to second-scale nucleic acid nanoparticle events. Continuous baseline monitoring enables autonomous closed-loop actuation; in high-concentration DNA experiments, automatic declogging restored pore conductance, reducing the time spent in a non-productive clogged state to near-zero and without interrupting parallel measurements. Validated across DNA, protein, and nucleic acid nanoparticle measurements, Data Sieving links data storage directly to molecular information content rather than experiment duration, enabling scalable, real-time operation of parallel nanopore sensors. The approach provides a hardware-agnostic foundation for long-duration, high-bandwidth single-molecule experiments and other event-driven sensing platforms. By using algorithms intrinsically compatible with low-latency digital architectures, this framework provides a clear path toward high-bandwidth, highly multiplexed recording across hundreds of individual nanopore channels in both solid-state and biological pores.",
+  "authors": [
+    "Matteo Cartiglia",
+    "Natan Biesmans",
+    "Wannes Peeters",
+    "Wouter Botermans",
+    "Koen Ongena",
+    "Liam Vandekerckhove",
+    "Wouter Renckens",
+    "Eric Beamish",
+    "Elizabeth Skelly",
+    "Kirill A. Afonin",
+    "Pol van Dorpe",
+    "Sanjin Marion"
+  ],
+  "published": "2026-04-02T15:31:52Z",
+  "updated": "2026-04-02T15:31:52Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.bio-ph",
+    "q-bio.BM"
+  ],
+  "primary_category": "physics.ins-det"
+}
