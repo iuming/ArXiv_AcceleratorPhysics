@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.01313v1",
+  "url": "https://arxiv.org/abs/2604.01313v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.01313v1.pdf",
+  "title": "JetPrism: diagnosing convergence for generative simulation and inverse problems in nuclear physics",
+  "abstract": "High-fidelity Monte Carlo simulations and complex inverse problems, such as mapping smeared experimental observations to ground-truth states, are computationally intensive yet essential for robust data analysis. Conditional Flow Matching (CFM) offers a mathematically robust approach to accelerating these tasks, but we demonstrate its standard training loss is fundamentally misleading. In rigorous physics applications, CFM loss plateaus prematurely, serving as an unreliable indicator of true convergence and physical fidelity. To investigate this disconnect, we designed JetPrism, a configurable CFM framework acting as an efficient generative surrogate for evaluating unconditional generation and conditional detector unfolding. Using synthetic stress tests and a Jefferson Lab kinematic dataset ($γp \\to ρ^0 p \\to π^+π^- p$) relevant to the forthcoming Electron-Ion Collider (EIC), we establish that physics-informed metrics continue to improve significantly long after the standard loss converges. Consequently, we propose a multi-metric evaluation protocol incorporating marginal and pairwise $χ^2$ statistics, $W_1$ distances, correlation matrix distances ($D_{\\mathrm{corr}}$), and nearest-neighbor distance ratios ($R_{\\mathrm{NN}}$). By demonstrating that domain-specific evaluations must supersede generic loss metrics, this work establishes JetPrism as a dependable generative surrogate that ensures precise statistical agreement with ground-truth data without memorizing the training set. While demonstrated in nuclear physics, this diagnostic framework is readily extensible to parameter generation and complex inverse problems across broad domains. Potential applications span medical imaging, astrophysics, semiconductor discovery, and quantitative finance, where high-fidelity simulation, rigorous inversion, and generative reliability are critical.",
+  "authors": [
+    "Zeyu Xia",
+    "Tyler Kim",
+    "Trevor Reed",
+    "Judy Fox",
+    "Geoffrey Fox",
+    "Adam Szczepaniak"
+  ],
+  "published": "2026-04-01T18:36:47Z",
+  "updated": "2026-04-01T18:36:47Z",
+  "categories": [
+    "cs.LG",
+    "nucl-ex",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG"
+}
