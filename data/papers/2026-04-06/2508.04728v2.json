@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2508.04728v2",
+  "url": "https://arxiv.org/abs/2508.04728v2",
+  "pdf_url": "https://arxiv.org/pdf/2508.04728v2.pdf",
+  "title": "Neural Field-Based 3D Surface Reconstruction of Microstructures from Multi-Detector Signals in Scanning Electron Microscopy",
+  "abstract": "The 3D characterization of microstructures is crucial for understanding and designing functional materials. However, the scanning electron microscope (SEM), widely used in scientific research, captures only 2D electron intensity distributions. Existing SEM 3D reconstruction methods struggle with textureless regions, shadowing artifacts, and calibration dependencies, whereas advanced learning-based approaches fail to generalize to microscopic SEM domains due to the lack of physical priors and domain-specific data. We introduce NFH-SEM, a neural field-based hybrid framework that reconstructs high-fidelity 3D surfaces from multi-view, multi-detector SEM images. NFH-SEM integrates coarse multi-view geometry with photometric stereo cues from detector signals through a continuous neural field, incorporating a learnable forward model that embeds SEM imaging physics for self-calibrated, shadow-robust reconstruction. NFH-SEM achieves precise recovery across diverse specimens, revealing 478 nm layered features in two-photon lithography samples, 782 nm surface textures on pollen grains, and 1.559 $μ$m fracture steps on silicon carbide particles, demonstrating its accuracy and broad applicability. Our code and real-world dataset are available at https://github.com/zju3dv/NFH-SEM.",
+  "authors": [
+    "Shuo Chen",
+    "Yijin Li",
+    "Xi Zheng",
+    "Guofeng Zhang"
+  ],
+  "published": "2025-08-05T20:00:57Z",
+  "updated": "2026-04-02T18:30:42Z",
+  "categories": [
+    "eess.IV",
+    "cs.CV",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.IV"
+}
