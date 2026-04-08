@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.03439v1",
+  "url": "https://arxiv.org/abs/2604.03439v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.03439v1.pdf",
+  "title": "Resolution-Independent Machine Learning Heat Flux Closure for ICF Plasmas",
+  "abstract": "Accurate modeling of heat flux in inertial confinement fusion plasmas requires closures that remain predictive far from local equilibrium and across disparate spatial and temporal resolutions. We develop a resolution-independent machine-learning heat flux closure trained on particle-in-cell simulations using a Fourier Neural Operator. Two nonlocal electron thermal conduction models are trained and tested. When embedded self-consistently into the electron energy equation, the learned closure faithfully reproduces the temperature evolution and shows good temporal extrapolation and generalization capability. Remarkably, models trained on coarse-resolution data accurately predict heat flux when deployed in substantially finer-resolution implicit, iterative solvers of the energy equation, significantly enhancing the practicality of embedding data-driven closures into partial differential equation solvers. These results establish a data-driven closure that bridges kinetic and fluid descriptions and provides a viable pathway for treating machine learning as an iterative solver within the radiation-hydrodynamic simulations of ICF plasma.",
+  "authors": [
+    "M. Luo",
+    "A. R. Bell",
+    "F. Miniati",
+    "S. M. Vinko",
+    "G. Gregori"
+  ],
+  "published": "2026-04-03T20:26:41Z",
+  "updated": "2026-04-03T20:26:41Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

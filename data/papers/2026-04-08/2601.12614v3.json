@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.12614v3",
+  "url": "https://arxiv.org/abs/2601.12614v3",
+  "pdf_url": "https://arxiv.org/pdf/2601.12614v3.pdf",
+  "title": "Deterministic and probabilistic neural surrogates of global hybrid-Vlasov simulations",
+  "abstract": "Hybrid-Vlasov simulations resolve ion-kinetic effects in the solar wind-magnetosphere interaction, but even 5D (2D + 3V) configurations are computationally expensive. We show that graph-based machine learning emulators can learn the spatiotemporal evolution of electromagnetic fields and lower order moments of ion velocity distribution in the near-Earth space environment from four 5D Vlasiator runs performed with identical steady solar wind conditions. The initial ion number density is systematically varied, while the grid spacing is held constant, to scan the ratio of the characteristic ion skin depth to the numerical grid size. Using a graph neural network (GNN) operating on the 2D spatial simulation grid comprising 670k cells, we demonstrate that both a deterministic forecasting model (Graph-FM) and a probabilistic ensemble forecasting model (Graph-EFM) based on a latent variable formulation are capable of producing accurate predictions of future plasma states. A divergence penalty is incorporated to encourage divergence-freeness in the magnetic fields. For the probabilistic model, a continuous ranked probability score objective is added to improve the calibration of the ensemble forecasts. The trained emulators achieve over two orders of magnitude speedup per time step on a single GPU compared to 100 CPU Vlasiator simulations. Most forecasted fields have Pearson correlations above 0.95 at 50 seconds lead time. However, we find that fields that exhibit near-zero degenerate distributions in the 5D setting are more challenging for the emulator to maintain high correlations for. Overall, these results demonstrate that GNNs provide a viable framework for rapid ensemble generation in hybrid-Vlasov modeling and highlight promising directions for future work.",
+  "authors": [
+    "Daniel Holmberg",
+    "Ivan Zaitsev",
+    "Markku Alho",
+    "Ioanna Bouri",
+    "Fanni Franssila",
+    "Haewon Jeong",
+    "Minna Palmroth",
+    "Teemu Roos"
+  ],
+  "published": "2026-01-18T23:13:23Z",
+  "updated": "2026-04-06T22:23:10Z",
+  "categories": [
+    "physics.space-ph",
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.space-ph"
+}
