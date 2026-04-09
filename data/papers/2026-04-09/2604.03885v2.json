@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.03885v2",
+  "url": "https://arxiv.org/abs/2604.03885v2",
+  "pdf_url": "https://arxiv.org/pdf/2604.03885v2.pdf",
+  "title": "PhaseFlow4D: Physically Constrained 4D Beam Reconstruction via Feedback-Guided Latent Diffusion",
+  "abstract": "We address the problem of recovering a time-varying 4D distribution from a sparse sequence of 2D projections - analogous to novel-view synthesis from sparse cameras, but applied to the 4D transverse phase space density $ρ(x,p_x,y,p_y)$ of charged particle beams. Direct single shot measurement of this high-dimensional distribution is physically impossible in real particle accelerator systems; only limited 1D or 2D projections are accessible. We propose PhaseFlow4D, a feedback-guided latent diffusion model that reconstructs and tracks the full 4D phase space from incomplete 2D observations alone, with built-in hard physics constraints. Our core technical contribution is a 4D VAE whose decoder generates the full 4D phase space tensor, from which 2D projections are analytically computed and compared against 2D beam measurements. This projection-consistency constraint guarantees physical correctness by construction - not as a soft penalty, but as an architectural prior. An adaptive feedback loop then continuously tunes the conditioning vector of the latent diffusion model to track time-varying distributions online without retraining. We validate on multi-particle simulations of heavy-ion beams at the Facility for Rare Isotope Beams (FRIB), where full physics simulations require $\\sim$6 hours on a 100-core HPC system. PhaseFlow4D achieves accurate 4D reconstructions 11000$\\times$ faster while faithfully tracking distribution shifts under time-varying source conditions - demonstrating that principled generative reconstruction under incomplete observations transfers robustly beyond visual domains.",
+  "authors": [
+    "Alexander Scheinker",
+    "Alexander Plastun",
+    "Peter Ostroumov"
+  ],
+  "published": "2026-04-04T22:37:01Z",
+  "updated": "2026-04-07T16:43:31Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.acc-ph"
+}

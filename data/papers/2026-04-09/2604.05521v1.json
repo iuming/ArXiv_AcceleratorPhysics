@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.05521v1",
+  "url": "https://arxiv.org/abs/2604.05521v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.05521v1.pdf",
+  "title": "Development of a 3D-CNN-based Prediction Model for Migration Barriers in Plasma-Wall Interactions",
+  "abstract": "Understanding the long-term transport of hydrogen isotopes in plasma-facing materials, such as tungsten, is critical for the steady-state operation of magnetic confinement fusion reactors. However, dynamically updating the transition parameters for kinetic Monte Carlo (kMC) simulations as the atomic structure evolves under continuous plasma irradiation remains a severe computational bottleneck. Conventionally, calculating these migration barriers requires the iterative and computationally expensive Nudged Elastic Band (NEB) method. To overcome this limitation, this article presents a highly efficient surrogate model for predicting migration barriers using a three-dimensional Convolutional Neural Network (3D-CNN), establishing the final component necessary to realize on-the-fly molecular dynamics (MD) and kMC hybrid simulations. The proposed deep learning model takes a two-channel volumetric input, the local three-dimensional potential energy distribution and the voxelized spatial coordinates of the initial and final trapping sites, to directly output the migration barrier as a scalar value. Trained on a comprehensive dataset of tungsten-hydrogen configurations evaluated using the Embedded Atom Method (EAM) potential, the model demonstrated robust predictive accuracy, achieving a Mean Absolute Error (MAE) of 0.124 eV and a high coefficient of determination of 0.890. Furthermore, utilizing GPU acceleration, the inference time is reduced to approximately 2.7 milliseconds per barrier, achieving a speed-up ratio of over 23,000 compared to conventional NEB calculations. This extraordinary acceleration effectively resolves the computational barrier of transition rate evaluations, paving the way for large-scale, dynamic modeling of plasma-wall interactions.",
+  "authors": [
+    "Seiki Saito",
+    "Keisuke Takeuchi",
+    "Hiroaki Nakamura",
+    "Yasuhiro Oda",
+    "Kazuo Hoshino",
+    "Yuki Homma",
+    "Shohei Yamoto",
+    "Yuki Uchida"
+  ],
+  "published": "2026-04-07T07:18:58Z",
+  "updated": "2026-04-07T07:18:58Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cond-mat.mtrl-sci"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
