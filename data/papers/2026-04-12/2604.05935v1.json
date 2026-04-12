@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.05935v1",
+  "url": "https://arxiv.org/abs/2604.05935v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.05935v1.pdf",
+  "title": "Monte-Carlo Event Generation for X-Ray Thomson Scattering Analysis",
+  "abstract": "A key diagnostic in warm-dense matter (WDM) experiments is X-ray Thomson scattering (XRTS), but its interpretation is often limited by complex instrument effects and the high computationally expensive combinations of microscopic models with detector simulations. We present a proof-of-principle implementation of an event-driven approach to XRTS modelling, inspired by particle physics event-generators. Instead of computing the spectra via forward models, individual scattering events are sampled from the differential cross section and sent through a spectrometer simulation. This provides a statistically consistent representation that preserves full kinematic information and enables flexible and geometry-aware analysis. We demonstrate the feasibility and physical consistency of the method for non-resonant XRTS in a synthetic setup. By decoupling event generation from detector-level analysis, the framework allows efficient reuse of the sampled events and reduces computational overhead associated with repeated evaluations. The method is model-agnostic and establishes a new connection between particle-physics event generation techniques and WDM diagnostics, providing a scalable foundation for advanced XRTS analysis and inference.",
+  "authors": [
+    "Uwe Hernandez Acosta",
+    "Thomas Gawne",
+    "Jan Vorberger",
+    "Hannah Bellenbaum",
+    "Anton Reinhard",
+    "Simeon Ehrig",
+    "Klaus Steiniger",
+    "Michael Bussmann",
+    "Tobias Dornheim"
+  ],
+  "published": "2026-04-07T14:33:07Z",
+  "updated": "2026-04-07T14:33:07Z",
+  "categories": [
+    "hep-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "hep-ph"
+}
