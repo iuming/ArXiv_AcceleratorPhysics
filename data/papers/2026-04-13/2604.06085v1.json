@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.06085v1",
+  "url": "https://arxiv.org/abs/2604.06085v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.06085v1.pdf",
+  "title": "gyaradax: Local Gyrokinetics JAX Code",
+  "abstract": "Gyrokinetic simulations are essential for understanding and controlling turbulence in fusion plasmas, yet they are oftentimes implemented in legacy codebases, in many cases CPU-bound. These are both hard to maintain and especially incompatible with optimization and ML workflows. gyaradax is a minimal JAX/CUDA solver for local flux-tube gyrokinetics. We base our implementation on GKW (Peeters et al., 2009), but with added native GPU acceleration and automatic differentiation. We validate gyaradax against analytical cases and empirical benchmarks, achieving formal agreement and statistical parity with GKW alongside a substantial speedup. We deliberately and extensively utilized agentic workflows in this project. A key contribution is showing that coding agents, guided by human expertise, structured prompting, and measurable progress through unit testing enabled extremely fast translation of complex Fortran code, and further optimizations. Gyaradax facilitates research at the intersection of ML and plasma physics. We showcase this through practical examples in inverse problems and sensitivity analysis.",
+  "authors": [
+    "Gianluca Galletti",
+    "Eric Volkmann",
+    "Johannes Brandstetter"
+  ],
+  "published": "2026-04-07T17:01:16Z",
+  "updated": "2026-04-07T17:01:16Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

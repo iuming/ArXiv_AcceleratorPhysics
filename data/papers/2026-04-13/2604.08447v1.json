@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2604.08447v1",
+  "url": "https://arxiv.org/abs/2604.08447v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.08447v1.pdf",
+  "title": "ML for the hKLM at the 2nd Detector",
+  "abstract": "The present research applies Graph Neural-Networks (GNNs) for energy measurement and particle identification tasks for a proposed second detector at the future Electron Ion Collider (EIC). In particular, an iron-scintillator sampling calorimeter would provide neutral hadron ($K_L$ and neutron) energy measurements and identification, as well as separation of muons from hadrons. Using detector simulations, particle hits in the detector are represented as graphs, and a GNN is trained for either classification or prediction. Furthermore, we developed a parameterization of the scintillator optical photon simulation that yields a 20-fold speed up compared to the default simulation. We find that the GNN method outperforms classical methods at the same tasks, and we report projections for the energy and timing resolution, and identification accuracy of the calorimeter. We also present an integration of the GNN method into a Multi-Objective Optimization framework, enabled by an automated pipeline of data generation, GNN training, and detector performance evaluation. We utilize the optimization to quantify the tradeoffs between different performance metrics at high and low energies when changing the detector design parameters, such as the iron/scintillator thickness.",
+  "authors": [
+    "Rowan Kelleher",
+    "Anselm Vossen"
+  ],
+  "published": "2026-04-09T16:42:51Z",
+  "updated": "2026-04-09T16:42:51Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
