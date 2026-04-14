@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2604.11190v1",
+  "url": "https://arxiv.org/abs/2604.11190v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.11190v1.pdf",
+  "title": "Cross-Sensor RGB Spectrograms: A Visual Method for Anomaly Detection in Classical and Quantum Magnetometer Triads",
+  "abstract": "Stationary multi-magnetometer arrays are routinely deployed in geomagnetic observatories, laboratory shielded rooms, and ground-based monitoring stations. The standard analysis pipeline reduces each sensor to an independent power spectrum, discarding any inter-sensor structure that is itself diagnostic of measurement health and of localised magnetic activity. This paper develops a purely theoretical framework for a deliberately simple visualisation that maps the short-time Fourier (STFT) power spectra of three concurrent magnetometers into the red, green, and blue channels of a single image: the \\emph{cross-sensor RGB spectrogram}. Inter-sensor coherence appears as neutral grey or white, while spectral energy that is unique to one or two sensors stands out as saturated colour. We formalise the construction of the image, derive its time-frequency resolution properties, give an explicit account of the per-channel normalisation choice, and present a colour-anomaly taxonomy that distinguishes coherent broadband activity, single-sensor faults, asymmetric pairwise sources, and slow temporal drift. A companion long-window variant is described for resolving features in the ultra-low frequency (ULF) band. The construction is presented without reference to any particular dataset or implementation; it is intended as a self-contained methodological building block that can be inserted into any monitoring pipeline whose front end is a synchronously sampled magnetometer triad. Because the construction operates on scalar magnitude time series alone, it applies equally to classical fluxgate sensors and to quantum magnetometers -- optically pumped magnetometers (OPMs), nitrogen-vacancy (NV) centre arrays, and superconducting quantum interference devices (SQUIDs) -- where distinguishing quantum-limited noise from technical artefacts is a central diagnostic challenge.",
+  "authors": [
+    "Manas Pandey"
+  ],
+  "published": "2026-04-13T08:49:01Z",
+  "updated": "2026-04-13T08:49:01Z",
+  "categories": [
+    "quant-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "quant-ph"
+}
