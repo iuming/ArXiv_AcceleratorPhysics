@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2604.10447v1",
+  "url": "https://arxiv.org/abs/2604.10447v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.10447v1.pdf",
+  "title": "The SpinQuest Microwave System for Dynamic Nuclear Polarization",
+  "abstract": "The SpinQuest experiment at Fermilab employs a dynamically polarized solid ammonia target to probe the spin structure of the proton, requiring stable, optimized microwave-driven Dynamic Nuclear Polarization (DNP) under high radiation conditions. We present the design, operation, and automation of a 140 GHz microwave system based on an extended interaction oscillator (EIO), integrated with real-time polarization feedback from a continuous-wave NMR system and cryogenic diagnostics. The system enables fine frequency control through motorized cavity tuning and is operated remotely to mitigate radiation exposure. To continuously optimize target polarization, we develop an automation framework supported by a Monte Carlo (digital twin) of the DNP process. The simulation incorporates rate-equation dynamics, frequency-dependent steady-state behavior, dose-induced frequency drift, beam-induced depolarization, and realistic NMR noise. This framework is used to design and benchmark control strategies, including a heuristic feedback algorithm, reinforcement learning (RL), and unsupervised RL approaches. These methods enable autonomous frequency tuning, improve ramp-up efficiency, and maintain near-optimal polarization under evolving conditions. We also demonstrate integration of EIO power-supply control into the feedback loop via anode voltage modulation, providing an additional degree of freedom for simultaneous control of microwave frequency and RF power. This combined control of cavity tuning and anode voltage allows the system to avoid frequency-dependent power nonuniformities and to better match broad Larmor distributions in irradiated targets. The results establish a scalable framework for AI-driven control of complex microwave systems in polarized-target experiments, with implications for future spin-physics measurements and other cryogenic, high-field applications.",
+  "authors": [
+    "Vibodha Bandara",
+    "Jordan D. Roberts",
+    "Dustin Keller"
+  ],
+  "published": "2026-04-12T03:59:28Z",
+  "updated": "2026-04-12T03:59:28Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
