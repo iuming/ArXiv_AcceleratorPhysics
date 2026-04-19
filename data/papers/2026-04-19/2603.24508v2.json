@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2603.24508v2",
+  "url": "https://arxiv.org/abs/2603.24508v2",
+  "pdf_url": "https://arxiv.org/pdf/2603.24508v2.pdf",
+  "title": "Multi-GPU Hybrid Particle-in-Cell Monte Carlo Simulations for Exascale Computing Systems",
+  "abstract": "Particle-in-Cell (PIC) Monte Carlo (MC) simulations are central to plasma physics but face increasing challenges on heterogeneous HPC systems due to excessive data movement, synchronization overheads, and inefficient utilization of multiple accelerators. In this work, we present a portable, multi-GPU hybrid MPI+OpenMP implementation of BIT1 that enables scalable execution on both Nvidia and AMD accelerators through OpenMP target tasks with explicit dependencies to overlap computation and communication across devices. Portability is achieved through persistent device-resident memory, an optimized contiguous one-dimensional data layout, and a transition from unified to pinned host memory to improve large data-transfer efficiency, together with GPU Direct Memory Access (DMA) and runtime interoperability for direct device-pointer access. Standardized and scalable I/O is provided using openPMD and ADIOS2, supporting high-performance file I/O, in-memory data streaming, and in-situ analysis and visualization. Performance results on pre-exascale and exascale systems, including Frontier (OLCF-5) for up to 16,000 GPUs, demonstrate significant improvements in run time, scalability, and resource utilization for large-scale PIC MC simulations.",
+  "authors": [
+    "Jeremy J. Williams",
+    "Jordy Trilaksono",
+    "Stefan Costea",
+    "Yi Ju",
+    "Luca Pennati",
+    "Jonah Ekelund",
+    "David Tskhakaya",
+    "Leon Kos",
+    "Ales Podolnik",
+    "Jakub Hromadka",
+    "Allen D. Malony",
+    "Sameer Shende",
+    "Tilman Dannert",
+    "Frank Jenko",
+    "Erwin Laure",
+    "Stefano Markidis"
+  ],
+  "published": "2026-03-25T16:48:23Z",
+  "updated": "2026-04-16T10:21:17Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.DC",
+    "cs.PF"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
