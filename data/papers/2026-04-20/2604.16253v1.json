@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2604.16253v1",
+  "url": "https://arxiv.org/abs/2604.16253v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.16253v1.pdf",
+  "title": "A Complexity Agnostic Clustering Engine for Time Projection Chambers and its Implementation in FPGA",
+  "abstract": "A clustering functional block implemented in field-programable-gate-array (FPGA) for time projection chambers (TPC) operating with predictable time regardless the complexity of the event is described in this paper. The clustering functional block reorganizes input data and the hits data belonging to the same clusters are output together for further process in the later stages. The clustering operation consists of two phases, data filling phase and data outputting phase, and the later uses the same number of clock cycles as the data filling phase. The clustering block can accommodate events with arbitrary number of clusters and number of hits per cluster as long as the total number of hits is within a predesigned limit. The operation time is exactly twice of the data filling time with no residual O(n2) term. The clustering block has been implemented with operating frequency of 200 MHz in a low-cost FPGA evaluation module and test results confirm the expected performance.",
+  "authors": [
+    "Jinyuan Wu",
+    "Michael Wang",
+    "Datao Gong"
+  ],
+  "published": "2026-04-17T17:12:00Z",
+  "updated": "2026-04-17T17:12:00Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
