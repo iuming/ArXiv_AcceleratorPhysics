@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2509.07024v2",
+  "url": "https://arxiv.org/abs/2509.07024v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.07024v2.pdf",
+  "title": "TGLF-WINN: Data-Efficient Deep Learning Surrogate for Turbulent Transport Modeling in Fusion",
+  "abstract": "The Trapped Gyro-Landau Fluid (TGLF) model provides fast, accurate predictions of turbulent transport in tokamaks, but whole device simulations requiring thousands of evaluations remain computationally expensive. Neural network (NN) surrogates offer accelerated inference with fully differentiable approximations that enable gradient-based coupling but typically require large training datasets to capture transport flux variations across plasma conditions, creating significant training burden and limiting applicability to expensive gyrokinetic simulations. We propose TGLF-WINN (Wavenumber-Informed Neural Network) with three key innovations: (1) principled feature engineering that reduces target prediction range, simplifying the learning task; (2) physics-guided wavenumber-resolved regularization to improve generalization under sparse data; and (3) Bayesian Active Learning (BAL) to strategically select training samples based on model uncertainty, reducing data requirements while maintaining accuracy. Feature tuning and wavenumber regularization together deliver a 12.5% relative RMSLE reduction over TGLF-NN on the full dataset; under sparse, unfiltered training (approximately 1/9 the full size) they yield an order-of-magnitude smaller RMSLE degradation than TGLF-NN, with the wavenumber-informed regularization imposing a physics-guided constraint on per-mode fluxes. Adding Bayesian Active Learning, TGLF-WINN matches TGLF-NN's full-data offline accuracy using only 25% of the training data, within 2.8% of TGLF-NN's full-data baseline and 4.3% of our own full-data result. A downstream flux-matching workflow further shows practicality: the NN surrogate gives a 45x speedup over TGLF with comparable reconstruction accuracy.",
+  "authors": [
+    "Yadi Cao",
+    "Futian Zhang",
+    "Wesley Liu",
+    "Tom Neiser",
+    "Orso Meneghini",
+    "Lawson Fuller",
+    "Sterling Smith",
+    "Raffi Nazikian",
+    "Brian Sammuli",
+    "Rose Yu"
+  ],
+  "published": "2025-09-07T09:36:51Z",
+  "updated": "2026-04-19T11:44:30Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

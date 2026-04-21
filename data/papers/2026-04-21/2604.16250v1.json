@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2604.16250v1",
+  "url": "https://arxiv.org/abs/2604.16250v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.16250v1.pdf",
+  "title": "Event-Level Voxel Reconstruction in Two-Photon Absorption Scans Using Pixel-Overlap Selection in Timepix3",
+  "abstract": "Two-photon absorption (TPA) enables three-dimensional characterisation of silicon detectors by generating charge carriers within a confined volume around a focused laser spot. In combination with pixelated readout systems, TPA measurements provide access to spatially resolved timing observables relevant for electric field reconstruction. However, the interpretation of TPA data in segmented detectors is non-trivial: a single excitation produces multi-pixel clusters within the intrinsic time resolution of the readout, and in many implementations no external synchronisation between laser pulses and detector data is available. In this work, we present a reconstruction framework for event-level voxelisation of TPA scans using Timepix3, operating on continuous, unsynchronised data. The method introduces a pixel-overlap-based definition of TPA events and a cluster-level timing estimator based on the highest deposited charge within a region of interest. This approach enables blind reconstruction of dwell structure and stable assignment of voxel timing without external triggers. We demonstrate that commonly used alternatives, such as centroid-based selection or earliest-hit timing, introduce systematic spatial biases in clustered events. The proposed framework provides a robust and general method for reconstructing voxel-resolved timing information in segmented detectors, and is directly applicable to TPA-based studies of electric field distributions and charge transport in silicon sensors.",
+  "authors": [
+    "Tianqi Gao"
+  ],
+  "published": "2026-04-17T17:11:29Z",
+  "updated": "2026-04-17T17:11:29Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

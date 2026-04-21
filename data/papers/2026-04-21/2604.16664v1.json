@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.16664v1",
+  "url": "https://arxiv.org/abs/2604.16664v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.16664v1.pdf",
+  "title": "Physics-Informed Latent Space Dynamics Identification for Time-Dependent NLTE Atomic Kinetics",
+  "abstract": "Non-local thermodynamic equilibrium (NLTE) calculations remain a major computational bottleneck in radiation--hydrodynamics, while most existing machine-learning surrogates treat NLTE as a static input--output mapping rather than a kinetic evolution problem. Here, we present a physics-informed Latent Space Dynamics Identification (pLaSDI) framework specifically designed for NLTE atomic kinetics, which captures the time-dependent atomic kinetics of non-equilibrium plasmas through an explicit reduced governing equation. To ensure the physical reliability of the reduced model, we impose physics-informed loss terms that enforce macroscopic consistency, dynamical stability, and convergence to the correct steady state during long-time integration. Applied to tin NLTE population data generated along hydrodynamically modeled temperature--density trajectories relevant to extreme ultraviolet (EUV) lithography plasmas, the model accurately reproduces charge-state evolution and mean charge state with errors below 2\\%, achieves speedups of approximately $5\\times10^{4}$--$10^{5}$, and remains stable outside the training trajectories by converging toward physically admissible states and the correct steady-state solution under fixed plasma conditions. These results show that careful physics-informed design of the latent dynamics, rather than data fitting alone, is essential for constructing fast, stable, and physically reliable extrapolative surrogates for time-dependent NLTE kinetics.",
+  "authors": [
+    "Jeongwoo Nam",
+    "William Anderson",
+    "Youngsoo Choi",
+    "Hai P. Le",
+    "Mark E. Foord",
+    "Byoung Ick Cho",
+    "Haewon Jeong",
+    "Min Sang Cho"
+  ],
+  "published": "2026-04-17T19:47:14Z",
+  "updated": "2026-04-17T19:47:14Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
