@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.18221v1",
+  "url": "https://arxiv.org/abs/2604.18221v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.18221v1.pdf",
+  "title": "Autoregressive prediction of 2D MHD dynamics inferred from deep learning modeling",
+  "abstract": "We develop two deep learning surrogate autoregressive models for the prediction of the temporal evolution of two-dimensional ideal magnetohydrodynamic (MHD) Kelvin-Helmholtz instabilities across a range of magnetic field strengths. Using two neural network architectures, a Koopman-based Transformer model and a ConvLSTM-UNet, our approach enables simultaneous prediction of vorticity and current density directly from high-resolution simulations. The models are trained in an autoregressive manner and are able to reproduce key features of the multiscale dynamics over several instability growth and nonlinear saturation phases. Beyond accurate field reconstruction, the surrogates preserve essential physical structures of ideal MHD dynamics, including the conservation trends of global invariants and the propagation of Alfvénic fluctuations. Compared to direct numerical simulations, the proposed surrogates offer substantially reduced computational cost while maintaining good agreement with the reference dynamics. These results suggest that deep learning based surrogate models can provide a promising complementary tool for the efficient and physically consistent exploration of high-fidelity plasma and fluid simulations.",
+  "authors": [
+    "David Kivarkis",
+    "Waleed Mouhali",
+    "Sadruddin Benkadda",
+    "Kai Schneider"
+  ],
+  "published": "2026-04-20T13:08:42Z",
+  "updated": "2026-04-20T13:08:42Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph",
+    "physics.flu-dyn"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
