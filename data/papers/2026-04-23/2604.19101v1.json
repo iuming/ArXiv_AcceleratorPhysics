@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2604.19101v1",
+  "url": "https://arxiv.org/abs/2604.19101v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.19101v1.pdf",
+  "title": "Closing the Loop: Deploying Auto-Generating Digital Twins for Particle Accelerators",
+  "abstract": "The simulation of a physical system in a virtual replica, known as a digital twin, is a useful way to interrogate the system non-invasively, providing the ability to perform predictive maintenance and surveillance, and to investigate potential novel configurations without perturbing the system. This article presents the implementation of an auto-generating digital twin architecture for particle accelerators: a virtual control system is generated to mirror the physical accelerator hardware, and used to update a simulation model which then feeds back the results into virtual diagnostics. All of the information about the accelerator lattice is cascaded down from a ground source of truth, removing any ambiguity about the naming of parameters between the simulation model and the virtual hardware. This design is modular and extensible, allowing researchers from different institutions to use their own models (for example, a machine learning model) and accelerator lattices while maintaining the overall structural coherence of the digital twin. This architecture has been tested for three accelerator facilities \\textendash~CLARA, the ISIS injector, and the proposed UK XFEL \\textendash~and aims to provide the foundation for a collaborative community effort in the development of shared technology towards a generic digital twin solution.",
+  "authors": [
+    "A. D. Brynes",
+    "M. King",
+    "K. R. L. Baker",
+    "R. Banerjee",
+    "R. Clarke",
+    "D. J. Dunning",
+    "J. K. Jones",
+    "M. Leputa",
+    "A. E. Pollard",
+    "M. Romanovschi",
+    "M. Shaw",
+    "N. Ziyan"
+  ],
+  "published": "2026-04-21T05:26:08Z",
+  "updated": "2026-04-21T05:26:08Z",
+  "categories": [
+    "physics.acc-ph",
+    "eess.SY"
+  ],
+  "primary_category": "physics.acc-ph"
+}
