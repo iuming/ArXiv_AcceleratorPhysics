@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.19223v1",
+  "url": "https://arxiv.org/abs/2604.19223v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.19223v1.pdf",
+  "title": "Deep-Learning based surrogate models for plasma exhaust simulations -- SOLPS-NN",
+  "abstract": "Accurate models of the scrape-off layer are required for the design and operation of tokamak fusion reactors. Scrape-off layer simulations are computationally expensive, difficult to operate and suffer from numerical instabilities. A potential remedy comes in using machine learning models trained on simulations for fast and easy to use predictions. We present a such candidate surrogate model - named SOLPS-NN - to provide recommendations for the methods to construct it. Based on a large dataset of several thousand SOLPS-ITER simulations with reduced neutral fidelity, a variation of machine learning models with differing architectures and scopes are tested. The evaluation shows that simple fully connected neural networks are a suitable architecture. It is demonstrated that the whole spatial domain can be predicted at once, but that it is easier to achieve high accuracy by employing independent models for different observables. The presented surrogate model with reduced neutral fidelity is sufficient to predict access to detachment with trends similar to experiments. A small dataset of higher fidelity ITER baseline SOLPS-ITER simulations is used to (re-)train surrogate models. The smaller extent of the ITER dataset allows for achieving much more accurate predictions. Transfer learning from the previous surrogate model works but has no direct benefits over training a new model from scratch. Future efforts should focus on discovering the potential and the methods for models utilizing simulations with mixtures of fidelity.",
+  "authors": [
+    "Stefan Dasbach",
+    "Sebastijan Brezinsek",
+    "Yunfeng Liang",
+    "Dirk Reiser",
+    "Sven Wiesen"
+  ],
+  "published": "2026-04-21T08:26:22Z",
+  "updated": "2026-04-21T08:26:22Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

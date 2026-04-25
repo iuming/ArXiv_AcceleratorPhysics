@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2604.21708v1",
+  "url": "https://arxiv.org/abs/2604.21708v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.21708v1.pdf",
+  "title": "Towards hybrid kinetic/drift-kinetic simulations in 6d Vlasov codes",
+  "abstract": "Simulating fully kinetic, two-species plasmas is computationally challenging due to the stiff multiscale dynamics of electrons and ions. While enforcing a quasi-neutral time evolution mitigates this stiffness, it requires an electric potential that consistently maintains this constraint. In this work, we present an implicit approach to determine this electric field self-consistently within the semi-Lagrangian, fully kinetic BSL6D code. We employ a hybrid two-species model that couples kinetic ions with massless, drift-kinetic electrons, enabling an implicit treatment of the latter. Notably, the model captures the generation of ion-scale zonal flows. Beyond the algorithmic description, we provide a proof of second-order time-splitting error convergence under specific regularity assumptions. A key feature of our approach is an error-balancing mechanism: we demonstrate that the field solver achieves the required accuracy of the electric field by automatically adjusting the error of certain moments of the distribution function. Furthermore, we provide a comprehensive analysis of semi-Lagrangian interpolation errors to ensure robustness against the steep density and temperature gradients characteristic of tokamak edge plasmas.",
+  "authors": [
+    "M. Pelkner",
+    "K. Hallatschek",
+    "M. Raeth"
+  ],
+  "published": "2026-04-23T14:15:12Z",
+  "updated": "2026-04-23T14:15:12Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
