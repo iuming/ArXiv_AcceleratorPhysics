@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.20482v1",
+  "url": "https://arxiv.org/abs/2604.20482v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.20482v1.pdf",
+  "title": "Valley-Aware Optimal Control of Spin Shuttling Using Cryogenic Integrated Electronics",
+  "abstract": "Electron shuttling is emerging as a key mechanism for enabling long-range coupling in scalable spin-qubit architectures. Bringing shuttling waveform generation into the cryostat can improve scalability, but imposes strict area and power constraints on the control electronics. Concurrently, shuttling in Si/SiGe is further limited by a spatially varying valley splitting that induces spin--valley mixing and degrades coherence. Here, we make three contributions that address these limitations jointly: (i) an end-to-end co-simulation framework that combines disorder-informed valley maps with transistor-level cryogenic circuit simulations including electronic noise; (ii) a fully integrated cryogenic shuttling-signal generator tailored to velocity modulation, enabling period-wise waveform shaping through discrete circuit settings stored in on-chip memory; and (iii) a noise-aware optimization procedure that tunes only these implementable circuit controls, using one of four discrete resistor settings per period, to generate high-fidelity shuttling sequences. Across simulated valley and noise realizations in our co-simulation framework, the optimized velocity-modulation waveforms improve transport performance, achieving an average shuttling fidelity of $99.99 \\pm 0.007\\%$ at $v_{\\mathrm{avg}} = 20~\\mathrm{m\\,s^{-1}}$ over a distance of $10~μ\\mathrm{m}$, while maintaining active analog power consumption in the tens of $μ\\mathrm{W}$ during shuttling. This validates on-chip storage and replay of optimized control settings as a practical strategy to mitigate valley disorder in scalable shuttling architectures.",
+  "authors": [
+    "Pau Dietz Romero",
+    "Nermine Chaabani",
+    "Lammert Duipmans",
+    "Alessandro David",
+    "Felix Motzoi",
+    "Stefan van Waasen",
+    "Lotte Geck"
+  ],
+  "published": "2026-04-22T12:14:16Z",
+  "updated": "2026-04-22T12:14:16Z",
+  "categories": [
+    "quant-ph",
+    "cond-mat.mes-hall",
+    "physics.ins-det"
+  ],
+  "primary_category": "quant-ph"
+}
