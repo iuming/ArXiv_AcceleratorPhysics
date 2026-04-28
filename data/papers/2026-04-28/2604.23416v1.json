@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.23416v1",
+  "url": "https://arxiv.org/abs/2604.23416v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.23416v1.pdf",
+  "title": "ArchGEM: an Advanced Data Analysis Tool for Analyzing Scattered Light Noise in LIGO",
+  "abstract": "Scattered light is one of the most common sources of non-stationary noise at low frequencies in Advanced LIGO detectors. It appears as arch-like features in time-frequency spectrograms, produced when stray light reflects from moving surfaces and recombines with the main interferometer beam. In this study, we present ArchGEM, an automated framework for identifying and characterizing these arches and recovering the physical properties of the scattering surfaces. ArchGEM combines a prominence-based peak-finding method with a Gaussian Mixture Model clustering approach to capture a range of scattered-light morphologies across different detector conditions. We apply ArchGEM to scattered light glitches across Advanced LIGO observing runs O3 (2019--2020) and O4 (2023--2024). We find that the average frequency distributions of this noise span 15--25 Hz in O3a and O4, but increase to 20--40 Hz during O3b. Typical inferred surface velocities are 0.2--0.5 $μ$m/s, and inferred surface displacements are 0.1--0.3 $μ$m. The Gaussian Mixture Model performs most consistently for complex or overlapping features, with mean frequency offsets within 5 Hz of the Gravity Spy baseline. Our results show that ArchGEM provides a practical tool for detector characterization by linking observed spectrogram features to the motion of scattering surfaces and helping guide future mitigation of scattered light noise in current and next-generation interferometers. By quantifying the temporal and spectral behavior of scattered light, ArchGEM provides a robust framework for diagnosing noise sources and guiding targeted mitigation strategies in future detector upgrades.",
+  "authors": [
+    "Kaylah McGowan",
+    "Shania Nichols",
+    "Siddharth Soni",
+    "Chayan Chatterjee",
+    "Gabriela Gonzalez",
+    "Kelly Holley-Bockelmann",
+    "Karan Jani"
+  ],
+  "published": "2026-04-25T19:16:07Z",
+  "updated": "2026-04-25T19:16:07Z",
+  "categories": [
+    "astro-ph.IM",
+    "physics.app-ph",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}

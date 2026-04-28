@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2604.23177v1",
+  "url": "https://arxiv.org/abs/2604.23177v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.23177v1.pdf",
+  "title": "Readout and PID using AIML for SoLID High Background Cherenkov Detectors",
+  "abstract": "We present the development of readout electronics and artificial-intelligence-based particle-identification methods for the SoLID Cherenkov detectors at Jefferson Lab. To operate in the high-rate, high-background SoLID environment, we designed a MAROC sum readout system for multianode photomultiplier tubes that provides simultaneous pixel, quadrant-sum, and total-sum signals. Bench studies show that the system can sustain rates at or above those expected for SoLID while maintaining acceptable pedestal behavior and signal linearity. Using realistic Geant4 simulations for the heavy-gas Cherenkov detector, we then investigate $π/K$ separation with beam-related background. A simple photoelectron-counting cut is insufficient under these conditions, whereas multilayer perceptron models trained on PMT, quad, and pixel readout data perform substantially better. The quad and pixel readout schemes achieve pion and kaon efficiencies above 90\\% and clearly outperform PMT-only readout. These results demonstrate that the combination of high-rate MAROC sum electronics and AIML-based pattern recognition provides a practical path toward robust SoLID Cherenkov PID.",
+  "authors": [
+    "Zhiwen Zhao",
+    "Bishnu Karki",
+    "Bo Yu",
+    "Andrew Smith",
+    "Gary Swift",
+    "Simon Gorbaty",
+    "Jingyi Zhou",
+    "Haiyan Gao",
+    "Benjamin Raydo",
+    "Alexandre Camsonne",
+    "Kishansingh Rajput",
+    "Marco Contalbrigo",
+    "Roberto Malaguti"
+  ],
+  "published": "2026-04-25T07:17:54Z",
+  "updated": "2026-04-25T07:17:54Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
