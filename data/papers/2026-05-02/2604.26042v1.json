@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2604.26042v1",
+  "url": "https://arxiv.org/abs/2604.26042v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.26042v1.pdf",
+  "title": "FPGA-Accelerated Real-Time Diagnostics at DIII-D Using the SLAC Neural Network Library for ML Inference",
+  "abstract": "In this work, we demonstrate the deployment of a hardware-accelerated machine learning (ML) inference system integrated into a real-time processing at the DIII-D tokamak fusion reactor. The team has successfully deployed an AMD/Xilinx KCU1500 field-programmable gate array (FPGA) into the realtime Plasma Control System (PCS) nodes that receives the live Beam Emission Spectroscopy (BES) signal used for Edge Localized Mode (ELM) forecasting. The FPGA hosts a dense neural network using the SLAC Neural Network Library (SNL) that has been trained to infer the likelihood of disruptive ELM conditions. This likelihood then feeds a separate plasma controller that uses Resonant Magnetic Perturbation coils to suppress the predicted disruptive condition. The SNL allows for on-the-fly updates of the neural network weights and biases without requiring full hardware resynthesis for the FPGA. Judicious design of the neural-network architecture can further allow for the hot-swapping of multiple classification tasks to be executed on the single FPGA, significantly enhancing the real-time adaptability of the system for context-aware control strategies that respond in real-time to evolving reactor conditions. These adaptive weights naturally support continuous model refinement and seamless task switching during live experimental operation. This use case is chosen as a high rate signal processing example that can serve as a template for general ML-based reactor diagnostic processing for active reactor control systems. We see this as an essential development for achieving reactor relevant operation in future continuous operation fusion devices.",
+  "authors": [
+    "Abhilasha Dave",
+    "Semin Joung",
+    "SangKyeun Kim",
+    "Ramon Reed",
+    "Keith Erickson",
+    "Jalal Butt",
+    "Azarakhsh Jalalvand",
+    "Mudit Mishra",
+    "James Russell",
+    "Larry Ruckman",
+    "Ryan Herbst",
+    "Egemen Kolemen",
+    "David Smith",
+    "Ryan Coffee"
+  ],
+  "published": "2026-04-28T18:25:51Z",
+  "updated": "2026-04-28T18:25:51Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
