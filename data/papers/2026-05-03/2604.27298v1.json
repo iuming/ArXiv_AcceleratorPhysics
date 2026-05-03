@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2604.27298v1",
+  "url": "https://arxiv.org/abs/2604.27298v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.27298v1.pdf",
+  "title": "DeepPropNet: an operator learning-based predictor for thermal plasma properties",
+  "abstract": "Thermal plasma properties play a critical role in plasma simulations and plasma-related applications. However, their strong nonlinear dependence on temperature, pressure, and gas composition makes accurate and efficient evaluation challenging. In this work, an operator learning-based model, termed DeepPropNet, is proposed for fast prediction of thermodynamic and transport properties of thermal plasmas. Two architectures are developed, including a single-property model (S-DeepPropNet) and a Mixture of Experts (MoE)-based multi-property model (MoE-DeepPropNet). The proposed models learn the nonlinear mapping from plasma operating conditions to physical properties based on high-fidelity datasets. The MoE architecture enables efficient multi-property prediction within a unified framework. Predictions are performed for binary SF6-N2 and ternary C4F7N-CO2-O2 mixtures. The results show that the proposed models achieve high accuracy, with relative L2 errors on the order of 10-3 to 10-2, while maintaining strong generalization capability under unseen conditions. The applicability of DeepPropNet is further demonstrated by coupling with finite volume method (FVM) and physics-informed neural networks (PINNs). The results indicate that DeepPropNet provides an efficient and scalable approach for plasma property prediction and plasma simulations.",
+  "authors": [
+    "Zuo Wang",
+    "Linlin Zhong"
+  ],
+  "published": "2026-04-30T01:17:11Z",
+  "updated": "2026-04-30T01:17:11Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
