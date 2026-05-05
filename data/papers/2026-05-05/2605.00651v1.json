@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2605.00651v1",
+  "url": "https://arxiv.org/abs/2605.00651v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.00651v1.pdf",
+  "title": "EQSANS-CLI: A natural-language, agent-ready command-line tool for small-angle neutron scattering data reduction at EQ-SANS",
+  "abstract": "Small-angle neutron scattering (SANS) data reduction at user facilities follows a largely repetitive workflow. Runs are first classified in the catalog and matched to transmission, background, and empty-beam references within the same instrument configuration. The data are then reduced, placed on an absolute scale using a standard, and stitched across configurations. Although these steps are individually well understood, they remain weakly connected, producing a coordination burden that scales with the number of runs and configurations. This paper describes EQSANS-CLI, a command-line tool that organizes this workflow into a coherent, scriptable, and agent-addressable system. The design rests on four principles: a shared command-handler layer that all input paths converge on; a persistent \\emph{working table} that holds every reduction decision as editable rows; two input surfaces (an interactive terminal and a headless JSON mode) that compile to the same handler entry point; and a status-driven re-reduction model that treats parameter changes as first-class events. An \\texttt{/autopilot} command chains the full pipeline from the IPTS number to stitched $I(Q)$ curves in one invocation. A Slack bot demonstrates that the headless interface, together with a single skill document loaded into an external agent's system prompt, is sufficient to drive complete reductions by natural language from a mobile device. The architecture is intentionally minimal on the agent side: the CLI is the authoritative executor, and the agent's only job is to translate human intent into commands on a stable contract.",
+  "authors": [
+    "Changwoo Do"
+  ],
+  "published": "2026-05-01T13:32:22Z",
+  "updated": "2026-05-01T13:32:22Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
