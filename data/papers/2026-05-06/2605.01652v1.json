@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2605.01652v1",
+  "url": "https://arxiv.org/abs/2605.01652v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.01652v1.pdf",
+  "title": "Computational boundary specification in 3D fixed-boundary magnetohydrodynamic equilibrium modeling",
+  "abstract": "Outside the core of the plasma, the plasma current and pressure rapidly transition to zero in a scrape-off or edge region or plasma-vacuum interface. However, existing tools for fixed-boundary magnetohydrodynamic equilibria in 2D and 3D domains $Ω$ typically prescribe the computational boundary $\\partialΩ$ interior to this transition layer. We (1) argue that a more realistic and robust assumption is to define the computational boundary exterior to this transition layer, in a vacuum-like region where $J|_{\\partialΩ} \\sim p|_{\\partialΩ} \\sim 0$, (2) show that, without this boundary change, existing coil optimization routines for 3D toroidal equilibria (stellarators) should be changed to match free-boundary equilibrium requirements, and (3) derive an algorithm for a fixed-boundary 3D equilibrium solver compatible with a very general computational boundary, with conditions $B \\cdot n|_{\\partialΩ} \\neq 0$ (not necessarily a flux surface), $p|_{\\partialΩ} \\neq \\text{const.}$ (not necessarily an isobar), and $J \\times n|_{\\partialΩ} \\neq 0$.",
+  "authors": [
+    "Alan Kaptanoglu",
+    "Tobias Blickhan"
+  ],
+  "published": "2026-05-03T00:25:48Z",
+  "updated": "2026-05-03T00:25:48Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
