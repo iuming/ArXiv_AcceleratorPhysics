@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.05081v1",
+  "url": "https://arxiv.org/abs/2605.05081v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.05081v1.pdf",
+  "title": "Provable imitation learning for control of instability in partially-observed Vlasov--Poisson equations",
+  "abstract": "We consider the stabilization of Vlasov--Poisson plasma dynamics, a central control problem in nuclear fusion. Our focus is the gap between what an ideal controller would use and what experiments can actually observe: while optimal policy may rely on the full phase-space state, practical feedback is typically limited to sparse macroscopic diagnostics. We therefore study imitation learning methods that distill a fully observed expert policy into controllers operating only on macroscopic measurements. We show the stability guarantees of the learned policy, where the error floor depends on the minimal behavior cloning loss achievable under the observation constraints. We further characterize this minimal loss in terms of a notion of entropy that quantifies the complexity of the initial distribution. Our results demonstrates the theoretical feasibility of learning stabilizing feedback policies for kinetic plasma dynamics from macroscopic observations, and exhibits the adaptivity of the learning approach to low-complexity structures. Through extensive numerical experiments, we validate our theory and show that the learned policies can stabilize the system using only macroscopic observations, within a significantly longer time horizon than non-adaptive baseline controllers.",
+  "authors": [
+    "Xiaofan Xia",
+    "Qin Li",
+    "Wenlong Mou"
+  ],
+  "published": "2026-05-06T16:19:29Z",
+  "updated": "2026-05-06T16:19:29Z",
+  "categories": [
+    "cs.LG",
+    "math.AP",
+    "math.OC",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
