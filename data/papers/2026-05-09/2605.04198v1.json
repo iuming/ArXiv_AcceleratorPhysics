@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.04198v1",
+  "url": "https://arxiv.org/abs/2605.04198v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.04198v1.pdf",
+  "title": "Deep Wave Network for Modeling Multi-Scale Physical Dynamics",
+  "abstract": "Performance of deep learning models is strongly governed by architectural capacity, with width and depth as primary controls. However, in physical-science applications, models are often compared at a single fixed size or by separating accuracy and computational cost, which can be misleading since architectures exhibit different accuracy-cost scaling as width and depth vary. This issue is particularly relevant for U-Net-type encoder-decoder models, widely used for multi-scale gas, fluid, and plasma dynamics due to their ability to represent features across spatial scales. A U-Net constructs a multi-resolution representation via an encoder that progressively reduces spatial resolution, followed by a decoder that restores it for prediction. Skip connections link corresponding encoder and decoder features, preserving fine-scale information and improving optimization. In practice, U-Net width is routinely tuned, while depth is typically kept fixed (a set number of down/up-sampling stages with few convolutions per stage), limiting systematic exploration of depth for improving the accuracy-cost trade-off. We address this limitation by increasing effective depth through stacking multiple encoder-decoder \"waves\" in series, with skip connections both within and across waves to enable progressive cross-scale refinement. We call this architecture a Deep Wave Network (DW-Net). Training data, optimization, and schedules are kept identical across models. Instead of evaluating single configurations, we train multiple width variants of each architecture and compare accuracy vs. GPU time Pareto fronts. Across several 2D and 3D flow benchmarks, DW-Net models consistently improve the Pareto frontier over single-wave U-Nets, achieving higher accuracy at matched cost or similar accuracy at reduced cost, and reaching low-error regimes with up to 3x less training time under identical training settings.",
+  "authors": [
+    "Alexander I. Khrabry",
+    "Edward A. Startsev",
+    "Andrew T. Powis",
+    "Igor D. Kaganovich"
+  ],
+  "published": "2026-05-05T18:40:59Z",
+  "updated": "2026-05-05T18:40:59Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "physics.comp-ph",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

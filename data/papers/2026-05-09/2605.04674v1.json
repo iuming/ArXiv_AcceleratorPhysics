@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.04674v1",
+  "url": "https://arxiv.org/abs/2605.04674v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.04674v1.pdf",
+  "title": "Machine learning inference of fission yields from gamma spectroscopy for very low-yield nuclear test verification",
+  "abstract": "Very low-yield nuclear tests pose a major verification challenge for the zero-yield standard of the Comprehensive Nuclear-Test-Ban Treaty (CTBT). The zero-yield standard prohibits any explosive experiment that produces a self-sustaining fission chain reaction while allowing subcritical experiments. Previous research shows that on-site gamma spectroscopy of post-test debris provides useful insight into the criticality level, although it remains heavily dependent on knowledge of certain experimental settings. Here, we adopt a new approach whereby machine learning models are trained on simulated gamma spectroscopy data to infer the fission yield of a nuclear very low-yield test. Using high-fidelity 3D Monte Carlo particle transport simulations, we generated gamma spectra measured outside containment vessels after very low-yield tests for 66 million representative scenarios. From these spectra, we extracted 82 fission-product-to-plutonium-239 peak ratios, then trained ML models for two tasks: (1) binary classification of whether a test exceeded a chosen yield threshold, and (2) regression to estimate the actual yield. We find that XGBoost performs best on the classification task across the most policy-relevant yield range. The classifier achieves high accuracy even for yields near the chosen threshold (e.g., >95% for yields +-100 g around a threshold at 1 kg TNT), and the regressor presents a mean absolute relative error of 12.4% for measurements taken a month to a year after the test. These results demonstrate that using machine learning to infer the yield of a past very low-yield nuclear test from gamma spectroscopy data is feasible and accurate. This approach can support efforts to establish a robust verification protocol for the zero-yield standard and could pave the way for a future yield threshold-based verification regime that is both technically feasible and politically viable.",
+  "authors": [
+    "Julien de Troullioud de Lanversin",
+    "Jiehui Li",
+    "Christopher Fichtlscherer",
+    "Dongdong She",
+    "Moritz Kutt"
+  ],
+  "published": "2026-05-06T09:24:20Z",
+  "updated": "2026-05-06T09:24:20Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
