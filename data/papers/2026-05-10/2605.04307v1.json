@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.04307v1",
+  "url": "https://arxiv.org/abs/2605.04307v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.04307v1.pdf",
+  "title": "A physics-informed neural network approach to solve the spatially inhomogeneous electron Boltzmann equation",
+  "abstract": "The accurate determination of electron properties is fundamental to low-temperature plasma simulations, necessitating precise solutions to the spatially inhomogeneous electron Boltzmann equation (EBE). This work explores the use of physics-informed neural networks (PINNs) for obtaining solutions to the spatially one-dimensional (1D) EBE subject to a uniform electric field in atomic gases. Employing the two-term approximation, the resulting equation for the isotropic distribution is solved directly in kinetic energy space without the conventional transformation to total energy. This approach demonstrates the flexibility of the PINN framework in handling diverse equation formulations. To address the convergence difficulties associated with this class of kinetic equations, a new neural network architecture is introduced. It features a Fourier-feature input layer, adaptive activation functions, and a scaled multiplicative gating mechanism. It is demonstrated that this formulation preserves robust gradient flow throughout the network, which is critical for learning physically correct solutions. Benchmarking against reference data reveals that the present architecture achieves excellent agreement across both microscopic and macroscopic properties of the electrons. Furthermore, the architecture exhibits strong generalization across different gas types and a defined range of electric field strengths without requiring case-specific hyperparameter tuning. Ultimately, the excellent accuracy achieved here validates the applicability of the present PINN method.",
+  "authors": [
+    "Ihda Chaerony Siffa",
+    "Detlef Loffhagen",
+    "Markus M. Becker",
+    "Jan Trieschmann"
+  ],
+  "published": "2026-05-05T21:14:13Z",
+  "updated": "2026-05-05T21:14:13Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
