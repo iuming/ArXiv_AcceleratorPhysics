@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2605.06779v1",
+  "url": "https://arxiv.org/abs/2605.06779v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.06779v1.pdf",
+  "title": "Exploring the Boundaries of Differentiable Radiation Transport and Detector Simulation",
+  "abstract": "We present an application of automatic differentiation for particle transport through matter using a Geant4-like radiation transport simulation with a full electromagnetic physics model. When differentiating this step-based transport, we observe exploding gradients driven by rare but extreme sensitivities at material boundaries, which propagate through subsequent transport and shower development. To obtain usable derivatives for optimization, we introduce a targeted mitigation strategy that stops gradient propagation through boundary-crossing operations under identifiable unstable conditions while leaving the forward (primal) simulation unchanged. We demonstrate that this enables stable, optimization-ready gradients in a detector-design problem.",
+  "authors": [
+    "Jeffrey Krupa",
+    "Yiyang Zhao",
+    "Mihaly Novak",
+    "Max Aehle",
+    "Max Sagebaum",
+    "Long Chen",
+    "Nicolas Gauger",
+    "Miaoyuan Liu",
+    "Lukas Heinrich",
+    "Michael Kagan"
+  ],
+  "published": "2026-05-07T18:00:02Z",
+  "updated": "2026-05-07T18:00:02Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
