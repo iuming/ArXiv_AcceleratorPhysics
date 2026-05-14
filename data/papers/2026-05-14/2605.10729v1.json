@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.10729v1",
+  "url": "https://arxiv.org/abs/2605.10729v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.10729v1.pdf",
+  "title": "On Distributed Parallelization Strategies for Particle-in-Fourier Schemes",
+  "abstract": "We present and compare distributed parallelization strategies for the particle-in-Fourier (PIF) schemes used in kinetic plasma simulations. The different strategies are i) domain decomposition, where both the particles and Fourier modes are split between the MPI ranks ii) particle decomposition, where only the particles are split between the ranks and each rank carries all the modes, and, iii) space-time decomposition, in which time parallelization based on the parareal algorithm is added on top of the particle decomposition. We describe the different communication patterns involved in each of the strategies, the parameter regimes where they work best, and explain their advantages and disadvantages. We implement the strategies within the open-source, performance portable library IPPL and conduct scaling studies with 3D-3V Landau damping and Penning trap benchmark problems on Alps and JUWELS booster supercomputers. We analyze the dominant component timings in each of the strategies and identify areas for future optimizations.",
+  "authors": [
+    "Sriramkrishnan Muralikrishnan",
+    "Paul Fischill",
+    "Andreas Adelmann",
+    "Robert Speck"
+  ],
+  "published": "2026-05-11T15:34:13Z",
+  "updated": "2026-05-11T15:34:13Z",
+  "categories": [
+    "cs.CE",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.CE"
+}

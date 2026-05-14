@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2605.13627v1",
+  "url": "https://arxiv.org/abs/2605.13627v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.13627v1.pdf",
+  "title": "SINAPSE: A lightweight deep learning framework for accurate and explainable neutron-$γ$ discrimination",
+  "abstract": "Traditionally, neutron-$γ$ discrimination in organic scintillators relies on techniques such as time-of-flight (ToF) selection and pulse-shape discrimination (PSD). However, particle identification through graphical cuts remains challenging in the low-charge regime due to poor signal-to-noise ratios (SNR). In this work, we propose SINAPSE, a lightweight deep learning framework for accurate and explainable neutron-$γ$ discrimination in the low-charge regime. The framework employs a dual-branch architecture that combines a 1-dimensional convolutional autoencoder for waveform denoising with a classifier for particle identification. Random augmentations are applied to high-SNR waveforms to simulate low-charge conditions, enabling robust extrapolation into regimes where conventional PSD labels are unreliable. We show that SINAPSE achieves superior denoising performance compared to conventional digital signal processing techniques, and outputs well-calibrated probabilities, consistent with traditional graphical cuts. Finally, we apply SHAP (SHapley Additive exPlanations) values to show that model decisions are driven by physically meaningful pulse-shape features, confirming consistency with established PSD principles.",
+  "authors": [
+    "Thomas Carreau",
+    "Adrien Matta",
+    "Owen Syrett",
+    "Benoît Mauss",
+    "David Etasse",
+    "Audrey Chatillon",
+    "Cyril Lenain",
+    "Pierre Morfouace",
+    "Julien Taieb",
+    "David Regnier",
+    "Patrick Copp",
+    "Matthew Devlin",
+    "Charlène Surault",
+    "Jason Surbrook"
+  ],
+  "published": "2026-05-13T14:53:47Z",
+  "updated": "2026-05-13T14:53:47Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

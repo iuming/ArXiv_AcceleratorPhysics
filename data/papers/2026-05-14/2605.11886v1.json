@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.11886v1",
+  "url": "https://arxiv.org/abs/2605.11886v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.11886v1.pdf",
+  "title": "Towards Virtual Qualification in Nuclear Fusion: Demonstrating Probabilistic Model Validation on a High Heat Flux Component",
+  "abstract": "Qualification of components operating in future fusion power plants will be heavily reliant on simulations of component behaviour. The lack of representative test environments for many aspects of the expected operating environment will necessitate full or partial virtual qualification of components. The cornerstone of virtual qualification is credible validation of the simulation models on which it relies. In this work, we present a probabilistic model validation framework that forms the basis for implementation of virtual qualification in fusion. We demonstrate our framework on a representative component; a high heat flux heat sink subject to a tightly coupled multi-physics loading. We perform data-rich, optimised experiments, in which we implement high fidelity diagnostics and rigorously quantify aleatoric and epistemic uncertainty on all measurements. Our simulation approach efficiently samples input uncertainty distributions to predict probability boxes describing component response, using a statistical surrogate to replicate behaviour of the finite element model we wish to validate. We then used a novel implementation of the modified area validation metric to quantify the model form error of the finite element model, isolating it from the aleatoric and epistemic experimental uncertainty. We discuss the contribution of our validation approach towards virtual qualification, and the benefits of the risk-based decision-making it facilitates. The experimental, simulation, and validation datasets are published as a benchmark of a probabilistic validation approach for fusion, and for use in development of new model validation methodologies.",
+  "authors": [
+    "J. T. Horne-Jones",
+    "M. Baxter",
+    "A. Tayeb",
+    "L. Fletcher",
+    "J. Paterson",
+    "S. Biggs-Fox",
+    "A. Harte"
+  ],
+  "published": "2026-05-12T10:01:06Z",
+  "updated": "2026-05-12T10:01:06Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.app-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
