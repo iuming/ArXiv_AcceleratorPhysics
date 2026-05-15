@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.11033v1",
+  "url": "https://arxiv.org/abs/2605.11033v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.11033v1.pdf",
+  "title": "TokaMind for Power Grid: Cross-Domain Transfer from Fusion Plasma",
+  "abstract": "TokaMind is a multi-modal transformer (MMT) foundation model pre-trained on tokamak plasma diagnostics data from MAST, where it was shown to outperform CNN-based approaches on fusion benchmarks. We investigate whether its learned representations generalize to physically distinct but structurally analogous domains. Through systematic experimentation across four domains-industrial bearing degradation, NASA CMAPSS turbofan degradation, and two independent power grid PMU datasets-we identify four transfer-favoring characteristics that help explain where TokaMind's pretrained representations are most effective. Power grid synchrophasor data matches this target-domain profile most directly, while industrial degradation datasets demonstrate that TokaMind can still yield useful performance under partial alignment, especially when task design and feature construction expose physically meaningful degradation structure. On the GESL/PNNL 500-event benchmark with provider-aware evaluation, TokaMind achieves test $\\text{F1} = 0.837 \\pm 0.040$ (3~seeds) for severe event classification. Our central finding, however, is not the aggregate score: classification difficulty is structurally determined by provider-level grid topology, not model capacity. In the single-window early-warning regime, TokaMind outperforms a CNN baseline (F1~0.889 vs.~0.878)--a reversal that disappears as more event windows are provided. Furthermore, Critical Slowing Down (CSD) indicators, used as a confidence gate rather than a classification label, improve F1 from 0.696 to 0.750 at 63% coverage-outperforming the CNN baseline (0.636) at any coverage level. These results establish the first cross-domain validation of TokaMind outside nuclear fusion and propose a transferability framework and revised evaluation protocol for multi-source PMU datasets.",
+  "authors": [
+    "JC Wu",
+    "Norton Lee",
+    "Kai Siang Chen"
+  ],
+  "published": "2026-05-10T23:38:26Z",
+  "updated": "2026-05-10T23:38:26Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

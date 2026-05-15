@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.10465v1",
+  "url": "https://arxiv.org/abs/2605.10465v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.10465v1.pdf",
+  "title": "Integrated full pulse modeling for pellet injection in tokamaks: HPI2 model improvement and validation in WEST",
+  "abstract": "Reliable modeling and control of core density is essential for reactor-relevant magnetic confinement fusion operation, motivating cryogenic pellet injection as a primary fueling actuator and the need for predictive pellet source models in integrated modeling. Here we present an upgrade of the physics-based pellet code HPI2 in which the plasmoid release spatial step is determined self-consistently from ablation physics, $dx_{var}=v_{\\mathrm{pel}}\\,t_{\\mathrm{exit}}$ (optionally rescaled to trade accuracy for computational cost), removing an ad-hoc discretization parameter and improving numerical robustness across injection conditions. The upgraded model is first validated in stand-alone against a high-field-side pellet-fueled, ohmic, WEST discharge (#58656) by comparing synthetic and measured interferometry line-integrated density increments, obtaining a mean error of $\\sim 10\\%$. We then perform full-radius, time-dependent integrated modeling validation by coupling the new HPI2 within the High Fidelity Pulse Simulator (HFPS) workflow (JINTRAC/IMAS), combining JETTO with SANCO for the impurity/radiation evolution and TGLF-SAT2 for the turbulent transport. The coupled simulations reproduce the main density rise and relaxation after pellet injection and the associated electron-temperature transient, while taking into account the strong influence of tungsten radiation in WEST, supporting the consistency of HPI2 as a predictive pellet particle source in integrated modeling frameworks. Ultimately, this validation study supports the use of pellet modeling tools in integrated modeling studies for larger devices such as ITER.",
+  "authors": [
+    "A. Panera Alvarez",
+    "F. Koechl",
+    "J. Artaud",
+    "E. Geulin",
+    "B. Pégourié",
+    "E. Vergnaud",
+    "C. Bourdelle",
+    "S. Wiesen",
+    "the WEST Team"
+  ],
+  "published": "2026-05-11T12:33:05Z",
+  "updated": "2026-05-11T12:33:05Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

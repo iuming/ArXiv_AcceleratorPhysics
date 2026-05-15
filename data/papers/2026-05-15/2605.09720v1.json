@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.09720v1",
+  "url": "https://arxiv.org/abs/2605.09720v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.09720v1.pdf",
+  "title": "Predictive capabilities of the integrated modeling TRANSP code for tokamak plasmas",
+  "abstract": "This paper expands on the TRANSP description given in Computer Physics Communications 312 (2025) 109611 by describing recent progress in TRANSP's predictive functionality and emphasizing the development of the PT_SOLVER module and integration of the high-fidelity T3D/GX framework for plasma profile prediction using a high-fidelity gyrokinetic model for turbulent transport. PT_SOLVER is a modular, multi-region, parallel solver for coupled transport equations of particle density, electron and ion energy, and toroidal angular momentum that uses an implicit Newton method to advance the solution of these equations. The numerical formulation includes source coupling, moving-geometry terms, and nonlinear stabilization based on modified Peclet numbers, thereby enabling the PT_SOLVER to handle the stiffness associated with gradient-dependent transport models. Stabilization occurs via a nonlinear function controlling discretization in zones of steep gradients or rapidly changing transport coefficients. Source terms that account for heating, current drive, alpha-particle effects, and collisional energy exchange are handled thoroughly, and both residual norms and profile-change measures are used to assess convergence. Verification is carried out using analytical benchmark solutions, manufactured solution benchmarks, convergence studies of stiff gradient-dependent diffusivities, and code-to-code comparisons of TGYRO using the TGLF/NEO models for anomalous and neoclassical transport. This paper also describes the TRANSP Interface to the modular T3D/GX workflow and presents verification examples related to the interface for coupled prediction simulations. The results in this paper confirm that the predictive TRANSP framework has a robust numerical implementation for time-dependent predictive transport simulations, and it provides a basis for future hybrid reduced and high-fidelity workflows.",
+  "authors": [
+    "A. Y. Pankin",
+    "J. Breslau",
+    "M. V. Gorelenkova",
+    "R. Budny",
+    "M. Goliyad",
+    "B. A. Grierson",
+    "G. W. Hammett",
+    "S. C. Jardin",
+    "J. B. Lestz",
+    "X. Yuan"
+  ],
+  "published": "2026-05-10T19:38:45Z",
+  "updated": "2026-05-10T19:38:45Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

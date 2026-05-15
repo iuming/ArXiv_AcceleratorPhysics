@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2605.08645v1",
+  "url": "https://arxiv.org/abs/2605.08645v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.08645v1.pdf",
+  "title": "Energy-based models for diagnostic reconstruction and analysis in a laboratory plasma device",
+  "abstract": "Energy-based models (EBMs) provide a powerful and flexible way of learning a joint probability distribution over data by constructing an energy surface. This energy surface enables insight extraction and conditional sampling. We apply EBMs to laboratory plasma physics, a domain characterized by highly nonlinear phenomena. These phenomena are studied using plasma diagnostics, which are often difficult to analyze and subject to hardware degradation. In addition, the possible configuration space of a plasma device is sufficiently large that it cannot be efficiently searched using conventional analysis techniques. EBMs address these issues. At the Large Plasma Device (LAPD), a CNN- and attention-based EBM is trained on a set of randomly generated machine conditions and their corresponding diagnostic time series. We demonstrate diagnostic reconstruction using this EBM on real data and show that additional diagnostics improves reconstruction error and generation quality. The energy surface is directly evaluated for an ill-posed inverse problem: inferring probe position from a time-series measurement. This inference illuminates symmetries in the data, potentially leading to a method of inquiry to supplement conventional data analysis. Trends in diagnostic signals are inferred via conditional sampling over machine inputs. In addition, this multimodal EBM is able to unconditionally reproduce all distributional modes, suggesting future potential in anomaly detection on the LAPD. Fundamentally, this work demonstrates the flexibility and efficacy of EBM-based generative modeling of laboratory plasma data, and showcases multiple practical uses of just a single trained EBM in the physical sciences.",
+  "authors": [
+    "Phil Travis",
+    "Troy Carter"
+  ],
+  "published": "2026-05-09T03:29:03Z",
+  "updated": "2026-05-09T03:29:03Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
