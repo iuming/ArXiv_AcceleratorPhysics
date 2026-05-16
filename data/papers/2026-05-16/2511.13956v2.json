@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2511.13956v2",
+  "url": "https://arxiv.org/abs/2511.13956v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.13956v2.pdf",
+  "title": "A Full Rank Pileup Deconvolution Scheme Suitable for Calorimeter Online Trigger Primitive Generation",
+  "abstract": "In this document, a pileup deconvolution scheme not relying on any mathematics guessing is presented. In high energy physics experiment, as the luminosity increases, pile-up issues on detectors such as calorimeters become non-negligible. Deconvolution approaches developed for data taken from DAQ systems are usually rank-deficient or underdetermined, having less equations than unknowns, even with the ADC values from multiple beam crossings are collected. These deconvolution approaches need mathematic pre-assumptions such as Sparse Representation. For online computation tasks such as for trigger primitive creation, signal availability is significantly different as in offline data analysis stage, and therefore, it is possible to use different (yet simpler) algorithms. In this situation, number of ADC values of the calorimeter outputs is the same as the number of beam crossings (or 4 times number of beam crossings, depending on the ADC sampling rate), and therefore, the number of equations can be arranged to be the same as number of unknowns. This way, a determined deconvolution scheme with a full-rank squared convolution (and deconvolution) matrix becomes possible. The robustness of deconvolution over long time windows is also studied in this paper.",
+  "authors": [
+    "Jin-yuan Wu"
+  ],
+  "published": "2025-11-17T22:30:48Z",
+  "updated": "2026-05-13T11:23:55Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

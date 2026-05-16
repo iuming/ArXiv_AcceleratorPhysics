@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2605.12132v1",
+  "url": "https://arxiv.org/abs/2605.12132v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.12132v1.pdf",
+  "title": "High-order exponential solver method for particle-in-cell simulations in cylindrical geometry",
+  "abstract": "Recent developments in high peak-power table-top laser systems reaching highly relativistic light intensities have led to significant advances in laser-driven particle acceleration schemes (mainly the laser wakefield acceleration, LWFA) that heavily rely on particle-in-cell (PIC) simulations for the microscopic understanding of the acceleration process. Efficient algorithms have been developed by taking advantage of the cylindrical geometry of the laser-plasma acceleration interaction, which reduces the computational and memory costs of these simulations, but with the trade-off of reduced accuracy compared to the 3D simulations. The most successful solution solves the Maxwell equations on a Fourier-Bessel spectral basis in this geometry, as used by the well-known FBPIC code. In this work, we present a solution that is a real-space equivalent of the latter using the finite difference exponential time-domain method. Spatially, we represent the derivatives with high-order staggered finite differences locally and address issues of the near-axis particle representation. Additionally, we also develop an exponential solution to propagate the laser envelope potential with high accuracy in the cylindrically symmetric PIC model. We show that this method provides a very high accuracy without relying on a transformation to special basis functions. We verified the accuracy and the convergence of these methods in various benchmarks involving laser propagation in vacuum and in underdense plasma. Electron injection in the non-linear laser wakefield regime has also been simulated and the results are compared with 3D simulations, and to the cylindrical spectral solution of FBPIC. We found good agreement between these methods; however, the spectral solution resulted in less energetic electrons and a smoother spatial distribution near the cylindrical axis.",
+  "authors": [
+    "Szilárd Majorosi",
+    "Nasr A. M. Hafz",
+    "Zsolt Lécz"
+  ],
+  "published": "2026-05-12T13:54:46Z",
+  "updated": "2026-05-12T13:54:46Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

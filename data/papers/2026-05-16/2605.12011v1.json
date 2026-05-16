@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.12011v1",
+  "url": "https://arxiv.org/abs/2605.12011v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.12011v1.pdf",
+  "title": "CaloArt: Large-Patch x-Prediction Diffusion Transformers for High-Granularity Calorimeter Shower Generation",
+  "abstract": "High-granularity calorimeters make ML-based fast shower simulation a high-dimensional generative modeling problem, where voxel-space generators must balance physics fidelity with training and inference cost. This work studies large-patch tokenization with x-prediction, enabling efficient raw voxel generation. We propose CaloArt, a modernized DiT-style backbone with 3D positional encoding and architectural refinements, trained via conditional flow matching with decoupled prediction and loss spaces. On CaloChallenge Dataset 2, where small patch size remains affordable, v-prediction performs well, and CaloArt achieves the best FPD, strongest high-level metrics, and strongest ResNet classifier metrics. On CaloChallenge Dataset 3, the 40500-voxel grid makes large patches necessary; x-prediction improves all reported metrics over v-prediction and places CaloArt on the quality-generation-time Pareto frontier. The final CCD2 and CCD3 models both retain O(10) ms single-GPU generation time, with 9.71 and 11.14 ms per shower. These results support large-patch voxel-space diffusion transformers with x-prediction as a compute-efficient route to high-granularity calorimeter shower synthesis, reducing training and inference cost without a pretrained latent tokenizer.",
+  "authors": [
+    "Zhengkun Huang",
+    "Gongxing Sun"
+  ],
+  "published": "2026-05-12T12:00:48Z",
+  "updated": "2026-05-12T12:00:48Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
