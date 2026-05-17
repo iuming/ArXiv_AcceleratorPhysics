@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.25489v1",
+  "url": "https://arxiv.org/abs/2604.25489v1",
+  "pdf_url": "https://arxiv.org/pdf/2604.25489v1.pdf",
+  "title": "Adaptable phase retrieval for coherent transition radiation spectroscopy based on differentiable physics information",
+  "abstract": "Coherent transition radiation (CTR) spectroscopy is a critical diagnostic for characterizing the longitudinal structure of relativistic electron bunches in laser-plasma and conventional accelerators. In practice, recovering the bunch profile from a measured CTR spectrum is an ill-posed phase-retrieval problem. Traditionally, this is addressed using Gerchberg-Saxton (GS)-type iterative algorithms. However, these implementations often rely on explicit inverse propagators, making them difficult to adapt to sophisticated experimental forward models. In this work, we introduce a flexible gradient-based framework for CTR phase retrieval. By leveraging a differentiable forward model, we propose a phase-only gradient descent (GD-Phase) approach that enforces the measured spectral amplitude as a hard constraint while optimizing the Fourier phase under physical real-space priors. Using synthetic CTR spectra spanning multi-peaked and strongly modulated profiles, we benchmark GD-Phase against traditional GS and a real-space amplitude-parametrized gradient descent (GD-Amp) algorithm. Unlike traditional methods, this formulation allows for the seamless inclusion of arbitrary differentiable experimental effects into the reconstruction loop. We demonstrate that this physics-informed approach not only reproduces the fidelity of GS methods but also establishes a robust baseline for incorporating multi-diagnostic constraints and uncertainty quantification. This enables the systematic extension to higher-dimensional, multimodal, and uncertainty-aware diagnostics, facilitating fast and scalable phase retrieval in realistic experimental settings.",
+  "authors": [
+    "Ritz Ann Aguilar",
+    "Maxwell LaBerge",
+    "Andreas Doepp",
+    "Alexander Debus",
+    "Zewu Bi",
+    "Michael Bussmann",
+    "Arie Irman",
+    "Ulrich Schramm",
+    "Jeffrey Kelling"
+  ],
+  "published": "2026-04-28T10:45:41Z",
+  "updated": "2026-04-28T10:45:41Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.acc-ph"
+}
