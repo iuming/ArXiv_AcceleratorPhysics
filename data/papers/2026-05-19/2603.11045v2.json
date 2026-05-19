@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2603.11045v2",
+  "url": "https://arxiv.org/abs/2603.11045v2",
+  "pdf_url": "https://arxiv.org/pdf/2603.11045v2.pdf",
+  "title": "Neural Field Thermal Tomography: A Differentiable Physics Framework for Non-Destructive Evaluation",
+  "abstract": "Inverse problems for stiff parabolic partial differential equations (PDEs), such as the inverse heat conduction problem (IHCP), are severely ill-posed: the forward map rapidly damps high-frequency interior structure before it reaches the boundary. Soft-constrained physics-informed neural networks (PINNs), which embed the PDE as a residual penalty, suffer from gradient pathology in this regime and tend to fit boundary measurements while leaving the interior field essentially untouched. We propose Neural Field Thermal Tomography (NeFTY), a hard-constrained neural field framework for label-free three-dimensional inverse heat conduction. NeFTY represents the unknown diffusivity as a continuous coordinate-based neural network, and at every optimization step passes the candidate field through a differentiable implicit-Euler heat solver with harmonic-mean interface flux, so that the governing PDE holds exactly on the discretization rather than as a soft penalty. Adjoint gradients propagate the surface reconstruction error back to the network weights at solver-level memory cost, making test-time inversion tractable on a single GPU. Across synthetic 3D benchmarks, NeFTY substantially outperforms soft-constrained PINN variants and a voxel-grid baseline on label-free volumetric recovery, and it transfers to real thermography data, surpassing classical signal-processing baselines in both defect segmentation and depth estimation. Additional details at https://cab-lab-princeton.github.io/nefty/",
+  "authors": [
+    "Tao Zhong",
+    "Yixun Hu",
+    "Dongzhe Zheng",
+    "Aditya Sood",
+    "Christine Allen-Blanchette"
+  ],
+  "published": "2026-03-11T17:59:42Z",
+  "updated": "2026-05-13T18:32:32Z",
+  "categories": [
+    "cs.LG",
+    "cond-mat.mtrl-sci",
+    "cs.AI",
+    "cs.CV",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG"
+}

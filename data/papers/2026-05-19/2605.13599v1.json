@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.13599v1",
+  "url": "https://arxiv.org/abs/2605.13599v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.13599v1.pdf",
+  "title": "Adaptive time-domain simulation of optical cavities with arbitrary dynamics",
+  "abstract": "We present a fast time-domain simulator for optical cavities capable of reproducing non-linear dynamical regimes arising from ring-down effect during resonance crossings at high mirror velocities. The model is based on a recursive formulation of the intracavity electric field as a sum over round trips, preserving the cavity memory while maintaining high computational efficiency. The simulator is designed to achieve three main goals. First, the boundary conditions of the cavity can be modified at each simulation step, allowing arbitrary time-dependent variations of both mirror positions and input electric field. Second, the sampling frequency can be flexibly chosen by the user, however, it is internally adjusted before effectively executing the simulation to remain consistent with the cavity round-trip structure. Finally, high computational efficiency was obtained by avoiding the repeated evaluation of the full electric field history. The framework is validated through comparison with experimental data from the Virgo interferometer during a mechanical excitation experiment, showing good agreement in non-adiabatic regimes. Due to its efficiency and flexibility, the simulator provides a versatile tool for time-domain studies of optical resonators and future applications in real-time control and reinforcement-learning-based lock acquisition.",
+  "authors": [
+    "A. Svizzeretto",
+    "J. Casanueva Diaz",
+    "B. L. Swinkels",
+    "M. Bawaj"
+  ],
+  "published": "2026-05-13T14:33:29Z",
+  "updated": "2026-05-13T14:33:29Z",
+  "categories": [
+    "physics.optics",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics"
+}

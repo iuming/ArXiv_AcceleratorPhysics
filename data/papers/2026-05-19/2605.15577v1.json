@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.15577v1",
+  "url": "https://arxiv.org/abs/2605.15577v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.15577v1.pdf",
+  "title": "A Novel Segment-Based Tracking Algorithm for HLT under High-Occupancy and Complex Conditions",
+  "abstract": "In the High-Level Trigger (HLT) of both electron-positron and hadron collision experiments, the tracking process for large-volume gaseous detectors typically consumes a latency of hundreds of milliseconds. Upgrades of existing experiments and the development of next-generation facilities demand enhanced HLT tracking performance: handling higher detector occupancy and suppressing latency. To address high occupancy conditions, a novel HLT tracking algorithm based on track segments is proposed. This method involves constructing a pattern bank comprising 11 pre-defined patterns, optimizing edge-matrix formation using position, momentum, and timing criteria, and merging stereo superlayer segments to improve track consistency. These measures significantly reduce the number of stored segments and the size of the edge matrix, thereby lowering the complexity of global tracking. Even at 25\\% occupancy, the number of elements for global tracking is reduced to approximately 400-500, while the density of the edge matrix remains below 1\\%. With the depth-first search within connected components, the simulation results show that the algorithm maintains stable performance with occupancy ranging from 5\\% to 25\\%, achieving a data compression ratio of approximately 50\\% to 70\\%. Validation against the STCF offline reconstruction algorithm confirms that the HLT algorithm preserves high signal-hit retention without introducing significant adverse effects on offline tracking efficiency or on the reconstruction. These results demonstrate that the proposed algorithm can retain high-quality signal hits across a broad range of occupancy levels, indicating a strong potential for further development and adaptation to even more challenging, high-luminosity experimental conditions.",
+  "authors": [
+    "Pengkun Jia",
+    "Zhujun Fang",
+    "Hang Zhou",
+    "Yuhe Huang",
+    "Changqing Feng",
+    "Jianbei Liu"
+  ],
+  "published": "2026-05-15T03:37:04Z",
+  "updated": "2026-05-15T03:37:04Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

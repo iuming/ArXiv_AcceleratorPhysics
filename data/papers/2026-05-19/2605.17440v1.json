@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2605.17440v1",
+  "url": "https://arxiv.org/abs/2605.17440v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.17440v1.pdf",
+  "title": "PyNMC: An Open-Source Framework for Neutron Multiplicity Counting Simulation Coupling OpenMC, FREYA, and ALPHANSO",
+  "abstract": "Neutron multiplicity counting (NMC) underpins plutonium assay in nuclear safeguards, arms control, and disarmament verification, but existing simulation tools are essentially limited to MCNPX-PoliMi [1] (export-controlled, MCNP license required) and ONMS [2] (open-source but built on Geant4 with no scripting API); other codes (RMC, MCNP-PTA) are institute-internal. We present PyNMC, an open-source, Python-native NMC simulation framework that couples OpenMC for transport with FREYA for event-by-event correlated prompt-neutron emission and ALPHANSO for native ($α$, n)-source estimates, together with collision-level time-tagged event recording and a Python shift-register post-processor cross-validated against ONMS. The framework is validated against the ESARDA Neutron Multiplicity Benchmark on bare $^{252}$Cf (c2-10, c2-100), the low-multiplication Pu metal case c3s (M = 1.12 from an independent k-eigenvalue calculation; ESARDA spec M = 1.08), and a 10 g PuO2 sample with an ($α$, n)-source term (c4s); an internal stress-test extension to a $\\approx 100$ g Pu metal sample at M = 1.29 is reported alongside but lies beyond the ESARDA participant range. For c4s, ALPHANSO gives $α$ = 0.78 with modern cross-section data; the reported benchmark comparison rescales the ($α$,n) rate to the ESARDA value $α$ = 0.853. Simulated rates agree with point-model predictions for all cases, and with the published ESARDA participant-code scatter where participant results exist. The framework is shipped as a Docker container under the MIT license and is openly available on GitHub at github.com/cfichtlscherer/nmc.",
+  "authors": [
+    "Christopher Fichtlscherer"
+  ],
+  "published": "2026-05-17T13:25:32Z",
+  "updated": "2026-05-17T13:25:32Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

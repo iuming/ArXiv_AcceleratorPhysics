@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.13987v1",
+  "url": "https://arxiv.org/abs/2605.13987v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.13987v1.pdf",
+  "title": "GPU-Accelerated Simulation of 3D Diamond Sensors Using the TeRABIT Infrastructure",
+  "abstract": "Diamond detectors with electrodes orthogonal to the surface, engraved via laser-induced graphitization, are full-carbon sensors of interest for a wide range of applications, spanning from High Energy Physics to Nuclear Medicine and dosimetry. In recent years, significant progress has been made in graphitization techniques, enabling the fabrication of lower-resistance electrodes. This has resulted in faster sensors, achieving time resolutions better than 100 ps. However, simulating signal formation in these devices remains a challenge. The effects of fluctuations in energy deposition, carrier transport, signal propagation, and readout electronics intertwine in a way that is non-trivial to disentangle. We have developed an innovative simulation approach based on an extension of the Ramo-Shockley theorem, modeling propagation effects in a theoretically sound manner by introducing time-dependent weighting potentials. These are obtained by solving a third-order partial differential equation derived as a quasi-static approximation of Maxwell's laws. The numerical solution of this equation emerged as the main challenge of the new approach. In this contribution, we discuss an innovative solver that uses fundamental solutions to impose boundary conditions and spectral methods to extend the solution to the bulk of the diamond detector. We report on how the solver has recently been ported to GPUs and distributed across multiple computing sites, leveraging the TeRABIT HPC Bubbles and the InterLink protocol. This drastically reduces time-to-insight and effectively enables what-if studies on sensor geometry.",
+  "authors": [
+    "Lucio Anderlini",
+    "Clarissa Buti",
+    "Elia Eredi",
+    "Giovanni Passaleva"
+  ],
+  "published": "2026-05-13T18:01:57Z",
+  "updated": "2026-05-13T18:01:57Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
