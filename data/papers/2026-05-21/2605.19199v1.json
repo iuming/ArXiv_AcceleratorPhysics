@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2605.19199v1",
+  "url": "https://arxiv.org/abs/2605.19199v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.19199v1.pdf",
+  "title": "Discrete Wavelet Transform for Serial X-ray Crystallography Image Segmentation",
+  "abstract": "Upcoming LCLS-II/II-HE operation at repetition rates approaching 1MHz demands on-detector data reduction to manage the resulting data volumes. We present a 2D discrete wavelet transform (DWT) pre-processing algorithm that segments background scatter from crystal diffraction in serial crystallography images, enabling early data analysis and, when combined with peak finding, lossy compression by transmitting only the identified diffraction peaks. The method zeroes the approximation (LL) coefficients of a multi-level Haar wavelet decomposition and reconstructs from detail subbands only, exploiting the natural separation of smooth background and sharp Bragg peaks in the wavelet domain. Evaluated on 100 simulated nanoBragg frames with known ground truth, the pipeline achieves $F1 \\approx 0.96$ at four decomposition levels ($J = 4$), substantially outperforming the established peakfinder8 algorithm ($F1 \\approx 0.37$) in both precision ($P \\approx 1.00$ vs.\\ $0.94$) and recall ($R \\approx 0.92$ vs.\\ $0.24$). A comparison of 12 wavelet families confirms that Haar is optimal for Bragg-peak detection due to its minimal filter support. Downstream crystallographic analysis performed on real ePix10kA data shows that CC* and $R_\\mathrm{split}$ converge at $J = 4$ and track the unprocessed baseline through the practical resolution limit. Under added noise exceeding $\\sim$50 ADU, the current pipeline's precision degrades significantly more than that of the pf8 algorithm, exposing a limitation of the proposed strategy. We also demonstrate an FPGA implementation of the DWT filters on an Alveo U200 at 200MHz, with a projected resource footprint compatible with integration into the upcoming ePixUHR firmware and a path to on-detector ASIC implementation in SparkPix detector family.",
+  "authors": [
+    "Dionisio Doering",
+    "Noemi Claret",
+    "Guilherme Paulino",
+    "Luca Scomparin",
+    "Frederic Poitevin",
+    "Eric Darve",
+    "Conny Hansson",
+    "James Russell",
+    "Abhilasha Dave",
+    "Lorenzo Rota",
+    "Antonino Miceli",
+    "Ryan Herbst",
+    "Angelo Dragone"
+  ],
+  "published": "2026-05-18T23:57:52Z",
+  "updated": "2026-05-18T23:57:52Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

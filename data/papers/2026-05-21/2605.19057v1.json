@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.19057v1",
+  "url": "https://arxiv.org/abs/2605.19057v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.19057v1.pdf",
+  "title": "Magnetohydrodynamics Simulations",
+  "abstract": "Magnetohydrodynamics (MHD) couples the Navier--Stokes and Maxwell equations into a nonlinear system of partial differential equations governing stellar interiors, astrophysical jets, fusion plasmas, and space weather. Numerical advances, including finite-volume Godunov schemes, constrained-transport algorithms, high-order spectral-element and discontinuous-Galerkin discretisations, and adaptive mesh refinement, have made MHD a predictive tool for solar eruptions, tokamak confinement, and magnetised turbulence. A fundamental barrier nevertheless remains. In three-dimensional MHD turbulence, the degrees of freedom required to resolve all active scales grow as $\\mathcal{O}(\\mathrm{Re}^{9/4})$ or faster, where $\\mathrm{Re}$ is the Reynolds number. Direct numerical simulation is therefore intractable at astrophysical and fusion-relevant parameters, particularly when the Lundquist number $S$ exceeds $10^{10}$ and both viscous and resistive dissipation ranges must be resolved. Kinetic closures, radiation transport, and uncertainty quantification further increase the cost. This chapter examines how AI may help bridge this gap. We review physics-informed neural networks, Fourier neural operators and physics-informed neural operators, which learn solution operators across families of MHD problems; and hybrid operator-diffusion frameworks that combine deterministic surrogates with score-based generative models to recover broadband turbulent spectra. These developments are set within the wider landscape of exascale high-order solvers, GPU acceleration, task-based parallelism, data-driven sub-grid closures, and prospective quantum algorithms for implicit linear systems in resistive MHD. The central claim is that physics-informed AI, integrated with conventional solvers and trained on leadership-scale simulations, offers a credible route to regimes beyond the reach of classical discretisation alone.",
+  "authors": [
+    "E. A. Huerta"
+  ],
+  "published": "2026-05-18T19:22:38Z",
+  "updated": "2026-05-18T19:22:38Z",
+  "categories": [
+    "astro-ph.HE",
+    "astro-ph.IM",
+    "astro-ph.SR",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}
