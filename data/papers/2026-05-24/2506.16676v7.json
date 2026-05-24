@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2506.16676v7",
+  "url": "https://arxiv.org/abs/2506.16676v7",
+  "pdf_url": "https://arxiv.org/pdf/2506.16676v7.pdf",
+  "title": "Fast solvers for Tokamak fluid models with PETSC",
+  "abstract": "Multigrid (MG) is widely recognized as a highly effective solver for the model problem, the Laplacian, but textbook MG fails on most problems of interest. MG methods have been applied to complex, real-world applications with careful consideration of the physical model and discretization. This work develops the first step in applying MG methods to science and engineering relevant magnetohydrodynamics (MHD) tokamak models in the \\textit{M3D-C1} https://m3dc1.pppl.gov fusion energy science code. The semi-implicit time integrator in \\textit{M3D-C1} is composed of many linear solves. The implicit advance of the momentum equation is the most challenging and is the focus of this work.   The current production solver in \\textit{M3D-C1} is a block Jacobi (BJ) preconditioner within a Krylov solver, where blocks group degrees of freedom on planes of constant toroidal coordinate. BJ convergence degrades as the number of planes increases due to the spectral properties of the matrix preconditioned with BJ. The partially magnetic field-aligned, regular toroidal grid structure in \\textit{M3D-C1} is amenable to semi-coarsening geometric MG in the toroidal direction. This paper develops such a solver and demonstrates competitive performance on a runaway electron model of a SPARC https://cfs.energy/technology/sparc disruption, and superior robustness on a stellarator model on which the BJ solver fails to converge.",
+  "authors": [
+    "Mark F. Adams",
+    "Jin Chen",
+    "Benjamin Sturdevant"
+  ],
+  "published": "2025-06-20T01:36:08Z",
+  "updated": "2026-05-20T11:05:25Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.PF"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

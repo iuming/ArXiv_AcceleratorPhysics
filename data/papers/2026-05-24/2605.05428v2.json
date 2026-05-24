@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.05428v2",
+  "url": "https://arxiv.org/abs/2605.05428v2",
+  "pdf_url": "https://arxiv.org/pdf/2605.05428v2.pdf",
+  "title": "Parameter estimation for kappa distributions using the EM algorithm in the superstatistical framework",
+  "abstract": "Kappa distributions are widely used in space plasma physics to model velocity distribution functions with heavy tails. Parameter estimation in these distributions is, however, complicated by the fact that the kappa distribution does not belong to the exponential family, so it admits no sufficient statistics and direct maximum likelihood requires numerical optimization without analytically closed-form update equations. Working within the Beck-Cohen superstatistics framework, where a gamma-distributed inverse temperature \\(β\\) generates the kappa distribution upon marginalization, we treat \\(β\\) as a latent variable. This hierarchical description restores the exponential family structure that the marginal kappa distribution lacks, and yields an analytically tractable implementation of the expectation-maximization (EM) algorithm whose E-step and M-step admit closed-form expressions in terms of sufficient statistics. Applied to synthetic data drawn from the model, the algorithm converges monotonically to a stationary point of the marginal kappa log-likelihood and recovers the generating parameters consistently across the explored range of \\(κ\\). EM thus offers a tractable and transparent route to inference in superstatistical systems with local temperature fluctuations.",
+  "authors": [
+    "Leonardo Herrera-Fuenzalida",
+    "Sergio Davis"
+  ],
+  "published": "2026-05-06T20:37:35Z",
+  "updated": "2026-05-20T20:42:58Z",
+  "categories": [
+    "stat.ME",
+    "cond-mat.stat-mech",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "stat.ME"
+}
