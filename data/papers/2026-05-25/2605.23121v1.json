@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.23121v1",
+  "url": "https://arxiv.org/abs/2605.23121v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.23121v1.pdf",
+  "title": "NIMROD-to-IMAS workflow for extended-magnetohydrodynamic data with reusable datasets and implications for IMAS schema development",
+  "abstract": "Extended magnetohydrodynamic (MHD) simulations of tokamak plasmas regularly produce outputs in multi-dimensional, multiple-field formats; these code-specific formats make it difficult to do cross-code validation/coupling and analyze at a database scale. In this paper, a workflow that converts NIMROD code inputs and outputs to records compatible with version 4 of the ITER IMAS Data Dictionary is presented. The scope of the workflow includes preprocessing of NIMROD code inputs, conversion of hierarchical NIMROD code HDF5 dumps, COCOS-consistent treatment of the coordinate system and sign convention, and encoding finite-element poloidal meshes and toroidal Fourier components through IMAS General Grid Description. Furthermore, the workflow allows for provenance and integrity metadata to be included while providing optimal I/O operations for large array structures. An example conversion based on an NIMROD code simulation of edge harmonic oscillations performed for the DIII-D discharge 163518 [A.Y. Pankin, et al., Nuclear Fusion 60.9 (2020), p. 092004] is used to validate the conservation of essential equilibrium, profile, perturbation, and grid data in the resulting IMAS records. Finally, this implementation exposes gaps in the current IMAS framework that need to be addressed to accommodate extended MHD data, and it highlights the metadata, provenance, and governance needs of the downstream use cases in the form of dataset validation, integration, and machine learning.",
+  "authors": [
+    "Alexei Y. Pankin",
+    "Fatima Ebrahimi",
+    "Qian Gong",
+    "Jacob King",
+    "Andreas Kleiner",
+    "Jesus Dominguez-Palacios",
+    "Norbert Podhorszki",
+    "Eric Suchyta"
+  ],
+  "published": "2026-05-22T00:45:32Z",
+  "updated": "2026-05-22T00:45:32Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2605.22559v1",
+  "url": "https://arxiv.org/abs/2605.22559v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.22559v1.pdf",
+  "title": "Identification and mitigation of memory block timing issue in ITk ABCStar during ASIC production",
+  "abstract": "The ABCStar is a mixed-signal front-end readout ASIC for the strips sensor portion of the ATLAS ITk detector being developed as part of the High-Luminosity LHC upgrade. In pre-production testing, a subtle design flaw was uncovered in the ABCStar that was reducing wafer yields in some manufactured lots from the expected 90% to as low as 2%. The root cause was determined to be a timing issue in the logic synthesized to control previously silicon proven memory blocks re-used for this ASIC. The solutions proposed included manufacturing process changes by the wafer foundry, changes to the operating parameters for the ABCStar in the detector, and the possibility that a redesign might be required. The two mitigation efforts were undertaken in parallel, with the process modification route a less desirable solution since already manufactured wafers would need to be scrapped in favour of the new ones. Based on a knowledge of the existing process, and testing done on the worst performing wafers, it was proposed that raising the core operating voltage of the ABCStar from 1.20V to 1.25V could address the timing issue by sufficiently speeding up its transistors. An extensive testing program that included the effects of temperature and radiation expected over the lifetime of the ITk detector was conducted to validate that approach. Those tests and studies proved that even the worst performing wafers would have yields over 80% with the 1.25V core voltage, and neither the modified process nor redesign would be required for ensuring reliable operation of the ITk. Based on testing, a further timing mitigation was implemented to provide an additional margin of reliability by increasing the duty cycle of the clock to the ABCStar. Testing of all ABCStar wafers has been completed and the production of the detector modules using these ASICs is now well underway as a result of the efforts detailed herein.",
+  "authors": [
+    "B. Ashmanskas",
+    "J. Botte",
+    "J. R. Dandoy",
+    "J. Dopke",
+    "N. Dressnandt",
+    "B. J. Gallop",
+    "J. J. John",
+    "P. T. Keener",
+    "T. Koffas",
+    "J. Kroll",
+    "R. P. McGovern",
+    "M. F. Newcomer",
+    "B. J. Norman",
+    "P. W. Phillips",
+    "C. Sawyer",
+    "R. Scouten",
+    "P. Vicente Leitao",
+    "M. Warren"
+  ],
+  "published": "2026-05-21T14:41:41Z",
+  "updated": "2026-05-21T14:41:41Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
