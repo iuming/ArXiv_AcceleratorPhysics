@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.25640v1",
+  "url": "https://arxiv.org/abs/2605.25640v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.25640v1.pdf",
+  "title": "3D Magnetic Field Reconstruction and Mapping with Physics-Informed Neural Networks",
+  "abstract": "Accurate reconstruction of magnetic fields in inaccessible regions is vital for many high-precision experiments in physics. Traditional methods, such as spherical harmonic expansion, often suffer from truncation errors that limit their precision. This study proposes an advanced Physics-Informed Neural Network (PINN) framework for high-precision 3D magnetic field mapping. Unlike conventional data-driven models, the proposed PINN integrates Maxwell's equations directly into the loss function, enforcing divergence-free and curl-free conditions across the entire domain. A key innovation is the inclusion of explicit physics-residual losses at measurement locations, ensuring rigorous physical consistency beyond random collocation sampling. Validation using simulated data achieves a reconstruction accuracy of $10^{-4}$, a tenfold improvement over existing PINN benchmarks. Furthermore, experimental validation using a custom coil assembly demonstrates robust reconstruction with sub-percent relative accuracy, reaching the $10^{-3}$ level under ambient conditions. This AI-driven methodology provides a robust, high-precision solution for field monitoring and measurement in complex experimental environments where direct sensor placement is restricted.",
+  "authors": [
+    "Haohan Yu",
+    "Zhanxu Hao",
+    "Bingzhi Li",
+    "Zejia Lu",
+    "Xiang Chen",
+    "Liang Li"
+  ],
+  "published": "2026-05-25T09:42:27Z",
+  "updated": "2026-05-25T09:42:27Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

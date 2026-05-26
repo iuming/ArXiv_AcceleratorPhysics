@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2605.20432v2",
+  "url": "https://arxiv.org/abs/2605.20432v2",
+  "pdf_url": "https://arxiv.org/pdf/2605.20432v2.pdf",
+  "title": "NeSST: A Python Tool for Neutron Spectra and Synthetic Diagnostics in Inertial Confinement Fusion",
+  "abstract": "We present the Neutron Scattered Spectra Tool (NeSST), an open-source Python package for rapidly constructing primary and singly scattered neutron spectra from inertial confinement fusion (ICF) implosions. NeSST evaluates primary spectra for deuterium-tritium (DT), deuterium-deuterium (DD) and tritium-tritium (TT) reactions. Differential and total nuclear cross sections are read directly from Evaluated Nuclear Data File (ENDF) libraries. This enables elastic ($n$D, $n$T) and inelastic [D$(n,2n)$p, T$(n,2n)$D] scattering from DT fuel, as well as scattering from additional ablator materials such as $^{12}$C, to be treated within a common framework. Relativistic corrections to elastic scattering kinematics are included. Areal density asymmetries are incorporated through a Legendre mode expansion of the neutron-averaged projected areal density, allowing the spectral signatures of implosion non-uniformities to be computed and fitted. The effect of scattering ion velocities on the neutron backscatter edge shape is handled through pre-computed ion-velocity-dependent scattering kernels. A synthetic neutron time-of-flight (nToF) module converts energy spectra into detector signals with a full forward model that includes configurable instrument response functions (IRFs), energy-dependent scintillator sensitivity, and beamline attenuation. The code is publicly available at https://github.com/aidancrilly/NeSST",
+  "authors": [
+    "Aidan Crilly"
+  ],
+  "published": "2026-05-19T19:28:26Z",
+  "updated": "2026-05-23T19:36:02Z",
+  "categories": [
+    "physics.plasm-ph",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
