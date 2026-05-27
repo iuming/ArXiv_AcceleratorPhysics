@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.25963v1",
+  "url": "https://arxiv.org/abs/2605.25963v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.25963v1.pdf",
+  "title": "DetMesh-Gadep: Triangulated Surface Modeling and GPU-based Monte Carlo Efficiency Calibration of High-Purity Germanium Detectors",
+  "abstract": "Sourceless efficiency calibration of high-purity germanium (HPGe) detectors can provide accurate detector-response information without experiments using radioactive calibration sources, offering advantages in both convenience and safety. In many practical implementations, this process is performed using Monte Carlo simulation; however, its performance is constrained by the accuracy of detector modeling, the operational complexity of simulation frameworks, and the computational-resource requirements associated with CPU-based parallelization. In this study, a complete detector modeling and simulation framework is proposed. The detector modeling program DetMesh can generate triangulated surface geometry from parameterized detector models, providing advantages in the representation of complex geometric boundaries. It incorporates standard geometric operations and a geometric library, and is lightweight with strong extensibility. The generated geometry is then input into Gadep, a GPU-based Monte Carlo computational kernel, to enable rapid simulation. For $1\\times 10^8$ particles, a single RTX 4090 achieved a speedup factor of 13.53 compared with simultaneous computation using 60 CPU cores. The proposed framework has low implementation cost and broad applicability, providing a complete solution for refined detector modeling and calibration.",
+  "authors": [
+    "Kainan Zhang",
+    "Shuchang Yan",
+    "Zhen Wu",
+    "Hui Zhang",
+    "Rui Qiu",
+    "Junli Li"
+  ],
+  "published": "2026-05-25T15:40:51Z",
+  "updated": "2026-05-25T15:40:51Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

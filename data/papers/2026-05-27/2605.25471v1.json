@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2605.25471v1",
+  "url": "https://arxiv.org/abs/2605.25471v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.25471v1.pdf",
+  "title": "FPGA-based disturbance-observer servo for broadband noise suppression in laser frequency stabilization",
+  "abstract": "We have demonstrated broadband frequency-noise suppression in a laser stabilization system by augmenting a conventional proportional-integral-derivative (PID) controller with a digital disturbance observer (DOB) implemented on a field-programmable gate array (FPGA). The DOB employs a first-order exponential moving average filter as its Q-filter, replacing multi-parameter frequency-domain plant identification with a single one-dimensional gain sweep. Using modulation transfer spectroscopy on the 87Rb D2 line at 780.24 nm, we have measured the frequency-noise power spectral density and the Allan deviation of the beat note between two independently stabilized lasers. The integrated rms frequency noise below 40 kHz decreased by 16.9 dB compared with PID alone, corresponding to a reduction from approximately 140 kHz to 20 kHz. The short-term fractional frequency instability improved from sigma_y(1 ms) = $7.9 \\times 10^{-12}$ to $4.6 \\times 10^{-12}$, while the long-term stability at tau > 1 s remained within statistical uncertainty. This DOB-augmented architecture offers a simple and effective route to enhanced noise rejection in FPGA-based servo systems for atomic physics experiments.",
+  "authors": [
+    "Meung Ho Seo",
+    "Jae Hoon Lee",
+    "Young-Ho Park",
+    "Hyun-Gue Hong",
+    "Seji Kang",
+    "Myoung-Sun Heo",
+    "Sang-Bum Lee",
+    "Taeg Yong Kwon",
+    "Sangwon Seo",
+    "Sang Eon Park"
+  ],
+  "published": "2026-05-25T06:20:36Z",
+  "updated": "2026-05-25T06:20:36Z",
+  "categories": [
+    "physics.atom-ph",
+    "physics.app-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.atom-ph"
+}
