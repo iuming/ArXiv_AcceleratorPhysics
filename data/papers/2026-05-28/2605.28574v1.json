@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.28574v1",
+  "url": "https://arxiv.org/abs/2605.28574v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.28574v1.pdf",
+  "title": "Surface Contact Approximation for Magneto-Thermal Finite Element Analysis of No-Insulation HTS Coils",
+  "abstract": "High-temperature superconducting (HTS) coated conductors (CCs) can be wound into no-insulation (NI) coils, in which electrical current can partially bypass local normal zones via turn-to-turn contact layers (T2TCLs). Accurate magneto-thermal simulation of such coils, therefore, requires an efficient representation of the electrical and thermal behavior of the T2TCLs. This paper introduces a magneto-thermal surface contact approximation (SCA) for finite element analysis of NI HTS coils. The formulation is derived as a special case of the more general thin shell approximation (TSA) by introducing suitable approximations such as negligible tangential surface currents and eddy-current effects inside the T2TCL. The resulting SCA formulation replaces the thin volumetric contact layer with a dedicated surface weak formulation based on the electric contact resistance and thermal contact conductance. In contrast, the TSA formulation requires the definition of electric resistivities and thermal conductivities as well as the thickness of the T2TCL. The SCA is implemented in the Pancake3D module of the free and open-source Finite Element Quench Simulator. It is verified through transient magneto-thermal simulations of a model NI pancake coil. Numerical results are compared against the established TSA formulation. The results show that the SCA accurately reproduces the relevant electromagnetic and thermal behavior. For the TSA, there is a trade-off between choosing large (potentially unphysical) thicknesses with low resistivities leading to inaccurate results, or small thicknesses with large resistivities making the linear system harder to solve, increasing the computational effort. In contrast, the SCA, thanks to using contact resistances and conductances directly without the necessity to define a thickness, is easy to use and robust.",
+  "authors": [
+    "Erik Schnaubelt",
+    "Louis Denis",
+    "Mariusz Wozniak",
+    "Julien Dular",
+    "Arjan Verweij"
+  ],
+  "published": "2026-05-27T14:58:27Z",
+  "updated": "2026-05-27T14:58:27Z",
+  "categories": [
+    "physics.comp-ph",
+    "cond-mat.supr-con",
+    "cs.CE",
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

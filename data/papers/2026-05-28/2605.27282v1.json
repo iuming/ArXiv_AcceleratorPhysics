@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.27282v1",
+  "url": "https://arxiv.org/abs/2605.27282v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.27282v1.pdf",
+  "title": "The Memory Scaling of Reverse-Mode Differentiation in Particle Accelerator Simulations with Space Charge",
+  "abstract": "The recent development of differentiable simulation codes for particle accelerators has enabled gradient-based workflows that promise finer control and more realistic modeling of accelerator facilities. However, when using reverse-mode automatic differentiation, the memory usage continuously increases during the simulation, and can potentially exceed the available hardware memory -- especially when costly space charge computation is included. To study the memory requirements for differentiable simulations, we have implemented space charge in Cheetah, a PyTorch-based beam tracking code that supports reverse-mode differentiation. We find that the memory usage for reverse-mode differentiation grows linearly with the number of macroparticles and cells, and that it is proportional to the number of space charge kicks involved in the simulation. This general scaling can be used to evaluate whether a given differentiable simulation is feasible given hardware memory constraints.",
+  "authors": [
+    "Arjun Dhamrait",
+    "Edoardo Zoni",
+    "Axel Huebl",
+    "Ji Qiang",
+    "Chad E. Mitchell",
+    "Ryan Roussel",
+    "Jan Kaiser",
+    "Chenran Xu",
+    "Jean-Luc Vay",
+    "Remi Lehe"
+  ],
+  "published": "2026-05-26T17:00:27Z",
+  "updated": "2026-05-26T17:00:27Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

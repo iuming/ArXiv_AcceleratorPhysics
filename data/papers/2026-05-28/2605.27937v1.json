@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.27937v1",
+  "url": "https://arxiv.org/abs/2605.27937v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.27937v1.pdf",
+  "title": "Machine learning enables experimental access to photon-by-photon arrival times in scintillation detectors",
+  "abstract": "Scintillation detectors with excellent timing resolution enable more precise localization of radiation sources in positron emission tomography, leading to substantial improvements in diagnostic capability for diseases such as cancer and dementia. At the extreme timing precision required for such applications at the picosecond scale, detector performance is governed by the microscopic dynamics of scintillation photons generated within the detector and their subsequent detection processes. However, detector signals have conventionally been treated only as collective responses of many photons due to structural constraints inherent to photodetectors. In this study, we overcome this fundamental limitation using deep learning, enabling direct access to the timing information of individual photons. The proposed method estimates photon-by-photon arrival times directly from detector waveforms without requiring any modification to the detector structure; the method operates on an event-by-event basis without ground-truth labels by integrating an unsupervised learning framework with a physically informed detector-response model. Through comprehensive validation combining Monte Carlo simulation and experimental measurements across various detector configurations, we experimentally demonstrate improved timing resolution, visualized depth-of-interaction-dependent photon transport, and classified Cherenkov and scintillation photons based on the estimated photon-level timing information using a unified deep learning-based framework. These results provide experimental access to photon dynamics, bridging the gap between theoretical modeling and experimental observation, and they open a new data-driven pathway for discovery in detector physics and optimization.",
+  "authors": [
+    "Yuya Onishi",
+    "Ryosuke Ota",
+    "Fumio Hashimoto",
+    "Kibo Ote",
+    "Go Akamatsu",
+    "Hideaki Tashima",
+    "Taiga Yamaya"
+  ],
+  "published": "2026-05-27T04:15:01Z",
+  "updated": "2026-05-27T04:15:01Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "physics.med-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
