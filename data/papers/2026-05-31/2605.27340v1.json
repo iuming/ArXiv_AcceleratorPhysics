@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.27340v1",
+  "url": "https://arxiv.org/abs/2605.27340v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.27340v1.pdf",
+  "title": "Closed-Form Analytical Charge Response Model for Silicon Photomultipliers with Recursive Correlated Avalanches",
+  "abstract": "Silicon photomultipliers (SiPMs) have become the preferred photodetectors in next-generation neutrino experiments, yet no unified closed-form analytical expression free of truncation and numerical convolution has been established for their full charge response spectrum, which must simultaneously capture correlated cross-talk and afterpulsing effects absent in conventional photomultiplier tubes (PMTs). We present a unified closed-form model for the SiPM charge response within the characteristic-function framework, treating pedestal noise, single-electron-response (SER) charge, internal optical cross-talk, and afterpulsing on equal footing. The characteristic-function representation factorises the full charge spectrum into three independent physical components: pedestal, single-electron response (SER), and avalanche count statistics. Prompt internal optical cross-talk is modelled as a Galton-Watson branching process with Poisson offspring; building on the Generalised Poisson count statistics identified by Vinogradov, we derive a Lambert $W$ closed form for the total-progeny PGF via Lagrange-Bürmann inversion, providing the analytical handle needed for efficient event-level reconstruction. Afterpulsing is modelled as a per-avalanche geometric chain, derived as the maximum-entropy Poisson-Gamma mixture: the exponential prior-maximum-entropy for a positive continuous yield with fixed mean-marginalised over a Poisson count yields the geometric per-avalanche distribution, whose $N$-avalanche total is Negative Binomial. This naturally encompasses the Poisson afterpulsing limit and recursive afterpulse chains while preserving analytical closure. The resulting eight-parameter expression is further applied to derive an explicit per-channel charge-time likelihood for event-level energy reconstruction without numerical convolution at inference time.",
+  "authors": [
+    "Yiqi Liu",
+    "Xuewei Liu",
+    "Benda Xu"
+  ],
+  "published": "2026-05-26T17:44:50Z",
+  "updated": "2026-05-26T17:44:50Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
