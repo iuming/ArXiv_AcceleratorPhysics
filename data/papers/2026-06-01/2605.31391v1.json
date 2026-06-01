@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.31391v1",
+  "url": "https://arxiv.org/abs/2605.31391v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.31391v1.pdf",
+  "title": "Deep-learning-based low-energy trigger algorithms for the Hyper-Kamiokande experiment",
+  "abstract": "Modern machine learning techniques have become increasingly important in particle physics because of their powerful pattern-recognition capabilities, including in real-time data acquisition where stringent runtime constraints apply. This paper details the performance of deep-learning-based trigger algorithms for a large water Cherenkov detector such as Hyper-Kamiokande aimed at low-energy neutrino events (below 7 MeV). The performance of custom neural-network supervised classifiers is shown alongside two anomaly-detection approaches trained solely on detector noise: a pure autoencoder and an energy-based model based on Manifold Projection--Diffusion Recovery (MPDR). The supervised model shows signal identification efficiencies of 76.7% for single electrons of 3 MeV kinetic energy, significantly exceeding signal efficiencies obtained from a traditional hit-count-based trigger of 26.4%, as does the MPDR approach with 31.8%. Runtime evaluations on GPU yield per-window inference latencies well below the millisecond scale, indicating that real-time operation is feasible.",
+  "authors": [
+    "Katharina Lachner",
+    "Saúl Alonso-Monsalve",
+    "Benjamin Richards",
+    "Davide Sgalaberna"
+  ],
+  "published": "2026-05-29T14:56:04Z",
+  "updated": "2026-05-29T14:56:04Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

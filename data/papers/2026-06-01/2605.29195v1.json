@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.29195v1",
+  "url": "https://arxiv.org/abs/2605.29195v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.29195v1.pdf",
+  "title": "Multi-Kernel TOF-PET Image Reconstruction Using ADMM",
+  "abstract": "Time-of-flight positron emission tomography (TOF-PET) detectors exhibiting multiple coincidence time resolution (CTR) components, such as those induced by the mixing of Cherenkov and scintillation photons, have attracted increasing attention. However, to fully exploit the latent potential of multi-kernel TOF-PET, new iterative image reconstruction methods are required. In this study, assuming that the events are labeled with the appropriate kernels, we propose an alternating direction method of multipliers (ADMM) for multi-kernel TOF-PET reconstruction, termed TOF-decomp ADMM. As the convergence speed of the TOF-PET log-likelihood depends on the CTR, the proposed method splits the fast- and slow-CTR log-likelihood terms and optimizes them separately under a constraint. This strategy explicitly balances the contributions of fast- and slow-CTR components and enables early stopping at iterations that yield improved contrast-noise trade-offs compared with conventional methods. We validated the proposed method using brain and image quality phantom simulations, demonstrating improved contrast-noise characteristics from a more stabilized convergence. By addressing the convergence imbalance inherent to multi-kernel TOF-PET, this work establishes a framework for exploiting the timing information available in emerging detector technologies.",
+  "authors": [
+    "Kibo Ote",
+    "Fumio Hashimoto",
+    "Yuya Onishi",
+    "Ryosuke Ota",
+    "Maxime Toussaint",
+    "Francis Loignon-Houle"
+  ],
+  "published": "2026-05-28T00:10:48Z",
+  "updated": "2026-05-28T00:10:48Z",
+  "categories": [
+    "physics.med-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.med-ph"
+}

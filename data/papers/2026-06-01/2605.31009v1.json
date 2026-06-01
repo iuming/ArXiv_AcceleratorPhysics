@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.31009v1",
+  "url": "https://arxiv.org/abs/2605.31009v1",
+  "pdf_url": "https://arxiv.org/pdf/2605.31009v1.pdf",
+  "title": "Explicit Turn Resolution with Anisotropic Homogenisation for Efficient 3D Magneto-Thermal Finite-Element Simulation of Large-Scale No-Insulation HTS Magnets",
+  "abstract": "No-insulation (NI) and metal-insulation (MI) high-temperature superconducting (HTS) magnets require three-dimensional (3D) models to describe the current distribution around critical current defects. In this work, we design and validate the EXTRA homogenisation method, standing for explicit turn resolution with anisotropic homogenisation method. It allows 3D magneto-thermal finite-element (FE) simulations of large-scale magnets to be performed with high accuracy at a reasonable computational cost. The method combines the anisotropic homogenisation of turn-to-turn contact layers (T2TCLs) and their neighbouring winding turns with the explicit resolution of specific T2TCLs. In particular, the inner- and outermost winding turns and adjacent contact layers are explicitly resolved to properly describe the current distribution near current leads. In addition, the method is able to simulate local $J_{\\textrm{c}}$ defects for a broad range of turn-to-turn contact resistances, provided the winding turns and T2TCLs next to the defect are explicitly resolved. For efficiency, the resolved T2TCLs are modelled using the surface contact approximation. The consistency of the proposed method is first verified on a 50-turn single pancake benchmark. It is shown to reproduce AC losses and temperature distributions obtained with a turn-resolved FE reference model, for both nominal operation and during thermal runaway. The computational efficiency of the EXTRA method is demonstrated with the simulation of a stack of three 150-turn pancake coils, for which computation time is reduced by a factor of up to 13 with respect to a turn-resolved FE reference model. Finally, the results of a large-scale 3D FE simulation, currently out of reach of turn-resolved models, are provided for an insert HTS magnet with 10,000 turns. The EXTRA method is open-source and input files to reproduce all results are made available.",
+  "authors": [
+    "Louis Denis",
+    "Erik Schnaubelt",
+    "Julien Dular",
+    "Mariusz Wozniak",
+    "Benoît Vanderheyden",
+    "Christophe Geuzaine"
+  ],
+  "published": "2026-05-29T08:42:10Z",
+  "updated": "2026-05-29T08:42:10Z",
+  "categories": [
+    "physics.acc-ph",
+    "cond-mat.mtrl-sci",
+    "cond-mat.supr-con",
+    "cs.CE",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
