@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.00937v1",
+  "url": "https://arxiv.org/abs/2606.00937v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.00937v1.pdf",
+  "title": "Cellular Sheaf Neural Operators for Structure-Preserving Surrogate Modeling of Constrained PDEs",
+  "abstract": "Neural operators provide fast surrogate models for PDE simulations, but standard architectures often treat geometry and discretization as secondary to field data. Physical states are usually represented as grid-channel stacks, even when different quantities naturally belong on vertices, edges, faces, cells, boundaries, or interfaces and must satisfy compatibility constraints. We propose Cellular Sheaf Neural Operators, a discretization-aware framework for structure-preserving neural PDE surrogates. The method represents PDE states on oriented cell complexes, couples local feature spaces through learned restriction maps, and uses incidence/Hodge-informed message passing to follow computational geometry. Learned update heads pass through coboundary or flux maps, allowing selected constraints to arise from cell-complex structure rather than only from loss penalties. For magnetohydrodynamics, this yields face-based magnetic-flux updates driven by edge electromotive fields and finite-volume-style fluid updates driven by learned face fluxes and cell sources. On turbulent MHD and fusion-equilibrium surrogate tasks, the method improves structure-sensitive diagnostics, including rollout behavior, divergence control, spectral error, and equilibrium-regression accuracy. These results indicate that cellular-sheaf structure is a useful inductive bias for neural PDE surrogates in constrained multiphysics systems.",
+  "authors": [
+    "Lennon J. Shikhman",
+    "Shane Gilbertie"
+  ],
+  "published": "2026-05-31T00:49:25Z",
+  "updated": "2026-05-31T00:49:25Z",
+  "categories": [
+    "cs.LG",
+    "cs.CE",
+    "math.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

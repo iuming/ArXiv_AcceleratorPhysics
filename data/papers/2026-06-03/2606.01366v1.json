@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.01366v1",
+  "url": "https://arxiv.org/abs/2606.01366v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.01366v1.pdf",
+  "title": "Conservative Discrete Structure Stabilizes Autoregressive Rollouts in a 1D Drift Diffusion Poisson Benchmark",
+  "abstract": "Learned plasma transport surrogates can match short horizon states while failing over long rollouts because charge accounting, density admissibility, and Poisson compatible field reconstruction are not enforced. We study this issue in a controlled nondimensional one dimensional drift diffusion Poisson benchmark with Dirichlet electrostatic potential boundaries and zero species wall fluxes. The benchmark is a conservation and rollout test, not a complete sheath wall model. We compare Conservative FluxNet, a structure preserving flux correction model with a conservative finite volume update and positivity aware limiting, against direct next state regressors, direct variants with Poisson recomputation, charge projection, and rollout training, and a classical conservative core without learned correction. The central result is that the classical finite volume core alone achieves near roundoff rollout error, so the paper is primarily about conservative discrete structure rather than learned closure. On the headline experiment, the conservative model achieves rollout MSE $7.35\\times 10^{-9}$ versus $4.23\\times 10^{1}$ for the unconstrained baseline, $2.53\\times 10^{1}$ with Poisson recomputation, $6.72\\times 10^{1}$ with charge projection, and $2.71\\times 10^{1}$ with four step rollout training. Across $64$ prespecified configurations, it wins rollout mean squared error in $60/64$ cases despite winning one step mean squared error in only $19/64$. These results show that, for this controlled benchmark and comparison class, local conservative finite volume structure is more important than one step neural regression accuracy for stable autoregressive rollout.",
+  "authors": [
+    "Yufeng Wang",
+    "Lu Wei",
+    "Haibin Ling"
+  ],
+  "published": "2026-05-31T17:51:01Z",
+  "updated": "2026-05-31T17:51:01Z",
+  "categories": [
+    "cs.CE",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.CE"
+}
