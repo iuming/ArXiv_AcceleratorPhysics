@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2606.04887v1",
+  "url": "https://arxiv.org/abs/2606.04887v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.04887v1.pdf",
+  "title": "A Reduced-Order Particle-in-Cell Method with Azimuthal Fourier-Decomposed Fields for Nominally Axisymmetric Plasmas",
+  "abstract": "A reduced-order Particle-in-Cell method is introduced for kinetic simulation of otherwise axisymmetric cylindrical plasmas that exhibit azimuthal instabilities. The method spatially decomposes all field quantities into a small number of azimuthal Fourier modes, reducing the costly three-dimensional field solve to a family of decoupled independent two-dimensional problems on the meridional plane - one per mode - while particles continue to move in full three-dimensional space. Fields are reconstructed at particle positions by coherent superposition of these modal contributions, preserving complete azimuthal variation at a fraction of the cost of a conventional three-dimensional simulation. The method is validated against the diocotron instability of a hollow electron annulus across three geometrically distinct configurations, recovering linear growth rates and eigenmode structures within 7% of closed-form analytic predictions, and reproducing the non-linear vortex dynamics characteristic of this instability class. A further benchmark against the community-standard Landmark Penning discharge problem recovers the rotating-spoke frequency, radial plasma profiles, and modal energy hierarchy in quantitative agreement with long-time reference simulations, at approximately 640 CPU-hours - a factor of 46 below the median benchmark cost. The approach resolves the gap between computationally prohibitive full three-dimensional kinetic simulation and the physically limited reduced-dimensionality models on which predictive modelling of anomalous transport in magnetised plasma devices currently relies.",
+  "authors": [
+    "Shaun Andrews"
+  ],
+  "published": "2026-06-03T13:48:06Z",
+  "updated": "2026-06-03T13:48:06Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
