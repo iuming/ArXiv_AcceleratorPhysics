@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.05385v1",
+  "url": "https://arxiv.org/abs/2606.05385v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.05385v1.pdf",
+  "title": "GPU optical photon Monte Carlo for noble liquid detectors: validation against Geant4 in a large liquid argon TPC benchmark",
+  "abstract": "Optical photon Monte Carlo simulation is a computational bottleneck for noble liquid Time Projection Chambers. Design studies require repeated, geometry dependent simulations of timing, wavelength shifting, and optical response, while reconstruction and particle identification workflows need labeled optical datasets. We present Simphony, a GPU optical simulation tool, formerly EIC-Opticks, built on Opticks with CUDA and NVIDIA OptiX. Simphony implements a GPU version of the Geant4 G4OpWLS wavelength-shifting model and returns Monte Carlo truth for detected hits with low per-photon overhead. We validate Simphony against Geant4 11.3.2 in a simplified \\SI{14.7}{kt} liquid argon Time Projection Chamber benchmark with a two-stage wavelength-shifting shell and idealized photon counting detector. For three paired \\SI{2.5}{GeV} electron simulations, each producing about 61 M optical photons, the integrated detected-photon ratio agrees with Geant at the subpercent level. The detected arrival time and wavelength spectra give \\chisqndf values of 0.98 and 1.08. Contained muon and near-Cerenkov-threshold proton samples give $R_N=1.0017\\pm0.0008$ and $R_N=1.0005\\pm0.0014$, confirming agreement for distinct source topologies. On an NVIDIA RTX 4090, a stacked launch of four 2.5 GeV electron events transports 243 M optical photons in $3.03\\pm0.06$ s, giving $80.2\\pm1.6$ M photons s$^{-1}$. Relative to a single-thread Geant reference and including GPU overheads and host-device transfers, the optical transport speedup is $1053\\pm55$; the end-to-end wall time acceleration is $89\\pm5$. These results show that Simphony can make explicit optical photon Monte Carlo practical for detector development studies and for generating machine learning optical response datasets.",
+  "authors": [
+    "Gabor Galgoczi",
+    "Xuyang Ning",
+    "Dmitri Smirnov",
+    "Brett Viren",
+    "Chao Zhang"
+  ],
+  "published": "2026-06-03T19:40:05Z",
+  "updated": "2026-06-03T19:40:05Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2605.20156v2",
+  "url": "https://arxiv.org/abs/2605.20156v2",
+  "pdf_url": "https://arxiv.org/pdf/2605.20156v2.pdf",
+  "title": "Comparing sliding-mode, bang-bang and linear-quadratic-Gaussian for steering an atomic clock",
+  "abstract": "Accurate timekeeping relies on feedback that continually steers a local clock toward a higher-grade reference. We evaluate first-order sliding-mode control (SMC) for steering an atomic clock and benchmark it against two standards: linear-quadratic-Gaussian (LQG) control and the bang-bang (BB). All three are tested in a common numerical framework using the standard two-state clock model driven by white and random-walk-frequency noise. To ensure the conclusions are not tied to a single noise realization and a single time period, we repeat the accuracy analysis over 100 independent random seeds for four different time periods, reusing the same seed across controllers within each trial. The time periods considered are one week, one month, one year, and ten years to cover short-, mid-, and long-term analyses of accuracy. Our results show that SMC remains competitive with LQG across the tested timescales and reference-clock qualities. Both SMC and LQG substantially outperform BB over the same time periods. Over the full averaging-time range studied, SMC's stability is almost identical to LQG's, whereas BB shows the characteristic short-term instability. Together, our results indicate that SMC is a promising clock-steering policy that can remain close to LQG in accuracy while avoiding the short-term instability seen in BB.",
+  "authors": [
+    "Ashkan Bayat",
+    "Barry C. Sanders"
+  ],
+  "published": "2026-05-19T17:45:45Z",
+  "updated": "2026-06-04T15:40:01Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
