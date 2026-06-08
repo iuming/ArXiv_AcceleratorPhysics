@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.05446v1",
+  "url": "https://arxiv.org/abs/2606.05446v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.05446v1.pdf",
+  "title": "Implementation and Verification of Toroidal Resistive Wall Boundary Conditions in the PIXIE3D MHD code using a Boundary Integral Method",
+  "abstract": "We present the complete formulation of resistive wall boundary conditions in axisymmetric toroidal geometries as implemented in the PIXIE3D extended magnetohydrodynamics (MHD) code, along with a complete suite of analytical verification examples that demonstrate correctness in the implementation. The formulation centers around a thin wall approximation and a Boundary Integral Method to solve for the magnetic scalar potential in the immediately surrounding vacuum. This requires specialized quadrature rules derived from existing literature to handle the numerical integration of singular and hypersingular integrands (the Green's function of Laplace's equation and its derivatives), for which we provide the nodes and weights. Further, we describe an extension to the formalism to include the effect of a perfectly conducting second, outer wall exterior to the resistive (plasma-facing) wall and separated by vacuum, and exterior to the computational plasma mesh proper. Lastly, we describe an extension to include the effect of current-carrying coils also defined exterior to the plasma mesh in the resistive wall boundary condition treatment. For most aspects of the method, we present self-contained verification examples using analytic solutions in axisymmetric toroidal geometries (with both 2D and 3D plasmas) and show it to be accurate to second order. We demonstrate the algorithm with a vertical displacement event (VDE) using the ITER tokamak geometry.",
+  "authors": [
+    "Samuel Jones",
+    "Luis Chacón",
+    "Jason Hamilton",
+    "Dan Barnes",
+    "Andrés Yagüe-López"
+  ],
+  "published": "2026-06-03T21:08:10Z",
+  "updated": "2026-06-03T21:08:10Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

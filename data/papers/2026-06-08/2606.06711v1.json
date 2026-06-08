@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.06711v1",
+  "url": "https://arxiv.org/abs/2606.06711v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.06711v1.pdf",
+  "title": "Lightfall: An API-first, LLM-addressable control platform for synchrotron beamlines",
+  "abstract": "Synchrotron beamlines differ in hardware, technique, and workflow, making customized control interfaces necessary; bespoke per-beamline graphical user interfaces (GUIs) do not scale well, one-size-fits-all facility software forces compromises that leave most of the interface unused, and even recent component-library approaches keep per-scientist tweaks on a developer's queue. We present Lightfall, a control platform designed for facility-wide use, whose API-first architecture exposes every panel, device, and scan plan through a single uniform addressable interface. An embedded language-model agent drives experiments through that interface, from a single move-and-read to a Gaussian-process-driven autonomous scan, while beamline staff extend the interface during operation via skills: plugin modules the agent invokes to compose and modify panels in the running application. The result is a closed development loop: a beamline scientist authors a panel change in natural language, the agent emits and applies it, and the commit lands in the beamline's plugin repository as a side effect. The per-iteration cost of a scientist-driven change is then fixed in the scientist's own time rather than in developer hours the facility must supply. Lightfall is in testing at the COSMIC-Scattering beamline at the Advanced Light Source.",
+  "authors": [
+    "Ronald J. Pandolfi",
+    "Damian Guenzing",
+    "Marcus M. Noack",
+    "Sophie A. Morley",
+    "Damon English"
+  ],
+  "published": "2026-06-04T20:53:40Z",
+  "updated": "2026-06-04T20:53:40Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

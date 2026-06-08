@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.06210v1",
+  "url": "https://arxiv.org/abs/2606.06210v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.06210v1.pdf",
+  "title": "A Surrogate Model for Proton Spectrum Prediction to Map Transitions in Laser-Ion Acceleration",
+  "abstract": "We present a physics-guided, decoupled dual-branch surrogate model to predict continuous proton energy spectra from laser-driven ion acceleration. Integrating a $β$-VAE for spectral feature extraction with a parallel multi-layer perceptron for scalar boundary enforcement, the framework achieves a predictive accuracy of $R^2 = 0.94$ for the maximum cutoff energy and $R^2 = 0.94$ for the total particle flux, with a median per-sample spectral $R^2 = 0.985$ (in $\\log_{10}$ space) across the full 2000-bin energy distribution. The model incorporates uncertainty quantification via deep ensembles, serving as a quantitative probabilistic diagnostic tool with calibration errors below 6.2\\%. Within the 1D longitudinal framework, the surrogate reproduces spectral signatures consistent with the transition from Target Normal Sheath Acceleration (TNSA) to the volumetric heating dynamics of Relativistically Induced Transparency (RIT) and Breakout Afterburner (BOA) regimes, as validated against kinetic diagnostics from 1D particle-in-cell simulations. This approach establishes a computationally efficient baseline for future multi-fidelity optimization and provides an engine for closed-loop parameter control in high-repetition-rate laser facilities.",
+  "authors": [
+    "Chengqi-Zhang",
+    "Yang He",
+    "Mamat Ali Bake",
+    "Xilin-Wang",
+    "Bai-Song Xie"
+  ],
+  "published": "2026-06-04T14:17:22Z",
+  "updated": "2026-06-04T14:17:22Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

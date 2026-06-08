@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.02084v2",
+  "url": "https://arxiv.org/abs/2606.02084v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.02084v2.pdf",
+  "title": "Deep Learning-Accelerated Dynamic Kinetic Monte Carlo Simulation for Hydrogen Transport in Tungsten",
+  "abstract": "In magnetic confinement fusion reactors, hydrogen plasma irradiation causes material saturation and recycling, where hydrogen released from the tungsten wall significantly impacts the peripheral plasma. Kinetic Monte Carlo (kMC) simulations are essential for investigating the dynamic balance between incident and emitted fluxes at the atomic scale. However, standard kMC frameworks are inadequate for handling realistic material complexities, such as polycrystalline structures and dynamic evolution under irradiation, being computationally bottlenecked by continuous transition parameter updates. Conventionally, evaluating migration barriers in disordered systems (e.g., grain boundaries) relies on computationally prohibitive on-the-fly atomistic calculations like the Nudged Elastic Band (NEB) method.   Here, we present a deep learning-accelerated Dynamic kMC framework that eliminates this reliance. Our approach integrates a three-stage deep learning pipeline: a pix2pix model for predicting local 3D potential energy distributions, a U-Net for extracting hydrogen trapping sites, and a 3D-CNN for directly evaluating migration barriers. To achieve macroscopic timescales, we implemented a hierarchical spatial index combined with a differential local-update algorithm operating in O(1) complexity. This architecture restricts recalculations to the immediate vicinity of moving atoms, accelerating updates. Demonstrated on a large-scale realistic polycrystalline tungsten model, the framework successfully reproduces preferential hydrogen trapping along grain boundaries, bridging the gap between atomic-scale accuracy and macroscopic timescales for full-scale plasma-wall interaction simulations.",
+  "authors": [
+    "Seiki Saito",
+    "Keisuke Takeuchi",
+    "Hiroaki Nakamura",
+    "Yasuhiro Oda",
+    "Kazuo Hoshino",
+    "Yuki Homma",
+    "Shohei Yamoto",
+    "Yuki Uchida"
+  ],
+  "published": "2026-06-01T11:15:33Z",
+  "updated": "2026-06-05T00:48:53Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cond-mat.mtrl-sci"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2511.04567v2",
+  "url": "https://arxiv.org/abs/2511.04567v2",
+  "pdf_url": "https://arxiv.org/pdf/2511.04567v2.pdf",
+  "title": "Machine Learning for Electron-Scale Turbulence Modeling in W7-X",
+  "abstract": "Constructing reduced models for turbulent transport is essential for accelerating profile predictions and enabling many-query tasks such as parameter exploration and design optimization. This work investigates machine-learning-driven reduced models for Electron Temperature Gradient (ETG) turbulence in the Wendelstein 7-X (W7-X) stellarator. We develop physics-guided scaling laws to predict the ETG heat flux at seven radial locations as functions of three key plasma parameters: the normalized electron temperature gradient ($ω_{T_e}$), the ratio of normalized electron temperature and density gradients ($η_e$), and the electron-to-ion temperature ratio ($τ$). The model coefficients are determined through regression combined with an active learning strategy. The procedure initializes the scaling laws using low-cardinality sparse-grid training data and iteratively enriches the training set by selecting maximally informative samples from an existing simulation database. The predictive performance of the models is assessed using out-of-sample datasets comprising more than $393$ points per radial location. Using the coefficients identified at the seven training radial locations, we further derive regression-based parameterizations for the scaling-law coefficients as functions of radial position. The resulting models are then evaluated at three additional radial locations not used during training, including both interpolation and moderate extrapolation cases. Overall, our reduced models demonstrate good predictive performance and achieve accuracy comparable to the original reference simulations, including in interpolation and moderate extrapolation regimes. An important finding is that a single radius-independent model cannot adequately describe ETG transport across the W7-X core, suggesting the presence of geometry-dependent physics not captured by the present formulation.",
+  "authors": [
+    "Ionut-Gabriel Farcas",
+    "Don Lawrence Carl Agapito Fernando",
+    "Alejandro Banon Navarro",
+    "Gabriele Merlo",
+    "Frank Jenko"
+  ],
+  "published": "2025-11-06T17:24:37Z",
+  "updated": "2026-06-04T22:11:09Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.CE",
+    "cs.LG",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0311057"
+}
