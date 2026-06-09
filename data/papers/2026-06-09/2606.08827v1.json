@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.08827v1",
+  "url": "https://arxiv.org/abs/2606.08827v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.08827v1.pdf",
+  "title": "High-dimensional inverse design of inertial fusion implosions via differentiable simulation",
+  "abstract": "Inertial confinement fusion implosion design requires simultaneous optimisation of strongly coupled target and driver parameters across high-dimensional design spaces. Existing automated design approaches typically rely on non-differentiable radiation-hydrodynamics codes treated as black boxes, making optimisation increasingly expensive as dimensionality grows. In this work, we present a differentiable simulation approach for high-dimensional inverse design of inertial confinement fusion implosions. Automatic differentiation through a differentiable implosion physics model, driven by an external pressure pulse, provides gradients of implosion objectives with respect to design parameters, enabling gradient-based optimisation. The framework is applied to 25 kJ OMEGA-scale direct-drive implosions, optimising 500-parameter laser pulses across sampled target geometries. The optimised pulse recovers a near-isoentropic rise to peak power without that structure being imposed. Neural-network pulse parameterisations are additionally explored as a means of accelerating design-space exploration. These results establish differentiable implosion modelling as a promising tool for ICF design, while motivating further work on adjoint robustness and higher-fidelity differentiable simulators.",
+  "authors": [
+    "A. J. Crilly",
+    "P. Travis",
+    "J. P. Brodrick",
+    "J. B. Coughlin",
+    "A. S. Joglekar"
+  ],
+  "published": "2026-06-07T20:40:43Z",
+  "updated": "2026-06-07T20:40:43Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

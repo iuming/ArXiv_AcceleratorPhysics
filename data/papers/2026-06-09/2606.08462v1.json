@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.08462v1",
+  "url": "https://arxiv.org/abs/2606.08462v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.08462v1.pdf",
+  "title": "Experiment-free disruption prediction for new devices enabled by synthetic diagnostic data augmentation",
+  "abstract": "Deep learning based approaches have shown great promise in cross-device disruption prediction for tokamaks, however, the robustness of these models heavily relies on massive amounts of training data. For the upcoming ITER, to ensure the safety of the first plasma and subsequent operations, experimental data should be entirely unavailable initially, and disruptive discharges should be strictly avoided thereafter. This extreme data scarcity inherently conflicts with the data-intensive nature of deep learning algorithms. To address this challenge, we utilize synthetic diagnostic signals from the target device to supplement the experimental data from existing devices for the zero-shot disruption prediction on a new device. The detailed implementation pipeline of this scheme is presented. For experimental validation, a predictive model trained on data from the EAST tokamak is deployed for a zero-shot cross-device experiment on the J-TEXT tokamak. A synthetic diagnostic framework, configured with the diagnostic parameters of the target device, is developed to process NIMROD magnetohydrodynamic (MHD) simulation data based on the target device's magnetic configuration, thereby achieving effective data augmentation. Ultimately, the results demonstrate that by integrating the target device's synthetic diagnostic data with Fourier Domain Adaptation, the zero-shot accurate early warning rate of the model on 1,596 J-TEXT discharges is improved from 50% to 57%, while exhibiting enhanced predictive robustness.",
+  "authors": [
+    "Zhiqiang Liu",
+    "Fengming Xue",
+    "Shiwei Xue",
+    "Bihao Guo",
+    "Dalong Chen",
+    "Wei Zheng",
+    "Ping Zhu"
+  ],
+  "published": "2026-06-07T05:56:33Z",
+  "updated": "2026-06-07T05:56:33Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
