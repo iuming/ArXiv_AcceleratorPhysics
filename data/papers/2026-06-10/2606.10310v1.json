@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.10310v1",
+  "url": "https://arxiv.org/abs/2606.10310v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.10310v1.pdf",
+  "title": "DKEKAN: A single-parameterized KAN surrogate for Drift Kinetic Equation Toward Fast Neoclassical Toroidal Viscosity Torque Modeling in Tokamaks",
+  "abstract": "The neoclassical toroidal viscosity (NTV) torque is a critical driver of toroidal rotation in tokamaks, profoundly influencing plasma stability and performance. Consequently, incorporating NTV effects is essential for modern integrated modeling frameworks that aim to self-consistently unify multiple physical processes. However, the high computational cost of NTV modeling precludes its self-consistent integration within such frameworks. This bottleneck arises because NTV calculation requires solving its governing equation--the drift kinetic equation (DKE)--in high-dimensional phase space. To address this issue, this study develops DKEKAN, a single-parameterized Kolmogorov-Arnold Network (SKAN) surrogate for solving DKE, to realize fast NTV modeling in tokamaks. The research process consists of the following steps: Firstly, a large dataset mapping DKE equation parameters to solutions is generated based on first-principle simulations under plasma parameters of the Experimental Advanced Superconducting Tokamak (EAST); Secondly, a surrogate model for solving DKE is developed based on the SKAN framework, which also incorporates a modular expert network design; Finally, the DKEKAN surrogate model is integrated with the NTV modeling framework to realize fast NTV calculation. With its physics-grouped expert layer and SKAN backbone, DKEKAN outperforms the tested MLP, KAN, and neural-operator baselines in overall prediction accuracy, while reducing the standalone DKE-solving time from 35.85s to 3.74s, corresponding to a speedup of approximately 9.6x, and reducing the total coupled NTVTOK runtime from 38.24s to 5.58s, corresponding to an overall speedup of approximately 6.9x. This work effectively overcomes the computational bottleneck in NTV simulations, thus supporting further integrated modeling that incorporates NTV effects.",
+  "authors": [
+    "Jinpeng Huang",
+    "Xingting Yan",
+    "Mingyu Zhang",
+    "Nana Bao",
+    "Zixuan Song",
+    "Yuetao Meng",
+    "Weiyong Zhou",
+    "Youwen Sun"
+  ],
+  "published": "2026-06-09T01:55:19Z",
+  "updated": "2026-06-09T01:55:19Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

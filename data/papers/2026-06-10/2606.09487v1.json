@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.09487v1",
+  "url": "https://arxiv.org/abs/2606.09487v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.09487v1.pdf",
+  "title": "Experimental validation of a fast control-oriented, physics-informed surrogate model for plasma equilibrium reconstruction in the TCV tokamak",
+  "abstract": "Magnetic equilibrium reconstruction provides the plasma state estimate required for real-time shape control in tokamaks. We present a fast, physics-informed neural network surrogate of the \\texttt{liuqe} equilibrium reconstruction code \\cite{liuqe1} for the TCV tokamak at EPFL, achieving inference times below 100~$\\bmμ$s and enabling 10~kHz shape control. The model is trained on around 10,000 TCV discharges spanning the full operational range of plasma shapes. Its modular branch/trunk architecture decouples magnetic measurement encoding from spatial coordinate processing, enabling physics-informed regularization via automatic differentiation of the predicted flux map. The surrogate has been compiled and deployed on the TCV real-time control system, and validated both offline and in real time against the models \\texttt{liuqe-rt} and \\texttt{lih}, showing comparable accuracy. Closed-loop performance assessed with the real-time software in-the-loop \\texttt{fge} \\cite{fge1} demonstrates control-equivalent behavior across multiple control strategies.",
+  "authors": [
+    "M. Grandin",
+    "A. Mele",
+    "C. Galperti",
+    "D. Gonzales Castineiras",
+    "C. Heiß",
+    "A. Cenedese",
+    "TCV team",
+    "EUROfusion Tokamak Exploitation team"
+  ],
+  "published": "2026-06-08T13:41:42Z",
+  "updated": "2026-06-08T13:41:42Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

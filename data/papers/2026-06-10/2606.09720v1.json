@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.09720v1",
+  "url": "https://arxiv.org/abs/2606.09720v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.09720v1.pdf",
+  "title": "Long-term laser frequency stabilization with an FPGA-controlled scanning cavity",
+  "abstract": "We present an FPGA-based implementation of a scanning transfer cavity lock (STCL) for laser frequency stabilization, allowing for the simultaneous stabilization of multiple laser sources with respect to a single reference laser by means of a continuously scanned Fabry-Perot cavity. By exploiting the FPGA architecture to simultaneously perform cavity scanning, peak detection, and feedback actuation, we minimize latency and allow independent control loops for several lasers within a single device, offering direct scalability. The system performance is analyzed through heterodyne measurements from short ($<1\\,$s) to long ($\\sim20\\,$hours) timescales. The end-to-end locking performance is validated through atomic spectroscopy of ytterbium atoms in a magneto-optical trap, demonstrating sub-MHz absolute frequency stability over several hours for the stability transfer across $\\sim 150\\,$nm in the visible-wavelength range. Importantly, we demonstrate a novel fast-scanning approach based on acousto-optic modulator (AOM) frequency modulation, enabled by the low detection latency of our FPGA implementation. This increases significantly the effective locking bandwidth and reduces the intrinsic noise of the system with respect to standard piezo-actuated scanning of the cavity length, allowing to reach sub-$100\\,$kHz long-term stability and offering perspectives for laser-line narrowing. Owing to its modularity, low cost and ease of implementation within the open-source PyRPL firmware package for the STEMlab Red Pitaya platform, our architecture offers a compact and flexible alternative to existing STCL and locked-cavity implementations, providing a practical approach to the operation of a state-of-the-art cold-atom experiment without relying on any atomic references for laser stabilization.",
+  "authors": [
+    "R. Forti",
+    "R. Panza",
+    "A. Muzi Falconi",
+    "S. Sbernardori",
+    "A. Vardé",
+    "M. Marinelli",
+    "A. Carini",
+    "F. Scazza"
+  ],
+  "published": "2026-06-08T16:44:38Z",
+  "updated": "2026-06-08T16:44:38Z",
+  "categories": [
+    "physics.atom-ph",
+    "cond-mat.quant-gas",
+    "physics.ins-det",
+    "physics.optics"
+  ],
+  "primary_category": "physics.atom-ph"
+}
