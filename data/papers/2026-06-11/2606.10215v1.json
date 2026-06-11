@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.10215v1",
+  "url": "https://arxiv.org/abs/2606.10215v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.10215v1.pdf",
+  "title": "LEAP: A Rapid Neural Surrogate of Multi-Fluid MHD at Europa",
+  "abstract": "Characterizing Europa's subsurface ocean is a key objective of the Europa Clipper and JUICE missions in the search for life beyond Earth. Although the ocean's induced magnetic field provides key constraints on habitability, interpretation is complicated by perturbations arising from Jupiter's plasma interaction with Europa. Physics-based models (e.g. magnetohydrodynamic, MHD) required to characterize these effects are physically comprehensive, but have a prohibitive computational cost. To address this, we introduce Learning Europa's Atmosphere and Plasma (LEAP), a transformer-based surrogate trained on outputs from a state-of-the-art multi-fluid MHD code to predict magnetic field perturbations along spacecraft trajectories. LEAP evaluates in milliseconds on a laptop, whereas MHD takes 12 hrs on a high-performance computer (~40,000x speed-up). The model has test set errors of -/+ 2.6 nT, and for the Galileo E4 and E14 flybys of Europa it matches the parent MHD model in accuracy. Its enhanced speed enables large-scale parameter surveys and probabilistic estimations of plasma conditions, establishing a new framework for accelerated plasma interaction modeling. LEAP can also inform future MHD simulations while learning from them. Beyond Europa, this framework could be expanded to planning future missions or to other high-priority bodies, including Uranus and Neptune.",
+  "authors": [
+    "Sachin Alexander Reddy",
+    "Abigail R. Azari",
+    "Corey J. Cochrane",
+    "Xianzhe Jia",
+    "Tom A. Nordheim",
+    "Lukas Mandrake",
+    "Steven D. Vance",
+    "Camilla Harris",
+    "Ioana Ciucǎ"
+  ],
+  "published": "2026-06-08T22:09:42Z",
+  "updated": "2026-06-08T22:09:42Z",
+  "categories": [
+    "physics.space-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.space-ph"
+}

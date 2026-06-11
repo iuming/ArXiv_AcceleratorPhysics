@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2606.10381v1",
+  "url": "https://arxiv.org/abs/2606.10381v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.10381v1.pdf",
+  "title": "Agentic Hybrid RAG for Evidence-Grounded Muon Collider Analysis",
+  "abstract": "Muon collider research spans accelerator physics, detector instrumentation, and high-energy phenomenology, with relevant evidence scattered across a rapidly expanding and heterogeneous body of scientific literature. As high-energy physics (HEP) increasingly explores agent-assisted analysis workflows, efficiently locating, integrating, and verifying scientific evidence becomes an essential capability. While retrieval-augmented generation (RAG) offers a promising framework for scientific question answering, integrating agentic reasoning without compromising retrieval precision remains a key challenge. In this work, we present agentic hybrid RAG, an evidence-grounded RAG framework for muon collider research. The framework combines a hybrid retriever, integrating sparse lexical and dense semantic retrieval, with an agentic reasoning module for query decomposition, evidence expansion, and grounded answer generation. To enable systematic evaluation, we construct the first benchmark for retrieval-augmented scientific question answering in the muon collider domain, comprising a curated literature corpus together with dedicated retrieval and answer-generation benchmarks covering major detector and physics research topics. Extensive evaluation shows that hybrid retrieval provides the strongest retrieval backbone, while agentic reasoning is most effective for controlled evidence expansion and answer synthesis. Built on this principle, agentic hybrid RAG consistently outperforms representative retrieval and RAG baselines in retrieval effectiveness, answer quality, evidence coverage, and factual grounding. Together, the benchmark and framework provide a foundation for evidence-grounded scientific question answering and future HEP analysis agents operating over large-scale scientific literature.",
+  "authors": [
+    "Ruobing Jiang",
+    "Dawei Fu",
+    "Cheng Jiang",
+    "Tianyi Yang",
+    "Zijian Wang",
+    "Youpeng Wu",
+    "Yong Ban",
+    "Yajun Mao",
+    "Qiang Li"
+  ],
+  "published": "2026-06-09T03:42:50Z",
+  "updated": "2026-06-09T03:42:50Z",
+  "categories": [
+    "hep-ex",
+    "cs.AI",
+    "cs.CL",
+    "cs.IR",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}
