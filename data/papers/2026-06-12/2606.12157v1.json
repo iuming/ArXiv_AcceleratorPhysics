@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2606.12157v1",
+  "url": "https://arxiv.org/abs/2606.12157v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.12157v1.pdf",
+  "title": "fitPALSpectra: Python fitting of positron annihilation lifetime spectra",
+  "abstract": "Positron annihilation lifetime spectroscopy (PALS) spectra are commonly analyzed by fitting multi-exponential lifetime models convoluted with the detector resolution function. In practice, this inverse problem is sensitive to initial parameter choices, parameter bounds, source corrections, and correlations between lifetime and intensity parameters. This paper presents fitPALSpectra, an open-source Python workflow for configurable PALS spectrum simulation, fitting, visualization, and reporting. The implementation uses an analytically integrated exponential--Gaussian response model, configurable source and sample components, constrained optimization, optional least-squares refinement, and machine-readable output of fit results, correlation matrices, and fitted curves. Validation on fully synthetic spectra with known ground-truth parameters shows accurate recovery of the simulated lifetimes, intensities, detector full width at half maximum, prompt shift, and background.",
+  "authors": [
+    "Georgios E. Pavlou"
+  ],
+  "published": "2026-06-10T14:44:08Z",
+  "updated": "2026-06-10T14:44:08Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.comp-ph"
+}

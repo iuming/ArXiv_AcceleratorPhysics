@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.13283v1",
+  "url": "https://arxiv.org/abs/2606.13283v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.13283v1.pdf",
+  "title": "Archê, an orbital-free molecular dynamics code for fast production of equations of state",
+  "abstract": "We present Archê, an orbital-free molecular dynamics (OFMD) code designed to produce equations of state (EOS) in the plasma state. Unlike in other OFMD codes, Archê uses a self-consistent field (SCF) approach to compute the electronic density. This allows us to implement two algorithms that accelerate SCF convergence by a factor of up to six. First, the density is initialized using the results from the previous MD timestep to define a one-center profile, which is then applied to the new nuclei positions. Second, the initial and final densities are mixed at each SCF iteration in a proportion that minimizes an approximate free energy. We validate the code by comparing the calculated aluminum EOS to results obtained with the Kohn-Sham density functional theory software Abinit. Achieving agreement in the internal energy requires adding a correction related to the norm-conserving pseudopotential derived from an average-atom model. Performance is compared across CPU and GPU architectures, demonstrating an order-of-magnitude speedup for a single GPU compared to 256 CPUs. Archê exhibits an overall linear computational complexity with respect to the number of atoms, as well as the number of real and reciprocal grid points. Execution time is weakly dependent on density; however, interestingly, it decreases as temperature increases -- in contrast to simulations based on Kohn-Sham orbitals.",
+  "authors": [
+    "William Weens",
+    "Augustin Blanchet",
+    "Philippe Arnault"
+  ],
+  "published": "2026-06-11T12:40:02Z",
+  "updated": "2026-06-11T12:40:02Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

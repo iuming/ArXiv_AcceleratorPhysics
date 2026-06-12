@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.10547v1",
+  "url": "https://arxiv.org/abs/2606.10547v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.10547v1.pdf",
+  "title": "Unsupervised Deep Learning for Limited-Angle STEM-EDX Tomography -- Application to 3D Chemical Analysis of Phase-Change Memory Devices",
+  "abstract": "Energy Dispersive X-ray (EDX) tomography in Scanning Transmission Electron Microscopy (STEM) enables 3D compositional and elemental mapping at the nanoscale, but its use is limited by restricted tilt ranges and low-dose conditions required to avoid beam damage. Limited-angle acquisition introduces missing-wedge artefacts such as elongation and anisotropic resolution, while noisy low-dose data further degrade reconstruction quality and quantitative reliability. Here, we introduce an unsupervised deep learning framework based on Deep Image Prior with total variation regularization (DIP-TV) for limited-angle STEM-EDX tomography. We extend it to a multi-channel formulation (DIPm-TV) that jointly reconstructs multiple elemental maps by exploiting spatial correlations. Using a synthetic 3-channel phantom, we show that the method compensates for severe missing-wedge artefacts corresponding to approximately $100^\\circ$ of missing angular range under moderate noise, outperforming simultaneous iterative reconstruction technique and compressed sensing approaches. We apply the method to 3D chemical analysis of Ge-Sb-Te (GST) memory devices in virgin (as-fabricated) and SET (crystalline) operational states. Samples were prepared as cross-sectional focused ion beam lamellae and acquired under a limited-angle tilt range from $-40^\\circ$ to $+40^\\circ$ with $5^\\circ$ steps and a dose of $2.0\\times10^5$ $e^-/Ang^2$. The multi-channel approach enables voxel-by-voxel elemental reconstruction using only EDX signals without external structural priors such as high-angle annular dark-field imaging. The reconstructed volumes show near-isotropic spatial resolution and reveal compositional heterogeneities associated with device operation. This approach enables 3D chemical characterization in experimentally accessible sample geometries where conventional methods fail due to severe angular limitations.",
+  "authors": [
+    "Daniel del Pozo Bueno",
+    "Serge Brosset",
+    "Theo Monniez",
+    "Gabriele Navarro",
+    "Philippe Ciuciu",
+    "Zineb Saghi"
+  ],
+  "published": "2026-06-09T08:16:09Z",
+  "updated": "2026-06-09T08:16:09Z",
+  "categories": [
+    "eess.IV",
+    "cond-mat.mtrl-sci",
+    "cs.LG",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.IV"
+}

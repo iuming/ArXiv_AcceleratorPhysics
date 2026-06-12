@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.11821v1",
+  "url": "https://arxiv.org/abs/2606.11821v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.11821v1.pdf",
+  "title": "VEQ: a fast parametric Grad--Shafranov solver for fixed-boundary tokamak equilibria with flexible source profiles",
+  "abstract": "Veloce EQuilibrium (VEQ) is a compact parametric framework for tokamak modeling workflows that repeatedly query continuous fixed-boundary equilibria at low latency. The VEQPy implementation evaluated here is an axisymmetric fixed-boundary Grad-Shafranov solver whose main solve enforces a variationally induced projected residual. Its active unknowns are MXH-type flux-surface harmonics and shifted-Chebyshev coefficients for radial profile and source closures. Six input routes accept pressure-gradient, toroidal-field-function, poloidal-flux-gradient, enclosed toroidal current, current-density and safety-factor information through route-specific closures, while all routes map to the same finite-dimensional residual operator. Controlled tests show route consistency for smooth, mutually compatible inputs generated from a common reference equilibrium. For Pareto-selected reduced configurations in three G-EQDSK cases, the most accurate selected rows correspond to a D-shaped case (9 active parameters, minor-radius-normalized shape error 1.4e-3, solve-only median 1.6 ms), an H-mode case (65, 1.1e-3, 19 ms), and an X-point case treated as a smoothed fixed-boundary representation of a diverted boundary (94, 1.9e-3, 15 ms). Sampled pointwise strong-form Grad-Shafranov diagnostics show that enriching the active representation mainly improves interior force balance, whereas the global RMS and maximum values for the H-mode and X-point cases remain dominated by near-boundary contributions. In an isolated one-dimensional transport-geometry coupling test against the target geometry read from G-EQDSK, the temperature-profile response remains below about one percent. These results support using VEQ for repeated equilibrium-geometry queries, provided that pointwise diagnostics are retained to screen cases requiring boundary refinement, local correction or higher-fidelity equilibrium solves.",
+  "authors": [
+    "Ruohan Zhang",
+    "Huasheng Xie",
+    "Yueyan Li",
+    "Weiqi Meng",
+    "Feng Wang",
+    "Zhengxiong Wang"
+  ],
+  "published": "2026-06-10T08:55:23Z",
+  "updated": "2026-06-10T08:55:23Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
