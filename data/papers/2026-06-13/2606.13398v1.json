@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.13398v1",
+  "url": "https://arxiv.org/abs/2606.13398v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.13398v1.pdf",
+  "title": "A robust super-time-stepping scheme for Ohmic and ambipolar diffusion",
+  "abstract": "Context. Non-ideal magnetohydrodynamics (MHD) is a key tool for modeling magnetic flux transport in astrophysical systems such as molecular clouds, protostellar cores, and protoplanetary disks. Conventional explicit methods for non-ideal MHD diffusion are severely limited by timestep constraints, while substepping approaches can be unstable due to truncation errors near boundaries and strong magnetic-field gradients. Aims. Our main goal is to address these limitations by developing robust super-time-stepping methods for Ohmic and ambipolar diffusion. Methods. We present a super-time-stepping method based on the stability of the Gegenbauer polynomials. The method is designed to enhance robustness in the presence of strongly anisotropic resistivity and to reduce sensitivity to truncation errors near boundaries. We implement the scheme in the PLUTO code and assess its performance through dedicated Ohmic and ambipolar diffusion tests. We also compare this novel numerical scheme against two common astrophysical problems, namely magnetic reconnection and the magnetorotational instability. Results. The novel Runge-Kutta-Gegenbauer scheme retains computational efficiency beyond purely explicit schemes while providing excellent stability compared with other traditional substepping methods. It remains stable in the presence of strongly anisotropic diffusion, enabling accurate magnetic-field evolution in regimes characteristic of protoplanetary disks and collapsing dense cores. Benchmark tests, including magnetic reconnection and magnetorotational-instability setups, confirm the method's accuracy, efficiency, and suitability for large-scale non-ideal MHD simulations.",
+  "authors": [
+    "Giancarlo Mattia",
+    "Mario Flock",
+    "David Melon Fuksman",
+    "Anastasia Tzouvanou",
+    "Vittoria Berta",
+    "Daniele Crocco"
+  ],
+  "published": "2026-06-11T14:30:11Z",
+  "updated": "2026-06-11T14:30:11Z",
+  "categories": [
+    "astro-ph.IM",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.IM"
+}
