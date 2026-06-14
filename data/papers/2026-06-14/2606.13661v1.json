@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.13661v1",
+  "url": "https://arxiv.org/abs/2606.13661v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.13661v1.pdf",
+  "title": "Robust Control of ECH Deposition Profiles on DIII-D",
+  "abstract": "Electron Cyclotron Heating (ECH) is a key actuator in DIII-D and future tokamaks that provides auxiliary heating, localized current drive for scenario development and MHD stability, and even impurity pump-out. Due to its control flexibility and applications, a gyrotron optimization algorithm was developed to multitask and fine-tune the deposition location and heating power of each gyrotron while providing robustness to hardware failure. The ECH Optimization (ECHO) algorithm finds the optimal gyrotron mirror angle and power to achieve a target ECH radial deposition profile. This optimization is accomplished in real-time using a parallelized neural network surrogate of the TORBEAM code combined with a genetic optimizer. This has been deployed in a DIII-D experiment and has been validated with experimental ECE measurements and post-experiment offline ray tracing, showing the algorithm's reliability despite gyrotron failures and significant changes to plasma parameters.",
+  "authors": [
+    "A. Rothstein",
+    "H. J. Farre-Kaga",
+    "K. Yasoda",
+    "J. Lestz",
+    "N. Chen",
+    "S. K. Kim",
+    "A. Jalalvand",
+    "E. Kolemen"
+  ],
+  "published": "2026-06-11T17:56:33Z",
+  "updated": "2026-06-11T17:56:33Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
