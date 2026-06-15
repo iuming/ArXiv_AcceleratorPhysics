@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2606.14242v1",
+  "url": "https://arxiv.org/abs/2606.14242v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.14242v1.pdf",
+  "title": "Free-Molecular Face-Flux Preprocessing for Reduced Neutral-Continuity Modeling in Hall Thrusters: Particle-Based Reference and Deterministic SN-DFEM Realization",
+  "abstract": "Neutral gas transport directly affects the ionization source, propellant utilization, and low-frequency discharge oscillations in Hall thrusters. High-fidelity particle-based neutral models or DSMC methods can describe rarefied gas transport, but they are computationally expensive; in contrast, reduced neutral-continuity models are cheaper but require a closure for the neutral velocity or face-normal flux. Under a low-pressure collisionless approximation, this work adopts a free-molecular preprocessing strategy to provide a reference density field and the mean-velocity or face-normal-flux closure used by the reduced neutral-continuity equation in a manner consistent with the underlying transport model.On this basis, a particle-based free-molecular faceflux preprocessor is used as a stochastic reference, and an SN-DFEM deterministic free-molecular preprocessor is proposed to generate the corresponding reference density, velocity moments, and face-normal fluxes within a unified free-molecular transport framework. Results show that the SN-DFEM preprocessor preserves the main neutral-density and velocity structures and reduces the statistical error in face-flux closure by about three orders of magnitude in the baseline continuity-recovery test. A prescribed moderate ionization-loss case further demonstrates the extension of the framework to free-molecular preprocessing with volumetric neutral removal.",
+  "authors": [
+    "Yingjie Chen",
+    "Xi Chen",
+    "Yinjian Zhao"
+  ],
+  "published": "2026-06-12T08:20:32Z",
+  "updated": "2026-06-12T08:20:32Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

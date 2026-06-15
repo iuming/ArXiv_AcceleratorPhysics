@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2606.14480v1",
+  "url": "https://arxiv.org/abs/2606.14480v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.14480v1.pdf",
+  "title": "Seeding and Matching algorithms for the first GPU-based High Level Trigger of the LHCb experiment",
+  "abstract": "We describe the GPU implementation of the Seeding and Matching algorithms, developed for the first level trigger of the LHCb experiment and key to reconstruct long and very displaced tracks at 40 MHz. The algorithms have been participating in the data taking during the full Run 3 of LHCb with a very high throughput, increasing the physics reach of the experiment.   The Seeding is a standalone pattern recognition algorithm aiming at finding charged particle trajectories in the most forward tracker of LHCb. These trajectories are then extrapolated backward by the Matching algorithm which combines them with stubs formed from hits in the first tracker in order to form what we call Long tracks. Hits in the second tracker are then searched for to better define the trajectory and improve the track momentum resolution. This backward approach, complementary to the approach of extrapolating the stubs in the first detector to the forward tracker through the magnetic field, improves the Long track efficiency at low transverse momenta, increasing the potential of key physics decay channels.",
+  "authors": [
+    "Christina Agapopoulou",
+    "Lukas Calefice",
+    "Álvaro Fernández Casani",
+    "Vava Gligorov",
+    "Arthur Marius Hennequin",
+    "Louis Henry",
+    "Valerii Kholoimov",
+    "Brij Kishor Jashal",
+    "Arantza Oyanguren",
+    "Lorenzo Pica",
+    "Volodymyr Svintozelskyi",
+    "Da Yu Tou",
+    "Jiahui Zhuo"
+  ],
+  "published": "2026-06-12T14:18:25Z",
+  "updated": "2026-06-12T14:18:25Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

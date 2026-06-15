@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.12661v1",
+  "url": "https://arxiv.org/abs/2606.12661v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.12661v1.pdf",
+  "title": "Finding Novel Precursors for Solar Wind Stream Interaction Regions with Interpretable Deep Learning",
+  "abstract": "Solar wind stream interaction regions (SIRs) drive recurrent geomagnetic storms, yet most existing catalogs rely on expert inspection and simple thresholds that are subjective and can miss events with complex morphologies. We present SIREN (SIR Encoder Network), a lightweight Transformer based model for per timestep SIR detection from in situ solar wind observations. The model ingests sequences of 11 solar wind parameters, spanning magnetic field, velocity, and thermodynamic properties. With approximately 100,000 trainable parameters in a two layer encoder architecture, SIREN is trained using weighted binary cross entropy loss and a cosine annealing learning rate. Platt scaling is applied to produce well-calibrated detection probabilities. On a held-out test set of 102 events, the calibrated model achieves a ROC-AUC of 0.93, F1 score of 0.78, and true skill statistic of 0.67. Analysis of the self-attention weights confirms that the model concentrates on the SIR, grounding its decisions in the physically relevant portion of each sequence. Integrated Gradients attribution reveals a quantifiable feature hierarchy: proton density (24.3%) and magnetic field magnitude (21.6%) dominate, followed by temperature (13.9%) and bulk speed (12.1%). Notably, the transverse velocity component Vy and east-west flow angle together contribute 13-17%, identifying flow deflection as a consistent but previously under-quantified SIR signature. By producing continuous probabilities rather than binary labels, SIREN enables flexible threshold tuning for operational use and provides a template for compact, interpretable deep-learning systems in space weather.",
+  "authors": [
+    "Prateek Mayank",
+    "Yogesh",
+    "Enrico Camporeale",
+    "D. Chakrabarty",
+    "Lan K Jian",
+    "Gregory G. Howes",
+    "Thomas E. Berger"
+  ],
+  "published": "2026-06-10T20:45:04Z",
+  "updated": "2026-06-10T20:45:04Z",
+  "categories": [
+    "astro-ph.SR",
+    "physics.plasm-ph",
+    "physics.space-ph"
+  ],
+  "primary_category": "astro-ph.SR"
+}
