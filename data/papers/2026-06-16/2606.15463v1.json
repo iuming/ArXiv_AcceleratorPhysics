@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.15463v1",
+  "url": "https://arxiv.org/abs/2606.15463v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.15463v1.pdf",
+  "title": "DarkFlow: Hierarchical Digital SiPM Architecture with Low-Loss Dataflow Readout for Dark Matter Detection",
+  "abstract": "Direct dark matter detection experiments require large-scale photon sensing arrays with hundreds of thousands of synchronized readout channels. Silicon photomultipliers (SiPMs) have emerged as a leading candidate for these detectors due to their high integration density, low bias voltage, and superior radiopurity. However, existing digital SiPM readout architectures struggle to simultaneously preserve nanosecond-level temporal resolution for sparse scintillation events and sustain data integrity during high-intensity photon bursts. We propose DarkFlow, a hierarchical digital SiPM architecture that features local data aggregation, compact relative-time encoding, consumer-driven backpressure, and occupancy-aware eDRAM burst buffering within a unified dataflow framework. We show that DarkFlow maintains ultra-low packet loss at billion-photon event rates, where conventional architectures can exceed 80% data loss. Besides, the occupancy-aware refresh achieves a 2.14x improvement in effective refresh rate over conventional global refresh. Hardware evaluation in GlobalFoundries 22nm node confirms that the digital readout datapath accounts for less than 0.86% of the detector area and complies with the strict power budget in liquid argon environments.",
+  "authors": [
+    "Zirui Wang",
+    "Aras Repond",
+    "Shawn Westerdale",
+    "Wantong Li"
+  ],
+  "published": "2026-06-13T20:41:54Z",
+  "updated": "2026-06-13T20:41:54Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.ET"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1145/3787109.3815257"
+}

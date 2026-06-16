@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2511.22486v3",
+  "url": "https://arxiv.org/abs/2511.22486v3",
+  "pdf_url": "https://arxiv.org/pdf/2511.22486v3.pdf",
+  "title": "The Machine Learning Approach to Moment Closure Relations for Plasma: A Review",
+  "abstract": "The requirement for large-scale global simulations of plasma is an ongoing challenge in both space and laboratory plasma physics. Any simulation based on a fluid model inherently requires a closure relation for the high order plasma moments. This review compiles and analyses the recent surge of machine learning approaches developing improved plasma closure models capable of capturing kinetic phenomena within plasma fluid models. We survey two methodological families: neural-network surrogates (from multilayer perceptrons to Fourier neural operators, the latter recently reproducing both linear and non-linear Landau damping online within a fluid solver) and equation-discovery methods such as sparse regression; and organise the studies by whether they are tested offline against reference data or online within a time-evolving solver. We outline the challenges associated with machine-learning closures, including off-diagonal pressure-tensor accuracy, generalisation beyond the training distribution, and stable integration into large-scale simulations, and the directions future research might take to address them.",
+  "authors": [
+    "Samuel Burles",
+    "Enrico Camporeale"
+  ],
+  "published": "2025-11-27T14:20:36Z",
+  "updated": "2026-06-15T14:04:35Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
