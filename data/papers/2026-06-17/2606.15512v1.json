@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.15512v1",
+  "url": "https://arxiv.org/abs/2606.15512v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.15512v1.pdf",
+  "title": "Towards Data-Efficient Cross-Device Generalization of Grad-Shafranov Equilibria via Transfer Learning Neural Operator",
+  "abstract": "Real-time reconstruction of magnetohydrodynamic equilibria is essential for plasma shaping, stability assessment and feedback control in magnetic confinement fusion. However, Grad-Shafranov equilibrium calculations remain largely device-specific and iterative, limiting their use in latency-constrained control settings. Existing neural approaches can accelerate individual equilibrium predictions, but they do not generally provide reusable models across changing plasma boundaries or tokamak geometries. Here we show that equilibrium reconstruction can be recast as a cross-device operator learning problem. We develop a domain-specific neural operator framework that maps geometry and profile parameters directly to the poloidal flux field, replacing repeated solve-on-demand computation with amortized operator inference. Using the analytically tractable Solov'ev family as a controlled Grad-Shafranov testbed, we generate equilibria across eight geometrically distinct tokamak-like configurations and benchmark five neural operator architectures under four transfer-learning strategies. Single-geometry pretraining gives poor transfer to unseen devices, whereas multi-geometry pretraining enables data-efficient adaptation. The Wavelet Neural Operator gives the strongest cross-geometry performance, reaching mean relative L2 errors below 4% with 100 labelled target equilibria and below 2% with full fine-tuning. The predicted magnetic fields satisfy the divergence-free constraint to numerical precision, and four architectures achieve millisecond or sub-millisecond inference. These results identify neural operator pretraining as a route towards reusable, real-time equilibrium inference across fusion device configurations.",
+  "authors": [
+    "Jay Phil Yoo",
+    "William Howes",
+    "Yashika Ghai",
+    "Kazuma Kobayashi",
+    "Souvik Chakraborty",
+    "Syed Bahauddin Alam"
+  ],
+  "published": "2026-06-13T23:47:19Z",
+  "updated": "2026-06-13T23:47:19Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
