@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.18294v1",
+  "url": "https://arxiv.org/abs/2606.18294v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.18294v1.pdf",
+  "title": "Vision AI Agent for Continuous Material Monitoring of LEGEND-1000 LoFi Reentrant Tube",
+  "abstract": "We report on a vision AI agent pipeline for non-contact material strain and property extraction from video data, demonstrated on video taken during hydrostatic testing of four OFHC copper cylinders conducted as part of the LEGEND-1000 hardware validation campaign. Traditional strain gauge measurements proved unreliable, motivating a fully-automated agentic alternative. The agent was built on the LangChain framework with Claude Haiku 4.5 as its central reasoning engine, integrating a specialized suite of computer vision tools: FFmpeg for video preprocessing and rotation correction via Hough Line Transform, the Segment Anything Model 2 (SAM2) for spatiotemporal segmentation with automated memory-informed dynamic chunking, and a hybrid EasyOCR and LLM-based timestamp validation pipeline. Three specialized sub-agents were developed to process the video data and obtain cylinder diameters and timestamps while autonomously handling obstacles such as corrupted frames and memory limits. From the diameter profiles synchronized to pressure data, hoop stress--strain curves were reconstructed and yield strengths were calculated using the 0.2\\% offset, 0.5\\% EUL, and Johnson-Cook methods across two independent tests. Cross-validation against a non-agentic pipeline confirmed agreement for the diameter extraction at the $\\pm$5 pixel level. The material properties and testing results were further compared to Ansys mechanical simulations performed as part of the LEGEND-1000 reentrant tube design campaign. This work showcases the power of agentic pipelines to extract materials data from video alone.",
+  "authors": [
+    "Sonata Simonaitis-Boyd",
+    "Soonhong Lee",
+    "Lauren N. O'Brien",
+    "Brandon T. Turner",
+    "Ralph Massarczyk",
+    "Steven R. Elliott",
+    "Aobo Li",
+    "Alexander F. Leder"
+  ],
+  "published": "2026-06-15T19:04:12Z",
+  "updated": "2026-06-15T19:04:12Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex",
+    "physics.app-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

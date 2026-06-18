@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.17959v1",
+  "url": "https://arxiv.org/abs/2606.17959v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.17959v1.pdf",
+  "title": "A High-Precision Frequency Locking Method Based on All-Phase FFT Demonstrated on a Crystal Oscillator with Rubidium Clock Reference",
+  "abstract": "This article proposes a novel frequency-locking method based on frequency-domain unbiased phase estimation (FDUPE) for high-precision frequency control. By performing weighted recombination of the acquired data followed by Fourier-transform processing, the phase at the center of the data segment can be estimated without bias, making the method suitable for frequency-locking applications. The principle of the proposed method is analyzed, and an electronic prototype is developed to experimentally validate its feasibility. In the prototype, analog-to-digital converters (ADCs) are used for signal digitization, and a field-programmable gate array (FPGA) is used to implement the FDUPE algorithm. A digital proportional-integral-derivative (PID) controller is also implemented on the FPGA to provide feedback for accurate frequency locking. In the experiment, a (10~\\mathrm{MHz}) voltage-controlled oscillator (VCO) with a free-running Allan deviation of (1 \\times 10^{-9}) at (1~\\mathrm{s}) is used as the device under test (DUT), while a rubidium atomic clock with an Allan deviation of (2 \\times 10^{-11}) at (1~\\mathrm{s}) serves as the high-stability reference source. Experimental results show that the proposed system achieves excellent locking performance, reducing the standard deviation of frequency fluctuations from (12.75~\\mathrm{mHz}) root-mean-square (rms) in the free-running state to (0.88~μ\\mathrm{Hz}) rms after locking. Correspondingly, the Allan deviation at (10~\\mathrm{s}) is reduced from (9.6 \\times 10^{-10}) to (1.45 \\times 10^{-14}), representing a five-order-of-magnitude improvement in frequency stability.",
+  "authors": [
+    "Qibin Zheng",
+    "Kang Xu",
+    "Jiacheng Yang",
+    "Liguo Zhou",
+    "Li Ding",
+    "Xianfeng Jiang",
+    "Zhaohui Bu"
+  ],
+  "published": "2026-06-16T14:10:28Z",
+  "updated": "2026-06-16T14:10:28Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
