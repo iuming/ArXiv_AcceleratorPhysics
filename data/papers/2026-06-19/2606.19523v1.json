@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.19523v1",
+  "url": "https://arxiv.org/abs/2606.19523v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.19523v1.pdf",
+  "title": "Bayesian optimization of stellarator alpha-particle confinement using data-informed parameter spaces and dimensionality reduction",
+  "abstract": "Modern stellarators are typically designed by optimizing the shape of the plasma boundary surface, with the parameters taken to be Fourier amplitudes. Many promising optimization algorithms such as Bayesian methods require bound constraints on the parameters and are most efficient when each parameter is scaled similarly to the others. With the typical Fourier parameterization, it is unclear how to set these bounds: wide constraints lead to self-intersecting boundaries and frequent failures of the MHD equilibrium calculation, while tight bound constraints limit expressiveness. To address these issues, here we propose two new parameter spaces for stellarator optimization. Both begin with a dataset of existing stellarator boundaries. In the first approach, a quantile transformation is applied to each Fourier degree of freedom, mapping the data distribution to a uniform distribution on the unit interval. In the second approach, principal component analysis (PCA) is applied to points on the boundaries, followed by a quantile transformation. For both approaches, the transformed variables become the degrees of freedom, naturally bounded to [0, 1]. The PCA method has the additional benefit of dimensionality reduction, with high expressiveness for a small number of parameters. The methods are demonstrated via Bayesian optimization for good alpha-particle confinement with guiding-center tracing inside the optimization loop, using asynchronous parallelization. These optimizations yield stellarator configurations with excellent fast-particle confinement in fields that can be far from quasisymmetric or quasi-isodynamic.",
+  "authors": [
+    "Matt Landreman",
+    "Michael Czekanski",
+    "Andrew Giuliani",
+    "Byoungchan Jang",
+    "Rory Conlin"
+  ],
+  "published": "2026-06-17T19:09:26Z",
+  "updated": "2026-06-17T19:09:26Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
