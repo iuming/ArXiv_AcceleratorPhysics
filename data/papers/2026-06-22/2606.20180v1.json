@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.20180v1",
+  "url": "https://arxiv.org/abs/2606.20180v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.20180v1.pdf",
+  "title": "Raw-Hit Muon Tomography: A Measurement-Domain Formulation for Cosmic-Ray Muon Imaging",
+  "abstract": "Cosmic-ray muon tomography records only a few detector-plane crossings per particle, while material information enters through stochastic scattering and energy loss along the path. Most pipelines first compress these hits to a per-muon scattering summary and assign a nominal momentum, moving the inverse problem away from the raw measurements. We introduce Raw-Hit Muon Tomography (RHMT), a measurement-domain formulation built directly on detector hits. RHMT-S projects out the unknown straight track and evaluates the remaining hit contrast with a Fermi--Eyges covariance; marginalizing the unknown scattering scale gives a blank-calibrated Student-$t$-type likelihood. RHMT-E fits the hits in a six-plane magnetic spectrometer to estimate each muon's log momentum loss and models it as a Bethe--Bloch line integral of the electron-density-related contrast $ρZ/A$. In a controlled Geant4 benchmark, RHMT-S improves the mean ROC-AUC over four-plane scattering baselines ($0.84$--$0.86$ versus $0.81$ for ASR), and RHMT-E provides a separate energy-loss contrast for aluminium, where scattering contrast is weak.",
+  "authors": [
+    "Zhizheng Zhao",
+    "Changhao Qin",
+    "Rongfeng Zhang",
+    "Zibo Qin",
+    "Qite Li"
+  ],
+  "published": "2026-06-18T12:51:18Z",
+  "updated": "2026-06-18T12:51:18Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
