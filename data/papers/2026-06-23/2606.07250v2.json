@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.07250v2",
+  "url": "https://arxiv.org/abs/2606.07250v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.07250v2.pdf",
+  "title": "Expanding LUME to Support Virtual Accelerators and Digital Twins",
+  "abstract": "Virtual accelerators and digital twins are increasingly essential tools for accelerator operations, controls development and verification, and model-based optimization. However, current implementations are often tightly coupled to specific simulation codes, facilities, and applications, resulting in fragmented, ad hoc solutions that are difficult to reuse or extend. To address this, we expand the LUME Python package to include standardized implementation and deployment of virtual accelerators and digital twins across heterogeneous simulation backends and control system interfaces. At the core of this change is the introduction of LUMEModel abstraction, which defines a fixed, simulator-agnostic API and a variable system that encodes metadata such as units and data types/validation. This design enables standardized interaction with physics-based simulators, surrogate models, and differentiable simulations, while supporting both Python-native workflows and IOC-based operation via EPICS using the lume-pva package. Facility- and simulator-specific details are encapsulated through extensible transformer layers, allowing consistent control-system semantics to be mapped onto diverse simulation engines. We describe the LUMEModel architecture, variable system, and package ecosystem, and present representative use cases including model interchangeability, staged and chained simulators, and continuous integration testing. This work will make implementing and using virtual accelerators easier and more flexible.",
+  "authors": [
+    "Ryan Roussel",
+    "Christopher M. Pierce",
+    "Sara Miskovich",
+    "Gopika Bhardwaj",
+    "Jeremy Lorelli",
+    "Ken Lauer",
+    "Auralee Edelen",
+    "Christopher Mayes"
+  ],
+  "published": "2026-06-05T13:22:26Z",
+  "updated": "2026-06-17T21:00:00Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

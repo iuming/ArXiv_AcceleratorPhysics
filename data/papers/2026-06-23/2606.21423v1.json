@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.21423v1",
+  "url": "https://arxiv.org/abs/2606.21423v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.21423v1.pdf",
+  "title": "Geometric numerical discretization of a quasineutral hybrid model of drift-kinetic electrons and fully kinetic ions",
+  "abstract": "We extend the geometric electromagnetic particle-in-cell (PIC) framework, GEMPICX, to solve the quasineutral hybrid Vlasov-Maxwell equations with drift-kinetic electrons and fully kinetic ions. A structure-preserving finite difference method that employs dual grids is used. The discrete action principle for the hybrid model is derived, using the dual nature of the grids. The dynamical system for this hybrid quasineutral model does not explicitly involve the temporal evolution term for the electric field. A curl-curl equation is therefore used to implicitly obtain the component of the electric field that is parallel to the background magnetic field, at every timestep. The perpendicular component of the electric field is obtained using the quasineutral Ampere's equation without the displacement current, combined with the definition of the current in the drift-kinetic model. The discretized versions of the electric field equations are large, sparse linear systems. A fully explicit time-stepping scheme as well as two implicit-explicit (IMEX) schemes are tested. The numerical model is validated by verifying the various waves obtained from the dispersion relation.",
+  "authors": [
+    "Nishant Narechania",
+    "Guo Meng",
+    "Emil Poulsen",
+    "Eric Sonnendruecker"
+  ],
+  "published": "2026-06-19T13:41:15Z",
+  "updated": "2026-06-19T13:41:15Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
