@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.24154v1",
+  "url": "https://arxiv.org/abs/2606.24154v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.24154v1.pdf",
+  "title": "neBEM: A GPU-accelerated Electrostatic Field Solver",
+  "abstract": "Accurate electric field estimation is critical for the design and optimization of Micro Pattern Gaseous Detectors (MPGDs). The nearly exact Boundary Element Method (neBEM) offers high precision field computation but is limited by long CPU runtime arising from its complex analytical formulations. This work presents a comprehensive optimization of the neBEM solver, focusing on a hybrid hardware acceleration strategy using OpenMP for multi-core CPUs and GPU acceleration using NVIDIA's CUDA. A key contribution is the new implementation of a dynamic space charge calculation, which has also been designed to be accelerated by CUDA. This primary acceleration is complemented by enhanced algorithmic optimizations to reduce the complexity of the problem. The proposed implementation achieves substantial speedups while preserving inherent accuracy of the solver. Simulations on staggered thick Gas Electron Multiplier geometries demonstrate agreement with other commercially available field solvers, verifying the fidelity of accelerated neBEM. Benchmarking tests show a significant speedup, enabling rapid yet precise simulations for complex MPGD configurations. These improvements make GPU-accelerated neBEM a practical tool for large-scale detector simulation.",
+  "authors": [
+    "Shubhabrata Dutta",
+    "Purba Bhattacharya",
+    "Tanay Dey",
+    "Nayana Majumdar",
+    "Supratik Mukhopadhyay"
+  ],
+  "published": "2026-06-23T05:20:53Z",
+  "updated": "2026-06-23T05:20:53Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

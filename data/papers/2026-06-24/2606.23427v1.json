@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.23427v1",
+  "url": "https://arxiv.org/abs/2606.23427v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.23427v1.pdf",
+  "title": "Disambiguation of magnetic sensors in ITER",
+  "abstract": "ITER will possess approximately 500 magnetic sensors (mainly measuring poloidal flux) distributed across the first wall. The coils are at known locations but the matching signals not necessarily known. There may also be mistakes in the wiring of the coil polarity. The existing strategy to disambiguate coils uses combinatoric programming of poloidal field coil waveforms of up to 48 discharges of plasma-less operation. An alternate strategy explored in this work is the energisation of a combination of both poloidal and toroidally asymmetric active coils, and Biot-Savart computation of the field solution from all active coils at the sensor coils. A direct brute force permutation of all $N$ coil combinations scales as $O(2^N N!) $ which is intractable for $N>10$. The mathematically formulated optimisation problem was analysed using AI-assisted coding tools, which identified the problem structure as a signed assignment problem and suggested a Hungarian-algorithm-based optimisation strategy, which scales as $O(N^3)$. This search algorithm, when embedded into the magnetic-diagnostic identification problem, was able to disambiguate randomly connected and polarised coils in a regularly spaced array in the ITER first wall (where the the coils are located) down to a signal-to-noise ratio of 50. The computation took 2 seconds. Reconstruction of the actual coil positions in the ITER first wall was achieved high confidence, $C>0.97$. Reconstruction of the second wall poloidal flux coils, which comprised multiple arrays at near constant $φ$ (each of which is regularly spaced in $θ$) had a much lower confidence, of $C > 0.15$. By adding the active poloidal field coils to the combined cost function, the confidence increased to $C > 0.59$. This provides the opportunity to reduce the commissioning time of ITER, and is a strategy that could be tested on other toroidal magnetic confinement devices.",
+  "authors": [
+    "M. J. Hole",
+    "S. D. Pinches",
+    "G. Vayakis",
+    "S. C. McIntosh",
+    "O. Hoenen",
+    "P. Abreu"
+  ],
+  "published": "2026-06-22T14:47:43Z",
+  "updated": "2026-06-22T14:47:43Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

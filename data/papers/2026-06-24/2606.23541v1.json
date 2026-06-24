@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.23541v1",
+  "url": "https://arxiv.org/abs/2606.23541v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.23541v1.pdf",
+  "title": "HeteroViT: A Versatile Single-Layer Vision Transformer Concept, Co-Designed for Distributed Real-Time Data Reduction on Scientific Detectors",
+  "abstract": "Next-generation X-ray detectors generate data faster than any system can affordably store or process. LCLS-II, the upgraded Linac Coherent Light Source at SLAC, produces data on the order of terabytes per second, with raw-data transfer and storage projected to be prohibitively costly, even though much of the data is not scientifically useful. This concept paper focuses on two major points. The first is versatility: a deliberately tiny, single-layer Vision Transformer (ViT) is enough to serve distinct scientific quick-evaluation tasks. We demonstrate this on two very different problems: (a) a supervised hit/miss/maybe classification on the CSPAD dataset, made to resemble ePixUHR-like detector frames, and (b) a self-supervised latent space for rare-event detection in X-ray diffraction spanning two learning paradigms, two output types, and two detector modalities, with one small backbone. The second is hardware co-design: because the ViT's blocks are structurally uniform, the model maps cleanly onto the heterogeneous hardware already present in the LCLS detector pipeline (ASIC -> FPGA -> GPU) under a simple rule one ASIC is one token so the data is reduced progressively at each stage and a keep/discard decision is produced in real time at the edge. The two claims reinforce each other: versatility is precisely what justifies freezing the front-end in silicon, since a reusable front-end is only worth committing to hardware if it serves many tasks. We are explicit that this is a concept supported by early software analysis, not a hardware demonstration. The natural and primary next phase is the hardware implementation of this distributed pipeline. The decisive evidence still owed an end-to-end latency budget, ASIC feasibility of the in-sensor embedding, and the false-negative behavior that matters for a data veto defines that program. HeteroViT is our first step toward it.",
+  "authors": [
+    "Abhilasha Dave",
+    "Weijian Zheng",
+    "Antonino Miceli",
+    "Dionisio Doering",
+    "Ryan Herbst",
+    "Angelo Dragone"
+  ],
+  "published": "2026-06-22T16:17:15Z",
+  "updated": "2026-06-22T16:17:15Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.AR"
+  ],
+  "primary_category": "physics.ins-det"
+}
