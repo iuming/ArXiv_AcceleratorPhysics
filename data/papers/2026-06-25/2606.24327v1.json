@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.24327v1",
+  "url": "https://arxiv.org/abs/2606.24327v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.24327v1.pdf",
+  "title": "OpenMP GPU Acceleration and Portability of TRIMEG-C1 for Electromagnetic Gyrokinetic Simulations in Tokamak Plasmas",
+  "abstract": "The Triangular mesh-based gyrokinetic code TRIMEG-C1 solves the gyrokinetic equations using the particle-in-cell scheme to simulate electromagnetic instabilities in tokamak plasmas. TRIMEG-C1 utilizes a high-order C1 finite element method, which captures the accurate physics with lower grid resolution than the C0 method. In this work, we focus on achieving a portable implementation on multiple graphics processing unit (GPU) architectures to accelerate the TRIMEG-C1 code for future physics studies. The OpenMP framework is chosen as the acceleration framework for GPU offloading on different hardware platforms, specifically, NVIDIA and AMD GPUs. The particle pushing procedure, as well as particle-to-grid operations have been adapted for GPU execution. A speedup of $\\approx9$ for the particle pusher kernel is achieved on 2 AMD MI300A APUs (Accelerated Processing Unit) compared with 2 AMD 9754 CPUs. In addition, the efficiency of hybrid MPI-OpenMP offloading parallelization was assessed by oversubscribing GPU resources. The Ion Temperature Gradient (ITG) mode was simulated using the GPU implementation, and its correctness was verified by comparing the physics results in terms of the energy growth rate and the two-dimensional mode structures.",
+  "authors": [
+    "Giorgio Daneri",
+    "Zhixin Lu",
+    "Matthias Hoelzl",
+    "Luca Venerando Greco",
+    "Edoardo Carrà"
+  ],
+  "published": "2026-06-23T09:03:00Z",
+  "updated": "2026-06-23T09:03:00Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.DC",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
