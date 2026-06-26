@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.27231v1",
+  "url": "https://arxiv.org/abs/2606.27231v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.27231v1.pdf",
+  "title": "A hardware-safety-gated system for LLM-written native ARTIQ control code on a trapped-ion platform",
+  "abstract": "Large-language-model (LLM) agents can write and run experimental control code. This allows laboratory work to be conducted autonomously. However, this autonomy raises a safety problem that prior work has not addressed. Unchecked code can damage the apparatus, and there is no formal, per-operation boundary between human authorization/supervision, and agent decisions. We present a control system that places an LLM agent in the loop of a trapped-ion experiment while enforcing such a boundary. The agent controls the existing Advanced Real-Time Infrastructure for Quantum physics (ARTIQ) stack through tools provided by a Model Context Protocol (MCP) server. No tool call reaches the hardware unless it carries an authorization token bound to its exact contents. Tokens are issued in one of two ways: automatically, by running the agent's proposed script in an isolated hardware simulation (dax.sim) and checking every operation against preset per-device bounds, or manually by a human operator for sensitive actions. Within this boundary the agent develops its own experiments, rather than only calling pre-built routines. We deploy the system on a co-trapped $^{40}$Ca$^{+}$/$^{40}$CaOH$^{+}$ crystal, where the agent autonomously builds a full calibration stack and, with targeted operator guidance, closes a cross-instrument magnetic-field-stabilization loop. On a separate, independent $^{171}$Yb$^{+}$ platform, we confirm interface-level portability. We systematically test token-authorization mechanism with adversarial scripts that attempt to bypass it, mapping the precise boundary of its protection and prioritizing where to strengthen it next. Analyzing where the agent still requires human guidance, we find that its limits lie in metacognitive control, namely recognizing when a problem must be re-framed, rather than in domain knowledge.",
+  "authors": [
+    "Duanyang Wang",
+    "Lu Qi",
+    "Yuanheng Xie",
+    "Norbert M. Linke",
+    "Kenneth R. Brown"
+  ],
+  "published": "2026-06-25T16:19:23Z",
+  "updated": "2026-06-25T16:19:23Z",
+  "categories": [
+    "quant-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "quant-ph"
+}

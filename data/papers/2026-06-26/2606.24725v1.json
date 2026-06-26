@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.24725v1",
+  "url": "https://arxiv.org/abs/2606.24725v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.24725v1.pdf",
+  "title": "A Grounded Evidence-Retrieval Benchmark and Hybrid RAG Framework for Silicon Pixel Detector R&D",
+  "abstract": "The rapid growth of silicon pixel detector literature has made systematic evidence retrieval a practical bottleneck for detector R&D. Large language models alone are insufficient for this task, as specialised detector knowledge, long-tail technical details, and recent experimental results must be grounded in primary literature. We present the first evidence-grounded retrieval benchmark and a reproducible retrieval framework for silicon pixel detector studies, combining sparse lexical retrieval, dense semantic retrieval, hybrid retrieval, and graph-based literature exploration. The benchmark includes manually curated chunk-level evidence annotations, source-level diagnostics, semantic relevance checks, and negative-query abstention tests across two complementary detector-domain query sets. Systematic evaluation shows that hybrid sparse-dense retrieval provides the most reliable evidence recovery, while graph-based approaches are more effective for literature exploration than strict evidence ranking. These results highlight the importance of evidence-grounded retrieval for accessing long-tail detector knowledge and provide a practical foundation for retrieval-augmented tools supporting silicon detector research and high-energy physics instrumentation.",
+  "authors": [
+    "Tianqi Gao",
+    "Ruobing Jiang",
+    "Dawei Fu",
+    "Qiang Li",
+    "Matthew Kenzie"
+  ],
+  "published": "2026-06-23T15:49:58Z",
+  "updated": "2026-06-23T15:49:58Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
