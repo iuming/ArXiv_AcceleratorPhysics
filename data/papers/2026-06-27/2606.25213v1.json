@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.25213v1",
+  "url": "https://arxiv.org/abs/2606.25213v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.25213v1.pdf",
+  "title": "A toroidally spectral field solver in the X-point Gyrokinetic Code for accurate simulation of reduced magneto-hydrodynamic modes",
+  "abstract": "A new field solver has been implemented in the global electromagnetic total-$f$ gyrokinetic particle-in-cell code XGC to extend the code's capability to large-scale reduced MHD-type instabilities in tokamak plasma. While XGC's regular field solver is accurate at typical microturbulence scales of the order of the ion Larmor radius in tokamaks with arbitrary aspect ratio, a more accurate field solver is required for large-scale (i.e., low toroidal mode number) MHD-type modes such as internal kink, tearing and peeling modes. The higher accuracy of the new field solver is achieved by dropping the (large aspect ratio) assumption that the poloidal magnetic field is much smaller than the toroidal magnetic field, while its numerical complexity is controlled by using a spectral discretization in the toroidal direction. To cover the entire spectrum from large-scale MHD-type modes to small-scale microturbulence, the regular and the new field solver can be run alongside each other. This work details the derivation of the new field solver, analyzes the differences between the XGC's regular and new field solvers, and verifies the new field solver against analytic predictions and the gyrokinetic code ORB5 and the MHD code NIMROD.",
+  "authors": [
+    "Robert Hager",
+    "C. S. Chang",
+    "Thomas Gade",
+    "Eric Held",
+    "Seung-Hoe Ku",
+    "Alexey Mishchenko",
+    "Aaron Scheinberg",
+    "Benjamin Sturdevant"
+  ],
+  "published": "2026-06-23T22:16:28Z",
+  "updated": "2026-06-23T22:16:28Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
