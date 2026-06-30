@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.28613v1",
+  "url": "https://arxiv.org/abs/2606.28613v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.28613v1.pdf",
+  "title": "Semi-Implicit Stellarator Magnetohydrodynamics with Nodal Spectral Elements",
+  "abstract": "Nonlinear time-dependent computation of macroscale dynamics in stellarators is motivated by laboratory results showing the possibility of robust operation in conditions where magnetohydrodynamic (MHD) modes are linearly unstable. A new formulation of semi-implicit MHD computation for toroidally shaped magnetic confinement systems uses 2D nodal spectral elements over the poloidal plane and Fourier representation over a generalized toroidal angle. Geometric mappings and steady-state (equilibrium) fields are expanded in the same 3D representation as the time-evolved fields to model non-axisymmetric configurations. For accuracy at large timestep, the semi-implicit operator is based on the ideal-MHD energy integral using 3D pressure and magnetic fields. The nodal spectral elements allow numerical convergence through either h-refinement or p- refinement. Our implementation (NIMSTELL) with the continuous H1 expansion of magnetic-field components and diUusive divergence control is a generalization of the NIMROD code [JCOMP 195, 355]. The NIMSTELL implementation is verified linearly and nonlinearly on resonant ideal interchange, where convergence from the stable side results from the stabilization method used in NIMROD [JCOMP 319, 61]. Optionally, NIMSTELL may use an H(curl) representation for vector potential, and both magnetic representations are verified with respect to results from JOREK [Phys. Plasmas 29, 063901] on linear and nonlinear magnetic tearing in the W7-A rotating-ellipse configuration. Application of the existing vector-potential implementation to interchange shows that it needs a minimum level of electrical resistivity to avoid numerical noise for a given level of spatial resolution. Solving the algebraic systems from the implicit parts of the time advance is facilitated by including the Fourier components of stellarator mode families in each preconditioning operation.",
+  "authors": [
+    "C. R. Sovinec",
+    "S. A. Patil",
+    "J. V. Cauilan"
+  ],
+  "published": "2026-06-26T21:13:32Z",
+  "updated": "2026-06-26T21:13:32Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
