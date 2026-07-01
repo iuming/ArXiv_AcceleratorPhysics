@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.30978v1",
+  "url": "https://arxiv.org/abs/2606.30978v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.30978v1.pdf",
+  "title": "An Enhanced RPA-LDA Model for Ion Stopping Power from Cold Matter to High-Energy Density Plasmas: A Unified, Open-Source Framework",
+  "abstract": "We present an enhanced random-phase-approximation--local-density-approximation (e-RPA-LDA) model for the stopping power of ions that is valid over a wide range of conditions, from cold solids through warm dense matter to high-energy-density plasmas. The electronic stopping is computed from the RPA dielectric response in the local-density approximation over an average-atom electron density obtained in a muffin-tin potential with the Flexible Atomic Code, augmented by four corrections to the earlier RPA-LDA model of Wang et al.: a strong-collision correction for large-momentum-transfer events, a static local-field correction for electron correlations, an electron-binding correction, and the higher-order Barkas and Bloch terms. The resulting proton stopping powers agree with the NIST PSTAR and IAEA databases across the periodic table and for compounds -- providing a physics-based alternative to semi-empirical codes such as SRIM -- and reproduce the limited published plasma data, including charged-particle transport-workshop benchmarks, time-dependent DFT calculations, and the first measurements of enhanced light-ion stopping in plasmas. We further extend the model to a complete total stopping power for protons and alpha particles by adding nuclear and ionic (elastic ion-ion) stopping to the electronic term, yielding a continuous, self-consistent description of energy deposition from cold matter to hot dense plasmas. Because the average-atom treatment includes contributions from all electrons -- unlike Kohn-Sham DFT -- while remaining computationally efficient and applicable to low- and high-Z targets at arbitrary temperature and degeneracy, the model is well suited to inertial fusion and high-energy-density science. The computational framework is available on GitHub (https://github.com/dedx-erpa/dedx), with tabulated stopping powers and ranges in the data/ subdirectory.",
+  "authors": [
+    "Thomas A. Mehlhorn",
+    "Ming Feng Gu",
+    "Igor Golovkin"
+  ],
+  "published": "2026-06-29T23:25:54Z",
+  "updated": "2026-06-29T23:25:54Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cond-mat.mtrl-sci",
+    "physics.atom-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

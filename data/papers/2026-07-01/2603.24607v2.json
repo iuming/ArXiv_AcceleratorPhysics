@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2603.24607v2",
+  "url": "https://arxiv.org/abs/2603.24607v2",
+  "pdf_url": "https://arxiv.org/pdf/2603.24607v2.pdf",
+  "title": "Physics at the Edge: Benchmarking Quantisation Techniques and the Edge TPU for Neutrino Interaction Recognition",
+  "abstract": "This work presents a comprehensive benchmark of different quantisation techniques for convolutional neural networks applied to neutrino interaction recognition. Utilising simulation for a generic liquid argon time-projection chamber, models are quantised and then deployed on the Google Coral Edge TPU. Models are tasked with recognising which neutrino interaction is simulated in the image between neutral current, muon-neutrino charged current, and electron-neutrino charged current. Four Keras models are tested, and accuracy is measured across two different pipelines: using post-training integer quantisation and quantisation-aware training. Inference speed is benchmarked against an AMD EPYC 7763 CPU and NVIDIA A100 GPU. A study of the energy consumption is also presented, with attention to potential costs and environmental issues. Results show that, among the four models tested, accuracy degradation is limited and, in particular, Inception V3 presents almost no accuracy degradation across the two quantisation and deployment pipelines. The speed of the edge TPU is comparable to that of the CPU, and one order of magnitude slower than the GPU. Moreover, the energy consumption of all models deployed on the edge TPU is several orders of magnitude lower than that of the CPU and GPU. In the energy consumption-latency parameter space, CPU, GPU, and edge TPU performances can be clearly separated. This paper explores possible future integrations of edge AI technologies with neutrino physics.",
+  "authors": [
+    "Stefano Vergani",
+    "Hilary Utaegbulam",
+    "Michael Wang",
+    "Leigh H. Whitehead",
+    "Arden Tsang",
+    "Lorenzo Uboldi"
+  ],
+  "published": "2026-03-19T18:50:39Z",
+  "updated": "2026-06-29T18:57:13Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

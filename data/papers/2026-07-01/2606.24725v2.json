@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.24725v2",
+  "url": "https://arxiv.org/abs/2606.24725v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.24725v2.pdf",
+  "title": "A Reproducible Benchmark and Evidence-Retrieval Software Framework for Silicon Detector R&D Literature",
+  "abstract": "Silicon pixel detector R&D depends on a large and rapidly growing technical literature, including beam-test and irradiation studies, detector-performance measurements, simulation papers, and design reports. Locating the supporting evidence passage for a measurement, operating condition, or design decision is therefore a computing and data-science challenge for detector-development workflows. General-purpose language models are insufficient unless grounded in traceable primary sources, particularly in a domain with specialised terminology, configuration-dependent measurements, and rapidly evolving experimental results. We present a reproducible evidence-retrieval software framework for silicon detector R&D literature, combining corpus processing, passage-level indexing, sparse lexical retrieval, dense semantic retrieval, hybrid reciprocal-rank fusion, graph-guided literature exploration, grounded response generation, and quantitative evaluation. The benchmark provides manually curated chunk-level evidence annotations, source-level diagnostics, semantic relevance checks, and negative-query abstention tests across two detector-domain query sets, with evaluation code, benchmark annotations, and retrieval outputs released to support reproducible comparison and adaptation to other detector-literature corpora. Using this literature as the validation domain, we evaluate six retrieval configurations across 378 source documents and 8,442 indexed chunks. Hybrid sparse-dense retrieval gives the strongest strict evidence recovery, achieving Hit@5 values of 0.917 on the core benchmark and 0.951 on the curated extension benchmark, while graph-based methods are more effective for literature exploration and source discovery. Graph expansion should therefore be treated as an exploratory layer, while high-precision hybrid retrieval remains the default evidence-ranking backbone.",
+  "authors": [
+    "Tianqi Gao",
+    "Ruobing Jiang",
+    "Dawei Fu",
+    "Qiang Li",
+    "Matthew Kenzie"
+  ],
+  "published": "2026-06-23T15:49:58Z",
+  "updated": "2026-06-29T15:39:17Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
