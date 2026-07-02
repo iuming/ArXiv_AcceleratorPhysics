@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.00841v1",
+  "url": "https://arxiv.org/abs/2607.00841v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.00841v1.pdf",
+  "title": "Real-Time FPGA-Based SiPM Detector Emulation Using a Temporally Quantized Model",
+  "abstract": "We present a real-time hardware implementation of a versatile detector emulator capable of reproducing realistic silicon photomultiplier signals. Our approach builds upon the open-source SimSiPM framework, originally developed to simulate the microscopic response of silicon photomultipliers, including photon detection efficiency, optical crosstalk, afterpulsing, and dark counts. SimSiPM provides idealized photon-level data with arbitrary temporal and amplitude resolution. In contrast, our emulator, built on a field-programmable gate array, translates this fine-grained simulation into physically realizable analog signals, maintaining real-time operation and finite hardware resolution. The system receives simulated photon events either via a 10-gigabit Ethernet stream or directly from the processing system of a system-on-chip, and performs on-chip temporal quantization, dividing time into bins equal to one clock cycle. All photon hits within a bin are accumulated, and their contribution is combined through a weighted temporal averaging scheme that preserves sub-bin precision. Signal shaping is executed entirely in hardware, using parallel one-pole recursive filters that synthesize the rise and the two decay components of the response. The resulting waveform is converted to analog through dual 16-bit digital-to-analog converters operating at 2.5 gigasamples per second. This architecture generates physically accurate detector signals in real time, rather than replaying precomputed waveforms. It also generalizes beyond silicon photomultipliers, providing a flexible framework for hardware-in-the-loop testing of front-end electronics. The proposed implementation demonstrates high throughput, low latency, and minimal processor overhead.",
+  "authors": [
+    "Stefano Carsi",
+    "Edoardo Proserpio",
+    "Andrea Abba",
+    "Francesco Caponio",
+    "Valentina Arosio"
+  ],
+  "published": "2026-07-01T12:08:36Z",
+  "updated": "2026-07-01T12:08:36Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
