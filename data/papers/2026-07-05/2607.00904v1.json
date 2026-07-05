@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.00904v1",
+  "url": "https://arxiv.org/abs/2607.00904v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.00904v1.pdf",
+  "title": "TD-Link: A Daisy-Chain Optical Architecture for Integrated Data Readout and Deterministic Timing Distribution in Large-Scale Detector Systems",
+  "abstract": "TD-Link is a custom optical communication architecture that combines high-throughput data readout and sub-nanosecond timing synchronization over a single optical fiber for large-scale detector systems. The protocol adopts a multidrop daisy-chain ring topology connecting a Data Concentrator to up to sixteen FERS front-end boards per link, with up to eight independent links per concentrator. Operating at 3.125~Gb/s, TD-Link carries data, synchronization, and control traffic within the same serial stream through a token-based streaming protocol that minimizes per-hop latency and supports on-the-fly payload fragmentation. Transmitter lane alignment on the concentrator is achieved by exploiting the half-full condition of the multi-gigabit transceiver elastic buffer as a one-bit phase detector: a firmware finite-state machine iteratively adjusts the transmit phase interpolator until the FIFO write-to-read pointer difference reaches half-depth, locking each lane to a deterministic phase condition. A Digital Dual Mixer Time Difference (DDMTD) circuit is employed for inter-concentrator synchronization, measuring and compensating the phase offset between the recovered transceiver clock and the FPGA fabric reference clock. On the FERS boards, the recovered clock is cleaned by an external zero-delay PLL and retransmitted downstream, preserving phase coherence along the daisy chain. Experimental validation with CERN PicoTDC-equipped FERS boards demonstrates a board-to-board synchronization sigma of 7~ps for boards sharing a coaxial reference clock and below 28~ps for boards on independent concentrators. The results are stable across power cycles, confirming the robustness of the alignment strategy.",
+  "authors": [
+    "Andrea Abba",
+    "Gianluca Becuzzi",
+    "Matteo Bianchini",
+    "Francesco Caponio",
+    "Stefano Carsi",
+    "Alberto Cusimano",
+    "Camilla Maggio",
+    "Annalisa Mati",
+    "Daniele Ninci",
+    "Andrea Picchi",
+    "Carlo Tintori"
+  ],
+  "published": "2026-07-01T13:06:37Z",
+  "updated": "2026-07-01T13:06:37Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

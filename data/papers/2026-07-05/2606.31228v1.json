@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.31228v1",
+  "url": "https://arxiv.org/abs/2606.31228v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.31228v1.pdf",
+  "title": "FPGA-based LQG controller and hardware-in-the-loop simulator implementation for nanomechanical systems",
+  "abstract": "We present an open-source framework for real-time Linear Quadratic Gaussian (LQG) control and hardware-in-the-loop (HIL) simulation on the affordable Red Pitaya STEMlab FPGA platform. The controller implements a discrete-time Kalman filter and Linear Quadratic Regulator (LQR) for systems with up to three coupled oscillatory degrees of freedom, targeting applications in levitated optomechanics, MEMS/NEMS, and related experimental platforms. Complementing the controller, the HIL simulator provides a~configurable second-order stochastic plant with nonlinear input and output mappings, enabling realistic closed-loop testing under real-time and fixed-point constraints. A MATLAB-based workflow automates model configuration, controller synthesis, numerical scaling, and FPGA deployment without requiring specialized hardware expertise. As an end-to-end demonstration, we present the stabilization of a levitated nanoparticle in a two-dimensional double-well potential, illustrating the complete workflow from model definition and simulation to real-time feedback control.",
+  "authors": [
+    "Vojtěch Mlynář",
+    "Johannes Berndorfer",
+    "Andreas Kugi",
+    "Andreas Deutschmann-Olek"
+  ],
+  "published": "2026-06-30T07:07:33Z",
+  "updated": "2026-06-30T07:07:33Z",
+  "categories": [
+    "eess.SY",
+    "physics.app-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.SY"
+}

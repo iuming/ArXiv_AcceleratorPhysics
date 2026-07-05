@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.30199v1",
+  "url": "https://arxiv.org/abs/2606.30199v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.30199v1.pdf",
+  "title": "Arduino based interferometer stabilizer equipped with a digital lock-in amplifier",
+  "abstract": "Interferometric sensors are ubiquitous in precision metrology, yet their performance is fundamentally limited by environmental noise and thermal drift. To achieve maximum sensitivity, these systems must be actively stabilized at the quadrature point of the interference fringe. Commercial stabilization solutions, typically based on analog lock-in amplifiers or FPGA architectures, are often prohibitively expensive and do not not offer the flexibility needed for custom experimental setups. In this work, we present an open-source, compact and low-cost digital stabilization system built upon the dual-core Arduino Giga R1 microcontroller. The system features a custom analog front-end with programmable gain amplifiers (PGAs) and active signal conditioning, enabling direct integration with standard amplified photodiodes. We implement a firmware-based digital lock-in amplifier running at a 100 kHz sampling rate, which performs real-time demodulation and PID feedback control without the latency bottlenecks of PC-based loops. Experimental characterization demonstrates that the system effectively suppresses long-term thermal drift and actively rejects external perturbations. The resulting device provides a standalone, Arduino-based alternative for laser frequency stabilization and interferometric control in educational and research laboratories.",
+  "authors": [
+    "Giuseppe Emanuele Lio",
+    "Saravanan Rajamani",
+    "Alessandro Pitanti",
+    "Stefano Roddaro",
+    "Simone Zanotto"
+  ],
+  "published": "2026-06-29T12:16:17Z",
+  "updated": "2026-06-29T12:16:17Z",
+  "categories": [
+    "physics.optics",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics"
+}

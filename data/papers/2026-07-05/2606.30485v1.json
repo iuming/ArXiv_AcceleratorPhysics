@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.30485v1",
+  "url": "https://arxiv.org/abs/2606.30485v1",
+  "pdf_url": "https://arxiv.org/pdf/2606.30485v1.pdf",
+  "title": "Detector-aware target definitions for full-event particle reconstruction",
+  "abstract": "Hit-level ML-based particle reconstruction methods have recently shown promising results. However, the reconstruction models are currently provided with targets that are unaware of the detector geometry and its resolution, resulting in training ambiguities. This can introduce a dependence on sample priors and reduce robustness under changes in event topology. We study the effect of a detector-aware target definition in the context of end-to-end Particle Flow reconstruction using a generic GEANT4-based detector simulation. We introduce the concept of detector-aware targets built from calorimeter showers with a hit-based merging algorithm based on cell-wise energy sharing that takes into account the spatial resolution of the detector. This includes a Particle-Flow-aware variant that preserves charged-particle consistency. Using a fixed GNN-based reconstruction model, we show that merged targets improve physics performance on a training-like sample. More importantly, models evaluated on an independent sample with different particle composition and topology show improved momentum response and resolution when trained with PF-aware merged targets. Our results show that removing experimentally non-resolvable target structure enhances not only reconstruction performance, but also improves model robustness against process-dependent variations in event topology.",
+  "authors": [
+    "Katharina Schäuble",
+    "Alessandro Brusamolino",
+    "Dolores Garcia",
+    "Jan Kieseler"
+  ],
+  "published": "2026-06-29T15:47:48Z",
+  "updated": "2026-06-29T15:47:48Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}
