@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.24725v3",
+  "url": "https://arxiv.org/abs/2606.24725v3",
+  "pdf_url": "https://arxiv.org/pdf/2606.24725v3.pdf",
+  "title": "A Reproducible Benchmark and Evidence-Retrieval Software Framework for Silicon Detector R&D Literature",
+  "abstract": "Silicon pixel detector R&D depends on a large and rapidly growing technical literature, including beam-test and irradiation studies, performance measurements, simulation, and design reports. Locating the supporting evidence passage for a measurement, operating condition, or design decision is therefore a computing and data-science challenge for detector-development workflows. General-purpose language models are insufficient unless grounded in traceable primary sources, particularly in a domain with specialised terminology, configuration-dependent measurements, and rapidly evolving experimental results. We address this with a reproducible, general-purpose framework for evidence-grounded retrieval over technical literature, using silicon pixel detector R&D as a demanding validation domain. The framework combines sparse lexical retrieval, dense semantic retrieval, and hybrid reciprocal-rank fusion, with an optional graph-guided exploration layer and grounded, abstention-aware response generation. The accompanying benchmark provides manually curated chunk-level evidence annotations, source-level diagnostics, semantic relevance checks, and negative-query abstention tests over two detector query sets. We evaluate six retrieval configurations across 378 source documents and 8,442 indexed chunks. Hybrid sparse-dense retrieval gives the strongest strict evidence recovery, achieving Hit@5 of 0.917 on the core benchmark and 0.951 on the curated extension benchmark, while graph-based methods are more effective for literature exploration and source discovery. Graph expansion is therefore best employed as a discovery layer over the hybrid retrieval backbone. The framework provides reusable software for traceable, 1 evidence-grounded knowledge access in silicon detector R&D and high-energy physics instrumentation.",
+  "authors": [
+    "Tianqi Gao",
+    "Ruobing Jiang",
+    "Dawei Fu",
+    "Qiang Li",
+    "Matthew Kenzie"
+  ],
+  "published": "2026-06-23T15:49:58Z",
+  "updated": "2026-07-02T12:12:50Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
