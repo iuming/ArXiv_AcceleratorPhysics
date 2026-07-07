@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.03492v1",
+  "url": "https://arxiv.org/abs/2607.03492v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.03492v1.pdf",
+  "title": "Online Data Reduction with Spiking Neural Networks: A Temporal-Coincidence Encoder and Distributed SNN for the ePIC dRICH Detector",
+  "abstract": "The dual-radiator Ring Imaging Cherenkov (dRICH) detector of the ePIC experiment at the Electron-Ion Collider (EIC) will read out $\\sim$320,000 silicon photomultiplier (SiPM) channels at a bunch-crossing rate of 100 MHz. The dark count rate (DCR) of the SiPMs is expected to rise up to 300 kHz per channel over the experiment lifetime, saturating the output bandwidth and requiring an online data reduction factor of at least five. Most crossings contain only uncorrelated DCR hits, while genuine Cherenkov hits cluster within $\\sim$2 ns of the 10 ns crossing window: an intrinsically temporal discrimination problem. We present a two-stage online data reduction pipeline based on spiking neural networks (SNNs). The first stage is a per-photodetection-unit leaky-integrate-and-fire (LIF) temporal coincidence encoder that converts raw SiPM hits into a sparse spike stream, achieving over 90% data sparsification before any learned classifier is applied. The second stage is a distributed SNN (30 sub-sector networks plus an aggregation network) deployed on FELIX-155 DAM boards and a dedicated Trigger Processor board, classifying each crossing as Noise-Only or Signal+Noise. On simulated ePIC events the system reaches a true positive rate above 94% at a true negative rate of at least 80% across the full DCR range; an optional early-exit strategy reduces the average classification latency to $\\sim$2 algorithmic timesteps at the cost of a few percentage points on both metrics. A hardware proof-of-concept on an AMD Versal Premium FPGA, integrating the LIF encoder with the AIGOR multi-core neuromorphic architecture, validates a single sub-sector pipeline at $\\sim$1.7 MHz throughput; ongoing work targets 100 MHz through an identified set of optimizations of the inference fabric. The methodology may be relevant to other timing-driven detector applications at high rate.",
+  "authors": [
+    "Pierpaolo Perticaroli",
+    "Roberto Ammendola",
+    "Andrea Biagioni",
+    "Ottorino Frezza",
+    "Francesca Lo Cicero",
+    "Michele Martinelli",
+    "Pier Stanislao Paolucci",
+    "Elena Pastorelli",
+    "Luca Pontisso",
+    "Cristian Rossi",
+    "Francesco Simula",
+    "Piero Vicini",
+    "Alessandro Lonardo"
+  ],
+  "published": "2026-07-03T16:59:31Z",
+  "updated": "2026-07-03T16:59:31Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

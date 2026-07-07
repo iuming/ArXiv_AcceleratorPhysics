@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.05137v1",
+  "url": "https://arxiv.org/abs/2607.05137v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.05137v1.pdf",
+  "title": "SoPlasmaFoam: an OpenFOAM-based solver for streamer and dielectric barrier discharges with adaptive mesh refinement",
+  "abstract": "SoPlasmaFoam is an open-source, multi-region plasma-dielectric solver built on OpenFOAM, integrated with the PETSc linear-algebra suite (CPU and GPU back-ends), the blastAMR adaptive-mesh-refinement library (hexahedral and polyhedral meshes), and the ROUND family of high-resolution convective schemes. It solves drift-diffusion-reaction transport for charged species, coupled self-consistently to Poisson's equation explicitly or semi-implicitly, with plasma and dielectric regions joined by a monolithic multi-domain coupling for arbitrary curved interfaces. This work makes three contributions. First, a systematic assessment of convective schemes on a stiff scalar-advection problem and the positive-streamer benchmark shows that Scharfetter-Gummel is stable but excessively diffusive on coarse meshes, while ROUNDF outperforms all tested TVD limiters and is recommended for streamer transport. Second, an analysis of Poisson-transport coupling shows that fixed-point correction loops critically control accuracy, that a semi-implicit Poisson formulation does not remove this requirement, and that coupling must be tightened even when Courant and dielectric-relaxation numbers are well below unity. Third, a drift-robust wall boundary condition acting on discretized matrix coefficients is introduced, remaining accurate in the drift-dominated limit where conventional mixed-boundary mappings fail. The solver is validated against a low-pressure DC glow discharge and the positive-streamer benchmark, and its multi-region capability is demonstrated on a nanosecond surface dielectric barrier discharge. Performance analysis confirms memory-bound finite-volume scaling and shows that with AMR the solver is competitive with the fastest reported plasma codes. The framework provides a modular foundation for multiphysics simulations in plasma-assisted combustion, plasma processing, and plasma-based flow control.",
+  "authors": [
+    "R. Pasolari",
+    "K. Kourtzanidis"
+  ],
+  "published": "2026-07-06T14:21:52Z",
+  "updated": "2026-07-06T14:21:52Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.CE",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

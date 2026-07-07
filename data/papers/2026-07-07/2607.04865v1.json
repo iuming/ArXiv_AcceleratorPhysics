@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.04865v1",
+  "url": "https://arxiv.org/abs/2607.04865v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.04865v1.pdf",
+  "title": "Deep Learning Models for ADITYA-U MHD Equilibrium",
+  "abstract": "This work presents deep learning models to predict magnetohydrodynamic equilibrium parameters and profiles for the ADITYA-U tokamak. A synthetic free-boundary equilibrium dataset consisting of 100,760 cases was generated using the pyIPREQ Grad-Shafranov solver, with inputs derived from 766 ADITYA-U plasma discharges and constrained to experimentally relevant circular limiter plasmas near the flat-top phase. Several deep learning approaches were investigated for predicting scalar equilibrium quantities, one-dimensional safety factor profiles and two-dimensional poloidal flux profiles. These approaches included Dense neural networks, principal component analysis based reduced-order models, one-dimensional and two-dimensional convolutional neural networks, and physics-informed neural networks incorporating Grad-Shafranov residual constraints. In addition, an inverse model was developed to estimate poloidal field coil currents from desired plasma equilibrium conditions. The results demonstrate that key equilibrium parameters and profiles can be accurately estimated within the operational domain represented by the dataset. The developed models provide a computationally efficient alternative to conventional equilibrium estimation and can be useful for real-time plasma control, rapid equilibrium analysis, and experimental planning in ADITYA-U operations.",
+  "authors": [
+    "Udaya Maurya",
+    "Suman Aich",
+    "Indranil Bandyopadhyay",
+    "Daniel Raju"
+  ],
+  "published": "2026-07-06T09:38:44Z",
+  "updated": "2026-07-06T09:38:44Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
