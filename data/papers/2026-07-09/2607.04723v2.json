@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.04723v2",
+  "url": "https://arxiv.org/abs/2607.04723v2",
+  "pdf_url": "https://arxiv.org/pdf/2607.04723v2.pdf",
+  "title": "Hybrid pattern recognition for charged particle tracking: Hough transform and convolutional neural efficiency networks",
+  "abstract": "Reconstructing charged-particle tracks in silicon detectors is a central task in high-energy physics experiments and a key component of both offline reconstruction and online event selection. Within the reconstruction chain, the efficient and high-purity formation of track candidates plays a critical role in the overall performance. Among the many approaches developed over the years, the Hough transform (HT) has been widely studied as a fast geometry-driven method for track finding. However, in high-occupancy environments such as those expected at the High-Luminosity LHC (HL-LHC), the HT tends to produce a large number of spurious candidates, leading to increased computational overhead in subsequent reconstruction stages. In this work, we present a hybrid approach in which the HT serves as a first-stage data preparation step, providing its parameters space image as an input to a neural network trained to suppress false track candidates. The method combines the speed of the HT with the discriminative power of machine learning to achieve both efficiency and purity. In addition no data transformations are involved when combining these steps resulting in a simpler and more performant algorithm. Performance studies using the Open Data Detector simulated in the ACTS framework under realistic HL-LHC pileup conditions will be presented.",
+  "authors": [
+    "Carlo Varni",
+    "Krzysztof Ciesla",
+    "Marcin Wolter",
+    "Radoslaw Karol Mienkowski",
+    "Noemi Calace",
+    "Tomasz Bold"
+  ],
+  "published": "2026-07-06T06:49:25Z",
+  "updated": "2026-07-07T10:57:26Z",
+  "categories": [
+    "physics.data-an",
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.data-an"
+}

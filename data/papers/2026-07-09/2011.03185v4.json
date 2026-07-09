@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2011.03185v4",
+  "url": "https://arxiv.org/abs/2011.03185v4",
+  "pdf_url": "https://arxiv.org/pdf/2011.03185v4.pdf",
+  "title": "Efficient quantum algorithm for dissipative nonlinear differential equations",
+  "abstract": "Nonlinear differential equations model diverse phenomena but are notoriously difficult to solve. While there has been extensive previous work on efficient quantum algorithms for linear differential equations, the linearity of quantum mechanics has limited analogous progress for the nonlinear case. Despite this obstacle, we develop a quantum algorithm for dissipative quadratic $n$-dimensional ordinary differential equations. Assuming $R < 1$, where $R$ is a parameter characterizing the ratio of the nonlinearity and forcing to the linear dissipation, this algorithm has complexity $T^2 q~\\mathrm{poly}(\\log T, \\log n, \\log 1/ε)/ε$, where $T$ is the evolution time, $ε$ is the allowed error, and $q$ measures decay of the solution. This is an exponential improvement over the best previous quantum algorithms, whose complexity is exponential in $T$. While exponential decay precludes efficiency, driven equations can avoid this issue despite the presence of dissipation. Our algorithm uses the method of Carleman linearization, for which we give a novel convergence theorem. This method maps a system of nonlinear differential equations to an infinite-dimensional system of linear differential equations, which we discretize, truncate, and solve using the forward Euler method and the quantum linear system algorithm. We also provide a lower bound on the worst-case complexity of quantum algorithms for general quadratic differential equations, showing that the problem is intractable for $R \\ge \\sqrt{2}$. Finally, we discuss potential applications, showing that the $R < 1$ condition can be satisfied in realistic epidemiological models and giving numerical evidence that the method may describe a model of fluid dynamics even for larger values of $R$.",
+  "authors": [
+    "Jin-Peng Liu",
+    "Herman Øie Kolden",
+    "Hari K. Krovi",
+    "Nuno F. Loureiro",
+    "Konstantina Trivisa",
+    "Andrew M. Childs"
+  ],
+  "published": "2020-11-06T04:27:00Z",
+  "updated": "2026-07-07T15:30:13Z",
+  "categories": [
+    "quant-ph",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph",
+  "doi": "10.1073/pnas.2026805118"
+}
