@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2406.06718v4",
+  "url": "https://arxiv.org/abs/2406.06718v4",
+  "pdf_url": "https://arxiv.org/pdf/2406.06718v4.pdf",
+  "title": "TORAX: A Fast and Differentiable Tokamak Transport Simulator in JAX",
+  "abstract": "We present TORAX, a new, open-source, differentiable tokamak core transport simulator implemented in Python using the JAX framework. TORAX solves the coupled equations for ion heat transport, electron heat transport, particle transport, and current diffusion, incorporating modular physics-based and ML models. JAX's just-in-time compilation ensures fast runtimes, while its automatic differentiation capability enables gradient-based optimization workflows and simplifies the use of Jacobian-based PDE solvers. Coupling to ML-surrogates of physics models is greatly facilitated by JAX's intrinsic support for neural network development and inference. TORAX is verified against the established RAPTOR code, demonstrating agreement in simulated plasma profiles. TORAX provides a powerful and versatile tool for accelerating research in tokamak scenario modeling, pulse design, and control.",
+  "authors": [
+    "Jonathan Citrin",
+    "Ian Goodfellow",
+    "Akhil Raju",
+    "Jeremy Chen",
+    "Jonas Degrave",
+    "Craig Donner",
+    "Federico Felici",
+    "Philippe Hamel",
+    "Andrea Huber",
+    "Dmitry Nikulin",
+    "David Pfau",
+    "Brendan Tracey",
+    "Martin Riedmiller",
+    "Pushmeet Kohli"
+  ],
+  "published": "2024-06-10T18:28:01Z",
+  "updated": "2026-07-09T10:54:33Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
