@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.20180v2",
+  "url": "https://arxiv.org/abs/2606.20180v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.20180v2.pdf",
+  "title": "Nuisance-Aware Muon Tomography",
+  "abstract": "Cosmic-ray muon scattering tomography can image dense, shielded, or inaccessible objects without an artificial radiation source. In a compact magnet-free tracker, however, each accepted muon provides only a few hit positions and no event-by-event momentum measurement. The downstream hit residual is therefore a compound observable: target scattering, muon momentum, detector resolution, support material, air scattering, and track extrapolation all enter the same measured displacement. We introduce Nuisance-Aware Muon Tomography (NAMT), a residual-likelihood reconstruction method for magnet-free trackers. The upstream hits define the incident track, downstream hit residuals carry the scattering signal, and a radiation-length density field $λ=1/X_0$ predicts their material-induced variance through a path integral. NAMT marginalizes the unmeasured momentum with a shared event-level scattering scale and uses open-field blank scans to fix detector and environmental residuals before object reconstruction. On eight Geant4 benchmark scenes spanning strong, weak, and negative scattering contrast, NAMT-4P reaches a mean area under the ROC curve (AUC) of $0.916$ at $120$k effective muons and $1$ mm hit error, compared with $0.784$ for ASR, $0.749$ for MLS-EM, and $0.643$ for PoCA. NAMT-3P uses one downstream hit plane in reconstruction and still reaches $0.909$ mean AUC at the reference setting, while giving the highest reference mean contrast-to-noise ratio (CNR) and the best mean AUC at $30$k muons.",
+  "authors": [
+    "Zhizheng Zhao",
+    "Changhao Qin",
+    "Rongfeng Zhang",
+    "Zibo Qin",
+    "Ziyu Xu",
+    "Xingyu Xiao",
+    "Qiang Li",
+    "Qite Li"
+  ],
+  "published": "2026-06-18T12:51:18Z",
+  "updated": "2026-07-09T16:31:56Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
