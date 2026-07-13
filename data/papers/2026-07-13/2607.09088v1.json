@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2607.09088v1",
+  "url": "https://arxiv.org/abs/2607.09088v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.09088v1.pdf",
+  "title": "TokaGrad: End-to-end differentiable tokamak simulator for L-to-H full scenario optimization",
+  "abstract": "As fusion energy moves from theoretical feasibility toward commercialization, design of new reactor concepts, autonomous tokamak control, and high-performance scenario optimization are becoming increasingly important. Traditionally, such optimization tasks have relied on costly trial-and-error or brute-force parameter searches, based on black-box experiments or simulations. Recently, advances in differentiable programming are changing the paradigm of numerical simulation. Unlike conventional simulations, which are typically executed as locally connected step-by-step procedures, differentiable simulation represents the entire simulation pipeline as a connected computational graph. In such a framework, machine parameters, actuator waveforms, and plasma responses are linked through differentiable operations, allowing Jacobians to propagate across the full simulation. This enables direct gradient-based control and optimization using the internal sensitivities of the simulator, rather than treating the simulator as a black box. Here, we present TokaGrad, an end-to-end differentiable tokamak transport simulator for full-scenario modeling, including ramp-up, L-mode operation, and H-mode access. TokaGrad self-consistently integrates differentiable models for plasma equilibrium, transport, heating, L-H transition, and pedestal formation. To our knowledge, this is the first differentiable tokamak simulator capable of self-consistently modeling dynamic full-discharge scenarios where actuators and plasma evolve together with equilibrium, pedestal, and confinement-regime transitions. We demonstrate that, when coupled to gradient-based optimizers, TokaGrad enables reactor-design optimization, actuator control, and full-scenario waveform optimization. This framework provides a pathway toward automated, differentiable optimization of burning-plasma scenarios and reactor concepts.",
+  "authors": [
+    "Jaemin Seo"
+  ],
+  "published": "2026-07-10T04:09:03Z",
+  "updated": "2026-07-10T04:09:03Z",
+  "categories": [
+    "math-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math-ph"
+}

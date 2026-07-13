@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.09046v1",
+  "url": "https://arxiv.org/abs/2607.09046v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.09046v1.pdf",
+  "title": "Implicit discretization schemes for full-kinetic ion and drift-kinetic electron simulations",
+  "abstract": "We present a new electromagnetic plasma simulation model with full-kinetic ions and drift-kinetic electrons. This model (termed as FIDES) solves the electric field using the implicit perpendicular Ohm's law and a novel implicit parallel Ampere's law, where the latter requires an implicit scheme for the parallel electric field in advancing the electron weights. To suppress unphysical high-frequency instabilities, ion weights are advanced using an implicit scheme for perpendicular electric fields. Simulations of perpendicular and parallel waves validate the model's capability in handling high-frequency physics. Low-frequency wave simulations demonstrate that the implicit parallel Ampere's law can mitigate the cancellation problem more effectively than the conventional schemes using the parallel Ohm's law. To reduce the numerical damping from implicit time-stepping, we develop a second-order scheme for particle pushing. Meanwhile, an integrated strategy combining the first- and second-order schemes is employed to suppress odd-even decoupling while maintaining the accuracy of the second-order formulation.",
+  "authors": [
+    "Zilong Li",
+    "Yang Chen",
+    "Haotian Chen",
+    "Lei Ye",
+    "Zhe Gao",
+    "Wei Chen"
+  ],
+  "published": "2026-07-10T02:28:55Z",
+  "updated": "2026-07-10T02:28:55Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
