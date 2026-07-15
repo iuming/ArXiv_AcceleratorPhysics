@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.01313v3",
+  "url": "https://arxiv.org/abs/2604.01313v3",
+  "pdf_url": "https://arxiv.org/pdf/2604.01313v3.pdf",
+  "title": "ScatterPrism: convergence for generative simulation and inverse problems in particle and nuclear physics",
+  "abstract": "High-fidelity simulations and complex inverse problems, such as detector modeling and unfolding, are computationally intensive bottlenecks across subatomic physics, yet essential for accurate physical interpretation. While Conditional Flow Matching (CFM) offers a robust acceleration approach, we demonstrate its standard training loss is fundamentally misleading. Specifically, utilizing a Jefferson Lab Nuclear Physics (NP) kinematic dataset ($γp \\to ρ^0 p \\to π^+π^- p$), we expose that CFM loss plateaus prematurely, obscuring ongoing physical refinement. To verify this disconnect is a dataset-agnostic pathology, we introduce ScatterPrism, an efficient generative surrogate evaluated against both the NP data and synthetic stress tests modeling challenging 1D distribution topologies. Coupling these benchmarks, we establish that physics-informed metrics continue improving long after standard loss converges. Consequently, we propose a multi-metric diagnostic protocol to ensure true kinematic fidelity without data memorization. Driven by NP challenges relevant to the forthcoming Electron-Ion Collider (EIC), this unified machinery has strong potential to extend to High-Energy Physics (HEP) applications, such as jet modeling. Furthermore, the framework holds promise for broader domains requiring rigorous generative reliability, including medical imaging, astrophysics, and quantitative finance.",
+  "authors": [
+    "Zeyu Xia",
+    "Tyler Kim",
+    "Trevor Reed",
+    "Judy Fox",
+    "Geoffrey Fox",
+    "Adam Szczepaniak"
+  ],
+  "published": "2026-04-01T18:36:47Z",
+  "updated": "2026-07-13T21:14:32Z",
+  "categories": [
+    "cs.LG",
+    "nucl-ex",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.LG",
+  "doi": "10.1088/1748-0221/21/07/C07012"
+}

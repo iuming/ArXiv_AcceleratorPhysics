@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2607.12272v1",
+  "url": "https://arxiv.org/abs/2607.12272v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.12272v1.pdf",
+  "title": "A Collocated Boris Integrator in Flux Coordinates: Balancing Accuracy, Conservation, Cost and Robustness",
+  "abstract": "When the guiding-center description fails and the full gyromotion must be resolved for energetic particles in complex configurations like stellarators, charged-particle integrators must be formulated directly in the curvilinear flux coordinates. The Boris algorithm, which adopts a staggered scheme in Cartesian coordinates, is phase-space-volume-preserving and second-order accurate; but a direct port to flux coordinates degrades the position update to first order, because the evolving basis vectors of the curvilinear frame make the starting-point metric deviate from the ideal midpoint metric. We construct a collocated, midpoint-predicted Boris algorithm in flux coordinates, restoring second-order accuracy at the cost of one additional field evaluation per step. In reactor-scale stellarator magnetic fields, the scheme recovers second-order convergence in every coordinate component, retains near-machine-precision energy conservation and a bounded magnetic moment, and demonstrates greater orbit robustness than Staggered Boris and RK4 at coarse time steps.",
+  "authors": [
+    "Mingyuan Li",
+    "Chang Liu"
+  ],
+  "published": "2026-07-14T02:19:21Z",
+  "updated": "2026-07-14T02:19:21Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
