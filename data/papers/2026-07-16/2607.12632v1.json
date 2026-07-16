@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.12632v1",
+  "url": "https://arxiv.org/abs/2607.12632v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.12632v1.pdf",
+  "title": "Exploiting the latent space of deep AutoEncoders for the identification of signal pulses in noisy time-series",
+  "abstract": "We propose a data-driven procedure, based on convolutional variational autoencoders, to identify the presence of signal pulses in long time-series. The dataset consists of synthetic waveforms, each composed of non-gaussian noise and a log-normal shaped signal of variable intensity, with a length of 10,000 samples. The model heavily compresses the input waveforms, allowing a direct study of such a reduced representation. After training for 150 epochs on 7,500 waveforms, a region in the latent space where the network encodes time-series presenting only background noise emerges, allowing in turn to tag as candidates for containing a signal those falling outside. When applied on a test dataset of freshly generated waveforms, 100% of the events with a large pulses are correctly labelled, and this fraction only decreases for signal amplitudes comparable with accidental noise pulses. This approach was designed to fully exploit the measurements in dual-phase Liquid Argon Time Projection Chambers, as the one of the Recoil Directionality experiment, built in the context of the Darkside project. The goal is the identification of delayed electroluminescence signals, produced by low energy (~ a few keV) nuclear recoils, with a sensitivity at least comparable to the conventional reconstructions.",
+  "authors": [
+    "Gioacchino Alex Anastasi",
+    "Sebastiano Francesco Albergo",
+    "Marzio De Napoli",
+    "Noemi Pino",
+    "Sebastiana Maria Puglia",
+    "Alessia Rita Tricomi"
+  ],
+  "published": "2026-07-14T11:10:26Z",
+  "updated": "2026-07-14T11:10:26Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
