@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.14308v1",
+  "url": "https://arxiv.org/abs/2607.14308v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.14308v1.pdf",
+  "title": "An end-to-end quantum algorithm for weakly nonlinear plasma physics with superquadratic speedup",
+  "abstract": "Nonlinear kinetic plasma simulation is high-dimensional and classically demanding, while quantum algorithms face different bottlenecks: embedding nonlinear dynamics into a linear computation, loading dense field-interaction data, and efficiently extracting information. We present an end-to-end quantum algorithm, with rigorous convergence guarantees, for a weakly nonlinear kinetic plasma model. The system describes a 3D electron-ion plasma with adiabatic electrons, kinetic ions, Debye screening, and Krook relaxation. After Fourier-Hermite truncation, the dynamics reduces to a high-dimensional quadratic ordinary differential equation. To tackle quantum bottlenecks we combine three key ingredients. First, we use a plasma free energy to identify a Lyapunov transform under which a Carleman linear embedding converges exponentially in the truncation order within a certified weakly nonlinear regime. Second, we develop a hierarchical block-encoding protocol for dense matrices, exploiting the spatial decay of the field to avoid polynomial overhead from sparse access encodings. Third, we introduce a subroutine for information extraction that exploits nonlinear components encoded in the full Carleman history state to improve the estimation of linear observables. We construct a quantum algorithm to estimate the spacetime-averaged kinetic energy using $\\widetilde{O}\\!\\left( N_F N_H^{1/2} \\operatorname{polylog}\\!\\left(\\frac{T}ε\\right)\\frac{1}ε\\right)$ gates and $\\widetilde{O}\\!\\left(\\log\\!\\left(N_F N_H^{1/2}T\\right)\\log\\!\\left(\\frac{1}ε\\right)\\right)$ qubits, where $N_F$ and $N_H$ are the Fourier and Hermite cutoffs. Relative to a Fourier-Hermite spectral solver, this yields exponential memory savings and superquadratic improvements in time. Together, these results establish a controlled nonlinear plasma benchmark for quantum simulation.",
+  "authors": [
+    "Bjorn K. Berntson",
+    "David Jennings",
+    "Matteo Lostaglio",
+    "Scott Parker"
+  ],
+  "published": "2026-07-15T19:14:21Z",
+  "updated": "2026-07-15T19:14:21Z",
+  "categories": [
+    "quant-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph"
+}

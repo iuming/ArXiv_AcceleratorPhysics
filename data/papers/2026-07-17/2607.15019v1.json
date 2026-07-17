@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.15019v1",
+  "url": "https://arxiv.org/abs/2607.15019v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.15019v1.pdf",
+  "title": "An asymptotic-preserving five-moment two-species plasma model coupled to an external magnetohydrodynamic solver",
+  "abstract": "Accurately modeling collisionless space plasmas requires capturing small-scale kinetic effects while keeping global-scale simulations computationally tractable. Traditional multiscale approaches often rely on localized magnetohydrodynamics (MHD)-particle-in-cell (PIC) coupling or dynamic model hierarchies. In this work, we extend an established, adaptive multi-model hierarchy spanning from fully kinetic Vlasov descriptions to fluid models by introducing an asymptotic-preserving (AP) strategy that couples a two-species, five-moment fluid description with an ideal MHD solver. This coupling is the final critical step toward enabling efficient global simulations because the kinetic-scale physics in nonideal regions is entirely handled by finer models in the hierarchy. Kinetic descriptions natively solve Maxwell's equations and thus capture fast plasma waves, oscillations, and light waves, which are absent in the MHD dynamics. To address this difference without sacrificing computational efficiency, our AP framework seamlessly projects these fast dynamics onto the slow MHD dynamics, ensuring rigorous consistency at the model interfaces. We detail the AP two-fluid formulation, the variable-coupling interface, and its integration into external frameworks. Finally, we demonstrate the validity and robustness of the fully coupled framework, from kinetics to ideal MHD, through magnetic reconnection simulations.",
+  "authors": [
+    "Magnus Deisenhofer",
+    "Aleksandr Mustonen",
+    "Simon Lautenbach",
+    "Rainer Grauer"
+  ],
+  "published": "2026-07-16T14:05:50Z",
+  "updated": "2026-07-16T14:05:50Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

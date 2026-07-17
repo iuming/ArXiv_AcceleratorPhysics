@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.14847v1",
+  "url": "https://arxiv.org/abs/2607.14847v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.14847v1.pdf",
+  "title": "A flexible DAQ system for the Timepix4 ASIC in the 4DPHOTON project",
+  "abstract": "This paper presents the design and implementation of a flexible data acquisition system13 developed for the Timepix4 ASIC within the 4DPHOTON project. The system is based on a modular14 FPGA-centric architecture combining high-speed serial readout, Ethernet-based data transport,15 and deterministic multi-board synchronization. The hardware platform includes a scalable stack16 composed of commercial FPGA carrier boards, FMC-based interface electronics, detector-specific17 chipboards, and a dedicated Trigger Logic Unit for synchronized operation.18 The firmware architecture separates control and data paths, enabling independent configuration19 and high-throughput acquisition through UDP over 10 GbE links. The design supports zero-back-20 pressure operation toward the ASIC and allows adaptation of the readout bandwidth to different21 experimental conditions. Synchronization between multiple DAQ systems is achieved through22 a common clock and trigger distribution network, experimentally demonstrated with sub-100 ps23 precision.24 The system has been developed to support detector characterization, laboratory measurements,25 and beam-test campaigns for the 4DPHOTON detector concept. Hardware organization, firmware26 architecture, synchronization strategy, and performance measurements are presented.",
+  "authors": [
+    "N. V. Biesuz",
+    "J. Alozy",
+    "R. Bolzonella",
+    "V. Cavallini",
+    "A. Cotta Ramusino",
+    "M. Fiorini",
+    "E. Franzoso",
+    "X. Llopart Cudie",
+    "A. Saputi"
+  ],
+  "published": "2026-07-16T11:15:47Z",
+  "updated": "2026-07-16T11:15:47Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.14286v1",
+  "url": "https://arxiv.org/abs/2607.14286v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.14286v1.pdf",
+  "title": "A structure-preserving Numerical Method for the Compressible Resistive-Hall-MHD System",
+  "abstract": "In this paper, we present a structure-preserving method for the compressible resistive Hall-magnetohydrodynamics (MHD) model. The differential operator is split into two parts: a hydrodynamic part consisting of the compressible Euler equations, and a magnetic part consisting of a system coupling the Lorentz force and the induction equation. The method uses continuous Lagrange elements for the Euler part and a curl-conforming finite element space for the magnetic part. The hydrodynamic part preserves the positivity of the density and internal energy, the conservation of total energy, and the minimum principle for the specific entropy. Owing to the choice of finite elements, the magnetic part preserves the divergence involution constraint. The fluid part is solved using explicit strong-stability-preserving Runge-Kutta (SSP-RK) methods, whereas the magnetic part is solved by Crank-Nicholson method, which requires using Newton's method. Coercivity estimates for the Jacobian of the corresponding Newton iteration are presented. We introduce a high-order artificial resistivity to improve the conditioning of the nonlinear residual and the invertibility of the Jacobian. Several challenging benchmarks, including a smooth whistler wave, the Orszag-Tang vortex for comparing resistive MHD with resistive Hall-MHD, and a magnetic reconnection problem, are solved to validate the robustness and accuracy of the method.",
+  "authors": [
+    "Murtazo Nazarov",
+    "Rafael Rodriguez-Velasco",
+    "Ignacio Tomas"
+  ],
+  "published": "2026-07-15T18:48:55Z",
+  "updated": "2026-07-15T18:48:55Z",
+  "categories": [
+    "math.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}
