@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.14496v1",
+  "url": "https://arxiv.org/abs/2607.14496v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.14496v1.pdf",
+  "title": "Parameter Scan of Multi-Fluid Equilibria in Rotating p-11B Plasmas: Effects on Fusion Power and Bremsstrahlung Losses",
+  "abstract": "We present VEQ-MF, a fast spectral parameter-scan framework for two-dimensional axisymmetric multi-fluid equilibria with prescribed species-dependent toroidal rotation. The solver couples generalized Boltzmann density responses, quasineutral electrostatic polarization, and a generalized Grad--Shafranov equation, extending reduced-parameter Grad-Shafranov and VEQ formulations to multi-species rotating equilibria. Rotating $p\\text{-}^{11}\\text{B}$ spherical-tokamak configurations are used as a demanding test case. Independent scans of the proton and boron rotation frequencies are performed in EHL-2 and EHL-3B geometries. The computed fields are then post-processed to obtain fusion power from a drift-Maxwellian reaction-rate coefficient and bremsstrahlung power from an analytical radiation model. Three in-range EHL-3B finite-difference benchmarks give global stored-energy, bremsstrahlung-power, and fusion-power differences of $1.7$--$3.4\\%$, while a representative convergence check shows sub-percent sensitivity to increasing the spectral-parameter number and negligible sensitivity to Gaussian-grid refinement. The core equilibrium solve remains fast for repeated scans, with representative nonzero EHL-3B cases requiring $0.032$--$0.050$~s per point in MATLAB, excluding post-processing, interpolation, plotting, and file export. The scans identify two competing multi-fluid effects. Under iso-rotation, outward boron accumulation increases the volume-integrated $n_e^2$, so the fusion-to-bremsstrahlung power ratio $\\mathcal{R}_{\\mathrm{fb}}$ decreases with increasing rotation. Species-dependent toroidal rotation weakens centrifugal polarization and lowers bremsstrahlung power, while the relative toroidal flow in the larger EHL-3B geometry raises the drift-Maxwellian reaction-rate coefficient and thereby modifies fusion power.",
+  "authors": [
+    "Xingyu Li",
+    "Huasheng Xie",
+    "Lai Wei",
+    "Zhengxiong Wang"
+  ],
+  "published": "2026-07-16T02:19:03Z",
+  "updated": "2026-07-16T02:19:03Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

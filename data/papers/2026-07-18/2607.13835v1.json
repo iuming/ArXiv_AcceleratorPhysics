@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.13835v1",
+  "url": "https://arxiv.org/abs/2607.13835v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.13835v1.pdf",
+  "title": "Neural-network-based material identification in photon-counting computed tomography using region-of-interest spectral features",
+  "abstract": "This work investigates the feasibility of neural-network-based material identification based on photon-counting computed tomography (PCCT) data. The input data were spectral vectors extracted from regions of interest (ROIs) in reconstructed tomographic slices of a phantom containing La-, Nd-, and Gd-based samples, as well as air, water, bone, and polymethyl methacrylate (PMMA). The original tomographic slices were acquired at 12 detector threshold settings (THL = 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145, 165). For model training, the spectra were interpolated onto a uniform grid from THL 45 to THL 165 with a step of one THL unit. Large ROIs, small ROIs, and their combined dataset were considered. To avoid an overestimated performance caused by correlated ROIs extracted from the same tomographic slice, the data were split into training, validation, and test subsets at the slice level.",
+  "authors": [
+    "A. Miadzvetski",
+    "V. Rozhkov",
+    "R. Sotenskii",
+    "D. Shashurin",
+    "G. Chelkov"
+  ],
+  "published": "2026-07-15T13:43:15Z",
+  "updated": "2026-07-15T13:43:15Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
