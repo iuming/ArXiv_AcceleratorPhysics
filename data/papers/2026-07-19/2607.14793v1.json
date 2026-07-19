@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.14793v1",
+  "url": "https://arxiv.org/abs/2607.14793v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.14793v1.pdf",
+  "title": "Track fitting at the full LHC collision rate",
+  "abstract": "The LHCb experiment at the Large Hadron Collider underwent a major upgrade before the LHC Run 3 data taking period, employing an all-software approach in its trigger system. Here we present a fast implementation of a Kalman filter, used in the first trigger stage since the 2025 data taking period, allowing to determine parameter estimates of charged-particle trajectories at the full LHCb collision frequency of 30 MHz. This approach replaces computationally expensive magnetic field map lookups and numerical integration methods with fast analytical parameterisations while maintaining the mathematical framework of Kalman filtering. Implemented on approximately 500 GPUs within the first-level trigger, the algorithm has replaced the previous partial track fitting algorithm in the real-time trigger environment at the cost of a 2% increase in processing time. Compared to the previous fitter this parameterised Kalman filter shows a significantly improved momentum resolution, resulting in a factor of two improvement in the invariant mass resolutions for reconstructed D0 and J/ψ hadrons. It additionally demonstrates greater robustness against detector misalignment effects and substantially sharpens the discrimination between genuine particle trajectories and accidental background, more than doubling the rejection of the latter at no cost to genuine-track efficiency, for a standard selection working point.",
+  "authors": [
+    "Pierre Billoir",
+    "Thomas Boettcher",
+    "Michel De Cian",
+    "Lennart H. Uecker"
+  ],
+  "published": "2026-07-16T10:11:52Z",
+  "updated": "2026-07-16T10:11:52Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}

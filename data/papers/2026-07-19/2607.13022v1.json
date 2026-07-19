@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.13022v1",
+  "url": "https://arxiv.org/abs/2607.13022v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.13022v1.pdf",
+  "title": "A Shortcut to Statistically Steady-State Turbulence with Flow Matching",
+  "abstract": "Many nonlinear physical systems exhibit an initial transient phase in which perturbations grow before nonlinear interactions lead to a statistically steady state. While this saturated regime is of primary interest, direct numerical simulations must resolve the full transient dynamics before reaching it, incurring significant computational cost. In Computational Fluid Dynamics, reduced-order approaches such as Large Eddy Simulation mitigate computational cost by modeling small-scale dynamics, enabling tractable approximations of turbulent flows. In contrast, for systems such as gyrokinetics, comparably effective closures for the full dynamics are not generally available, and high-fidelity simulations remain necessary. Existing surrogate modeling approaches for these systems are autoregressive, hence they suffer from accumulating error. We instead propose to bypass explicit time evolution by directly modeling the distribution of saturated states under an ergodicity assumption, stating that ensemble averages over samples are equivalent to time averages of a single long simulation. We introduce GyroFlow, a latent generative model that directly estimates steady-state statistics of gyrokinetic turbulence in 5D phase space, without resolving the transient phase. GyroFlow generates saturated snapshots from noise, conditioned on dimensionless operating parameters and outperforms autoregressive, reduced-order, and other generative approaches, while providing substantial speedup. To evaluate generation quality we propose FGyD, a distributional metric computed in the latent space of a pretrained gyrokinetic model, and show that it correlates with downstream flux accuracy and solver convergence. Finally, GyroFlow can be used to warm-start the numerical code used to produce the data.",
+  "authors": [
+    "Gianluca Galletti",
+    "Gerald Gutenbrunner",
+    "William Hornsby",
+    "Lorenzo Zanisi",
+    "Naomi Carey",
+    "Stanislas Pamela",
+    "Johannes Brandstetter",
+    "Fabian Paischer"
+  ],
+  "published": "2026-07-14T17:58:13Z",
+  "updated": "2026-07-14T17:58:13Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
