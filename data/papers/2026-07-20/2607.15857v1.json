@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.15857v1",
+  "url": "https://arxiv.org/abs/2607.15857v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.15857v1.pdf",
+  "title": "Surrogate modeling of drift-reduced Braginskii turbulence with resistivity-conditioned Koopman neural operators",
+  "abstract": "Machine-learning-driven surrogate operators are developed for three-dimensional, nonlinear, flux-driven simulations of boundary plasma turbulence based on the two-fluid drift-reduced Braginskii model. Resistivity-conditioned Koopman neural operators (KNOs) are trained on Global Braginskii Solver (GBS) simulations, spanning low- to high-resistivity regimes. Separate fieldwise models are constructed for plasma density, electron temperature, electric potential, and vorticity. Evaluation at a held-out resistivity shows that the surrogates reproduce key short-horizon statistical features, including strong one-step agreement, spectral trends, and reduced pressure-gradient diagnostics. Field-dependent limitations remain, with vorticity showing the largest discrepancies and autoregressive rollout progressively departing from the reference simulation. The results demonstrate that resistivity-conditioned fieldwise neural operators provide useful fast emulators for selected boundary-plasma turbulence diagnostics, while stable long-horizon dynamical closure remains unresolved.",
+  "authors": [
+    "Ameir Shaa",
+    "Kyungtak Lim",
+    "Long Shan Chan",
+    "Claude Guet"
+  ],
+  "published": "2026-07-17T11:15:20Z",
+  "updated": "2026-07-17T11:15:20Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

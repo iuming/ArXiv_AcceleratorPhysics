@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15594v1",
+  "url": "https://arxiv.org/abs/2607.15594v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.15594v1.pdf",
+  "title": "An Open-Source, Autonomous Platform for High-Resolution Energy Monitoring in Manufacturing",
+  "abstract": "High-resolution energy data is increasingly central to Industry 4.0, where electrical signals such as three-phase voltage and current carry rich information about machine condition, tool wear, and process dynamics. Capturing this information in practice remains difficult: commercial power analysis are largely proprietary, offer limited or no access to high-sampling rate data for transient analysis, restrict access to raw waveform data, and offer no customization, while general-purpose open hardware lacks the front-end accuracy, isolation, and robustness required for industrial measurement. This paper presents Autonomous Energy Monitoring System (AEMS), an open-source, low-cost, and modular platform supported by a host, edge-gateway, and optional cloud software stack that enables autonomous, long-duration acquisition independent of a continuously connected host and thereby closes this gap by combining research-grade fidelity with industrial deployability. The system acquires three-phase voltage and current through an isolated front-end and a 24-bit, simultaneously sampling analog-to-digital converter, managed by a dual-core architecture that separates deterministic acquisition and on-board logging from host communication and control. Industrial interfaces (Ethernet, RS-485/Modbus, and BLE) together with hardware-level synchronization enable scalable, time-aligned acquisition across multiple machines, supported by a complete host, edge-gateway, and optional cloud software stack. We validate the platform on a three-axis CNC machining center, where it resolves spindle, feed-drive, rapid-traverse, and material-removal energy states and detects feed-rate changes as small as 50 mm/min. By releasing the full hardware and firmware openly, this work aims to democratize access to high-fidelity energy monitoring for both researchers and small and medium-sized manufacturers.",
+  "authors": [
+    "Vignesh Selvaraj",
+    "Aditya Nagaraj",
+    "Shengyuan Zhang",
+    "Sina Sadeghian",
+    "Sangkee Min"
+  ],
+  "published": "2026-07-17T03:41:55Z",
+  "updated": "2026-07-17T03:41:55Z",
+  "categories": [
+    "eess.SP",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.SP"
+}

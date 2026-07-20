@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.13507v2",
+  "url": "https://arxiv.org/abs/2607.13507v2",
+  "pdf_url": "https://arxiv.org/pdf/2607.13507v2.pdf",
+  "title": "$λ$PIC: A callback-centric particle-in-cell framework",
+  "abstract": "We present $λ$PIC, a Python-based electromagnetic particle-in-cell framework built around a callback-centric architecture. Existing PIC codes typically tie high performance to static, pre-compiled timestep loops, hindering implementation of custom physics, diagnostics, or output logic. $λ$PIC breaks this coupling by exposing every stage of the loop as a named stage (hook), permitting attaching arbitrary Python functions that operate on the full simulation state, enabling custom algorithms and in-situ analysis without modifying the core algorithms. Under this flexible framework, performance-critical kernels are written in C extensions and Numba, fields and particles are stored in NumPy arrays, and MPI parallelism is paired with graph partitioning to support dynamic load balancing and non-rectangular domains. Although $λ$PIC is designed as general-purpose, it has special focus on intense laser-plasma interactions. Future work will extend the framework to GPU acceleration and additional physics modules including implicit solvers and nuclear physics.",
+  "authors": [
+    "Xuesong Geng",
+    "Yunwei Cui",
+    "Lingang Zhang",
+    "Liangliang Ji"
+  ],
+  "published": "2026-07-15T07:01:24Z",
+  "updated": "2026-07-16T05:42:40Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
