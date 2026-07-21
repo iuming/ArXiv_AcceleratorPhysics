@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.24347v2",
+  "url": "https://arxiv.org/abs/2510.24347v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.24347v2.pdf",
+  "title": "Physics-Gated Visual Prediction of MARFE on the HL-3 Tokamak",
+  "abstract": "The Multifaceted Asymmetric Radiation From the Edge (MARFE) is a critical plasma instability that often precedes density-limit disruptions in tokamaks, posing a significant risk to machine integrity and operational efficiency. We develop a physics-gated, continuous MARFE monitor for the HL-3 tokamak that outputs a per-frame intensity probability every $2$\\,ms, which can potentially be used by the shape-target controller in the plasma control system. Our framework integrates two core innovations: (1) a physics-scored, weighted Expectation-Maximization (EM) pipeline that refines noisy visual labels using $(n_e, T_e, f_G, t)$ as a Bayesian prior, and (2) a continuous-time, physics-gated Neural Ordinary Differential Equation (Neural ODE) backbone whose dynamics are modulated by a sigmoid gate on $f_G$ and $T_e$. Meanwhile, the Neural ODE adopts a $40$\\,ms forward forecasting horizon to accommodate the actuator-response budget. On a frozen $140$-shot held-out test set, the proposed method yields a median label-aligned lead time of $+36$\\,ms, close to this design horizon. Against a Bi-LSTM baseline trained under the matched protocol, the proposed Neural ODE attains Area Under the Curve (AUC) $=0.981$ and sample-level $F_1=0.840$, compared with AUC $=0.960$ and sample-level $F_1=0.779$ for the baseline. The deployed inference service runs within a $1$-ms control-cycle budget, while new diagnostic samples are generated at the $2$-ms frame cadence.",
+  "authors": [
+    "Qianyun Dong",
+    "Rongpeng Li",
+    "Zongyu Yang",
+    "Niannian Wu",
+    "Fan Xia",
+    "Liang Liu",
+    "Zhifeng Zhao",
+    "Wulyu Zhong"
+  ],
+  "published": "2025-10-28T12:11:26Z",
+  "updated": "2026-07-18T03:43:26Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

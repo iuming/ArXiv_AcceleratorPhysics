@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.04165v2",
+  "url": "https://arxiv.org/abs/2606.04165v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.04165v2.pdf",
+  "title": "CaloTrilogy: Toward a Breakthrough in One-Step, End-to-End, Physics-Guided Shower Generation for Modern Calorimeters",
+  "abstract": "High-precision calorimeter simulation at current and future colliders imposes rapidly growing computational demands, motivating the development of machine-learning surrogates for traditional Monte Carlo tools such as Geant4. Flow matching and diffusion-based generative models have become leading approaches for high-dimensional fast simulation because of their sample quality, but typically require ${\\cal O}(100)$ function evaluations at inference and often rely on auxiliary networks to constrain global observables, compromising streamlined end-to-end generation. We introduce a unified framework that improves the balance between speed, shower quality, and physics fidelity. The method combines: (i) an average velocity field integrator that enables sampling in one or a few evaluations; (ii) a learned generative prior in shower space, constructed from data rather than random noise; and (iii) physics-guided loss terms that impose inductive biases on key observables during training. These elements are training time regularizers, preserving end-to-end inference with no additional cost. With only one or a few evaluation steps, the model achieves shower quality competitive with state-of-the-art flow and diffusion approaches, tested on several public high granularity calorimeter datasets. The results demonstrate inter-layer shower structure consistent with the underlying physics, providing a strong candidate for future fast simulation workflows.",
+  "authors": [
+    "Cheng Jiang",
+    "Sitian Qian",
+    "Kevin Pedro",
+    "Oz Amram",
+    "Huilin Qu",
+    "Maggie Voetberg"
+  ],
+  "published": "2026-06-02T19:27:19Z",
+  "updated": "2026-07-17T21:46:37Z",
+  "categories": [
+    "hep-ex",
+    "cs.LG",
+    "hep-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}

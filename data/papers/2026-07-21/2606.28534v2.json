@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2606.28534v2",
+  "url": "https://arxiv.org/abs/2606.28534v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.28534v2.pdf",
+  "title": "High-Performance Resilient Multi-GPU Hybrid Particle-in-Cell Monte Carlo Simulations at Scale",
+  "abstract": "The increasing demand for high-performance computing in plasma physics has driven scalable and resilient simulation methods capable of efficiently exploiting modern multi-GPU architectures. This work extends a portable hybrid MPI+OpenMP implementation of BIT1, focusing on high-performance resilience for accelerated Particle-in-Cell (PIC) Monte Carlo (MC) simulations under both uniform and non-uniform load conditions. Scalable particle load balancing and robust checkpoint/restart mechanisms across Nvidia and AMD accelerators are integrated with standardized I/O using openPMD and ADIOS2. This leverages BP4 for high-performance file-based checkpointing and SST for in-memory data streaming, enabling efficient data movement, resilient large-scale execution, seamless continuation from existing checkpoints, and effective handling of computational and I/O workloads. Advanced HPC profiling and tracing tools, including Nvidia Nsight Systems and AMD ROC-Profiler with Perfetto, provide detailed insights into computation, communication, and system-level behavior for optimization. Performance results on Frontier (OLCF-5), MN5, and LUMI-G demonstrate strong and weak scaling up to 800 GPUs, validating the framework for large-scale PIC MC simulations, while in-situ analysis and visualization using scalable I/O further enhance scientific insight without interrupting multi-GPU execution on current and future exascale systems.",
+  "authors": [
+    "Jeremy J. Williams",
+    "Stefan Costea",
+    "David Tskhakaya",
+    "Leon Kos",
+    "Ales Podolnik",
+    "Jakub Hromadka",
+    "Jordy Trilaksono",
+    "Yi Ju",
+    "Kallia Chronaki",
+    "Evangelos Gkolantas",
+    "Vassilis Papaefstathiou",
+    "Allen D. Malony",
+    "Sameer Shende",
+    "Frank Jenko",
+    "Erwin Laure",
+    "Stefano Markidis"
+  ],
+  "published": "2026-06-26T18:34:21Z",
+  "updated": "2026-07-18T13:20:21Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.DC",
+    "cs.PF",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

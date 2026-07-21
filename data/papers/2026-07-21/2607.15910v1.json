@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15910v1",
+  "url": "https://arxiv.org/abs/2607.15910v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.15910v1.pdf",
+  "title": "Precision positioning in free-space optical communication systems via PID control tuned by RL",
+  "abstract": "Accurate positioning of optical components is essential for maintaining beam alignment in free-space optical (FSO) communication systems. This work investigates reinforcement-learning-assisted tuning of cascaded position and velocity PID controllers for an optical deflector that moves the end of an optical fiber in the focal plane of an optical system. A Deep Deterministic Policy Gradient (DDPG) agent adjusts six PID coefficients through interaction with a physical experimental stand. The stand supports target-coordinate updates of up to $12$ kHz, while the agent and the controlled device are located approximately $200$ km apart and exchange data over UDP. After $5000$ training sessions, two fixed coefficient sets are selected and compared with a manually tuned baseline. For a pseudo-random target trajectory, the best RL-tuned set reduces the range of the radial positioning error from $119$ to $82$, corresponding to a $31\\%$ reduction, and decreases its standard deviation from $15$ to $12$. For a constant zero target, the RL-tuned sets do not improve the radial error range. The results demonstrate the potential of DDPG for experimental PID tuning in dynamic positioning tasks and indicate the need for multi-regime optimization to achieve consistent performance under different operating conditions.",
+  "authors": [
+    "K. Prikhodko",
+    "S. Kuznetsov",
+    "S. Vorobey",
+    "A. Katanskiy",
+    "V. Balakirev",
+    "A. Reutov"
+  ],
+  "published": "2026-07-17T12:37:37Z",
+  "updated": "2026-07-17T12:37:37Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
