@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.00270v2",
+  "url": "https://arxiv.org/abs/2607.00270v2",
+  "pdf_url": "https://arxiv.org/pdf/2607.00270v2.pdf",
+  "title": "Computer vision-based neural networks for radioisotope identification in urban environments",
+  "abstract": "Algorithm development for radioisotope identification in mobile urban search scenarios face significant challenges from non-uniform backgrounds, momentary source encounters, and severe class imbalance between rare threat signatures and background measurements. We present a machine learning-based approach to this problem that converts list-mode gamma-ray data into two-dimensional waterfall spectrograms and applies computer vision architectures to the resulting images. Rather than treating waterfalls as conventional images, we employ a representation where consecutive time spectra can form input channels, similar to RGB channels in color images. This representation encodes both spectral and temporal information, enabling neural networks to more effectively learn patterns that distinguish source signatures from background fluctuations. We evaluate three architectures, a multilayer perceptron (MLP), convolutional neural network (CNN), and vision transformer (ViT), on the Radiological Anomaly Detection and Identification (RADAI) benchmark dataset. At a false positive rate of less than one false alarm per hour, our CNN outperforms the previous-best non-negative matrix factorization (NMF) method across all global metrics, achieving true detection, classification, and identification rates of 0.4334, 0.3965, and 0.2950 respectively, compared to 0.4151, 0.3611, and 0.2625 for NMF. At lower false positive rate constraints, the neural network approaches show comparable but ultimately lower performance than NMF, indicating opportunities for further research.",
+  "authors": [
+    "Masen Bachleda",
+    "Alea Minar",
+    "Ayush Panigrahy",
+    "Peter Lalor"
+  ],
+  "published": "2026-06-30T23:35:51Z",
+  "updated": "2026-07-20T20:54:18Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG"
+  ],
+  "primary_category": "physics.ins-det"
+}

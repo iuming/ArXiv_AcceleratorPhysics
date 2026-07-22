@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.17363v1",
+  "url": "https://arxiv.org/abs/2607.17363v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.17363v1.pdf",
+  "title": "ORB5X v1.0: a performance-portable global electromagnetic gyrokinetic PIC code in C++/Kokkos built using Agentic AI",
+  "abstract": "ORB5X is a C++17/Kokkos AI-assisted translation of ORB5, a global electromagnetic gyrokinetic particle-in-cell code for toroidal confined plasmas. The translation preserves the mathematical model and the main numerical algorithms of the Fortran implementation, i.e. a Lagrangian gyrokinetic formulation, marker-particle representation of the distribution functions, finite-element B-spline representation of the fields, Fourier filtering in the angular directions, MPI domain decomposition and cloning, and HDF5 diagnostic output. The main software change is the replacement of Fortran modules and allocatable arrays by typed C++ classes, structs, namespaces, and Kokkos Views and kernels for performance portability across multicore CPU and GPU backends. This paper summarizes the physical models, the numerical scheme, the distributed and shared-memory parallel design, the AI-assisted code translation workflow, and the validation path used to compare ORB5X against the original Fortran reference codebase. The initial tests for ITG, ITPA, and chirping show an agreement of almost machine accuracy between ORB5X and ORB5 for the electrostatic and electromagnetic field components. Furthermore, we demonstrate that with the modern CMake and Kokkos, ORB5X can be easily compiled and run on personal Linux and Mac laptops, as well as on high-performance computing clusters such as LUMI, ALPS, CINECA, and Discoverer.",
+  "authors": [
+    "Mohsen Sadr",
+    "Emmanuel Lanti",
+    "Alexey Mishchenko",
+    "Xin Wang",
+    "Laurent Villard"
+  ],
+  "published": "2026-07-19T18:05:04Z",
+  "updated": "2026-07-19T18:05:04Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

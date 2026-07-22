@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.13791v3",
+  "url": "https://arxiv.org/abs/2607.13791v3",
+  "pdf_url": "https://arxiv.org/pdf/2607.13791v3.pdf",
+  "title": "Robust Betatron-Tune Measurement from Schottky Spectra: Complementary Classical and Deep-Learning Paradigms",
+  "abstract": "Schottky spectra provide key beam diagnostics, with betatron sidebands encoding the fractional tune. Reliable tune measurement is particularly important for third-order resonance slow extraction in compact medical proton synchrotrons, where low signal-to-noise ratios and limited frequency resolution can compromise conventional peak-detection and curve-fitting methods. This work develops two complementary tune estimators with a shared spectral front-end but different temporal representations. The classical estimator coherently pools motion-compensated spectra, detects the sideband using a multi-width matched-filter bank, and performs sub-bin estimation through local argmax and an adaptive MAD-gated centroid. The deep-learning estimator converts each spectrum into a tune-likelihood map using a convolutional neural network with FFT-based global convolutions, then propagates the posterior with a discrete two-dimensional (q,v) Bayesian tracker under a Gaussian motion model while also reporting posterior uncertainty. On a synthetic dynamic-tune benchmark, the deep-learning estimator outperforms published baselines across the operating range, while the classical estimator exceeds the latency-compensated baseline and requires neither training data nor GPU acceleration. On near-stationary SAPT beam data, both methods operate end-to-end, with the deep-learning model requiring no retraining. Median per-frame latency remains below 1 ms on commodity hardware, supporting real-time-capable tune measurement in compact medical synchrotrons.",
+  "authors": [
+    "Peihan Sun",
+    "Manzhou Zhang",
+    "Renxian Yuan",
+    "Deming Li",
+    "Jian Dong"
+  ],
+  "published": "2026-07-15T12:54:27Z",
+  "updated": "2026-07-21T03:46:48Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
