@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2607.20861v1",
+  "url": "https://arxiv.org/abs/2607.20861v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.20861v1.pdf",
+  "title": "yancc: A GPU-accelerated, differentiable solver for neoclassical transport in tokamaks and stellarators",
+  "abstract": "We present yancc, a new GPU-accelerated solver for the drift kinetic equation that computes neoclassical transport fluxes, flows, and currents in tokamaks and stellarators. The drift kinetic equation is challenging to solve numerically due to strong advection-dominance, recirculating flows, internal boundary layers, severe anisotropy, and high dimensionality. The code solves both the full four-dimensional drift kinetic equation (retaining speed-dependent collisions, energy scattering, and full interspecies coupling), and the reduced monoenergetic form. The discretization combines a Maxwell polynomial collocation grid in speed with finite differences in pitch angle and the flux surface coordinates, using a modified upwind stencil designed to improve diagonal dominance for multigrid efficiency. The resulting linear system is solved with a multigrid-preconditioned Krylov method. Built in JAX, yancc is fully differentiable, enabling gradient-based optimization and adjoint sensitivity analysis. Benchmarks against MONKES and SFINCS show agreement within 1\\% across a range of collisionalities, geometries, and multi-species configurations. yancc achieves roughly an order of magnitude speedup over SFINCS on a per-scan basis while using an order of magnitude less memory, with runtime remaining nearly flat across the full range of collisionality. The combination of speed, low memory footprint, and differentiability makes yancc well suited for integration into stellarator optimization workflows, uncertainty quantification, and profile prediction.",
+  "authors": [
+    "Rory Conlin",
+    "Matt Landreman"
+  ],
+  "published": "2026-07-23T02:33:16Z",
+  "updated": "2026-07-23T02:33:16Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
