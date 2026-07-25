@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.21407v1",
+  "url": "https://arxiv.org/abs/2607.21407v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.21407v1.pdf",
+  "title": "Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas",
+  "abstract": "The boundary and divertor plasma govern how a tokamak exhausts power and particles, setting heat fluxes, target conditions, and the onset of detachment. Predicting these quantities is essential for operating current and future devices, but edge simulations that resolve them are too slow for parameter scans, optimization, or real-time control. Machine-learning surrogates offer a fast alternative, yet most are forward-only: they cannot recover input parameters from observations or assess the reliability of their predictions. We introduce a cycle-consistent neural surrogate for edge plasmas, combining a conditional U-Net forward model with an optimization-based inverse method built on the frozen forward network. The forward model maps five control parameters to two-dimensional plasma-state fields on the SOLPS-ITER mesh; the inverse method enforces consistency between forward and inverse predictions, a self-supervised quality check needing no ground-truth labels at inference. An ensemble of multilayer perceptrons also predicts electron temperature and density profiles at the outboard midplane and divertor targets, with uncertainty estimates that flag where more simulations are needed. The forward model achieves normalized root-mean-square errors below 2.6% and Pearson correlations above 0.95 for all fields. Cycle-consistency regularization raises the average cyclical $R^2$ from 0.59 to 0.99 without degrading forward accuracy and enables recovery of the core fueling rate; all five control parameters are recovered with Pearson $r\\ge0.97$. A $k$-d tree warm start yields a database completion rate above 95%, versus roughly 30% outright failures when cold-started. With about $4\\times10^6$ parameters, the model produces full 2D predictions in milliseconds, five to six orders of magnitude faster than SOLPS-ITER, enabling real-time control, parameter scans, uncertainty analysis, and digital twins.",
+  "authors": [
+    "Abdourahmane Diaw",
+    "Sebastian De Pascuale",
+    "Jae-Sun Park",
+    "Ivan Paradela Perez",
+    "Jeremy D. Lore",
+    "Stefan Dasbach"
+  ],
+  "published": "2026-07-23T15:06:57Z",
+  "updated": "2026-07-23T15:06:57Z",
+  "categories": [
+    "physics.comp-ph",
+    "cs.AI",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
