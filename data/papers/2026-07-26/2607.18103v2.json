@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.18103v2",
+  "url": "https://arxiv.org/abs/2607.18103v2",
+  "pdf_url": "https://arxiv.org/pdf/2607.18103v2.pdf",
+  "title": "An Implicit Time-Domain Harmonic Balance Method for Radio-Frequency Capacitively Coupled Plasma Simulations",
+  "abstract": "Fast and accurate fluid simulation of radio-frequency capacitively coupled plasmas (RF CCPs) is of great importance for the iterative design and parameter optimization of modern plasma reactors. This study presents the first successful extension of the time-domain harmonic balance (HB) method to a fully coupled drift-diffusion-Poisson system with complete electron-energy transport for RF plasma simulations. To resolve the severe numerical stiffness arising from highly nonlinear energy-dependent kinetics and dense phase-coupling, a highly efficient spatiotemporal operator-splitting strategy is employed. By sequentially executing a spatial implicit relaxation and a cell-local temporal inversion, this strategy entirely avoids the memory-intensive assembly of global Jacobians while preserving robust numerical stability. The proposed method is rigorously validated against a standard parallel-plate argon CCP benchmark. Evaluated across all discrete temporal collocation points, the HB solution demonstrates that retaining eight harmonics perfectly resolves both the quasi-steady bulk plasma and the highly nonlinear transient sheath dynamics, yielding macroscopic relative errors strictly below 0.3% compared to conventional dual-time stepping (DTS) solutions. Beyond its high physical fidelity, the time-domain HB method completely bypasses the prohibitive physical transients required by conventional time-marching methods. Evaluated on a purely sequential single-core execution, the HB method delivers a greater than 10-fold speedup over fully converged DTS baselines and remains over 5 times faster than the coarsest time-marching configurations. These results establish the time-domain HB framework as a physically rigorous, memory-efficient, and highly accelerated paradigm for practical RF plasma simulations.",
+  "authors": [
+    "Yuze Zhu",
+    "Yufeng Wei",
+    "Yue Zhang",
+    "Kun Xu"
+  ],
+  "published": "2026-07-20T16:03:39Z",
+  "updated": "2026-07-23T06:18:50Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math-ph",
+    "physics.flu-dyn"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
