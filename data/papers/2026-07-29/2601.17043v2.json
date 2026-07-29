@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2601.17043v2",
+  "url": "https://arxiv.org/abs/2601.17043v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.17043v2.pdf",
+  "title": "Recursive Manifold Coherence for Deadtime-Aware Distributed Triggering through Geometric State Estimation",
+  "abstract": "Large-scale neutrino observatories operate under unavoidable detector deadtime and signal pile-up, leading to systematic inefficiencies in conventional coincidence-based trigger systems. Such triggers typically rely on binary temporal windows and assume continuous sensor availability, causing partial or complete loss of correlated signal information during non-live intervals. We introduce Recursive Manifold Coherence (RMC), a geometric framework that reformulates distributed trigger logic as a continuous state estimation problem in a low-dimensional information space defined by correlated charge and timing observables. Instead of applying hard vetoes during deadtime, the proposed method employs a recursive update rule that propagates a coherence state across sensor nodes, allowing partially obscured signals to be retained and evaluated consistently. Using simulation studies representative of large optical detector arrays, we demonstrate that RMC successfully recovers event-level coherence for high-multiplicity topologies even when direct coincidence chains are broken. By treating the detector response as a smooth manifold rather than discrete hits, the framework achieves superior robustness against data fragmentation compared to standard binary logic. The framework is detector-agnostic and compatible with software-defined trigger pipelines, providing a flexible foundation for deadtime-aware analysis and triggering strategies in future distributed detector systems.",
+  "authors": [
+    "Thammarat Yawisit",
+    "Pittaya Pannil"
+  ],
+  "published": "2026-01-20T11:52:09Z",
+  "updated": "2026-07-28T11:22:48Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

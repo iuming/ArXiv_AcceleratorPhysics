@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2601.18114v2",
+  "url": "https://arxiv.org/abs/2601.18114v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.18114v2.pdf",
+  "title": "Mitigating Deadtime in Distributed Optical Arrays Using A Liveness-Aware Trigger Approach for High-Energy Neutrino Detection",
+  "abstract": "Large-scale neutrino observatories operate under unavoidable detector deadtime arising from photomultiplier saturation, digitizer limits, and front-end readout constraints. Conventional coincidence-based trigger logic implicitly assumes continuous sensor availability and therefore suffers systematic efficiency loss when channels become temporarily non-live. This work presents the design of a liveness-aware trigger architecture targeting low-latency FPGA deployment in distributed optical arrays. We introduce a recursive Infinite Impulse Response (IIR) update law implemented as a fully synthesizable pipeline that constructs a continuity-preserving effective observable at each sensor node. Rather than collapsing during non-liveness intervals, the observable decays smoothly while retaining phase and amplitude information relevant for network-level coherence estimation. By explicitly separating continuous measurement construction from discrete trigger decision logic, the proposed architecture enables graceful degradation under partial channel non-liveness. Simulation results demonstrate sustained event recovery efficiency in regimes of elevated deadtime probability, where conventional coincidence logic degrades substantially.",
+  "authors": [
+    "Thammarat Yawisit",
+    "Pittaya Pannil"
+  ],
+  "published": "2026-01-26T04:00:36Z",
+  "updated": "2026-07-28T10:37:23Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

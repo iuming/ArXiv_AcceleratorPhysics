@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.25174v1",
+  "url": "https://arxiv.org/abs/2607.25174v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.25174v1.pdf",
+  "title": "Machine-Learning-Based Waveform Discrimination in the Front-End Electronics of the Belle II Central Drift Chamber for Cross-Talk Noise Reduction",
+  "abstract": "Machine learning (ML) inference on FPGAs has been widely adopted in real-time triggering of collider experiments for detector signature identification. In contrast, the ML application in Front-End Electronics (FEE) has not yet been fully explored, primarily due to constraints such as limited FPGA resources, power consumption, and localized detector coverage. In this work, we develop an ML-based waveform discrimination method for the Central Drift Chamber (CDC) of the Belle II experiment to suppress cross-talk noise at the front-end level. The Belle II CDC is a key charged-particle tracking detector for both offline and the real-time hardware trigger. During Belle II operation, background wire hits have been observed in the CDC FEE, where multiple hits occur in neighboring anode wires by large energy deposit. The hardware track trigger employs a Hough transformation based on track segments formed by combining hits from multiple wire layers. Due to the reduced information, the track trigger is sensitive to cross-talk noise, hence resulting in an increased fake trigger rate with higher luminosity in the future. We employ compact and fast Boosted Decision Tree models implemented in a Xilinx Virtex-5 FPGA of the CDC FEE, where waveform is processed independently for each wire channel in a fully pipelined manner. Offline studies show that the cross-talk noise can be reduced by approximately a factor of two while maintaining a signal efficiency above 98%. The firmware validation during dedicated Belle II calibration runs demonstrated reductions of up to 50% in track segment and trigger rates while preserving the trigger acceptance for events containing tracks within 10%. This work demonstrates the technical feasibility of compact and low-latency ML inference in detector FEE and highlights its potential for future intelligent detector readout systems in high-energy physics experiments.",
+  "authors": [
+    "Yun-Tsung Lai",
+    "Taichiro Koga",
+    "Yu Nakazawa",
+    "Nanae Taniguchi",
+    "Keisuke Yoshihara"
+  ],
+  "published": "2026-07-28T00:54:30Z",
+  "updated": "2026-07-28T00:54:30Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

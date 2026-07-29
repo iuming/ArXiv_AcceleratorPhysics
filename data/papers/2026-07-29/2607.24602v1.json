@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.24602v1",
+  "url": "https://arxiv.org/abs/2607.24602v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.24602v1.pdf",
+  "title": "Implementation and verification of the avalanche source in a 3D full-f particle-in-cell model of relativistic electrons for studies of tokamak disruptions",
+  "abstract": "Disruptions threaten tokamak operation not only because of large in-vessel forces and thermal heat loads, but also because some electrons may be accelerated to relativistic energies. These so-called runaway electrons (REs) can multiply exponentially via knock-on collisions with thermal electrons. As the resulting RE avalanche is exponentially sensitive to the pre-disruption plasma current, multi-MA RE beams may form in large future devices, risking severe localized wall damage. Detailed understanding of RE beam formation and the particle phase-space distribution requires a self-consistent treatment of the RE avalanche and competing losses in the stochastic fields of MHD-active plasmas. Such simulations including the RE sources in 3D fields are needed to develop viable mitigation scenarios. For this, the 3D nonlinear MHD code JOREK includes a hybrid fluid-kinetic model, describing REs with a full-f relativistic particle-in-cell (PiC) approach using full-orbit or drift-kinetic descriptions. In this work, an energy and momentum conserving knock-on collision operator is implemented to enable accurate modeling of the RE phase-space dynamics in 3D electromagnetic fields. To make such novel high-fidelity simulations computationally viable, a resampling technique was also implemented to restrict the number of markers. The avalanche model is verified using analytical expressions from literature and applied to a JET-like termination scenario, demonstrating its applicability to realistic 3D MHD active scenarios. Future work on porting to accelerated high-performance computing systems will be needed to cross the long time scales involved, e.g., in periodic termination and re-avalanching that could occur in large devices like ITER.",
+  "authors": [
+    "Fiona Wouters",
+    "Hannes Bergström",
+    "Matthias Hoelzl",
+    "Guido T. A. Huijsmans",
+    "Jan van Dijk",
+    "the JOREK team"
+  ],
+  "published": "2026-07-27T16:04:41Z",
+  "updated": "2026-07-27T16:04:41Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
