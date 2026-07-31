@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.27785v1",
+  "url": "https://arxiv.org/abs/2607.27785v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.27785v1.pdf",
+  "title": "Bounded-Latency Spherical-Histogram Reconstruction for Compton Cameras",
+  "abstract": "Gamma-ray imaging with Compton cameras is computationally demanding because conventional reconstruction retains the list-mode acquisition inside the inversion loop: event-dependent cone/voxel interactions must be recomputed as the event count grows. We present a spherical-histogram framework in which each Compton event is encoded online into detector-centred angular histograms. Volumetric reconstruction is then performed from coherent histogram snapshots using a precomputed sparse projection operator. This turns the event stream into a bounded reconstruction state, decoupling event accumulation from iterative inversion. The method supports multi-view and multi-resolution operation, non-blocking acquisition, and iterative forward/backward reconstruction whose dominant cost depends.",
+  "authors": [
+    "Francisco J. Albiol",
+    "Luis Caballero",
+    "José Escalante",
+    "Alberto Albiol",
+    "Salvador Tortajada",
+    "Elena Larrea Estrelles",
+    "José Luis Leganés-Nieto"
+  ],
+  "published": "2026-07-30T07:17:31Z",
+  "updated": "2026-07-30T07:17:31Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.med-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
