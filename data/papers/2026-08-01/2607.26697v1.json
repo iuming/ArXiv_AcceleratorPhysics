@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2607.26697v1",
+  "url": "https://arxiv.org/abs/2607.26697v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.26697v1.pdf",
+  "title": "Reinforcement Learning applied to Optimization of LHC beams in the CERN Proton Synchrotron",
+  "abstract": "The longitudinal triple splitting in the CERN Proton Synchrotron (PS) is a key rf manipulation defining the 25 ns bunch spacing delivered to the Large Hadron Collider (LHC). We present an automated optimization of this manipulation based on machine learning. Successive manipulations with rf systems at multiple harmonics of the revolution frequency are performed in the PS. Each bunch injected from the PS Booster (PSB) is split into twelve bunches with ideally identical longitudinal beam parameters. Precise rf voltage and phase settings are required to minimize bunch-by-bunch variations in intensity, longitudinal emittance, and bunch shape. Our setup combines two distinct parts: a convolutional neural network providing an initial phase correction from the evolution of longitudinal bunch profiles during the splitting process, and two sequential Soft-Actor-Critic (SAC) reinforcement-learning agents that refine cavity phases and voltages. The models are trained on data from Beam Longitudinal Dynamics (BLonD) tracking simulations augmented by simulated uncertainties, including noise evaluated from measurements, to enable training and robust transfer to the machine. First tests in 2022 reached target splitting quality in fewer than ten optimization steps on average, matching or outperforming manual adjustments. This led to operational deployment of an on-demand version, followed by a fully autonomous controller in March 2025. This controller has been available to operations since, representing one of the first reinforcement-learning-based systems for beam quality optimization deployed in the CERN injector complex.",
+  "authors": [
+    "Joel Axel Wulff",
+    "Alexandre Lasheen"
+  ],
+  "published": "2026-07-29T09:45:10Z",
+  "updated": "2026-07-29T09:45:10Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
