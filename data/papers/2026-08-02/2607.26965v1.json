@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.26965v1",
+  "url": "https://arxiv.org/abs/2607.26965v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.26965v1.pdf",
+  "title": "Measurement of multiple mechanical properties from multi-dimensional signals in nanosecond laser ablation via PINN",
+  "abstract": "Accurate evaluation of mechanical properties in steels under ageing or service conditions remains a major challenge. We propose a thermo-mechanical coupling framework for nanosecond laser ablation based on energy conservation, which is embedded into a physics-informed neural network (PINN) to enable simultaneous inversion of multiple mechanical properties. A thermo-mechanical coupling coefficient is defined to uniformly describe the dynamic allocation of input laser energy among thermal diffusion, mechanical work and plasma shielding across different deformation stages under laser irradiation. Furthermore, hard-to-measure physical characteristics in the coupled equation are replaced with experimentally accessible features obtained through the simultaneous acquisition of spectroscopic, shockwave and surface-wave signals. Using 210 experimental datasets, the framework simultaneously recovers Young's modulus, yield strength, ultimate tensile strength and micro-Vickers hardness with high accuracy (R2=0.9927, 0.9912, 0.9916 and 0.9959 respectively), significantly outperforming the baseline method (ultrasonic velocity regression for E, R2=0.0012). Comparisons with linear normalization and unconstrained neural networks demonstrate that PINN achieves near-unity accuracy through the embedding of conservation-law constraints. Partial dependency analysis further uncovers the nonlinear coupling laws between input features and mechanical properties. The proposed paradigm, integrating conservation laws, measurable features and physics-informed learning, offers a universal approach for non-contact, high-precision and physically consistent multi-to-multi inversion of multiple material properties under nanosecond laser ablation conditions.",
+  "authors": [
+    "Ying Zhou",
+    "Jian Wu",
+    "Ziyuan Song",
+    "Jinghui Li",
+    "Xinyu Guo",
+    "Hao Sun",
+    "Yuhua Hang",
+    "Cuixiang Pei",
+    "Xingwen Li"
+  ],
+  "published": "2026-07-29T14:27:32Z",
+  "updated": "2026-07-29T14:27:32Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.app-ph",
+    "physics.data-an",
+    "physics.optics"
+  ],
+  "primary_category": "physics.plasm-ph",
+  "doi": "10.1063/5.0301252"
+}
