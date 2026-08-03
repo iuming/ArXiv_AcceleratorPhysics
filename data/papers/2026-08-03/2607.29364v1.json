@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2607.29364v1",
+  "url": "https://arxiv.org/abs/2607.29364v1",
+  "pdf_url": "https://arxiv.org/pdf/2607.29364v1.pdf",
+  "title": "A Neural Operator Closure for Landau Damping in Electrostatic Plasma",
+  "abstract": "We present a data-driven plasma fluid closure for both linear and nonlinear electrostatic Landau damping in one dimension. A Fourier Neural Operator (FNO) is trained online within a differentiable fluid solver, with the loss computed on trajectories produced by the closed fluid simulation rather than on individual kinetic snapshots. The closure is non-Markovian, acting on a trailing window of the resolved moment history so as to represent the memory of the unresolved dynamics. We demonstrate that a single FNO trained in this way reproduces both linear and nonlinear Landau damping, generalises to initial perturbation amplitudes outside the training set, and remains numerically stable when deployed in independent fluid simulations. In the nonlinear regime the learned heat flux reproduces the resolved-moment dynamics without matching the kinetic heat flux pointwise, behaving as an effective closure that compensates for the truncated higher moments, though the learned specific flux is expected to depend on the numerical scheme and training data. A sensitivity analysis of the trained model shows that it computes a genuine moment-to-flux relation whose reliance on the memory window is physically structured.",
+  "authors": [
+    "Samuel Burles",
+    "Enrico Camporeale",
+    "Oreste Pezzi"
+  ],
+  "published": "2026-07-31T12:51:59Z",
+  "updated": "2026-07-31T12:51:59Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
