@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2512.03829v2",
+  "url": "https://arxiv.org/abs/2512.03829v2",
+  "pdf_url": "https://arxiv.org/pdf/2512.03829v2.pdf",
+  "title": "First Experimental Demonstration of Reinforcement Learning-Based Tuning on the PSI Injector 2 Cyclotron",
+  "abstract": "Reliable operation of high-power proton cyclotrons is a critical requirement for Accelerator Driven Systems (ADS) and other large-scale applications. Beam tuning in such machines is traditionally performed manually, a process that can be slow, non-optimal, and difficult to execute in the presence of faults or changing conditions. To address this, we developed and deployed a machine learning (ML) based tuning framework on the Injector 2 cyclotron at PSI, chosen as an ideal testbed for high-power operation. The system combined a tailored reinforcement learning (RL) algorithm with real-time diagnostics and control, and incorporated accelerator-physics inspired adaptations such as an overshoot strategy that reduced magnetic field settling times by nearly a factor of six. Over an extensive 12-day operational test campaign, relatively long in the context of real-time ML experiments, the RL agent successfully tuned the machine across multiple operating points. For each investigated configuration, stable policies were obtained within a few hours of online training and subsequently demonstrated reliable low-loss operation during overnight evaluation runs. Crucially, the learned policy remained effective when transferred from low-current training to operation at beam currents up to 800 μA, demonstrating robust generalization under appropriately adapted operational constraints. These results constitute the first demonstration of RL-assisted tuning on a high-power cyclotron, with direct relevance to ADS-class drivers.",
+  "authors": [
+    "M. Haj Tahar",
+    "W. Joho",
+    "E. Solodko",
+    "M. Bocchio",
+    "S. Marquie",
+    "M. Busch",
+    "A. Barchetti",
+    "J. Grillenberger",
+    "J. Snuverink",
+    "M. Schneider"
+  ],
+  "published": "2025-12-03T14:21:39Z",
+  "updated": "2026-07-16T22:15:10Z",
+  "categories": [
+    "physics.acc-ph",
+    "hep-ex"
+  ],
+  "primary_category": "physics.acc-ph"
+}
