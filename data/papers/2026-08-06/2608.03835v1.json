@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.03835v1",
+  "url": "https://arxiv.org/abs/2608.03835v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.03835v1.pdf",
+  "title": "Synthetic Diagnostic Modeling for Plasma Tomography: Geometry Matrix Computation Methods and Impact of Model Accuracy",
+  "abstract": "Tomographic emissivity reconstruction from plasma diagnostics data relies on a synthetic model mapping the plasma emissivity to the measured signals. The model, referred to as a geometry matrix in the plasma imaging community, is often built using the line-of-sight (LoS) approximation. This approximation neglects the finite width of the detector viewing beams and can therefore introduce systematic errors. Physically correct volume-of-sight (VoS) models remove this inaccuracy by accounting for the full 3D extent of the viewing beams. Their adoption, however, is sometimes hindered by the difficulty of independently validating them. We present an intuitive and easily inspectable voxel-to-detector (V2D) approach for computing physically accurate VoS geometry matrices, based on discretizing the tokamak vessel into voxels and estimating the contribution of each voxel to the measurements of each detector. We apply the V2D approach to the soft X-ray (SXR) and bolometry systems of the TCV tokamak. Through phantom-based studies on physically realistic emissivity profiles, we quantify the improvement in reconstruction quality obtained by using VoS rather than LoS models. We find that the VoS model yields overall better accuracy and precision; however, interestingly, the simpler LoS model does not introduce a significant systematic bias in the estimated total, core, divertor and main chamber radiated powers. We further compare the V2D geometry matrix with an independent ray-tracing implementation, finding excellent agreement that validates both approaches for routine use at TCV. All routines developed in this work are made openly available.",
+  "authors": [
+    "D. Hamm",
+    "G. Partesotti",
+    "C. Theiler",
+    "U. Sheikh"
+  ],
+  "published": "2026-08-04T15:44:30Z",
+  "updated": "2026-08-04T15:44:30Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

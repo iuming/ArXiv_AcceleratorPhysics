@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.03448v1",
+  "url": "https://arxiv.org/abs/2608.03448v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.03448v1.pdf",
+  "title": "Real-Time Smart Self-Mixing Interferometry Sensor With Embedded Neural Network",
+  "abstract": "Self-mixing interferometry is a measurement ap- proach in which a laser beam is re-injected into the emitting laser itself after reflection on a target. Information about the position of the target can be obtained from monitoring the voltage across the laser. However, analyzing this signal is difficult. In previous works, neural networks have been used with great success to process this data. In this article, we present an updated prototype of an integrated sensor based on self-mixing interferometry with embedded neural networks. It consists of a semiconductor laser (acting both as light emitter and detector) equipped with an embedded platform for data processing. The platform includes an ADC (Analog-to-Digital Converter) and an STM32U575ZI microcontroller. The microcontroller runs a residual neural network in charge of reconstructing the displacement of a target from the interferometric signal entering the ADC. We assess the robustness of the neural network to unwanted signal amplitude variations, the impact of different network weights quantization choices required to run the network on the microcontroller, and the energy consumption of the system. Finally, we provide a demonstration of target displacement reconstruction fully running on the embedded platform in real-time. Our results pave the way towards robust, low power and versatile sensors based on self-mixing interferometry and embedded neural networks.",
+  "authors": [
+    "Pierre-Emmanuel Novac",
+    "Laurent Rodriguez",
+    "Stéphane Barland"
+  ],
+  "published": "2026-08-04T10:45:39Z",
+  "updated": "2026-08-04T10:45:39Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1109/TIM.2026.3718110"
+}
