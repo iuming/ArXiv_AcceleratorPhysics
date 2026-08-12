@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2608.06518v1",
+  "url": "https://arxiv.org/abs/2608.06518v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.06518v1.pdf",
+  "title": "Gamma Neutron Radioactive Source Identification in Water Cherenkov Detectors",
+  "abstract": "Water Cherenkov Detectors (WCDs) are a robust technology widely used in astrophysics, high energy physics, and recently nuclear security applications. They detect high energy interactions through the Cherenkov light emitted by charged particles traveling faster than the speed of light in water.   In this work, we demonstrate the feasibility of gamma-neutron discrimination in WCDs using a combined methodology that integrates statistical analysis with machine learning techniques. The experimental setup employs different shielding configurations to isolate gamma and neutron contributions from a \\textsuperscript{241}AmBe source, while \\textsuperscript{60}Co and \\textsuperscript{137}Cs sources are used to establish a signal to energy calibration.   A statistical analysis based on a $3σ$ significance criterion is used to define energy thresholds, enabling a linear relationship between the measured charge spectrum and the deposited energy. Building on this calibration, pulse shape information is further exploited through machine learning methods to improve event classification. An ensemble model based on a soft-voting strategy combining a Bagging classifier, CatBoost, and a Multilayer Perceptron was trained on detector signals acquired under different shielding conditions, achieving an accuracy of 0.816 and an area under the Receiver Operating Characteristic (ROC) curve.   The combined approach demonstrates that statistical thresholding provides a physically grounded discrimination baseline across the full energy range, while machine learning enhances classification performance at higher energies by leveraging pulse level information. This integrated strategy improves radiation identification capabilities in water Cherenkov detectors, with potential applications in nuclear security and radiation detection.",
+  "authors": [
+    "A. Núñez Selin",
+    "C. Sarmiento Cano",
+    "H. Asorey",
+    "I. Sidelnik"
+  ],
+  "published": "2026-08-06T18:57:05Z",
+  "updated": "2026-08-06T18:57:05Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

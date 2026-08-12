@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.18780v2",
+  "url": "https://arxiv.org/abs/2601.18780v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.18780v2.pdf",
+  "title": "OptiGAN for Crystal Arrays: Physics-Informed Generative Modeling of Optical Photon Transport in PET Detector Arrays",
+  "abstract": "Monte Carlo simulations of optical photon transport are computationally prohibitive for large-scale optical systems including detector arrays and PET systems, restricting their practical use to single-crystal studies. This work presents an enhanced conditional generative adversarial network capable of replacing optical simulations at the crystal array level, extending our previous single-crystal approach to a 3x3 BGO detector array. We introduce Fourier feature encoding and a learnable latent mapping network as the modifications enabling stable training on the array geometry, together with a physics-informed loss term enforcing the unit-sphere state space $S^2$ of the generated propagation directions as a soft constraint. Training data requirements are reduced eight-fold by exploiting the array's symmetry. Performance is benchmarked against GATE10/Geant4 ground truth, using the fluctuations between independent Monte Carlo runs. The enhanced optiGAN achieves similarity values within 3$σ$ agreement of the Monte Carlo baseline across all evaluation conditions. An ablation and attribution analysis shows that the physics-informed loss term reduces low-SSIM bin fractions by a factor of 3.6 on the outer crystals, with a localized trade-off at the central crystal, yielding a net 48% reduction over the full array. The model transitions from electron-emission training data to realistic gamma-photon interactions, producing flood maps that reproduce experimental patterns including photopeak clusters and inter-crystal scatter lines. This proof-of-concept demonstrates that a physics-informed generative model can simulate optical photon transport in segmented scintillator arrays at a training and inference cost accessible on a single workstation GPU.",
+  "authors": [
+    "Stephan Naunheim",
+    "Brandon Pardi",
+    "Guneet Mummaneni",
+    "Carlotta Trigila",
+    "Emilie Roncali"
+  ],
+  "published": "2026-01-26T18:48:05Z",
+  "updated": "2026-08-07T01:41:51Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1088/1361-6560/ae95d7"
+}
