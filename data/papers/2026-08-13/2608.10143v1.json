@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2608.10143v1",
+  "url": "https://arxiv.org/abs/2608.10143v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.10143v1.pdf",
+  "title": "Machine learning methods for spectroscopic information recovery under ultrafast photon pileup",
+  "abstract": "We present methods for recovering spectroscopic information from multiple concurrent photon interactions that would normally be lost due to pulse pileup. In particular, we focus on machine learning methods to recover information based on spatial (rather than temporal) energy deposition patterns in position-sensitive detectors. We construct two representative problems, namely (1) recovering the fraction of total energy deposition stemming from a monoenergetic signal vs. a smooth background; and (2) recovering the signal multiplicity, i.e., the number of interacting photons, in a pure-source-term example. In the signal fraction recovery problem, we use 3D convolutional neural networks (CNNs), fully-connected neural networks (FCNNs), a network based on the PointNet++ architecture, and two non-machine-learning methods to estimate the signal fraction in synthetic data when up to 20 total piled-up photons are present. The CNN, FCNN, and PointNet++ models reconstruct the signal energy deposition fractions with root mean square errors (RMSEs) of $14.5\\%$, $18.8\\%$, and $16.8\\%$ given training datasets that fit in-core, while the classical methods perform poorly and will not improve with additional training data. In the multiplicity recovery problem, we demonstrate that, when trained with synthetically-piled-up real Cs-137 data, the 3D CNN architecture can recover the multiplicity with sub-photon RMSE, outperforming non-ML baselines. These methods can be adapted to future, more specific photon active interrogation applications, helping to re-enable spectroscopic analyses in those domains.",
+  "authors": [
+    "Jayson R. Vavrek",
+    "Thomas D. MacDonald",
+    "Yue Shi Lai"
+  ],
+  "published": "2026-08-10T18:59:13Z",
+  "updated": "2026-08-10T18:59:13Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

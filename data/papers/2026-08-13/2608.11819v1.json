@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2608.11819v1",
+  "url": "https://arxiv.org/abs/2608.11819v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.11819v1.pdf",
+  "title": "Usage of GPUs for ALICE Run 3 Offline Reconstruction on the GRID",
+  "abstract": "ALICE, the dedicated heavy ion experiment at the LHC, records Pb-Pb collisions at an interaction rate of up to 50 kHz. It was the first LHC experiment to leverage GPUs for online data processing during LHC Runs 1 and 2, and its Run 3 online data processing is now fully based on GPUs with more than 90% of the compute load offloaded to the accelerator. In order to use its online processing server farm also for offline processing in an efficient way while the LHC is not operating, ALICE has been running the offline TPC tracking on GPUs since 2023. Since then, ALICE has been conducting an ongoing effort to offload more offline reconstruction steps to GPUs, and to use the GPUs at other GRID sites beyond the ALICE online computing farm for offline reconstruction. In particular, porting the track model decoding and ITS tracking to GPU has improved the throughput by 29%. In 2026, ALICE ran the first GPU reconstruction jobs on the NVIDIA GPUs of the NERSC Perlmutter cluster, marking the first use of GPUs for LHC offline reconstruction on the GRID. Users can submit GPU reconstruction jobs by specifying only the required GPU count and type, while the underlying infrastructure handles all remaining configurations transparently.",
+  "authors": [
+    "David Rohr for the ALICE Collaboration"
+  ],
+  "published": "2026-08-12T09:03:24Z",
+  "updated": "2026-08-12T09:03:24Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
