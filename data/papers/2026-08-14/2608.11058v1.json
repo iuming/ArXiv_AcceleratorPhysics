@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.11058v1",
+  "url": "https://arxiv.org/abs/2608.11058v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.11058v1.pdf",
+  "title": "Machine-learning surrogate models for nonlinear energetic-particle transport predictions in ITER",
+  "abstract": "Fast and accurate prediction of energetic-particle transport driven by Alfvén eigenmode (AE) instabilities is essential for integrated modeling workflows used in the design and optimization of burning plasma fusion reactors. In this work, we develop machine-learning-based surrogate models for rapid prediction of energetic beam and alpha-particle transport fluxes, together with predictive uncertainty estimates, for an ITER steady-state scenario. Two complementary surrogate methodologies, Gaussian process (GP) regression and hierarchical neural networks (NNs), are trained using nonlinear FAR3d gyrofluid simulations of energetic-particle transport. A flux-variability analysis demonstrates that the selected plasma-state representation provides a sufficiently unique parameterization of the nonlinear transport response over most of the sampled feature space, thereby justifying the surrogate formulation. Both surrogate models reproduce the nonlinear transport fluxes with high predictive accuracy while reducing the computational cost of transport evaluation by approximately five to six orders of magnitude relative to direct nonlinear FAR3d simulations. Although the two approaches achieve comparable predictive accuracy, they exhibit distinct uncertainty characteristics: the GP provides more consistent global uncertainty estimates, whereas the NN more clearly distinguishes between different transport regimes. This work establishes a proof of concept for developing machine-learning surrogate models of energetic-particle transport that are sufficiently accurate and computationally efficient to be incorporated into future integrated modeling workflows.",
+  "authors": [
+    "Yashika Ghai",
+    "Donald A. Spong",
+    "Jacobo Varela",
+    "Luis Garcia"
+  ],
+  "published": "2026-08-11T15:25:07Z",
+  "updated": "2026-08-11T15:25:07Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

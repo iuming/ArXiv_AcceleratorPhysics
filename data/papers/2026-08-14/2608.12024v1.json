@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2608.12024v1",
+  "url": "https://arxiv.org/abs/2608.12024v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.12024v1.pdf",
+  "title": "Formally Verified Lock-Free Software Transactional Memory for Scientific Measurement",
+  "abstract": "Automated measurement of condensed-matter experiments requires instrument-control, data-acquisition, and user-interface threads to access shared, naturally hierarchical state concurrently. Coarse-grained locking can delay acquisition and cause sample loss, whereas fine-grained locking requires deadlock-prone lock ordering across instruments. Instead, we describe the lock-free software transactional memory (STM) that has been at the core of an open-source measurement platform for 16 years, in nuclear magnetic resonance experiments and, more recently, in optically detected magnetic resonance experiments. The STM organizes this state as a tree and provides atomic subtree updates and consistent subtree snapshots. After initial bundling, an unchanged subtree snapshot is acquired in $O(1)$ time through a custom lock-free atomic shared pointer. Within each bounded TLA+ configuration, TLC exhaustively checks the state space, establishing the safety and livelock-freedom properties specified for that configuration. Bounded executions of the atomic shared-pointer implementation are separately checked under the C11 weak-memory model. The same Snapshot and Transaction interfaces are exposed to Python scripting and AI-assisted automation.",
+  "authors": [
+    "Kentaro Kitagawa"
+  ],
+  "published": "2026-08-12T13:00:52Z",
+  "updated": "2026-08-12T13:00:52Z",
+  "categories": [
+    "cond-mat.other",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.other"
+}
