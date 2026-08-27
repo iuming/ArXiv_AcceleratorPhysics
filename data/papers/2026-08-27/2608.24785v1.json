@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2608.24785v1",
+  "url": "https://arxiv.org/abs/2608.24785v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.24785v1.pdf",
+  "title": "Physics Attention Transformer Surrogate for Rapid Vertical Instability Growth Rate Prediction: Alcator C-Mod to SPARC",
+  "abstract": "In this work, we investigate rapid prediction of the dominant $n{=}0$ vertical instability growth rate in C-Mod and SPARC equilibria, where nonrigid free boundary response models are too slow for control cycle use. Using a Physics Attention Transformer trained on MEQ-FGE-L labels, we predict both the scalar growth rate and the associated two dimensional perturbed toroidal current density. We find mean absolute errors of 5.4~s$^{-1}$ on held out C-Mod equilibria and 12.7~s$^{-1}$ on synthetic SPARC cases, with spatial eigenfunction errors near 5\\%. We also compared PAT with operator based ML models : FNO2D and DeepONet, where we found PAT predicts a much lower normalised growth rate error and improved spatial reconstruction. These results indicate that PAT can reproduce MEQ-FGE-L outputs at control relevant latency and could support future studies of growth rate headroom monitoring and proximity aware shape control.",
+  "authors": [
+    "Arunav Kumar",
+    "Cesar Clauser",
+    "Theodore Golfinopoulos",
+    "Cristina Rea",
+    "Francesco Capersene",
+    "Dan Boyer",
+    "SPARC Team",
+    "Alcator C-Mod Team"
+  ],
+  "published": "2026-08-25T16:30:32Z",
+  "updated": "2026-08-25T16:30:32Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math-ph",
+    "stat.ML"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

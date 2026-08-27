@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2608.15911v2",
+  "url": "https://arxiv.org/abs/2608.15911v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.15911v2.pdf",
+  "title": "Identification and electrothermal modeling of persistent current switch operating regimes in a Siemens MRI magnet using external electrical measurements",
+  "abstract": "The persistent current switch (PCS) closes the superconducting loop of an MRI magnet. During ramping it is commonly treated as a binary element: with the heater on, the PCS branch is assumed effectively open; after heater turn-off, it is assumed superconducting. Field measurements with an MPS2 service power supply (Digit Systems) on a Siemens MAGNETOM Avanto show that the PCS remains electrically active and that its resistive state can persist after heater turn-off through Joule self-heating.   Dedicated maneuvers identified two resistive regimes. With the heater on, the low-voltage resistance is nearly constant; after heater turn-off, self-heating produces a power-law voltage dependence. Both are described by a single effective electrothermal relation, $R_{sw}=C\\,(P_h h+V_{node}^2/R_{sw})^a$, where $h$ is the recorded heater state, spanning a 690-fold resistance range.   Final-hold data from 17 Siemens magnet sessions confirmed the voltage dependence of effective PCS resistance. Since branch-current relaxation follows $τ=L/R_{sw}$, the required hold time depends on switch state rather than a fixed delay; the median margin after source settling was $3.6\\,τ$.   The intersection of the PCS characteristic with the external-circuit load line defines the boundary of self-sustained resistive operation. For Avanto, the predicted 0.062 V threshold lay between superconducting recovery at 0.06 V and resistive-state persistence at 0.07 V, and retrospectively classified all 24 archived segments correctly.   Including both PCS resistive regimes in the dynamic model reproduced the observed current redistribution: RMSE decreased from 1.449 to 0.154 A, a factor of 9.4. This improvement required explicit representation of heater state.",
+  "authors": [
+    "Volodymyr Pupkov"
+  ],
+  "published": "2026-08-16T19:57:42Z",
+  "updated": "2026-08-26T16:45:01Z",
+  "categories": [
+    "cond-mat.supr-con",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.supr-con"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2507.17068v2",
+  "url": "https://arxiv.org/abs/2507.17068v2",
+  "pdf_url": "https://arxiv.org/pdf/2507.17068v2.pdf",
+  "title": "Fast 4D-STEM-based phase mapping for amorphous and mixed materials",
+  "abstract": "Interpretation and mapping strategies for 4D-scanning transmission electron microscopy (4D-STEM) are well-developed for crystalline materials, yet in the case of amorphous and mixed materials it is significantly more challenging to separate different phases. Non-negative matrix factorization (NMF) in principle would allow separation of 4D-STEM data into components with interpretable diffraction signatures and intensity maps, independent of the crystalline, amorphous or mixed nature of the material. However, adoption of NMF in this field is hampered by large datasets and conceptual hurdles: NMF tackles a non-convex optimization problem, requiring iterative algorithms. Additionally, the stopping condition has to be chosen carefully. In this work, we show that the factorization of large 4D-STEM datasets can be drastically accelerated using a QB decomposition (i.e. randomized NMF or RNMF), leading to much shorter time per iteration. This allows structure-independent phase mapping on very large 4D-STEM datasets. We validate this approach on a synthetic literature dataset (mixed ZrCuAl), before mapping a thin TiO$_2$ layer on top of SiO$_2$, and an interface between a lithium-ion cathode and solid state electrolyte. We also demonstrate that, before using NMF to transform the data on an interpretable, nonnegative basis, principal component analysis (PCA) can be used for fast exploratory analysis to assess dataset dimensionality and linearity.",
+  "authors": [
+    "Andreas Werbrouck",
+    "Nikhila C. Paranamana",
+    "Xiaoqing He",
+    "Matthias J. Young"
+  ],
+  "published": "2025-07-22T23:07:48Z",
+  "updated": "2026-08-25T07:39:26Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.mtrl-sci",
+  "doi": "10.1093/mam/ozag079"
+}

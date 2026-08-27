@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2608.23217v1",
+  "url": "https://arxiv.org/abs/2608.23217v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.23217v1.pdf",
+  "title": "AI Surrogate Modeling for Real-Time Tokamak Equilibrium Prediction: Benchmarking Neural Architectures and Validation on EXL-50U",
+  "abstract": "Fast and reliable plasma equilibrium prediction is essential for real-time tokamak operation and control, but conventional Grad-Shafranov (GS) solvers are often too costly for real-time deployment. We develop an AI surrogate framework and benchmark five architectures (MLP, CNN, FNO, Transformer, and KAN) on a numerical GS database with 100,000 IID and 10,000 OOD samples. Under a unified protocol, we evaluate accuracy, inference efficiency, model scaling, and robustness. We also establish device-level validation on the EXL-50U tokamak by linking numerical GS solutions, surrogate predictions, and the standard Shape Editor reference to assess simulation-to-device consistency. The surrogates achieve errors of $10^{-3}$-$10^{-2}$ relative to GS solutions, while the GS-to-device discrepancy remains at $10^{-3}$. Transformer gives the best IID accuracy, whereas CNN offers the best balance of accuracy, robustness, and speed, reaching 0.7 ms TensorRT latency. On unseen plasma geometries and parameter regimes, CNN and FNO show the strongest extrapolation stability, with 4%-5% relative $L_2$ error, while models with weaker inductive biases degrade more substantially. Scaling data and model capacity improves interpolation but not necessarily extrapolation, revealing a trade-off between capacity and OOD generalization. Overall, this work provides a systematic, device-consistent benchmark for AI-based GS prediction and practical guidance for selecting reliable surrogates for real-time plasma control and fusion applications.",
+  "authors": [
+    "Guoyang Shi",
+    "Zitong Zhang",
+    "Siqi Ding",
+    "Jianguo Chen",
+    "Yapeng Zhang",
+    "Jiayi Zhi",
+    "Hanyue Zhao",
+    "Tianyuan Liu"
+  ],
+  "published": "2026-08-24T13:12:48Z",
+  "updated": "2026-08-24T13:12:48Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

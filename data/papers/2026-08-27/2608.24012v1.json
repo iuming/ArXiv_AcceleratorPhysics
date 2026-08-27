@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2608.24012v1",
+  "url": "https://arxiv.org/abs/2608.24012v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.24012v1.pdf",
+  "title": "First-Principles Simulation of Electron-Ion Collisional Transport in Magnetized and Unmagnetized Plasmas",
+  "abstract": "Accurate electron-ion collision models are central to predicting transport in fusion and space plasmas, yet most practical formulations rely on binary-collision assumptions and impact-parameter cutoffs whose quantitative accuracy is difficult to assess directly. We develop a first-principles simulation framework for collisional transport by solving the Newton-Lorentz equations for test electrons in the many-body electric field of a Debye-screened ion background, without imposing binary-collision closures or artificial lower cutoffs. The method combines explicit force summation within a Debye sphere, a volume-preserving particle pusher, and adaptive time stepping, enabling stable and scalable simulations in both unmagnetized and magnetized plasmas. Using simulation-based measures of momentum relaxation and cross-field diffusion, we recover the classical scalings for the electron-ion collision frequency and perpendicular diffusion coefficient, namely $ν_{ei} \\propto v_{th}^{-3}$ and $D_\\perp \\propto B^{-2}$. Within the parameter range studied, both simulated coefficients are lower than their corresponding classical estimates by approximately 15-25%. These regime-specific benchmark results indicate that classical transport theory captures the leading scaling behavior, but that the corresponding quantitative prefactors can remain sensitive to many-body and near-field effects in the simulated regime. The framework therefore provides a computational benchmark for testing and improving reduced collision operators and transport models.",
+  "authors": [
+    "Keheng Zhu",
+    "Jian Liu",
+    "Chaozhou Mou",
+    "Senran Lin",
+    "Wei Zhang"
+  ],
+  "published": "2026-08-25T03:04:55Z",
+  "updated": "2026-08-25T03:04:55Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
