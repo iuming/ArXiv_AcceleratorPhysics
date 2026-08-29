@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2608.26216v1",
+  "url": "https://arxiv.org/abs/2608.26216v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.26216v1.pdf",
+  "title": "Real-time virtual circuits for plasma shape control via neural network emulators: integration and testing in the MAST-U PCS",
+  "abstract": "The deployment of advanced, AI-enabled control algorithms in tokamak experiments requires robust integration with existing plasma control system (PCS) architectures and extensive pre-experimental validation. In this contribution, we describe the integration and testing of neural-network-emulated virtual circuits for plasma shape control within the MAST Upgrade (MAST-U) PCS environment. The neural network models predict the plasma shape using the plasma current, poloidal field coil currents, and plasma profile parameters. In this paper, we explain how they are deployed via a real-time C++ inference server that interfaces with the PCS, returning the shape prediction and its Jacobian, and how, from the latter, virtual circuit matrices and updated coil current requests are computed for real-time actuation. Emphasis is placed on the validation workflow and best practices adopted to ensure confidence in the proposed control framework prior to experimental deployment. This work demonstrates practical AI-based shape control components for fusion control systems, with direct relevance for upcoming MAST-U experiments and future devices.",
+  "authors": [
+    "Matthew J. Marshall",
+    "Edward Jones",
+    "Graham J. McArdle",
+    "Alasdair Ross",
+    "Kamran Pentland",
+    "Nicola C. Amorisco",
+    "Charles Vincent",
+    "Martin Kochan",
+    "Colin Hogben",
+    "Graham Jones",
+    "Adam Stephen",
+    "George K. Holt",
+    "Adriano Agnello"
+  ],
+  "published": "2026-08-26T09:59:17Z",
+  "updated": "2026-08-26T09:59:17Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2608.25945v1",
+  "url": "https://arxiv.org/abs/2608.25945v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.25945v1.pdf",
+  "title": "Machine learning methods for modelling local, linear gyrokinetic simulations of MAST-U pedestal turbulence",
+  "abstract": "Gyrokinetic (GK) stability strongly influences the performance of high-confinement-mode pedestals in spherical tokamak plasmas. High-fidelity gyrokinetic codes such as GENE can model microinstability-driven transport, but the computational cost limits their routine use in integrated pedestal modeling workflows. Instead, present workflows often rely on reduced transport assumptions, such as the ballooning-critical pedestal model used in EPED. This work investigates machine-learning surrogate models for local linear gyrokinetic simulations in a MAST-U-relevant pedestal parameter space, with the aim of providing faster gyrokinetic-based inputs to reduced pedestal models. A sampling workflow is developed in which pedestal profile parameters are varied within experimentally motivated bounds and used to generate physically self-consistent Grad-Shafranov equilibria. This reduces the dimensionality of the data-generation problem compared with sampling local gyrokinetic inputs directly, while maintaining physically plausible combinations of plasma profiles, geometry, and local stability parameters. The surrogate models are trained to predict linear growth rates, real frequencies, and diffusivity-ratio transport fingerprints from local linear GENE simulations. A multi-head multilayer perceptron accurately reproduces the growth rate, while the diffusivity ratios and real frequency exhibit more clustered, regime-dependent behavior. A multi-head classification-regression model using frequency-based regime classes reduces the mean absolute error for these clustered targets and better captures sharp transitions associated with changes in the underlying instability regime, although errors near mode-transition regions remain a limitation.",
+  "authors": [
+    "Anna Niemelä",
+    "Daniel Jordan",
+    "Aaro Järvinen",
+    "Amanda Bruncrona",
+    "Adam Kit",
+    "Lorenzo Frassinetti",
+    "David Hatch",
+    "Leonhard Leppin",
+    "Samuli Saarelma",
+    "the MAST Upgrade team",
+    "EUROfusion Tokamak Exploitation team"
+  ],
+  "published": "2026-08-26T16:01:48Z",
+  "updated": "2026-08-26T16:01:48Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2608.23976v2",
+  "url": "https://arxiv.org/abs/2608.23976v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.23976v2.pdf",
+  "title": "An Inverse Grad-Shafranov Neural Network Approach to Tokamak Magnetic Control",
+  "abstract": "A new approach to tokamak magnetic control enabling high-precision plasma shaping and novel real-time adaptability is experimentally demonstrated on the Tokamak a Configuration Variable (TCV). The method is motivated by the insight that, under appropriate assumptions, a real-time inverse Grad-Shafranov solver approximates an optimal control policy for plasma boundary regulation. Building on this, a control architecture is developed in which classical controllers enforce operational constraints while a fast surrogate model provides a real-time inverse mapping from the desired plasma boundary to Poloidal Field Coil currents. Experimental results on TCV demonstrate improved plasma shaping with respect to the standard discharge preparation procedure --- albeit without explicit real-time shape feedback --- while enabling flexible response to asynchronous events. It is shown that a single network provides satisfactory performance across a range of plasma magnetic configurations. Real-time adaptivity is demonstrated in simulation, and partially in experiment, through adaptive strike point motion and early termination in response to a real-time trigger. These results suggest a viable path toward magnetic control architectures that reduce reliance on dense diagnostic coverage while maintaining high-accuracy plasma shaping, with potential relevance for future fusion power plant operation.",
+  "authors": [
+    "Allen M. Wang",
+    "Adriano Mele",
+    "Cosmas Heiß",
+    "Cristian Galperti",
+    "Zander Keith",
+    "Alessandro Pau",
+    "Antoine Merle",
+    "Olivier Sauter",
+    "Daniel Gonzalez Castiñeiras",
+    "Francesco Carpanese",
+    "Federico Felici",
+    "Mark Dan Boyer",
+    "Cristina Rea",
+    "TCV Team",
+    "EUROfusion Tokamak Exploitation Team"
+  ],
+  "published": "2026-08-25T02:09:41Z",
+  "updated": "2026-08-26T02:17:40Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

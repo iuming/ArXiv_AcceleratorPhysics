@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2608.25441v1",
+  "url": "https://arxiv.org/abs/2608.25441v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.25441v1.pdf",
+  "title": "A generalized energy-consistent finite difference scheme for 10-moment magnetohydrodynamics",
+  "abstract": "Pressure anisotropy and off-diagonal pressure stresses are ubiquitous and play important roles in collisionless/weakly collisional plasmas. The Chew-Goldberger-Low (CGL) MHD model is often used; however, it can lose hyperbolicity when the pressure anisotropy or plasma beta becomes large, making it hard to develop approximate Riemann solvers. An alternative approach is to use the 10-moment MHD equations, but their eigenmode analysis is also difficult, which similarly hinders the development of less-diffusive Riemann solvers. This paper presents a new energy-consistent finite difference scheme for 10-moment MHD designed to operate over a broad range of plasma beta. The proposed scheme extends the 10-moment MHD model using the energy-consistent finite-difference approach developed for conventional MHD. Nonlinear filtering is applied to all six independent components of the pressure tensor, and the kinetic and magnetic energies dissipated by the filtering are explicitly transferred to the diagonal pressure components under an equipartition assumption to maintain consistency with the total energy balance. The proposed scheme is validated against seven test problems in the isotropic limit, the gyrotropic limit, and without isotropization/gyrotropization. The results demonstrate the expected spatial convergence and total energy behavior, reproduce the linear growth rate, and yield pressure tensor structures qualitatively consistent with theoretical expectations and previous simulations, spanning plasma beta values from $10^{-10}$ to $10^{10}$. The proposed scheme provides a promising framework for large-scale simulations of collisionless plasmas across widely separated plasma beta regimes and opens a path toward applications such as solar wind turbulence and plasmoid-mediated reconnection.",
+  "authors": [
+    "Keita Akutagawa",
+    "Shinsuke Imada",
+    "Munehito Shoda"
+  ],
+  "published": "2026-08-26T06:54:54Z",
+  "updated": "2026-08-26T06:54:54Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph",
+    "physics.flu-dyn"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

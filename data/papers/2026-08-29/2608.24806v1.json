@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2608.24806v1",
+  "url": "https://arxiv.org/abs/2608.24806v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.24806v1.pdf",
+  "title": "Effects of Quantum Noise and Source Blurring on Dark-Field Signal Retrieval in X-ray Speckle-Based Imaging",
+  "abstract": "X-ray speckle-based dark-field imaging offers high sensitivity to sub-pixel structural features, yet its quantitative reliability in clinical and preclinical settings remains constrained by low photon flux and finite focal spot sizes. However, how hardware-induced noise and source blurring propagate through retrieval algorithms to degrade signal integrity is not fully understood. Here, we systematically evaluate algorithm robustness quantified by signal linearity, sensitivity, and bias under photon starvation and source blurring across two mathematically distinct frameworks: differential-based intrinsic tracking (Low-Coherence System, LCS) and patch-wise explicit tracking (X-ray Speckle-Tracking Speckle-Vector-Tracking, XST-XSVT). Our experimental results demonstrate that input speckle pattern distortions propagate through retrieval algorithms in fundamentally different ways depending on algorithm architecture. As an example, using our setup, under severe photon starvation, derivative noise amplification in LCS causes its dark-field signal linearity and sensitivity to drop precipitously, while sharply elevating baseline bias. In contrast, XST-XSVT restricts these losses for sensitivity while maintaining a stable baseline, as its patch-wise variance calculation inherently suppresses stochastic noise. Similarly, under blur-limited conditions , source blurring washes out the speckle pattern, directly reducing dark-field sensitivity for both LCS and XST-XSVT. This characterization establishes operational boundaries for low-power and low-coherence X-ray systems, guiding algorithm selection and framework optimization to realize quantitative dark-field imaging in preclinical and clinical applications.",
+  "authors": [
+    "Hunwoo Lee",
+    "Jingcheng Yuan",
+    "Mini Das"
+  ],
+  "published": "2026-08-25T16:49:35Z",
+  "updated": "2026-08-25T16:49:35Z",
+  "categories": [
+    "physics.optics",
+    "eess.IV",
+    "eess.SP",
+    "physics.ins-det",
+    "physics.med-ph"
+  ],
+  "primary_category": "physics.optics"
+}
