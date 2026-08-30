@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.23141v1",
+  "url": "https://arxiv.org/abs/2608.23141v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.23141v1.pdf",
+  "title": "A Cosmic Muon Tomography System with Machine Learning based Momentum Measurement for Multi-Object Reconstruction and Material Characterization",
+  "abstract": "Cosmic muon tomography is a powerful non-destructive imaging technique for inspecting dense and shielded materials through multiple Coulomb scattering. In this work, we present the design, simulation, and performance evaluation of a complete muon tomography system comprising six scintillator-strip tracking stations for trajectory reconstruction and a four-station magnetic spectrometer for muon momentum estimation. The detector geometry is implemented in the GEANT4 framework and optimized for object localization and material characterization. The reconstructed momentum is combined with the scattering angle to define the scattering density $ρ_s = {(θp)^2}/{L_{\\mathrm{eff}}}$, which enhances sensitivity to material-dependent scattering. Point-of-Closest-Approach (PoCA) reconstruction is used to estimate scattering locations within the imaging volume. To detect and separate multiple unknown objects, Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) is applied to the reconstructed PoCA cloud. Cluster-level scattering and geometric features are then extracted for object characterization. The proposed framework enables object detection, localization, volume estimation, shape reconstruction, and material ranking within a unified analysis pipeline. Simulation studies with multiple objects of different compositions demonstrate accurate reconstruction of object positions and geometries, while providing reliable material discrimination based on scattering density. The developed system offers a scalable approach for next-generation cosmic muon tomography applications in security screening, nuclear waste characterization, and non-destructive inspection.",
+  "authors": [
+    "Bharat Kumar Sirasva",
+    "Rohit Gupta",
+    "Satyajit Jena"
+  ],
+  "published": "2026-08-24T11:47:33Z",
+  "updated": "2026-08-24T11:47:33Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

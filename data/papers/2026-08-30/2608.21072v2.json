@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2608.21072v2",
+  "url": "https://arxiv.org/abs/2608.21072v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.21072v2.pdf",
+  "title": "Reconstruction Bias in Timepix4 Subpixel Centroiding for Electron Imaging",
+  "abstract": "Subpixel centroiding is widely used to improve the spatial resolution of hybrid pixel detectors for electron imaging by estimating the true interaction position within an entry pixel. Existing centroiding strategies are typically optimised using localisation accuracy. However, observations show that improved localisation does not necessarily translate into improved modulation transfer function (MTF) or reliable virtual-pixel rebinning. This work proposes a unified interpretation of these observations based on the ambiguity of the centroid reconstruction problem. We show that observable-based centroid estimators solve an intrinsically non-unique inverse problem using deterministic reconstruction rules, which can introduce entry-phase-dependent reconstruction bias that governs the spatial distribution of reconstructed subpixel coordinates. This framework explains why localisation accuracy alone is insufficient to predict imaging performance and identifies approximate intra-pixel translational symmetry as a prerequisite for faithful virtual-pixel imaging. The proposed interpretation is evaluated using simulated 200 keV and 300 keV electron data together with measured 200 keV data acquired with a Timepix4 detector. Comparisons of charge-weighted, timing-based, and morphology-dependent centroiding strategies demonstrate that estimators with similar localisation performance can exhibit markedly different MTFs and rebinned flat-field behaviour. The results suggest that future centroid optimisation should consider subpixel phase bias and rebinnability alongside localisation accuracy.",
+  "authors": [
+    "Nina Dimova",
+    "Richard Plackett",
+    "Daniela Bortoletto"
+  ],
+  "published": "2026-08-21T13:13:08Z",
+  "updated": "2026-08-24T10:52:18Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
