@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2608.01750v2",
+  "url": "https://arxiv.org/abs/2608.01750v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.01750v2.pdf",
+  "title": "AGNI: A differentiable MHD stability solver & optimizer for magnetic confinement fusion devices",
+  "abstract": "The existence of an ideal MagnetoHydroDynamic (MHD) equilibrium does not guarantee its stability. Finite toroidal mode number (n) instabilities degrade performance in both tokamaks and stellarators and differentiable stability optimization tools to date have operated only in the infinite-n limit. We present AGNI (Analysis of Global Normal modes in Ideal MHD), a GPU-accelerated, automatically differentiable finite-n ideal MHD stability solver and optimizer. AGNI discretizes the ideal MHD energy principle pseudospectrally in real space using differentiation matrices and geometric coefficients from a DESC equilibrium, giving a variational eigenvalue problem for the plasma displacement, and efficiently finds the most unstable modes. Built on JAX, AGNI yields reverse-mode gradients of the growth rate with respect to boundary-shape and profile parameters without re-solving the equilibrium. We benchmark AGNI against the initial-value code NIMSTELL for a modified Landreman-Buller-Drevlak quasi-helically symmetric equilibrium, recovering the dominant m = n = 4 interchange mode with agreement in both growth rate and eigenfunction structure, and verify the automatic differentiation gradients against central finite differences. We quantify CPU and GPU cost for eigenvalue and gradient evaluation, establish the finite-precision limit on resolving near-marginal eigenvalues, and present a robust scheme to impose incompressibility compatible with gradient-based optimization. AGNI will allow us to optimize tokamaks, stellarators, and mirrors against ideal MHD instabilities.",
+  "authors": [
+    "Rahul Gaur",
+    "Sanket Patil",
+    "Prateek Gupta",
+    "Djin Patch",
+    "Tony Qian"
+  ],
+  "published": "2026-08-03T06:16:49Z",
+  "updated": "2026-08-27T02:56:56Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

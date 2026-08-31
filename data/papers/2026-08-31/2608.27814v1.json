@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2608.27814v1",
+  "url": "https://arxiv.org/abs/2608.27814v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.27814v1.pdf",
+  "title": "Migration of Belle II TOP Feature Extraction from the Zynq Processing System to PCIe40 Readout PCs",
+  "abstract": "The Belle II Time-of-Propagation (TOP) detector is a key system for charged-particle identification (PID). Although TOP operated successfully during initial Belle II data taking, increasing luminosity and beam-induced background led to more frequent single-event upsets (SEUs) in the radiation-exposed Zynq systems-on-chip (SoCs). Resulting lockups of the embedded processing systems (PSs) interrupted data acquisition. To mitigate this limitation, waveform feature extraction, a critical task of the on-detector Zynq PS, was migrated to the off-detector PCIe40 readout PCs (ROPCs). The new architecture bypasses the PS in the event data path and performs feature extraction outside the detector radiation environment. This change removed SEU-induced PS lockups from the event data path and enabled stable operation of the TOP front-end electronics and the Belle II data-acquisition system under increased luminosity and background conditions. The typical TOP deadtime decreased from about 1% to a level consistent with zero after the final firmware patch, and stable operation was demonstrated at a Level-1 (L1) trigger rate of 30 kHz with a microchannel-plate photomultiplier-tube (MCP-PMT) hit rate of approximately 5 MHz per PMT. This paper describes the migrated architecture, its deployment and validation, and its operational and PID performance.",
+  "authors": [
+    "Harsh Purwar",
+    "Shahab Kohani",
+    "Vasily Shebalin",
+    "Martin Bessner",
+    "Matt Andrew",
+    "Thomas Browder",
+    "Tommy Lam",
+    "Kurtis Nishimura",
+    "Sourav Patra",
+    "Vladimir Savinov",
+    "Marko Staric",
+    "Gary Varner",
+    "Satoru Yamada",
+    "Keisuke Yoshihara"
+  ],
+  "published": "2026-08-28T01:20:51Z",
+  "updated": "2026-08-28T01:20:51Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
