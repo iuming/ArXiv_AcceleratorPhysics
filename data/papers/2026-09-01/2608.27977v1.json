@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2608.27977v1",
+  "url": "https://arxiv.org/abs/2608.27977v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.27977v1.pdf",
+  "title": "Compact Variational Neural Networks for Spectral Inference from a Single Nonlinear 2D Perovskite Photodetector",
+  "abstract": "Spectroscopy conventionally separates optical frequencies before detection, imposing persistent constraints on footprint, complexity and scalability. Here we establish an alternative paradigm in which the nonlinear optoelectronic dynamics of a single two-dimensional perovskite photodetector physically encode the incident optical field and machine learning performs the inverse spectral reconstruction. Using a planar fluorinated phenethylammonium lead iodide (F-PEAI) photodetector, we exploit wavelength- and irradiance-dependent current-voltage signatures arising from the coupled effects of photocarrier generation, trapping, interfacial transport and field-dependent carrier dynamics. A compact variational encoder-decoder preserves the functional and history-dependent structure of these responses by independently projecting forward and reverse voltage sweeps onto a truncated Legendre-polynomial basis before mapping them through a probabilistic latent representation to continuous spectral parameters. Trained on fewer than 400 experimental voltage sweeps, the model generalises to excitation wavelengths excluded from training, reconstructing wavelength with $R^2=0.958$ and a mean absolute error of 8.1 nm, while recovering log-normalised irradiance with $R^2=0.987$. Voltage-resolved analysis further reveals that wavelength and irradiance are encoded differently across the nonlinear device response, with distinct bias regions carrying complementary optical information. These results establish nonlinear material and interface dynamics as a computational resource for spectroscopy and point towards hardware-algorithm co-design in which materials, interfaces and inference architectures are engineered jointly to maximise information content, enabling compact spectroscopic systems without dispersive optics or detector arrays.",
+  "authors": [
+    "Karl Jonas Riisnaes",
+    "Ned Thaddeus Taylor",
+    "Hoi Tung Lam",
+    "Rosanna Mastria",
+    "Francesco Saverio Difeo",
+    "Monica Felicia Craciun",
+    "Saverio Russo"
+  ],
+  "published": "2026-08-28T06:46:38Z",
+  "updated": "2026-08-28T06:46:38Z",
+  "categories": [
+    "physics.optics",
+    "cond-mat.dis-nn",
+    "cond-mat.mtrl-sci",
+    "physics.app-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics"
+}

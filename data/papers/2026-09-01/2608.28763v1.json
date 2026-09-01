@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2608.28763v1",
+  "url": "https://arxiv.org/abs/2608.28763v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.28763v1.pdf",
+  "title": "ELMO: An Uncertainty-Aware Simulation-to-Surrogate Workflow for Fast Pedestal Linear-Stability Prediction",
+  "abstract": "Rapid prediction of pedestal linear stability is important for exploring tokamak operating space, uncertainty quantification, and future model-informed control, but mode-resolved magnetohydrodynamic stability calculations using BOUT++ are computationally expensive. We present a focused implementation of ELMO--the Edge Learning and Modeling Orchestrator--as an uncertainty-aware simulation-to-surrogate workflow integrating equilibrium generation, field-aligned mesh construction, large-scale BOUT++ calculations, automated campaign execution and data reduction, and Gaussian Process Regression (GPR).   For a single DIII-D plasma shape, 3,869 of 7,992 requested configurations completed equilibrium reconstruction, mesh generation, stability calculation, and quality control. Each retained equilibrium was evaluated at sixteen toroidal mode numbers, $n=5$--80 with $Δn=5$, using ideal-MHD and ideal-plus-diamagnetic models, producing 123,808 mode-resolved calculations. Using eight pedestal features, the GPR surrogate predicts two sixteen-mode growth-rate spectra with latent posterior uncertainty estimates.   Across five independent test realizations, the maximum-growth-rate prediction achieved $R^2=0.978\\pm0.013$ for ideal MHD and $R^2=0.966\\pm0.009$ for ideal-plus-diamagnetic physics. The surrogate reproduces the spectral shape and dominant unstable mode. Calibration diagnostics indicate that posterior uncertainties are useful for relative acquisition but are underdispersed and should not be interpreted as calibrated prediction intervals. Prediction of all 32 outputs requires about 20 ms on one CPU core, compared with about 21 min using 128 CPU cores for the corresponding BOUT++ scan, giving a $6.3\\times10^4$-fold wall-clock speedup and an $8.1\\times10^6$-fold reduction in computational cost.",
+  "authors": [
+    "Nami Li",
+    "X. Q. Xu",
+    "T. Osborne",
+    "E. Suchyta",
+    "Y. C. Fu",
+    "N. Podhorszki",
+    "H. Wang",
+    "Z. Li"
+  ],
+  "published": "2026-08-28T18:08:49Z",
+  "updated": "2026-08-28T18:08:49Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

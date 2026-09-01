@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.18745v2",
+  "url": "https://arxiv.org/abs/2606.18745v2",
+  "pdf_url": "https://arxiv.org/pdf/2606.18745v2.pdf",
+  "title": "Extension of a multi-region free-surface MHD solver beyond the inductionless approximation",
+  "abstract": "Free-surface liquid metal flows are a leading candidate for the plasma-facing components of future fusion reactors, but existing transient, three-dimensional, free-surface MHD solvers rely on the inductionless approximation, in which the induced magnetic field is neglected. This paper extends the open-source solver FreeMHD [B. Wynne et al., Phys. Plasmas 32, 013907 (2025)] beyond that approximation, resolving the induced field self-consistently with a vector-potential formulation that enforces $\\nabla\\cdot\\boldsymbol{B}=0$ by construction while preserving the original multi-region, two-phase framework. It is verified against the analytical Shercliff and Hunt duct flows, against flows driven by a time-varying applied field, and against the deformation of a free liquid metal jet crossing a non-uniform field, and validated against free-surface height measurements from the LMX-U experiment. The experiment validates the overall free-surface solution rather than finite-$R_m$ effects, which the transient-field cases verify. To our knowledge this is the first open-source, fully three-dimensional free-surface liquid metal solver to resolve the evolution of the induced magnetic field, providing a basis for modeling the finite magnetic Reynolds number conditions expected in large-scale, transient fusion events.",
+  "authors": [
+    "Min Ki Jung",
+    "Brian Wynne",
+    "Francisco Saenz",
+    "Yufan Xu",
+    "Jabir Al-Salami",
+    "Yong-Su Na",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-06-17T06:45:47Z",
+  "updated": "2026-08-30T10:06:53Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

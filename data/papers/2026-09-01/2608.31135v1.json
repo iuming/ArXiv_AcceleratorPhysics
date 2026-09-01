@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.31135v1",
+  "url": "https://arxiv.org/abs/2608.31135v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.31135v1.pdf",
+  "title": "FPGA-based TDC for SiPM Timing and Amplitude Measurements",
+  "abstract": "Silicon photomultipliers (SiPMs) are widely used in photon-counting applications, such as positron emission tomography or particle physics, where precise timestamps and photoelectron number information are both required. In this work, a Time-to-Digital Converter with amplitude measurement capabilities was designed using an Artix-7 XC7A35T FPGA. For amplitude measurements, the internal xADC of the FPGA was chosen over other alternatives for simplicity. This design has two channels and can operate in timestamp-only mode or timestamp + amplitude mode. In turn, channels can be operated independently or in coincidence. The Integral Non-Linearity and Differential Non-Linearity of the design were studied, along with its time resolution, which is $(19 \\pm 1)$ ps. Using a CAEN DT5810 pulse emulator, the design was tested further in timing-only mode, timing + amplitude mode and in coincidence mode to showcase its performance when using Poisson distributed SiPM-like pulses of various amplitudes.",
+  "authors": [
+    "Lucas Finazzi",
+    "Felipe Soriano",
+    "Leandro Gagliardi",
+    "Federico Golmar"
+  ],
+  "published": "2026-08-31T17:43:25Z",
+  "updated": "2026-08-31T17:43:25Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

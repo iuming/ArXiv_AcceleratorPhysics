@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2608.27845v1",
+  "url": "https://arxiv.org/abs/2608.27845v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.27845v1.pdf",
+  "title": "Reinforcement-learning control of turbulence transition in the modified Hasegawa-Wakatani system",
+  "abstract": "Control of plasma turbulence remains a long-standing challenge in magnetically confined fusion research. Here, we explore a reinforcement-learning (RL) approach for bidirectional control of the turbulence-zonal-flow transition in the modified Hasegawa-Wakatani system, a minimal model of electrostatic drift-wave turbulence. Within our model, a weak zonal drag damps the otherwise long-lived zonal structures, giving them a finite lifetime and restoring the drive-damping balance required for repeatable transitions within finite control episodes; meanwhile, actuation is applied through a spatially distributed Gaussian source field under a time-weighted budget constraint on actuation costs. The plasma model is then coupled to CNN-based soft actor-critic and twin-delayed deterministic policy-gradient agents through a GPU-native JAX solver that is highly optimized for fast online training. In the turbulence-suppression task, the learned budget-aware schedule achieves the lowest time-integrated turbulent flux for a given consumed budget, outperforming both constant and linearly decreasing baselines across all tested unseen initial conditions. In the inverse zonal-break task, the agent discovers an up-down antisymmetric actuation pattern that induces radial $E\\times B$ convection, disrupts the zonal structure, and sustains the turbulent state. A physics-informed warm-buffer initialization facilitates this discovery, as random exploration alone struggles to locate the narrow optimal manifold within the vast action space. These results demonstrate reinforcement learning as a practical trajectory optimizer for nonlinear plasma dynamics, such as turbulence control, and highlight the importance of physics guidance in such applications.",
+  "authors": [
+    "Luning Sun",
+    "Ben Zhu",
+    "Xin-Yang Liu",
+    "Deepak Akhare",
+    "Jian-Xun Wang"
+  ],
+  "published": "2026-08-28T02:25:52Z",
+  "updated": "2026-08-28T02:25:52Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

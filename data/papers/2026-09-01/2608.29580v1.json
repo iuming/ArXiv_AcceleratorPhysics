@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2608.29580v1",
+  "url": "https://arxiv.org/abs/2608.29580v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.29580v1.pdf",
+  "title": "Unified Gas-Kinetic Wave-Particle Method for Multiscale Simulation of Vlasov-Poisson-Fokker-Planck System",
+  "abstract": "A unified gas-kinetic wave--particle method with Fokker--Planck collisions (UGKWP-FP) is developed for the Vlasov--Poisson--Fokker--Planck system. The collision operator is modeled by the Lenard--Bernstein operator, whose stochastic representation corresponds to the Ornstein--Uhlenbeck process in velocity space. To extend the UGKWP framework beyond the conventional Bhatnagar--Gross--Krook (BGK) collision model, the Fokker--Planck operator is decomposed into a nonstiff drift--diffusion contribution and a stiff thermalization contribution. The former is retained in the particle dynamics through a modified Ornstein--Uhlenbeck process, whereas the latter is represented by a BGK-type relaxation toward the local Maxwellian. This decomposition enables an adaptive wave--particle representation: the method follows stochastic particle dynamics in rarefied regimes and increasingly represents the rapidly equilibrating distribution by the analytical wave component as the continuum regime is approached. The modified friction coefficient is constructed to recover the original Fokker--Planck dynamics in the rarefied limit while preserving the hydrodynamic limit under strong collisions. Numerical experiments demonstrate that the proposed method captures velocity-space drift and diffusion, recovers the expected kinetic and continuum behavior across a range of Knudsen numbers, and reproduces the characteristic evolution of collisional plasma phenomena.",
+  "authors": [
+    "Zhigang Pu",
+    "Chang Liu",
+    "Yixiao Wang",
+    "Kun Xu"
+  ],
+  "published": "2026-08-30T05:57:41Z",
+  "updated": "2026-08-30T05:57:41Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
