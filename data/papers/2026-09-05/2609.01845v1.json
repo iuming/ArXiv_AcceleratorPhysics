@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.01845v1",
+  "url": "https://arxiv.org/abs/2609.01845v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.01845v1.pdf",
+  "title": "Learning a general class of admissible multi-species collision operators from molecular dynamics",
+  "abstract": "We develop a structure-preserving, data-driven collision operator for spatially homogeneous multi-species kinetic systems from molecular dynamics (MD). The operator consists of diagonal self-collision blocks and ordered off-diagonal cross-species blocks to describe intra- and inter-species momentum and energy exchange. Within a local and point-wise identifiable kernel class, we develop the necessary and sufficient condition for the admissible kernel class satisfying the conservation laws, the H-theorem, and the frame indifference. Unlike the classical Landau operator, the off-diagonal kernels are not restricted to be symmetric under permutation of the two velocity variables. This unique structural freedom captures the distinct responses of different species to unresolved correlations and many-body effects arising from micro-scale particle interactions. The equivalent parameterizable kernel formalization enables us to learn a generalized data-driven collision operator directly from MD, where the low-rank tensor representations and random sampling are used to achieve efficient kernel training and numerical simulation. Numerical experiments show that the learned operator accurately predicts transport coefficients and the non-equilibrium relaxation, while retaining discrete conservation and entropy production. In particular, it captures plasma kinetics in the moderately coupled regime, where the predictions of both the Landau and the data-driven model restricted to velocity-permutation symmetry show significant discrepancies.",
+  "authors": [
+    "Yue Zhao",
+    "Andrew Christlieb",
+    "Huan Lei"
+  ],
+  "published": "2026-09-01T20:27:27Z",
+  "updated": "2026-09-01T20:27:27Z",
+  "categories": [
+    "physics.comp-ph",
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

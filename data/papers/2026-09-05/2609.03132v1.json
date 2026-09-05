@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2609.03132v1",
+  "url": "https://arxiv.org/abs/2609.03132v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.03132v1.pdf",
+  "title": "MGKDB: An IMAS-aligned multicode gyrokinetic simulation database for reproducible fusion turbulence modeling and data-driven analysis",
+  "abstract": "Expensive fusion simulations are commonly preserved in code-specific formats that limit discovery, comparison, and reuse. We present the Multiscale GyroKinetic DataBase (MGKDB), an open-source software framework and curated archive that converts heterogeneous simulation campaigns into traceable scientific records. Each record links code-native inputs and outputs to provenance and quality metadata, an IMAS-aligned physics representation, and derived diagnostics, preserving model-specific evidence while enabling common-field queries. Production pathways support linear and nonlinear GENE and CGYRO calculations and reduced quasilinear TGLF evaluations. At the September 1, 2026 snapshot, MGKDB contained 1,068,089 records, nearly all of which included a populated gyrokinetics IMAS branch. The software is openly available, while access to the NERSC-hosted production records is managed. Three demonstrations show how these linked representations support scientific reuse. Standardized quantities stored in the Diagnostics branch enable population-scale analysis of archived linear modes; common input coordinates reveal coverage, redundancy, and campaign-driven sampling structure across a multicode collection; and record-level retrieval of native CGYRO inputs drives matched TGLF calculations and produces a traceable dataset for exploratory surrogate modeling. Together, these examples demonstrate how MGKDB supports archive characterization, candidate cross-code and cross-fidelity comparisons, campaign planning, and reproducible data-driven modeling without treating different models as automatically equivalent.",
+  "authors": [
+    "Craig Michoski",
+    "David R. Hatch",
+    "Dongyang Kuang",
+    "Matthew Waller",
+    "Chris Holland",
+    "M. J. Pueschel",
+    "Joseph McClenaghan",
+    "Tom F. Neiser",
+    "Max T. Curie",
+    "Venkitesh Ayyar",
+    "Joseph Schmidt",
+    "Leonhard A. Leppin",
+    "Aaron Ho",
+    "Nathan T. Howard",
+    "Tapan Ganatma Nakkina",
+    "Bhavin Patel",
+    "Yann Camenen"
+  ],
+  "published": "2026-09-02T20:15:04Z",
+  "updated": "2026-09-02T20:15:04Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

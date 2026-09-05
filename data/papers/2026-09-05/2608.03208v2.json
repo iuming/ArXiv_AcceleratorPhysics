@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2608.03208v2",
+  "url": "https://arxiv.org/abs/2608.03208v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.03208v2.pdf",
+  "title": "Spectacular - A Modular DAQ System for Microdosimetry",
+  "abstract": "Particle therapy using light ions like protons, helium ions or carbon ions enables precise tumor targeting with enhanced biological effectiveness while minimizing damage to healthy tissue. Successful treatment planning depends not only on the absorbed dose but also on quality of the radiation, as quantified by the linear energy transfer (LET). Microdosimetry provides a direct experimental determination of such quantities by measuring the energy deposited per incoming particle in micrometer-sized solid-state detectors representing the relevant biological scales. However, the small signal amplitudes and high particle rates in therapeutic ion beams challenge existing readout systems, which are not sufficiently optimized for reliable operation with respect to pileup and signal-to-noise ratio (SNR). To address this, a modular data acquisition (DAQ) system was developed to accelerate the design of custom readout electronics and sensor characterization in microdosimetry and related spectroscopic applications. Centered around a Xilinx Zynq system-on-chip, it combines real-time processing, high-bandwidth streaming, and high-resolution digitization (16 bit at 100 MSas$^{-1}$) to enable advanced digital signal processing. The platform integrates programmable power supplies, a bias-voltage filter, test-pulse generators, and flexible I/O. Detector and preamplifier front-ends are hosted on interchangeable daugtherboards connected via a standardized interface, allowing different hardware configurations and readout algorithms to be evaluated on the same platform. The Spectacular DAQ system was successfully tested at the MedAustron ion therapy facility with custom charge-sensitive amplifiers and a diamond microdosimeter. First results demonstrate the feasibility and provide a proof-of-concept for potential future applications in clinical practice.",
+  "authors": [
+    "Matthias Knopf",
+    "Simon Waid",
+    "Daniel Radmanovac",
+    "Sebastian Onder",
+    "Richard Thalmeier",
+    "Peter Fischer",
+    "Stefan Gundacker",
+    "Claudio Verona",
+    "Edoardo Domenicone",
+    "Thomas Bergauer",
+    "Albert Hirtl"
+  ],
+  "published": "2026-08-04T06:47:32Z",
+  "updated": "2026-09-03T10:02:00Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.med-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

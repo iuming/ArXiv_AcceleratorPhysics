@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.01841v1",
+  "url": "https://arxiv.org/abs/2609.01841v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.01841v1.pdf",
+  "title": "Characterization of a low-power 3D photon-to-digital converter readout improved for system integration in meter-scale applications",
+  "abstract": "Digital silicon photomultipliers (dSiPM) are arrays of single photon avalanche diodes (SPADs) where each SPAD has its own electronic readout. To maximize the photodetection area, we developed a readout integrated circuit (ROIC) 3D-integrated to a custom-designed SPAD layer fabricated at Teledyne Dalsa (Bromont, Canada) to form a photon-to-digital converter (PDC). This paper presents an improved version of a previously demonstrated ROIC, fabricated in TSMC 180 nm technology to manage a 64 x 64 pixel architecture. This ROIC has different outputs, such as a flag output that produces a pulse whenever one of the pixels triggers and a digital sum that samples the amount of triggered SPADs. Improvements lead to a reduction of the timing jitter on the flag output from 72.0 ps RMS to 22.6 ps RMS through optimized H-tree design. A tunable hold-off circuit provides adjustable dead time from 32 ns to 18 μs, addressing both afterpulsing mitigation and SPAD-to-SPAD variations due to process defects. Power consumption is lowered by 30% at trigger rates exceeding 10 kHz through digital logic optimization and clock gating. These measurements validated that the ROIC is ready for 3D integration into a PDC for systems in medical imaging, particle physics, and quantum sciences.",
+  "authors": [
+    "Olivier Lepage",
+    "Tommy Rossignol",
+    "Nicolas Roy",
+    "Gabriel Lessard",
+    "Frédéric Vachon",
+    "Lorenzo Fabris",
+    "Serge A. Charlebois",
+    "Jean-François Pratte"
+  ],
+  "published": "2026-09-01T20:17:06Z",
+  "updated": "2026-09-01T20:17:06Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

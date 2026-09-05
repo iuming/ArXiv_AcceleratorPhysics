@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.03768v1",
+  "url": "https://arxiv.org/abs/2609.03768v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.03768v1.pdf",
+  "title": "Computing high-order mixed derivatives in physics-informed neural networks using multi-index Bell polynomials",
+  "abstract": "Physics-informed neural networks for high-order partial differential equations require mixed input derivatives and their gradients with respect to the network parameters. Standard implementations obtain an order-$K$ derivative by repeated automatic differentiation. We instead organize the forward recursion of the multivariate Faà di Bruno formula and its explicit backpropagation over a prescribed downward-closed set of multi-indices, with the Bell-polynomial convolutions tabulated once. The forward pass carries only the derivatives the differential operator requires. The backward pass propagates gradients from losses formed from any subset of them, including nonlinear products and coupled fields. Both recursions are exact up to roundoff and avoid nested computational graphs. An independent Taylor-jet implementation, symbolic checks of the test problems, and finite differences verify derivatives and loss gradients through order seven. On one CPU core, the method evaluates 330 mixed derivatives with respect to four inputs through order seven and the corresponding loss gradient without the memory failures observed for several nested implementations. Numerical tests include third-, fifth-, and seventh-order dispersive equations, incompressible flow, and a manufactured five-field electrohydrodynamic system. The seventh-order Zakharov-Kuznetsov test in $3+1$ dimensions has a relative solution error of $6\\times10^{-4}$.",
+  "authors": [
+    "Fumihiro Imoto"
+  ],
+  "published": "2026-09-03T12:36:02Z",
+  "updated": "2026-09-03T12:36:02Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

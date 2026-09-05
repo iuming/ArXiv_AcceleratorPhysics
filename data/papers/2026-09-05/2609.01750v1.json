@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2609.01750v1",
+  "url": "https://arxiv.org/abs/2609.01750v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.01750v1.pdf",
+  "title": "The Fusion Equilibrium Challenge: Inferring Magnetic Geometry Without Magnetic Diagnostics",
+  "abstract": "Next-generation fusion reactor devices such as SPARC, ARC, and CFETR will operate in extreme neutron environments that compromise the magnetic sensors traditionally used to reconstruct plasma equilibria. However, reliable knowledge of the plasma equilibrium--including magnetic flux surfaces, safety factor profiles, and shaping parameters--is indispensable for real-time control, disruption avoidance, and physics interpretation. The Fusion Equilibrium Challenge invites the NeurIPS community to confront a deceptively simple but scientifically rigorous inverse problem: reconstruct the two-dimensional poloidal flux function psi(R,Z) and a suite of scalar equilibrium parameters from non-magnetic diagnostics alone, namely external poloidal-field coil currents and Thomson-scattering electron temperature/density profiles. The challenge provides the first open-access, harmonized multi-machine benchmark for fusion, releasing a curated dataset of 9,113 DIII-D shots and 2,416 MAST shots--filtered for Thomson-diagnostic availability, feature completeness, and EFIT-reconstruction quality. Each shot is packaged into a standard Parquet file containing approximately 260 (DIII-D) / approximately 80 (MAST) EFIT flux maps and rich high-rate diagnostics. Two complementary awards reward intra-machine reconstruction fidelity (S_model) on DIII-D and zero-shot cross-machine generalization (G_ratio) to the topologically distinct MAST spherical tokamak. We argue that the challenge functions as a benchmark for reactor-ready equilibrium inference and as a probe of how far machine learning can be pushed toward truly machine-agnostic plasma state estimation.",
+  "authors": [
+    "Tapan Ganatma Nakkina",
+    "Matthew Waller",
+    "Craig Michoski",
+    "Brian Sammuli",
+    "David R. Hatch",
+    "William Boyes",
+    "Mitchell Clark",
+    "Raffi Nazikian",
+    "Sterling Smith"
+  ],
+  "published": "2026-09-01T18:19:38Z",
+  "updated": "2026-09-01T18:19:38Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

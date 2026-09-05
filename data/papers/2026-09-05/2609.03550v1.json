@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.03550v1",
+  "url": "https://arxiv.org/abs/2609.03550v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.03550v1.pdf",
+  "title": "$X$-dispersionless solver for electromagnetic and axion fields in a cylindrical particle-in-cell code",
+  "abstract": "We develop a quasi-cylindrical direction-splitting (QDS) dispersionless Maxwell solver for the open-source EPOCH particle-in-cell framework. The method preserves the exact axial phase velocity for every retained azimuthal mode by advecting transverse transport variables with the $cΔt=Δx$ shift. Building on the same transport viewpoint, we formulate an axion solver that advances the Klein--Gordon equation and the axion-regenerated electromagnetic fields within the QDS solver, so that axion--photon coupling is handled self-consistently. Benchmarks demonstrate that the cylindrical QDS solver reproduces the standard Yee wakefield structure while removing the axial group-velocity error and reducing computational cost by orders of magnitude. In the resonant axion generation test via two-color laser mixing, the QDS solver eliminates the spurious vacuum source term and maintains phase matching, whereas the Yee solver suffers from rapid dephasing due to numerical dispersion. The proposed algorithm therefore enables quasi-3D simulations of axion--photon physics in laser-plasma interaction with dispersion-free laser transport.",
+  "authors": [
+    "Xiangyan An",
+    "Min Chen",
+    "Yipeng Wu",
+    "Jianglai Liu",
+    "Zhengming Sheng",
+    "Jie Zhang"
+  ],
+  "published": "2026-09-03T08:52:04Z",
+  "updated": "2026-09-03T08:52:04Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
