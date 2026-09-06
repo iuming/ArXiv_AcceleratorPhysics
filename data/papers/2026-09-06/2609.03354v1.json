@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2609.03354v1",
+  "url": "https://arxiv.org/abs/2609.03354v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.03354v1.pdf",
+  "title": "Minute-Scale High-Fidelity Gyrokinetic Simulations with Portability from Laptop to Supercomputer",
+  "abstract": "Global gyrokinetic particle simulations remain computationally expensive, as they demand both adequate marker statistics and three-dimensional field solvers. In this work, we present a hybrid spectral method within the particle-in-Fourier (PIF) framework and implement it in the electrostatic model of GTC. Charge scatter and field gather are performed between particles and fields on a two-dimensional poloidal mesh, while the corresponding Poisson solver is discretized using radial finite differences and poloidal $m$-harmonics. Truncated spectral transforms are employed to connect multiple representations for fields, avoiding costly particle-grid operations for each individual $m$-harmonic within the particle loop. Benchmarks against conventional particle-in-cell (PIC) simulations successfully reproduce single-$n$ ion temperature gradient (ITG) mode structures and dispersion relations, as well as multi-$n$ nonlinear ITG transport and its regulation by zonal flows. Compared to conventional PIC, the proposed method reduces the effective problem size by more than a factor of 48 and achieves a speedup of over two orders of magnitude for single-$n$ cases. A 2000-step single-$n$ simulation with approximately 2 million markers completes in 78.2 seconds on a laptop GPU, while multi-$n$ turbulence simulation also completes within minutes. Furthermore, the elimination of toroidal particle-shift communication yields promising preliminary scaling performance on multiple NVIDIA A100 GPUs. The numerical scheme is broadly applicable for accelerating particle simulations on platforms ranging from laptops to supercomputers.",
+  "authors": [
+    "Jian Bao",
+    "Huasheng Xie",
+    "Ming Yang",
+    "Zhixin Lu",
+    "Haotian Chen",
+    "Zhihong Lin",
+    "Feng Zhang"
+  ],
+  "published": "2026-09-03T04:23:39Z",
+  "updated": "2026-09-03T04:23:39Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
