@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.03822v1",
+  "url": "https://arxiv.org/abs/2609.03822v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.03822v1.pdf",
+  "title": "Optimisation of importance sampling implementation in rare-event shielding simulations using Geant4",
+  "abstract": "Rare-event search experiments demand ever-lower backgrounds, and the resulting radio-pure materials and suppressive shielding make related background simulations computationally expensive without event biasing. We present a method for optimising the widely used importance splitting and Russian roulette technique for rare-event searches, in which a whole number of equal-width importance layers fill the shielding geometry. Balancing relative uncertainty against execution time, we optimise the layer thickness for both $γ$-rays and neutrons, and across different shielding materials and thicknesses. Expressed as a multiple of the primary particle's mean free path, the optimal thickness generalises across energies for a given particle type and yields a physics-based prediction applicable to any shielding design. The same trend reveals that over-biasing is possible, with relative uncertainty worsening at high layer counts for fixed execution time. The optimal configuration gives an $\\mathcal{O}$(20) gain in computational efficiency over the unbiased case.",
+  "authors": [
+    "P. Knights",
+    "L. J. Milligan",
+    "K. Nikolopoulos"
+  ],
+  "published": "2026-09-03T13:23:54Z",
+  "updated": "2026-09-03T13:23:54Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

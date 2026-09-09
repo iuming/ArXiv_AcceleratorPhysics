@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.13092v2",
+  "url": "https://arxiv.org/abs/2602.13092v2",
+  "pdf_url": "https://arxiv.org/pdf/2602.13092v2.pdf",
+  "title": "Tensor Network Compression for Fully Spectral Vlasov-Poisson Simulation",
+  "abstract": "We propose a numerical method for kinetic plasma simulation in which the phase-space distribution is represented by a low-rank tensor network with an adaptive level of compression. The Vlasov-Poisson system is advanced using a second-order Strang splitting scheme, with the advection and acceleration steps treated spectrally in position and velocity, respectively. By representing both the state and the operators required for time evolution as compressed tensor objects, the propagation can be carried out directly in tensor form without reconstructing the full phase-space grid. The self-consistent electric field is likewise obtained entirely within the tensor formalism through a tensor-based Poisson solver. We validate the approach on Landau damping and the two-stream instability, and find near-indistinguishable agreement with the corresponding full-grid reference while achieving substantial compression of the state representation. Additionally, we examine how varying the degree of compression influences conservation properties, positivity behavior, and computational cost, and show that compressibility varies strongly across the considered dynamical regimes. More broadly, the results point toward a promising class of spectral Eulerian plasma solvers that operate directly on compressed tensor representations.",
+  "authors": [
+    "Erik M. Åsgrim",
+    "Luca Pennati",
+    "Marco Pasquale",
+    "Stefano Markidis"
+  ],
+  "published": "2026-02-13T16:54:31Z",
+  "updated": "2026-09-04T08:51:02Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph",
+  "doi": "10.1016/j.jcp.2026.115330"
+}

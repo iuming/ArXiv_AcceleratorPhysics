@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2609.04421v1",
+  "url": "https://arxiv.org/abs/2609.04421v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.04421v1.pdf",
+  "title": "HELIX: a hybrid envelope-multiparticle linac code with differentiable space-charge optimization",
+  "abstract": "HELIX (Hybrid Envelope-multiparticle LInac eXplorer) is a Python hadron-linac framework developed at Fermilab for the PIP-II superconducting H- linac. It combines exact-gradient matching through a self-consistent nonlinear particle-in-cell (PIC) space-charge solve with the lattice-card workflow used for machine design. One TraceWin-format lattice drives an rms-envelope solver with 3-D linearized space charge, a multiparticle tracker with a 3-D FFT PIC solve, and linear matrix analysis over one data model, and the constraint cards that steer six classical matching algorithms also steer a differentiable seventh, which re-expresses a fixed-energy subset of the tracking-plus-PIC map as a single PyTorch graph and returns reverse-mode Jacobians exact to floating-point precision at a cost set by the number of constraints rather than of knobs. On a six-quadrupole manufactured verification problem the exact-Jacobian run reaches a tolerance-normalized residual of $3.2\\times10^{-10}$, some 200 times below the finite-difference endpoint at the same forward-equivalent budget; the Jacobian cost is flat in the knob count, with the crossover between ten and twelve knobs and reverse mode 1.45 times faster at sixteen. Verification is hierarchical, from analytic envelope references through $10^{-9}$-$10^{-13}$ cross-implementation PIC parity to TraceWin benchmarks on the PIP-II low-energy, medium-energy and accelerating lines: with space charge on, the rms moments along the MEBT and half-wave-resonator line agree within 0.7%, and over the 186-m linac the energy agrees within 0.03% and transmission within the combined statistical uncertainty. HELIX also provides machine-learned field-map surrogates, Pareto exploration, error Monte Carlo with orbit correction, failure compensation, and RFQ transport, with NumPy, C++/OpenMP, CUDA and Metal backends.",
+  "authors": [
+    "Abhishek Pathak"
+  ],
+  "published": "2026-09-03T19:38:12Z",
+  "updated": "2026-09-03T19:38:12Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
