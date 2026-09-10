@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2609.07722v1",
+  "url": "https://arxiv.org/abs/2609.07722v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.07722v1.pdf",
+  "title": "Real-time blind indexing by cross-frame consensus",
+  "abstract": "Classical crystallography determines orientation and unit-cell geometry from a rotation series collected from a single specimen, whereas serial crystallography acquires one still exposure from each of many randomly oriented microcrystals and must reconstruct a complete dataset by pooling partial measurements across the ensemble. In serial experiments, each frame typically contains only a subset of reflections, and frames with few reliable peaks (the small-N regime) are especially difficult to index blindly, because multiple incorrect lattices or orientations can explain sparse observations. The approach implemented in GLINT addresses this small-N regime by treating the dataset, rather than the individual frame, as the unit of inference. Candidate solutions are generated for many frames, weak but recurrent lattice hypotheses are pooled across the ensemble to identify a shared unit cell, and each frame is then registered against that consensus cell through a known-cell orientation search with lower dimensionality than blind indexing. In benchmark tests, GLINT matched the strongest blind indexer in the comparison on indexing yield at roughly 40x lower per-frame blind-indexing latency against XGANDALF's fastest configuration, and batched known-cell registration ran entirely on one GPU, allowing cell discovery on the fly during serial data collection. On experimental serial data, frames indexed blind by GLINT merged to crystallographic quality (CC* = 0.90), while the method rejected non-crystal images rather than forcing unsupported indexing assignments. These results demonstrate that indexing performance can be evaluated not only by indexing yield and throughput, but also by the quality of the resulting merged crystallographic data.",
+  "authors": [
+    "Stefano Marchesini",
+    "Yuan Ni"
+  ],
+  "published": "2026-09-07T16:34:34Z",
+  "updated": "2026-09-07T16:34:34Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.comp-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

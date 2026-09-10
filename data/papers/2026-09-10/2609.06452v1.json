@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.06452v1",
+  "url": "https://arxiv.org/abs/2609.06452v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.06452v1.pdf",
+  "title": "High-Order Structure-Preserving SBP Finite Difference Methods for the Vlasov-Maxwell System on Matrix-Free GPUs",
+  "abstract": "In this paper, we present a high-order, stable summation-by-parts (SBP) finite difference method for solving the Vlasov-Maxwell system in a 2D2V phase space. Central SBP operators for the advection terms are not stable when the solution becomes non-smooth and fine-scale filamentary structures develop, as is typical in high-dimensional Vlasov-Maxwell simulations. To address this issue, the method is stabilized using high-order upwind SBP operators. High-order explicit Runge-Kutta methods are employed for time integration. We prove that the fully discrete scheme exactly conserves mass and preserves momentum up to truncation error. Furthermore, we present a matrix-free implementation of the method on modern GPU architectures. A range of challenging benchmark problems is solved to demonstrate the accuracy, robustness, and performance of the proposed scheme.",
+  "authors": [
+    "Robin Dymér",
+    "Ken Mattsson",
+    "Murtazo Nazarov"
+  ],
+  "published": "2026-09-06T07:57:22Z",
+  "updated": "2026-09-06T07:57:22Z",
+  "categories": [
+    "math.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

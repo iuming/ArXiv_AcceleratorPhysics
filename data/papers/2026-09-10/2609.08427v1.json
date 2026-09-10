@@ -1,0 +1,39 @@
+{
+  "arxiv_id": "2609.08427v1",
+  "url": "https://arxiv.org/abs/2609.08427v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.08427v1.pdf",
+  "title": "Readout electronics for SUBMET",
+  "abstract": "A dedicated data acquisition (DAQ) system has been developed for the SUB-Millicharge ExperimenT (SUBMET) at the Japan Proton Accelerator Research Complex (J-PARC), a search for particles carrying a fractional electric charge $Q = εe$ with $ε$ below $\\mathcal{O}(10^{-3})$, hereafter referred to as millicharged particles (mCPs). Because such particles are expected to produce at most a few scintillation photons, the system is optimized for single-photoelectron detection from the photomultiplier tubes (PMTs), combining high-speed waveform digitization with precise timing. To capture eight consecutive proton bunches of the 30 GeV J-PARC beam within a single trigger, the eight channels of the Domino Ring Sampler 4 (DRS4) chip are cascaded in groups of four to form two readout inputs, each sampling 4096 points continuously at 820.5 MHz over an effective time window of 5 us. After calibration, timing differences between channels are within 1 ns on the same DRS4 chip, 2 ns on the same board, and 8 ns across different boards, well within the 30 ns coincidence window of the experiment. The front-end electronics achieve an RMS noise below 0.4 mV. The baseline is deliberately offset upward such that the negative-going pulses span a larger fraction of the digitizer range, improving voltage resolution and dynamic range. A trigger control board aggregates data from multiple readout boards and sustains the data-transfer rate required for beam operation. The measured performance confirms that the DAQ system meets the timing, noise, and throughput requirements of the experiment.",
+  "authors": [
+    "Claudio Campagnari",
+    "Sungwoong Cho",
+    "Suyong Choi",
+    "Seokju Chung",
+    "Matthew Citron",
+    "Albert De Roeck",
+    "Martin Gastal",
+    "Seungkyu Ha",
+    "Andy Haas",
+    "Christopher Scott Hill",
+    "Insung Hwang",
+    "Hoyong Jeong",
+    "Jaebak Kim",
+    "Jeonghwa Kim",
+    "Hyunki Moon",
+    "Ryan Schmitz",
+    "David Stuart",
+    "Eunil Won",
+    "Jae Hyeok Yoo",
+    "Jinseok Yoo",
+    "Ayman Youssef",
+    "Ahmad Zaraket",
+    "Haitham Zaraket"
+  ],
+  "published": "2026-09-08T08:33:54Z",
+  "updated": "2026-09-08T08:33:54Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}

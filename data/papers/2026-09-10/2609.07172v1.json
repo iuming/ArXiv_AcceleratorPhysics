@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.07172v1",
+  "url": "https://arxiv.org/abs/2609.07172v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.07172v1.pdf",
+  "title": "Dual-decomposition multi-GPU particle-in-cell method for cylindrical plasmas: Batched Fourier-mode multigrid and balanced particle slabs",
+  "abstract": "Three-dimensional electrostatic particle-in-cell (PIC) simulations combine irregular particle operations with a globally coupled Poisson solve, whose preferred parallel decompositions conflict. We introduce a dual-decomposition multi-GPU method: complete azimuthal Fourier modes are owned during the field solve, whereas spatial slabs own particles. Exact full-spectrum diagonalization and batched matrix-free geometric multigrid keep collectives outside the V-cycle, after which every GPU reconstructs the full field. Peer migration, cell reordering, warp-aggregated deposition, and capacity-constrained dynamic cuts restore particle locality and balance. CPU/GPU Poisson solutions agree to relative L2 errors below 6.9e-16; all 65 physical modes on eight V100 GPUs are solved in 9.350 ms with relative errors below 8.2e-15. For an identical 512*128*400 problem containing 707,788,800 particles per species, the complete PIC loop reaches 0.149108 s per step and strong-scales from five to eight GPUs with 91.81% efficiency. A separate cross-resolution production study shows approximately threefold aggregate particle-update and Poisson-cell throughput relative to a single RTX 5090 calculation; this measures refined-problem capability rather than a hardware speedup or formal convergence order.",
+  "authors": [
+    "Yinjian Zhao",
+    "Xi Chen",
+    "Yingjie Chen"
+  ],
+  "published": "2026-09-07T08:06:31Z",
+  "updated": "2026-09-07T08:06:31Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

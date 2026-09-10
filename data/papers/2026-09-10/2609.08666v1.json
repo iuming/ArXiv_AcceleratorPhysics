@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.08666v1",
+  "url": "https://arxiv.org/abs/2609.08666v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.08666v1.pdf",
+  "title": "Event-by-Event Space-Charge Gain Suppression in LGADs and Its Impact on Time Resolution",
+  "abstract": "Low Gain Avalanche Detectors (LGADs) achieve time resolutions below 50 ps through internal charge multiplication, yet the gain is not a fixed device property as the space-charge of the multiplied electron-hole density screens the gain layer field, which suppresses further impact ionization. While TCAD simulations reproduce the average gain suppression, their deterministic treatment of a continuous charge density cannot capture the event-by-event fluctuations that determine the timing performance. We present a Monte Carlo study of space-charge-induced gain suppression in LGADs using the Garfield++ framework, in which the dynamic field of the drifting carriers, computed from a coarse-grained system of charged rings, is superimposed on TCAD-computed static field maps of Centro Nacional de Microelectrónica (CNM) and Hamamatsu Photonics (HPK) produced sensors while preserving single carrier avalanche statistics. The simulated gain reproduces published two-photon absorption-transient current technique measurements across two orders of magnitude in injected charge, including the dependence on the injection depth. For minimum ionizing particles, the event-by-event coupling between deposited charge and gain compresses the Landau tail of the multiplied charge, narrowing the signal arrival time distribution and improving the intrinsic time resolution of the HPK-S1 sensor investigated in this work from 53.9 $\\pm$ 1.0 ps to 44.5 $\\pm$ 0.9 ps. Treating the primary ionization as a stochastic sequence of charge clusters, it is further shown analytically that any gain suppression that decreases with the cluster size narrows the centroid time distribution.",
+  "authors": [
+    "Djunes Janssens",
+    "Michael Moll",
+    "Heinrich Schindler"
+  ],
+  "published": "2026-09-08T12:31:16Z",
+  "updated": "2026-09-08T12:31:16Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2608.17418v2",
+  "url": "https://arxiv.org/abs/2608.17418v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.17418v2.pdf",
+  "title": "Sub-Second Collisionless Gyrokinetic Eigenvalue Solutions via Orbit-Invariant Decomposition",
+  "abstract": "Fast analysis of microscopic drift-wave instabilities based on linear gyrokinetic simulations is desirable for modeling anomalous transport in fusion devices. In this work, we present an orbit-invariant decomposition method for solving collisionless gyrokinetic eigenvalue problems. By discretizing velocity space along orbit invariants using particle energy and magnetic moment, the full eigenvalue matrix is separated into independent orbit blocks that couple with each other through the field equation, greatly reducing both matrix dimension and computational cost without sacrificing physics. Based on this method, we extend the MGK code [Phys.\\ Plasmas 24, 072106 (2017)] with both CPU and GPU implementations, supporting collisionless electrostatic and electromagnetic linear simulations in $s$--$α$ and Miller equilibrium models. For kinetic ion temperature gradient (ITG) and trapped electron mode (TEM) eigenvalue problems, the solver reduces single-solution times to the 0.01--0.1~s range---more than three orders of magnitude faster than CGYRO on the same hardware---enabling efficient large-scale parameter scans. For fully electromagnetic KBM cases, it also achieves a speedup of three orders of magnitude over CGYRO and HD7. The eigenfrequencies and mode structures are verified by comparing with CGYRO results. The method is generally applicable to all collisionless gyrokinetic eigenvalue formulations and has been extended to fully electromagnetic simulations. [Python code available at: https://github.com/FusionAlpha/mgk]",
+  "authors": [
+    "Anrui Luo",
+    "Jingyi Yu",
+    "Huasheng Xie",
+    "Jian Bao"
+  ],
+  "published": "2026-08-18T06:39:16Z",
+  "updated": "2026-09-06T01:38:10Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
