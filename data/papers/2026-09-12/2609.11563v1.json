@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2609.11563v1",
+  "url": "https://arxiv.org/abs/2609.11563v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.11563v1.pdf",
+  "title": "kobra: a new Vlasov code intended for plasma-wall modeling",
+  "abstract": "In a fusion device plasma-wall interactions \\edit{on the sheath scale} can be modeled as a collisionless problem. When modeling these regions particle-in-cell codes suffer from statistical error originating from undersampling the velocity space. On the other hand, Vlasov codes do not have this issue as they evolve the full distribution function. Here, we present a new finite-volume Vlasov code, kobra, equipped with adaptive-mesh refinement to reduce computational effort. Currently, the code solves the Vlasov-Poisson equations. We validate our code in 1d1v and 1d2v using established benchmarks, i.e. the two-stream instability, Landau damping, the Dory-Guest-Harris instability, and also a classical electrostatic plasma sheath. We find that the code reproduces the theoretical properties of these problems well. More importantly, the adaptive grid provides a computational gain that is likely to scale to higher dimensional, plasma-wall simulations.",
+  "authors": [
+    "Sebastian Konewko",
+    "Nathan Maestracci",
+    "Sven Van Loo"
+  ],
+  "published": "2026-09-10T13:53:44Z",
+  "updated": "2026-09-10T13:53:44Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

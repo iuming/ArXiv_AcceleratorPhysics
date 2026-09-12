@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2609.11874v1",
+  "url": "https://arxiv.org/abs/2609.11874v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.11874v1.pdf",
+  "title": "Physics-Informed Drift Diagnosis for Laser-Plasma Accelerator Operations",
+  "abstract": "Laser-plasma accelerators (LPAs) sustain accelerating gradients of order $100\\,\\mathrm{GV/m}$, but routine operation remains difficult: electron beam metrics drift over an operating shift, and the root physical cause is often invisible to the available diagnostics. We formulate LPA operation as a latent state-space model in which three effective interaction-point variables, the normalized laser amplitude $a_0$, the normalized plasma electron density $\\tilde n_e$ and the residual pulse chirp $\\mathcal{C}$, are inferred from routine electron beam observations by an extended Kalman filter. The emission model, which maps the latent state to the diagnostics, is kept structurally separate from the {transition} model, which describes how the latent state evolves between shots. The separation supports diagnosis in two stages, one asking which latent variable moved and one asking what moved it. The implemented emission model is a toy model, yielding an expected performance in line with current facilities and using 3D blow-out regime dependencies where relevant. We conduct synthetic sessions to test the effectiveness of the detection and attribution protocols, finding that attribution is limited by excitation rather than by shot count or diagnostic resolution. Because the construction needs only a set of physical latent variables, an emission model and a family of hardware-derived transition models, it transfers to other drift-prone subsystems. We argue that the accuracy of the whole procedure is limited by the emission model rather than by the inference method.",
+  "authors": [
+    "Ou Labun",
+    "Calin Hojbota",
+    "Mara Klebonas",
+    "Mike Downer",
+    "Rafal Zgadzaj",
+    "Phil Franke",
+    "Lance Labun"
+  ],
+  "published": "2026-09-10T17:44:23Z",
+  "updated": "2026-09-10T17:44:23Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.data-an",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

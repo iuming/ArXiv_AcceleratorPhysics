@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.08620v1",
+  "url": "https://arxiv.org/abs/2609.08620v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.08620v1.pdf",
+  "title": "Flexible Spectral-Normalized Neural Gaussian Process for Dynamic Aperture Prediction",
+  "abstract": "We address the challenge of scalable uncertainty quantification in large-scale scientific applications, where complex state-of-the-art machine learning methods are often computationally infeasible. Our primary contribution is a simple yet effective empirical Bayes method for automatically tuning the hyperparameters of a flexible, heteroscedastic Spectral-normalized Neural Gaussian Process. This approach retains the expressiveness and uncertainty-awareness of semi-Bayesian neural models while significantly reducing the computational burden by integrating hyperparameter learning directly into the training loop. We demonstrate the practical impact of our method on the task of estimating the dynamic aperture in circular particle accelerators, a fundamental problem in high-energy physics colliders and storage rings, using simulation data from the case of the Large Hadron Collider at CERN. Traditional approaches to DA estimation require extensive particle-tracking simulations, which are prohibitively time-consuming and resource-intensive. Our results show that the proposed method achieves competitive predictive performance and well-calibrated uncertainty estimates at much lower computational cost than state-of-the-art approaches. We stress that, beyond this application, the proposed empirical Bayes framework offers a general solution for training heteroscedastic neural models in situations where manual hyperparameter tuning is impractical. Accordingly, we anticipate that this framework can be applied to other domains that encounter comparable computational limitations.",
+  "authors": [
+    "Yousra El-Bachir",
+    "Frederik Van der Veken",
+    "Davide di Croce",
+    "Carlo Emilio Montanari",
+    "Massimo Giovannozzi",
+    "Ekaterina Krymova",
+    "Tatiana Pieloni"
+  ],
+  "published": "2026-09-08T11:55:43Z",
+  "updated": "2026-09-08T11:55:43Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.acc-ph"
+}

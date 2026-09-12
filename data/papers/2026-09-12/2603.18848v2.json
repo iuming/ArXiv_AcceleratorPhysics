@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2603.18848v2",
+  "url": "https://arxiv.org/abs/2603.18848v2",
+  "pdf_url": "https://arxiv.org/pdf/2603.18848v2.pdf",
+  "title": "A Low-Complexity 200 Mbit/s Full-Duplex Digital Link Over a Single Coaxial Cable for Laboratory Instrumentation",
+  "abstract": "Modern full-duplex communication systems, such as Gigabit Ethernet, enable high data rates over challenging transmission media but require sophisticated circuitry and non-trivial digital interfaces. For laboratory instrumentation, the objective may instead be to achieve moderate-bandwidth full-duplex communication over short, well-controlled coaxial cables with minimal circuit and interface complexity. We present a low-complexity bidirectional digital interconnect that enables simultaneous transmission and reception of baseband logic signals over a single coaxial cable. The circuit combines a discrete passive resistive hybrid providing line termination and directional separation, a single logic gate as line driver, and a commercial differential receiver used as a comparator. No modulation, transformer coupling, adaptive calibration, or active analog or digital echo cancellation is required. The design target is full-duplex operation at 200 MBit/s over 10 m of standard RG-178 cable. An analytical treatment of the hybrid network determines the system parameter that maximizes the differential signal amplitude at the receiver, while circuit simulations predict the deterministic timing errors resulting from imperfect directional separation. Experimental measurements confirm the predicted deterministic jitter and show good agreement with the simulation results. For typical laboratory coaxial cables up to 10 m, the measured peak-to-peak edge timing error remains below 1.2 ns. A bidirectional transmission experiment with randomized data demonstrates a clearly open eye diagram. It was found that the transceiver inherently provides loopback functionality when the transmission line is left open. The proposed approach provides a simple, protocol-independent bidirectional physical link which may be useful in laboratory instrumentation where cable routing is constrained.",
+  "authors": [
+    "Michael Wiebusch"
+  ],
+  "published": "2026-03-19T12:51:29Z",
+  "updated": "2026-09-10T15:01:34Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
