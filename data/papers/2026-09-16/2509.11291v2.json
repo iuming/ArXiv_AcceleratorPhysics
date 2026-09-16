@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.11291v2",
+  "url": "https://arxiv.org/abs/2509.11291v2",
+  "pdf_url": "https://arxiv.org/pdf/2509.11291v2.pdf",
+  "title": "Enhancing Electromagnetic Calorimeter Signal Reconstruction with Machine Learning-Based Noise Discrimination",
+  "abstract": "Calorimeters operating in high-radiation environments are susceptible to damage, leading to increased noise that can significantly degrade energy resolution. A common way to mitigate noise is to apply a higher energy threshold on the calorimeter cells, typically set a few standard deviations above the noise level. However, this method risks discarding cells with genuine energy deposits, worsening the energy resolution and the energy deposit pattern. In this paper, we investigate graph neural network (GNN) based algorithms as an alternative to rigid energy thresholds. The proposed approach exploits the full pulse-shape information together with the correlations among energy deposits in individual cells within an electromagnetic cluster. The study is performed using a standalone Geant4 simulation of an 11x11 matrix of lead tungstate crystals. To simulate it in more relatic way We demonstrate that the machine learning based method significantly outperforms a simple threshold based strategy, achieving an improvement in the calorimeter energy resolution of up to 82% and recovering up to 83% of true signal cells within the calorimeter grid.",
+  "authors": [
+    "Suman Das Gupta",
+    "Shamik Ghosh",
+    "Laltu Gazi",
+    "Shubham Dutta",
+    "Alexander Ledovskoy",
+    "Satyaki Bhattacharya",
+    "Shilpi Jain"
+  ],
+  "published": "2025-09-14T14:30:52Z",
+  "updated": "2026-09-15T17:15:39Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

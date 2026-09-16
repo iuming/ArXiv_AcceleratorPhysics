@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2601.11716v2",
+  "url": "https://arxiv.org/abs/2601.11716v2",
+  "pdf_url": "https://arxiv.org/pdf/2601.11716v2.pdf",
+  "title": "AllShowers: One model for all calorimeter showers",
+  "abstract": "Accurate and efficient detector simulation is essential for modern collider experiments. To reduce the high computational cost, various fast machine learning surrogate models have been proposed. Traditional surrogate models for calorimeter shower modeling train separate networks for each particle species, limiting scalability and reuse. We introduce AllShowers, a unified generative model that simulates calorimeter showers across multiple particle types using a single generative model. AllShowers is a continuous normalizing flow model with a Transformer architecture, enabling it to generate complex spatial and energy correlations in variable-length point cloud representations of showers. Trained on a diverse dataset of simulated showers in the highly granular ILD detector, the model demonstrates the ability to generate realistic showers for electrons, photons, and charged and neutral hadrons across a wide range of incident energies and angles without retraining. In addition to unifying shower generation for multiple particle types, AllShowers surpasses the fidelity of previous single-particle-type models for hadronic showers. Key innovations include the use of a layer embedding, allowing the model to learn all relevant calorimeter layer properties; a custom attention masking scheme to reduce computational demands and introduce a helpful inductive bias; and a shower- and layer-wise optimal transport mapping to improve training convergence and sample quality. AllShowers marks a significant step towards a universal model for calorimeter shower simulations in collider experiments.",
+  "authors": [
+    "Thorsten Buss",
+    "Henry Day-Hall",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Katja Krüger"
+  ],
+  "published": "2026-01-16T19:09:57Z",
+  "updated": "2026-09-15T15:00:15Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

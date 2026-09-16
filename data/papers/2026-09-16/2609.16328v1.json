@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2609.16328v1",
+  "url": "https://arxiv.org/abs/2609.16328v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.16328v1.pdf",
+  "title": "Characteristic Mapping Method for Vlasov-Poisson with BGK-collisions",
+  "abstract": "This work presents the first steps for simulating kinetic plasmas with collisions using the characteristic mapping method (CMM). The CMM is a semi-Lagrangian method that explores a semi-group structure to store diffeomorphic flow maps efficiently. Using the semi-group structure, individual submaps can be composed to relate the flow backward in time to its initial food point. The novelty of the presented work is handling the source term by storing sub-integrals that correspond to the individual sub-maps and allow efficient integration. Furthermore, we use the Lagrangian structure to avoid implicit time integration in the hydrodynamic regime, which is known to be stiff. We benchmark our method on the Boltzmann-BGK and Vlasov-Poisson-BGK equations and consider different test cases, the Sod shock tube problem and nonlinear Landau damping for different Knudsen numbers. We show third-order spatial and temporal convergence and illustrate the fine-scale zoom property of CMM for the bump-on-tail instability.",
+  "authors": [
+    "Xi-Yuan Yin",
+    "Philipp Krah",
+    "Zetao Lin",
+    "Jean-Christophe Nave",
+    "Kai Schneider"
+  ],
+  "published": "2026-09-14T20:43:44Z",
+  "updated": "2026-09-14T20:43:44Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

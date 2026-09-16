@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.16575v1",
+  "url": "https://arxiv.org/abs/2609.16575v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.16575v1.pdf",
+  "title": "KEMPIC-3D: A transparent and extensible electromagnetic Particle-in-Cell framework for kinetic plasma simulations",
+  "abstract": "KEMPIC-3D, a fully electromagnetic three-dimensional particle-in-cell (PIC) code, has been developed in C/C++ and systematically verified for the self-consistent simulation of kinetic plasma phenomena. The numerical framework combines a staggered Yee finite-difference time-domain solver for Maxwell's equations with a relativistic Boris particle pusher, trilinear field interpolation, and charge-conserving current deposition. Its modular architecture emphasizes algorithmic transparency and extensibility, allowing the principal numerical routines to be directly inspected and modified to incorporate additional physical models and computational capabilities.   The implementation is assessed through a hierarchy of benchmark problems addressing both the individual numerical components and the self-consistent particle--field coupling. The particle pusher is verified against analytical solutions for relativistic charged-particle motion, while the electromagnetic field solver is evaluated through guided-wave propagation and grid-convergence analysis. The complete PIC algorithm is subsequently verified through plasma oscillations, global energy conservation, and discrete charge continuity, demonstrating the numerical accuracy, conservation properties, and self-consistency of the coupled formulation.   The capabilities of KEMPIC-3D are further demonstrated through a representative simulation of laser-driven plasma wakefield generation in an underdense plasma. The simulations reproduce the characteristic nonlinear wakefield structure and exhibit stable numerical behavior across different particle discretizations without additional spatial filtering. Together, these results establish KEMPIC-3D as a reliable, transparent, and extensible computational framework for multidimensional kinetic plasma simulations.",
+  "authors": [
+    "Jesús E. López",
+    "Keren C. Vanegas",
+    "Eduardo A. Orozco-Ospino"
+  ],
+  "published": "2026-09-15T03:18:37Z",
+  "updated": "2026-09-15T03:18:37Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.16965v1",
+  "url": "https://arxiv.org/abs/2609.16965v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.16965v1.pdf",
+  "title": "Synchronization of PLC Subsystems with the Timing Distribution System at the European XFEL",
+  "abstract": "The European XFEL generates bursts of up to 4096 ultra-short X-ray flashes with a spacing of only 222 ns every 100 ms. These flashes are produced in the linear electron acceler- ator by undulators and guided 1 kilometer in vacuum pipes until they reach the scientific experiments. Accurate synchronization and the availability of information about all configurable pulses within a single burst, which can vary every 10 Hz cycle, enable the full potential of control, monitoring, and measurement in terms of accuracy and utilization. The MicroTCA-based timing system provides all the necessary capabilities. However, the industrial programmable logic controllers (PLCs), which manage most of the control electronics of the beamlines and experiments, are only synchronized on a millisecond-level through UART and NTP interfaces. This paper presents a new development based on an FPGA SoC EtherCAT solution in MicroTCA that implements an interface to the PLC using distributed clocks to achieve synchronization on nanosecond-level and provide beam-related information in a deterministic manner.",
+  "authors": [
+    "Dmytro Levit",
+    "Bruno Fernandes",
+    "Peter Zalden",
+    "Tobias Freyermuth",
+    "Navid Mashayekh",
+    "Patrick Gessler"
+  ],
+  "published": "2026-09-15T10:40:11Z",
+  "updated": "2026-09-15T10:40:11Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

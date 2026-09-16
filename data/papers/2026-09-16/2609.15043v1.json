@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.15043v1",
+  "url": "https://arxiv.org/abs/2609.15043v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.15043v1.pdf",
+  "title": "A self-consistent phasor-PIC algorithm for bidirectional inductive-capacitive coupling in ICPs",
+  "abstract": "Self-consistent particle-in-cell/Monte Carlo collision (PIC/MCC) simulation of an inductively coupled plasma (ICP) requires coil currents and per-turn potentials to respond to the plasma load. Prescribed currents or a single lumped impedance omit this distributed feedback. We develop a cycle-coupled phasor-PIC algorithm linking a two-dimensional axisymmetric PIC/MCC model to a distributed complex network with 2N+1 unknowns. Precomputed unit-current Helmholtz solutions provide the per-turn vacuum impedance matrix, while the plasma-only field supplies a series back electromotive force. Charge-based electrostatic coupling is extended to individual turns: a discrete Gauss law based on Poisson face coefficients yields surface charges, whose fundamental harmonics determine shunt displacement currents. Both responses are measured over a closed RF period to update the relaxed circuit state once per period. Vacuum inductance differences were -1.58% for a single solenoid and -4.38% for mutual inductance. In a five-node manufactured benchmark with both channels active, the particle-free field-circuit calculation yielded scaled complex-state errors of 1.90e-5 against the continuous reference and 6.26e-12 against an independent network using extracted matrices. Spatial refinement confirmed second-order convergence; finite-grid reciprocity and lossless-power defects were quantified. In statistically stationary states of an unshielded argon GEC reference cell, net capacitive plasma heating contributed 29.35% and 20.07% of the combined inductive and capacitive plasma power at coil-port powers of 60 and 100 W, respectively. Independently accumulated field- and circuit-side powers agreed within about 0.5%. The method enables turn-resolved bidirectional field-circuit coupling for axisymmetric, fundamental-frequency ICP simulations.",
+  "authors": [
+    "Zhaoyu Chen",
+    "Zili Chen",
+    "Jingwen Xu",
+    "Yonghua Ding",
+    "Wei Jiang",
+    "Donghui Xia",
+    "Ya Zhang"
+  ],
+  "published": "2026-09-14T05:01:20Z",
+  "updated": "2026-09-14T05:01:20Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.12796v2",
+  "url": "https://arxiv.org/abs/2609.12796v2",
+  "pdf_url": "https://arxiv.org/pdf/2609.12796v2.pdf",
+  "title": "Agent-authored deposition recipes for X-ray multilayer mirrors: schema-bound LLM control of a magnetron sputtering system with reflectivity-verified outcomes",
+  "abstract": "Periodic multilayer mirrors for X-rays require a layer period controlled to about 0.1 nm, set by deposition rates held in the laboratory's own notebook. A supervising model session gave a large language model agent a target multilayer specification and calibration constants derived from a laboratory archive. The agent authored recipes in the magnetron sputtering system's native recipe language and submitted them through a Model Context Protocol bridge of 17 tools in three tiers, with enforcement in the control application. The target was a 30-bilayer Ru/C multilayer with a period of 6.85 nm, a pair chosen because each period is fitted as two layers. The agent could read and write only its own working project, so it could alter neither the calibration record nor the measurements that scored it. We scored mirrors by X-ray reflectivity and fixed the 3% acceptance threshold on relative period difference before deposition. Across four scored depositions, the relative period difference fell from 20% on the calibration as given to 2.26% after one measured-feedback iteration and 0.79% after a second. We identified sixteen failure modes of the agent-facing interface. The result is bounded to the period, pair, and chamber observed.",
+  "authors": [
+    "Oleksiy V. Penkov",
+    "Haoyu Fu",
+    "Yueying Zhan",
+    "Pengyuan Wu",
+    "Jiong Jin"
+  ],
+  "published": "2026-09-11T12:56:20Z",
+  "updated": "2026-09-14T08:34:54Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.mtrl-sci"
+}
