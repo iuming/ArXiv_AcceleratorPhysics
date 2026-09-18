@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.15043v2",
+  "url": "https://arxiv.org/abs/2609.15043v2",
+  "pdf_url": "https://arxiv.org/pdf/2609.15043v2.pdf",
+  "title": "Phasor-particle-in-cell algorithm for bidirectional external-circuit coupling of inductively coupled plasma",
+  "abstract": "We develop a self-consistent phasor-particle-in-cell algorithm to capture bidirectional inductive and capacitive feedback between an inductively coupled plasma and a distributed radio-frequency coil circuit. The method couples a two-dimensional axisymmetric particle-in-cell model with Monte Carlo collisions to a network that resolves the current and potential of each coil turn. Precomputed unit-current Helmholtz solutions provide the vacuum impedance matrix, while projection of the plasma-only field supplies the series back electromotive force. An established charge-based electrostatic coupling is extended to individual turns: surface charges obtained from a discrete Gauss law consistent with the Poisson solver yield shunt displacement currents through their fundamental harmonics. Both responses are accumulated over a complete radio-frequency period to update the relaxed circuit state once per period. Vacuum tests showed differences of -1.58 percent in single-solenoid inductance and -4.38 percent in mutual inductance relative to analytical references. A particle-free five-node manufactured benchmark with both coupling channels active yielded a scaled complex-state error of 1.90 x 10^-5 against the continuous reference and approximately second-order spatial convergence. Application to an unshielded argon reference cell reached statistically stationary states at coil-port powers of 60 and 100 W. Net capacitive heating accounted for 29.35 percent and 20.07 percent, respectively, of the combined inductive and capacitive plasma power. Independently accumulated field-side and circuit-side powers, including conductor loss, agreed within approximately 0.5 percent. These results support turn-resolved bidirectional field-circuit coupling for axisymmetric plasma simulations using a fundamental-frequency circuit representation.",
+  "authors": [
+    "Zhaoyu Chen",
+    "Zili Chen",
+    "Jingwen Xu",
+    "Yonghua Ding",
+    "Wei Jiang",
+    "Donghui Xia",
+    "Ya Zhang"
+  ],
+  "published": "2026-09-14T05:01:20Z",
+  "updated": "2026-09-16T05:10:05Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
