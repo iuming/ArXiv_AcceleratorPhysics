@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2510.26986v2",
+  "url": "https://arxiv.org/abs/2510.26986v2",
+  "pdf_url": "https://arxiv.org/pdf/2510.26986v2.pdf",
+  "title": "MRX: A differentiable 3D MHD equilibrium solver without nested flux surfaces",
+  "abstract": "This article introduces a new 3D magnetohydrodynamic (MHD) equilibrium solver, MRX, based on relaxation of a magnetic field to a lower energy equilibrium state via admissible variations. We describe the mathematical theory behind this method and discuss what can be transferred to the fully discrete setting of a relaxation code. Our code is designed to address a number of traditional challenges to 3D MHD equilibrium solvers: enforcing physical constraints such as divergence-free magnetic field, high-order convergence, handling strongly shaped polar geometries, and controlling topology changes of the magnetic field. Building on the JAX framework, we address questions of computational efficiency on modern computing architectures, user accessibility, and differentiability at each step. The solver is verified on manufactured vacuum solutions and against a VMEC equilibrium of a quasi-axisymmetric stellarator.   It is further demonstrated on a finite-beta NCSX configuration, where we study h and p refinement, preservation of helicity, reconnection events and seeded island chains.   Finally, an inexact Newton method enables the computation of high-resolution finite-beta equilibria with islands and chaos in minutes on a single GPU.",
+  "authors": [
+    "Tobias Blickhan",
+    "Julianne Stratton",
+    "Alan A. Kaptanoglu"
+  ],
+  "published": "2025-10-30T20:28:16Z",
+  "updated": "2026-09-16T18:09:58Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
