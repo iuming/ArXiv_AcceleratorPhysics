@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.19953v1",
+  "url": "https://arxiv.org/abs/2609.19953v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.19953v1.pdf",
+  "title": "Gradient-Based Construction of Collisionless Steady-State Guiding-Center Distributions in Tokamaks and Stellarators",
+  "abstract": "We present a matrix-free residual-minimization method for preparing guiding-center distribution functions on finite grids. The method minimizes a fixed conservative discrete residual in the physical Jacobian metric using Polak-Ribiere+ iterations with exact quadratic line searches. JAX/XLA evaluates the operator and its adjoint without assembling a four-dimensional matrix; independent magnetic-moment slices are batched and iterations are compiled into one execution graph. An axisymmetric hierarchy verifies invariant references and tests the workflow using a NUBEAM fast-ion distribution together with an EPCoM constants-of-motion representation constructed from it, before matched precise quasi-axisymmetric (precise-QA), HSX, and W7-X calculations. The three-dimensional endpoints reduce the discrete residual and the finite-time variation of the distribution sampled along independently integrated characteristics. Non-negative projection is treated as an optional constrained extension: it leaves the residual operator unchanged but changes the feasible zero-residual set and endpoint selection. Results are finite-grid, finite-time evidence and do not establish a continuous equilibrium, grid convergence, strict positivity, or a transport prediction.",
+  "authors": [
+    "Jingyi Yu",
+    "Chang Liu"
+  ],
+  "published": "2026-09-17T09:26:45Z",
+  "updated": "2026-09-17T09:26:45Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
