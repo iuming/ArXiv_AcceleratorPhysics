@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.23385v1",
+  "url": "https://arxiv.org/abs/2609.23385v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23385v1.pdf",
+  "title": "Leveraging Industrial Foundation Models at the Edge of Particle Physics Detectors via Distillation Learning and Hardware Co-design",
+  "abstract": "Data acquisition (DAQ) systems at future particle physics experiments stand to benefit from the extremes of AI/ML development: large-scale foundation models can enhance the performance of feature extraction algorithms, and small-scale on-detector deployments can enable real-time intelligent data handling. This work provides the first fine-tuning of an industrial foundation model for particle physics DAQ. Starting from the backbone of Google Research's TimesFM (Time Series Foundation Model), we demonstrate fine-tuning on real-time regression tasks for drift chamber trackers and dual-readout calorimeters. Furthermore, the fine-tuned TimesFM model is distilled into a student and co-designed with FPGA implementation to enable these models to run in real-time at future colliders. The fine-tuned distillations meet or exceed the performance of previously published AI/ML solutions for each task. Further, the pipeline of distillation and model compression from TimesFM is generic and can be easily adapted to a variety of 1D waveform tasks across domains.",
+  "authors": [
+    "Gia Ancone",
+    "Qibin Liu",
+    "Liangyu Wu",
+    "Julia Gonski"
+  ],
+  "published": "2026-09-20T06:10:58Z",
+  "updated": "2026-09-20T06:10:58Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

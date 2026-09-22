@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.23358v1",
+  "url": "https://arxiv.org/abs/2609.23358v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23358v1.pdf",
+  "title": "Machine Learning Accelerated Plasma Simulation through Physics Guided Time Jumps",
+  "abstract": "We present a machine-learning-accelerated plasma simulation scheme that combines learned time jumps with ordinary physics evolution. A neural network corrects a low-cost physics forecast over multiple time steps, while the original solver reconstructs the state and advances it between jumps through short reanchoring intervals. The scheme is implemented in PASCHEN-1D, a one-dimensional drift-diffusion-Poisson solver, achieving up to $4.70 \\times$ CPU rollout speedup relative to the ordinary solver for nanosecond pulsed nitrogen discharges. The simulations capture pre-breakdown evolution, rapid sheath formation, expansion and collapse under pulsed-voltage excitation, and post-pulse afterglow. Bulk densities and electric fields agree closely with the ordinary-solver reference, while cathode sheath width, gap voltage, and discharge current reproduce the principal temporal features. The largest spatial discrepancies occur in the cathode sheath during fast transients. A sweep of the physics-reanchoring duration reveals a trade-off between accuracy, acceleration, and numerical stability over the tested 500 ns simulation interval. A model trained on simulations with 1000 grid points also shows useful transfer to 500- and 1500-point meshes without retraining. These results demonstrate a practical route to accelerating plasma simulations by augmenting an established physics solver with machine learning.",
+  "authors": [
+    "Asif Iqbal",
+    "Peng Zhang"
+  ],
+  "published": "2026-09-20T04:45:08Z",
+  "updated": "2026-09-20T04:45:08Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

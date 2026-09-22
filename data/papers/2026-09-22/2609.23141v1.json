@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2609.23141v1",
+  "url": "https://arxiv.org/abs/2609.23141v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23141v1.pdf",
+  "title": "Real-Time Plasma State Prediction via FPGA-Accelerated Quantized Recurrent Probabilistic Neural Networks",
+  "abstract": "Real time plasma state estimation for control of Tokamak devices are challenging due to the stringent latency requirements of the plasma control system (PCS). We present an end-to-end workflow for deploying a recurrent probabilistic neural network (RPNN) on FPGA hardware. We combine architecture size reduction with quantization-aware training via QKeras. The model is then synthesized using hls4ml, targeting a Xilinx Alveo U50 device. We report a design that fits comfortably within all four resource budgets (DSP, LUT, FF, BRAM) at deterministic sub-10~$μ$s single-timestep latency, meeting the requirements for real-time inference inside a model-predictive-control-style plasma control loop.",
+  "authors": [
+    "Daniel Gaytan-Villarreal",
+    "Aiken Xie",
+    "Tu Pham",
+    "Rohit Sonker",
+    "Chiara Amendola",
+    "Matteo Cremonesi",
+    "Cong Hao",
+    "Jeff Schneider"
+  ],
+  "published": "2026-09-19T17:17:10Z",
+  "updated": "2026-09-19T17:17:10Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

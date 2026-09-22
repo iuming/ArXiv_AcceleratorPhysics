@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.23846v1",
+  "url": "https://arxiv.org/abs/2609.23846v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23846v1.pdf",
+  "title": "Physics-Informed Kolmogorov-Arnold Networks for Grad-Shafranov Tokamak Equilibria",
+  "abstract": "We employ equation-driven, physics-constrained deep learning to solve the fixed-boundary Grad-Shafranov (GS) equilibrium problem, constructing axisymmetric magnetohydrodynamic equilibria with tokamak-relevant characteristics. Equilibria across linear (Solov'ev) and nonlinear profile functions are constructed using Physics-Informed Kolmogorov-Arnold Networks (KANs) that approximate GS solutions while satisfying appropriate boundary conditions. A highly nonlinear pressure profile recreating high-confinement mode phenomenology, such as pressure pedestals and significant bootstrap current components, is also considered. To enable efficient convergence, guided training schemes are employed, specifically homotopy-based continuation curriculum learning and transfer learning via pretrained networks. While computing nonlinear equilibria employing standard Multi-Layer Perceptrons under unguided physics-informed training remains an elusive or computationally inefficient task, our framework overcomes this limitation. Specifically, we demonstrate that the combination of three key elements, namely KAN architecture, guided training schemes, and the self-scaled Broyden optimization method, enables stable, efficient, and accurate equilibrium computation with simultaneous profile parameter identification in view of equilibrium constraints.",
+  "authors": [
+    "D. A. Kaltsas",
+    "A. Kuiroukidis",
+    "J. Liu",
+    "L. Magafas",
+    "G. N. Throumoulopoulos"
+  ],
+  "published": "2026-09-20T20:01:25Z",
+  "updated": "2026-09-20T20:01:25Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

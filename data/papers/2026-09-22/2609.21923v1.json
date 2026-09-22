@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.21923v1",
+  "url": "https://arxiv.org/abs/2609.21923v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.21923v1.pdf",
+  "title": "Nonlinearly Causal General-Relativistic Two-Fluid Dissipative Magnetohydrodynamics",
+  "abstract": "We present a formulation of general-relativistic (GR) 19-moment dissipative magnetohydrodynamics (MHD), capable of handling all first-order dissipative terms (viscosity, heat conductivity, resistivity and Hall terms), as well as all ideal electron degrees of freedom (number density, momentum and energy) in a GR astrophysical two-fluid plasma. We derive necessary and sufficient nonlinear causality conditions for the constrained first-order 19-moment system, as well as both necessary and sufficient conditions for strong hyperbolicity. To assess the formulation numerically, we develop a high-resolution shock-capturing scheme that solves these equations in a performance-portable fashion. The scheme expresses all evolution equations, including the dissipative and electron sectors, in flux-divergence form, allowing us to model systems with scales separated by orders of magnitude without resolving kinetic scales everywhere on the grid. In addition, we use implicit integration methods to systematically overstep kinetic scales in MHD regions, such as cyclotron and plasma frequencies. To make the scheme as robust as GRMHD codes, we construct necessary and sufficient conditions for a conserved state to be physically admissible, and based on these construct a new physicality-enforcement scheme. As an exact validation comparison, we formulate and derive a full solution to dissipative two-fluid Bondi accretion in general relativity. We then validate the equations against a series of results from kinetic particle-in-cell models of black hole accretion and magnetospheric dynamics, demonstrating that our formulation and scheme can correctly capture major features relevant for feedback on global scales of these solutions, including dimensionless reconnection rates of order $0.1$ and Braginskii-like anisotropic pressures and heat fluxes.",
+  "authors": [
+    "Elias R. Most",
+    "Samuel J. Dunham"
+  ],
+  "published": "2026-09-18T15:43:49Z",
+  "updated": "2026-09-18T15:43:49Z",
+  "categories": [
+    "astro-ph.HE",
+    "astro-ph.IM",
+    "gr-qc",
+    "nucl-th",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}

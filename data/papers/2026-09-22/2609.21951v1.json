@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.21951v1",
+  "url": "https://arxiv.org/abs/2609.21951v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.21951v1.pdf",
+  "title": "Azimuthal mode decomposition Particle in Cell algorithm for cylindrical plasma sources",
+  "abstract": "An efficient Particle-in-Cell numerical approach to perform full-dimensional kinetic simulations of low temperature plasmas is presented. Taking advantage of the cylindrical geometry of most plasma sources, a Fourier mode decomposition of the fields is carried out in the azimuthal ($θ$) direction up to a chosen maximum number of modes $N_m$. Macroparticles are pushed in all $D$ dimensions and weighed, for each mode $m$, onto a $(D-1)$ dimensional grid. The computation of the electric field for each mode is independent and reduces to solving $(N_m+1)$ $(D-1)$ dimensional Poisson problems. The approach brings spectral accuracy in the azimuthal direction, while the computational cost is comparable to that of a simulation with $(D-1)$ dimensions. We verify this approach against a planar test case based on a Penning discharge, widely used for benchmarking and validation purposes in the low-temperature plasma community. Our approach allows us to reduce the 2D problem into a collection of coupled 1D problems and to naturally perform spectral analysis of the different azimuthal modes, recovering the contribution of each mode to radial transport, with a computational time saving of one order of magnitude with respect to state of the art 2D particle-in-cell codes.",
+  "authors": [
+    "Matteo Ripoli",
+    "Eduardo Ahedo",
+    "Mario Merino"
+  ],
+  "published": "2026-09-18T16:07:46Z",
+  "updated": "2026-09-18T16:07:46Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

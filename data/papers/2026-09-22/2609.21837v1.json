@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.21837v1",
+  "url": "https://arxiv.org/abs/2609.21837v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.21837v1.pdf",
+  "title": "A Deep Neural Network based Level-1 Trigger for the Magnetic Monopole Search in the SCEP Experiment",
+  "abstract": "The Search for Cosmic Exotic Particles (SCEP) experiment proposes a multilayer magnetic monopole (MM) detection array with a target exposure of O(10^4) m^2 year. Continuously recording the raw waveforms at this scale would generate approximately O(10) EB of data per year, making full waveform storage impractical. A Level-1 trigger is therefore required to reduce the stored-data volume while retaining rare MM signals. MM waveforms vary with particle velocity and trajectory, so a single filter kernel cannot match all possible signals. A mismatch between the kernel and the signal waveform can reduce the detection probability. This work therefore develops a compact template-bank construction method for MM detection. Each incoming waveform is filtered with all kernels in the bank, and the best-matched kernel is identified from their responses. A multilayer perceptron (MLP) trigger is further developed to combine all template responses and improve signal detection. With a 31-sample window and a stored-data fraction of 10^(-3), the MLP increases the mean net acceptance P_net from 6.72% for the conventional template-bank trigger to 8.79%, a relative improvement of 30.8%. The network is then implemented on a Xilinx AC701 board equipped with a field-programmable gate array (FPGA) to process a 20-bit input waveform sampled at 1 MHz using 200 MHz trigger logic. At the target stored-data fraction, the fixed-point implementation reduces P_net by only 3/(3.2 x 10^6) relative to the floating-point reference. On-board tests reproduce the bit-accurate reference trigger outputs and sustain continuous 1 MHz processing without dropped input samples, verifying the functional correctness and real-time operation of the FPGA-based Level-1 trigger.",
+  "authors": [
+    "Changqing Ye",
+    "Yunhan Wang",
+    "Yifan Qiao",
+    "Zhe Cao",
+    "Beige Liu",
+    "Qing Lin",
+    "Lei Zhao"
+  ],
+  "published": "2026-09-18T14:35:43Z",
+  "updated": "2026-09-18T14:35:43Z",
+  "categories": [
+    "physics.ins-det",
+    "astro-ph.IM"
+  ],
+  "primary_category": "physics.ins-det"
+}
