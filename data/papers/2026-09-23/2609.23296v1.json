@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.23296v1",
+  "url": "https://arxiv.org/abs/2609.23296v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23296v1.pdf",
+  "title": "VEQDB: A Compact and Reconstructible Multi-Device Tokamak Equilibrium Database",
+  "abstract": "Tokamak equilibria are commonly exchanged as gridded G-EQDSK files whose conventions, resolutions, and machine-specific formats impede cross-device comparisons and data-driven modeling. Here, we present VEQDB, an open, compact, and reconstructible fixed-boundary equilibrium database built on continuous MXH--Chebyshev geometry and independent physical-profile roots. By decoupling authoritative equilibrium physics from rectangular meshes, VEQDB enables continuous evaluation and metric differentiation at arbitrary application-demanded resolutions. Backed by an automated numerical validation pipeline, VEQDB is structured as an extensible repository for ongoing community expansion. Its inaugural release provides 13,291 accepted equilibria across 267 conventional and spherical tokamaks, encompassing parameter-sampled Grad--Shafranov solutions, G-EQDSK projections spanning EAST, MAST-U, and ITER scales, and controlled variation families with explicit provenance. Benchmark projections reproduce normalized flux maps with RMS errors between $1.09 \\times 10^{-3}$ and $1.45 \\times 10^{-3}$, while compact JSON representations achieve an 89--96-fold size reduction relative to standard $129 \\times 129$ G-EQDSK files. The complete initial release occupies 41~MB in raw JSON and 18~MB in compressed archives, and all records successfully passed independent reload and evaluation tests. VEQDB establishes an extensible, provenance-preserving foundation for equilibrium studies, reduced-order surrogate modeling, and cross-machine workflows.",
+  "authors": [
+    "Huasheng Xie",
+    "Ruohan Zhang",
+    "Xingyu Li",
+    "Feng Zhang",
+    "Zhengxiong Wang"
+  ],
+  "published": "2026-09-20T02:21:24Z",
+  "updated": "2026-09-20T02:21:24Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

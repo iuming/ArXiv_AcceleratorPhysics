@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.23329v1",
+  "url": "https://arxiv.org/abs/2609.23329v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.23329v1.pdf",
+  "title": "ARGUS: an experiment-agnostic framework for detector-health monitoring in particle physics",
+  "abstract": "Every particle-physics experiment builds detector-health monitoring, and many end up rebuilding it, because a first system written under commissioning pressure often proves too rigid to maintain. ARGUS (Automated Anomaly-detection, Run-quality and General Unified Surveillance) is a configuration-driven framework that separates what is generic in this problem (the health monitors, their validation, and the reporting) from what is not (the data schema and the thresholds). Standing it up for a new detector requires a data adapter and a configuration file, not a rewrite. Detector health is judged by four independent monitors: expert cuts, which are authoritative; a machine-learning second opinion that is additive and off by default; a trend forecast that gives early warning before a threshold is crossed; and a reference-histogram comparison with pluggable statistical tests. The monitors are compared and never merged, and an alerting layer turns their flags and warnings into deduplicated notifications. We demonstrate the full chain on a synthetic reference detector with planted pathologies and a fault-injection campaign that manufactures ground truth: the cuts recover every planted pathology with no false positives, the machine-learning monitor reaches a ROC AUC of 0.896 on injected faults and extends coverage to fault classes no cut was written for, the forecast flags a drifting channel before its cut fires, and the histogram comparison catches every planted shape distortion while holding its configured false-positive rate on clean pairs. A second demonstration shows the framework adapting to a reorganized file layout with no change to code or configuration. Every result and figure in this paper regenerates from the code alone. The framework has been implemented for two particle-physics experiments, where it is under evaluation; adoption decisions rest with the collaborations.",
+  "authors": [
+    "Kamal Benslama"
+  ],
+  "published": "2026-09-20T03:30:42Z",
+  "updated": "2026-09-20T03:30:42Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.26376v1",
+  "url": "https://arxiv.org/abs/2609.26376v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.26376v1.pdf",
+  "title": "Improving the CMS High Level Trigger tracking at the HL-LHC with novel and evolved heterogeneous algorithms",
+  "abstract": "Charged particle track reconstruction is one of the heaviest computational tasks in the event reconstruction chain at LHC experiments. Furthermore, projections for the High Luminosity LHC (HL-LHC) show that the required computing resources for single-threaded CPU algorithms will exceed those that are expected to be available. It follows that experiments at the HL-LHC will need to employ novel and evolved track reconstruction algorithms, within heterogeneous computing systems that include many-core CPUs as well as GPUs, in the attempt to maximize the computational performance while retaining the best possible reconstruction efficiency. In the context of the CMS High Level Trigger (HLT) at the HL-LHC, the mkFit algorithm, already in use for the CMS track reconstruction during the LHC Run 3, will exploit its parallelized and vectorized nature on CPUs to perform pattern recognition using seed tracks produced with algorithms that are designed to be fully parallelizable and hardware agnostic, thus suitable for heterogeneous systems: the Patatrack and the Line Segment Tracking (LST) algorithms. Patatrack is an established algorithm, already used for the CMS pixel track reconstruction at HLT during the Run 3 of the LHC, while LST is a novel algorithm, recently integrated in the CMS software, targeting the reconstruction of tracks in the outer tracker of the HL-LHC CMS detector. The state-of-the-art performance for the CMS HLT track reconstruction at the HL-LHC is presented, obtained using the combination of the mkFit, Patatrack, and LST algorithms, that in turn use machine-learning (ML) techniques such as deep neural networks and multi-objective particle swarm optimization to suppress duplicate and misreconstructed tracks. Prospects of further improvements are also presented, with a focus on the usage of ML techniques for track reconstruction at CMS.",
+  "authors": [
+    "Mario Masciovecchio"
+  ],
+  "published": "2026-09-22T13:21:48Z",
+  "updated": "2026-09-22T13:21:48Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}
