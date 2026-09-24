@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.27501v1",
+  "url": "https://arxiv.org/abs/2609.27501v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.27501v1.pdf",
+  "title": "A fully implicit electromagnetic energy- and charge-conserving PIC model for simulations of high-$β$ plasma",
+  "abstract": "The paper presents a 3D numerical model of plasma in which a fully implicit PIC method with exact conservation of global energy and local charge is generalized to the electromagnetic case. This opens the possibility of simulating plasma equilibria with a high (up to an extreme) ratio of plasma pressure to magnetic field pressure, which are formed in open magnetic traps. The main goal of this work is to find out whether a fully implicit model, which usually performs numerous nonlinear iterations when solving the coupled Vlasov--Maxwell system, can compete in performance with semi-implicit models that achieve the same conservative properties at the cost of only a single particle push per time step. It turns out that in 3D geometry such competition is quite possible due to the growing computational cost of evaluating the mass matrices in the semi-implicit approach. The software implementation of the proposed numerical model is written in C++ within the parallel \\texttt{xpic} code. Testing the code on problems of the development of the Weibel instability and the formation of plasma with extreme pressure showed good agreement between the semi-implicit and fully implicit approaches and made it possible to establish their relative speed.",
+  "authors": [
+    "V. A. Kurshakov",
+    "I. V. Timofeev"
+  ],
+  "published": "2026-09-23T08:02:20Z",
+  "updated": "2026-09-23T08:02:20Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

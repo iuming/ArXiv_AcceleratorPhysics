@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2609.27522v1",
+  "url": "https://arxiv.org/abs/2609.27522v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.27522v1.pdf",
+  "title": "kicad-pycbnew: A Python Framework for Automated, High-Precision PCB Design in Particle Detector Instrumentation",
+  "abstract": "kicad-pycbnew is an open-source Python library for the automated, script-based generation of KiCad PCB designs, tailored to the precise geometric and impedance constraints of particle detector readout electronics. By enabling the programmatic definition of copper traces, zones, vias, and footprints --- without a graphical interface --- it addresses the challenges of designing large-scale, repetitive, or parameterized layouts (e.g., Resistive Plate Chamber (RPC) strips or controlled-impedance signal paths). Key features include constraint-driven routing, parallel track arrays with rounded corners, via grids with exclusion zones, and full compatibility with KiCad's native file format. Standalone operation (no KiCad runtime required) facilitates integration into CI/CD pipelines and ensures reproducibility. The library, released under the MIT License, includes validated examples such as trapezoidal RPC readout boards and extension boards for the COMET experiment, alongside comprehensive tests and documentation.",
+  "authors": [
+    "Vincent Raspal"
+  ],
+  "published": "2026-09-23T08:18:58Z",
+  "updated": "2026-09-23T08:18:58Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
