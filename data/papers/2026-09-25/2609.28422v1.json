@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.28422v1",
+  "url": "https://arxiv.org/abs/2609.28422v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.28422v1.pdf",
+  "title": "Performance-portable GPU acceleration of the hybrid particle-in-cell code dHybridR",
+  "abstract": "Hybrid particle-in-cell simulations are widely used to study kinetic processes in collisionless astrophysical and space plasmas, yet the high computational cost of large-scale three-dimensional runs has largely confined production studies to two dimensions or restricted domains. To address this challenge, we present a performance-portable GPU implementation of the hybrid particle-in-cell code dHybridR. The implementation combines OpenMP target offloading with specialized SYCL kernels for the most computationally expensive operations, while preserving a unified CPU-GPU codebase that supports Intel, AMD, and NVIDIA GPUs. On the exascale supercomputers Aurora and Frontier, dHybridR achieves weak scaling efficiencies of $86\\%$ to $97\\%$ across 49,152 accelerators, and at 256 particles per cell, its full-node GPU throughput is up to $32\\times$ that of the vectorized CPU implementation at approximately $90\\%$ less energy per particle-update. To our knowledge, no other hybrid particle-in-cell code has reported GPU performance at this scale, leaving dHybridR uniquely positioned to exploit exascale systems. These advances substantially lower the computational barrier to large-scale three-dimensional hybrid-kinetic simulations of collisionless plasmas.",
+  "authors": [
+    "Bricker Ostler",
+    "Miha Cernetic",
+    "Damiano Caprioli"
+  ],
+  "published": "2026-09-23T17:26:39Z",
+  "updated": "2026-09-23T17:26:39Z",
+  "categories": [
+    "astro-ph.HE",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.HE"
+}

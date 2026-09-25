@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2609.28661v1",
+  "url": "https://arxiv.org/abs/2609.28661v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.28661v1.pdf",
+  "title": "Cross-geometry transfer and model collapse in point cloud calorimeter shower generation",
+  "abstract": "Particle shower simulation is a major computational cost in high-energy physics. Monte Carlo methods such as Geant4 are accurate but expensive, while most machine learning surrogates are tied to specific detector geometries and require retraining for each design change. We study cross-geometry transfer learning with CaloClouds II, a generative model that produces point clouds rather than voxels and can project onto arbitrary detector readouts. We pre-train on photon showers in the International Large Detector (ILD) and adapt to electron showers in the cylindrical CaloChallenge Dataset 3. With only 100 target showers, fine-tuning reduces the geometric mean Wasserstein distance to Geant4 by about 51% over training from scratch. Bias-only fine-tuning (BitFit) stays within 5% of full fine-tuning while updating only 17% of the diffusion network parameters. We also examine model collapse in CaloClouds II by retraining its normalising flow and diffusion model on its own generated showers across successive generations.",
+  "authors": [
+    "Thorsten Buss",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Lorenzo Valente",
+    "Duncan Weber"
+  ],
+  "published": "2026-09-23T18:06:05Z",
+  "updated": "2026-09-23T18:06:05Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

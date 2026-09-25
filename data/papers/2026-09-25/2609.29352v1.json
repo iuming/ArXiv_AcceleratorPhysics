@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.29352v1",
+  "url": "https://arxiv.org/abs/2609.29352v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.29352v1.pdf",
+  "title": "Frequency-inference method for reduced modeling of energetic particle modes (EPM) utilizing resonant auto-optimization remnants of imperfect time-scale separation",
+  "abstract": "Integrated codes simulating interactions between Alfvén waves and fast ions in tokamak plasmas use perturbative models for the relatively slow processes of instability growth, saturation, chirping and bursting, and transport. Faster processes by which an Alfvén mode's spatiotemporal structure forms are assumed to have been completed within the mode's oscillation period, $τ_0 \\equiv 2π/ω_0$. This separation of time scales underlies the computational efficiency of perturbative models, where the Alfvén mode's time-dependence is reduced to that of a scalar signal $s(t) = A(t)\\sin(-ω_0 t - φ(t))$ with variable amplitude $A(t)$ and phase $φ(t)$. For this, accurate input data in the form of a mode's spatial structure $δΦ({\\mathbf x})$, damping rate $γ_{\\rm d}$, and initial frequency $ω_0$ are required. For modes residing in dense or continuous spectra, $δΦ$ and $γ_{\\rm d}$ could be estimated from the form of the continua and fast ion orbits, but it is difficult to guess the seed frequency $ω_0$. Here, we report results of numerical experiments showing that it is possible to find $ω_0$ using a prompt frequency shift that occurs during the first few $100$ time steps of a simulation. Restarts with the shifted frequency iteratively converge to a value of $ω_0$ that seems to maximize the resonant drive, suggesting an auto-optimization process. The need for iteration is attributed to the fact that the terms required for rapid frequency adjustments were truncated when deriving the perturbative model. Meanwhile, the fact that partial auto-optimization is possible at all is attributed to the fact that series truncation alone (without filter) does not strictly enforce slowness. Remnants of and cross-talk with faster dynamics still occur in numerical implementations. This entails potential for both uncertainty and utility.",
+  "authors": [
+    "Andreas Bierwage",
+    "Vinícius N. Duarte",
+    "Pablo Oyola",
+    "Kouji Shinohara",
+    "Roscoe B. White"
+  ],
+  "published": "2026-09-24T10:27:26Z",
+  "updated": "2026-09-24T10:27:26Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
