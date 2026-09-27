@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2609.28730v1",
+  "url": "https://arxiv.org/abs/2609.28730v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.28730v1.pdf",
+  "title": "AI-Accelerated Gyrokinetic Predictions of Turbulent Transport for Stellarator Design Optimization and Experimental Planning",
+  "abstract": "Previous work built AI-based surrogates for a nonlinear gyrokinetic simulation code with the goal of using them for fast, direct calculations of turbulent ion heat flux in stellarator design optimizations and scenario planning for experiments. These AI surrogates were trained on data from >200k nonlinear, adiabatic electron gyrokinetic simulations with the gyrokinetic flux-tube code GX, using a wide range of stellarator magnetic configurations ($\\sim$23k), positions in the plasma, and gradient scale lengths. In this paper, we demonstrate the use of the AI-based turbulence surrogate in the optimization of stellarator magnetic equilibrium and to speed up stellarator transport solvers. Due to its speed ($\\sim$ms), the AI-based surrogate enables previously unattainable optimization objectives, such as full radial profiles of ion turbulent heat flux, or directly optimizing to maximize the turbulent critical gradient at multiple locations across the plasma. These direct calculations provide a potentially more accurate optimization target and reduce reliance on ad-hoc heuristics that may not accurately capture the variation of turbulent transport with magnetic configuration. By including the AI-based surrogate for turbulent heat flux in a transport solver, we can quickly postprocess and confirm the improved ion temperature resulting from the optimized equilibrium. Finally, we demonstrate the use of AI agents with strong reasoning AI models to automate the outer loop, exploring many objective and hyperparameter configurations with this AI-based turbulence surrogate to discover improved turbulence optimized magnetic equilibria.",
+  "authors": [
+    "R. Michael Churchill",
+    "Matt Landreman",
+    "Jong Youl Choi",
+    "Byoungchan Jang",
+    "Rory Conlin",
+    "Noah Mandell",
+    "Anima Anandkumar",
+    "Valentin Duruisseaux",
+    "Jeffrey Larson",
+    "Dario Panici",
+    "Yigit Gunsur Elmacioglu",
+    "Jai Sachdev",
+    "Tony Qian"
+  ],
+  "published": "2026-09-23T19:17:42Z",
+  "updated": "2026-09-23T19:17:42Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

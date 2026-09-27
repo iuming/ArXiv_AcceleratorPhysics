@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.29325v1",
+  "url": "https://arxiv.org/abs/2609.29325v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.29325v1.pdf",
+  "title": "Monte Carlo sampling of first-order QED processes in laser and pulsar plasmas",
+  "abstract": "Monte Carlo sampling of strong-field quantum electrodynamics processes underpins simulations of high-intensity laser experiments and of astrophysical compact-object magnetospheres. Sampling an event requires the total rate of the process together with the cumulative probability that determines how energy is partitioned between the produced particles. Simulations typically tabulate both in advance and invert the tabulated probability numerically. Here we replace this procedure with elementary-function approximations for synchrotron radiation and the nonlinear Breit--Wheeler process. For each process, we approximate the auxiliary function that sets the total rate, as well as the cumulative probability, with Padé approximants chosen so that the inversion reduces to a quartic equation. This yields the sampled quantum parameter---electron $χ_e$ or photon $χ_γ$---in closed form. The approximations and the particle spectra sampled from them agree with the exact results to within $1\\%$. The procedure requires no lookup tables, no interpolation, and no numerical root finding, and can be inserted directly into radiative particle-in-cell codes.",
+  "authors": [
+    "Verneri Sarjomaa",
+    "Joonas Nättilä"
+  ],
+  "published": "2026-09-24T10:02:39Z",
+  "updated": "2026-09-24T10:02:39Z",
+  "categories": [
+    "physics.comp-ph",
+    "astro-ph.HE",
+    "hep-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
