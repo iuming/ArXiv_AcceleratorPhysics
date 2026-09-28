@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2609.30403v1",
+  "url": "https://arxiv.org/abs/2609.30403v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.30403v1.pdf",
+  "title": "Point-cloud generative models for fast calorimeter simulation across particles and geometries",
+  "abstract": "Detailed Geant4 simulation of calorimeter showers is the largest single computing cost of collider experiments, and the High-Luminosity LHC will need about ten times more simulated events than are currently produced. We summarise recent progress in generative point cloud fast simulation for highly granular calorimeters. CaloClouds3 generates photon (electromagnetic) showers, is geometry-independent, and runs on average about 120x faster than Geant4 on a single CPU. CaloHadronic uses transformer attention to extend the point cloud diffusion approach to pion (hadronic) showers spanning the electromagnetic and hadronic calorimeters. AllShowers unifies twelve particle types in a single model with far fewer parameters than the specialised baselines while matching or exceeding their fidelity. We close with cross-geometry transfer learning, which needs two to three orders of magnitude fewer training showers while preserving the generative performance.",
+  "authors": [
+    "Thorsten Buss",
+    "Henry Day-Hall",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Katja Krüger",
+    "Anatolii Korol",
+    "Thomas Madlener",
+    "Peter McKeown",
+    "Martina Mozzanica",
+    "Lorenzo Valente"
+  ],
+  "published": "2026-09-24T18:07:26Z",
+  "updated": "2026-09-24T18:07:26Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.30538v1",
+  "url": "https://arxiv.org/abs/2609.30538v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.30538v1.pdf",
+  "title": "From Routing Delay Shifts to Silent Data Corruption: Neutron-Induced SEU Effects in AXI-Based Zynq UltraScale+ MPSoCs",
+  "abstract": "SRAM-based FPGA system-on-chip devices are vulnerable to single-event upsets (SEUs) in configuration memory, which may perturb programmable routing resources and degrade communication fabrics. In modern Zynq UltraScale+ MPSoCs, such routing disturbances can introduce small propagation delay shifts that remain logically transparent yet compromise AXI-based data transfers and lead to silent data corruption. Although routing delay degradation and AXI interconnect failures have been studied independently, their experimental correlation under neutron irradiation has not been established. This work presents a cross-layer investigation on a ZCU104 platform integrating routing-dominated delay sensors with an AXI interconnect benchmark comprising replicated accelerators. Neutron irradiation experiments were conducted on the fully operational system, while a frame-level configuration fault injector implemented via the internal configuration access port enables controlled upset emulation. Measured routing delay events are statistically correlated with communication failures, and cross-sections for both timing shifts and AXI malfunctions are derived. The results experimentally demonstrate how neutron-induced routing perturbations propagate into system-level silent data corruption in UltraScale+ MPSoCs, providing insight for resilience-oriented AXI-based design in neutron-rich environments.",
+  "authors": [
+    "Mostafa Darvishi"
+  ],
+  "published": "2026-09-24T20:47:18Z",
+  "updated": "2026-09-24T20:47:18Z",
+  "categories": [
+    "eess.SY",
+    "cs.AR",
+    "cs.ET",
+    "physics.acc-ph",
+    "physics.space-ph"
+  ],
+  "primary_category": "eess.SY"
+}

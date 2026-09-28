@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2609.29336v1",
+  "url": "https://arxiv.org/abs/2609.29336v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.29336v1.pdf",
+  "title": "PQLS: A Quasilinear Gyrokinetic Transport Solver with a Bayesian Saturation-Rule Closure",
+  "abstract": "Quasilinear models make gyrokinetic turbulent-transport predictions sufficiently fast for integrated modelling, but their predictive capability is limited by two factors: the physical and geometrical applicability of the linear solver, and the validity of the saturation rule used to close the model. We present the Predictive Quasilinear Solver (PQLS), a quasi- linear gyrokinetic transport solver formulated in general magnetic geometry. Its implementation as an eigenvalue solver retains electromagnetic and collisional effects, provides access to dominant and subdominant modes and is differen- tiable with respect to all plasma parameters. Linear benchmarks against GENE reproduce the growth rates, frequencies, and eigenfunctions. We additionally formulate the saturation-rule closure as a Bayesian inference problem that distin- guishes uncertainty in its fitted coefficients from the residual model-form uncertainty. The approach is demonstrated by calibrating the SAT3 rule on PQLS quasilinear weights against published nonlinear CGYRO cases. In addition to improving the robustness of the calibration, the new method also quantifies the uncertainty in each of the fit coefficients. Such uncertainty is propagated through transport calculations to produce error-aware profiles that are compared to the ones obtained from the full gyrokinetic simulation, showing excellent agreement.",
+  "authors": [
+    "F. Wilms",
+    "A. Agrawal",
+    "J. J. Freigang",
+    "T. F. Neiser",
+    "B. J. Frei",
+    "O. Meneghini"
+  ],
+  "published": "2026-09-24T10:09:32Z",
+  "updated": "2026-09-24T10:09:32Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
