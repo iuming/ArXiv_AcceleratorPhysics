@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.32206v1",
+  "url": "https://arxiv.org/abs/2609.32206v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.32206v1.pdf",
+  "title": "Positivity-preserving semi-Lagrangian discontinuous Galerkin methods for multi-species Vlasov-Ampère models of plasma",
+  "abstract": "We develop a high-order and positivity-preserving kinetic solver for the multi-species Vlasov-Ampère system that is built within a semi-Lagrangian discontinuous Galerkin (SLDG) framework. The method is designed for efficiency and accuracy across a broad range of conditions, including stiff, multi-scale regimes with strong ion-electron scale separation. Phase space is discretized via high-order discontinuous Galerkin finite elements; time stepping is handled via high-order operator splitting and a series of one-dimensional, unconditionally stable, semi-Lagrangian updates. To improve both accuracy and efficiency, each plasma species is represented on a different phase-space mesh. On every element and for each species, local positivity-preserving limiters are applied to prevent spurious undershoots and rigorously ensure positivity of the cell averages at the next time step. The accuracy and robustness of the resulting method are verified on several standard single- and two-species test cases, including manufactured solutions, two-stream instability, weak and strong Landau damping, ion-acoustic wave propagation, ion-acoustic shock formation, and KEEN wave dynamics.",
+  "authors": [
+    "Dauda Gambo",
+    "James A. Rossmanith"
+  ],
+  "published": "2026-09-26T04:08:51Z",
+  "updated": "2026-09-26T04:08:51Z",
+  "categories": [
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

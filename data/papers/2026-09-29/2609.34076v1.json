@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2609.34076v1",
+  "url": "https://arxiv.org/abs/2609.34076v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.34076v1.pdf",
+  "title": "Observer-Based Model Predictive Control for Isoflux Regulation in the EXL-50U Spherical Tokamak",
+  "abstract": "Isoflux control in spherical tokamaks requires coordinated plasma-current and boundary regulation under coil-voltage and computational constraints. This study develops observer-based constrained model predictive control (MPC) for EXL-50U. Vacuum-vessel spatial coarsening reduces a 538-state linearized model to 40 states while retaining control-relevant responses. A Kalman observer provides full-state estimates, and MPC jointly optimizes current and boundary-flux tracking with explicit voltage bounds. Matrix precomputation, specialized solver code generation, and structured linear-system solution reduce online computation.   Nonlinear free-boundary Grad--Shafranov evolutive simulations evaluate nominal operation, measurement noise, configuration mismatch, a one-step delay, and combined noise and delay against proportional--integral--derivative (PID) control and a linear--quadratic regulator (LQR). Nominal MPC root-mean-square errors are 1.126 kA for plasma current, 0.0164 m for last-closed-flux-surface geometry, and 2.463 mWb for the worst flux channel, all below both baselines. With noise, the boundary error is 0.0199 m over the common evaluation window, and regulation is sustained throughout the test. MPC completes a limiter-to-divertor transition without relinearization or retuning and maintains regulation under delay and combined disturbances. Across all five cases, mean MPC computation times are 0.413--0.441 ms, with all 99th percentiles below 1 ms. These results support joint current and isoflux regulation and millisecond-scale computational feasibility, providing a basis for future EXL-50U experiments.",
+  "authors": [
+    "Chang Lu",
+    "Jiayi Zhi",
+    "Xian Guo",
+    "Tianyuan Liu"
+  ],
+  "published": "2026-09-28T01:07:59Z",
+  "updated": "2026-09-28T01:07:59Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

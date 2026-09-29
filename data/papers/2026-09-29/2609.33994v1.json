@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2609.33994v1",
+  "url": "https://arxiv.org/abs/2609.33994v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.33994v1.pdf",
+  "title": "A packet-level digital hardware twin for commissioning megahertz diagnostic edge AI and plasma control system integration in tokamaks",
+  "abstract": "High-bandwidth plasma diagnostics increasingly provide inputs to machine learning and signal-processing algorithms intended for real-time tokamak control, but the complete path from diagnostic sampling to control-system handoff is difficult to commission because of their sampling rates. We develop a packet-level digital hardware twin for the megahertz diagnostic edge-AI architecture. The simulator represents a 64-channel, 1 MHz beam emission spectroscopy (BES) diagnostic embedded in a 96-channel dual-carrier acquisition system, two 48-channel streams with SPAD0 sample counters, 10 GbE Hardware UDP transport, packet loss and network jitter, FPGA parsing and dual-carrier alignment, causal preprocessing and edge inference, a compact Ethernet result packet, receiver-side shared state, and a 1 kHz PCS-like control cycle. Binary UDP payloads and PCAP files are generated rather than emulating transport only at the array level. With a baseline of 20 samples per packet, each carrier generates 50,000 packets s$^{-1}$ and 100 MB s$^{-1}$ of user payload. A 110 ms reference run produces 11,000 HUDP packets; an intentionally dropped 20-sample packet is detected by the sample-counter continuity logic and invalidates the two overlapping 128-sample inference windows without silent interpolation. For valid windows, the configured engineering latency model gives a median last-input-to-shared-memory latency of 91.6 us and a 99th percentile of 108.1 us. A separate operating-system loopback test sends binary FPGA-result datagrams through a UDP receiver into POSIX shared memory and preserves packet sequence and CRC for 20/20 packets. Interactive GUI interfaces expose timing, packetization, network faults, inference thresholds, and control-state inspection. The framework provides a reproducible environment for testing diagnostic-to-accelerator interfaces and fail-safe behavior for deployment on fusion devices.",
+  "authors": [
+    "Semin Joung",
+    "Abhilasha Dave",
+    "Luca Scomparin",
+    "Filipp Khabanov",
+    "Zheng Yan",
+    "Benedikt Geiger",
+    "George McKee",
+    "Ryan N. Coffee",
+    "David R. Smith"
+  ],
+  "published": "2026-09-27T22:47:52Z",
+  "updated": "2026-09-27T22:47:52Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

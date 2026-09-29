@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2609.33677v1",
+  "url": "https://arxiv.org/abs/2609.33677v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.33677v1.pdf",
+  "title": "Implicit-Explicit time integration scheme with Physics-based preconditioning for two-fluid tokamak boundary simulations",
+  "abstract": "In this work, a globally stiffly accurate Implicit-Explicit (IMEX) Runge-Kutta scheme is developed and implemented in the GBS code [Ricci et al., Plasma Phys. Control. Fusion, 2012], for two-fluid plasma turbulence simulations. The stiffest phenomena, governed by shear Alfvén waves and parallel diffusion, are treated implicitly, while the remaining non-stiff terms are advanced explicitly. This splitting enables time steps well beyond the Courant-Friedrichs-Lewy limit, without incurring the full computational cost of a globally implicit formulation. To efficiently solve the implicit subsystem at each time step, a three-dimensional physics-based preconditioner, inspired by techniques developed in the magnetohydrodynamic (MHD) context, is used. The resulting framework is verified through the method of manufactured solutions and exhibits both algorithmic and parallel scalability. Significant advantages in numerical stability and computational efficiency are demonstrated with respect to an adaptive explicit Runge-Kutta scheme.",
+  "authors": [
+    "Micol Bassanini",
+    "Simone Deparis",
+    "Paolo Ricci",
+    "Brenno De Lucca",
+    "Davide Mancini",
+    "Louis Stenger",
+    "Sergio García Herreros"
+  ],
+  "published": "2026-09-27T15:38:06Z",
+  "updated": "2026-09-27T15:38:06Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math.NA"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
