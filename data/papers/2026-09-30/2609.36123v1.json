@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2609.36123v1",
+  "url": "https://arxiv.org/abs/2609.36123v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.36123v1.pdf",
+  "title": "Bayesian Active Learning of Ion Loss-Cone Boundaries in Tokamaks",
+  "abstract": "Loss-cone boundary determination in tokamaks is cast as an active learning problem in which a Bayesian logistic regression model with radial basis function features acts as the learner and the guiding-center orbit integrator acts as the labeling method. The approach is applied to an analytic tokamak equilibrium across a mesh of launch positions, producing a database of loss-probability models with approximate posterior uncertainty, each generated within a prescribed trajectory budget. Once generated, the database supports downstream applications, illustrated here with three examples. First, integrating the probability models against a Maxwellian distribution yields the lost-ion fraction and the energy and parallel momentum carried by lost ions, with posterior uncertainty propagated analytically to each integral. Second, a steady balance between the resulting orbit-loss torque and radial angular-momentum diffusion gives co-current edge rotation whose amplitude is set mainly by the prescribed momentum diffusivity and loss-region renewal rate. Third, a neural network surrogate trained on the database learns the in-domain mapping from launch position to loss-probability image, and transport integrals computed from its predictions closely reproduce the Bayesian reference values on held-out samples from the same mesh.",
+  "authors": [
+    "Omar E. Lopez",
+    "Minglei Yang",
+    "Mark Cianciosa",
+    "Gary M. Staebler"
+  ],
+  "published": "2026-09-28T18:55:12Z",
+  "updated": "2026-09-28T18:55:12Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

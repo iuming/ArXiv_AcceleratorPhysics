@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2609.36536v1",
+  "url": "https://arxiv.org/abs/2609.36536v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.36536v1.pdf",
+  "title": "Diffusion prior for KSTAR equilibrium reconstruction under sensor dropout",
+  "abstract": "We study equilibrium reconstruction for the Korea Superconducting Tokamak Advanced Research (KSTAR) device under magnetic sensor dropout, with a diffusion model as the prior. Magnetic measurements leave most components of the toroidal current density $J_φ$ undetermined, and sensor loss leaves more of them to the prior. The diffusion model learns only $J_φ$, conditioned on the coil currents, the plasma current and the product of major radius and toroidal field, which do not depend on the dropout. The physics enters through a linear forward operator built from sensor response matrices of the LIUQE code. Because the observations are linear, a variant of decoupled annealing posterior sampling fits them with a closed-form linear correction. On measured signals of 37 KSTAR shots, we switch off a random fraction (0.0 to 0.9, ten settings) of the 124 magnetic channels in use and compare with LIUQE under the same masks, taking the full-sensor LIUQE reconstruction as the label. Both methods fit the remaining channels to a similar level. The median relative distance of $J_φ$ from the label stays at 3.22--4.07\\% for the diffusion reconstruction in all settings, whereas that of LIUQE reaches 11.89\\% at dropout 0.9. At dropout 0.5--0.9, the diffusion reconstruction is closer to the label on 27--37 of the 37 shots. At low dropout, LIUQE is closer on most shots. For the derived flux, the diffusion reconstruction is closer on 21--36 shots at dropout 0.5--0.9, and its error at high dropout comes from the vessel current estimate, not from the prior.",
+  "authors": [
+    "Hyungkeun Nam",
+    "Jaemin Seo"
+  ],
+  "published": "2026-09-29T02:28:22Z",
+  "updated": "2026-09-29T02:28:22Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

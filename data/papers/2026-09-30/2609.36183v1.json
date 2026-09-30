@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2609.36183v1",
+  "url": "https://arxiv.org/abs/2609.36183v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.36183v1.pdf",
+  "title": "Applications of Poincaré Boundary Condition for 3D Ideal MHD Equilibrium and Optimization",
+  "abstract": "Stellarator ideal magnetohydrodynamic (MHD) codes that assume nested flux surfaces such as \\texttt{VMEC} and \\texttt{DESC} solve the equilibrium problem by prescribing the total toroidal magnetic flux, plasma profiles and the last closed flux surface (LCFS), which analytically determines the unique field in vacuum, whereas at finite $β$ bifurcations and distinct equilibria sharing the same boundary have been reported in the literature. In this paper, we propose prescribing the Poincaré cross-section of the field at a single toroidal plane, and implement it in \\texttt{DESC}, where the new condition enters only through the linear constraints and therefore costs no more than a fixed-LCFS solve. Fixing the geometry on one plane rather than on a full toroidal surface generally leaves more of the spectral coefficients free, and the ones it frees are those carrying the toroidal variation of the boundary flux surface, which a prescribed LCFS holds fixed at every toroidal angle; together these allow better-converged numerical solutions. We solve equilibria with the cross-section held fixed, starting either from the axisymmetric shape obtained by revolving that cross-section toroidally, or from an existing fixed-LCFS solution. In the latter case, the volume-averaged normalized force error falls by an order of magnitude while the configuration stays close to the original one, and re-solving the resulting boundary with the conventional fixed-LCFS solver recovers the same equilibrium. We further show that the Poincaré coefficients can be used directly as design variables by optimizing a quasi-helical configuration that maintains high-fidelity force balance throughout the process.",
+  "authors": [
+    "Yigit Gunsur Elmacioglu",
+    "Dario Panici",
+    "Rory Conlin",
+    "Daniel Dudt",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-09-28T19:49:54Z",
+  "updated": "2026-09-28T19:49:54Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
