@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2610.02052v1",
+  "url": "https://arxiv.org/abs/2610.02052v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.02052v1.pdf",
+  "title": "Analysis of grid instabilities in particle-in-cell codes based on a meshfree approach",
+  "abstract": "A new method of analyzing grid, or aliasing, instabilities is described, in particle-in-cell (PIC) codes for plasma kinetic theory. It starts with a meshfree approach with $N_{p}$ macroparticles, with $N_{p}<\\infty$. Linearization of these equations is done about a uniform density non-drifting equilibrium prescribed by macroparticles on a uniform \\emph{lattice}. Macroparticle positions perturbations are induced about this lattice. The resulting linear equations are analyzed for stability and dispersion relations. The linearized equations are then discretized on a grid of $N_{g}$ points with $N_{g} \\le N_{p}$, in both momentum conserving (MCP) and energy conserving (ECP) formulations. For a cold stationary plasma, this leads a \\emph{dynamical matrix}. For ECP, the matrix is symmetric and positive definite (SPD) and immediately shows stability. For MCP, the dynamical matrix is neither symmetric nor positive definite, preventing immediate conclusions on stability. For both MCP and ECP and for a cold stationary plasma, the resulting matrix elements vary relative to the meshfree value, a result of aliasing. This deviation is periodic in the displacement of the particle lattice relative to the grid. In the MCP discretization, eigenvalues occur in complex conjugate pairs for general placement of the particle lattice relative to the grid. These conjugate pairs indicate nonnegative growth rates. The nature of the aliasing is studied and shown to be related to the trapezoidal rule error over the grid. The scaling of the linear growth rates with respect to $N_{g}$ and especially with respect to $N_{ppc}$ is studied. These analytical results are compared with PIC simulations and found to be in excellent agreement. The connection with a cold drifting \\emph{beam} is discussed briefly, specifically, grid-induced instabilities for both the MCP and ECP.",
+  "authors": [
+    "J. M. Finn",
+    "E. G. Evstatiev"
+  ],
+  "published": "2026-10-01T17:01:03Z",
+  "updated": "2026-10-01T17:01:03Z",
+  "categories": [
+    "physics.plasm-ph",
+    "math-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
