@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.02139v1",
+  "url": "https://arxiv.org/abs/2610.02139v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.02139v1.pdf",
+  "title": "Birth-Potential Multigroup Fluid Model for Ballistic Electrons: Breakdown and Cathode Sheath Regimes",
+  "abstract": "Fluid models of discharges fail where electron runaway dominates. On the left branch of the Paschen curve and in high-voltage cathode sheaths, the electron population splits into a thermal bulk and a ballistic beam that no single electron fluid can represent. We present a multigroup fluid model that divides ballistic electrons into groups indexed by their birth potential: the electrostatic potential at which they were liberated, offset by the forward kinetic energy they carried. Because the birth potential is a constant of ballistic motion, the electric field never moves electrons between groups and only collisions do. Each group requires a single continuity equation because its velocity follows algebraically from the local potential, and the number of groups is set by the energy resolution alone independently of the mesh. A runaway criterion based on the local field assigns each newly liberated electron to the bulk or a ballistic group, so the model applies even where no sheath exists. Benchmarked against a kinetic solver in argon, it reproduces the left branch of the Paschen curve---which local-field and local-energy models miss or misplace---and tracks the current--voltage characteristic of a cathode sheath to within a few percent at reduced fields exceeding $10^4$ Td, where the local-energy model overpredicts the current up to thirtyfold. Since as few as 10 to 30 groups suffice, depending on the field, the approach brings near-kinetic accuracy to multi-species computational fluid dynamics solvers at the cost of that many additional species, without added velocity-space dimensions or particle noise.",
+  "authors": [
+    "Bernard Parent",
+    "Brendan Perry"
+  ],
+  "published": "2026-10-01T17:44:56Z",
+  "updated": "2026-10-01T17:44:56Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

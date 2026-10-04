@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.00536v1",
+  "url": "https://arxiv.org/abs/2610.00536v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.00536v1.pdf",
+  "title": "Rapid Vacuum Response Calculations for Non-axisymmetric Plasma Geometries",
+  "abstract": "We present a fast, open-source calculation of the vacuum response matrix and surface inductance in non-axisymmetric geometries capable of running with up to 10^5 boundary points in tens of seconds on a laptop. Ideal magneto-hydrodynamic (MHD) stability modeling for free boundary modes requires the perturbed vacuum energy. We extend the VACUUM code to non-axisymmetric geometries in the new Julia implementation of the Generalized Perturbed Equilibrium Code, combining a collocation approach to the boundary integral equations with a high-order singularity correction scheme. The correction is recast into explicit quadrature weights acting on the collocation values, which allows the corrected operator to be assembled explicitly rather than applied to a given surface field, and the structure of that matrix under field-period and stellarator symmetry is then exploited to reduce storage and solve cost. We find that the vacuum response matrix converges at fourth order or greater in the grid spacing, reaching a given accuracy on a coarser grid than previous implementations without the high-order method. The non-axisymmetric calculation converges to the axisymmetric VACUUM result for a tokamak and the CAS3D result for a W7-X stellarator equilibrium. This work enables fast free boundary ideal MHD stability and perturbed equilibrium calculations in stellarators.",
+  "authors": [
+    "Jacob Halpern",
+    "Nikolas Logan",
+    "Carolin Nührenberg",
+    "Elizabeth Paul",
+    "Carlos Paz-Soldan"
+  ],
+  "published": "2026-09-30T18:19:53Z",
+  "updated": "2026-09-30T18:19:53Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
