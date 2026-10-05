@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.01429v1",
+  "url": "https://arxiv.org/abs/2610.01429v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.01429v1.pdf",
+  "title": "Electromagnetic drift-kinetic particle-in-cell model with energy and charge conservation for studying finite-$β$ plasmas",
+  "abstract": "The paper proposes a generalization of the fully implicit energy- and charge-conserving electromagnetic particle-in-cell method to the case where the lightest type of plasma particle (electrons) is described in the drift-kinetic approximation. This allows us to remove the very strict time step limitation of this method requiring to resolve the gyrorotation of electrons. Since the drift-kinetic model is only applicable to light particles whose contribution to plasma polarization is small, this model can be further simplified by neglecting the electron polarization drift and including in Maxwell's equations, in addition to the current of gyrocenters, only the magnetization current. In order for such a hybrid model to retain conservative properties in finite-difference form, a method of self-consistent interpolation of $\\nabla B$ in the mirror force from grid to particle and the magnetization vector from particle to grid is proposed. Unlike existing drift-kinetic models, this model is not limited to considering small perturbations near a given equilibrium, and therefore allows one to study the formation of plasma equilibria in regimes with a finite ratio of plasma to magnetic field pressure. Testing of the parallel code implemented in C++ using the PETSc library confirmed the fulfillment of the finite-difference laws of energy and charge conservation, as well as the ability of the model (in the drift-kinetic version for all types of particles) to correctly reproduce the diamagnetic effect and longitudinal ion-acoustic wave.",
+  "authors": [
+    "O. P. Morozov",
+    "V. A. Kurshakov",
+    "I. V. Timofeev"
+  ],
+  "published": "2026-10-01T10:28:08Z",
+  "updated": "2026-10-01T10:28:08Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

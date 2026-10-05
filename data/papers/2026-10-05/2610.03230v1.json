@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.03230v1",
+  "url": "https://arxiv.org/abs/2610.03230v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.03230v1.pdf",
+  "title": "Dynamics-aware bandwidth selection for smoothed charge deposition in 2D electrostatic particle-in-cell",
+  "abstract": "Charge deposition in the particle-in-cell (PIC) method can be viewed as kernel density estimation on a spatial mesh. This allows the smoothing bandwidth to be selected through statistical criteria such as mean integrated squared error or cross-validation, but it also changes the electric field acting on the particles. Therefore, a selected bandwidth can alter the growth or damping of physical modes. We develop a dynamics-aware bandwidth-selection procedure that combines a density-error objective with constraints on specified linear modes. These constraints follow from the plasma equilibrium and the combined transfer of deposition, filtering and field gathering within the model rate-tolerance boundary.   We demonstrate the need for equilibrium information through a controlled two-stream experiment. The controlled two-stream scan varies the beam drift while holding the initial spatial density, thermal samples, wavevector and fixed-filter transfer unchanged. Across four resolved equilibria approaching marginal stability, this filter reduces the measured growth rate by $0.7\\%$ to $9.1\\%$. Equilibrium-dependent interior settings satisfy the prescribed $10\\%$ rate tolerance. We then apply the constrained selection rule to 85 Gaussian candidates, that reduces density and grid-field mean-square errors by $7.40\\%$ and $3.70\\%$ on independently evaluated snapshots. A separate projected-linear calculation at that exact width gives a ratio of mean individual growth rates of $0.9556$, with paired $95\\%$ interval $[0.9453,0.9640]$, consistent with the prediction $0.9513$. Analysis of finite-marker loading and ensemble averaging explains how the measured rates relate to the response model. Together, these results demonstrate a filter-design procedure that combines statistical error reduction with subsequent validation of the selected linear dynamics.",
+  "authors": [
+    "Ayushi Agrawal",
+    "Shan-Chang Lin",
+    "Ezhilmathi Krishnasamy",
+    "Pascal Bouvry"
+  ],
+  "published": "2026-10-02T12:43:23Z",
+  "updated": "2026-10-02T12:43:23Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

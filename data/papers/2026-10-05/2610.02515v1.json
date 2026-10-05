@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2610.02515v1",
+  "url": "https://arxiv.org/abs/2610.02515v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.02515v1.pdf",
+  "title": "IGNITE Tokamak World Model Architecture",
+  "abstract": "We introduce IGNITE, a generative world foundation model for fusion plasma behavior simulation trained in a self-supervised manner from over a decade of unlabeled experimental data at the DIII-D National Fusion Facility. The core of IGNITE is a dynamics model that can simulate DIII-D discharges from a given set of actuator trajectories. These trajectories can be supplied or generated on-the-fly from a textual prompt or from desired experimental outcomes. The model architecture consists of several spatio-temporal tokenizers that embed the different input modalities, including time-series like spatio-temporal measurement data, image sequences, and high-resolution spectrograms, each of which collected at vastly different time scales. The backbone is composed of an auto-regressive dynamics model that has the capacity to predict entire DIII-D discharges given initial latent plasma states and actuator trajectories over a theoretical infinite horizon. IGNITE paves the way towards efficient AI-driven experimental planning and world modeling for nuclear fusion.",
+  "authors": [
+    "Peter Steiner",
+    "Azarakhsh Jalalvand",
+    "Nathaniel Chen",
+    "Kouroche Bouchiat",
+    "Ricardo Shousha",
+    "SangKyeun Kim",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-10-01T21:37:44Z",
+  "updated": "2026-10-01T21:37:44Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
