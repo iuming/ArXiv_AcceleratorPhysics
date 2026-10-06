@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.05635v1",
+  "url": "https://arxiv.org/abs/2610.05635v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.05635v1.pdf",
+  "title": "Reveal normal form structure for nonlinear map in accelerator beam physics with symplectic neural network",
+  "abstract": "Long-term multi-turn tracking is required to study nonlinear phenomena in circular accelerators, such as resonances, chaotic motion, and the dynamic aperture. General-purpose neural networks do not preserve the symplectic structure of Hamiltonian dynamics, so their errors can grow over many turns. Symplectic neural networks (SympNets) guarantee symplecticity through their architecture rather than through a loss penalty. In this work, we use a SympNet to learn the normal-form transformation of a nonlinear map from tracking data. In the learned coordinates, the dynamics become a rotation of each mode, whose amplitude-dependent phase advance is given by a second network. We demonstrate the method on a four-dimensional McMillan-type map. The model reproduces the one-turn dynamics, the learned phase advances stay constant along each trajectory to within $\\sim 10^{-5}$~rad, and orbits become close to circles in the learned coordinates at small and moderate amplitude. At large amplitude the learned orbits spread noticeably, and the cause of this degradation is not yet established. The approach is a step toward fast, structure-preserving surrogate models for lattice analysis and online beam-dynamics applications in storage rings.",
+  "authors": [
+    "Leo He",
+    "Yue Hao"
+  ],
+  "published": "2026-10-05T00:03:28Z",
+  "updated": "2026-10-05T00:03:28Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

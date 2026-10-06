@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2610.04655v1",
+  "url": "https://arxiv.org/abs/2610.04655v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.04655v1.pdf",
+  "title": "Xenia: A Table-Driven Code for Astrophysical Multi-Fluid Hydrodynamics",
+  "abstract": "Models of escaping planetary atmospheres require neutral and ion species with distinct velocities and thermal pressures, coupled by photoionization, recombination, radiation, and collisions. Implementing and extending such coupled models is often hindered when species definitions and stiff interactions are embedded in solver-specific kernels. We present Xenia, a table-driven code for astrophysical multi-fluid hydrodynamics designed to lower this barrier. Species, coupling channels, chemistry, heating and cooling, and radiation channels are declared in Python, compiled to symbolic tapes, and passed through a versioned interface to shared C/Kokkos kernels; changing a problem therefore changes data rather than kernel code. For ionized configurations, electrons provide a pressure-only quasi-neutral closure: electron density follows from ion populations, electron mass and momentum are not advanced, and only electron pressure is transported. Stiff coupling is treated by operator splitting into a radial radiation scan, hyperbolic transport, and a cell-local implicit source solve. The same symbolic tapes yield an analytic finite-difference-free Jacobian for a direct dense LU solve. The public v0.1 release is validated with acoustic convergence, dustybox drag relaxation, conservation and closure contracts, two-fluid cloud-shock coupling, curvilinear geometry bookkeeping, three escape chains, and 394 passing tests. Conservation and positivity are not claimed to match mature production codes; radiation uses a radial Beer-Lambert prefix product rather than a general solver; escape chains are reproducibility checks rather than new science predictions; and backend evidence is limited to functional deployment and equivalence fingerprints. Xenia is released under GPLv2 at https://github.com/YFG-tec/xenia.",
+  "authors": [
+    "Lei Xing"
+  ],
+  "published": "2026-10-03T17:01:08Z",
+  "updated": "2026-10-03T17:01:08Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.EP",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.IM"
+}

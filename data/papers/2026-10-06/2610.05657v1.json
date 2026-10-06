@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2610.05657v1",
+  "url": "https://arxiv.org/abs/2610.05657v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.05657v1.pdf",
+  "title": "Fast and Differentiable MHD Surrogate for Solar Wind using Neural Operator",
+  "abstract": "Global magnetohydrodynamic (MHD) simulations provide the complete plasma state of the heliosphere, but their computational cost limits applications requiring repeated model evaluations. We introduce SNOW (Solar Neural Operator for Wind), a fast and differentiable surrogate for global MHD solar wind. SNOW combines a rotational ballistic approximation, a spherical harmonic neural operator, and causal radial context to autoregressively propagate all eight MHD variables from 20 to 240 Rs through consecutive shell to shell transitions. Trained and evaluated using AWSoM simulations spanning a solar cycle, SNOW remains stable across the complete rollout. The model successfully reproduces the large scale plasma and magnetic field structures, including fast and slow wind streams, magnetic polarity sectors, vector orientations, fieldline connectivity, and bulk-flow structures. Additionally, the magnetic divergence and induction diagnostics remain comparable to the reference MHD solutions. The complete three-dimensional solution is generated in less than one second on a single GPU. These results demonstrate the feasibility of fast neural emulation of global MHD solar wind solutions while retaining physically meaningful plasma and magnetic field structure.",
+  "authors": [
+    "Prateek Mayank",
+    "Enrico Camporeale",
+    "Thomas E. Berger",
+    "Zhenguang Huang",
+    "Gabor Toth"
+  ],
+  "published": "2026-10-05T01:06:41Z",
+  "updated": "2026-10-05T01:06:41Z",
+  "categories": [
+    "astro-ph.SR",
+    "physics.flu-dyn",
+    "physics.plasm-ph",
+    "physics.space-ph"
+  ],
+  "primary_category": "astro-ph.SR"
+}

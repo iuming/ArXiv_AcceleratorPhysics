@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2610.06379v1",
+  "url": "https://arxiv.org/abs/2610.06379v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.06379v1.pdf",
+  "title": "FPGA-based muon shower identification and graph neural network tracking algorithms for HL-LHC triggers",
+  "abstract": "This work presents two hardware-accelerated strategies for the upgrade of the CMS Level-1 Trigger (L1T) to target efficiency losses due to highly energetic radiating muons and unconventional physics signatures, such as Long-Lived Particles (LLPs). Operating directly on low-level detector hits, the first strategy implements a dedicated muon shower identification algorithm in the CMS barrel region that monitors hit multiplicities in the Drift Tube chambers to generate Shower Primitives. Executing with sub-bunch-crossing latency and ultra-low resource consumption, this algorithm successfully tags showered muons and provides essential context for downstream track finders. The second approach targets the barrel-endcap transition (overlap) region by evaluating Graph Neural Networks to reconstruct displaced muon tracks. Following a divided methodology that first isolates hardware feasibility from evolving physics refinements, an initial proxy model based on a GraphSAGE architecture is evaluated to validate its viability on FPGAs within strict latency limits. This implementation utilizes an INT8-PO2 quantization technique coupled with a data-driven bit-width optimization. By replacing DSP-heavy fixed-point multiplications with fast compile-time arithmetic bit-shifts and allocating the minimum required bits per signal, this hardware-software co-design reduces DSP utilization to $20\\%$ and achieves a deterministic inference latency of just $19$ clock cycles. Together, these developments pave the way for triggering on non-standard muon signatures, such as those from LLP decays, at L1T.",
+  "authors": [
+    "Daniel Estrada",
+    "Elena Aller",
+    "Andrea Cardini",
+    "Santiago Folgueras",
+    "Pelayo Leguina",
+    "Javier Prado"
+  ],
+  "published": "2026-10-05T14:09:12Z",
+  "updated": "2026-10-05T14:09:12Z",
+  "categories": [
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}

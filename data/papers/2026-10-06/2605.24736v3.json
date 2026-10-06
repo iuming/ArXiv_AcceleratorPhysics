@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.24736v3",
+  "url": "https://arxiv.org/abs/2605.24736v3",
+  "pdf_url": "https://arxiv.org/pdf/2605.24736v3.pdf",
+  "title": "Towards 6D Tracking: A Study Of Using Fast-Timing For Measuring Track Position, Time, And Angles",
+  "abstract": "Next-generation particle trackers will incorporate precision timing with resolutions of tens of picoseconds. Using two-dimensional TCAD simulations of Low-Gain Avalanche Diodes (LGADs) with a $25~\\mathrm{μm}$ pitch and $75~\\mathrm{μm}$ thickness, we show that tilted tracks traversing multiple pixels produce systematic inter-pixel timing differences of hundreds of picoseconds. These differences must be corrected for in cluster hit time reconstruction, but they also encode the track angle. We derive an analytic linear model relating inter-pixel timing differences to the track angle, and determine the sign of the angle, which the cluster shape cannot provide, using an amplitude-weighted method. For tracks crossing at least three pixels, this enables single-layer angle reconstruction with a resolution of $2^\\circ-3^\\circ$ and, after a simple numerical inversion, a bias below $1^\\circ$. The dominant limitation arises from large Landau fluctuations: non-uniform charge deposition along the track induces inter-pixel crosstalk that distorts the timing signals. Affected tracks can be identified and rejected using the total cluster charge. Neural networks that additionally exploit nonlinear correlations and pixel charge improve the resolution to approximately $1.7^\\circ$, indicating that the computationally inexpensive linear model captures most of the available angular information. These results provide a path toward 6D tracking, in which each detector layer measures track position, time, and angles.",
+  "authors": [
+    "Victor Turbiner",
+    "Elena Villhauer",
+    "Saveer Jain",
+    "Abhiraj Gupta",
+    "Michael Cardiff",
+    "Julie Segal",
+    "Christopher J. Kenney",
+    "Mark Horowitz",
+    "Ariel Schwartzman",
+    "Angelo Dragone"
+  ],
+  "published": "2026-05-23T21:21:08Z",
+  "updated": "2026-10-03T15:11:10Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

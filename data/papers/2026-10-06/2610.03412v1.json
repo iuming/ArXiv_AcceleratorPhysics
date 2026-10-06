@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.03412v1",
+  "url": "https://arxiv.org/abs/2610.03412v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.03412v1.pdf",
+  "title": "Controlled-illumination smartphone imaging for quantitative turbidity measurement and cross-device transfer",
+  "abstract": "Smartphone imaging could provide a low-cost turbidity measurement method if illumination and acquisition geometry are controlled. We evaluated a 3D-printed enclosure with fixed illumination and a submerged optical target using 162 milk-based suspensions spanning 0.16--50.2 nephelometric turbidity units (NTU), with a portable turbidimeter as the reference. An EfficientNetB0 regression model evaluated using repeated five-fold grouped cross-validation achieved a mean absolute error (MAE) of 1.208 NTU and $R^2=0.9816$, indicating that predictions followed the reference measurements closely. The MAE was 0.335 NTU below 1 NTU and 0.449 NTU from 1 to below 5 NTU; classification accuracy at the operational 5-NTU threshold was 0.9753. When applied without retraining to 103 paired images from a second smartphone, prediction error remained comparable to that on the development smartphone below 10 NTU, but turbidity was increasingly underestimated at higher values. The results demonstrate the measurement performance attainable with a controlled smartphone acquisition system, quantify an important device-dependent transfer limitation, and motivate standardized multi-device acquisition and prospective natural-water validation.",
+  "authors": [
+    "Sebastian Olivares",
+    "Addles Castillo",
+    "Patricia Velasquez",
+    "Roxana Arce",
+    "Nicolas Richardson"
+  ],
+  "published": "2026-10-02T15:00:26Z",
+  "updated": "2026-10-02T15:00:26Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.app-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
