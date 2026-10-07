@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.07024v1",
+  "url": "https://arxiv.org/abs/2610.07024v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.07024v1.pdf",
+  "title": "MRI-Free CT-to-Ultrasound Skull Registration in Transcranial Focused Ultrasound using CMUT based Integrated Therapeutic and Imaging Arrays",
+  "abstract": "Accurate skull-to-array registration is essential for transcranial focused ultrasound (tFUS) because CT-derived skull models must be aligned with the physical-array coordinate system to support patient-specific aberration correction. Current workflows typically use MRI and/or external tracking to establish this spatial relationship, adding imaging infrastructure and coordinate transformations to the treatment workflow. Here, we describe an MRI-free CT-to-ultrasound registration framework using a hybrid hemispherical CMUT tFUS array that combines a sparse therapeutic array with an integrated CMUT US-Cross imaging array. The therapeutic array provides pulse-echo measurements of skull location, while the US-Cross array provides local high-resolution images of the skull surface. The approach was evaluated using a CT-derived outer cortical skull surface across a 25-pose matrix with 10-mm lateral offsets between the skull and array centers and +/-5 degree angular perturbations. Five randomized radial-noise seeds were applied to therapeutic pulse-echo measurements to model measurement or element-placement errors, yielding 125 pose-seed realizations per noise and active-element setting. US-Cross imaging features were generated using Field II and delay-multiply-and-sum plane-wave compounding. Four registration modes were evaluated: Therapeutic only, US-imaging only, Sequential, and Fused registration. Fused registration yielded the best overall performance, with a median total displacement error of 0.271 mm [0.169-0.420] and a median rotation error of 0.904 degrees [0.432-1.639]. These results support an all-ultrasound-based approach using a hybrid CMUT tFUS array for MRI-free CT-US skull registration.",
+  "authors": [
+    "Reza Pakdaman Zangabad",
+    "Sai Vikas Satyanarayana",
+    "Costas D. Arvanitis",
+    "F. Levent Degertekin"
+  ],
+  "published": "2026-10-04T16:34:16Z",
+  "updated": "2026-10-04T16:34:16Z",
+  "categories": [
+    "physics.med-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.med-ph"
+}

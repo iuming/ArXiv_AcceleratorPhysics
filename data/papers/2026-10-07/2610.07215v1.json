@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.07215v1",
+  "url": "https://arxiv.org/abs/2610.07215v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.07215v1.pdf",
+  "title": "An Implicit, Moment-Conserving Low-Rank Tensor Method for the Hybrid Kinetic-Ion Fluid-Electron Plasma Model",
+  "abstract": "Quasi-neutral hybrid models for simulating plasmas, with kinetic ions and fluid electrons, have shown great promise for approaching the multi-scale nature of plasmas. In this paper we present a novel hybrid scheme for electromagnetic settings that conserves mass, momentum, and energy, employing a low-rank tensor method utilizing the Tensor Train decomposition to avoid the \\enquote{curse of dimensionality.} Electrons are simulated as a continuous fluid, while the kinetic ions are modeled as a distribution function governed by the Vlasov equation. The Vlasov equation is updated with the implicit midpoint method. We use a modified version of a conservative truncation method to guarantee conservation of mass, momentum, and energy throughout the method, which corrects the truncated distribution function without needing to advance a separate set of fluid-moment equations. A series of electrostatic and electromagnetic test problems is used to demonstrate the correctness of the method and its conservation properties.",
+  "authors": [
+    "Stephen R. White",
+    "Adam J. Stanier",
+    "Luis Chacón",
+    "Will T. Taitano",
+    "Isaac A. Castro"
+  ],
+  "published": "2026-10-05T18:27:12Z",
+  "updated": "2026-10-05T18:27:12Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

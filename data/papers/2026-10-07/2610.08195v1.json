@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.08195v1",
+  "url": "https://arxiv.org/abs/2610.08195v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.08195v1.pdf",
+  "title": "Omnidirectional Radiation Detector with Perpendicular Dual Silicon Photomultiplier Readout - Directional Sensitivity and Machine Learning Source Positioning",
+  "abstract": "Directional information of incident gamma rays in radiation detection is essential to many applications, from medical imaging to mapping radioactive contamination after nuclear accidents, characterization of nuclear waste during decommissioning, and nuclear security. In this work, we present a radiation detector capable of detecting gamma-ray photons in 4$π$, utilizing Gadolinium Aluminum Gallium Garnet (GAGG) scintillating crystals and silicon photomultipliers (SiPMs). The GAGG crystals are assembled in a cubical 4$\\times$4$\\times$4 matrix, and their light output is read out by SiPMs from two neighboring sides. The size of each crystal is 3$\\times$3$\\times$3 mm$^3$, while the matrix pitch is 3.2 mm, matching the size and the pitch of the 4$\\times$4 SiPMs for one-to-one coupling. The layers perpendicular to the SiPMs are separated by optical reflectors, providing efficient light collection while lowering the probability of inter-crystal leakage. The design of the radiation detector offers high detection efficiency and full-view imaging of gamma-ray sources through Compton scattering. Monte Carlo simulations were performed in Geant4 to evaluate the detection efficiency of the proposed design due to its geometrical non-uniformity. Machine learning models developed with the XGBoost algorithm were trained and tested on the simulated data to assess the capability of the detector to localize point sources of 511, 662, and 1275 keV energies. We find that the proposed design does not influence the collection efficiency of the high-energy gamma-ray photons and offers sensitivity to the direction of the incoming gamma rays. The trained models are capable of determining the source-to-detector distance of the Na-22 and Cs-137 point sources from measurements, thus providing initial conditions for faster image reconstruction.",
+  "authors": [
+    "Ana Marija Kožuljević",
+    "Gabriela Jazvac",
+    "Luka Lotina",
+    "Luka Pavelić"
+  ],
+  "published": "2026-10-06T11:47:52Z",
+  "updated": "2026-10-06T11:47:52Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

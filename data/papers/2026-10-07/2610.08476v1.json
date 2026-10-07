@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.08476v1",
+  "url": "https://arxiv.org/abs/2610.08476v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.08476v1.pdf",
+  "title": "Simulation of Weakly Ionized Hypersonic Flows with Reactive Species Weighting Scheme in the Direct Simulation Monte Carlo Method",
+  "abstract": "The conservative species weighting scheme enables the direct simulation Monte Carlo (DSMC) method to resolve trace species such as electrons and ions in weakly ionized flows. The present study extends this scheme to reacting flows, utilizing a split-merge concept for particles with species-dependent weights. Reactive collisions between differently weighted species are processed according to their respective weights, introducing the production of an integer number of product particles and a probabilistic approach applied to both reactant and product particles to satisfy mass conservation. The extended scheme was validated in single-cell dissociation and exchange reaction test cases, verifying mass and total energy conservation and the mole-fraction histories against conventional DSMC. This extension provides the electron number density required for predicting the onset of communication blackout at high altitudes during hypersonic reentry. The method was applied to the Orbital Re-entry Experiment (OREX) flight conditions from 105.0 km to 92.8 km altitude. Translational and internal temperatures showed good agreement with conventional DSMC results, validating the macroscopic flow-field computation. The scheme enabled continuous spatial distributions of trace electron number density, consistent with the communication blackout onset observed in the flight data. The computed ion current reproduced the overall trend of the in-flight electrostatic probe data. The influences of the ion recombination at the vehicle surface and of the uncertainty of the N + O associative-ionization rate were quantified, and the range of the computed currents encompassed the available measurements. The 105.0 km case extended the prediction beyond available measurements, consistent with the overall trend.",
+  "authors": [
+    "Takato Morimoto",
+    "Virgile Charton",
+    "Eiichiro Yamaoka",
+    "Kiyoshi Kinefuchi"
+  ],
+  "published": "2026-10-06T14:55:53Z",
+  "updated": "2026-10-06T14:55:53Z",
+  "categories": [
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.flu-dyn"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2609.20868v2",
+  "url": "https://arxiv.org/abs/2609.20868v2",
+  "pdf_url": "https://arxiv.org/pdf/2609.20868v2.pdf",
+  "title": "Automated Physics-Informed Neural-Networks-Based Calibration of Highly Segmented Silicon Telescopes",
+  "abstract": "Transfer and multi-nucleon transfer reactions are essential tools for probing nuclear structure and reaction dynamics, requiring precise determination of the identity, energy, and emission angles of reaction products. The increasing granularity of modern silicon telescope arrays enhances experimental capabilities but challenges detector calibration, as conventional channel-by-channel approaches become inefficient and difficult to scale.   In this work, we present a fully automated, physics-informed calibration framework based on neural networks, specifically designed for highly segmented silicon detector arrays. The method formulates calibration as a global optimization problem, in which detector gains and geometrical corrections are determined simultaneously by minimizing the width of the reconstructed excitation energy under two-body kinematics constraints. The approach relies exclusively on experimental data and well-established physical principles, without requiring explicit modeling of detector response.   A distinctive feature is the use of multiple neural network sub-models sharing a common loss function with embedded physics constraints, enabling coherent and self-consistent calibration across all detector channels. This strategy ensures scalability, robustness, and reproducibility, making it particularly suitable for next-generation detector systems with increasing complexity.   The performance of the method is demonstrated using experimental data from the Particle-Identification Silicon-Telescope Array (PISTA) in high-resolution fission studies in inverse kinematics. The results show excellent agreement with theoretical kinematics, high-quality particle identification, and a significant improvement in calibration efficiency. The proposed framework provides a general and adaptable solution for the calibration of complex detector systems in modern nuclear physics experiments.",
+  "authors": [
+    "M. Rejmund",
+    "A. Lemasson",
+    "P. Morfouace",
+    "D. Ramos",
+    "J. Taieb",
+    "J. D. Frankland"
+  ],
+  "published": "2026-09-15T12:37:50Z",
+  "updated": "2026-10-05T10:32:43Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1103/14mn-mtq3"
+}
