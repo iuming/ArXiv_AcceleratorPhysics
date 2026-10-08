@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2610.08877v1",
+  "url": "https://arxiv.org/abs/2610.08877v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.08877v1.pdf",
+  "title": "A Differentiable Surrogate for Loss-Dominated Ion Beam Transport",
+  "abstract": "Radioactive nuclei with extreme proton-to-neutron ratios provide unique probes of nuclear structure, fundamental symmetries, astrophysical processes, and applications such as medicine. However, their short half-lives and low production rates mean that experiments must work with few desired ions, often amid contaminant backgrounds exceeding the signal by six orders of magnitude. Efficiently isolating, transporting, and delivering these ions through multi-stage apparatus is therefore a central challenge. We introduce a differentiable probabilistic surrogate for ion-beam transport in regimes dominated by particle loss. The model jointly captures the survival probability of ions along the beamline and the evolving phase-space distribution of the surviving particles by combining discrete-time survival analysis with conditional normalizing flows. Applied to a high-dimensional electrostatic beamline, the resulting likelihood enables gradient-based optimization of operating voltages and inference of beam properties from sparse detector observations. Once trained, the surrogate provides millisecond-scale differentiable predictions, transforming particle-tracking simulations with hard losses into an inference-ready model for experimental design, beamline optimization, and future digital twins of experiments with rare nuclei.",
+  "authors": [
+    "Jose M. Munoz-Arias",
+    "Laura Ruiz-Arango",
+    "Derick Gonzalez-Acevedo",
+    "Fabian C. Pastrana-Cruz",
+    "Jackson Hacias",
+    "Ronald F. Garcia Ruiz"
+  ],
+  "published": "2026-10-06T06:15:11Z",
+  "updated": "2026-10-06T06:15:11Z",
+  "categories": [
+    "physics.ins-det",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
