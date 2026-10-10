@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.09674v1",
+  "url": "https://arxiv.org/abs/2610.09674v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.09674v1.pdf",
+  "title": "Real-time Tokamak Equilibrium Reconstruction Under Limited Experimental Data via Physics-Grounded Synthetic Pre-training",
+  "abstract": "Real-time equilibrium reconstruction is essential for tokamak plasma control. Data-driven surrogates are usually trained on high-quality labeled experimental data, but producing a large amount of labeled data sufficient for surrogate learning requires many expensive discharge shots, and few exist at the start of a new campaign or the operation of a new device. To reduce this cost, we propose to pre-train on simulated equilibria, generated at low cost by physics-based simulation, then fine-tune on limited real data. We evaluate under three settings with increasing difficulties, i.e., in-distribution, out-of-distribution (shape), and cross-campaign (temporal) splits, which mirror how reconstruction is actually deployed. Experimental results validate that synthetic pre-training is highly effective when few real labels are available: fine-tuning on only 1% of the full available real dataset cuts the per-sample normalized root-mean-square error (nRMSE) of the reconstructed poloidal flux by roughly 58% under out-of-distribution shapes and 64% under cross-campaign extrapolation, compared to a model trained from scratch on the same amount of real data. These realistic evaluations show that synthetic pre-training improves equilibrium reconstruction accuracy in the data-scarce regime that real tokamak campaigns face.",
+  "authors": [
+    "Mingdong He",
+    "Qixian Hu",
+    "Tengfei Xu",
+    "Tailin Wu",
+    "Zheng Xiong"
+  ],
+  "published": "2026-10-07T08:36:49Z",
+  "updated": "2026-10-07T08:36:49Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
