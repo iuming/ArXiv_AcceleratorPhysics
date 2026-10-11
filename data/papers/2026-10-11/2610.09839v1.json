@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2610.09839v1",
+  "url": "https://arxiv.org/abs/2610.09839v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.09839v1.pdf",
+  "title": "AloHEP Software: A luminosity optimizer for High Energy Physics colliders",
+  "abstract": "The luminosity quoted for proposed particle colliders is usually derived from the analytic geometric formula, which assumes head-on collisions of identical, rigid Gaussian bunches. For the new generation of asymmetric machines---in particular lepton--hadron colliders such as the EIC, LHeC and FCC-eh---this assumption can misestimate the luminosity, because it ignores a few coupled effects that act in the interaction region such as hourglass effect, crossing angle, and mutual electromagnetic (beam--beam) deformation of the colliding bunches. We present \\textbf{AloHEP} (A luminosity optimizer for High Energy Physics), an open-source, cross-platform Java application that simulates the interaction region of both symmetric and asymmetric colliders. AloHEP represents each bunch by an ensemble of macroparticles deposited on the grid with a cloud-in-cell scheme, and slices the crossing longitudinally. On each transverse slice it solves the two-dimensional electrostatic problem by a direct Green's-function convolution, then obtains the beam--beam forces by finite differencing and continuous bicubic interpolation. The hourglass effect, finite crossing angle and beam--beam pinch/disruption can be enabled independently, and the two colliding beams may consist of entirely different species (leptons, protons, heavy ions). A JSON-backed parameter database and an interactive graphical interface make AloHEP a flexible tool for the rapid prototyping of realistic luminosity estimates. We verify that the code reproduces the analytic geometric luminosity in the appropriate limit and present scaling, grid-convergence and asymmetric-collider benchmarks.",
+  "authors": [
+    "Burak Dagli",
+    "Yigitali Karaca"
+  ],
+  "published": "2026-10-07T11:02:01Z",
+  "updated": "2026-10-07T11:02:01Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

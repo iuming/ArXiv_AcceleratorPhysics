@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.09190v1",
+  "url": "https://arxiv.org/abs/2610.09190v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.09190v1.pdf",
+  "title": "Numerical error analysis of EMC3-EIRENE simulations in the HSX stellarator",
+  "abstract": "Plasma edge simulations with codes like EMC3-EIRENE are widely used to study fusion magnetic confinement devices. However, numerical errors can significantly impact the simulation solution and are often insufficiently characterized. These errors consist of the statistical error, bias, and time integration error, resulting from the finite sampling and tracking of Monte Carlo particles, and the discretization error, resulting from a finite grid resolution. This work presents the first comprehensive numerical error analysis of EMC3-EIRENE simulations in stellarator geometries, focusing on edge plasmas in the Helically Symmetric eXperiment (HSX). Fundamental plasma and neutral quantities are analyzed, and error reduction rates are compared against theoretical expectations. The statistical error, bias, and time integration error are fully characterized; however, quantification of the discretization error remains challenging because of the complex grid geometries used in EMC3-EIRENE. The commonly used volume averaged relative change metric is shown to systematically underestimate the statistical error, highlighting a critical flaw in EMC3-EIRENE analysis, where convergence is claimed despite significant noise remaining in the simulation solution. Dominant contributions of the time integration error are shown to differ in stellarator simulations compared to tokamak simulations, related to the relative importance of cross-field transport between the two devices. Based on these results and existing literature, we establish best practices towards improved accuracy and efficiency in general stellarator modeling with EMC3-EIRENE.",
+  "authors": [
+    "F. A. Chavarria",
+    "D. Boeyaert",
+    "H. Frerichs",
+    "K. A. Garcia",
+    "B. Geiger"
+  ],
+  "published": "2026-10-06T22:41:16Z",
+  "updated": "2026-10-06T22:41:16Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2610.10328v1",
+  "url": "https://arxiv.org/abs/2610.10328v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.10328v1.pdf",
+  "title": "Neural network-based timewalk correction for the Timepix4 ASIC",
+  "abstract": "Timewalk corrections of hybrid pixel detectors conventionally employ heuristic fits performed independently in bins of the relevant input variables. This requires both an explicit functional ansatz and binning scheme, as well as densely populated calibration data whose required size grows rapidly as further input variables are added. This paper presents a timewalk correction for the Timepix4 readout chip based on a compact feed-forward neural network (NN), which learns the dependence directly from the input variables without requiring an explicit functional ansatz or binning. The NN is compared against the fit-based baseline using data from the Timepix4 beam telescope at the CERN SPS in 2025, with $100\\,\\mathrm{μm}$ and $300\\,\\mathrm{μm}$ thick planar sensors. Both methods parameterise the timewalk correction as a function of the measured charge and reconstructed intrapixel impact position. With only 20 % of the calibration data, the NN already achieves the same asymptotic time resolutions as the fit-based baseline: $180\\,\\mathrm{ps}$ and $300\\,\\mathrm{ps}$ for the two thicknesses, respectively.",
+  "authors": [
+    "David Bacher",
+    "Kazu Akiba",
+    "Martin van Beuzekom",
+    "Victor Coco",
+    "Raphael Dumps",
+    "Tim Evans",
+    "Kevin Heijhoff",
+    "Malcolm John",
+    "Edgar Lemos Cid",
+    "Tommaso Pajero"
+  ],
+  "published": "2026-10-07T16:13:57Z",
+  "updated": "2026-10-07T16:13:57Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
