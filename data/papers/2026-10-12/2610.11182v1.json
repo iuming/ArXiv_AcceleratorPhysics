@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2610.11182v1",
+  "url": "https://arxiv.org/abs/2610.11182v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.11182v1.pdf",
+  "title": "Direct Numerical Comparison of Data Driving Strategies for Solar Flux Emergence in Magnetohydrodynamics: B-driving vs E-driving",
+  "abstract": "Data driving is an important technique for modelling realistic magnetic field and plasma evolution in regions of the solar atmosphere where direct observations are either absent or insufficient. This technique uses observational data to drive the evolution of the simulation, while the modelled solar atmosphere evolves self-consistently. A common approach for data-driven simulations is B-driving, which uses the observed magnetic field at the surface of the Sun as a boundary condition. However, only prescribing B at the boundary does not generally determine its numerical evolution when the update depends on the reconstructed interface states or fluxes. To address this, E-driving provides an alternative approach by instead driving the simulation using the electric field on the boundary, which directly controls the magnetic field update. We systematically quantify the performance of B- and E-driving in a controlled set of numerical experiments. We test both methods in the Athena++ solver using (a) an analytical flux-emergence model (Y. Fan & S. Gibson 2003) and (b) a \"ground-truth\" reference simulation (S. Toriumi & S. Takasao 2017; S. Toriumi et al. 2020) of active region emergence. For E-driving, the electric field is incorporated into Athena++'s constrained-transport (CT) update, preserving the discrete solenoidal constraint. We assess the reproduction of (i) boundary magnetic flux, (ii) relative magnetic helicity, (iii) total and free magnetic energy, and (iv) magnetic morphology. Across these diagnostics, E-driving gives better overall reproduction of the reference evolution than B-driving. For the configurations considered in an Eulerian CT scheme, E-driving is more accurate than the commonly used ghost-cell B-driving strategies and simpler than constructing an update-consistent B-driving boundary condition.",
+  "authors": [
+    "Kyriakos Christos Tapinou",
+    "Axel Raboonik",
+    "David I. Pontin",
+    "Michael S. Wheatland",
+    "Mark C. M. Cheung",
+    "Hannah Schunker"
+  ],
+  "published": "2026-10-08T03:40:21Z",
+  "updated": "2026-10-08T03:40:21Z",
+  "categories": [
+    "astro-ph.SR",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.SR",
+  "doi": "10.3847/1538-4357/aeae28"
+}

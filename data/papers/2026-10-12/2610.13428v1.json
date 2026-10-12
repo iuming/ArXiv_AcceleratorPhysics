@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.13428v1",
+  "url": "https://arxiv.org/abs/2610.13428v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.13428v1.pdf",
+  "title": "Implementation and verification of a new free boundary module for Resistive Wall Modes simulations with the nonlinear 3D full MHD code SpeCyl",
+  "abstract": "Self-consistent numerical simulations of free boundary instabilities, such as resistive wall modes (RWMs) and external kink modes, require special attention given their relevance on the path towards magnetic fusion based nuclear reactors. In this work, a new implementation and a verification benchmark are presented for the nonlinear three-dimensional (3D) full magneto-hydrodynamics (MHD) code SpeCyl, which self-consistently combines a free flow 3D treatment for the edge plasma velocity with double resistive wall thin shell magnetic boundary conditions, capable of capturing the essential features of common setups in experimental devices. Two coaxial resistive shells surround the plasma. Vacuum conditions are assumed between and outside the resistive shells, whose relative positions and time constants can be varied on purpose.   The implementation is extensively verified against Shafranov's analytic theory, valid for a circular cross section large aspect ratio tokamak and assuming a flat current profile. The correctness of newly implemented Boundary Conditions (BCs) is confirmed by the good agreement obtained for the linear growth rates of (m=2,n=1) RWM and external kink, over a wide range of wall positions, resistive shell time constants, and for different initial reference equilibria. The (m=2,n=1) RWM growth rates are also benchmarked against previous different RWMs modelling and successful validation studies for RFX-mod tokamak plasmas. The new BCs make SpeCyl a flexible and robust tool to investigate free boundary MHD modes in large aspect ratio magnetic confinement configurations, such as those achieved with the RFX-mod machine and expected in RFX-mod2.",
+  "authors": [
+    "Francesco Galeazzi",
+    "Daniele Bonfiglio",
+    "Luca Spinicci",
+    "Susanna Cappello"
+  ],
+  "published": "2026-10-09T11:32:31Z",
+  "updated": "2026-10-09T11:32:31Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

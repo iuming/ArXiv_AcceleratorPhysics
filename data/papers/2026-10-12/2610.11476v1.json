@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2610.11476v1",
+  "url": "https://arxiv.org/abs/2610.11476v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.11476v1.pdf",
+  "title": "Generation, Accumulation, and Utilization of Data in the Automatically Controlled End-Station of a Soft X-ray Beamline",
+  "abstract": "AI is rapidly transforming materials exploration, yet reliable AI-assisted research depends on experimental data that retains their context, provenance, and machine-readable structure. High-throughput synchrotron measurements therefore require more than automated data acquisition: data generation, accumulation, and utilization must be connected within a continuous workflow. Here, we present a data-centric research framework that integrates the PIONEER system, the OMNES, and ML analysis. The PIONEER system automates sample handling, vacuum transfer, and scanning XAS at the BL08U soft X-ray beamline of NanoTerasu, systematically generating large volumes of spatially resolved spectral data. Measurement and analysis files are stored in the cloud-based ARIM-mdx data system, while OMNES manages metadata describing samples, preparation procedures, measurement conditions, instrument settings, data locations, and analysis histories. Tabular and JavaScript Object Notation formats are used according to the metadata structure, with numerical values stored separately from units to facilitate machine processing. OMNES organizes these records based on causal relationships among experimental and analytical processes, linking samples, measurements, raw data, processed data, and analysis results through a relational data model and visualizing their relationships as a graph. This causality-based organization preserves experimental and analytical provenance and clarifies how each result was derived from the preceding processes and data. The accumulated spectra can subsequently be processed using ML methods, including dimensionality reduction and materials classification, and the resulting data can be registered back into OMNES. Previously reported ML analysis of BN XAS spectra is presented as an example of the analytical workflow that can be applied to data acquired at the beamline.",
+  "authors": [
+    "Yasunobu Ando",
+    "Masashige Miyamamoto",
+    "Keita Hiromori",
+    "Takeru Nakashima",
+    "Masafumi Horio",
+    "Masato Kotsugi",
+    "Iwao Matsuda"
+  ],
+  "published": "2026-10-08T08:23:09Z",
+  "updated": "2026-10-08T08:23:09Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "cond-mat.mtrl-sci"
+}

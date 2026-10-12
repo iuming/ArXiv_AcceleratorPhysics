@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2608.23127v2",
+  "url": "https://arxiv.org/abs/2608.23127v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.23127v2.pdf",
+  "title": "Efficient Quantum Simulation of Linearized Vlasov--Poisson Dynamics Using Trotter and THRIFT Hamiltonian Simulation Methods",
+  "abstract": "The Vlasov--Poisson system provides the fundamental kinetic description of plasma and plays a central role in understanding collective phenomena such as Landau damping and wave--particle interactions. Efficient numerical simulation of these dynamics remains challenging because of the high dimensionality of phase space. In this work, we studied magnetized and non-magnetized plasma using a quantum simulation framework for the linearized Vlasov-Poisson equation by reformulating the discretized system as a Hermitian Hamiltonian suitable for gate-based quantum computation. The time evolution is implemented using first, second and fourth-order Trotter--Suzuki product formulas and the recently proposed Time-Resolved Interaction Framework (THRIFT). The performance of the different simulation methods is systematically evaluated through electric field evolution, state fidelity, convergence behavior, energy conservation, entanglement entropy and quantum resource requirements, including circuit depth and two-qubit gate complexity, for both magnetized and non-magnetized plasma models. To further reduce finite time step errors without increasing circuit depth, Richardson extrapolation is incorporated as a error-mitigation technique. The results provide a comprehensive comparison of Trotter and THRIFT approaches and establish practical guidelines for accurate and resource-efficient quantum simulation of plasma dynamics on gate-based quantum computers.",
+  "authors": [
+    "Kartick Paul",
+    "Rahul V",
+    "S. Aravinda",
+    "Reetesh K. Gangwar"
+  ],
+  "published": "2026-08-24T11:34:51Z",
+  "updated": "2026-10-09T09:22:56Z",
+  "categories": [
+    "quant-ph",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "quant-ph"
+}
