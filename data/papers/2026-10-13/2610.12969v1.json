@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.12969v1",
+  "url": "https://arxiv.org/abs/2610.12969v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.12969v1.pdf",
+  "title": "CNN-based Position Reconstruction for the T0 Detector in the HIRFL-CSR External-target Experiment",
+  "abstract": "The T0 detector provides the event start time for the HIRFL-CSR external-target experiment, and its multi-channel readout signals also contain 2D position information of incident particles. In the CEE experiment, the dedicated beam-profile detector has a rate capability of only ~1 kHz, far below the beam event rate of up to 1 MHz, so it cannot provide real-time beam-spot monitoring under high-rate data-taking or an event time reference. To fill this gap, this work studies a CNN-based position reconstruction method that enables the T0 detector to provide both start time and beam-spot information. The over-threshold times and time-over-threshold (TOT) values from 32 SiPM channels are reorganized into a geometry-preserving input tensor. Time features are corrected by event-wise mean-time subtraction, and TOT features are normalized by an event-wise trimmed mean before feature standardization. A customized CNN directly regresses the incident coordinates. Training and validation samples are built with Geant4 simulation and waveform digitization, and the method is evaluated using a pulsed-laser scanning data set with known position labels. On independent test sets, the residual standard deviations for uniformly distributed planar simulation data are about 1.11 and 1.04 mm in x and y. For the discrete laser-scanning geometry, the resolutions are about 2.36 and 1.34 mm in simulation and 2.42 and 1.41 mm in experiment. The trained model is applied to CEE zero-field beam data collected at the Institute of Modern Physics, Lanzhou, in January 2026, and a 2D beam-spot distribution is reconstructed. These results show the T0 detector's potential as a high-rate beam-spot monitor while retaining its role as an event start-time detector.",
+  "authors": [
+    "Shuai-Ke Lv",
+    "D Hu",
+    "M Shao",
+    "Yingjie Zhou",
+    "Yiding Zhao"
+  ],
+  "published": "2026-10-09T04:10:03Z",
+  "updated": "2026-10-09T04:10:03Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

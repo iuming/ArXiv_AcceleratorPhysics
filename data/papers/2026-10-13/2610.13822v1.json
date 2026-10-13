@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.13822v1",
+  "url": "https://arxiv.org/abs/2610.13822v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.13822v1.pdf",
+  "title": "Physical-state supervision for design-only Gaussian process surrogates of implosion simulations",
+  "abstract": "Physical diagnostics recorded during simulation can organize a sharply varying response, but using them as surrogate inputs normally requires another calculation at prediction. We construct a physical-state-supervised Gaussian process surrogate that learns these diagnostics from design variables. Cross-fitted state estimates augment a retained design representation; a global Gaussian process and an optional soft mixture of response-band experts use identical inputs. On a database of 1,987 paired one-dimensional implosions, learned burn-weighted states from calculations without alpha-particle heating reduce mean squared log-response error by 60.25% and 52.98% for the global predictor on random holdout and design-space extrapolation. Random-projection and shuffled-state supervision do not reproduce these gains. For CH, matched-input comparisons show that experts help at smaller training budgets but contribute little at 1,000 designs with this representation. A thermal-feedback benchmark validates the complete learned-state procedure, while 3,000 newly calculated Be/Cocktail designs expose weaker extrapolation gains and cases where experts degrade accuracy. A conditional state-error bound separates encoding sensitivity from routing effects. An open Python implementation reproduces the archived predictions and is released with the data, per-design results, and measured costs. Physical-state supervision is thus a useful representation for finite-data surrogates, whereas expert specialization should be selected by validation.",
+  "authors": [
+    "Chang Liu",
+    "Hao Shen",
+    "Chuanying Li"
+  ],
+  "published": "2026-10-09T16:33:47Z",
+  "updated": "2026-10-09T16:33:47Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}
