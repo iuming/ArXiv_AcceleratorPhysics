@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.16910v1",
+  "url": "https://arxiv.org/abs/2610.16910v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.16910v1.pdf",
+  "title": "QUARZ: a quasi-static particle-in-cell code with non-uniform radial grids for plasma wakefields",
+  "abstract": "We present a quasi-static particle-in-cell scheme for beam-driven plasma wakefields in cylindrical geometry that works on an arbitrary non-uniform radial grid. The field equations are discretized with hat-function finite elements and conservative finite volumes on any monotone set of radial nodes, and the transverse magnetic field is obtained explicitly, without iterations, following Baxevanis and Stupakov. An optional azimuthal mode $m=1$ describes beam offsets, tilts and hosing. The discretization keeps the discrete Gauss law exact, deposits a uniform plasma exactly on every node including the axis, and remains second-order accurate on smoothly stretched grids. Resolution can therefore be placed where the physics needs it. For a tightly focused witness beam that pulls the plasma ions onto the axis, a grid that is fine only near the axis gives the same near-axis fields as a uniform grid with the same axis resolution, with thirty times fewer cells and in thirty times less computing time. Such a grid also resolves the singular closure of a cold-plasma bubble, which a uniform grid hides by smoothing it over one cell; smoothing the plasma sources over a fixed length, chosen independently of the grid, regularizes the closure and makes the wake behind it converge. The scheme is implemented in the open-source C++/Kokkos code QUARZ (Quasistatic Arbitrary-resolution RZ), which runs on CPUs and GPUs and uses MPI with a pipelined decomposition along the co-moving coordinate. Simulations of the self-modulation of the AWAKE proton bunch agree with the three-dimensional code HiPACE++. QUARZ is, to our knowledge, the first production-grade simulation code in plasma physics that is \\emph{zero-touch}: all of its source code, tests and documentation were written by an AI agent directed by a physicist who did not write a single line of the code.",
+  "authors": [
+    "Alexander Pukhov",
+    "Thomas C. Wilson"
+  ],
+  "published": "2026-10-12T14:57:31Z",
+  "updated": "2026-10-12T14:57:31Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

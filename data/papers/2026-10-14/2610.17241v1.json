@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2610.17241v1",
+  "url": "https://arxiv.org/abs/2610.17241v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.17241v1.pdf",
+  "title": "Anomaly Detection in Bunch Oscillations for Early Warning of Sudden Beam Loss at SuperKEKB",
+  "abstract": "Sudden beam loss (SBL) events at the SuperKEKB collider result in the loss of a large fraction of the stored beam within just a few revolutions, on a timescale comparable to or shorter than the 20-30 μs latency of the existing abort system. Such events have damaged collimators and threaten Belle II subdetectors. Bunch Oscillation Recorders (BORs) capture transverse bunch positions at each revolution, which often show sizable oscillations that precede significant beam current loss. We test whether these precursors can be detected earlier than a charge-based reference that mimics the existing abort sensors. We apply several oscillation-based anomaly detection algorithms to 208 SBL events recorded in the low-energy ring during the 2024 run period, ranging from simple rolling statistics to machine learning models trained to forecast bunch oscillation. On 173 events not used for training or calibration, the best-balanced model (DeepLSTM) triggers before the charge-based reference in 86-90% of events across five training seeds, with a mean lead time of 25-30 μs. The only trigger classified as a false alarm fires on an oscillation that begins about 60 turns before the abort and persists until the beam is lost, making it more likely an early precursor than a spurious trigger. These results establish bunch oscillations as a viable early abort trigger and motivate a shadow-mode deployment to measure the false-alarm rate in continuous operation.",
+  "authors": [
+    "H. Haigh",
+    "P. Horak",
+    "G. Inguglia",
+    "C. Krause",
+    "G. Mitsuka",
+    "H. Nakayama",
+    "R. Nomaru",
+    "M. Tobiyama"
+  ],
+  "published": "2026-10-12T18:07:32Z",
+  "updated": "2026-10-12T18:07:32Z",
+  "categories": [
+    "physics.acc-ph",
+    "hep-ex",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.acc-ph"
+}

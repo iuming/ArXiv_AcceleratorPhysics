@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.17496v1",
+  "url": "https://arxiv.org/abs/2610.17496v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.17496v1.pdf",
+  "title": "Dynamic Optimization Workflow for Gyrokinetic Stability and Transport",
+  "abstract": "A dynamic optimization workflow for linear gyrokinetic stability that couples the gyrokinetic code CGYRO with the libEnsemble framework for ensemble management has been developed. The workflow is designed to efficiently explore multi-dimensional plasma parameter spaces and to address the practical challenges of simulation-driven optimization in fusion plasma physics, including expensive objective evaluations, unavailable gradient information, non-smoothness arising from transitions between dominant instability branches, and simultaneous multi-core simulations on high-performance computing resources. Rather than optimizing the growth rate at a single wavenumber, the objective maximizes the growth rate-to-wavenumber ratio over the ion-scale spectrum. A derivative-free, model-based optimization algorithm employs manifold sampling to handle the nonsmooth composite structure of the objective function. The approach is applied to the optimization of local magnetic flux-surface shaping parameters, with an equilibrium baseline drawn from DIII-D negative triangularity experimental parameters. The workflow is general and extensible and provides a foundation for future optimization studies involving nonlinear transport objectives and higher-dimensional parameter spaces.",
+  "authors": [
+    "E. A. Belli",
+    "J. Larson",
+    "J. Candy",
+    "I. Sfiligoi"
+  ],
+  "published": "2026-10-12T23:37:09Z",
+  "updated": "2026-10-12T23:37:09Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

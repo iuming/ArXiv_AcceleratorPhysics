@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2610.15076v1",
+  "url": "https://arxiv.org/abs/2610.15076v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.15076v1.pdf",
+  "title": "Toward a Multimodal Foundation Model for Plasma State Reconstruction",
+  "abstract": "Plasma experiments observe coupled physical states through sparse, heterogeneous, and incomplete diagnostics. We present a proof of concept toward a multimodal foundation model for plasma state reconstruction during magnetic reconnection, motivated by the Facility for Laboratory Reconnection Experiments (FLARE). Using 250 synthetic VPIC simulations at fixed reference electron beta $β_{e0}=0.2$, with 225 training runs and 25 disjoint validation runs, we train a 5.5M-parameter residual 3D U-Net to reconstruct three magnetic-field components and electron density from incomplete observations. The model combines spatial-only pooling, which preserves all 24 temporal frames, with global spatiotemporal self-attention and rotary positional encoding. Independently masking magnetic and density modalities across random, grid, block, and temporal patterns enables sparse sensing, cross-modal completion, density super-resolution, and temporal completion with a single set of weights and no task-specific retraining. With density fully hidden, just 0.1% magnetic spatial visibility reduces median density NRMSE from approximately 0.9 to 0.1. Conversely, observed density improves current-density reconstruction when magnetic data are absent or extremely sparse. With no magnetic observations, roughly 1% density visibility approaches the density reconstruction accuracy achieved with fully observed magnetic fields, although current structure remains more dependent on direct magnetic measurements. Full magnetic conditioning also stabilizes completion of missing future density frames. These results demonstrate bidirectional cross-modal predictive coupling within this simulation regime. Generalization across plasma regimes or to experimental measurements remains untested.",
+  "authors": [
+    "Bin Xia",
+    "Chuanfei Dong",
+    "Boting Li",
+    "Yilan Qin",
+    "Zikang Xie",
+    "Sung Hyun Son",
+    "Adam J. Stanier",
+    "Jongsoo Yoo",
+    "Hantao Ji",
+    "Ahmed Diallo",
+    "Han Ding",
+    "John Wise"
+  ],
+  "published": "2026-10-10T17:18:48Z",
+  "updated": "2026-10-10T17:18:48Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

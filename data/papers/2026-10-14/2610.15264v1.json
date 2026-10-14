@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2610.15264v1",
+  "url": "https://arxiv.org/abs/2610.15264v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.15264v1.pdf",
+  "title": "Dual deconvolution multifocal fluorescence response matrix microscopy for aberration-free high-throughput super-resolution imaging",
+  "abstract": "Fluorescence response matrix imaging enables separate computational correction of excitation and emission aberrations through dual deconvolution, but single-focus acquisition requires a large number of camera frames, limiting its practical use. Multifocal excitation can accelerate acquisition by recording many illumination positions in parallel, but denser foci also increase inter-focus crosstalk, which can bias the estimated excitation and emission optical transfer functions and degrade aberration correction. Here, we introduce high-throughput aberration-free fluorescence response matrix imaging with adaptive multifocal illumination, in which the inter-focus spacing of the multifocal lattice is adjusted according to specimen-dependent crosstalk. A programmable digital micromirror device generates multifocal excitation lattices, and the resulting detector-resolved fluorescence responses are assembled into a two-coordinate fluorescence response matrix. Dual deconvolution separately estimates and corrects the excitation and emission optical transfer functions, and the aberration-corrected matrix is then combined in the spatial-frequency domain to reconstruct the aberration-free image. This strategy reduces the number of required camera frames by approximately three orders of magnitude, allowing response matrices with $\\sim 10^6$ illumination positions to be acquired within seconds to a few minutes. The accelerated acquisition preserves the aberration-correction capability of dual deconvolution and achieves an estimated lateral resolution of $\\sim$100 nm. Applied to heterogeneous mouse brain and kidney tissue, the method enables high-resolution, depth-resolved volumetric imaging while correcting specimen-dependent aberrations. Together, these results establish adaptive multifocal illumination as a practical route to high-throughput aberration-free fluorescence response matrix imaging.",
+  "authors": [
+    "Sumin Lim",
+    "Sanghyeon Park",
+    "Tran Thinh Le",
+    "Jin Hee Hong",
+    "Seokchan Yoon",
+    "Wonshik Choi"
+  ],
+  "published": "2026-10-11T01:24:52Z",
+  "updated": "2026-10-11T01:24:52Z",
+  "categories": [
+    "physics.optics",
+    "physics.app-ph",
+    "physics.bio-ph",
+    "physics.comp-ph",
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.optics"
+}
