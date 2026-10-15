@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2610.17557v1",
+  "url": "https://arxiv.org/abs/2610.17557v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.17557v1.pdf",
+  "title": "A modern particle-in-cell code for beam-beam simulations of future colliders",
+  "abstract": "A key challenge in the design of next-generation colliders is predicting the effects of beam-beam interactions and using these predictions to optimize machine performance. Beam-beam interactions are characterized by strong focusing forces, radiative effects, and the generation of background particles. While analytical formulas provide insight into the dynamics of beam-beam interactions, these nonlinear, coupled effects are most accurately described with numerical methods. In this paper, we introduce the open-source particle-in-cell code WarpX as a modern tool for modeling the interaction point in future lepton colliders. WarpX provides high-performance execution on distributed GPU architectures within an open-source and actively maintained code base. We present convergence scans and benchmarks against the established beam-beam codes GUINEA-PIG (v1.2.2) and CAIN (v2.42) for luminosity spectra, photon emission, and secondary-particle production under a wide range of beam parameters corresponding to different collider concepts. Our results show that WarpX (v26.09) reproduces the benchmark beam-beam observables while enabling GPU-portable, extensible simulations. These results establish WarpX as a scalable platform for high-fidelity beam-beam modeling in future collider studies.",
+  "authors": [
+    "Arianna Formenti",
+    "Remi Lehe",
+    "Axel Huebl",
+    "Stepan S. Bulanov",
+    "Jens Osterhoff",
+    "Andrew Myers",
+    "Weiqun Zhang",
+    "Spencer Gessner",
+    "Peter Kicsiny",
+    "Anna Kinderman",
+    "Bao Nguyen",
+    "Jinseo Park",
+    "Jean-Luc Vay"
+  ],
+  "published": "2026-10-13T01:30:10Z",
+  "updated": "2026-10-13T01:30:10Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

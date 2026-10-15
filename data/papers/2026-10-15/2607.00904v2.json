@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.00904v2",
+  "url": "https://arxiv.org/abs/2607.00904v2",
+  "pdf_url": "https://arxiv.org/pdf/2607.00904v2.pdf",
+  "title": "TD-Link: A Daisy-Chain Optical Architecture for Integrated Data Readout and Deterministic Timing Distribution in Large-Scale Detector Systems",
+  "abstract": "TD-Link is an optical communication architecture that combines high-throughput data readout and sub-nanosecond timing synchronization over a single fiber for large-scale detector systems. It adopts a multidrop daisy-chain ring topology connecting a Data Concentrator to up to sixteen FERS front-end boards per link, with up to eight links per concentrator. Operating at 3.125 Gb/s, TD-Link carries data, synchronization, and control traffic in the same serial stream through a token-based streaming protocol that minimizes per-hop latency and supports on-the-fly payload fragmentation. Deterministic latency is enforced at two levels. On the concentrator, transmitter lanes are aligned by using the half-full flag of the multi-gigabit transceiver (MGT) elastic buffer as a one-bit phase detector: a firmware state machine steps the transmit phase interpolator (PI) until the buffer pointer difference crosses half-depth, locking every lane to the same phase condition. On each front-end board, where the synchronization pulse must also cross from the recovered-clock to the transmit domain, the residual three-to-five-cycle ambiguity of the synchronizer is removed by a calibration-free multiphase oversampling time-to-digital converter (TDC) with 0.8 ns bins, which time-stamps the incoming edge on the transmit time base so that a scheduler regenerates it at a fixed, programmable latency. A Digital Dual Mixer Time Difference (DDMTD) circuit measures the inter-concentrator phase. Tests with CERN PicoTDC-equipped FERS boards show a board-to-board synchronization $σ$ of 24 ps on the same ring, 27 ps across transceiver quads, and 28 ps across two cascaded concentrators, against an intrinsic front-end floor of 7 ps. Over more than one thousand cold boots without re-calibration, the boot-to-boot spread of the board-to-board skew stayed below 20 ps, consistent with the 18.6 ps phase-interpolator step.",
+  "authors": [
+    "Andrea Abba",
+    "Gianluca Becuzzi",
+    "Matteo Bianchini",
+    "Francesco Caponio",
+    "Stefano Carsi",
+    "Alberto Cusimano",
+    "Camilla Maggio",
+    "Annalisa Mati",
+    "Daniele Ninci",
+    "Andrea Picchi",
+    "Carlo Tintori"
+  ],
+  "published": "2026-07-01T13:06:37Z",
+  "updated": "2026-10-12T20:11:10Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
