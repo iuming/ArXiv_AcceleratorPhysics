@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2603.24607v3",
+  "url": "https://arxiv.org/abs/2603.24607v3",
+  "pdf_url": "https://arxiv.org/pdf/2603.24607v3.pdf",
+  "title": "Physics at the Edge: Benchmarking Quantisation Techniques and the Edge TPU for Neutrino Interaction Recognition",
+  "abstract": "This work presents a benchmark of quantisation techniques for convolutional neural networks applied to neutrino interaction recognition, motivated by the need for low-power inference close to the detector in future liquid argon time-projection chamber (LArTPC) experiments. Using simulation of a generic LArTPC, four Keras models are trained to classify neutral-current, muon-neutrino charged-current and electron-neutrino charged-current interactions, quantised using post-training integer quantisation and quantisation-aware training, and deployed on the Google Coral Edge TPU. Latency and energy per event are compared with those of an Intel Core i7-13650HX CPU, a consumer NVIDIA RTX 4060 GPU and a data-centre NVIDIA A100 GPU, using measured energy at different batch sizes and thread counts; the energy of the Edge TPU is estimated from its nominal power. The accuracy degradation is strongly model-dependent: InceptionV3 shows no significant loss along either pipeline, whereas the other models are substantially degraded. At batch size 1, the Edge TPU is comparable to or faster than the CPU and 1.3-6.5 times slower than the A100, while requiring 5--70 times less energy per event than the other devices; with batching, the GPUs reduce this gap to a factor of 2.6-7.2. The Edge TPU is also approximately four times cheaper than the consumer GPU and more than two orders of magnitude cheaper than the A100. Its low power per device eases deployment where power and cooling are constrained, with an additional benefit in terms of environmental impact. This paper explores possible future integrations of edge AI technologies with neutrino physics.",
+  "authors": [
+    "Stefano Vergani",
+    "Hilary Utaegbulam",
+    "Michael Wang",
+    "Leigh H. Whitehead",
+    "Arden S. H. Tsang",
+    "Lorenzo Uboldi"
+  ],
+  "published": "2026-03-19T18:50:39Z",
+  "updated": "2026-10-14T07:43:31Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
