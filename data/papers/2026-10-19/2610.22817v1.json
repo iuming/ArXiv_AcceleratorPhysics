@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2610.22817v1",
+  "url": "https://arxiv.org/abs/2610.22817v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.22817v1.pdf",
+  "title": "Multiple Instance Learning for Interpretable Plasmoid Detection in the FLARE Device",
+  "abstract": "Multiple instance learning (MIL) is a form of weakly supervised learning widely used in healthcare and biomedical imaging, where labels may be available for groups of observations (\"bags\") but not individual observations (\"instances\"). This setup is well-suited to plasmoid detection in magnetic reconnection experiments, since identifying dynamic magnetic structures is best accomplished taking in data from many time steps as a whole, as opposed to viewing frames in isolation. Instance-level consideration enables researchers to determine the range of times most affecting model output, thus serving as a tool for the temporal localization of plasmoids. Despite its success in the life sciences, to the best of our knowledge, MIL is yet to be reported in peer-reviewed plasma physics literature. We evaluate a MIL model against a convolutional recurrent neural network (CRNN), an architecture commonly found in plasma physics literature, on a plasmoid detection task, using a highly imbalanced dataset of 1152 magnetic reconnection shots from the FLARE device at PPPL. We demonstrate significant improvements in test performance (PR AUC: $Δ$=+0.0932, p=0.0039; F1: $Δ$=+0.0259, p=0.0488; Wilcoxon signed-rank test) against the CRNN model on full-channel input. We investigate the interpretability advantage provided by our MIL model for the temporal localization of plasmoids. Through its attention mechanism, we can discern relevant frames and even the number of plasmoids present in a shot. Overall, we show that MIL is a promising framework for similar event classification tasks in plasma physics.",
+  "authors": [
+    "Charles Marsden",
+    "Adam Robbins",
+    "Hantao Ji"
+  ],
+  "published": "2026-10-16T01:49:53Z",
+  "updated": "2026-10-16T01:49:53Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

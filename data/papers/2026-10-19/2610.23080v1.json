@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2610.23080v1",
+  "url": "https://arxiv.org/abs/2610.23080v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.23080v1.pdf",
+  "title": "Properties and challenges of machine learning closures for ten-moment fluid models in the case of Landau damping",
+  "abstract": "Two-fluid ten-moment models for plasma simulations evolve the velocity moments of the Velocity Distribution Function (VDF) up to the pressure tensor and require a closure for the divergence of the next velocity moment, the heat flux. We investigate the use of Machine Learning (ML) models for the discovery of heat flux closures, as an alternative to the typically employed Hammett-Perkins-like analytical closures. As a test case, we investigate Landau damping, which describes a resonant process of energy transfer between particles and waves. We find that fluid simulations with ML closures correctly reproduce both the damping frequency and the non-linear phase of Landau damping, and thereby outperform Hammett-Perkins-like closures, within the parameter ranges seen during training and when interpolating within those ranges. When extrapolating beyond the training data, the performance of the ML closure degrades with increasing distance from known parameters. We then investigate how well offline metrics (i.\\,e.\\; evaluating the trained model on fully-kinetic reference simulations, without inserting it into two-fluid simulations) can predict online performance, when the model is actually used in the two-fluid simulation. Our results show that offline metrics do not fully explain online performance, highlighting important implications for method evaluation in this field. We further investigate suitable metrics for online performance evaluation in the absence of a fully-kinetic reference simulation, which is often computationally expensive to run. We propose using the temporal evolution of entropy to evaluate the performance of reduced models with ML closures when no or few kinetic reference simulations are available.",
+  "authors": [
+    "Emanuel Jeß",
+    "Simon Lautenbach",
+    "Sophia Köhne",
+    "George Miloshevich",
+    "Kevin Schoeffler",
+    "Rainer Grauer",
+    "Maria Elena Innocenti"
+  ],
+  "published": "2026-10-16T07:52:07Z",
+  "updated": "2026-10-16T07:52:07Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

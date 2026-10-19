@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.24443v2",
+  "url": "https://arxiv.org/abs/2609.24443v2",
+  "pdf_url": "https://arxiv.org/pdf/2609.24443v2.pdf",
+  "title": "Horizon-Aware Early Event Prediction for Tokamak Disruption Alarms",
+  "abstract": "Disruption predictors must warn the plasma control system early enough for the intended response, and the required warning time differs between mitigation and avoidance. We view a warning system as a predictor that outputs a disruption risk and an alarm policy that acts on it, and ask which risk the predictor should learn. Binary classifiers do not specify when a disruption occurs, and survival analysis models the full distribution of the time to disruption, whereas an alarm depends only on the risk within a finite horizon. We introduce two horizon-focused targets into tokamak disruption prediction: a horizon-truncated survival objective and fixed-horizon early event prediction (EEP) with temporal label smoothing (TLS). We compare them with binary classification and survival analysis on the DIII-D, Alcator C-Mod, and EAST databases of DisruptionBench, evaluating the risk by its threshold-free ranking at a 40 ms deadline and the alarm policy by thresholds calibrated on validation data. On every device, TLS outperforms the deep survival models in both ranking and alarm performance; TLS performs best on DIII-D and EAST, and a random forest trained on a hard horizon target performs best on C-Mod. TLS also improves the calibrated alarm performance over hard targets placed at either end of its smoothing range on all devices, isolating the benefit of label smoothing. Horizon truncation alone did not consistently improve survival analysis. Alarm performance remains limited on C-Mod and DIII-D and varies strongly across training seeds, and ablations show that the target should extend to the required warning time.",
+  "authors": [
+    "Takeshi Koshizuka",
+    "Takaharu Yaguchi"
+  ],
+  "published": "2026-09-21T11:39:57Z",
+  "updated": "2026-10-16T00:29:26Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
