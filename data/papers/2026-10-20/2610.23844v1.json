@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2610.23844v1",
+  "url": "https://arxiv.org/abs/2610.23844v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.23844v1.pdf",
+  "title": "ModeCast: One-Shot Prediction of Linear MHD Eigenmodes and Growth Rates in Tokamaks",
+  "abstract": "Large-scale magnetohydrodynamic instabilities break plasma confinement, can trigger disruptions, and constrain fusion reactor design; modeling a single configuration against them takes hours with a reference solver such as JOREK, and a design study requires thousands of hours. ModeCast is the first learned surrogate to return the complete linear stability assessment for MHD modes. Trained on a comprehensive dataset of over 45,000 JOREK simulations across thousands of equilibria, it screens stability across toroidal mode numbers n=1-4 and predicts the full spatial structure and growth rate of unstable modes. Excluding the equilibrium solve, inference on a single GPU is over 10,000x faster than multi-core JOREK linear stability runs. The gain comes from building the linear-phase physics into the formulation, objective, and inputs, yielding up to six times more training data. ModeCast misses none of the unstable held-out cases, and its predicted fields reproduce the simulation's measured physics, from magnetic island topology to resistivity trends. On a fixed-geometry resistivity scan outside its training distribution, refitting only the 22k-parameter growth rate head of the 145M-parameter network on four simulation halves the held-out internal kink growth rate error, and fine-tuning the whole network adds little. Because it is differentiable and returns full fields, ModeCast could in the future assimilate experimental measurements, providing a bridge to real devices and accelerating progress toward commercial fusion. Project page: zenithon.ai/research/modecast.",
+  "authors": [
+    "Alex Higginbottom",
+    "Zara Z. Ercan",
+    "Abetharan Antony",
+    "Guzman Sanchez Gonzalez",
+    "Rafael Grazzini Placucci",
+    "Armand Kassaï Koupaï",
+    "Artur P. Toshev"
+  ],
+  "published": "2026-10-16T17:57:39Z",
+  "updated": "2026-10-16T17:57:39Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

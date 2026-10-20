@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2610.24525v1",
+  "url": "https://arxiv.org/abs/2610.24525v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.24525v1.pdf",
+  "title": "Reconstruction of Unobserved Core Electron Density in Tokamak Plasmas with a Neural Operator Transport Surrogate and Uncertainty Quantification",
+  "abstract": "Real-time control of tokamak plasmas requires the electron density profile. However, in a reactor-relevant device, diagnostic port access is limited and the profile can be observed only partially. In the present work we reconstruct the density profile by inferring the coefficients of a physics-based one-dimensional particle transport equation, using a Fourier Neural Operator (FNO) surrogate of the transport solver as a fast differentiable forward model. The surrogate enables realtime-compatible gradient-based reconstruction and uncertainty quantification from the reflectometry and interferometry measurements. We compare four uncertainty quantification methods - multi-seed ensembles, the Laplace approximation, Metropolis-Hastings, and a Gaussian method independent of the reconstruction fit. The resulting uncertainty is scored with CRPS and coverage calibration, separately on the observed and unobserved regions. We further demonstrate advantage of our approach over standard analytical function fit on synthetic and experimental DIII-D discharges.",
+  "authors": [
+    "D. Sorokin",
+    "A. Granovskiy",
+    "M. Stokolesov",
+    "E. Adishchev",
+    "M. Nurgaliev",
+    "G. Subbotin"
+  ],
+  "published": "2026-10-17T07:33:05Z",
+  "updated": "2026-10-17T07:33:05Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

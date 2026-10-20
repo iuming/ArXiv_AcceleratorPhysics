@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2610.26138v1",
+  "url": "https://arxiv.org/abs/2610.26138v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.26138v1.pdf",
+  "title": "Reinforcement Learning Controllers for Fusion Scenario Development",
+  "abstract": "Scenario development, the design of the waveforms that take a tokamak discharge from breakdown to flat-top, is still an iterative, labour-intensive process. Every candidate scenario has to be simulated with a controller in the loop, and the classical shape and current controllers need low-level actuator references. So the process is iterative and includes a number of trial-and-error steps. We propose to replace the per-scenario controller tuning by a single goal-conditioned reinforcement-learning controller trained once, in advance, against a free-boundary equilibrium and transport simulator. A scenario is then specified only by the target waveforms of the physical quantities of interest (plasma current, line-averaged electron density, LCFS shape, x-point positions), and the controller produces the coil-current and fueling commands that realize them. We demonstrate the approach on an EAST plasma-current ramp-up: the controller takes over a small limited plasma, ramps the current and the density, grows the cross-section, forms two x-points and holds a double-null diverted configuration against sampled shape targets for the rest of a 1.2 s episode. The neural network controller is trained using TQC algorithm. On 1024 test scenarios sampled from a low-discrepancy scrambled Sobol sequence in 11-dimensional target space, the controller forms the divertor in 86% of the cases, holds it for more than 0.5 s in 67% and reaches the end of the episode in a diverted state in 58%, with flat-top tracking errors of a few kA in plasma current, $\\sim 0.15\\times10^{19}$ m$^{-3}$ in density, $\\sim 2$ cm in position and $\\sim 8$ cm in x-point location; the failures concentrate at the high-current density ($J$) region which is believed to be physically or from engineering perspective not feasible within ohmic mode.",
+  "authors": [
+    "Evgeny Adishchev",
+    "Maxim Nurgaliev",
+    "Dmitry Sorokin",
+    "Alexander Granovsky",
+    "Maksim Stokolesov",
+    "Igor Prokofyev",
+    "Eduard Khairutdinov",
+    "Georgy Subbotin"
+  ],
+  "published": "2026-10-19T10:25:00Z",
+  "updated": "2026-10-19T10:25:00Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

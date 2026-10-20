@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.24189v1",
+  "url": "https://arxiv.org/abs/2610.24189v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.24189v1.pdf",
+  "title": "Time-over-threshold versus pulse-height energy reconstruction in a PbWO$_4$ calorimeter read out by SiPMs",
+  "abstract": "The time over threshold (ToT) can be measured with a comparator and a time-to-digital converter, avoiding the waveform digitizers normally used to read out calorimeter prototypes. We assess how much the energy resolution degrades when the pulse height (PH) is replaced by the ToT, using data collected in June 2024 at the CERN PS T9 beam line with 2-6 GeV electrons on OREO, a calorimeter of two $3\\times3$ matrices of PbWO$_4$ crystals read out by SiPMs and sampled at 500 MS/s, and 1-6 GeV electrons on a lead-glass calorimeter sampled at 100 MS/s. The ToT is emulated offline on the recorded waveforms and converted into an amplitude, so that the same reconstruction chain is applied to both estimators. For OREO in random orientation the PH gives $σ/μ$ = 3.6% at 2 GeV and 2.4% at 6 GeV. A single-threshold ToT worsens the resolution by 50-80%, because one threshold cannot cover the dynamic range, while a dual-threshold ToT gives 3.9% and 2.6%, i.e. 6-10% worse than the PH. Extending the waveforms beyond the 1 $μ$s acquisition window shows that the window is not the limiting factor, and an emulated shaper that reduces the decay time to 50-100 ns preserves the result with a ToT of 0.3-0.5 $μ$s instead of 1.2 $μ$s. The ToT-to-amplitude conversion can also be calibrated with a scan of the two thresholds, without any digitizer, with a resolution comparable to the one obtained with PH-based curves. For the lead glass, whose pulses are less than two samples wide at half maximum, the ToT cannot be emulated reliably. We also find that a previous analysis of the same data is consistent with a drift normalization that does not subtract the pedestals; subtracting them improves the resolution by up to 1.6 percentage points.",
+  "authors": [
+    "Stefano Carsi",
+    "Erik Vallazza"
+  ],
+  "published": "2026-10-16T20:08:15Z",
+  "updated": "2026-10-16T20:08:15Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
