@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2511.05479v6",
+  "url": "https://arxiv.org/abs/2511.05479v6",
+  "pdf_url": "https://arxiv.org/pdf/2511.05479v6.pdf",
+  "title": "Quantization Effects of Artificial Neural Networks for Embedded Edge-Computing Applications",
+  "abstract": "This paper examines the use of Quantized Neural Networks (QNNs) for two resource-constrained scientific applications: automated calibration of semiconductor quantum bits (qubits) and scientific particle detectors. We evaluate the trade-offs between Post-Training Quantization (PTQ), Quantization-Aware Training (QAT), and ultra-low-bit Binary Neural Networks (BNNs) with respect to latency and resource usage. Our results demonstrate that PTQ and QAT are easily implementable solutions achieving a four-fold reduction in memory usage for Ushaped CNN (U-Net) architectures, whereas BNNs are better suitable for use cases with challenging latency requirements. For the training of non-differentiable custom BNNs, we propose a novel, hardware-constrained learning approach using Genetic Algorithms (GAs). We showcase a Look-Up Table (LUT)-based BNN architecture suitable for direct conversion to Very High-Speed Integrated Circuit Hardware Description Language (VHDL) via the HCL4BNN framework. This method achieves nanosecond-scale inference latencies at 10 ns to 15 ns without requiring specialized Digital Signal Processor (DSP) or Block RAM (BRAM) resources.",
+  "authors": [
+    "Alperen Aksoy",
+    "Ilja Bekman",
+    "Vesselin Dimitrov",
+    "Qader Dorosti",
+    "Chimezie Eguzo",
+    "Sarah Fleitmann",
+    "Fabian Hader",
+    "Andre Zambanini",
+    "Stefan van Waasen"
+  ],
+  "published": "2025-11-07T18:44:50Z",
+  "updated": "2026-10-19T12:57:01Z",
+  "categories": [
+    "cs.NE",
+    "physics.ins-det"
+  ],
+  "primary_category": "cs.NE"
+}

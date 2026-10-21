@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.26537v1",
+  "url": "https://arxiv.org/abs/2610.26537v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.26537v1.pdf",
+  "title": "Beyond Radiation Hydrodynamics: A Coupled Kinetic Plasma and Radiation Modeling of NIF Polar Direct Drive Capsule",
+  "abstract": "Predictive modeling of inertial-confinement-fusion (ICF) implosions increasingly requires resolving ion-kinetic effects beyond the reach of radiation-hydrodynamics, without sacrificing radiation transport. We present, to our knowledge, the first coupling of a kinetic-ion plasma model to thermal radiation transport. The iFP code - a conservative, spherically symmetric, 1D2V hybrid kinetic-ion/fluid-electron Vlasov-Fokker-Planck solver - is extended with a grey P1 radiation model, coupled through a high-order/low-order (HOLO) fixed-point solver and advanced on a shared adaptive moving mesh. Opacities are mixed on the fly from the LANL TOPS library, exploiting the per-species information intrinsic to a kinetic code. We verify the implementation against the optically thick Marshak-wave and Mach-45 radiative-shock benchmarks, and apply it to a NIF polar-direct-drive exploding-pusher capsule. Increasing physics fidelity systematically improves agreement with the measured neutron yield and burn width; the improvement is driven by kinetically enhanced fuel leakage and ballistic preheating, and radiation transport proves essential for quantitative agreement. This work establishes a proof-of-principle capability for higher-fidelity kinetic-plasma/radiation modeling of ICF.",
+  "authors": [
+    "Hans R Hammer",
+    "William T Taitano",
+    "Steven E Anderson",
+    "Brett D Keenan",
+    "Luis Chacon",
+    "Andrei N Simakov"
+  ],
+  "published": "2026-10-19T14:59:15Z",
+  "updated": "2026-10-19T14:59:15Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
