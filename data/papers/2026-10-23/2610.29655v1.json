@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2610.29655v1",
+  "url": "https://arxiv.org/abs/2610.29655v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.29655v1.pdf",
+  "title": "remage: a Geant4-based simulation framework for low-background experiments",
+  "abstract": "Monte Carlo simulations are an essential tool for data modeling and experimental design in low-background physics. These simulations typically demand a considerable effort, with each collaboration developing and maintaining its own complex Geant4 application. In this paper we present the design and validation of remage, which is an open-source framework designed to standardize these simulations and significantly reduce this effort. Its design separates the geometry, built with dedicated Python tools, from the compiled application. It provides a physics list and event generators tuned to radiogenic and cosmogenic backgrounds, output tailored to the most common detector types, and robust validation backed by modern software development practices. The software is distributed ready to use and scales efficiently with the computing resources that demanding simulations require. remage has been primarily developed for the LEGEND experiment, but is applicable to a wide variety of experiments.",
+  "authors": [
+    "Toby Dixon",
+    "Eric Esch",
+    "Reyco Henning",
+    "Manuel Huber",
+    "Moritz Neuberger",
+    "Luigi Pertoldi",
+    "Zichen Wang"
+  ],
+  "published": "2026-10-21T12:36:36Z",
+  "updated": "2026-10-21T12:36:36Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "nucl-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
