@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.28250v1",
+  "url": "https://arxiv.org/abs/2610.28250v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.28250v1.pdf",
+  "title": "Physics-constrained graph closures and working-point conditioning for a fast surrogate of linac beam dynamics",
+  "abstract": "When a graph neural network estimates a physical quantity, its frame, edge direction, aggregation and feature normalization decide which laws it can break. Wrong choices leave systematic errors the loss never registers. We build a linac beam-dynamics surrogate on this observation. Space charge, short-range wakefields and coherent synchrotron radiation enter as bounded closures on analytic kernels, on graphs whose frame and direction follow the interaction and whose symmetry makes the net space-charge self-force vanish for any weights. Verified without training, with randomized weights, the invariants break by five to eight orders of magnitude once the responsible feature is inverted. Per-working-point models constrained by the rms envelope equation are distilled into one model conditioned on 15 machine settings. On the 18.4~m L0+L1 section of the Shanghai soft x-ray free-electron laser linac, this model predicts the transverse beam envelope at 50 unseen settings to about $7\\%$, with the centroid trajectory and emittance, in 0.38~s on a single Quadro RTX 6000 GPU. Training is instead dominated by a normalization choice, a data-derived output range for the beam size: at all 16 working points it lowers the starting error 2.2- to 8.5-fold and fixes the convergence speed. The remaining accuracy differences between hybrid and data-driven architectures vary with the working point and with the density of observation. The held-out error scales roughly as $N^{-0.6}$ with the corpus size $N$. Whether the physics pays off where collective effects are strong, as in a magnetic bunch compressor, is in the next phase of our study.",
+  "authors": [
+    "Bowen Zhang",
+    "Dazhang Huang",
+    "Nengyuan Zhang",
+    "Duan Gu",
+    "Chao Feng"
+  ],
+  "published": "2026-10-20T14:10:44Z",
+  "updated": "2026-10-20T14:10:44Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

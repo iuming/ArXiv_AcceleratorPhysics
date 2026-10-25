@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2610.27980v1",
+  "url": "https://arxiv.org/abs/2610.27980v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.27980v1.pdf",
+  "title": "A Discrete Amplitude-to-Time Conversion Circuit for TDC-Based Readout of Fast Scintillation Detectors",
+  "abstract": "Fast timing measurements with scintillation detectors commonly employ leading-edge discriminators and time-to-digital converters (TDCs). Many applications also require an energy-related observable for estimating the deposited energy and correcting time-walk effects. Time-over-threshold (ToT) is frequently used for this purpose, but its relationship to pulse amplitude can be severely degraded by undershoot, ringing, and other distortions of the detector pulse tail.   This work presents a discrete analog front-end circuit for amplitude-to-time conversion that is insensitive to pulse-tail distortions. An analog multiplexer and a high-speed comparator implement a sample-hold-discharge stage: upon leading-edge detection, the detector pulse amplitude is sampled near its peak and stored on a capacitor, which is subsequently discharged at a controlled rate. The resulting digital pulse width encodes the sampled amplitude, while the leading edge preserves the timing information. The circuit was designed for a short recovery time and a total dead time below 100~ns, making it suitable for high-rate detector readout. The approach enables simultaneous timing and amplitude measurements through a single TDC channel.   An eight-channel front-end card implementing this concept was characterized using generated test pulses. The measured transfer function is approximately linear up to input amplitudes of 0.5~V and extends beyond 2~V, with a low-amplitude conversion gain of approximately 27~ps/mV. The estimated relative amplitude precision falls below \\SI{0.5}{\\percent} for input amplitudes above 0.5~V. These results demonstrate the feasibility of a low-complexity, multichannel amplitude-to-time converter for TDC-based detector readout, offering an alternative to conventional ToT measurement when pulse-tail distortions compromise amplitude estimation.",
+  "authors": [
+    "Michael Wiebusch"
+  ],
+  "published": "2026-10-20T10:23:14Z",
+  "updated": "2026-10-20T10:23:14Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

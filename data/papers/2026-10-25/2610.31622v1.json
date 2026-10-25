@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.31622v1",
+  "url": "https://arxiv.org/abs/2610.31622v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.31622v1.pdf",
+  "title": "GEM-PIC-RZ: a Galilean electromagnetic particle-in-cell code in quasi-cylindrical geometry with nonuniform grids",
+  "abstract": "Laser-plasma accelerators span scales from the micrometre wavelength of the driving laser to acceleration lengths of millimetres or metres. Full particle-in-cell (PIC) simulations resolve the laser carrier but are constrained by the Courant condition, whereas quasi-static models are computationally efficient but do not resolve it. We present GEM-PIC-RZ, a quasi-cylindrical implementation of the Galilean electromagnetic PIC scheme. The method retains the slow evolution of the forward field and therefore resolves the laser carrier while allowing a propagation step governed by the evolution of the laser and plasma rather than by the cell size. User-defined nonuniform grids and a charge-conserving regularization of the bubble closure support efficient simulations across these scales. Comparisons with the full PIC code FBPIC show agreement for the laser wake, the depletion and redshift of a few-cycle pulse, and ionization injection; the measured CPU time is about 2\\,\\% of that for FBPIC in the reported runs; the injected charge carries a model uncertainty of about 15\\,\\% from the regularization. An envelope model, in contrast, underestimates the depletion of the few-cycle pulse fivefold. Self-injection in a sharp density down-ramp is not yet reproduced and remains an open problem.",
+  "authors": [
+    "Alexander Pukhov"
+  ],
+  "published": "2026-10-22T17:42:58Z",
+  "updated": "2026-10-22T17:42:58Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.optics"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2610.31021v1",
+  "url": "https://arxiv.org/abs/2610.31021v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.31021v1.pdf",
+  "title": "On Spurious Mesh-Scale Oscillations Associated with Resonance-Cone Regimes in Wave-Plasma Simulations",
+  "abstract": "Spurious mesh-scale oscillations can compromise frequency-domain finite-element simulations of electromagnetic wave propagation in magnetized cold plasmas. We investigate their origin and mitigation through a verification framework combining a mixed Nédélec-Lagrange solver, a waveport accommodating non-orthogonal modes in anisotropic media, and an analytical generalized Fresnel benchmark at a vacuum-plasma interface. Comparisons with this benchmark show that the observed oscillations occur in resonance-cone regimes and are absent from the analytical fields, confirming their numerical origin. Systematic tests assess the effects of approximation order, variational formulation, mesh geometry, and numerical collisionality. Plane-wave residual and Fourier spectral analyses suggest that local mesh variations induce spectral coupling to additional wavevector components, predominantly populating the dispersion branches in collisionless resonance-cone regimes where the reduced scalar equation loses ellipticity. Uniform rectangular grids recover the analytical wave structure, further supporting the role of mesh geometry and symmetry. However, strict symmetry requirements limit the applicability of this approach, motivating numerical regularization. In resonance-cone regimes, introducing sufficient numerical collisionality suppresses the mesh-scale oscillations, yielding smooth electric-field solutions and reducing the error relative to the analytical benchmark. For one resonance-cone benchmark configuration, the error-minimizing damping decreases with mesh refinement according to an empirical $Z_{\\mathrm n}\\propto h^{1.48}$ scaling, sustaining error reduction consistent with second-order convergence and avoiding the accuracy limit imposed by fixed collisionality. ...",
+  "authors": [
+    "Hugo Bergerioux",
+    "Mario Merino"
+  ],
+  "published": "2026-10-22T09:54:55Z",
+  "updated": "2026-10-22T09:54:55Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
