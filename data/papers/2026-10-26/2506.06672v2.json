@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2506.06672v2",
+  "url": "https://arxiv.org/abs/2506.06672v2",
+  "pdf_url": "https://arxiv.org/pdf/2506.06672v2.pdf",
+  "title": "A Multiscale Eulerian Vlasov-Rosenbluth-Fokker-Planck Algorithm for Thermonuclear Burning Plasmas",
+  "abstract": "Accurate treatment of energetic fusion byproducts in laboratory plasmas often requires a kinetic description, owing to their large birth kinetic energy and long mean free paths compared with the characteristic system scale lengths. For example, alpha particles produced by deuterium-tritium fusion reactions are born at high energies (\\qty{3.5}{MeV}) and predominantly slow down through interactions with electrons traveling at comparable speeds. As an alpha particle slows, its distribution collapses near the background ion-thermal speed, forming a sharp structure in velocity space. Such sharp features pose numerical challenges in grid-based Eulerian methods: capturing the full alpha-particle energies demands a large velocity domain, while resolving the near-thermal region requires a sufficiently fine mesh. Inspired by the work of Peigney \\textit{et al.}~[\\textit{J.\\ Comput.\\ Phys.} \\textbf{278} (2014)], we present a two-grid approach that splits the alpha-particle distribution into energetic (suprathermal) and ash (thermal) components. A Gaussian-based sink term transfers particles from the energetic population to the ash population as they slow to the thermal regime, and a conservative projection scheme ensures that mass, momentum, and energy of the slowing energetic alpha population are conserved when it is remapped onto the ash grid. Unlike the formulation of Peigney \\textit{et al.}, our method does not require a strict asymptotic separation of velocity scales, which can, in principle, be arbitrary. We demonstrate the robustness of this approach on challenging multiscale problems, including a surrogate for an igniting inertial confinement fusion capsule.",
+  "authors": [
+    "Benjamin L. Reichelt",
+    "William T. Taitano",
+    "Brett D. Keenan",
+    "Luis Chacón",
+    "Andrei N. Simakov",
+    "Steven E. Anderson",
+    "Hans R. Hammer"
+  ],
+  "published": "2025-06-07T05:33:27Z",
+  "updated": "2026-10-22T20:34:56Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
