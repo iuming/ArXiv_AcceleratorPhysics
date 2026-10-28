@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2610.35327v1",
+  "url": "https://arxiv.org/abs/2610.35327v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.35327v1.pdf",
+  "title": "Self-consistent flow maps based on commutator-free exponential integrators",
+  "abstract": "We develop a flow-map framework for nonlinear transport equations, comprising a self-consistent exact frozen flow and its numerical realization. An exponential--pullback identity represents each frozen transport exponential in a commutator-free exponential integrator as the pullback induced by its exact backward characteristic map. Composing these maps defines the self-consistent exact frozen flow, a time-discrete construction with autonomous frozen fields formed from linear combinations of transport fields evaluated at the stage approximations. A local freezing-error identity and a one-step estimate for the Lie--Euler Vlasov--Poisson update separate field variation, field approximation, and characteristic integration errors; these estimates do not assert global PDE convergence. We specialize this construction to the Vlasov--Poisson system and obtain the self-consistent numerical flow through velocity-space quadrature, a discrete Poisson solve, field interpolation, and numerical integration of the frozen characteristic equations. Under suitable regularity assumptions, we prove that the self-consistent exact frozen flow for this system is a volume-preserving diffeomorphism. Temporal self-convergence tests on Vlasov--Poisson and guiding-center benchmarks yield rates consistent with the design orders and illustrate conservation behavior and the evolution of solution structures in long-time simulations with large time steps.",
+  "authors": [
+    "Xiaofeng Cai",
+    "Linghui Kong"
+  ],
+  "published": "2026-10-26T12:25:11Z",
+  "updated": "2026-10-26T12:25:11Z",
+  "categories": [
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

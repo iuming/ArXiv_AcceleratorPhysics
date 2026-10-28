@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.36720v1",
+  "url": "https://arxiv.org/abs/2610.36720v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.36720v1.pdf",
+  "title": "Development of a real-time FPGA-based CNN trigger operating on full-granularity calorimeter images",
+  "abstract": "We present a real-time field-programmable gate array (FPGA) implementation of a convolutional neural network (CNN) for event classification on full calorimeter images that retain crystal-level shower information. To meet the resource and latency constraints of trigger electronics, the network parameters and hidden activations were quantized to 8 bits with quantization-aware training, and a lossless space-to-depth reorganization rearranged the input image into fewer spatial positions, reducing the estimated CNN inference latency by more than an order of magnitude. The approach was evaluated with the J-PARC KOTO detector, recorded data, and data-acquisition (DAQ) constraints as a benchmark, targeting the online separation of the rare $K^{0}_{L}\\rightarrowπ^{0}e^{+}e^{-}$ decay from its dominant $K^{0}_{L}\\rightarrowπ^{+}π^{-}π^{0}$ background. As a proof of principle, the firmware was implemented and validated on an AMD Versal Premium VPK120 evaluation board. On 100,000 test events, inference on the board rejected $(99.34\\pm0.04)\\%$ of the recorded background sample enriched in $K^{0}_{L}\\rightarrowπ^{+}π^{-}π^{0}$ decays at a nominal $K^{0}_{L}\\rightarrowπ^{0}e^{+}e^{-}$ efficiency of 95%, with a measured CNN inference latency of 17.9 $μ$s. Combining the measured image-assembly and CNN inference latencies with the estimated link-transfer and score-return times gives a projected end-to-end latency of 25.9 $μ$s, within the adopted 32 $μ$s DAQ latency budget. These results demonstrate the feasibility of using full-granularity calorimeter images for CNN-based event selection that achieves high background rejection while keeping the trigger latency within tens of microseconds.",
+  "authors": [
+    "Jia-Jen Wu",
+    "Yun-Tsung Lai",
+    "Yu-Chen Tung",
+    "Sin-Ting Chen",
+    "Yu-Sheng Liu"
+  ],
+  "published": "2026-10-27T06:35:33Z",
+  "updated": "2026-10-27T06:35:33Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
