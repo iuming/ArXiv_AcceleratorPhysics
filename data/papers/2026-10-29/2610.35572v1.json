@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2610.35572v1",
+  "url": "https://arxiv.org/abs/2610.35572v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.35572v1.pdf",
+  "title": "Automatic indexing of wide-band quasi-Laue neutron diffraction patterns of large unit cells",
+  "abstract": "With a continuous spectrum of incident neutron wavelengths, quasi-Laue diffraction records many Bragg reflections from a stationary crystal, each satisfying the diffraction condition at a particular wavelength. Because the wavelength of each reflection is not measured, the crystal orientation must be determined from the scattering directions alone. At the new IMAGINE-X instrument, instant-readout detectors and many short exposures per experiment require this indexing to run automatically, yet for a protein crystal at the full 2-10 Angstrom band a single peak can have approximately $10^4$ candidate reflections, and a random orientation indexes a large fraction of the observed peaks. We describe an algorithm that indexes such patterns for a known unit cell and wavelength band. Differential evolution searches uniformly sampled rotations, matching observed directions to band-limited shells of candidate directions, and each solution is tested against the indexing expected for a random orientation. In a benchmark search, a k-d tree and a persistent pool of 32 worker processes reduce the wall time 270-fold relative to a serial scan of all candidates. The algorithm is first validated on the time-of-flight diffractometer MANDI, where the measured wavelengths give a reference solution by standard indexing. With the wavelengths discarded, every indexed reflection from 93 rare-earth garnet patterns agrees up to harmonic order. The algorithm then reliably indexes the natural mineral mesolite, measured on the original image plate at IMAGINE before the upgrade, and the protein T4 lysozyme, measured on the new IMAGINE-X instrument over the full band.",
+  "authors": [
+    "Zachary Morgan",
+    "Nathan Whittington",
+    "Iris Ye",
+    "Fiona He",
+    "Jacob Hauck",
+    "Khadiza Begam",
+    "Guannan Zhang",
+    "Jens Glaser",
+    "Christina Hoffmann",
+    "Dean Myles"
+  ],
+  "published": "2026-10-26T15:09:02Z",
+  "updated": "2026-10-26T15:09:02Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

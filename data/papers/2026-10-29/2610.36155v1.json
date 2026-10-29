@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.36155v1",
+  "url": "https://arxiv.org/abs/2610.36155v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.36155v1.pdf",
+  "title": "A generative foundation model for 2D magnetized plasma turbulence",
+  "abstract": "We present a proof-of-principle study demonstrating a conditional generative foundation model for self-organizing magnetized plasma turbulence. Built on a multichannel flow-matching framework with a spectral decomposition strategy, the model is trained on direct numerical simulations of 2D modified Hasegawa-Wakatani (MHW) turbulence across the hydrodynamic to adiabatic parameter range. Without retraining, this \\textit{single} model successfully performs three distinct downstream tasks: (i) unconditional generation of statistically faithful quasi-steady-state snapshots that recover the directional energy spectra and amplitude statistics, from which statistical transport quantities, including turbulent flux and effective diffusivity, alongside their uncertainties, are inferred directly; (ii) super-resolution from $4\\times$ and $8\\times$ downsampled observations to reconstruct fine-scale turbulence and large-scale zonal structures; and (iii) full-field inpainting from sparse spatial observations covering as little as $\\sim 10\\%$ of the domain. The generated fields faithfully reproduce regime-dependent turbulence vs. zonal-flow states and energy partitioning. Under extreme sparsity the long-correlation zonal flows are pinned by only a handful of observations, while the residual uncertainty concentrates in the small-scale turbulent fluctuations. These results establish flow-matching generative models as powerful, unified surrogates for state generation, statistical inference, and sparse-data reconstruction, providing a scalable baseline for 3D plasma turbulence and experimental applications.",
+  "authors": [
+    "Junyi Guo",
+    "Meet H. Parikh",
+    "Jian-Xun Wang",
+    "Ben Zhu"
+  ],
+  "published": "2026-10-26T18:53:53Z",
+  "updated": "2026-10-26T18:53:53Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

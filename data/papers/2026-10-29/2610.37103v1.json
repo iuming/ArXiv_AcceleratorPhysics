@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.37103v1",
+  "url": "https://arxiv.org/abs/2610.37103v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.37103v1.pdf",
+  "title": "A Comparison of Electric-Field Profile Reconstruction Methods based on the E-FISH Diagnostic",
+  "abstract": "Electric-field-induced second harmonic generation (EFISH) is a non-intrusive, non-resonant technique for measuring electric fields in moderate-to-atmospheric pressure plasmas. However, its nonlinear, path-integrated nature introduces measurement uncertainty, preventing a unique relationship between the measured signal and local electric field. One approach to overcome this limitation is to acquire spatial EFISH profiles and invert them to reconstruct the underlying electric-field distribution. Although several inversion methods have been employed, their reconstruction accuracy and overall performance have yet to be systematically evaluated. This study compares three methods: machine learning, linear inversion, and Abel inversion, using EFISH measurements from four electrode geometries with distinct electric-field distributions. Their performance is evaluated in terms of reconstruction accuracy, robustness to sparse data and noise, and ability to reconstruct asymmetric profiles. All three methods successfully reconstruct electric-field profiles, but exhibit distinct advantages and limitations. Machine learning provides high accuracy, computational speed, and noise resilience, but performs poorly on profiles that differ substantially from its training data, particularly asymmetric profiles. Linear inversion accommodates a broader range of field distributions but is sensitive to the initial profile. Abel inversion is limited to axisymmetric fields but performs well for horizontal field polarization. The complementary limitations of machine learning and linear inversion motivate a potential hybrid approach for reconstructing electric fields with unknown spatial distributions. Overall, this study identifies key trade-offs among the methods and provides guidance for selecting suitable reconstruction strategies under different measurement conditions.",
+  "authors": [
+    "E. S. Sugeng",
+    "Z. Yang",
+    "Y. Zhang",
+    "A. Sun",
+    "T. L. Chng"
+  ],
+  "published": "2026-10-27T12:04:03Z",
+  "updated": "2026-10-27T12:04:03Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

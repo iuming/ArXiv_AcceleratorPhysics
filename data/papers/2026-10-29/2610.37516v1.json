@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2610.37516v1",
+  "url": "https://arxiv.org/abs/2610.37516v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.37516v1.pdf",
+  "title": "Recovering Non-Maxwellian Velocity Distribution Functions from Collective Thomson Scattering Spectra Using Generalized Basis Representations",
+  "abstract": "Thomson scattering (TS) is a key diagnostic for inferring plasma parameters from scattered power spectra, but its interpretation depends strongly on assumptions about the underlying velocity distribution functions (VDFs). Conventional analyses typically assume Maxwellian distributions, which can be invalid in high-energy-density and laboratory astrophysics plasmas where collisionless, multi-population dynamics produce non-thermal features. In such cases, Maxwellian models may reproduce observed spectra while yielding inaccurate or misleading plasma parameters. We present a generalized TS analysis framework that represents species-specific VDFs in flexible, physically motivated bases and so reconstructs complex, non-equilibrium distributions. To explore the resulting high-dimensional parameter space, we build the forward model from differentiable operations and optimize the VDF parameters by gradient descent. We apply the method to synthetic TS spectra generated from particle-in-cell simulations of a collisionless shock with interacting hydrogen and carbon populations. Immediately upstream of the shock, where the plasma is most non-thermal, the flexible bases cut the mean normalized ion VDF residual from 38.7% for a Maxwellian model to 20.3% and 20.5%, with correspondingly improved time-resolved plasma parameters. We also introduce a systematic method of uncertainty quantification that reveals degeneracies between ion species, highlighting the importance of both flexible VDF modeling and a statistical mapping of the solution space for this inherently ill-posed inversion problem.",
+  "authors": [
+    "Greg A. Baker",
+    "Bradyn Klein",
+    "Kristopher Wright",
+    "Vedang Bhelande",
+    "Zhaoyan Sun",
+    "Rayner Sutardja",
+    "Samuel R. Totorica",
+    "Derek B. Schaeffer"
+  ],
+  "published": "2026-10-27T16:37:30Z",
+  "updated": "2026-10-27T16:37:30Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
