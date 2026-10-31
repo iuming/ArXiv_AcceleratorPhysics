@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2602.20317v3",
+  "url": "https://arxiv.org/abs/2602.20317v3",
+  "pdf_url": "https://arxiv.org/pdf/2602.20317v3.pdf",
+  "title": "A general extractor for coherent patterns across time-frequency measurements",
+  "abstract": "Scientific discovery increasingly depends on finding meaningful patterns within volumes of sensor data too large for manual inspection. Existing time-frequency event extractors are often engineered or trained on manually labeled examples for each instrument, which can be laborious and difficult to adapt to new environments. To address this, we introduce TokEye, a reference-free method that learns a general criterion for coherent structure from heterogeneous fusion measurements. A model developed under this method, without retraining, can extract signals from various other fields including marine bioacoustics and wideband radar. It recovers 82.5\\% of expert-annotated stellarator signals, detects 78\\% of dolphin whistles, and identifies radar events with 81.5\\% average precision across six benchmarks, while processing full experimental spectrograms in under one second on a GPU. This transfer across unrelated sensors and physical systems reveals common exploitable structure in time-frequency measurements and establishes a scalable foundation for automated scientific signal discovery.",
+  "authors": [
+    "Nathaniel Chen",
+    "Kouroche Bouchiat",
+    "Peter Steiner",
+    "Andrew Rothstein",
+    "David Smith",
+    "Max Austin",
+    "Mike van Zeeland",
+    "Marie Roch",
+    "Azarakhsh Jalalvand",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-02-23T20:03:10Z",
+  "updated": "2026-10-27T22:14:47Z",
+  "categories": [
+    "eess.SP",
+    "cs.AI",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "eess.SP"
+}

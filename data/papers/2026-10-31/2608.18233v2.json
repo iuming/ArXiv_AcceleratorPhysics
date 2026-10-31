@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2608.18233v2",
+  "url": "https://arxiv.org/abs/2608.18233v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.18233v2.pdf",
+  "title": "Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training",
+  "abstract": "Detailed Geant4 simulation of calorimeter showers dominates the computing budget of high-energy physics experiments. Deep generative surrogates reduce this cost, but they have remained tied to the detector they were trained on, so each new geometry needs a large in-domain dataset. We study whether a single point cloud shower generator can be pre-trained on multiple detectors and transferred to unseen calorimeters. The pre-training geometries come from synthetic geometric variation rather than real-detector data. We introduce SimpleBox, a family of $10^4$ box calorimeters spanning the plane of sampling fraction and longitudinal segmentation, and benchmark it against pre-training on realistic detectors. On a calorimeter unseen in pre-training, with $10^3$ target showers for fine-tuning, the two priors reduce the aggregated sliced Wasserstein distance to Geant4 by factors of 5.2 (synthetic) and 8.0 (realistic) relative to training from scratch. At larger target sizes the synthetic prior performs better than the realistic one. Geometric diversity alone is therefore a practical way to pre-train a transferable shower generator.",
+  "authors": [
+    "Thorsten Buss",
+    "Henry Day-Hall",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Katja Krüger",
+    "Peter McKeown",
+    "Lorenzo Valente"
+  ],
+  "published": "2026-08-18T18:20:11Z",
+  "updated": "2026-10-29T14:53:53Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "hep-ph"
+  ],
+  "primary_category": "physics.ins-det",
+  "doi": "10.1088/1748-0221/21/10/P10041"
+}
