@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.37910v1",
+  "url": "https://arxiv.org/abs/2610.37910v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.37910v1.pdf",
+  "title": "Generative modeling for fusion: a large-scale benchmark of stellarator fast-ion simulations",
+  "abstract": "Stellarators offer a promising magnetic confinement approach for achieving controlled nuclear fusion. However, stellarator design remains challenging, as evaluating configuration performance requires computationally expensive, high-fidelity simulations. In particular, key performance metrics derived from guiding center simulations are costly to include directly in the design optimization loop, and are almost exclusively used as diagnostics. Machine learning has the potential to advance fusion research by enabling rapid generation and evaluation of new stellarator configurations. Effectively applying ML for fusion demands large-scale datasets that capture both design diversity and high-fidelity simulation outputs. In this work, we introduce the Benchmark of Stellarator Simulations (BoSS), a dataset of stellarator designs paired with guiding center simulation results and trajectories. The BoSS is the first large-scale dataset of guiding center simulations, containing simulation data for 180,000 distinct magnetohydrodynamic equilibria spanning a wide range of magnetic geometries and confinement properties. To exemplify the utility of ML to accelerate stellarator design, we formulate and address two sets of modeling tasks: generative modeling for designing stellarators with good particle confinement, and surrogate modeling for predicting stellarator heat deposition patterns and particle trajectories. The tasks reveal the potential impact ML can have in the stellarator field and important opportunities to improve the applicability of ML models in the sciences. Our baselines generate diverse, performant stellarators and provide useful surrogate predictions, and point to long-horizon trajectory forecasting and out-of-distribution generation as key directions for future work. The BoSS can be accessed through https://boss.flatironinstitute.org/.",
+  "authors": [
+    "Misha Padidar",
+    "Teresa Huang",
+    "Mark Goldstein",
+    "Michael Czekanski",
+    "Jeffrey Soules"
+  ],
+  "published": "2026-10-27T19:47:09Z",
+  "updated": "2026-10-27T19:47:09Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

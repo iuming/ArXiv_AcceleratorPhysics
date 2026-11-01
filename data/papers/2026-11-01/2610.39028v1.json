@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.39028v1",
+  "url": "https://arxiv.org/abs/2610.39028v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.39028v1.pdf",
+  "title": "Simulating scintillation detector responses with OpenMC and pyMPPost: a track-based coupling verified against MCNPX-PoliMi",
+  "abstract": "Simulations of the detector response are essential for the design and analysis of neutron and photon measurements in nuclear nonproliferation, safeguards, and active interrogation studies. MCNPX-PoliMi, combined with the post-processor MPPost and its Python implementation pyMPPost, is a well-established and validated framework for this purpose. Its detector models, however, are not available to users of the open-source Monte Carlo code OpenMC, which does not write an equivalent collision-level output. This work couples OpenMC to pyMPPost, allowing the open-source community to use the detector models already implemented and validated in pyMPPost without modifying either code. A Python class, $\\texttt{TrackAnalyzer}$, reads the particle tracks written by OpenMC, reconstructs the interactions in the detector material along with the target nuclide and writes them in the MCNPX-PoliMi collision file format. The method relies only on the track output and is therefore applicable to any OpenMC version that writes particle tracks, including the development branch with photonuclear physics used in this work. The coupling was verified code to code against MCNPX-PoliMi for a trans-stilbene and a $^{4}$He scintillator exposed to $^{252}$Cf and deuterium-deuterium fusion neutron sources, and for a NaI(Tl) scintillator exposed to $^{137}$Cs and $^{152}$Eu photon sources. The total number of pulses agrees within $\\pm$1\\% in all cases, and the light-output spectra agree within a few percent in the covered spectral domain. By making the detector response models of pyMPPost available within a fully open-source simulation chain, this work extends detector response studies with OpenMC to nuclear nonproliferation and active interrogation applications, including those involving photonuclear reactions, and provides an accessible tool for education and training in radiation detection.",
+  "authors": [
+    "Lorenzo Loi",
+    "David Breitenmoser",
+    "Shaun D. Clarke",
+    "Sara A. Pozzi",
+    "Antonio Cammi"
+  ],
+  "published": "2026-10-28T23:02:04Z",
+  "updated": "2026-10-28T23:02:04Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

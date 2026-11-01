@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2610.39381v1",
+  "url": "https://arxiv.org/abs/2610.39381v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.39381v1.pdf",
+  "title": "Linear-Stability-Guided Two-Stage Surrogate Model for Nonlinear ITG-TEM Turbulence",
+  "abstract": "We develop a two-stage surrogate model framework to predict the linear and nonlinear properties of ITG-TEM turbulence from GENE gyrokinetic simulations. The first stage uses a hierarchical ensemble of stability and mode classifiers, along with global and mode-specific regressors, to predict the linear growth rate and real frequency. The second stage uses these predictions as linear spectra in a Fourier neural operator (FNO)-based nonlinear surrogate model. The nonlinear model predicts saturated potential and heat flux spectra, together with zonal flow quantities. Two linear drive scalars, the maximum and integral of the linear growth rate over a low-wavenumber range, are also supplied directly to the networks predicting scalar quantities. For the architecture studied here, comparisons with models omitting either or both input paths show that linear information can improve spectral and scalar predictions under extrapolation toward stronger linear drive.",
+  "authors": [
+    "Y. W. Cho",
+    "C. G. Wan",
+    "Z. S. Qu",
+    "C. J. Ajay",
+    "K. P. Li",
+    "K. Lim",
+    "S. S. Kim",
+    "Y. -H. Lee",
+    "J. M. Kwon",
+    "X. Garbet"
+  ],
+  "published": "2026-10-29T05:15:02Z",
+  "updated": "2026-10-29T05:15:02Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.40206v1",
+  "url": "https://arxiv.org/abs/2610.40206v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.40206v1.pdf",
+  "title": "A semi-implicit unified gas-kinetic wave-particle method with energy-conserving electromagnetic coupling for multiscale plasmas",
+  "abstract": "In multiscale plasmas, kinetic regions coexist with collision-dominated, strongly magnetized and quasi-neutral ones. In these regions, the collision time, the cyclotron period and the plasma period, respectively, are far shorter than the flow time scales. Schemes that treat the collisions and the field coupling explicitly must take time steps below these times and below the light-crossing time of a cell. This paper presents a semi-implicit unified gas-kinetic wave-particle (UGKWP) method for the multispecies Vlasov-Maxwell system with Bhatnagar-Gross-Krook collisions. The electric field follows from a reformulated Maxwell equation, a single linear system with a unique solution for any time step. Its current response is built from the implicit-midpoint velocity map, which then pushes the particles and the hydrodynamic wave alike. The field step conserves the discrete total energy exactly and remains stable without resolving the cyclotron period, the plasma period or the light-crossing time, so that the time step follows from the flow and sound speeds. A Gauss's law correction adjusts the electric field and the joint charge of particles and wave while conserving the mass, momentum and energy of every charged species. The method reproduces whistler waves and electron plasma waves from Landau damping to collision-dominated oscillations. It agrees with particle-in-cell, two-fluid and magnetohydrodynamic references in a Brio-Wu problem from weak to strong collisionality and magnetization, the Orszag-Tang vortex and collisionless magnetic reconnection. It needs far less CPU time than either the UGKWP method with an explicit solver for the perfectly hyperbolic Maxwell equations or a deterministic multiscale kinetic scheme. In collisional plasmas, it also needs less CPU time than an implicit particle-in-cell method with the same collision operator, increasingly so as collisions strengthen.",
+  "authors": [
+    "Yixiao Wang",
+    "Zhigang Pu",
+    "Xing Ji",
+    "Kun Xu"
+  ],
+  "published": "2026-10-29T14:55:12Z",
+  "updated": "2026-10-29T14:55:12Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
