@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2610.41134v1",
+  "url": "https://arxiv.org/abs/2610.41134v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.41134v1.pdf",
+  "title": "Teacher-guided multi-task learning for integrated plasma monitoring on EAST",
+  "abstract": "This paper integrates tokamak plasma disruption prediction, Edge-Localized Mode (ELM) monitoring, Multifaceted Asymmetric Radiation From the Edge (MARFE) detection, and H/L-mode identification into a unified Multi-Task Learning (MTL) model. This integration aims to realize MTL's potential for improving task performance while reducing inference time. However, on datasets constructed from selected EAST discharges recorded between 2015 and 2020, this study found that the traditional MTL method underperformed the corresponding Single-Task Learning (STL) method on some tasks. This performance degradation is the well-known issue of negative transfer. To address this issue, this study proposes the teacher-guided MTL method, using task-specific STL ensembles (teachers) to guide the training of an MTL model (student). The ensemble teachers guide training through soft-target distillation losses for each task of the MTL student model, and increased weighting of each shot's peak-disruptivity window in the disruption prediction label-supervised loss. Test-set results showed that the teacher-guided MTL method outperformed the corresponding STL method in ROC-AUC for all four tasks, eliminating the negative transfer observed with the traditional MTL method. In addition, on the same single GPU or single physical CPU core, the MTL student model can substantially reduce the inference time required to generate all four task outputs compared with the four STL baseline models. This paper offers a promising route to plasma monitoring systems that cover a broader range of phenomena, improve per-task performance and reduce inference time with limited real-time computational resources, supporting future high-performance plasma operation.",
+  "authors": [
+    "Yunhu Jia",
+    "Wenhui Hu",
+    "Bihao Guo",
+    "Qingquan Yang",
+    "Xin Lin",
+    "Haoyu Wang",
+    "Yao Huang",
+    "Yuehang Wang",
+    "Kai Wu",
+    "Zhengping Luo",
+    "Yanmin Duan",
+    "Jilei Hou",
+    "Ruirui Zhang",
+    "Jianqiu Zhu",
+    "Zijie Liu",
+    "Qiping Yuan",
+    "Bingjia Xiao"
+  ],
+  "published": "2026-10-30T01:38:40Z",
+  "updated": "2026-10-30T01:38:40Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

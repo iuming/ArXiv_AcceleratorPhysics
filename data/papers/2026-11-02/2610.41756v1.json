@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.41756v1",
+  "url": "https://arxiv.org/abs/2610.41756v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.41756v1.pdf",
+  "title": "Machine learning surrogates for multi-geometry EDGE2D-EIRENE studies of MAST Upgrade",
+  "abstract": "Two-dimensional edge plasma transport simulations provide a detailed description of divertor plasma behaviour, but their computational cost limits large parameter scans and iterative modelling. We present a database of 23,379 converged EDGE2D-EIRENE simulations for MAST Upgrade (MAST-U), spanning three divertor magnetic configurations, variations in separatrix density and input power, deuterium fuelling locations, and nitrogen seeding rates and locations. Independent multilayer perceptron surrogates are trained for twelve scalar outputs, including divertor front positions, target electron temperature and core-edge boundary quantities. On a held-out test set, the surrogates achieve $0.9462 \\leq R^2 \\leq 0.9994$, substantially outperforming linear regression baselines. Dense surrogate scans quantify the dependence of carbon radiation front motion on separatrix density, divertor geometry and fuelling location. Nitrogen seeding scans reveal a strong dependence on seeding location, with high-field-side seeding rapidly reducing core-boundary electron temperature, while divertor seeding produces little response. Batch inference for all twelve outputs at 786,432 operating points takes 1.76 s on GPU, compared with a median wall time of 2.61 hours using four CPU cores for separate EDGE2D-EIRENE simulations. These models enable rapid comparison of geometry and source-location effects on divertor and core-boundary conditions within the sampled simulation domain.",
+  "authors": [
+    "George K. Holt",
+    "Lorenzo Zanisi",
+    "Romain Futtersack",
+    "James Simpson"
+  ],
+  "published": "2026-10-30T13:58:55Z",
+  "updated": "2026-10-30T13:58:55Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

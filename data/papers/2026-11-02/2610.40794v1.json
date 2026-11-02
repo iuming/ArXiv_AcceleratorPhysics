@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.40794v1",
+  "url": "https://arxiv.org/abs/2610.40794v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.40794v1.pdf",
+  "title": "FLUCS: a modular GPU-native framework for fluid and plasma turbulence",
+  "abstract": "We present FLUCS, an open-source framework for solving systems of partial differential equations efficiently on graphics processing units (GPUs), targeting models of fluid and plasma turbulence. It comprises a set of numerical solvers specialised for a well-defined class of problems and independently developed systems that supply specific systems of equations. This allows different models to share numerical infrastructure while retaining control over their individual implementation and optimisation. The present release provides a Fourier pseudospectral solver for one-, two-, and three-dimensional periodic domains solved on a single NVIDIA GPU, with integrating-factor time integration and several time-stepping and dealiasing methods. We verify its convergence, quantify its computational costs, and demonstrate its application to three reduced models of fusion and astrophysical plasma turbulence.",
+  "authors": [
+    "T. Adkins",
+    "P. G. Ivanov"
+  ],
+  "published": "2026-10-29T18:00:25Z",
+  "updated": "2026-10-29T18:00:25Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph",
+    "physics.flu-dyn"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

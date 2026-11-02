@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.41544v1",
+  "url": "https://arxiv.org/abs/2610.41544v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.41544v1.pdf",
+  "title": "AMPERe: an exactly divergence-free quadrature-by-expansion evaluator for near-surface Biot--Savart and virtual-casing fields in fusion geometries",
+  "abstract": "Accurate magnetic-field evaluation on and near current-carrying surfaces is a recurring computational bottleneck in magnetic-confinement fusion. As targets approach the source surface, Biot--Savart and virtual-casing kernels become singular, causing standard Gauss--Legendre and upsampled trapezoidal quadratures to lose accuracy. We introduce AMPERe, a quadrature-by-expansion (QBX) evaluator for vector magnetostatic kernels on general three-dimensional, non-axisymmetric tokamak and stellarator geometries. The method develops a spherical-harmonic QBX formulation for the vector Biot--Savart and virtual-casing (Stratton--Chu) fields and expresses the resulting magnetic field as the analytic curl of a regular-solid-harmonic vector potential. This construction yields a divergence-free discrete field at every expansion order, provides analytic derivatives, and enables an a priori separation of truncation, quadrature, and geometric errors. On the rotating-ellipse benchmark of Malhotra et al. [1], QBX maintains a relative error of 2--5 x 10^{-6} throughout the near-surface regime at distance-independent cost, whereas upsampled trapezoidal quadrature exhibits O(1) errors and requires node counts scaling as (h/d)^2. AMPERe is implemented as a header-only, performance-portable Kokkos library supporting CPU and GPU backends, with target-specific and local-correction accelerations validated against the baseline. The method is further demonstrated on realistic Wendelstein 7-X configurations, including sheet-current and virtual-casing field evaluations.",
+  "authors": [
+    "H. Betar",
+    "Y. Sarazin",
+    "V. Grandgirard",
+    "D. Zarzoso"
+  ],
+  "published": "2026-10-30T10:42:00Z",
+  "updated": "2026-10-30T10:42:00Z",
+  "categories": [
+    "physics.comp-ph",
+    "math-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

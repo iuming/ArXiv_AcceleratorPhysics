@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2610.41493v1",
+  "url": "https://arxiv.org/abs/2610.41493v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.41493v1.pdf",
+  "title": "As a matter of reconstruction -- varying the magnetic Prandtl number in implicit large eddy simulations",
+  "abstract": "The magnetic Prandtl number ($\\mathrm{Pm}$), the ratio of viscosity to magnetic diffusivity, spans many orders of magnitude in astrophysical plasmas. It shapes how turbulence amplifies and structures magnetic fields. In direct numerical simulations (DNS) the viscosity and magnetic diffusivity can be controlled explicitly and independently, whereas in implicit large eddy simulations (ILES) they are set by the numerical scheme. We test whether, in a finite-volume code, $\\mathrm{Pm}$ can be varied through the reconstruction scheme by applying different methods to the hydro and magnetic variables. As a proof of concept, we simulate driven, subsonic, homogeneous magnetohydrodynamic turbulence using five pairs of hydrodynamic and magnetic reconstruction schemes at varying resolutions. We measure the effective viscosity and resistivity from the energy transfer between scales. Reconstructing the magnetic field at higher order than the fluid raises the effective magnetic Prandtl number and vice versa. We demonstrate that a mix of second- and third-order reconstruction alone results in a $\\gtrsim20\\times$ change in $\\mathrm{Pm}$. A comparison of DNS with matched explicit dissipation at these values agrees with the ILES. Mixed reconstruction thus offers a simple and efficient way to explore $\\mathrm{Pm} \\not\\simeq 1$ in ILES without adding explicit dissipation.",
+  "authors": [
+    "Vinay Kumar",
+    "Philipp Grete"
+  ],
+  "published": "2026-10-30T09:48:35Z",
+  "updated": "2026-10-30T09:48:35Z",
+  "categories": [
+    "astro-ph.GA",
+    "astro-ph.HE",
+    "astro-ph.SR",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "astro-ph.GA"
+}

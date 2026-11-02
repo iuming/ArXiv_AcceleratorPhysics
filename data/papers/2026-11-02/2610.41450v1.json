@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2610.41450v1",
+  "url": "https://arxiv.org/abs/2610.41450v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.41450v1.pdf",
+  "title": "Accelerating Computation and Resolving Extraneous Roots in the Kinetic Plasma Dispersion Relation Solver BO",
+  "abstract": "Kinetic dispersion relations are widely used to study waves and instabilities in space, astrophysical, and laboratory plasmas. Iterative root searches depend on initial guesses and may fail to converge or miss important branches. The BO/PDRK solvers [Comput. Phys. Commun. 244, 343-371 (2019)] use rational pole expansions to transform the nonlinear dispersion relation into a matrix eigenvalue problem, obtaining all roots of the approximated relation in one calculation. However, high cyclotron harmonics enlarge the matrix and slow computation, while extraneous roots are difficult to separate from physical modes. We develop BO-T (BO-Tian), an improved version of BO combining two methods. First, for matrix reduction, BO-T applies rank factorization to combined residue matrices, preserving the rational dispersion relation and accounting for the removed pole eigenvalues. Second, for root screening, BO-T uses contour comparison between approximate and reference kinetic dispersion matrices along a closed contour enclosing no poles. This provides a sufficient condition for preserving local root counts, with error bounds for isolated roots and criteria for growth rate signs. Benchmarks on representative electrostatic and electromagnetic cases show speedups of about 10 to 140 for matrix assembly and eigenvalue calculation, exceeding 30 in most cases with high cyclotron harmonics. Root screening recovers the main unstable branches in agreement with published and archived dispersion curves.",
+  "authors": [
+    "Xizhi Tian",
+    "Huasheng Xie",
+    "Long Wei"
+  ],
+  "published": "2026-10-30T08:54:14Z",
+  "updated": "2026-10-30T08:54:14Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.space-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
