@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.01770v1",
+  "url": "https://arxiv.org/abs/2611.01770v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.01770v1.pdf",
+  "title": "LADA: A differential algebra-based simulation package for arbitrary-order charged-particle and light optics",
+  "abstract": "LADA computes charged-particle and light-optical transfer maps by differential algebra in Python, with run-time order selection validated through order nine. It combines these established map methods with ATIMA-based stopping, straggling and scattering, the GLOBAL, CHARGE and ETACHA charge-state models, EPAX fragmentation, six-dimensional integration through measured or computed RF fields with reference-energy rebasing, and section-wise particle tracking with aperture and RF-window losses. Maps retain analytic dependence on external parameters; contraction with input moments gives beam observables and their sensitivities without particle tracking at each setting. Lattice import from COSY, MAD-X, Xsuite and MIRKO provides per-record status and comparisons with available codes. NumPy is the only required dependency. On the HHT benchmark, the optional compiled DA kernel on eight cores matches COSY in performance at orders 3 and 5 and is 1.8 and 2.9 times faster at orders 7 and 9. Applications include the SIBAF irradiation facility through CALINA, proton microscopy and beam-line studies at GSI and FAIR.",
+  "authors": [
+    "Dmitry Varentsov",
+    "Sergey Litvinov",
+    "Maksym Miski-Oglu",
+    "Sergiy Trotsenko"
+  ],
+  "published": "2026-11-01T10:22:47Z",
+  "updated": "2026-11-01T10:22:47Z",
+  "categories": [
+    "physics.acc-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

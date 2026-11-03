@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2610.26896v2",
+  "url": "https://arxiv.org/abs/2610.26896v2",
+  "pdf_url": "https://arxiv.org/pdf/2610.26896v2.pdf",
+  "title": "Commutative Coarse-graining on the Sphere",
+  "abstract": "Filtering by spatial convolution underlies coarse-graining and Large Eddy Simulation, the analysis of multiscale dynamics, and data processing across the sciences. Yet, as commonly practiced on the sphere, it violates a basic consistency requirement: commutation with differential operators, which is necessary for deriving coarse-grained dynamics and preserving the physics across lengthscales. The root of the problem is nonlocality of filtering, which compares directions in different tangent planes. The same reason underlies the Foucault pendulum's precession, and it is why the commutation failure is intrinsically geometric rather than being due to the coordinate system or numerical grid. A recently proposed generalized spherical convolution is, for a given scalar kernel, the unique linear operator commuting with the radial projection, divergence, and curl. Any consistent linear operator, be it spectral truncation, wavelet transform, diffusion, Green's-function inversion, or a machine-learned convolution, necessarily takes this form. From a simulation of an unstable jet, we demonstrate commutation to within numerical round-off, whereas common filtering that ignores curvature produces significant spurious divergence where none exists and gradient errors comparable to the gradients themselves.",
+  "authors": [
+    "Chayut Teeraratkul",
+    "Hussein Aluie"
+  ],
+  "published": "2026-10-16T17:52:01Z",
+  "updated": "2026-10-30T15:12:09Z",
+  "categories": [
+    "physics.comp-ph",
+    "math-ph",
+    "physics.ao-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.02031v1",
+  "url": "https://arxiv.org/abs/2611.02031v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.02031v1.pdf",
+  "title": "SensOFormer: Foundation Models for Particle Accelerators",
+  "abstract": "Large-scale scientific facilities, such as particle accelerators, are complex systems composed of thousands of interacting components that must operate collectively to support diagnostics and control, and ensure safe, reliable operation. These facilities rely on extensive sensor networks that generate large volumes of heterogeneous, incomplete, and noisy telemetry, often sampled at different rates across subsystems. In this paper, we adopt the foundation-model paradigm to learn general-purpose sensor representations from historical accelerator data through self-supervised pretraining. We introduce SensOFormer, a denoising masked transformer with a Perceiver-style encoder-decoder architecture designed to handle variable sensor sets, accommodate heterogeneous sampling rates, and learn robust representations from noisy measurements. The model is pretrained on multiple particle-accelerator datasets and transferred to downstream tasks, including missing-data imputation, anomaly detection, cavity identification, and fault identification. Through extensive evaluations and comparisons, we demonstrate that a single self-supervised model can learn reusable representations for diverse operational tasks in large-scale scientific facilities. Project page: https://mahindrautela.github.io/sensoformer.",
+  "authors": [
+    "Mahindra Rautela",
+    "Alexander Scheinker"
+  ],
+  "published": "2026-11-01T16:25:32Z",
+  "updated": "2026-11-01T16:25:32Z",
+  "categories": [
+    "cs.LG",
+    "physics.acc-ph"
+  ],
+  "primary_category": "cs.LG"
+}

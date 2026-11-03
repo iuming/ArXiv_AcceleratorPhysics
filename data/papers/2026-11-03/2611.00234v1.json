@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.00234v1",
+  "url": "https://arxiv.org/abs/2611.00234v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.00234v1.pdf",
+  "title": "Localized anomaly detection with a calorimeter normalizing flow",
+  "abstract": "Normalizing flows trained as fast calorimeter simulators also give the likelihood of each shower, which can serve as an anomaly score. Because this likelihood sums over every voxel, a signal confined to a few voxels can be lost in the fluctuations of the rest of the shower. For example, in a public benchmark dataset in which a long-lived neutral particle decays to two photons, the CaloFlow likelihood used in previous work selects less than 5% of the signal at a background efficiency of $10^{-3}$ when the particle has the largest simulated mass and decays at or just behind the front face of the calorimeter. In this work, we define a regional anomaly score by summing the squared latent coordinates of the same flow within small detector regions around the point where the particle enters the calorimeter, with the threshold set using background showers alone. At the same background efficiency, this regional anomaly score selects more than 95% of the signal. The per-coordinate likelihood terms, summed over the same regions, perform equally well, but the squared latent coordinates have a known distribution for background showers and clearly illustrate when a shower departs from it. Therefore, normalizing flows may be sensitive to new physics, even if the global likelihood is not.",
+  "authors": [
+    "Raunav Mendiratta",
+    "Jason Weitz",
+    "Javier Duarte"
+  ],
+  "published": "2026-10-30T18:17:00Z",
+  "updated": "2026-10-30T18:17:00Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex",
+    "hep-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

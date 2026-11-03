@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.00675v1",
+  "url": "https://arxiv.org/abs/2611.00675v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.00675v1.pdf",
+  "title": "Implicit-Explicit Methods for the GX Gyrokinetics Code",
+  "abstract": "Gyrokinetic simulations are crucial for understanding turbulent transport in magnetic confinement fusion devices. Unfortunately, these simulations are typically extremely expensive, particularly when kinetically evolving electrons due to their significantly greater thermal speed compared to that of ions. In this work, we present new implicit-explicit timestepping methods for the GX gyrokinetics code to accelerate these simulations where the ion and electron streaming terms as well as the electron mirror terms are treated implicitly, while the remaining terms are treated explicitly. These methods include a lower-order Lie-Trotter splitting method as well as a higher-order additive Runge-Kutta method. Our schemes take advantage of the sparsity of the GX equations, which allows us to efficiently invert the linear operators that arise from the implicit scheme without consuming significant amounts of limited GPU memory. We demonstrate our new integration scheme for both linear (electrostatic and electromagnetic) and nonlinear (electrostatic) simulations in general toroidal geometry, and show that our methods can achieve up to the maximum theoretical linearly stable timestep for these simulations while maintaining a significant improvement in wall-clock time.",
+  "authors": [
+    "Patrick S. Kim",
+    "Noah R. Mandell",
+    "Ian G. Abel",
+    "William Dorland",
+    "Greg W. Hammett",
+    "Daniel R. Reynolds"
+  ],
+  "published": "2026-10-31T06:13:55Z",
+  "updated": "2026-10-31T06:13:55Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

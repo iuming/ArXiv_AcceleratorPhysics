@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2610.00845v2",
+  "url": "https://arxiv.org/abs/2610.00845v2",
+  "pdf_url": "https://arxiv.org/pdf/2610.00845v2.pdf",
+  "title": "Is Your AI Fast Enough to Run a Fusion Reactor?",
+  "abstract": "In magnetic confinement fusion, compact machine learning algorithms are often integrated into the control loop on CPU-based custom hardware stacks. Deterministic implementations of these algorithms target instabilities which can evolve over microseconds to milliseconds. Staying within this framework may therefore limit the pace of control-system development to the inference time available. With the expansion of hardware acceleration and large models, we aim to bring ML models for fusion control to modern inference engines and compare, based on the physics reactor, the suitability of each engine per model. This study implements a consistent real-time machine learning algorithm for GPUs and optimized CPU packages, including OpenVINO, XLA, and TVM, at DIII-D National Fusion Facility. For the smallest model, one CPU core responds within 3.6 $μ$s in 99% of control cycles and an NVIDIA A100 within 28 $μ$s. We also evaluate models running simultaneously, as they would run in a typical experiment, and find best use cases per framework.",
+  "authors": [
+    "Nathaniel Chen",
+    "Cheolsik Byun",
+    "Sangkyeun Kim",
+    "Andrew Rothstein",
+    "Ricardo Shousha",
+    "Hiro Josep Farre Kaga",
+    "Peter Steiner",
+    "Azarakhsh Jalalvand",
+    "Egemen Kolemen"
+  ],
+  "published": "2026-10-01T00:04:53Z",
+  "updated": "2026-10-30T15:33:41Z",
+  "categories": [
+    "physics.plasm-ph",
+    "cs.PF",
+    "eess.SY"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

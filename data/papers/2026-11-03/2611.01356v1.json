@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.01356v1",
+  "url": "https://arxiv.org/abs/2611.01356v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.01356v1.pdf",
+  "title": "Learned Surrogates of Three-Dimensional Magnetohydrodynamic Turbulence",
+  "abstract": "Three-dimensional magnetohydrodynamic (MHD) turbulence, the flow of astrophysical and fusion plasmas, is costly to simulate. We present, to our knowledge, the first learned surrogates of three-dimensional resistive MHD turbulence, and compare three standard backbones in that role: a convolutional UNet, a shifted-window transformer and a Fourier neural operator. They are trained as autoregressive emulators of decaying MHD turbulence at a resolution of $128^3$ and Reynolds numbers of 1000, 3000 and 6000, on 500 simulations per Reynolds number, each with one two-stage procedure, single steps and then short rollouts, and stopped by one rule. Over a window of about one large-eddy turnover time, the UNet and the transformer reach relative velocity errors of 0.018 to 0.053 and keep the current sheets, the enstrophy, the current density and the energy spectra of the simulation; which of the two is the more accurate depends on the Reynolds number, the UNet leading at 3000 and 6000 and the transformer at 1000. Applied with the same backbones and training procedure to two public benchmarks, the models reach the lowest error reported to date on the isotropic turbulence set of FactFormer, 39% below the best published model. On the compressible MHD set of The Well, their rollout errors are a third to a half below those of the best of The Well's baselines. They also match a 1.3 B-parameter pretrained foundation model in its rollout windows, with 20-62 times fewer parameters. The code, the configuration of every model, the evaluation scripts and the data generator with the seed of every simulation will be released upon publication.",
+  "authors": [
+    "Semih Kacmaz",
+    "E. A. Huerta"
+  ],
+  "published": "2026-10-31T23:54:52Z",
+  "updated": "2026-10-31T23:54:52Z",
+  "categories": [
+    "cs.LG",
+    "astro-ph.IM",
+    "physics.flu-dyn",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
