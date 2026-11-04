@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.04194v1",
+  "url": "https://arxiv.org/abs/2611.04194v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.04194v1.pdf",
+  "title": "A Two-Dimensional Physics-Informed Neural Network Model of a Hall Effect Thruster Plasma: Self-Consistent Electrostatics and Physical-Consistency Diagnostics",
+  "abstract": "We present a two-dimensional axisymmetric physics-informed neural network (PINN) of the discharge channel of the P5 Hall thruster at 300 V and 5.4 A, which solves eleven coupled plasma fields and assimilates 145 internal probe measurements per field reconstructed from the data of Haas and Gallimore. The electric potential is obtained from Poisson's equation in charge-separation form, n_e = n_i(1+eta), with eta bounded by construction, which keeps the stiff electrostatic constraint active and trainable. The reference solution agrees with the training profiles to relative L2 errors of 0.017, 0.073 and 0.205 for the potential, electron temperature and ion density, and held-out tests show the potential to be far more robust than the ion density to the withdrawal of measurement lines. We then test the solution against requirements the data fit does not reveal: global particle and current balances, the electron current implied by the momentum equation, the field-aligned electron force balance and the axial ion momentum budget. These expose a neutral inflow six times the measured flow, a bound in the potential representation, and a momentum-implied electron current, more than 99% field-aligned, exceeding the discharge current by orders of magnitude. Correcting these, with a divergence-free magnetic field fitted to measured data, uncertainty-weighted data, the electron pressure gradient and progressively imposed field-aligned and current constraints, yields a solution that conserves particles to within 3%, holds the current between 5.1 and 5.4 A and places 97% of the potential and 88% of the temperature measurements within their uncertainties. Within the tested single-velocity fluid formulation, however, the ion density, potential and ion velocity could not be matched together, and the field-aligned electron balance remains the main obstacle to electron self-consistency.",
+  "authors": [
+    "Josh Adjedj",
+    "Subrata Roy"
+  ],
+  "published": "2026-11-03T02:28:22Z",
+  "updated": "2026-11-03T02:28:22Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.atm-clus"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
