@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.08036v1",
+  "url": "https://arxiv.org/abs/2611.08036v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.08036v1.pdf",
+  "title": "Fast prediction of electron-beam parameters using transfer maps and machine learning in a digital model of a MeV $γγ$ collider",
+  "abstract": "Tuning the electron beam of a MeV-scale $γγ$ collider, first in the design and later in a digital twin of the machine, requires the beam parameters at the interaction point (IP) for many injector states. Start-to-end particle tracking is too slow for this and needs the full particle distribution, which an operating machine cannot measure. We address this problem for the 200-MeV transport line of the collider with two fast predictors. For design, second-order transfer maps from the transport entrance to the IP are applied to every particle. For a digital twin, an extremely-randomized-trees (ExtraTrees) model predicts the IP parameters from the means and rms widths of the beam at the transport entrance. On 89 held-out start-to-end simulations, the map predictor reproduces Elegant tracking for the mean energy, momentum spread, bunch length, transverse rms sizes and normalized emittances with coefficients of determination ($R^2$) of 0.97--1.00 and is ten times faster. The ExtraTrees model reaches an average $R^2$ of 0.88, compared with 0.58 when the injector settings are used as input, and performs similarly with eleven inputs that can be measured or reconstructed. Under a 2% input perturbation, the average $R^2$ of the six parameters other than the mean energy decreases only from 0.917 to 0.895, whereas the mean energy requires an accurate momentum calibration. The two predictors provide the IP-beam evaluation for the collider design and the prediction layer of a future digital twin.",
+  "authors": [
+    "Jiawei Zhang",
+    "Yongsheng Huang",
+    "Yuancun Nie",
+    "Qiang Gu",
+    "Yuan Chen",
+    "Yuanjie Bi"
+  ],
+  "published": "2026-11-05T13:53:45Z",
+  "updated": "2026-11-05T13:53:45Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
