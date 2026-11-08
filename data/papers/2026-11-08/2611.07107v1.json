@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.07107v1",
+  "url": "https://arxiv.org/abs/2611.07107v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.07107v1.pdf",
+  "title": "A physics-based adaptive low-rank method for 6D Vlasov simulations",
+  "abstract": "The numerical simulation of kinetic plasma models in six-dimensional phase space poses significant computational and memory challenges, particularly when considering modern high-performance computing architectures. In this work, we propose an adaptive dynamical low-rank approach for the efficient solution of the 6D Vlasov--Poisson system. Our strategy is an extension of the projector-splitting dynamical low-rank integrator. The algorithm changes the rank based on physical observables (e.g., the electric field and energy) as opposed to controlling the error in the distribution function. Our approach is memory efficient in the sense that only rank $r$ objects are required to implement the scheme. This makes the algorithm suitable for performing high-dimensional computations on graphic processing units. Comparisons with rank adaptive Basis-Update & Galerkin integrators exhibit both significant memory savings and reduction in run time. We show, by presenting a variety of 6D benchmark experiments implemented in the C++/CUDA low-rank framework Ensign, that our technique allows us to run simulations with a significantly smaller rank, while still preserving the physical fidelity. Thus, the approach substantially reduces memory footprint and computational cost and enables simulations that are prohibitively expensive for full-rank or less memory-efficient low-rank schemes.",
+  "authors": [
+    "Fabio Cassini",
+    "Lukas Einkemmer"
+  ],
+  "published": "2026-11-04T20:23:46Z",
+  "updated": "2026-11-04T20:23:46Z",
+  "categories": [
+    "math.NA",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}
