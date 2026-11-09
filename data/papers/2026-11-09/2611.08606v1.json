@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2611.08606v1",
+  "url": "https://arxiv.org/abs/2611.08606v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.08606v1.pdf",
+  "title": "Just CaloCHILL: fast hadronic shower generation in a learned latent space",
+  "abstract": "Calorimeter showers are the most expensive part of detector simulation, and highly granular calorimeters, in which a single hadronic shower leaves thousands of energy deposits, make them more expensive still. We present CaloCHILL (Calorimeter Hits In Learned Latents), a generative model that does not produce these deposits one by one: instead it generates a compact summary of the shower in a learned latent space and expands it to full resolution only at the end. The complete shower, including the arrival time of every hit, is built in three stages: a flow-matching model first sets the number of hits and the earliest hit time in each calorimeter layer, a mean-flow model then generates the latent summary, and the decompressor of a variational autoencoder turns it into the full point cloud, giving every hit its position, energy and time. Sparse attention along the shower axis keeps this compression affordable for showers with thousands of hits. On positive-pion showers in the calorimeter of the International Large Detector, a proposed detector for the FCC-ee, CaloCHILL reproduces the main shower observables, including their time structure. This new model is 600 times faster than its predecessor, while improving on all accuracy metrics considered.",
+  "authors": [
+    "Henry Day-Hall",
+    "Frank Gaede",
+    "Gregor Kasieczka",
+    "Katja Krüger",
+    "Martina Mozzanica"
+  ],
+  "published": "2026-11-05T19:01:02Z",
+  "updated": "2026-11-05T19:01:02Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex",
+    "hep-ph",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}
