@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2611.11061v1",
+  "url": "https://arxiv.org/abs/2611.11061v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.11061v1.pdf",
+  "title": "Symplectic Normal Coordinates Flow for Generative Modeling of Hamiltonian Systems",
+  "abstract": "In conditioned generative models of physical systems, the densities at different values of the conditioning parameters are often related through symplectic transformations. For stable linear Hamiltonian systems, there exists a symplectic transformation to \"normal coordinates\" such that the dynamics is reduced to rotations in each phase-space plane. This picture extends to the nonlinear case where, away from resonances, the Birkhoff normal form again consists of rotations in phase space, now with amplitude dependence. In this work, we introduce an invertible symplectic flow layer consisting of amplitude-dependent rotations in learned normal coordinates. We derive the condition under which the nonlinear rotation layer is symplectic and detail an architecture that guarantees it. Experiments are carried out on three conditional generative modeling problems: a synthetic chain of coupled nonlinear oscillators and two problems from accelerator physics. We show empirically that normalizing flows with the new layers achieve competitive or superior negative log-likelihoods compared to baseline flows, with gains that grow with the strength of the nonlinearity on the synthetic system.",
+  "authors": [
+    "Christopher M. Pierce"
+  ],
+  "published": "2026-11-08T01:26:19Z",
+  "updated": "2026-11-08T01:26:19Z",
+  "categories": [
+    "physics.acc-ph",
+    "cs.LG"
+  ],
+  "primary_category": "physics.acc-ph"
+}

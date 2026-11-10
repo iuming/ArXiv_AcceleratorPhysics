@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2611.10256v1",
+  "url": "https://arxiv.org/abs/2611.10256v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.10256v1.pdf",
+  "title": "GUERNICA: A continuum kinetic code for neutral dynamics in fusion plasmas",
+  "abstract": "We introduce GUERNICA, a GPU-accelerated continuum kinetic code for atomic hydrogen transport in fusion edge plasmas. It solves the Boltzmann equation with charge exchange, ionization, recombination and elastic neutral-neutral collisions. GUERNICA discretizes two-dimensional configuration space with the discontinuous Galerkin method on unstructured meshes and velocity space with the discrete velocity method in three dimensions, enabling direct simulation of the neutral distribution function without statistical noise. Unlike Monte Carlo methods, which introduce statistical noise and become computationally expensive in strongly collisional regimes, GUERNICA provides a deterministic alternative. An FFT-based evaluation of the full charge exchange operator reduces its computational complexity from $O(N_v^2)$ to $O(N_v \\log N_v)$, enabling computationally practical simulations in three-dimensional velocity space. We verify GUERNICA against analytic tests and validate it against one-dimensional Monte Carlo results from DEGAS2. The numerical tests demonstrate the expected convergence orders and discrete conservation properties, while the DEGAS2 comparisons show agreement in neutral density and temperature to within 1.6%. Performance studies confirm the expected scaling of the FFT-based charge exchange operator and demonstrate efficient execution on a single GPU. Finally, we demonstrate GUERNICA in two dimensions using a static plasma background from a MAST-U SOLPS-ITER simulation, with $8.6\\times 10^8$ phase-space degrees of freedom on a single GPU, illustrating the method's ability to resolve neutral dynamics in experimentally relevant divertor conditions.",
+  "authors": [
+    "Jack Gabriel",
+    "Saskia Mordijck"
+  ],
+  "published": "2026-11-06T21:46:11Z",
+  "updated": "2026-11-06T21:46:11Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

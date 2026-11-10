@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.10870v1",
+  "url": "https://arxiv.org/abs/2611.10870v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.10870v1.pdf",
+  "title": "Online Imitation Learning for Stabilizing Vlasov--Poisson Plasmas",
+  "abstract": "We study the problem of controlling instability in the Vlasov--Poisson plasma systems, a fundamental challenge for nuclear fusion control. Motivated by the partial observability of plasma states in practice, we investigate imitation learning algorithms that learn from a fully-observable expert controller, but operate under macroscopic measurements. We theoretically establish a separation between online and offline imitation learning --- even a small behavior cloning error leads to error compounding that exponentially amplifies instability over time. By way of contrast, the online imitation learning loss can polynomially control the stability of rollout trajectories. We then propose a DAgger-style algorithm that learns the stabilizing controller under partial observability. Simulation results on a 1D Vlasov--Poisson system demonstrate that our algorithm can effectively stabilize plasma instabilities over longer time horizons than behavior cloning.",
+  "authors": [
+    "Xiaofan Xia",
+    "Qin Li",
+    "Wenlong Mou"
+  ],
+  "published": "2026-11-07T17:43:44Z",
+  "updated": "2026-11-07T17:43:44Z",
+  "categories": [
+    "cs.LG",
+    "math.OC",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

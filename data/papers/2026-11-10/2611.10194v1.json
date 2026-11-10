@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2611.10194v1",
+  "url": "https://arxiv.org/abs/2611.10194v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.10194v1.pdf",
+  "title": "Test beam results for machine-learning-based reconstruction of resistive silicon sensors",
+  "abstract": "The advent of Low-Gain Avalanche Diodes (LGADs) and AC-coupled Low-Gain Avalanche Diodes (AC-LGADs) as candidate technologies for four-dimensional tracking has moved part of the reconstruction burden onto the analog waveforms of the sensor, in which the charge shared between electrodes encodes the impact position well below the electrode pitch. Recovering that position is a continuous, non-linear inverse problem. Transient Current Technique measurements characterize this problem at fixed injected charge and high signal-to-noise, whereas a minimum-ionizing beam adds Landau fluctuations in the deposited charge under detector operating conditions. We report test beam results for full-waveform reconstruction of an AC-LGAD of 500 $μ$m pitch read out on a $2\\times2$ pad matrix, exposed to the 120 GeV pion beam of the CERN Super Proton Synchrotron (SPS) and read out alongside a six-plane MIMOSA-26 telescope. The telescope is aligned, and its per-plane resolutions are calibrated in situ, giving a track pointing resolution of about 2.5 $μ$m per axis at the device, so that the measured residual is the sensor response rather than a convolution with the reference. We then compare two analytic estimators, the parameter-free charge-imbalance formula and a fitted linear matrix inversion, with the topology-agnostic transformer developed for resistive silicon sensors. Over the full active pad, the transformer reaches a median total position with up to factor 3 improvement. Within the charge-sharing core, the three methods converge to the floor of this sensor at the achieved signal-to-noise.",
+  "authors": [
+    "Don C. Wong",
+    "Leena Diehl",
+    "Spencer Ellis",
+    "Marcos Fernández García",
+    "Gabriele Giacomini",
+    "Vagelis Gkougkousis",
+    "Ben Kilminster",
+    "Jingyu Luo",
+    "Anna Macchiolo",
+    "Yajna Mahabeer",
+    "Yevhenii Padniuk",
+    "Daria Senina",
+    "Samantha Sunnarborg",
+    "Jessica Tang",
+    "Alessandro Tricoli",
+    "Lixing Wang",
+    "Gaetano Barone"
+  ],
+  "published": "2026-11-06T20:22:03Z",
+  "updated": "2026-11-06T20:22:03Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}
