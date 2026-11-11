@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2611.12209v1",
+  "url": "https://arxiv.org/abs/2611.12209v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.12209v1.pdf",
+  "title": "Heterogeneous Acceleration of TRIMEG++ code using OpenMP for Gyrokinetic Simulations",
+  "abstract": "Turbulent transport largely determines the performance of magnetic-confinement fusion devices such as tokamaks, and gyrokinetic particle-in-cell (PIC) simulations are a principal tool to predict it. Advancing up to hundreds of millions of markers and solving large sparse field systems at every time step makes whole-device simulations among the most expensive in plasma physics. GPUs can accelerate this workload, but porting a complex code requires restructuring its parallelism and memory traffic, ideally without a separate version per vendor. In this work, the gyrokinetic code TRIMEG-C1, whose unstructured triangular mesh and high-order finite elements cover both the confined core and the open-field-line edge of the plasma, is rewritten in C++ as TRIMEG++ and fully offloaded to GPUs with OpenMP target directives, so that one portable code base runs on both AMD and NVIDIA hardware. The particle-to-grid projection is offloaded in its standard and field-aligned formulations, the PETSc-based field solver runs on the GPU through the library's backends, and, together with the previously offloaded particle pusher, every stage whose cost scales with the marker count runs on the GPU. All speedups are node-to-node comparisons against a 256-core CPU node (2x AMD EPYC 9754). On the TCV-X21 tokamak reference case, the offloaded kernels reproduce the CPU results to a relative accuracy of 1e-11, and the full simulation runs 4.1-6.1x faster on a node with two AMD MI300A and 2.1-3.0x faster on a node with four NVIDIA A100, with the speedup growing with problem size. The MI300A, with shared CPU-GPU memory, needs no explicit data transfers, whereas the A100 needs them managed by hand. These results show that directive-based offloading can accelerate a complex gyrokinetic code across GPU vendors, making whole-volume tokamak simulations with hundreds of millions of markers practical on a single GPU node.",
+  "authors": [
+    "Nicola Noventa",
+    "Giorgio Daneri",
+    "Zhixin Lu",
+    "Matthias Hoelzl"
+  ],
+  "published": "2026-11-09T11:04:32Z",
+  "updated": "2026-11-09T11:04:32Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

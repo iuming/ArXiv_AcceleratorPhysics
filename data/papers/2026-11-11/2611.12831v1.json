@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.12831v1",
+  "url": "https://arxiv.org/abs/2611.12831v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.12831v1.pdf",
+  "title": "Numerical-Relativity Particle-in-Cell Simulations: Self-Gravitating Collisionless Matter in Dynamical Spacetimes",
+  "abstract": "Gravitational collapse and instability, black-hole dynamics in systems with large scale separations, and questions surrounding extremal black hole formation require full nonlinear studies using accurate and adapted numerical tools. To this end, we present a new algorithm to study collisionless relativistic systems using a fully kinetic description of matter coupled to the evolving spacetime. In detail, we present a numerical-relativity particle-in-cell (NRPIC) framework for solving the Einstein--Vlasov system in three spatial dimensions. Implemented on top of the performance-portable \\texttt{AthenaK} code, the method couples particle dynamics to Z4c spacetime evolution in moving puncture gauge through conservative stress-energy deposition on adaptively refined meshes. Our implementation makes use of advances in the computational modeling of relativistic plasmas using modern PIC models, now made available to general-relativistic gravity via an equivalent electrodynamic formulation. We introduce a Boris-type particle pusher that exploits the electrodynamic (Lorentz force) form of the geodesic force. We validate the coupled evolution against spherical dust collapse, follow prolate collapse through collisionless caustics into black-hole formation, and investigate the stability and nonlinear migration of relativistic clusters. Highlighting its potential to study gravitational instability in NR, we simulate the collapse of two overdensities within a common collisionless envelope, following black-hole formation, binary inspiral and merger, and subsequent mass accretion onto the remnant.",
+  "authors": [
+    "Jiaxi Wu",
+    "Elias R. Most"
+  ],
+  "published": "2026-11-09T18:30:08Z",
+  "updated": "2026-11-09T18:30:08Z",
+  "categories": [
+    "gr-qc",
+    "astro-ph.GA",
+    "astro-ph.HE",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "gr-qc"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.12689v1",
+  "url": "https://arxiv.org/abs/2611.12689v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.12689v1.pdf",
+  "title": "CoilStellaration: A Dataset and Benchmark for Engineering-Aware Stellarator Coilset Generation",
+  "abstract": "Stellarators are fusion devices that use externally generated, three-dimensional magnetic fields to confine hot plasma and offer a promising route to commercial fusion. Their electromagnetic coils pose a challenging design problem: they must reproduce the target magnetic field while satisfying engineering constraints and remaining practical and cost-effective to manufacture. Finding suitable geometries is a highly nonlinear inverse problem that generally has neither a closed-form nor a unique solution. This problem lies at the heart of stellarator design. We introduce CoilStellaration, a dataset and benchmark for learning the mapping between coil geometries from target plasma magnetic fields and engineering requirements. The dataset contains 177,000 optimized filamentary coilsets targeting plasma equilibria from ConStellaration, with sampled engineering requirements and achieved geometric and magnetic-field metrics. It spans multiple coil counts and field-period numbers, supporting studies of both specialized and shared models across configurations. The benchmark asks models to predict coils conditioned on a target equilibrium and requirements on coil-coil and coil-plasma spacing, curvature, and magnetic-field error. We show that magnetic-field accuracy remains the main challenge, with learned models rarely satisfying all requirements simultaneously. However, using learned predictions to initialize conventional coil optimization can accelerate early progress. We release baseline models and evaluation code to support reproducible research on both direct coil generation and learned optimization initializations. By lowering the barrier for machine learning and optimization researchers to engage with stellarator coil design, we aim to accelerate progress toward practical, cost-effective stellarator power plants.",
+  "authors": [
+    "Jan-Hendrik Ewers",
+    "Santiago A. Cadena",
+    "Nicolò Foppiani",
+    "Andrea Merlo"
+  ],
+  "published": "2026-11-09T16:50:14Z",
+  "updated": "2026-11-09T16:50:14Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}
