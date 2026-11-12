@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.11505v1",
+  "url": "https://arxiv.org/abs/2611.11505v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.11505v1.pdf",
+  "title": "A 40 Gbit/s FPGA-based RoCEv2 transport for detector readout: development and performance",
+  "abstract": "Recording the complete input of a detector trigger allows trigger algorithms to be replayed and studied offline. For the BESIII main drift chamber (MDC), this requires moving tens of Gbit/s from trigger FPGAs into server memory without loss. Remote direct memory access over Converged Ethernet (RoCEv2) lets commercial network adapters write such data into host memory. Detector readout also needs record boundaries that the receiver can check, replay from a verified copy, and host buffers that are reused only after consumption. We present a 40 Gbit/s FPGA RoCEv2 transport that provides these functions. Records are aggregated into CRC32C-checked blocks, and unacknowledged data are kept in DDR memory and verified before replay. Acknowledgment-aware retention writes to DDR only the data that are not acknowledged in time. The transport runs on a ZCU102 board and on the 9U VME Trigger Core Board (TCB). With records of 128 B to 4 KiB it comes within 0.4% of the packetization limit of the link, delivering 36.9 Gbit/s of payload at a path MTU of 1024 B, and its block latency is set by the time needed to fill a block. On a direct link, acknowledgment-aware retention cuts DDR writes for large blocks from 106% to 0.03% of the payload, and injected DDR access errors stay within their queue pair. On the TCB, three 16.4 TB transfers through two switches lost at most five packets each, all recovered by replay. An installation at the MDC is under test.",
+  "authors": [
+    "Sheng Dong",
+    "Jingzhou Zhao",
+    "Haoxin Wang",
+    "Tingxuan Zeng",
+    "Fei Li"
+  ],
+  "published": "2026-11-08T17:17:46Z",
+  "updated": "2026-11-08T17:17:46Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
