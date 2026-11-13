@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2611.17099v1",
+  "url": "https://arxiv.org/abs/2611.17099v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.17099v1.pdf",
+  "title": "Adaptive carrier signal synthesis for frequency-division multiplexed cryogenic detector readout",
+  "abstract": "Frequency-domain multiplexing is a fundamental technology for readout of cryogenic detector arrays on a single transmission line. Synthesizing a large number of static carrier tones for resonator stimulation eventually drives the cryogenic low-noise amplifier beyond its P1dB, introducing detector signal distortion. Scaling array sizes to O(10^6) detector pixels therefore demands minimizing the total power on the transmission line by continuous tracking of the resonances, which requires the readout electronics to be capable of updating the carrier tones dynamically. This work presents an scalable FPGA-based implementation for carrier signal synthesis based on a numerically controlled oscillator and a polyphase filter bank, enabling real-time frequency adaptivity as well as frequency resolution of 4 mHz to precisely tune the operating point, while simultaneously reducing resource usage compared to the current memory-based implementation.",
+  "authors": [
+    "Timo Muscheid",
+    "Benedikt Keppner",
+    "Daniel Crovo",
+    "Robert Gartmann",
+    "Marvin Fuchs",
+    "Lukas Scheller",
+    "Oliver Sander",
+    "Luis E. Ardila-Perez"
+  ],
+  "published": "2026-11-12T16:59:11Z",
+  "updated": "2026-11-12T16:59:11Z",
+  "categories": [
+    "physics.ins-det",
+    "eess.SP"
+  ],
+  "primary_category": "physics.ins-det"
+}

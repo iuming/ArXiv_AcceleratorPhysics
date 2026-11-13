@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2611.17086v1",
+  "url": "https://arxiv.org/abs/2611.17086v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.17086v1.pdf",
+  "title": "Partition of Unity Data-driven Finite Element Method for Anisotropic Diffusion in Magnetized Plasmas",
+  "abstract": "Numerical simulation of transport processes in magnetized plasmas is characterized by extreme anisotropy, where diffusion along magnetic field lines can be many orders of magnitude larger than in the perpendicular direction. This anisotropy leads to thin, steep boundary layers and numerical pollution that standard finite element methods struggle to resolve without prohibitive mesh refinement. In this paper, we introduce the Partition of Unity Data-Driven Finite Element Method (PU-DDFEM), a data-driven local model reduction approach, for anisotropic diffusion. The method utilizes a bottom-up construction to enable a complete offline-online splitting. We parametrize the local magnetic field and boundary conditions to generate a snapshot space that captures the essential physics of plasma confinement. Dominant modes are extracted via a local spectral problem to identify representative features. These modes are then mapped to the global domain using a partition of unity to form a conforming approximation space. This ensures that the basis functions are fully reusable across different global magnetic configurations, significantly reducing the online computational overhead for large-scale plasma simulations.",
+  "authors": [
+    "Siu Wun Cheung",
+    "Youngsoo Choi"
+  ],
+  "published": "2026-11-12T16:50:55Z",
+  "updated": "2026-11-12T16:50:55Z",
+  "categories": [
+    "math.NA",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}
