@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2611.15095v1",
+  "url": "https://arxiv.org/abs/2611.15095v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.15095v1.pdf",
+  "title": "Data-driven non-contiguous photon-energy groups for fast multigroup radiation transport in line-dominated plasmas",
+  "abstract": "Opacity of mid- and high-$Z$ plasmas is dominated by thousands of overlapping spectral lines. Examples are laser-produced plasmas for extreme-ultraviolet (EUV) lithography, inertial-fusion hohlraums, and stellar interiors. Radiation transport in such plasmas needs more than 1000 photon-energy groups in the EUV case, and this makes radiation-hydrodynamic simulations very expensive. We show that the accuracy of a small-group opacity model can be recovered by choosing properly \\emph{which} fine bins are put into the same group. We present a data-driven method that assigns the fine bins of a detailed opacity and emissivity table to $K$ \\emph{non-contiguous} groups. Each group has a fixed spectral shape inside it. The groups follow from one requirement: the reduced absorption operator must be diagonal for every plasma state. They are determined from a Gram matrix of spectra, taken from detailed-group solutions of a small part, for example 5\\% in this work, of the parameter space. The reduced model is a set of $K$ uncoupled flux-limited diffusion equations. It can be used in an existing multigroup code by replacing the opacity table. For a Sn plasma with electron densities of $4\\times10^{15}$--$1.1\\times10^{21}$~cm$^{-3}$, electron temperatures of 5--250~eV, and scale lengths of 2.5--6900$\\um$, the model with $K=100$ reproduces the total flux of the 1500-group reference with a median error of 2\\% and a 90th-percentile error of 8\\%. The 90th-percentile error is ten times smaller than that of a conventional 100-group model at the same cost.",
+  "authors": [
+    "Shinsuke Fujioka",
+    "Yuji Takagi",
+    "Akira Sasaki",
+    "Yu Yamamoto",
+    "Nozomi Tanaka",
+    "Muhammad Fauzan Syahbana",
+    "Katsunobu Nishihara",
+    "Tomoyuki Johzaki",
+    "Atsushi Sunahara",
+    "Masashi Yoshimura"
+  ],
+  "published": "2026-11-11T06:11:48Z",
+  "updated": "2026-11-11T06:11:48Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
