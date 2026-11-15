@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.14820v1",
+  "url": "https://arxiv.org/abs/2611.14820v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.14820v1.pdf",
+  "title": "Plasma simulations with adaptive mesh and algorithm refinement",
+  "abstract": "Adaptive Mesh and Algorithm Refinement (AMAR) combines adaptive Cartesian meshes with automatic selection of kinetic or fluid solvers. It was introduced for rarefied gas dynamics and later extended to gas mixtures, particle and lattice-Boltzmann solvers, computational electromagnetics, and multi-phase flows. In weakly ionized plasmas, the species differ by orders of magnitude in mass, velocity, and time scale. This paper describes PAMAR, a plasma extension of AMAR in which electrons, ions, neutral species, and fields can have independent adaptive-mesh solvers, each with its own phase-space dimensionality, refinement criteria, and time step, coupled through a field solver in one executable built on the Basilisk framework. We present two demonstrations. A transient capacitively coupled plasma in argon is simulated with two-stream kinetic solvers for electrons and ions on independent adaptive quadtrees in $(x,v)$. The simulations resolve three electron groups and the time scales of electron and ion kinetics without statistical noise, at a cost between particle-in-cell simulations and fast kinetic models. A sphere at floating potential in a collisionless or weakly collisional plasma is computed with octree solvers in $(r,v,μ)$ for both species and compared with an exact method-of-characteristics solution. Per-species meshes resolve the cold ions at a tenth of the uniform-mesh cost. Both demonstrations also select the model cell by cell. In the capacitive discharge, a hybrid ion solver is kinetic in the sheaths and fluid in the bulk. Around the sphere, a hybrid electron solver confines the kinetic solver to the loss-cone layer and uses a Fokker-Planck model in position and total energy elsewhere. It conserves particles exactly across the interface and uses 1.6 to 5.3 times fewer cells. We discuss the next steps toward parallel, implicit simulations of higher-dimensional problems.",
+  "authors": [
+    "Vladimir I. Kolobov",
+    "Robert R. Arslanbekov"
+  ],
+  "published": "2026-11-10T23:19:01Z",
+  "updated": "2026-11-10T23:19:01Z",
+  "categories": [
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.comp-ph"
+}

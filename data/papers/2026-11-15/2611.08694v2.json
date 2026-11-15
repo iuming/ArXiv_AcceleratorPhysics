@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2611.08694v2",
+  "url": "https://arxiv.org/abs/2611.08694v2",
+  "pdf_url": "https://arxiv.org/pdf/2611.08694v2.pdf",
+  "title": "GeoRead: Geometry-Aware Transformer for Continuous AC-LGAD Readout Reconstruction",
+  "abstract": "AC-coupled Low-Gain Avalanche Diodes (AC-LGADs) are promising silicon sensor technologies for high-precision four-dimensional tracking. Position reconstruction in AC-LGADs relies on correlations among waveforms induced on multiple readout pads, where analytically solving the signal propagation becomes difficult, motivating data-based machine learning reconstruction. Existing machine learning approaches generally assume a fixed readout pad layout and predict one hit from an isolated, temporally aligned waveform window. These assumptions limit their flexibility across sensor designs and applicability to continuous readout where signal arrival times are not known in advance and multiple hits might overlap in the same waveforms. We introduce GeoRead, a spatial-temporal Transformer enabling multi-event continuous position prediction and uncertainty estimation. We incorporate relative pad positions into attention and produces time-resolved hit position estimates with predictive uncertainties. Time-jitter and additive event-mixing augmentations are used to train the model on temporally misaligned and overlapping waveforms synthesized from single-event measurements. Using four-channel transient-current-technique (TCT) data of a 500\\mum-pitch AC-LGAD, GeoRead achieves median position errors of 5.8\\mum within the convex hull of the readout-pad centers and 8.2\\mum over the full scanned region at 190\\volt. The model maintains comparable accuracy under temporal shifts and demonstrates time-resolved reconstruction of superposed events, without predefined per-event window. These results provide a basis for extending waveform-based position reconstruction toward continuous readout and flexible sensor geometries.",
+  "authors": [
+    "Lixing Wang",
+    "Leena Diehl",
+    "Spencer Ellis",
+    "Marcos Fernández García",
+    "Gabriele Giacomini",
+    "Vagelis Gkougkousis",
+    "Ben Kilminster",
+    "Jingyu Luo",
+    "Anna Macchiolo",
+    "Yajna Mahabeer",
+    "Yevhenii Padniuk",
+    "Daria Senina",
+    "Samantha Sunnarborg",
+    "Jessica Tang",
+    "Alessandro Tricoli",
+    "Don C. Wong",
+    "Gaetano Barone"
+  ],
+  "published": "2026-11-05T20:50:57Z",
+  "updated": "2026-11-10T21:34:21Z",
+  "categories": [
+    "hep-ex",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "hep-ex"
+}
