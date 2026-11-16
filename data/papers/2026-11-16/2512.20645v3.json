@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2512.20645v3",
+  "url": "https://arxiv.org/abs/2512.20645v3",
+  "pdf_url": "https://arxiv.org/pdf/2512.20645v3.pdf",
+  "title": "Machine learning methods for subpixel trajectory reconstruction in discretized position detectors",
+  "abstract": "We evaluate machine-learning methods for sub-pixel position and trajectory-angle reconstruction in scintillator detectors. Geant4 simulations use two $50 \\times 50$ cm plastic-scintillator planes separated by 30 cm, each represented by an $8 \\times 8$ grid of 64 touching computational cells of pitch 6.25 cm. The plates are optically continuous. Photons reaching any outer face are absorbed and scored once in the pre-step cell. We sum the collected photon energies in each cell and normalize the signals to the plane total. Photodetectors and electronics are not simulated. We compare a transformer, a convolutional neural network (CNN), a multilayer perceptron (MLP), and an energy-weighted centroid. We compute directions from the two reconstructed positions. On a common 19,053-event test set, transformer and CNN median position errors (per-event means of the two planes' radial errors) are 0.18 and 0.23 cm, or 2.9% and 3.6% of the cell width. Their median space-angle errors are $0.35^\\circ$ and $0.52^\\circ$, compared with 1.03 cm and $1.90^\\circ$ for the centroid and $4.21^\\circ$ for an idealized Monte Carlo reference retaining only the traversed cell. The transformer has the lowest median errors, whereas the CNN has the lowest position- and angular-RMSE point estimates. Large-error tails limit the RMSE gains. Learned methods recover sub-pixel information in this idealized response. Establishing gains for muon tomography requires realistic optical coupling, photodetector response, and electronics.",
+  "authors": [
+    "Matthew Mark Romano",
+    "Zhengzhi Liu",
+    "JungHyun Bae"
+  ],
+  "published": "2025-12-12T20:18:27Z",
+  "updated": "2026-11-11T19:06:37Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.18409v1",
+  "url": "https://arxiv.org/abs/2611.18409v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.18409v1.pdf",
+  "title": "Fuse-PINN: Combining Finite Element Methods and Physics-Informed Neural Networks to enable massively parallel simulations of non-linear PDEs",
+  "abstract": "Research in the domain of Physics-Informed Neural Networks applied to PDE modelling has advanced significantly in recent years, providing a wide ecosystem of novel methods. However, one frequent limitation is the inability of PINNs to scale out on High-Performance Computing architectures to address more ambitious challenges, particularly non-linear physics models with turbulent dynamics in large spatial domains. Typical studies restrain demonstrations to toy models with simple physics equations, few variables, and rarely any complex non-linear dynamics evolved over long timescales. Part of the AI community has even adopted the idea that \"PINNs don't scale\". This work proves otherwise. We present a mathematically robust formulation of Finite-Element-Method for Neural Networks (FEM-NN) implemented into a comprehensive, modular framework: Fuse-PINN. This formulation provides the basis for a sclable parallelisation of Physics-Informed Neural Networks on GPU-based HPC systems. Furthermore, an Energy Natural Gradient Descent optimiser is implemented to allow high-precision convergence. Fuse-PINN is demonstrated on physics models relevant to Magnetic Confinement Fusion, including non-linear convective models with fine-scale dynamics. Near-perfect scaling is achieved on multi-GPU runs with increasing problem size.",
+  "authors": [
+    "Stanislas Pamela",
+    "Nicolas Pailliez",
+    "Emmanuel Franck",
+    "Victor Michel-Dansac",
+    "Laurent Navoret",
+    "Vignesh Gopakumar"
+  ],
+  "published": "2026-11-13T16:55:03Z",
+  "updated": "2026-11-13T16:55:03Z",
+  "categories": [
+    "cs.LG",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "cs.LG"
+}

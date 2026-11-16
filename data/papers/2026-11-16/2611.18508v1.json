@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.18508v1",
+  "url": "https://arxiv.org/abs/2611.18508v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.18508v1.pdf",
+  "title": "Restoring Consistency with Poynting's Theorem in Numerical MHD and RMHD",
+  "abstract": "For perfectly conducting plasmas, Poynting's theorem states that the time rate of change of electromagnetic energy density equals the negative of the divergence of the Poynting flux. To the best of our knowledge, this involutive theorem has never been mimetically incorporated in codes. We show that there is an inconsistency in MHD and RMHD codes that evolve face-centered magnetic fields in globally-divergence-free fashion. This is because the face-centered flux of energy density, which incorporates a Poynting vector, is evaluated using one-dimensional Riemann solvers that are applied at face-centers. However, the face-centered magnetic fields are evolved according to edge-centered electric fields that come from two-dimensional Riemann solvers that are applied to the edges of a zone. While edge-centered electric fields are used to evolve the magnetic field, they have no influence on the face-centered Poynting flux. For situations where the magnetic energy is much larger than the thermal energy, this causes a negative pressure to be evaluated at the zone-centers. This paper restores consistency by using edge-centered variables to evaluate a face-centered Poynting flux. A simple accuracy-preserving correction is made to the face-centered flux of energy density. We show that it helps considerably in simulations that have very strong magnetic fields.",
+  "authors": [
+    "Dinshaw S. Balsara",
+    "Deepak Bhoriya"
+  ],
+  "published": "2026-11-13T18:24:16Z",
+  "updated": "2026-11-13T18:24:16Z",
+  "categories": [
+    "math-ph",
+    "astro-ph.IM",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math-ph",
+  "doi": "10.3847/1538-4365/aebbb2"
+}
