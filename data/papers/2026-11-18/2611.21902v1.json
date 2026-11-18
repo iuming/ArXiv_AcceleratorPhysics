@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2611.21902v1",
+  "url": "https://arxiv.org/abs/2611.21902v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.21902v1.pdf",
+  "title": "Conformal Uncertainty Quantification of a Normalizing Flow Surrogate for the FACET-II Two-Bunch Beam",
+  "abstract": "Fast surrogate models of the beam can be used for tuning, diagnostics, and control where end-to-end simulation is too slow. At FACET-II, a normalizing flow surrogate predicts the 6D high peak current two-bunch beam used for plasma wakefield acceleration (PWFA) in less than a second, from 37 injector and linac machine parameters (such as the RF phases controlling the bunch compression). However, a surrogate can predict an incorrect beam that seems plausible, so operators and controllers need to know when to trust its predictions. We use conformal prediction to generate a prediction-specific uncertainty with guaranteed coverage. That is, if we sample new machine parameters from the same distribution as our calibration data, the uncertainty will cover the simulation output at least 90% of the time. We provide two implementations: prediction intervals for beam parameters with fixed and adaptive widths, and a region in the full 6D phase space covering 95% of the electrons, 90% of the time. The median size of this region is 5 (drive) and 2 (witness) times smaller than a Gaussian ellipsoid with the same coverage. Across 1,000 independent test simulations, our prediction intervals identify failure cases for the surrogate, specifically the slice peak current of highly compressed bunches.",
+  "authors": [
+    "Ryan Wu",
+    "Jessie Dong",
+    "Auralee Edelen",
+    "Mykel J. Kochenderfer"
+  ],
+  "published": "2026-11-16T21:14:11Z",
+  "updated": "2026-11-16T21:14:11Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

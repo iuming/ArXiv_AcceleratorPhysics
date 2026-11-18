@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.21466v1",
+  "url": "https://arxiv.org/abs/2611.21466v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.21466v1.pdf",
+  "title": "A spherical body in plasma simulated with adaptive mesh and algorithm refinement",
+  "abstract": "An absorbing sphere in a weakly ionized plasma is the oldest kinetic problem of probe theory. It presents key difficulties in plasma simulation: disparate velocity scales, orbital motion, phase-space regions that no characteristic of the plasma reaches, a boundary set by a kinetic flux balance, and collisions that qualitatively change the answer. We use this problem to demonstrate the Plasma Adaptive Mesh and Algorithm Refinement (PAMAR) framework introduced in a companion paper. Electrons and ions have separate solvers on their own adaptive $(r,v,μ)$ octrees, or on reduced phase spaces at the angular-moment level (Fokker-Planck and two-stream models), coupled through a radial Poisson field solver. Two exact references, a method of characteristics for the collisionless problem and integration along the orbits for elastic scattering, audit the solvers. We compute the current-voltage characteristic of the probe on both electron and ion branches, and the profiles of the potential and of the moments of both species agree with the exact solution. Far from the sphere, the potential follows the Coulomb law in neither limit: it falls as $r^{-2}$ without collisions and as $r^{-1}$ only beyond the ion mean free path. With elastic electron scattering, the kinetic solver follows the exact dependence of the collected current on the mean free path, from free flight toward diffusion, to 1 percent. Finally, we demonstrate the ion model selection cell by cell, using a fluid model coupled to the kinetic solver, with the interface set by the pressure anisotropy; with charge exchange, a sensor of ion trapping is also needed. According to exact solutions, the ion anisotropy extends to several probe radii, much farther than the electron loss cone.",
+  "authors": [
+    "Vladimir I. Kolobov",
+    "Robert R. Arslanbekov"
+  ],
+  "published": "2026-11-16T17:46:48Z",
+  "updated": "2026-11-16T17:46:48Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

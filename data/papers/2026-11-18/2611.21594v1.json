@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2611.21594v1",
+  "url": "https://arxiv.org/abs/2611.21594v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.21594v1.pdf",
+  "title": "Surrogate-Assisted Compact-Model Extraction for SKY130 CMOS at 77 K",
+  "abstract": "Cryogenic circuit design requires compact transistor models that reproduce measured low-temperature behavior and run in standard circuit simulators. We fit BSIM4 parameters to measured I-V curves of SkyWater 130 nm (SKY130) transistors at 77 K using a neural surrogate of NGSpice. The surrogate maps compact-model parameters and device geometry to the complete set of output and transfer characteristics. Extraction is a bounded least-squares search: a bank of NGSpice simulations supplies initial candidates, finite differences of the surrogate supply the local Jacobian, and NGSpice re-simulates the resulting cards before selection. On 18 measured geometries, we compare a search over seven card parameters with a search over 43 parameters selected by NGSpice sensitivity. Relative to NGSpice re-simulations of the previously released cards, the two searches reduce the in-sample mean relative root-mean-square error (RRMS) by 17% and 26%, respectively. The 43-parameter search has the lower overall error, but the seven-parameter search has the lower mean on high-bias curves, and some individual curves have higher error than with the released cards under both searches.",
+  "authors": [
+    "Aaron Wang",
+    "Olivia Gzamouranis",
+    "Vaibhav Lohia",
+    "Hershel Fei Xun Weiner",
+    "Olivia Seidel",
+    "Richard Cavanaugh",
+    "Giuseppe Di Guglielmo",
+    "Nhan Tran",
+    "Davide Braga"
+  ],
+  "published": "2026-11-16T18:57:06Z",
+  "updated": "2026-11-16T18:57:06Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.ET",
+    "cs.LG",
+    "physics.app-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}

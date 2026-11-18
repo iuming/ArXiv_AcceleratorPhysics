@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.22165v1",
+  "url": "https://arxiv.org/abs/2611.22165v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.22165v1.pdf",
+  "title": "Learning Similarity-Reduced Ion Kinetics across Scales and Regimes in Capacitively Coupled Plasmas",
+  "abstract": "Systematic kinetic investigations of discharge-mode and heating-mechanism transitions in low-pressure capacitively coupled plasmas (CCPs) are computationally expensive because particle-in-cell/Monte Carlo collision (PIC/MCC) simulations must resolve the inherently slow ion relaxation.In this Letter, we propose a similarity-reduced ion-kinetic representation and a machine learning (ML) reconstruction method for weakly ionized Boltzmann-Poisson discharge systems.Using discharge similarity, the three-dimensional control parameter space, comprising gas pressure p, gap distance d, and driving frequency f, is reduced into a two-dimensional similarity space (pd, fd).A dual-branch ML model predicts the ion density profile at the reference scale and the conditional ion velocity distribution.Taking a 1D3V argon discharge as the paradigm, we use the reconstructed ion kinetic state to initialize the PIC/MCC simulation, which then relaxes to a self-consistent periodic steady state after only a brief evolution.Compared to conventional uniform initializations, this approach achieves a maximum computational speedup of 56.8 times and a median speedup of 27.7 times.Furthermore, the physical regimes of complex nonlinear discharge transitions, including the alpha--gamma mode transition, local-to-nonlocal electron collisional heating mode transition and low-density jumps, are accurately mapped within the similarity space.Similarity transformations extend these boundaries across scales, opening a new avenue for rapid kinetic characterization and optimization of radio-frequency plasma sources.",
+  "authors": [
+    "Zeduan Zhang",
+    "Jianxiong Yao",
+    "Long Chen",
+    "Yangyang Fu",
+    "Feng He",
+    "Jiting Ouyang",
+    "Bocong Zheng"
+  ],
+  "published": "2026-11-17T03:57:11Z",
+  "updated": "2026-11-17T03:57:11Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
