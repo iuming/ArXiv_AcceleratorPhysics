@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.26057v1",
+  "url": "https://arxiv.org/abs/2611.26057v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.26057v1.pdf",
+  "title": "SlotFlow-GB: A Neural Framework for Trans-Dimensional Inference of Overlapping Galactic Binaries",
+  "abstract": "The Laser Interferometer Space Antenna (LISA) will observe the millihertz gravitational-wave sky, including millions of long-lived Galactic binaries (GBs), tens of thousands of which are expected to be individually resolvable throughout the mission's lifetime. Extracting these sources requires jointly determining their number and physical parameters from strongly overlapping signals, posing a computationally demanding trans-dimensional inference problem. We introduce SlotFlow-GB, a neural framework that constructs a learned approximation to the trans-dimensional posterior, producing a probability distribution over source multiplicity and parameter densities for individual binaries in a single evaluation, without requiring their number to be specified in advance. We demonstrate this framework using year-long LISA simulations containing up to ten binaries within a 2 $μ$Hz frequency interval, focusing on a high-SNR regime in which source overlap, rather than individual-source detectability, is the primary challenge. The inferred source count differs from the true count by at most one in 94% of cases, while the model identifies individual binaries even when their signals overlap strongly in frequency. A complete evaluation, including parameter sampling, takes just 41 ms per band on one NVIDIA GH200 GPU, or 530 ms on eight laptop CPU threads. We further demonstrate that these distributions can be used to initialize subsequent likelihood-based inference, connecting fast amortized predictions with joint parameter estimation.",
+  "authors": [
+    "Niklas Houba",
+    "Giovanni Giarda",
+    "Davide Piras"
+  ],
+  "published": "2026-11-19T13:01:48Z",
+  "updated": "2026-11-19T13:01:48Z",
+  "categories": [
+    "astro-ph.IM",
+    "cs.LG",
+    "gr-qc",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}
