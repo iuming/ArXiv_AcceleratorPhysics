@@ -1,0 +1,17 @@
+{
+  "arxiv_id": "2611.24061v1",
+  "url": "https://arxiv.org/abs/2611.24061v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.24061v1.pdf",
+  "title": "The ALICE asynchronous software trigger processing for LHC Run 3",
+  "abstract": "The detector and computing upgrades for LHC Run 3 enable ALICE to continuously acquire proton--proton (pp) and lead--lead (Pb--Pb) collisions at interaction rates of up to 1.5 MHz and 50 kHz, respectively. The resulting pp dataset is more than three orders of magnitude larger than the combined Run 1 and Run 2 samples, and its long-term retention in full would be impractical given the available storage capacity.   To address this challenge, ALICE has implemented a physics-driven asynchronous software trigger designed to retain only collisions containing signals of physics interest. Following full asynchronous reconstruction, the Central Event Filter Processor applies more than 100 analysis-based selection channels spanning the ALICE pp physics programme. The selected collisions are then used to skim the original Compressed Time Frames (CTFs), preserving the relevant detector information within detector-specific time windows. This procedure reduces the retained CTF volume to approximately 4.5% of its original size, while preserving the possibility of future reconstruction with improved calibrations and software.   This contribution describes the implementation and operation of the asynchronous software trigger, from collision selection to CTF skimming, and highlights how this strategy provides access to rare signals and processes across the ALICE physics programme.",
+  "authors": [
+    "Sara Pucillo for the ALICE Collaboration"
+  ],
+  "published": "2026-11-18T08:55:33Z",
+  "updated": "2026-11-18T08:55:33Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}
