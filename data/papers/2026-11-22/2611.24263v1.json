@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.24263v1",
+  "url": "https://arxiv.org/abs/2611.24263v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.24263v1.pdf",
+  "title": "Design and performance of the front-end readout electronics for LACT",
+  "abstract": "The Large Array of Imaging Atmospheric Cherenkov Telescope (LACT) will complement the Large High Altitude Air Shower Observatory (LHAASO) with a target angular resolution of 0.05 degrees to resolve the morphology of Very-High-Energy gamma-ray sources. The array is designed to comprise 32 telescopes with 6-meter apertures within LHAASO at an altitude of approximately 4410 meters. Each camera contains 1616 silicon photomultipliers (SiPMs). We developed a front-end readout electronics (FEE) board integrating 16 channels of SiPM gain compensation and high-speed waveform sampling for operation at high altitude and over a wide temperature range. The gain compensation circuit independently adjusts the operating voltage of each SiPM according to its temperature and monitors the actual operating voltage. Previous tests of the adopted compensation scheme showed SiPM gain drift below 2% from -20 to 30 degrees Celsius. The waveform sampling circuit uses two 14-bit AC9628 analog-to-digital converters, each operating in eight-channel mode, to digitize the SiPM pulse waveform at 250 million samples per second. The integral nonlinearity of the DC response is 0.0709% over a differential DC voltage range of -950 mV to +950 mV at the AC9628 input. Equivalent electrical pulses with a full width at half maximum of 37.42 ns are used to simulate the SiPM output signals. At a differential pulse amplitude of approximately 237 mV at the AC9628 input, the pulse integral area resolution is 0.2725%. This paper presents the circuit design and performance tests of the FEE for the LACT camera.",
+  "authors": [
+    "Changge Zi",
+    "Jinfan Chang",
+    "Fengfan Yang",
+    "Ming Wei",
+    "Wei Wei"
+  ],
+  "published": "2026-11-18T11:45:28Z",
+  "updated": "2026-11-18T11:45:28Z",
+  "categories": [
+    "physics.ins-det",
+    "astro-ph.IM"
+  ],
+  "primary_category": "physics.ins-det"
+}

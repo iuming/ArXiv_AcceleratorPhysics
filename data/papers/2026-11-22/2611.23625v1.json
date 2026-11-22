@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.23625v1",
+  "url": "https://arxiv.org/abs/2611.23625v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.23625v1.pdf",
+  "title": "Time-Varying Bayesian Optimization and Extremum Seekingfor Drift-Tube Linac Tuning at LANSCE",
+  "abstract": "Bayesian optimization (BO) has emerged as a promising machine learning approach to accelerator tuning. It has the advantage of being able to incorporate prior information, including simulation and historical data, and explicitly model measurement noise. However, standard implementations can produce large, abrupt parameter updates that are undesirable and potentially unsafe in accelerator operation. They may also spend excessive time exploring less promising regions of the search space. We address these limitations by imposing soft and hard step size limits. We evaluate these methods by adjusting the radio frequency settings of the drift tube linac (DTL) at the Los Alamos Neutron Science Center (LANSCE) to maximize the particle count at the end of the linac. We first test the methods in simulation with constant exogenous parameters, then repeat the tests with drifting exogenous parameters. Under drifting conditions, progressively reducing the BO step size limit improved convergence. We also find that an initial BO segment followed by extremum seeking (ES), an approach we call BO-ES, combines BO's use of prior information and sample efficiency with ES's effectiveness in local optimization and drift tracking. Finally, tests on the LANSCE accelerator with BO-ES demonstrate an approximately $25\\%$ reduction in losses at the end of the linac across different configurations of historical and simulation data.",
+  "authors": [
+    "Christopher Leon",
+    "Diego Andrés Rivera Orona",
+    "Brad Ratto",
+    "En-Chuan Huang",
+    "Alexander Scheinker"
+  ],
+  "published": "2026-11-17T23:38:26Z",
+  "updated": "2026-11-17T23:38:26Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.24776v1",
+  "url": "https://arxiv.org/abs/2611.24776v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.24776v1.pdf",
+  "title": "4D-TEMPO: Differentiable 4D-STEM ptychography via fast Physics Optimizers",
+  "abstract": "Electron ptychography recovers atomic structure from 4D-STEM data: diffraction patterns at multiple positions of a scanned probe. Current codes reconstruct an image and read atoms off it, or fit atoms under an $L_1$ loss; neither gives per-atom uncertainty. We propose 4D-TEMPO, a differentiable physical renderer that fits the atoms, the microscope, and the detector directly to the recorded electron counts under a Poisson likelihood. The output is a list of atoms, each a Gaussian primitive with a 3D position, a thermal width, and a model-conditional error bar from the Fisher information. The Fisher information also conditions the solver, gives the dose (electrons per Å$^2$) each parameter needs, and separates calibration from imaging. On a simulated WSe$_2$ bilayer, starting from the published reconstruction, fitted atoms cut in-plane error by a third (3.2 vs. 4.8 pm) and depth error by 40-61% against its 3D peaks. Depth comes from multiple scattering into the dark field, the faint counts outside the direct beam. The two layers, $10\\times$ closer than the depth of field, separate; per-atom depth then follows the layer geometry. When the model is well specified, the bars are calibrated (69% of position coordinates within $1σ$). On experimental WSe$_2$, fitted atoms predict held-out patterns better than the three published codes we test. With free probe modes where atoms are incomplete, the same likelihood predicts best on all three held-out benchmarks, matches every WSe$_2$ baseline in 5 min against up to 20.5 h, and passes torchslice at its released setting 180$\\times$ sooner on PrScO$_3$. Per-atom error bars, planned doses, and fast reconstruction point to low-dose, real-time 3D imaging of beam-sensitive and dynamic materials.",
+  "authors": [
+    "Ramani Duraiswami",
+    "Yichao Zhang"
+  ],
+  "published": "2026-11-18T17:23:50Z",
+  "updated": "2026-11-18T17:23:50Z",
+  "categories": [
+    "physics.ins-det",
+    "cond-mat.mtrl-sci",
+    "cs.CV",
+    "math-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.ins-det"
+}
