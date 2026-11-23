@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2611.27027v1",
+  "url": "https://arxiv.org/abs/2611.27027v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.27027v1.pdf",
+  "title": "A conservative latent neural ODE for stiff collisional-radiative plasma kinetics",
+  "abstract": "Collisional-radiative (CR) models govern the non equilibrium population kinetics of partially ionized plasmas and are a dominant cost in integrated edge and divertor plasma simulations, where a stiff system of dozens to thousands of coupled rate equations must be solved at every spatial cell and time step. We present a two-stage machine learning (ML) surrogate that replaces the direct CR solve with a compact, continuous-time, deployable dynamical model. Stage~1 is a grey-box autoencoder that compresses a high-dimensional ion population vector into a low-dimensional latent space in which four coordinates, one per charge state of the lithium system studied here, are \\emph{fixed} to the physical charge-state distribution and the rest are learned. Stage~2 is a latent neural ODE that learns the continuous-time evolution of the latent variables. We (i) integrate in a density-folded, logarithmic clock on which the latent trajectory is smooth enough for an explicit integrator, (ii) sample time adaptively by latent arc length so the sharp ionization transition is resolved, (iii) add a linear damping toward an estimate of the CR steady state as a design choice, and (iv) enforce mass conservation directly. The surrogate is accurate, with a charge-state error that is unchanged under refinement of its output grid, over full-trajectory rollouts within the trained horizon, and exactly conservative: on $1480$ held-out trajectories at the trained conditions it reproduces the charge-state evolution with a median absolute error of $4.2\\times10^{-3}$ on fractions in $[0,1]$, conserves mass to $10^{-7}$, {and evaluates a full sixteen-decade trajectory in ${\\sim}76\\,μ$s per trajectory in batched inference on a single GPU.} A model retrained with whole $(\\nA,\\Te)$ grid points withheld is equally accurate at those unseen conditions.",
+  "authors": [
+    "Xuping Xie",
+    "Xianzhu Tang",
+    "Qi Tang"
+  ],
+  "published": "2026-11-20T02:58:17Z",
+  "updated": "2026-11-20T02:58:17Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2611.27405v1",
+  "url": "https://arxiv.org/abs/2611.27405v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.27405v1.pdf",
+  "title": "Learning effective stochastic predator and prey dynamics across physical and biological systems from limited data",
+  "abstract": "Constructing an effective low-dimensional stochastic model from sparse observations requires separating deterministic drift from state-dependent fluctuations when the governing interaction law is unknown. We formulate an adaptive neural stochastic differential equation with topology constraints (TC-AdaNSDE) for two-variable predator--prey dynamics. To regularize the inverse problem when data are scarce, the model combines flexible drift and correlated diffusion fields with density-adaptive local Kramers--Moyal moment estimates and soft phase-space constraints reflecting boundary saddle behavior near extinction and local stability near coexistence. Using a known nonlinear stochastic system, we first show that short-time trajectory error cannot assess diffusion accuracy on its own and must be paired with distributional measures of one-step transitions and long-time phase-space occupancy. We then apply this framework to macroscopic turbulence and zonal flow energies reduced from Hasegawa--Wakatani plasma simulations and to short ecological time series. In the sparse-data regime, TC-AdaNSDE reproduces both short-horizon evolution and long-time invariant energy distributions where deterministic reductions collapse and unconstrained stochastic fits diverge, while recovering physically interpretable drift and fluctuation fields across both physical and biological systems.",
+  "authors": [
+    "J. C. Huang",
+    "Z. S. Qu",
+    "R. Varennes",
+    "X. Garbet",
+    "C. G. Wang",
+    "C. Guet",
+    "D. Niyato",
+    "K. Lim",
+    "V. Grandgirard"
+  ],
+  "published": "2026-11-20T10:12:22Z",
+  "updated": "2026-11-20T10:12:22Z",
+  "categories": [
+    "physics.plasm-ph",
+    "nlin.CD",
+    "q-bio.QM"
+  ],
+  "primary_category": "physics.plasm-ph"
+}
