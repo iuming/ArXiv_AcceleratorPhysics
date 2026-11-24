@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2611.28266v1",
+  "url": "https://arxiv.org/abs/2611.28266v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.28266v1.pdf",
+  "title": "CNN-Based Locked Mode Detection and Prospects for Prediction Utilizing Density Fluctuation Signals",
+  "abstract": "The deceleration of Magnetohydrodynamic (MHD) modes in tokamak plasmas is an observed behavior commonly associated with growing mode amplitude. As rotating MHD modes decelerate to a non-rotating state, they can form Locked Modes (LMs), which can degrade plasma confinement and cause disruptions. LMs therefore pose a serious threat to the sustained operation of otherwise-stable plasmas in Fusion Pilot Plants (FPPs). Identification of MHD modes and any subsequent locking is typically performed with an array of magnetic signals; these magnetic signals may not survive in the harsh reactor environment of an FPP and external magnetic measurements are delayed by magnetic diffusion through the tokamak shielding. This work uses the Radial Interferometer Polarimeter (RIP) as an alternative diagnostic to identify the slowing of rotating MHD modes into LMs. Because this fluctuation-based approach relies on observing prior mode rotation, detection and prediction are restricted to LMs with prior rotation and exclude born-locked modes. Labels were constructed to train a Convolutional Neural Network (CNN) to distinguish MHD modes that lock from those that may appear to approach a locking state but ultimately do not lock. The trained CNN learned to identify low-frequency, descending MHD modes but struggled to distinguish modes that would continue toward locking from those that would not. A second-stage detection method significantly improved performance, detecting 88.5% of LMs with a precision of 83.7% by applying persistence and classification-margin filters to the CNN output. These results demonstrate the capability of an FPP-relevant, non-magnetic diagnostic for accurate LM detection while also identifying fundamental limitations in the achievable prediction time using a fluctuation-based approach.",
+  "authors": [
+    "Randall Clark",
+    "Maxim Nurgaliev",
+    "Georgy Subbotin",
+    "Jie Chen",
+    "Terry L. Rhodes",
+    "Dmitri M. Orlov"
+  ],
+  "published": "2026-11-20T19:49:20Z",
+  "updated": "2026-11-20T19:49:20Z",
+  "categories": [
+    "physics.plasm-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

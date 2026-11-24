@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2512.18290v3",
+  "url": "https://arxiv.org/abs/2512.18290v3",
+  "pdf_url": "https://arxiv.org/pdf/2512.18290v3.pdf",
+  "title": "Wavelet-domain flow-matching posterior estimation for LISA signals with data gaps",
+  "abstract": "The Laser Interferometer Space Antenna (LISA) data stream will contain scheduled and unscheduled gaps, which break the stationarity of the instrumental noise and invalidate the standard frequency-domain likelihood. Amortized simulation-based inference (SBI) avoids explicit likelihood evaluations, but its application to months-long observations requires compressing high-dimensional, gapped time series while preserving information about source parameters. We develop an end-to-end amortized posterior estimation pipeline: the gapped data are mapped to noise-scaled Wilson-Daubechies-Meyer (WDM) wavelet coefficients and summarized by a convolutional-Transformer network, trained jointly with a flow-matching (FM) posterior estimator, with optional importance-sampling correction. For a LISA-like signal observed for 3 months, the amortized FM posteriors are well calibrated on simulated observations whose waveforms and gaps were not seen in training. The FM posteriors agree closely with the benchmark, the posteriors from parallel-tempered Markov chain Monte Carlo (PTMCMC), although they exhibit moderately greater dispersion. Importance sampling efficiently reweights the FM posterior, achieving close agreement with the benchmark at modest additional cost.",
+  "authors": [
+    "Ruiting Mao",
+    "Jeong Eun Lee",
+    "Matthew C. Edwards"
+  ],
+  "published": "2025-12-20T09:30:10Z",
+  "updated": "2026-11-21T07:28:02Z",
+  "categories": [
+    "astro-ph.IM",
+    "gr-qc",
+    "physics.data-an",
+    "physics.ins-det"
+  ],
+  "primary_category": "astro-ph.IM"
+}

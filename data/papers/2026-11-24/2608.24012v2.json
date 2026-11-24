@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2608.24012v2",
+  "url": "https://arxiv.org/abs/2608.24012v2",
+  "pdf_url": "https://arxiv.org/pdf/2608.24012v2.pdf",
+  "title": "Direct, Collision-Operator-Free Simulation of Electron-Ion Transport in Magnetized and Unmagnetized Plasmas",
+  "abstract": "Accurate electron-ion collision models are central to predicting transport in fusion and space plasmas, yet collision operators and Monte Carlo collision models assume that a charged particle meets one partner at a time and that its successive encounters are independent. However, an electron that turns back along the magnetic field passes the same ions again. We solve the Newton-Lorentz equations for test electrons among static ions with a prescribed Debye-screened potential. The method combines force summation within an interaction radius, a time-symmetric particle pusher, and adaptive time stepping, enabling stable and scalable simulations in unmagnetized and magnetized plasmas. Using simulation-based measures of momentum relaxation and cross-field diffusion, we compare the simulations with a reference in the same model that treats every encounter as independent. Without a magnetic field the scattering rate reproduces the binary-collision rate for the same potential to within 2%. When the gyroradius is smaller than the Debye length, the scattering rate stays within 10% of the reference, but the cross-field diffusion coefficient exceeds it by a factor that grows with the field, up to 17. The excess comes from repeated passes of the same ions, whose guiding-center displacements add up: when the ions are replaced by new random ones many times per scattering time, so that a returning electron meets different ions, most of the excess disappears. The framework therefore provides a computational benchmark for testing and improving reduced collision operators and transport models.",
+  "authors": [
+    "Keheng Zhu",
+    "Jian Liu",
+    "Chaozhou Mou",
+    "Senran Lin",
+    "Wei Zhang"
+  ],
+  "published": "2026-08-25T03:04:55Z",
+  "updated": "2026-11-23T03:24:38Z",
+  "categories": [
+    "physics.plasm-ph",
+    "physics.comp-ph"
+  ],
+  "primary_category": "physics.plasm-ph"
+}

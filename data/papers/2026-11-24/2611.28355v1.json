@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2611.28355v1",
+  "url": "https://arxiv.org/abs/2611.28355v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.28355v1.pdf",
+  "title": "Real-time event-level zero-shot learning at 150 ns: towards a foundation model for particle physics experiment triggering",
+  "abstract": "The hardware-based Level-1 triggers of the Large Hadron Collider (LHC) experiments select collisions with algorithms designed for one signature each, acting on a coarse, low-latency view of every event. We present a learned event embedding for several trigger tasks and evaluate its transfer to processes absent from training. Using paired offline and Level-1 views of the same simulated collisions, we train an offline transformer with a supervised metric loss and distil it, event by event, into a quantised Level-1 transformer whose bit widths are learned under a fixed resource budget. Trained on 25 Standard Model processes, the embedding places 28 held-out processes next to their physical relatives. A nearest-neighbour selection against background collisions, which never enter encoder training, rejects 99% of them. It retains a median of 90% of seen and 96% of unseen Standard Model events and 88% of a set of 52 beyond-the-Standard-Model benchmark samples, the best-performing score across the three groups among the baselines evaluated on the same events. A second gate against the seen processes isolates high-mass dilepton signals into label-free clusters, and long-lived signals too when displaced-track information is available. With 7512 parameters and an FPGA latency of 147 ns, the encoder uses one event representation, learned once, to derive several selections, opening the door to a foundation model for the LHC's hardware-based triggers.",
+  "authors": [
+    "Leo Rozanov",
+    "Lauri Laatu",
+    "Benedikt Maier",
+    "Arianna Cox",
+    "Aadeesh Sharma",
+    "Zhiqiang Que",
+    "Alex Tapper"
+  ],
+  "published": "2026-11-20T22:09:35Z",
+  "updated": "2026-11-20T22:09:35Z",
+  "categories": [
+    "physics.ins-det",
+    "cs.LG",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

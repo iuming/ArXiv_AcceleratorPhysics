@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2611.30808v1",
+  "url": "https://arxiv.org/abs/2611.30808v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.30808v1.pdf",
+  "title": "A particle method for the space homogeneous Lenard-Balescu equation",
+  "abstract": "We propose a structure preserving particle method to numerically approximate the spatially homogeneous Lenard-Balescu equation for collisional plasmas. The Lenard-Balescu operator is an improvement of the Landau equation with a dielectric function taking the dynamic screening effect into account. Our particle method is based on the variational formulation of the Lenard-Balescu equation under suitable regularization analogous to the strategy followed for the Landau collision operator in [12]. The method guarantees the conservation laws and the entropy dissipation at the semi-discrete level. The novel difficulty of the nonlocal nonlinear dependence of the dielectric function is tackled by rewriting it as integrals in terms of orthogonal and parallel components to the frequency variable. This equivalent form reduces the evaluation of the dielectric function to numerically computing an integral of the directional derivative of the solution on a hyperplane orthogonal to the frequency variable and its one-dimensional Hilbert transform. An efficient implementation of the numerical approximation for the Lenard-Balescu kernel is derived by exploiting this expression of the dielectric function. We finally validate our method by means of several numerical tests, further allowing us to explore qualitative properties of the Lenard-Balescu equation.",
+  "authors": [
+    "José Antonio Carrillo",
+    "Timon Gutleb",
+    "Andrea Medaglia",
+    "Yijia Tang"
+  ],
+  "published": "2026-11-23T15:05:10Z",
+  "updated": "2026-11-23T15:05:10Z",
+  "categories": [
+    "math.NA",
+    "math-ph",
+    "math.AP",
+    "physics.comp-ph",
+    "physics.plasm-ph"
+  ],
+  "primary_category": "math.NA"
+}

@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2611.29921v1",
+  "url": "https://arxiv.org/abs/2611.29921v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.29921v1.pdf",
+  "title": "XTCP: an open-source FPGA TCP endpoint for readout over 10 and 25 Gigabit Ethernet",
+  "abstract": "XTCP is an open-source implementation of the Transmission Control Protocol (TCP) on field-programmable gate arrays (FPGAs) for high-rate detector readout. It targets sustained single-connection throughput near the TCP payload limit. In separate 10 Gigabit Ethernet transfers on the same Kintex UltraScale+ KU5P card and Linux host, XTCP and SiTCP-XG each delivered a median application-level throughput of 9.49 Gbit/s towards the host. Towards the FPGA, the medians were 9.49 Gbit/s for XTCP and 5.76 Gbit/s for the tested SiTCP-XG configuration. The XTCP prototype used more lookup tables and on-chip memory. In a 96 GiB echo test spanning repeated sequence-number wraps, recording when an acknowledgement first crossed the recovery boundary allowed four fast recoveries that the earlier signed comparison would have blocked. On one 25 Gigabit Ethernet bitstream, increasing the IP maximum transmission unit from 1500 to 9000 bytes raised median one-way throughput from 23.30 to 24.70 Gbit/s towards the host and from 22.09 to 24.08 Gbit/s towards the FPGA. At 9000 bytes these rates reached 99.7% and 97.1% of the TCP payload limit, respectively. In a separate echo test, the host verified all 8.77 TB returned by a jumbo-frame prototype over one connection in 3595 s, averaging 19.51 Gbit/s per direction.",
+  "authors": [
+    "Tao Xue"
+  ],
+  "published": "2026-11-23T02:20:10Z",
+  "updated": "2026-11-23T02:20:10Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.30394v1",
+  "url": "https://arxiv.org/abs/2611.30394v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.30394v1.pdf",
+  "title": "FGPA-based advanced muon trigger algorithms for long-lived particle detection at the High-Luminosity LHC",
+  "abstract": "The CMS Level-1 trigger must reconstruct muons in real time under stringent latency and hardware resource constraints. Conventional algorithms lose efficiency for high-energy muons undergoing radiative energy losses and can be suboptimal for displaced trajectories, limiting sensitivity to exotic signatures such as long-lived particles (LLPs). The Phase-2 upgrade introduces advanced FPGAs that enable more sophisticated reconstruction algorithms. This work presents two complementary developments addressing these challenges. In the barrel region, a dedicated algorithm detects showers from Drift Tube hit patterns at the first processing stage. At the subsequent filtering stage, shower primitives are correlated with conventional trigger primitives, currently targeting radiatively showering high-momentum muons, with LLP signatures as a broader objective. Simulation studies yield approximately $80\\%$ shower-classification accuracy and an estimated matching efficiency above $80\\%$ for radiating muons. Firmware prototypes demonstrate a shower-detection latency of approximately $20\\,\\mathrm{ns}$ and sub-bunch-crossing latency for preliminary matching logic. In parallel, a hardware-oriented optimization methodology is investigated for future graph neural network based displaced-muon reconstruction in the barrel--endcap overlap region. Using a GraphSAGE proxy on a benchmark dataset, a workflow combining integer quantization, power-of-two scaling, and data-driven bit-width optimization achieves $(75.0 \\pm 1.1)\\%$ accuracy and a deterministic latency of $19$ cycles ($52.8\\,\\mathrm{ns}$ at $360\\,\\mathrm{MHz}$), with only $20\\%$ digital signal processor utilization. These results establish a basis for implementation studies using CMS muon data.",
+  "authors": [
+    "Daniel Estrada",
+    "Javier Prado",
+    "Pelayo Leguina",
+    "Andrea Cardini",
+    "Elena Aller",
+    "Santiago Folgueras"
+  ],
+  "published": "2026-11-23T09:54:58Z",
+  "updated": "2026-11-23T09:54:58Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

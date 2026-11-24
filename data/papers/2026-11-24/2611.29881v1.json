@@ -1,0 +1,16 @@
+{
+  "arxiv_id": "2611.29881v1",
+  "url": "https://arxiv.org/abs/2611.29881v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.29881v1.pdf",
+  "title": "An eight-channel RFSoC waveform digitizer with AC- and DC-coupled front ends and transparent dual-DDR event memory",
+  "abstract": "We present Transparent Dual-DDR Event Memory (TDEM) for the triggered readout of an eight-channel radio-frequency system-on-chip (RFSoC) digitizer. With either an AC- or a DC-coupled front end, each accepted trigger records 4096 samples per channel at 5 GSa/s. Two pulses 100 ns apart produced separate, overlapping records. On one DC-coupled input, interleaving calibration reduced an eight-sample periodic residual by a factor of 29 at +100 mV, but not at zero input. After a power cycle, the digitizer restored the coefficients for all eight DC-coupled inputs without a training tone. TDEM assigns complete events to 64- and 32-bit DDR4 memory interfaces in a 2:1 ratio. With this allocation alone, host page requests still determined which memory served each read. In two runs of approximately 6 s at 160 kHz, the peak receiver backlog fell from 20 140 events with the earlier readout to 1457 with event-level prefetch. Prefetch raised the sustained rate of the DC-coupled system from 150 to 170 kHz under repeated host readout pauses. With the same receiver design and a revised host buffer allocation, the AC-coupled system passed three 30 min tests at 175 kHz, each with 48 readout pauses and no rejected triggers. Without imposed pauses or background load, the host verified all 323 452 631 events in 30 min at 179.7 kHz. At 180 kHz, triggers were first rejected at the digitizer, consistent with a modelled transmitter capacity of 179.730 kHz for this event format.",
+  "authors": [
+    "Tao Xue"
+  ],
+  "published": "2026-11-23T01:19:19Z",
+  "updated": "2026-11-23T01:19:19Z",
+  "categories": [
+    "physics.ins-det"
+  ],
+  "primary_category": "physics.ins-det"
+}
