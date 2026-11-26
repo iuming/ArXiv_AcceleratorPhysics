@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.33226v1",
+  "url": "https://arxiv.org/abs/2611.33226v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.33226v1.pdf",
+  "title": "Shower Shapes and Data-Driven Simulation Studies using a Highly Granular Crystal ECAL",
+  "abstract": "Electron shower shapes were measured using standard shower profile models for events observed with a highly granular crystal electromagnetic calorimeter prototype, with data taken from a 2025 test beam at the CERN Proton Synchrotron T9 beamline. The shower maximum, longitudinal shape parameter, and lateral variance were found to be well approximated by log-normal distributions. From these distributions, properties of the absorber were measured to be in agreement with existing literature. Energy-dependent correlations were observed between all parameters and most strongly between the shower maximum and the shower shape parameter. The distributions of energy and event-by-event pairwise log ratios of energy fractions in individual active volumes of the calorimeter conditional on the shower shape were found to be consistent with shifted and scaled Gamma and Fisher's-z distributions, respectively. Generative methods were developed to simulate the logarithm of shower shape variables using Gaussian copulas. Copula sampling for shower shape parameters was found to produce superior modeling of heavy tails observed for the shower maximum and longitudinal shape parameter distributions when compared to direct sampling from a correlated multivariate normal distribution. A copula method was also devised to sample full shower events conditional on the shower shape parameters by exploiting the observation that the vector of energy fractions follows a logistic Log-Gamma distribution, the joint relation implied by the observed Fisher's-z form of the pairwise log-ratios. The generative model was evaluated using standard manifold and classifier metrics and was found to approach the data-versus-data ceiling. The fastest generation time was found to be around 30 μs per particle shower.",
+  "authors": [
+    "Jack Rolph",
+    "Yong Liu",
+    "Baohua Qi",
+    "Shu Li",
+    "Zhiyu Zhao",
+    "Haijun Yang"
+  ],
+  "published": "2026-11-24T08:34:30Z",
+  "updated": "2026-11-24T08:34:30Z",
+  "categories": [
+    "physics.ins-det",
+    "hep-ex"
+  ],
+  "primary_category": "physics.ins-det"
+}

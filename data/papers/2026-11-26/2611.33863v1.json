@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2611.33863v1",
+  "url": "https://arxiv.org/abs/2611.33863v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.33863v1.pdf",
+  "title": "MuSTRNG: A Muon-Based Synchronizable True Random Number Generation System",
+  "abstract": "Cosmic-ray muons provide naturally occurring stochastic events detectable by spatially separated devices, offering a potential physical source for synchronized random-bit generation. This is possible because the same physical muons can be independently detected by both devices and used to derive corresponding random-bit segments. Therefore, identifying common muon events and correctly aligning the event sequences are essential for synchronized random-bit generation. This article presents MuSTRNG, a muon-based synchronizable true random number generation system with two synchronization methods: Tracking--Tracking and Tracking--Nontracking. For Tracking--Tracking synchronization, track-based screening removes events whose reconstructed tracks do not intersect the detector area of the other device; angle-based screening partitions reconstructed directions into angular bins and aligns the event sequences to remove inconsistent pairs; and timestamp-based screening compares higher-order timestamp bits to further suppress residual mismatches. Tracking--Nontracking synchronization applies track-based screening only at the tracking-capable device, followed by timestamp-based screening between the two devices. A prototype with two tracking-capable devices was evaluated. For Tracking--Tracking synchronization, the three-stage process reduced the invalid-event ratio to 0.28% using 15-bit random segments, while the generated bit sequences showed generally favorable results in the applicable NIST SP~800-22 tests. Reprocessing the data without track information from one device provided preliminary support for Tracking--Nontracking synchronization, yielding an invalid-event ratio of 0.30% using 5-bit random segments. These results demonstrate the feasibility of muon-based synchronized random-bit generation under different device configurations, with potential application to secure communications.",
+  "authors": [
+    "Bohang Zou",
+    "Shubin Liu",
+    "Yu Wang",
+    "Ting Wang",
+    "Changqing Feng",
+    "Zhongtao Shen"
+  ],
+  "published": "2026-11-25T06:42:29Z",
+  "updated": "2026-11-25T06:42:29Z",
+  "categories": [
+    "physics.ins-det",
+    "physics.data-an"
+  ],
+  "primary_category": "physics.ins-det"
+}

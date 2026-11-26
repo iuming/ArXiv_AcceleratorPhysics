@@ -1,0 +1,18 @@
+{
+  "arxiv_id": "2609.11610v4",
+  "url": "https://arxiv.org/abs/2609.11610v4",
+  "pdf_url": "https://arxiv.org/pdf/2609.11610v4.pdf",
+  "title": "Multi-Threshold Sampling: Signal Space, Sampling Operators, and First Recorded Crossing Time",
+  "abstract": "Multi-threshold sampling encodes signals through crossing times at prescribed thresholds, offering an alternative to uniform time-domain sampling. Its potential to reduce hardware requirements and power consumption motivates its use in high-speed pulse acquisition, including scintillation detector readout. We model the relation between signal statistics and recorded-crossing statistics by composing measurable stochastic crossing, timing, and selection operators. The threshold noise processes are independent across thresholds. The sampler applies independent timing jitter at each analog crossing before quantization and enforces dead time separately at each threshold in the recording window. We express the joint cumulative distribution function of first recorded crossing times using path infima and suprema when crossings at each threshold share the same timing jitter. Specializing this formula to a single threshold gives the marginal distribution, from which we obtain the conditional standard deviation. We use these formulas to approximate the corresponding exact quantities under independent timing jitter at each crossing and bound each approximation error. In a scintillation example, the shared-jitter formulas and independent-jitter waveform simulations agreed within Monte Carlo sampling uncertainty for the joint and marginal distributions and for the conditional standard deviation. Engineers can use these results to choose thresholds and assess how sampler changes affect timing precision.",
+  "authors": [
+    "Ao Qiu",
+    "Qingguo Xie"
+  ],
+  "published": "2026-09-10T14:28:42Z",
+  "updated": "2026-11-25T12:44:56Z",
+  "categories": [
+    "eess.SP",
+    "physics.ins-det"
+  ],
+  "primary_category": "eess.SP"
+}
