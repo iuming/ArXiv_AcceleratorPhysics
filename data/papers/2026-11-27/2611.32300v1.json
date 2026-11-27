@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2611.32300v1",
+  "url": "https://arxiv.org/abs/2611.32300v1",
+  "pdf_url": "https://arxiv.org/pdf/2611.32300v1.pdf",
+  "title": "Slipstream: nonlinear beam dynamics in PyTorch",
+  "abstract": "Slipstream is a PyTorch package for nonlinear beam dynamics in storage rings, linacs and photoinjectors. It provides CPU and GPU particle tracking, field-map injector models with space charge, and automatic differentiation along supported tracking paths. Comparisons with elegant, ASTRA, GPT and other codes assess accuracy and computational cost for nonlinear ring tracking, optics matching and photoinjectors. Ring tunes agree with elegant to $10^{-9}$. For the tested ring workloads with tens of thousands of particles, GPU tracking in float32 is hundreds of times faster than the single-threaded CPU implementations compared here. Automatic differentiation reduces the time for 24-parameter optics matching by an order of magnitude compared to finite differences. Using a high-brightness photo-injector as an example, final horizontal emittances agree with ASTRA to about 1% at 20 and 100pC and differ by $\\approx$4% at 250pC. For $2^{18}$ macroparticles, Slipstream's faster default settings take 14s on an RTX 3050 GPU and give emittances within 2% of that of ASTRA. Additional tests examine coherent synchrotron radiation, dynamic aperture and resistive-wall impedance. The package was developed predominantly by AI coding assistants under human direction. These comparisons identify where its models, GPU execution and derivatives are useful for repeated simulations in scans, fits and optimisation.",
+  "authors": [
+    "J. K. Jones",
+    "A. D. Brynes",
+    "M. King",
+    "H. L. Owen",
+    "A. Pollard"
+  ],
+  "published": "2026-11-24T09:59:03Z",
+  "updated": "2026-11-24T09:59:03Z",
+  "categories": [
+    "physics.acc-ph"
+  ],
+  "primary_category": "physics.acc-ph"
+}
